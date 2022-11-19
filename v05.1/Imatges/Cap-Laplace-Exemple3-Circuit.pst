@@ -1,0 +1,252 @@
+%%Created by jPicEdt 1.4pre4: mixed JPIC-XML/LaTeX format
+%%Sun Jan 01 15:00:52 CET 2006
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="22.5" x-max="117" y-min="1" y-max="46" auto-bounding="false">
+%<multicurve points="(54,24.5);(54,24.5);(54,12);(54,12)"
+%	
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(52,34.5)" p2="(56,34.5)" p3="(56,24.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(91.5,34.5)" p2="(95.5,34.5)" p3="(95.5,24.5)"
+%	
+%	 fill-style="solid"
+%	 />
+%<multicurve points="(93.5,5.5);(93.5,5.5);(93.5,1);(93.5,1);(93.5,1);(27,1);
+%	(27,1);(27,1);(27,8.5);(27,8.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(22.5,12)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$U\ped{bat}=120\unit{V}$
+%</text>
+%<multicurve points="(69,40.5);(69,40.5);(78,40.5);(78,40.5)"
+%	
+%	 fill-style="solid"
+%	 right-arrow="head" />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(73,41)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$i\ped{L}(t)$
+%</text>
+%<multicurve points="(54,39);(54,39);(54,34.5);(54,34.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(68.5,18)" p2="(68.5,22)" p3="(78.5,22)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(78.5,20);(78.5,20);(93.5,20);(93.5,20)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(93.5,24.5);(93.5,24.5);(93.5,15.5);(93.5,15.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(91.5,15.5)" p2="(95.5,15.5)" p3="(95.5,5.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(54,10);(54,10);(54,1);(54,1)"
+%	
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(25,32.5)" p2="(29,32.5)" p3="(29,22.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(27,12)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%
+%</text>
+%<multicurve points="(24,16);(24,16);(30,16);(30,16)"
+%	 stroke-width="0.35"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(25.5,14.5);(25.5,14.5);(28.5,14.5);(28.5,14.5)"
+%	 stroke-width="0.6"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(24,13);(24,13);(30,13);(30,13)"
+%	 stroke-width="0.35"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(25.5,11.5);(25.5,11.5);(28.5,11.5);(28.5,11.5)"
+%	 stroke-width="0.6"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(24,10);(24,10);(30,10);(30,10)"
+%	 stroke-width="0.35"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(25.5,8.5);(25.5,8.5);(28.5,8.5);(28.5,8.5)"
+%	 stroke-width="0.6"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(27,22.5);(27,22.5);(27,16);(27,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(27,32.5);(27,32.5);(27,39);(27,39);(27,39);(36.5,39);
+%	(36.5,39);(36.5,39);(42,40.5);(42,40.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(93.5,34.5);(93.5,34.5);(93.5,39);(93.5,39);(93.5,39);(41.5,39);
+%	(41.5,39);(41.5,39);(41.5,41);(41.5,41)"
+%	
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(23.5,27.5)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$R\ped{bat}=5\unit{\ohm}$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(39.5,36)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%M
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(57,32.5)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$R_1=100\unit{\ohm}$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(96.5,30)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$L=250\unit{mH}$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(57.5,10.5)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$C=10$\micro{}F
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(96.5,10.5)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$R_3=25\unit{\ohm}$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(74,23)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$R_2=75\unit{\ohm}$
+%</text>
+%<multicurve points="(69,2.5);(69,2.5);(78,2.5);(78,2.5)"
+%	
+%	 fill-style="solid"
+%	 right-arrow="head" />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(73.5,3.5)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$i\ped{C}(t)$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(48.5,10.5)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$u\ped{C}(t)$
+%</text>
+%<smoothpolygon points="(51.5,15.5);(48.5,10.5);(52,5.5)" closed="false"
+%	smoothness="0.7;0.7;0.7"
+%	
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(54,20);(54,20);(68.5,20);(68.5,20)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(51.5,10);(51.5,10);(56.5,10);(56.5,10)"
+%	 stroke-width="0.5"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(51.5,12);(51.5,12);(56.5,12);(56.5,12)"
+%	 stroke-width="0.5"
+%	 fill-style="none"
+%	 />
+%<smoothpolygon points="(37.89,41.35);(40,40);(39.5,38)" closed="false"
+%	smoothness="0.7;0.7;0.7"
+%	
+%	 fill-style="none"
+%	 left-arrow="head" />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(38.5,42)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$t=0$
+%</text>
+%</jpic>
+%%End JPIC-XML
+%PsTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(117,46)
+\psline(54,24.5)(54,12)
+\pspolygon[](52,34.5)(56,34.5)(56,24.5)(52,24.5)
+\pspolygon[fillstyle=solid](91.5,34.5)(95.5,34.5)(95.5,24.5)(91.5,24.5)
+\psline(93.5,5.5)(93.5,1)
+(93.5,1)(27,1)
+(27,1)(27,8.5)
+\rput[r](22.5,12){$U\ped{bat}=120\unit{V}$}
+\psline[fillstyle=solid]{->}(69,40.5)(78,40.5)
+\rput[b](73,41){$i\ped{L}(t)$}
+\psline(54,39)(54,34.5)
+\pspolygon[](68.5,18)(68.5,22)(78.5,22)(78.5,18)
+\psline(78.5,20)(93.5,20)
+\psline(93.5,24.5)(93.5,15.5)
+\pspolygon[](91.5,15.5)(95.5,15.5)(95.5,5.5)(91.5,5.5)
+\psline(54,10)(54,1)
+\pspolygon[](25,32.5)(29,32.5)(29,22.5)(25,22.5)
+\rput(27,12){}
+\psline[linewidth=0.35](24,16)(30,16)
+\psline[linewidth=0.6](25.5,14.5)(28.5,14.5)
+\psline[linewidth=0.35](24,13)(30,13)
+\psline[linewidth=0.6](25.5,11.5)(28.5,11.5)
+\psline[linewidth=0.35](24,10)(30,10)
+\psline[linewidth=0.6](25.5,8.5)(28.5,8.5)
+\psline(27,22.5)(27,16)
+\psline(27,32.5)(27,39)
+(27,39)(36.5,39)
+(36.5,39)(42,40.5)
+\psline(93.5,34.5)(93.5,39)
+(93.5,39)(41.5,39)
+(41.5,39)(41.5,41)
+\rput[r](23.5,27.5){$R\ped{bat}=5\unit{\ohm}$}
+\rput(39.5,36){M}
+\rput[l](57,32.5){$R_1=100\unit{\ohm}$}
+\rput[l](96.5,30){$L=250\unit{mH}$}
+\rput[l](57.5,10.5){$C=10$\micro{}F}
+\rput[l](96.5,10.5){$R_3=25\unit{\ohm}$}
+\rput[b](74,23){$R_2=75\unit{\ohm}$}
+\psline[fillstyle=solid]{->}(69,2.5)(78,2.5)
+\rput[b](73.5,3.5){$i\ped{C}(t)$}
+\rput[r](48.5,10.5){$u\ped{C}(t)$}
+\psbezier{->}(51.5,15.5)(49.4,12)(49.55,9)(52,5.5)
+\psline(54,20)(68.5,20)
+\psline[linewidth=0.5](51.5,10)(56.5,10)
+\psline[linewidth=0.5](51.5,12)(56.5,12)
+\psbezier{<-}(37.89,41.35)(39.37,40.4)(39.85,39.4)(39.5,38)
+\rput[b](38.5,42){$t=0$}
+\end{pspicture}

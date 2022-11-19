@@ -1,0 +1,236 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Tue Dec 18 19:29:46 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="54" y-min="0" y-max="27" auto-bounding="false">
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(13,11)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$u_1(t)$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(43,11)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$u_2(t)$
+%</text>
+%<multicurve right-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(14,17);(14,17);(14,5);(14,5)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(42,17);(42,17);(42,5);(42,5)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(15.5,21);(15.5,21);(22.5,21);(22.5,21)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(33.5,21);(33.5,21);(40.5,21);(40.5,21)"
+%	 />
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(18.5,22)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$i_1(t)$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(36.5,22)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$i_2(t)$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(28,1.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$m\!:\!1$
+%</text>
+%<ellipse p3= "(15,20)"
+%	 p2= "(15,18)"
+%	 p1= "(13,18)"
+%	 stroke-width= "0.25"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(43,20)"
+%	 p2= "(43,18)"
+%	 p1= "(41,18)"
+%	 stroke-width= "0.25"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(15,4)"
+%	 p2= "(15,2)"
+%	 p1= "(13,2)"
+%	 stroke-width= "0.25"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(43,4)"
+%	 p2= "(43,2)"
+%	 p1= "(41,2)"
+%	 stroke-width= "0.25"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<g>
+%<ellipse p3= "(26,15)"
+%	 p2= "(26,19)"
+%	 p1= "(22,19)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse p3= "(26,11)"
+%	 p2= "(26,15)"
+%	 p1= "(22,15)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse p3= "(26,7)"
+%	 p2= "(26,11)"
+%	 p1= "(22,11)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse p3= "(26,3)"
+%	 p2= "(26,7)"
+%	 p1= "(22,7)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%</g>
+%<g>
+%<ellipse p3= "(30,7)"
+%	 p2= "(30,11)"
+%	 p1= "(34,11)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse p3= "(30,3)"
+%	 p2= "(30,7)"
+%	 p1= "(34,7)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse p3= "(30,11)"
+%	 p2= "(30,15)"
+%	 p1= "(34,15)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse p3= "(30,15)"
+%	 p2= "(30,19)"
+%	 p1= "(34,19)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%</g>
+%<ellipse p3= "(24.5,20.5)"
+%	 p2= "(24.5,21.5)"
+%	 p1= "(23.5,21.5)"
+%	 closure= "open"
+%	 fill-style= "solid"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(32.5,20.5)"
+%	 p2= "(32.5,21.5)"
+%	 p1= "(31.5,21.5)"
+%	 closure= "open"
+%	 fill-style= "solid"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(15,19);(15,19);(24,19);(24,19)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(32,19);(32,19);(41,19);(41,19)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(32,3);(32,3);(41,3);(41,3)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(15,3);(15,3);(24,3);(24,3)"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(54,27)
+\rput[r](13,11){$u_1(t)$}
+\rput[l](43,11){$u_2(t)$}
+\psline[linewidth=0.25]{->}(14,17)(14,5)
+\psline[linewidth=0.25]{->}(42,17)(42,5)
+\psline[linewidth=0.25]{->}(15.5,21)(22.5,21)
+\psline[linewidth=0.25]{->}(33.5,21)(40.5,21)
+\rput[b](18.5,22){$i_1(t)$}
+\rput[b](36.5,22){$i_2(t)$}
+\rput(28,1.5){$m\!:\!1$}
+\rput{0}(14,19){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(42,19){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(14,3){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(42,3){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(24,17){\psellipticarc[](0,0)(2,-2){-90}{90}}
+\rput{0}(24,13){\psellipticarc[](0,0)(2,-2){-90}{90}}
+\rput{0}(24,9){\psellipticarc[](0,0)(2,-2){-90}{90}}
+\rput{0}(24,5){\psellipticarc[](0,0)(2,-2){-90}{90}}
+\rput{0}(32,9){\psellipticarc[](0,0)(2,2){90}{270}}
+\rput{0}(32,5){\psellipticarc[](0,0)(2,2){90}{270}}
+\rput{0}(32,13){\psellipticarc[](0,0)(2,2){90}{270}}
+\rput{0}(32,17){\psellipticarc[](0,0)(2,2){90}{270}}
+\rput{0}(24,21){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\rput{0}(32,21){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\psline(15,19)(24,19)
+\psline(32,19)(41,19)
+\psline(32,3)(41,3)
+\psline(15,3)(24,3)
+\end{pspicture}

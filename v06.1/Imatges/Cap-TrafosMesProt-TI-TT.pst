@@ -1,0 +1,363 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Tue Dec 25 15:42:06 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="60" y-min="0" y-max="70" auto-bounding="false">
+%<multicurve fill-style= "none"
+%	 points= "(2,69.5);(2,69.5);(2,1);(2,1)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(12,69.5);(12,69.5);(12,1);(12,1)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(49,45);(49,45);(53,45);(53,45)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(50,44);(50,44);(52,44);(52,44)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(50.5,43);(50.5,43);(51.5,43);(51.5,43)"
+%	 />
+%<multicurve fill-style= "none"
+%	 right-arrow= "disk-centered"
+%	 points= "(51,45);(51,45);(51,49);(51,49)"
+%	 />
+%<multicurve fill-style= "none"
+%	 right-arrow= "head"
+%	 points= "(11,32);(11,32);(11,24);(11,24)"
+%	 />
+%<multicurve fill-style= "none"
+%	 right-arrow= "head"
+%	 points= "(26,56);(26,56);(26,50);(26,50)"
+%	 />
+%<multicurve fill-style= "none"
+%	 right-arrow= "head"
+%	 points= "(38,56);(38,56);(38,50);(38,50)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(25,53)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{U}\ped{P}$
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(32,61)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$U\ped{NP}\!:\!U\ped{NS}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(39,53)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$\cmplx{U}\ped{S}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(10.5,29)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{I}\ped{P}$
+%</text>
+%<text text-vert-align= "baseline"
+%	 fill-style= "none"
+%	 anchor-point= "(19.5,24)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{I}\ped{S}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(51,57)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%\textsf{V}
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(24.5,59)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%{\scriptsize\textsf{P1}}
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(39.5,59)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%{\scriptsize\textsf{S1}}
+%</text>
+%<text text-vert-align= "top"
+%	 fill-style= "none"
+%	 anchor-point= "(24.5,48)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%{\scriptsize\textsf{P2}}
+%</text>
+%<text text-vert-align= "top"
+%	 fill-style= "none"
+%	 anchor-point= "(39.5,48)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%{\scriptsize\textsf{S2}}
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(10,22.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%{\scriptsize\textsf{P1}}
+%</text>
+%<text text-vert-align= "top"
+%	 fill-style= "none"
+%	 anchor-point= "(10,13)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%{\scriptsize\textsf{P2}}
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(13.5,24)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%{\scriptsize\textsf{S1}}
+%</text>
+%<text text-vert-align= "top"
+%	 fill-style= "none"
+%	 anchor-point= "(13.5,12)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%{\scriptsize\textsf{S2}}
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(51,21)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%\textsf{A}
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(14,17)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$I\ped{NP}\!:\!I\ped{NS}$
+%</text>
+%<ellipse p3= "(26.5,58.5)"
+%	 p2= "(26.5,59.5)"
+%	 p1= "(25.5,59.5)"
+%	 fill-style= "solid"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(38.5,58.5)"
+%	 p2= "(38.5,59.5)"
+%	 p1= "(37.5,59.5)"
+%	 fill-style= "solid"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 right-arrow= "disk-centered"
+%	 points= "(28,57);(28,57);(2,57);(2,57)"
+%	 />
+%<multicurve fill-style= "none"
+%	 right-arrow= "disk-centered"
+%	 points= "(28,49);(28,49);(12,49);(12,49)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(49,9);(49,9);(53,9);(53,9)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(50,8);(50,8);(52,8);(52,8)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(50.5,7);(50.5,7);(51.5,7);(51.5,7)"
+%	 />
+%<multicurve fill-style= "none"
+%	 right-arrow= "disk-centered"
+%	 points= "(51,9);(51,9);(51,13);(51,13)"
+%	 />
+%<ellipse p3= "(55,25)"
+%	 p2= "(55,17)"
+%	 p1= "(47,17)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "360"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(55,61)"
+%	 p2= "(55,53)"
+%	 p1= "(47,53)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "360"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(30,53)"
+%	 p2= "(30,57)"
+%	 p1= "(26,57)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse p3= "(30,49)"
+%	 p2= "(30,53)"
+%	 p1= "(26,53)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse p3= "(34,49)"
+%	 p2= "(34,53)"
+%	 p1= "(38,53)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse p3= "(34,53)"
+%	 p2= "(34,57)"
+%	 p1= "(38,57)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(36,57);(36,57);(47,57);(47,57)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(36,49);(36,49);(59,49);(59,49);(59,49);(59,57);
+%	(59,57);(59,57);(55,57);(55,57)"
+%	 />
+%<ellipse p3= "(10,17)"
+%	 p2= "(10,21)"
+%	 p1= "(14,21)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse p3= "(10,13)"
+%	 p2= "(10,17)"
+%	 p1= "(14,17)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(12,21);(12,21);(47,21);(47,21)"
+%	 />
+%<ellipse p3= "(11.5,22)"
+%	 p2= "(11.5,23)"
+%	 p1= "(10.5,23)"
+%	 fill-style= "solid"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(15,22)"
+%	 p2= "(15,23)"
+%	 p1= "(14,23)"
+%	 fill-style= "solid"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 right-arrow= "head"
+%	 points= "(16,22.5);(16,22.5);(23.5,22.5);(23.5,22.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(12,13);(12,13);(59,13);(59,13);(59,13);(59,21);
+%	(59,21);(59,21);(55,21);(55,21)"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(60,70)
+\psline(2,69.5)(2,1)
+\psline(12,69.5)(12,1)
+\psline(49,45)(53,45)
+\psline(50,44)(52,44)
+\psline(50.5,43)(51.5,43)
+\psline{-*}(51,45)(51,49)
+\psline{->}(11,32)(11,24)
+\psline{->}(26,56)(26,50)
+\psline{->}(38,56)(38,50)
+\rput[r](25,53){$\cmplx{U}\ped{P}$}
+\rput[b](32,61){$U\ped{NP}\!:\!U\ped{NS}$}
+\rput[l](39,53){$\cmplx{U}\ped{S}$}
+\rput[r](10.5,29){$\cmplx{I}\ped{P}$}
+\rput[B](19.5,24){$\cmplx{I}\ped{S}$}
+\rput(51,57){\textsf{V}}
+\rput[r](24.5,59){{\scriptsize\textsf{P1}}}
+\rput[l](39.5,59){{\scriptsize\textsf{S1}}}
+\rput[tr](24.5,48){{\scriptsize\textsf{P2}}}
+\rput[tl](39.5,48){{\scriptsize\textsf{S2}}}
+\rput[r](10,22.5){{\scriptsize\textsf{P1}}}
+\rput[tr](10,13){{\scriptsize\textsf{P2}}}
+\rput[bl](13.5,24){{\scriptsize\textsf{S1}}}
+\rput[tl](13.5,12){{\scriptsize\textsf{S2}}}
+\rput(51,21){\textsf{A}}
+\rput[l](14,17){$I\ped{NP}\!:\!I\ped{NS}$}
+\rput{0}(26,59){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\rput{0}(38,59){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\psline{-*}(28,57)(2,57)
+\psline{-*}(28,49)(12,49)
+\psline(49,9)(53,9)
+\psline(50,8)(52,8)
+\psline(50.5,7)(51.5,7)
+\psline{-*}(51,9)(51,13)
+\rput{0}(51,21){\psellipse[](0,0)(4,4)}
+\rput{0}(51,57){\psellipse[](0,0)(4,4)}
+\rput{0}(28,55){\psellipticarc[](0,0)(2,-2){-90}{90}}
+\rput{0}(28,51){\psellipticarc[](0,0)(2,-2){-90}{90}}
+\rput{0}(36,51){\psellipticarc[](0,0)(2,2){90}{270}}
+\rput{0}(36,55){\psellipticarc[](0,0)(2,2){90}{270}}
+\psline(36,57)(47,57)
+\psline(36,49)
+(59,49)
+(59,57)(55,57)
+\rput{0}(12,19){\psellipticarc[](0,0)(2,2){90}{270}}
+\rput{0}(12,15){\psellipticarc[](0,0)(2,2){90}{270}}
+\psline(12,21)(47,21)
+\rput{0}(11,22.5){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\rput{0}(14.5,22.5){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\psline{->}(16,22.5)(23.5,22.5)
+\psline(12,13)
+(59,13)
+(59,21)(55,21)
+\end{pspicture}

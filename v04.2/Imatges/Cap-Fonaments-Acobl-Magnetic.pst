@@ -1,0 +1,215 @@
+%%Created by jPicEdt 1.4.1: mixed JPIC-XML/LaTeX format
+%%Sat Jan 20 19:48:24 CET 2007
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="57" y-min="0" y-max="25" auto-bounding="false">
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(25,9.5)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$L_1$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(35,9.5)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$L_2$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(11,9.5)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$u_1(t)$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(49,9.5)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$u_2(t)$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(17,20.5)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$i_1(t)$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(43,20.5)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$i_2(t)$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(30,17)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$M$
+%</text>
+%<ellipse closure= "open"
+%	 p3= "(13,18.5)"
+%	 p1= "(11,16.5)"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 angle-end= "0"
+%	 p2= "(13,16.5)"
+%	 angle-start= "0"
+%	 />
+%<ellipse closure= "open"
+%	 p3= "(13,2.5)"
+%	 p1= "(11,0.5)"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 angle-end= "0"
+%	 p2= "(13,0.5)"
+%	 angle-start= "0"
+%	 />
+%<ellipse closure= "open"
+%	 p3= "(49,18.5)"
+%	 p1= "(47,16.5)"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 angle-end= "0"
+%	 p2= "(49,16.5)"
+%	 angle-start= "0"
+%	 />
+%<ellipse closure= "open"
+%	 p3= "(49,2.5)"
+%	 p1= "(47,0.5)"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 angle-end= "0"
+%	 p2= "(49,0.5)"
+%	 angle-start= "0"
+%	 />
+%<parallelogram p3= "(24,14.5)"
+%	 p1= "(20,4.5)"
+%	 fill-style= "solid"
+%	 stroke-width= "0.15"
+%	 p2= "(24,4.5)"
+%	 />
+%<parallelogram p3= "(40,14.5)"
+%	 p1= "(36,4.5)"
+%	 fill-style= "solid"
+%	 stroke-width= "0.15"
+%	 p2= "(40,4.5)"
+%	 />
+%<multicurve stroke-style= "dashed"
+%	 stroke-dasharray= "1;1"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(25.5,16);(25.5,16);(34.5,16);(34.5,16)"
+%	 left-arrow= "head"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(13,17.5);(13,17.5);(22,17.5);(22,17.5);(22,17.5);(22,14.5);
+%	(22,14.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(47,17.5);(47,17.5);(38,17.5);(38,17.5);(38,17.5);(38,14.5);
+%	(38,14.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(47,1.5);(47,1.5);(38,1.5);(38,1.5);(38,1.5);(38,4.5);
+%	(38,4.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(13,1.5);(13,1.5);(22,1.5);(22,1.5);(22,1.5);(22,4.5);
+%	(22,4.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(14,19.5);(14,19.5);(21,19.5);(21,19.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(39,19.5);(39,19.5);(46,19.5);(46,19.5)"
+%	 left-arrow= "head"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(12,15.5);(12,15.5);(12,3.5);(12,3.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(48,15.5);(48,15.5);(48,3.5);(48,3.5)"
+%	 />
+%<ellipse closure= "open"
+%	 p3= "(24.75,16.75)"
+%	 p1= "(23.25,15.25)"
+%	 fill-style= "solid"
+%	 stroke-width= "0.25"
+%	 angle-end= "0"
+%	 p2= "(24.75,15.25)"
+%	 angle-start= "0"
+%	 />
+%<ellipse closure= "open"
+%	 p3= "(36.75,16.75)"
+%	 p1= "(35.25,15.25)"
+%	 fill-style= "solid"
+%	 stroke-width= "0.25"
+%	 angle-end= "0"
+%	 p2= "(36.75,15.25)"
+%	 angle-start= "0"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(57,25)
+\rput[l](25,9.5){$L_1$}
+\rput[r](35,9.5){$L_2$}
+\rput[r](11,9.5){$u_1(t)$}
+\rput[l](49,9.5){$u_2(t)$}
+\rput[b](17,20.5){$i_1(t)$}
+\rput[b](43,20.5){$i_2(t)$}
+\rput[b](30,17){$M$}
+\rput{0}(12,17.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(12,1.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(48,17.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(48,1.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+\pspolygon[linewidth=0.15,fillstyle=solid](20,4.5)(24,4.5)(24,14.5)(20,14.5)
+\pspolygon[linewidth=0.15,fillstyle=solid](36,4.5)(40,4.5)(40,14.5)(36,14.5)
+\psline[linewidth=0.25,linestyle=dashed,dash=1 1]{<->}(25.5,16)(34.5,16)
+\psline[linewidth=0.25](13,17.5)
+(22,17.5)(22,14.5)
+\psline[linewidth=0.25](47,17.5)
+(38,17.5)(38,14.5)
+\psline[linewidth=0.25](47,1.5)
+(38,1.5)(38,4.5)
+\psline[linewidth=0.25](13,1.5)
+(22,1.5)(22,4.5)
+\psline[linewidth=0.25]{->}(14,19.5)(21,19.5)
+\psline[linewidth=0.25]{<-}(39,19.5)(46,19.5)
+\psline[linewidth=0.25]{->}(12,15.5)(12,3.5)
+\psline[linewidth=0.25]{->}(48,15.5)(48,3.5)
+\rput{0}(24,16){\psellipse[linewidth=0.25,fillstyle=solid](0,0)(0.75,0.75)}
+\rput{0}(36,16){\psellipse[linewidth=0.25,fillstyle=solid](0,0)(0.75,0.75)}
+\end{pspicture}

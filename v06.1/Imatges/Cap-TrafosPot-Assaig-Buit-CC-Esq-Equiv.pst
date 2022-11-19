@@ -1,0 +1,656 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Thu Dec 27 09:46:02 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="166" y-min="0" y-max="39" auto-bounding="false">
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(13,30.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(12,22);(12,22);(12,32);(12,32);(12,32);(23,32);
+%	(23,32)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(12,13.5);(12,13.5);(12,4);(12,4);(12,4);(23,4);
+%	(23,4)"
+%	 />
+%<circle stroke-width= "0.25"
+%	 fill-style= "none"
+%	 p3= "(16.25,17.75)"
+%	 p2= "(12,13.5)"
+%	 p1= "(7.75,17.75)"
+%	 closure= "plain"
+%	 />
+%<g>
+%<smoothpolygon fill-style= "none"
+%	 closed= "false"
+%	 points= "(10,17.5);(11,20);(12,17.5)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<smoothpolygon fill-style= "none"
+%	 closed= "false"
+%	 points= "(14,17.5);(13,15);(12,17.5)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%</g>
+%<text fill-style= "none"
+%	 text-vert-align= "baseline"
+%	 anchor-point= "(17,35)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$i\ped{o2}$
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(6.5,17.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$u\ped{o2}$
+%</text>
+%<g>
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(10,24.5);(10,24.5);(10,22.5);(10,22.5)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(9,23.5);(9,23.5);(11,23.5);(11,23.5)"
+%	 />
+%</g>
+%<text fill-style= "none"
+%	 text-vert-align= "baseline"
+%	 anchor-point= "(100.5,35)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$i\ped{cc1}$
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(89.5,18)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$u\ped{cc1}$
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(15,28)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(52,2)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%BT/AT
+%</text>
+%<text stroke-width= "0.25"
+%	 fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(63,35)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$r$
+%</text>
+%<text stroke-width= "0.25"
+%	 fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(45,35)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$x$
+%</text>
+%<text stroke-width= "0.25"
+%	 fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(40.5,14)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$g\ped{Fe}$
+%</text>
+%<text stroke-width= "0.25"
+%	 fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(26,14)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$b\ped{m}$
+%</text>
+%<circle fill-style= "none"
+%	 p3= "(75,4)"
+%	 p2= "(76,5)"
+%	 p1= "(77,4)"
+%	 closure= "plain"
+%	 />
+%<circle fill-style= "none"
+%	 p3= "(75,32)"
+%	 p2= "(76,33)"
+%	 p1= "(77,32)"
+%	 closure= "plain"
+%	 />
+%<multicurve right-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(14,33.5);(14,33.5);(21.5,33.5);(21.5,33.5)"
+%	 />
+%<circle fill-style= "none"
+%	 p3= "(25,32)"
+%	 p2= "(24,31)"
+%	 p1= "(23,32)"
+%	 closure= "plain"
+%	 />
+%<circle fill-style= "none"
+%	 p3= "(25,4)"
+%	 p2= "(24,3)"
+%	 p1= "(23,4)"
+%	 closure= "plain"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(36.88,8);(36.88,8);(36.88,4);(36.88,4)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(29,6);(29,6);(29,4);(29,4)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(32.88,32);(32.88,32);(32.88,24);(32.88,24)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(75,32);(75,32);(69,32);(69,32)"
+%	 />
+%<g>
+%<ellipse fill-style= "none"
+%	 p3= "(26.88,10)"
+%	 p2= "(26.88,14)"
+%	 p1= "(30.88,14)"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(26.88,6)"
+%	 p2= "(26.88,10)"
+%	 p1= "(30.88,10)"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(26.88,14)"
+%	 p2= "(26.88,18)"
+%	 p1= "(30.88,18)"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(26.88,18)"
+%	 p2= "(26.88,22)"
+%	 p1= "(30.88,22)"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%</g>
+%<parallelogram fill-style= "none"
+%	 p3= "(38.88,8)"
+%	 p2= "(38.88,20)"
+%	 p1= "(34.88,20)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(28.88,22);(28.88,22);(28.88,24);(28.88,24);(28.88,24);(36.88,24);
+%	(36.88,24);(36.88,24);(36.88,20);(36.88,20)"
+%	 />
+%<parallelogram fill-style= "none"
+%	 p3= "(69,34)"
+%	 p2= "(57,34)"
+%	 p1= "(57,30)"
+%	 />
+%<g>
+%<ellipse fill-style= "none"
+%	 p3= "(41,34)"
+%	 p2= "(41,30)"
+%	 p1= "(37,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(45,34)"
+%	 p2= "(45,30)"
+%	 p1= "(41,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(49,34)"
+%	 p2= "(49,30)"
+%	 p1= "(45,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(53,34)"
+%	 p2= "(53,30)"
+%	 p1= "(49,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%</g>
+%<multicurve fill-style= "none"
+%	 points= "(53,32);(53,32);(57,32);(57,32)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(25,32);(25,32);(37,32);(37,32)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(25,4);(25,4);(75,4);(75,4)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(131,2)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%AT/BT
+%</text>
+%<text stroke-width= "0.25"
+%	 fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(118,35)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$r$
+%</text>
+%<text stroke-width= "0.25"
+%	 fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(136,35)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$x$
+%</text>
+%<text stroke-width= "0.25"
+%	 fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(155.5,14)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$g\ped{Fe}$
+%</text>
+%<text stroke-width= "0.25"
+%	 fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(141,14)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$b\ped{m}$
+%</text>
+%<circle fill-style= "none"
+%	 p3= "(157,4)"
+%	 p2= "(158,5)"
+%	 p1= "(159,4)"
+%	 closure= "plain"
+%	 />
+%<circle fill-style= "none"
+%	 p3= "(157,32)"
+%	 p2= "(158,33)"
+%	 p1= "(159,32)"
+%	 closure= "plain"
+%	 />
+%<multicurve right-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(97,33.5);(97,33.5);(104.5,33.5);(104.5,33.5)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(99,32.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(95,36)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(96.5,28)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(78.5,30.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<circle fill-style= "none"
+%	 p3= "(108,4)"
+%	 p2= "(107,3)"
+%	 p1= "(106,4)"
+%	 closure= "plain"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(151.88,8);(151.88,8);(151.88,4);(151.88,4)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(144,6);(144,6);(144,4);(144,4)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(147.88,32);(147.88,32);(147.88,24);(147.88,24)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(128,32);(128,32);(124,32);(124,32)"
+%	 />
+%<parallelogram fill-style= "none"
+%	 p3= "(124,34)"
+%	 p2= "(112,34)"
+%	 p1= "(112,30)"
+%	 />
+%<g>
+%<ellipse fill-style= "none"
+%	 p3= "(132,34)"
+%	 p2= "(132,30)"
+%	 p1= "(128,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(136,34)"
+%	 p2= "(136,30)"
+%	 p1= "(132,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(140,34)"
+%	 p2= "(140,30)"
+%	 p1= "(136,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(144,34)"
+%	 p2= "(144,30)"
+%	 p1= "(140,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%</g>
+%<g>
+%<ellipse fill-style= "none"
+%	 p3= "(141.88,10)"
+%	 p2= "(141.88,14)"
+%	 p1= "(145.88,14)"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(141.88,6)"
+%	 p2= "(141.88,10)"
+%	 p1= "(145.88,10)"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(141.88,14)"
+%	 p2= "(141.88,18)"
+%	 p1= "(145.88,18)"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(141.88,18)"
+%	 p2= "(141.88,22)"
+%	 p1= "(145.88,22)"
+%	 closure= "open"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%</g>
+%<parallelogram fill-style= "none"
+%	 p3= "(153.88,8)"
+%	 p2= "(153.88,20)"
+%	 p1= "(149.88,20)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(143.88,22);(143.88,22);(143.88,24);(143.88,24);(143.88,24);(151.88,24);
+%	(151.88,24);(151.88,24);(151.88,20);(151.88,20)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(144,32);(144,32);(157,32);(157,32)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(108,4);(108,4);(157,4);(157,4)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(78.5,33)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(95,22);(95,22);(95,32);(95,32);(95,32);(106,32);
+%	(106,32)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(95,13.5);(95,13.5);(95,4);(95,4);(95,4);(106,4);
+%	(106,4)"
+%	 />
+%<circle stroke-width= "0.25"
+%	 fill-style= "none"
+%	 p3= "(99.25,17.75)"
+%	 p2= "(95,13.5)"
+%	 p1= "(90.75,17.75)"
+%	 closure= "plain"
+%	 />
+%<g>
+%<smoothpolygon fill-style= "none"
+%	 closed= "false"
+%	 points= "(93,17.5);(94,20);(95,17.5)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<smoothpolygon fill-style= "none"
+%	 closed= "false"
+%	 points= "(97,17.5);(96,15);(95,17.5)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%</g>
+%<g>
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(93,24.5);(93,24.5);(93,22.5);(93,22.5)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(92,23.5);(92,23.5);(94,23.5);(94,23.5)"
+%	 />
+%</g>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(94,28)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<circle fill-style= "none"
+%	 p3= "(108,32)"
+%	 p2= "(107,31)"
+%	 p1= "(106,32)"
+%	 closure= "plain"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(112,32);(112,32);(108,32);(108,32)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(159,32);(159,32);(164,32);(164,32);(164,32);(164,4);
+%	(164,4);(164,4);(159,4);(159,4)"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(166,39)
+\rput(13,30.5){}
+\psline[linewidth=0.25](12,22)
+(12,32)(23,32)
+\psline[linewidth=0.25](12,13.5)
+(12,4)(23,4)
+\rput{0}(12,17.75){\psellipse[linewidth=0.25](0,0)(4.25,4.25)}
+\psbezier(10,17.5)(10.7,19.25)(11.3,19.25)(12,17.5)
+\psbezier(14,17.5)(13.3,15.75)(12.7,15.75)(12,17.5)
+\rput[B](17,35){$i\ped{o2}$}
+\rput[r](6.5,17.5){$u\ped{o2}$}
+\psline[linewidth=0.25](10,24.5)(10,22.5)
+\psline[linewidth=0.25](9,23.5)(11,23.5)
+\rput[B](100.5,35){$i\ped{cc1}$}
+\rput[r](89.5,18){$u\ped{cc1}$}
+\rput(15,28){}
+\rput(52,2){BT/AT}
+\rput[b](63,35){$r$}
+\rput[b](45,35){$x$}
+\rput[l](40.5,14){$g\ped{Fe}$}
+\rput[r](26,14){$b\ped{m}$}
+\rput{0}(76,4){\psellipse[](0,0)(1,1)}
+\rput{0}(76,32){\psellipse[](0,0)(1,1)}
+\psline[linewidth=0.25]{->}(14,33.5)(21.5,33.5)
+\rput{0}(24,32){\psellipse[](0,0)(1,1)}
+\rput{0}(24,4){\psellipse[](0,0)(1,1)}
+\psline[linewidth=0.25]{-*}(36.88,8)(36.88,4)
+\psline[linewidth=0.25]{-*}(29,6)(29,4)
+\psline[linewidth=0.25]{*-*}(32.88,32)(32.88,24)
+\psline[linewidth=0.25](75,32)(69,32)
+\rput{0}(28.88,12){\psellipticarc[](0,0)(2,2){90}{270}}
+\rput{0}(28.88,8){\psellipticarc[](0,0)(2,2){90}{270}}
+\rput{0}(28.88,16){\psellipticarc[](0,0)(2,2){90}{270}}
+\rput{0}(28.88,20){\psellipticarc[](0,0)(2,2){90}{270}}
+\pspolygon[](34.88,20)(38.88,20)(38.88,8)(34.88,8)
+\psline(28.88,22)
+(28.88,24)
+(36.88,24)(36.88,20)
+\pspolygon[](57,30)(57,34)(69,34)(69,30)
+\rput{0}(39,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(43,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(47,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(51,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\psline(53,32)(57,32)
+\psline(25,32)(37,32)
+\psline(25,4)(75,4)
+\rput(131,2){AT/BT}
+\rput[b](118,35){$r$}
+\rput[b](136,35){$x$}
+\rput[l](155.5,14){$g\ped{Fe}$}
+\rput[r](141,14){$b\ped{m}$}
+\rput{0}(158,4){\psellipse[](0,0)(1,1)}
+\rput{0}(158,32){\psellipse[](0,0)(1,1)}
+\psline[linewidth=0.25]{->}(97,33.5)(104.5,33.5)
+\rput(99,32.5){}
+\rput(95,36){}
+\rput(96.5,28){}
+\rput(78.5,30.5){}
+\rput{0}(107,4){\psellipse[](0,0)(1,1)}
+\psline[linewidth=0.25]{-*}(151.88,8)(151.88,4)
+\psline[linewidth=0.25]{-*}(144,6)(144,4)
+\psline[linewidth=0.25]{*-*}(147.88,32)(147.88,24)
+\psline[linewidth=0.25](128,32)(124,32)
+\pspolygon[](112,30)(112,34)(124,34)(124,30)
+\rput{0}(130,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(134,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(138,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(142,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(143.88,12){\psellipticarc[](0,0)(2,2){90}{270}}
+\rput{0}(143.88,8){\psellipticarc[](0,0)(2,2){90}{270}}
+\rput{0}(143.88,16){\psellipticarc[](0,0)(2,2){90}{270}}
+\rput{0}(143.88,20){\psellipticarc[](0,0)(2,2){90}{270}}
+\pspolygon[](149.88,20)(153.88,20)(153.88,8)(149.88,8)
+\psline(143.88,22)
+(143.88,24)
+(151.88,24)(151.88,20)
+\psline(144,32)(157,32)
+\psline(108,4)(157,4)
+\rput(78.5,33){}
+\psline[linewidth=0.25](95,22)
+(95,32)(106,32)
+\psline[linewidth=0.25](95,13.5)
+(95,4)(106,4)
+\rput{0}(95,17.75){\psellipse[linewidth=0.25](0,0)(4.25,4.25)}
+\psbezier(93,17.5)(93.7,19.25)(94.3,19.25)(95,17.5)
+\psbezier(97,17.5)(96.3,15.75)(95.7,15.75)(95,17.5)
+\psline[linewidth=0.25](93,24.5)(93,22.5)
+\psline[linewidth=0.25](92,23.5)(94,23.5)
+\rput(94,28){}
+\rput{0}(107,32){\psellipse[](0,0)(1,1)}
+\psline(112,32)(108,32)
+\psline(159,32)
+(164,32)
+(164,4)(159,4)
+\end{pspicture}

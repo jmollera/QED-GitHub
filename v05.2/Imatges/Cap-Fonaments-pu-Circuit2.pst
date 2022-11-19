@@ -1,0 +1,37 @@
+    %Created by jPicEdt 1.x
+    %PsTricks format (pstricks.sty needed)
+    %Sat Sep 11 12:39:19 CEST 2004
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \begin{pspicture}(0,0)(122.00,24.00)
+    \psbezier[linewidth=0.25,linecolor=black]{-}(106.00,10.00)(106.67,11.33)(107.33,11.33)(108.00,10.00)
+    \psbezier[linewidth=0.25,linecolor=black]{-}(108.00,10.00)(108.67,8.67)(109.33,8.67)(110.00,10.00)
+    \rput[l](113.00,10.00){1,05}
+    \rput[b](25.00,1.00){$1\!:\!1$}
+    \psline[linewidth=0.25,linecolor=black]{-}(44.00,17.00)(53.00,17.00)
+    \rput[b](78.50,0.50){$0{,}9524\!:\!1$}
+    \rput[b](7.50,19.50){0,12}
+    \rput[b](40.50,19.50){0,15}
+    \rput[b](56.50,19.50){0,1330}
+    \rput[b](94.00,19.50){0,4}
+    \psline[linewidth=0.25,linecolor=black]{-}(110.00,5.50)(110.00,3.50)
+    \psline[linewidth=0.25,linecolor=black]{-}(111.00,4.50)(109.00,4.50)
+    \psline[linewidth=0.25,linecolor=black]{->}(102.50,14.00)(102.50,5.00)
+    \rput[r](101.00,10.00){$\cmplx{i}''\ped{cc}$}
+    \pscircle[linewidth=0.25,linecolor=black](108.00,10.00){4.00}
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](3.50,15.50)(11.00,18.50)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](36.75,15.50)(44.25,18.50)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](53.00,15.50)(60.50,18.50)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](90.25,15.50)(97.75,18.50)
+    \pscircle[linewidth=0.25,linecolor=black](75.00,10.00){5.00}
+    \pscircle[linewidth=0.25,linecolor=black](82.00,10.00){5.00}
+    \pscircle[linewidth=0.25,linecolor=black](21.50,10.00){5.00}
+    \pscircle[linewidth=0.25,linecolor=black](28.50,10.00){5.00}
+    \psline[linewidth=0.25,linecolor=black]{-}(11.00,17.00)(16.00,17.00)(18.50,14.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(3.50,17.00)(1.00,17.00)(1.00,3.00)(15.50,3.00)(18.50,6.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(31.50,14.00)(34.50,17.00)(37.00,17.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(31.50,6.00)(34.50,3.00)(69.00,3.00)(72.00,6.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(60.50,17.00)(69.50,17.00)(72.00,14.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(85.00,14.00)(88.00,17.00)(90.50,17.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(97.50,17.00)(108.00,17.00)(108.00,14.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(85.00,6.00)(88.00,3.00)(108.00,3.00)(108.00,6.00)
+    \end{pspicture}

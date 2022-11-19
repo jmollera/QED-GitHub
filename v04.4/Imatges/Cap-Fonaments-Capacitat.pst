@@ -1,0 +1,80 @@
+%%Created by jPicEdt 1.4pre4: mixed JPIC-XML/LaTeX format
+%%Sat Dec 31 14:23:50 CET 2005
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="36" y-min="0" y-max="25" auto-bounding="false">
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(19,9.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$u(t)$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(25,20.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$i(t)$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(33.5,9.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$C$
+%</text>
+%<ellipse p1="(19,16.5)" p2="(21,16.5)" p3="(21,18.5)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<ellipse p1="(19,0.5)" p2="(21,0.5)" p3="(21,2.5)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(21,17.5);(21,17.5);(30,17.5);(30,17.5);(30,17.5);(30,10.5);
+%	(30,10.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(21,1.5);(21,1.5);(30,1.5);(30,1.5);(30,1.5);(30,8.5);
+%	(30,8.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(22,19.5);(22,19.5);(29,19.5);(29,19.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(20,15.5);(20,15.5);(20,3.5);(20,3.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(32.5,10.5);(32.5,10.5);(27.5,10.5);(27.5,10.5)"
+%	 stroke-width="0.5"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(32.5,8.5);(32.5,8.5);(27.5,8.5);(27.5,8.5)"
+%	 stroke-width="0.5"
+%	 fill-style="none"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PsTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(36,25)
+\rput[r](19,9.5){$u(t)$}
+\rput[b](25,20.5){$i(t)$}
+\rput[l](33.5,9.5){$C$}
+\rput{0}(20,17.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(20,1.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+\psline[linewidth=0.25](21,17.5)(30,17.5)
+(30,17.5)(30,10.5)
+\psline[linewidth=0.25](21,1.5)(30,1.5)
+(30,1.5)(30,8.5)
+\psline[linewidth=0.25]{->}(22,19.5)(29,19.5)
+\psline[linewidth=0.25]{->}(20,15.5)(20,3.5)
+\psline[linewidth=0.5](32.5,10.5)(27.5,10.5)
+\psline[linewidth=0.5](32.5,8.5)(27.5,8.5)
+\end{pspicture}

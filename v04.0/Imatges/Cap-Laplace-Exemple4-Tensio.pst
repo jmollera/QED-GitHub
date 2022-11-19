@@ -1,0 +1,11 @@
+  \psset{xunit=0.25cm,yunit=0.01cm}
+  \begin{pspicture}(-5,-470)(57,500)
+  \psaxes [Dx=5,Dy=100,Ox=0,Oy=-400]{->}(0,-400)(0,-400)(52,450)
+  \psgrid[xunit=1.25cm,yunit=1cm,subgriddiv=1,gridlabels=0pt](0,-4)(10,4)
+  \psplot[plotstyle=curve,plotpoints=400,linewidth=1.5pt,linecolor=brown]{0}{50}{
+   0.3142 x mul 0.6642 sub
+   COS 305.24 mul 0.5 x mul neg EXP 431.67 mul 0.5 x mul 0.9803 sub
+   COS mul sub}
+  \rput(0,480){$u\ped{C}(t)\unit{[V]}$}
+  \rput[l](52.5,-400){$t\unit{[ms]}$}
+  \end{pspicture}

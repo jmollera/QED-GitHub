@@ -1,0 +1,221 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Tue Feb 14 21:06:36 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="55" y-min="0" y-max="40" auto-bounding="false">
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(16.5,8)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{I}_2$
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(31,36)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{Z}_1$
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(16.5,36)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{I}_1$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(26,18.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$\cmplx{Z}\ped{M}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(49,32.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$\cmplx{U}'_1$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(30.5,32.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "solid"
+%	 points= "(25.5,30.5);(25.5,30.5);(35.5,30.5);(35.5,30.5);(35.5,30.5);(35.5,34.5);
+%	(35.5,34.5);(35.5,34.5);(25.5,34.5);(25.5,34.5);(25.5,34.5);(25.5,30.5)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(30.5,4.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "solid"
+%	 points= "(25.5,2.5);(25.5,2.5);(35.5,2.5);(35.5,2.5);(35.5,2.5);(35.5,6.5);
+%	(35.5,6.5);(35.5,6.5);(25.5,6.5);(25.5,6.5);(25.5,6.5);(25.5,2.5)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(35.5,32.5);(35.5,32.5);(45.5,32.5);(45.5,32.5)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(35.5,4.5);(35.5,4.5);(45.5,4.5);(45.5,4.5)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(9.5,32.5);(9.5,32.5);(25.5,32.5);(25.5,32.5)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(9.5,4.5);(9.5,4.5);(25.5,4.5);(25.5,4.5)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(12.5,6.5);(12.5,6.5);(20.5,6.5);(20.5,6.5)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(12.5,34.5);(12.5,34.5);(20.5,34.5);(20.5,34.5)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 fill-style= "none"
+%	 stroke-style= "dashed"
+%	 left-arrow= "head"
+%	 stroke-dasharray= "1;1"
+%	 points= "(24.5,27.5);(24.5,27.5);(24.5,9.5);(24.5,9.5)"
+%	 />
+%<circle p3= "(9.5,4.5)"
+%	 p2= "(8.5,3.5)"
+%	 p1= "(7.5,4.5)"
+%	 fill-style= "none"
+%	 closure= "plain"
+%	 />
+%<circle p3= "(9.5,32.5)"
+%	 p2= "(8.5,31.5)"
+%	 p1= "(7.5,32.5)"
+%	 fill-style= "none"
+%	 closure= "plain"
+%	 />
+%<circle p3= "(47.5,4.5)"
+%	 p2= "(46.5,3.5)"
+%	 p1= "(45.5,4.5)"
+%	 fill-style= "none"
+%	 closure= "plain"
+%	 />
+%<circle p3= "(47.5,32.5)"
+%	 p2= "(46.5,31.5)"
+%	 p1= "(45.5,32.5)"
+%	 fill-style= "none"
+%	 closure= "plain"
+%	 />
+%<ellipse p3= "(25.25,28.5)"
+%	 p2= "(25.25,30)"
+%	 p1= "(23.75,30)"
+%	 fill-style= "solid"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(25.25,6.75)"
+%	 p2= "(25.25,8.25)"
+%	 p1= "(23.75,8.25)"
+%	 fill-style= "solid"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(49,4.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$\cmplx{U}'_2$
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(31,8)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{Z}_2$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(6,4.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{U}_2$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(6,32.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{U}_1$
+%</text>
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(55,40)
+\rput[b](16.5,8){$\cmplx{I}_2$}
+\rput[b](31,36){$\cmplx{Z}_1$}
+\rput[b](16.5,36){$\cmplx{I}_1$}
+\rput[l](26,18.5){$\cmplx{Z}\ped{M}$}
+\rput[l](49,32.5){$\cmplx{U}'_1$}
+\rput(30.5,32.5){}
+\pspolygon[linewidth=0.25,fillstyle=solid](25.5,30.5)
+(35.5,30.5)
+(35.5,34.5)
+(25.5,34.5)(25.5,30.5)
+\rput(30.5,4.5){}
+\pspolygon[linewidth=0.25,fillstyle=solid](25.5,2.5)
+(35.5,2.5)
+(35.5,6.5)
+(25.5,6.5)(25.5,2.5)
+\psline[linewidth=0.25](35.5,32.5)(45.5,32.5)
+\psline[linewidth=0.25](35.5,4.5)(45.5,4.5)
+\psline[linewidth=0.25](9.5,32.5)(25.5,32.5)
+\psline[linewidth=0.25](9.5,4.5)(25.5,4.5)
+\psline[linewidth=0.25]{->}(12.5,6.5)(20.5,6.5)
+\psline[linewidth=0.25]{->}(12.5,34.5)(20.5,34.5)
+\psline[linewidth=0.25,linestyle=dashed,dash=1 1]{<->}(24.5,27.5)(24.5,9.5)
+\rput{0}(8.5,4.5){\psellipse[](0,0)(1,1)}
+\rput{0}(8.5,32.5){\psellipse[](0,0)(1,1)}
+\rput{0}(46.5,4.5){\psellipse[](0,0)(1,1)}
+\rput{0}(46.5,32.5){\psellipse[](0,0)(1,1)}
+\rput{0}(24.5,29.25){\psellipse[fillstyle=solid](0,0)(0.75,-0.75)}
+\rput{0}(24.5,7.5){\psellipse[fillstyle=solid](0,0)(0.75,-0.75)}
+\rput[l](49,4.5){$\cmplx{U}'_2$}
+\rput[b](31,8){$\cmplx{Z}_2$}
+\rput[r](6,4.5){$\cmplx{U}_2$}
+\rput[r](6,32.5){$\cmplx{U}_1$}
+\end{pspicture}

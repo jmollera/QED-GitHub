@@ -1,0 +1,135 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Sat Mar 29 12:40:03 CET 2014
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="75" y-min="0" y-max="28" auto-bounding="false">
+%<multicurve fill-style= "solid"
+%	 right-arrow= "head"
+%	 points= "(22,22);(22,22);(31,22);(31,22)"
+%	 />
+%<text fill-style= "solid"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(26,22.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$i(t)$
+%</text>
+%<text fill-style= "solid"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(59.5,10.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$u\ped{C}(t)$
+%</text>
+%<smoothpolygon fill-style= "none"
+%	 right-arrow= "head"
+%	 closed= "false"
+%	 points= "(62,15.5);(59,10.5);(62.5,5.5)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<parallelogram fill-style= "none"
+%	 p3= "(47,22.5)"
+%	 p2= "(35,22.5)"
+%	 p1= "(35,18.5)"
+%	 />
+%<g>
+%<multicurve fill-style= "none"
+%	 points= "(69,11.5);(69,11.5);(63,11.5);(63,11.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(69,9.5);(69,9.5);(63,9.5);(63,9.5)"
+%	 />
+%</g>
+%<smoothpolygon fill-style= "none"
+%	 right-arrow= "head"
+%	 closed= "false"
+%	 points= "(11.81,23.15);(14.23,22.5);(14.29,19.94)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<text fill-style= "solid"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(14,24.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$t=0$
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(17,21.5);(17,21.5);(17,20.5);(17,20.5);(17,20.5);(35,20.5);
+%	(35,20.5)"
+%	 />
+%<text fill-style= "solid"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(41,23.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$R$
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(47,20.5);(47,20.5);(66.5,20.5);(66.5,20.5);(66.5,20.5);(66.5,11.5);
+%	(66.5,11.5)"
+%	 />
+%<text fill-style= "solid"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(70,10.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$C$
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(66.5,9.5);(66.5,9.5);(66.5,0.5);(66.5,0.5);(66.5,0.5);(7,0.5);
+%	(7,0.5);(7,0.5);(7,20.5);(7,20.5);(7,20.5);(11.5,20.5);
+%	(11.5,20.5);(11.5,20.5);(16,24);(16,24)"
+%	 />
+%<text fill-style= "solid"
+%	 text-vert-align= "top"
+%	 anchor-point= "(40.5,14.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$u\ped{R}(t)$
+%</text>
+%<smoothpolygon fill-style= "none"
+%	 right-arrow= "head"
+%	 closed= "false"
+%	 points= "(33,17);(41,14);(49,17)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(75,28)
+\psline[fillstyle=solid]{->}(22,22)(31,22)
+\rput[b](26,22.5){$i(t)$}
+\rput[r](59.5,10.5){$u\ped{C}(t)$}
+\psbezier{->}(62,15.5)(59.9,12)(60.05,9)(62.5,5.5)
+\pspolygon[](35,18.5)(35,22.5)(47,22.5)(47,18.5)
+\psline(69,11.5)(63,11.5)
+\psline(69,9.5)(63,9.5)
+\psbezier{->}(11.81,23.15)(13.5,22.7)(14.25,21.73)(14.29,19.94)
+\rput[b](14,24.5){$t=0$}
+\psline(17,21.5)
+(17,20.5)(35,20.5)
+\rput[b](41,23.5){$R$}
+\psline(47,20.5)
+(66.5,20.5)(66.5,11.5)
+\rput[l](70,10.5){$C$}
+\psline(66.5,9.5)
+(66.5,0.5)
+(7,0.5)
+(7,20.5)
+(11.5,20.5)(16,24)
+\rput[t](40.5,14.5){$u\ped{R}(t)$}
+\psbezier{->}(33,17)(38.6,14.9)(43.4,14.9)(49,17)
+\end{pspicture}

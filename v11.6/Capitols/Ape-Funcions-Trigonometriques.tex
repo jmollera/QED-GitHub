@@ -1,0 +1,376 @@
+\chapter{Relacions Trigonomètriques}\index{trigonometria}
+
+\section{Funcions Trigonomètriques}\index{funcions trigonomètriques}
+
+En la Taula \vref{taula:func-trig-signes} es pot veure el signe de
+les funcions trigonomètriques, segons en quin dels quatre quadrants
+es trobi l'angle $\alpha$. \textbf{I}: $\alpha\in[0,\frac{\piup}{2}]$, \textbf{II}:
+$\alpha\in[\frac{\piup}{2},\piup]$, \textbf{III}:
+$\alpha\in[\piup,\frac{3\piup}{2}]$, \textbf{IV}:
+$\alpha\in[\frac{3\piup}{2},2\piup]$.
+\index{sin}\index{cos}\index{tan}\index{csc}\index{sec}\index{cot}
+
+\begin{center}
+   \captionof{table}{Signes de les funcions trigonomètriques en el quatre quadrants}
+   \label{taula:func-trig-signes}
+   \begin{tabular}{cccc|cccc}
+   {\color{Green}$\sin\alpha > 0$} & {\color{Red}$\cos\alpha < 0$} & {\color{Red}$\tan\alpha < 0$} & & &
+   {\color{Green}$\sin\alpha > 0$} & {\color{Green}$\cos\alpha > 0$} & {\color{Green}$\tan\alpha > 0$} \\
+   {\color{Green}$\csc\alpha > 0$} & {\color{Red}$\sec\alpha < 0$} & {\color{Red}$\cot\alpha < 0$} & \textbf{II}&
+   \textbf{I} & {\color{Green}$\csc\alpha > 0$} & {\color{Green}$\sec\alpha > 0$} & {\color{Green}$\cot\alpha > 0$} \\
+   \hline
+   {\color{Red}$\sin\alpha < 0$} & {\color{Red}$\cos\alpha < 0$} & {\color{Green}$\tan\alpha > 0$}
+   &\textbf{III} &
+   \textbf{IV} & {\color{Red}$\sin\alpha < 0$} & {\color{Green}$\cos\alpha > 0$} & {\color{Red}$\tan\alpha < 0$} \\
+   {\color{Red}$\csc\alpha < 0$} & {\color{Red}$\sec\alpha < 0$} & {\color{Green}$\cot\alpha > 0$}  & & &
+   {\color{Red}$\csc\alpha < 0$} & {\color{Green}$\sec\alpha > 0$} & {\color{Red}$\cot\alpha < 0$}
+   \end{tabular}
+\end{center}
+
+En la Taula \vref{taula:func-trig-angles} es pot veure el valor de
+les funcions trigonomètriques per a diversos angles usuals.
+
+\begin{center}
+   \captionof{table}{Valors de les funcions trigonomètriques per a diversos angles} \label{taula:func-trig-angles}
+   \begin{tabular}{cccccccc}
+   \toprule[1pt]
+    \multicolumn{2}{c}{$\alpha$} &
+    \multirow{2}{15mm}{\hspace{2ex}\rule{0mm}{6mm}$\sin\alpha$} &
+    \multirow{2}{15mm}{\hspace{2ex}\rule{0mm}{6mm}$\cos\alpha$}  &
+    \multirow{2}{15mm}{\hspace{2ex}\rule{0mm}{6mm}$\tan\alpha$} &
+    \multirow{2}{15mm}{\hspace{2ex}\rule{0mm}{6mm}$\csc\alpha$} &
+    \multirow{2}{15mm}{\hspace{2ex}\rule{0mm}{6mm}$\sec\alpha$}  &
+    \multirow{2}{15mm}{\hspace{2ex}\rule{0mm}{6mm}$\cot\alpha$}\\
+    \cmidrule(rl){1-2}
+    rad & \si{\degree} & & & & & & \\
+   \midrule
+   0 & 0 & 0 & 1 & 0 & $\pm\infty$ & 1 & $\pm\infty$\\[1ex]
+   $\dfrac{\piup}{6}$ & 30 & $\dfrac{1}{2}$ & $\dfrac{\sqrt{3}}{2}$ &
+   $\dfrac{\sqrt{3}}{3}$ & 2 & $\dfrac{2\sqrt{3}}{3}$ & $\sqrt{3}$\\[1.5ex]
+   $\dfrac{\piup}{4}$ & 45 & $\dfrac{\sqrt{2}}{2}$  &
+   $\dfrac{\sqrt{2}}{2}$ & 1 & $\sqrt{2}$ & $\sqrt{2}$ & 1\\[1.5ex]
+   $\dfrac{\piup}{3}$ & 60 &  $\dfrac{\sqrt{3}}{2}$ & $\dfrac{1}{2}$ &
+   $\sqrt{3}$ & $\dfrac{2\sqrt{3}}{3}$ & 2 & $\dfrac{\sqrt{3}}{3}$\\[2ex]
+   $\dfrac{\piup}{2}$ & 90 & 1 & 0 & $\pm\infty$ & 1 & $\pm\infty$ & 0\\[1.5ex]
+   $\piup$ & 180 & 0 & $-1$ & 0 & $\pm\infty$ & $-1$ & $\pm\infty$\\[1ex]
+   $\dfrac{3\piup}{2}$ & 270 & $-1$ & 0 & $\pm\infty$ & $-1$ & $\pm\infty$ & 0\\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+
+ Es presenten a continuació  les funcions trigonomètriques d'angles en qualsevol
+quadrant, en funció d'un angle en el primer quadrant,
+$\alpha\in[0,\frac{\piup}{2}]$.
+\begin{subequations}
+\begin{align}
+    \sin(-\alpha) &= -\sin\alpha  & \csc(-\alpha) &= -\csc\alpha \\
+    \cos(-\alpha) &= +\cos\alpha  & \sec(-\alpha) &= +\sec\alpha \\
+    \tan(-\alpha) &= -\tan\alpha  & \cot(-\alpha) &= -\cot\alpha
+\end{align}
+\end{subequations}
+\vspace{-5mm}
+\begin{subequations}
+\begin{align}
+    \sin\left(\frac{\piup}{2}\pm\alpha\right) &= +\cos\alpha    & \csc\left(\frac{\piup}{2}\pm\alpha\right) &= +\sec\alpha \\
+    \cos\left(\frac{\piup}{2}\pm\alpha\right) &= \mp\sin\alpha  & \sec\left(\frac{\piup}{2}\pm\alpha\right) &= \mp\csc\alpha \\
+    \tan\left(\frac{\piup}{2}\pm\alpha\right) &= \mp\cot\alpha  & \cot\left(\frac{\piup}{2}\pm\alpha\right) &= \mp\tan\alpha
+\end{align}
+\end{subequations}
+\vspace{-5mm}
+\begin{subequations}
+\begin{align}
+    \sin(\piup\pm\alpha) &= \mp\sin\alpha  & \csc(\piup\pm\alpha) &= \mp\csc\alpha \\
+    \cos(\piup\pm\alpha) &= -\cos\alpha    & \sec(\piup\pm\alpha) &= -\sec\alpha \\
+    \tan(\piup\pm\alpha) &= \pm\tan\alpha  & \cot(\piup\pm\alpha) &= \pm\cot\alpha
+\end{align}
+\end{subequations}
+\vspace{-5mm}
+\begin{subequations}
+\begin{align}
+    \sin\left(\frac{3\piup}{2}\pm\alpha\right) &= -\cos\alpha    & \csc\left(\frac{3\piup}{2}\pm\alpha\right) &= -\sec\alpha \\
+    \cos\left(\frac{3\piup}{2}\pm\alpha\right) &= \pm\sin\alpha  & \sec\left(\frac{3\piup}{2}\pm\alpha\right) &= \pm\csc\alpha \\
+    \tan\left(\frac{3\piup}{2}\pm\alpha\right) &= \mp\cot\alpha  & \cot\left(\frac{3\piup}{2}\pm\alpha\right) &= \mp\tan\alpha
+\end{align}
+\end{subequations}
+\vspace{-5mm}
+\begin{subequations}
+\begin{align}
+    \sin(2\piup\pm\alpha) &= \pm\sin\alpha  & \csc(2\piup\pm\alpha) &= \pm\csc\alpha \\
+    \cos(2\piup\pm\alpha) &= +\cos\alpha    & \sec(2\piup\pm\alpha) &= +\sec\alpha \\
+    \tan(2\piup\pm\alpha) &= \pm\tan\alpha  & \cot(2\piup\pm\alpha) &= \pm\cot\alpha
+\end{align}
+\end{subequations}
+
+
+
+
+Es dona a continuació cadascuna de les funcions trigonomètriques en
+funció de totes les altres. El signe $\pm$ que apareix en les
+equacions, ve determinat pel quadrant on es troba l'angle $\alpha$
+(vegeu la Taula \vref{taula:func-trig-signes}).
+\begin{subequations}
+\begin{align}
+\sin\alpha &= \pm\sqrt{1-\cos^2\alpha} =
+\frac{\tan\alpha}{\pm\sqrt{1+\tan^2\alpha}} =
+\frac{1}{\pm\sqrt{1+\cot^2\alpha}} =
+\frac{\pm\sqrt{\sec^2\alpha-1}}{\sec\alpha} = \frac{1}{\csc\alpha}\\[1.6ex]
+\cos\alpha &= \pm\sqrt{1-\sin^2\alpha} =
+\frac{1}{\pm\sqrt{1+\tan^2\alpha}} =
+\frac{\cot\alpha}{\pm\sqrt{1+\cot^2\alpha}} = \frac{1}{\sec\alpha} =
+\frac{\pm\sqrt{\csc^2\alpha-1}}{\csc\alpha}\\[1.6ex]
+\tan\alpha &= \frac{\sin\alpha}{\pm\sqrt{1-\sin^2\alpha}} =
+\frac{\pm\sqrt{1-\cos^2\alpha}}{\cos\alpha} = \frac{1}{\cot\alpha} =
+\pm\sqrt{\sec^2\alpha-1} =
+ \frac{1}{\pm\sqrt{\csc^2\alpha-1}}\displaybreak\\[1.6ex]
+\csc\alpha &= \frac{1}{\sin\alpha} =
+\frac{1}{\pm\sqrt{1-\cos^2\alpha}} =
+\frac{\pm\sqrt{1+\tan^2\alpha}}{\tan\alpha} =
+\pm\sqrt{1+\cot^2\alpha} =
+\frac{\sec\alpha}{\pm\sqrt{\sec^2\alpha-1}}\\[1.6ex]
+\sec\alpha &= \frac{1}{\pm\sqrt{1-\sin^2\alpha}} =
+\frac{1}{\cos\alpha} = \pm\sqrt{1+\tan^2\alpha} =
+\frac{\pm\sqrt{1+\cot^2\alpha}}{\cot\alpha} =
+\frac{\csc\alpha}{\pm\sqrt{\csc^2\alpha-1}}\\[1.6ex]
+\cot\alpha &= \frac{\pm\sqrt{1-\sin^2\alpha}}{\sin\alpha} =
+\frac{\cos\alpha}{\pm\sqrt{1-\cos^2\alpha}} = \frac{1}{\tan\alpha} =
+\frac{1}{\pm\sqrt{\sec^2\alpha-1}} = \pm\sqrt{\csc^2\alpha-1}
+\end{align}
+\end{subequations}
+
+Identitats fonamentals de les funcions trigonomètriques:
+\begin{gather}
+    \sin^2\alpha + \cos^2\alpha = 1 \\
+    1 + \tan^2\alpha = \sec^2\alpha\\
+    1 + \cot^2\alpha = \csc^2\alpha\\
+    \cos\alpha + \ju \sin\alpha = \eu^{\ju\alpha}
+\end{gather}
+
+Funcions trigonomètriques de l'angle doble, i generalització per a
+$n\in\mathbb{Z}$:
+\begin{subequations}
+\begin{align}
+    \sin 2\alpha &= 2 \sin\alpha \cos\alpha & \sin n \alpha &=
+    2\sin[(n-1)\alpha]\cos \alpha -\sin[(n-2)\alpha]\\[1ex]
+    \cos 2\alpha &= 2\cos^2\alpha -1 & \cos n\alpha &=
+    2\cos[(n-1)\alpha]\cos \alpha -\cos[(n-2)\alpha]\\[1ex]
+    \tan 2\alpha &=\frac{2\tan\alpha}{1-\tan^2\alpha} & \tan n
+    \alpha &= \frac{\tan[(n-1)\alpha]+\tan\alpha}{1-\tan[(n-1)\alpha]\tan\alpha}
+\end{align}
+\end{subequations}
+
+
+Funcions trigonomètriques de l'angle meitat. El signe $\pm$ que
+apareix en les equacions, ve determinat pel quadrant on es troba
+l'angle $\frac{\alpha}{2}$ (vegeu la Taula
+\vref{taula:func-trig-signes}):
+\begin{subequations}
+\begin{align}
+    \sin \frac{\alpha}{2} &= \pm \sqrt{\frac{1-\cos\alpha}{2}}\\[1ex]
+    \cos \frac{\alpha}{2} &= \pm \sqrt{\frac{1+\cos\alpha}{2}}\\[1ex]
+    \tan \frac{\alpha}{2} &= \pm \sqrt{\frac{1-\cos\alpha}{1+\cos\alpha}}
+\end{align}
+\end{subequations}
+
+
+Funcions trigonomètriques de la suma i diferència d'angles:
+\begin{subequations}
+\begin{align}
+    \sin(\alpha+\beta) &= \sin\alpha \cos\beta + \sin\beta\cos\alpha &
+    \sin(\alpha-\beta) &= \sin\alpha \cos\beta - \sin\beta\cos\alpha\\[1ex]
+    \cos(\alpha+\beta) &= \cos\alpha \cos\beta - \sin\beta\sin\alpha &
+    \cos(\alpha-\beta) &= \cos\alpha \cos\beta + \sin\beta\sin\alpha\label{eq:D13b}\\[1ex]
+    \tan(\alpha+\beta) &=\frac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta} &
+    \tan(\alpha-\beta)
+    &=\frac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}
+\end{align}
+\end{subequations}
+
+Suma i diferència de funcions trigonomètriques:
+\begin{subequations}
+\begin{align}
+    \sin\alpha+\sin\beta &= 2 \sin\left(\frac{\alpha+\beta}{2}\right)
+    \cos\left(\frac{\alpha-\beta}{2}\right)\\[1ex]
+    \sin\alpha-\sin\beta &= 2 \cos\left(\frac{\alpha+\beta}{2}\right)
+    \sin\left(\frac{\alpha-\beta}{2}\right)\\[1ex]
+    \cos\alpha+\cos\beta &= 2 \cos\left(\frac{\alpha+\beta}{2}\right)
+    \cos\left(\frac{\alpha-\beta}{2}\right)\\[1ex]
+    \cos\alpha-\cos\beta &= -2 \sin\left(\frac{\alpha+\beta}{2}\right)
+    \sin\left(\frac{\alpha-\beta}{2}\right)
+\end{align}
+\end{subequations}
+
+Producte de funcions trigonomètriques:
+\begin{subequations}
+\begin{align}
+    \sin\alpha \cos\beta &=
+    \frac{\sin(\alpha-\beta)+\sin(\alpha+\beta)}{2}\\[1ex]
+    \cos\alpha \cos\beta &=
+    \frac{\cos(\alpha-\beta)+\cos(\alpha+\beta)}{2}\label{eq:D15b}\\[1ex]
+    \sin\alpha \sin\beta &=
+    \frac{\cos(\alpha-\beta)-\cos(\alpha+\beta)}{2}
+\end{align}
+\end{subequations}
+
+Producte de funcions trigonomètriques de la suma i diferència
+d'angles:
+\begin{subequations}
+\begin{align}
+    \sin(\alpha+\beta) \sin(\alpha-\beta) &= \sin^2\alpha-\sin^2\beta =
+    \cos^2\beta - \cos^2\alpha\\[1ex]
+    \cos(\alpha+\beta) \cos(\alpha-\beta) &= \cos^2\alpha-\sin^2\beta =
+    \cos^2\beta - \sin^2\alpha
+\end{align}
+\end{subequations}
+
+Potències de funcions trigonomètriques:
+\begin{subequations}
+\begin{align}
+    \sin^2\alpha &= \frac{1-\cos 2\alpha}{2} &  \cos^2\alpha &= \frac{1+\cos 2\alpha}{2}\\[1ex]
+    \sin^3\alpha &= \frac{3\sin\alpha-\sin 3\alpha}{4} &  \cos^3\alpha &= \frac{3\cos\alpha+\cos 3\alpha}{4}\\[1ex]
+    \sin^4\alpha &= \frac{3-4\cos 2\alpha+\cos 4\alpha}{8} &  \cos^4\alpha &= \frac{3+4\cos 2\alpha+\cos 4\alpha}{8}
+\end{align}
+\end{subequations}
+
+Conversió de la suma d'una funció cosinus i una funció sinus, en una única
+funció cosinus o sinus ($A,B\in\mathbb{R}$):\footnote{Cal tenir en compte que la funció \textsf{arctan} disponible en moltes calculadores i llenguatges de programació, torna de forma estandarditzada valors compresos entre $-\frac{\piup}{2}$ i $\frac{\piup}{2}$. En aquest cas cal sumar el valor $\piup$, quan $A$ és negatiu, a l'angle obtingut amb la funció \textsf{arctan} per tal d'obtenir l'angle en el quadrant correcte.}
+\begin{subequations}
+\begin{align}
+    A \cos \alpha + B \sin \alpha &= \sqrt{A^2+B^2}\, \cos \left(\alpha - \arctan\dfrac{B}{A}\right)\label{eq:AcosBsin}\\[1ex]
+    A \cos \alpha + B \sin \alpha &= \sqrt{A^2+B^2}\, \sin \left(\alpha - \arctan\dfrac{B}{A}+\dfrac{\piup}{2}\right)\label{eq:AcosBsinS}
+\end{align}
+\end{subequations}
+
+
+\section{Lleis trigonomètriques dels triangles}\label{sec:llei-s-c-t}
+
+A continuació es presenten diverses lleis trigonomètriques relacionades amb els triangles. Aquestes lleis relacionen les longituds dels tres costats $a$, $b$ i $c$ d'un triangle qualsevol, com el de
+la Figura \vref{pic:llei-s-c-t}, amb els seus tres angles interiors
+$\alpha$, $\beta$ i $\gamma$, i amb els radis $r$ i $R$ de les circumferències inscrita i circumscrita al triangle. $A$, $B$ i $C$ són els vèrtexs del triangle i $G$ n'és el baricentre.
+
+\begin{center}
+    \input{Imatges/Ape-Trigonometria-Triangle.pdf_tex}
+    \captionof{figure}{Lleis trigonomètriques dels triangles} \label{pic:llei-s-c-t}
+\end{center}
+
+La llei dels sinus ens dona la relació següent:\index{llei dels
+sinus}
+\begin{equation}
+    \frac{a}{\sin\alpha} = \frac{b}{\sin\beta} =
+    \frac{c}{\sin\gamma} = 2 R
+\end{equation}
+
+La llei dels cosinus ens dona les relacions següents:\index{llei
+dels cosinus}
+\begin{subequations}
+\begin{align}
+    a^2 &= b^2 + c^2 - 2 b c \cos\alpha \\[1ex]
+    b^2 &= a^2 + c^2 - 2 a c \cos\beta \\[1ex]
+    c^2 &= a^2 + b^2 - 2 a b \cos\gamma
+\end{align}
+\end{subequations}
+
+La llei de les tangents ens dona les relacions següents:\index{llei
+de les tangents}
+\begin{subequations}
+\begin{align}
+    \frac{a-b}{a+b} &= \frac{\tan\frac{\alpha-\beta}{2}}{\tan\frac{\alpha+\beta}{2}} \\[1ex]
+    \frac{a-c}{a+c} &= \frac{\tan\frac{\alpha-\gamma}{2}}{\tan\frac{\alpha+\gamma}{2}} \\[1ex]
+    \frac{b-c}{b+c} &= \frac{\tan\frac{\beta-\gamma}{2}}{\tan\frac{\beta+\gamma}{2}}
+\end{align}
+\end{subequations}
+
+La llei de les cotangents ens dona la relació següent:\index{llei de les cotangents}
+\begin{equation}
+    \frac{b+c-a}{\cot\frac{\alpha}{2}} = \frac{a+c-b}{\cot\frac{\beta}{2}} =
+    \frac{a+b-c}{\cot\frac{\gamma}{2}} = 2 r
+\end{equation}
+
+La fórmula de Mollweide, la qual lliga els tres costats amb els tres angles interiors d'un triangle, ens dona les relacions següents:\index{fórmula de Mollweide}
+\begin{subequations}
+\begin{align}
+    \frac{a+b}{c} &= \frac{\cos\frac{\alpha-\beta}{2}}{\sin\frac{\gamma}{2}} \\[1ex]
+    \frac{a-b}{c} &= \frac{\sin\frac{\alpha-\beta}{2}}{\cos\frac{\gamma}{2}}
+\end{align}
+\end{subequations}
+
+Tal com s'ha dit en la secció \vref{sec:comp-sim-neutre}, el baricentre del triangle format per tres tensions fase--fase és el punt neutre de l'únic sistema de tres tensions fase--neutre que no té components homopolars. El baricentre és de fet, el centre de masses del triangle (considerant-lo com una figura geomètrica massissa de densitat uniforme).  Les coordenades del baricentre $(G_x,G_y)$ es calculen a partir de les coordenades dels tres vèrtexs $(A_x,A_y)$, $(B_x,B_y)$ i $(C_x,C_y)$ segons:\index{baricentre}
+\begin{subequations}
+\begin{align}
+    G_x &= \frac{A_x + B_x + C_x}{3} \label{eq:bari_x}\\[1ex]
+    G_y &= \frac{A_y + B_y + C_y}{3} \label{eq:bari_y}
+\end{align}
+\end{subequations}
+
+\section{Funcions Hiperbòliques}\index{funcions hiperbòliques}
+
+Definició de les funcions hiperbòliques ($z\in\mathbb{C}$):
+\begin{subequations}
+\begin{align}
+    \sinh z&\equiv \frac{\eu^z - \eu^{-z}}{2} & \csch z &\equiv\frac{1}{\sinh z} =
+    \frac{2}{\eu^z - \eu^{-z}}\\[1ex]
+    \cosh z&\equiv \frac{\eu^z + \eu^{-z}}{2} & \sech z &\equiv\frac{1}{\cosh z} =
+    \frac{2}{\eu^z + \eu^{-z}}\\[1ex]
+    \tanh z&\equiv \frac{\sinh z}{\cosh z} = \frac{\eu^{2z}-1}{\eu^{2z}+1} &
+    \coth z &\equiv\frac{1}{\tanh z} = \frac{\eu^{2z}+1}{\eu^{2z}-1}
+\end{align}
+\end{subequations}
+\index{sinh}\index{cosh}\index{tanh}\index{csch}\index{sech}\index{coth}
+
+Identitats fonamentals de les funcions hiperbòliques
+($z\in\mathbb{C}$):
+\begin{align}
+    &\cosh^2 z - \sinh^2 z = 1 \\
+    &\sech^2 z + \tanh^2 z = 1 \\
+    &\csch^2 z - \coth^2 z = -1 \\
+    &\cosh z + \sinh z = \eu^z
+\end{align}
+
+Les funcions hiperbòliques presenten les següents simetries
+($z\in\mathbb{C}$):
+\begin{subequations}
+\begin{align}
+    \sinh (-z) &= -\sinh z \\
+    \cosh (-z) &= \cosh z\\
+    \tanh (-z) &= -\tanh z
+\end{align}
+\end{subequations}
+
+Funcions hiperbòliques de la suma i diferència d'arguments ($z_1,
+z_2\in\mathbb{C}$):
+\begin{subequations}
+\begin{align}
+    \sinh(z_1+z_2) &= \sinh z_1 \cosh z_2 + \sinh z_2\cosh z_1\\[1ex]
+    \sinh(z_1-z_2) &= \sinh z_1 \cosh z_2 - \sinh z_2\cosh z_1\\[1ex]
+    \cosh(z_1+z_2) &= \cosh z_1 \cosh z_2 + \sinh z_2\sinh z_1\\[1ex]
+    \cosh(z_1-z_2) &= \cosh z_1 \cosh z_2 - \sinh z_2\sinh z_1\\[1ex]
+    \tanh(z_1+z_2) &=\frac{\tanh z_1+\tanh z_2}{1+\tanh z_1\tanh z_2}\\[1ex]
+    \tanh(z_1-z_2) &=\frac{\tanh z_1-\tanh z_2}{1-\tanh z_1\tanh z_2}
+\end{align}
+\end{subequations}
+
+Suma i diferència de funcions hiperbòliques ($z_1,
+z_2\in\mathbb{C}$):
+\begin{subequations}
+\begin{align}
+    \sinh z_1+\sinh z_2 &= 2 \sinh\left(\frac{z_1+z_2}{2}\right)
+    \cosh\left(\frac{z_1-z_2}{2}\right)\\[1ex]
+    \sinh z_1-\sinh z_2 &= 2 \cosh\left(\frac{z_1+z_2}{2}\right)
+    \sinh\left(\frac{z_1-z_2}{2}\right)\\[1ex]
+    \cosh z_1+\cosh z_2 &= 2 \cosh\left(\frac{z_1+z_2}{2}\right)
+    \cosh\left(\frac{z_1-z_2}{2}\right)\\[1ex]
+    \cosh z_1-\cosh z_2 &= 2 \sinh\left(\frac{z_1+z_2}{2}\right)
+    \sinh\left(\frac{z_1-z_2}{2}\right)
+\end{align}
+\end{subequations}
+
+Producte de funcions hiperbòliques ($z_1, z_2\in\mathbb{C}$):
+\begin{subequations}
+\begin{align}
+    \sinh z_1 \cosh z_2 &=
+    \frac{\sinh(z_1+z_2)+\sinh(z_1-z_2)}{2}\\[1ex]
+    \cosh z_1 \cosh z_2 &=
+    \frac{\cosh(z_1+z_2)+\cosh(z_1-z_2)}{2}\\[1ex]
+    \sinh z_1 \sinh z_2 &=
+    \frac{\cosh(z_1+z_2)-\cosh(z_1-z_2)}{2}
+\end{align}
+\end{subequations}

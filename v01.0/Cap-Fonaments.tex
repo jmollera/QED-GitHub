@@ -1,0 +1,1017 @@
+\chapter{Fonaments}
+
+Es tracten en aquest cap\'{\i}tol q\"{u}estions b\`{a}siques d'electrot\`{e}cnia, com ara teoremes, definicions
+i relacions.
+
+\section{Teoremes d'electrot\`{e}cnia}
+
+\ifpdf
+    \subsection{\texorpdfstring{Teorema de Th\'{e}venin--Norton}{Teorema de Th\'{e}venin-Norton}}
+\else
+    \subsection{Teorema de Th\'{e}venin--Norton}
+\fi
+\label{sec:T_N}
+
+\index{teorema!de Th\'{e}venin}El teorema de Th\'{e}venin ens permet substituir una xarxa complexa per un circuit equivalent, format per una font de tensi\'{o} $\cmplx{E}\ped{Th}$ en s\`{e}rie amb una imped\`{a}ncia $\cmplx{Z}\ped{Th}$.
+
+Atenent a la Figura \vref{pic:Thevenin}, si coneixem la tensi\'{o} en buit $\cmplx{U}\ped{o}$ entre dos nodes $\alpha$ i $\beta$ d'una xarxa, i la imped\`{a}ncia $\cmplx{Z}_{\alpha\beta}$ d'aquesta xarxa vista des d'aquests dos nodes, podem obtenir els valors del circuit Th\'{e}venin equivalent entre aquests dos nodes, a partir de les relacions seg\"{u}ents:
+\begin{equation}
+   \cmplx{E}\ped{Th} = \cmplx{U}\ped{o} \qquad\qquad  \cmplx{Z}\ped{Th} = \cmplx{Z}_{\alpha\beta}
+\end{equation}
+
+D'aquesta manera, la connexi\'{o} d'aquesta xarxa a trav\'{e}s dels nodes $\alpha$ i $\beta$ a una
+c\`{a}rrega qualsevol $\cmplx{Z}\ped{Q}$, \'{e}s equivalent pel que fa a aquesta c\`{a}rrega, a connectar
+el circuit equivalent Th\'{e}venin a la c\`{a}rrega.
+\begin{figure}[htb]
+%\vspace{0.25cm}
+\centering
+\PSforPDF{
+    %PsTricks content-type (pstricks.sty package needed)
+    %Add \usepackage{pstricks} in the preamble of your LaTeX file
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \begin{pspicture}(0,0)(146,28)
+    \rput[b](132,22){$\alpha$} \rput[r](60,20){$\alpha$}
+    \rput[r](9,20){$\alpha$} \rput[b](121,23){$\cmplx{Z}\ped{Th}$}
+    \rput[l](141,12){$\cmplx{Z}\ped{Q}$}
+    \rput[l](75,12){$\cmplx{Z}\ped{Q}$}
+    \rput[l](21,12){$\cmplx{U}\ped{o}$}
+    \rput{0}(132,20){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(62,20){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(11,20){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(20,20){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \psline[linewidth=0.25](107,17)(109,17)
+    \psline[linewidth=0.25](108,18)(108,16) \rput[b](132,6){$\beta$}
+    \rput[r](60,4){$\beta$} \rput[r](9,4){$\beta$}
+    \rput{0}(132,4){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(62,4){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(11,4){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(20,4){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput[r](105,12){$\cmplx{E}\ped{Th}$}
+    \psline[linewidth=0.25](12,20)(19,20)
+    \psline[linewidth=0.25](12,4)(19,4) \rput(138,12){}
+    \pspolygon[linewidth=0.25](136,7)(140,7)(140,17)(136,17)
+    \rput(121,20){}
+    \pspolygon[linewidth=0.25](116,18)(126,18)(126,22)(116,22)
+    \psline[linewidth=0.25](126,20)(131,20) \rput(58.5,12){}
+    \pspolygon[linewidth=0.25,linestyle=dashed,dash=1
+    1](52,1)(65,1)(65,23)(52,23) \rput(72,12){}
+    \pspolygon[linewidth=0.25](70,7)(74,7)(74,17)(70,17)
+    \rput(7.5,12){$\cmplx{Z}_{\alpha\beta}$}
+    \pspolygon[linewidth=0.25,linestyle=dashed,dash=1
+    1](1,1)(14,1)(14,23)(1,23) \psline[linewidth=0.25]{->}(20,18)(20,6)
+    \psline[linewidth=0.25](72,17)(72,20) (72,20)(63,20)
+    \psline[linewidth=0.25](63,4)(72,4) (72,4)(72,7)
+    \pscustom[linewidth=0.25]{\psline(138,17)(138,20)
+    \psline(138,20)(133,20) \psbezier(133,20)(133,20)(133,20)(133,20) }
+    \psline[linewidth=0.25](138,7)(138,4) (138,4)(133,4)
+    \psline[linewidth=0.25](110,16)(110,20) (110,20)(116,20)
+    \psline[linewidth=0.25](110,8)(110,4) (110,4)(131,4)
+    \rput{0}(110,12){\psellipse[linewidth=0.25](0,0)(4,4)}
+    \rput(90,12){$\equiv$} \psline[linewidth=0.25](70,7)(74,17)
+    \psline[linewidth=0.25](70,17)(74,7)
+    \psline[linewidth=0.25](116,18)(126,22)
+    \psline[linewidth=0.25](116,22)(126,18)
+    \psline[linewidth=0.25](140,17)(136,7)
+    \psline[linewidth=0.25](136,17)(140,7)
+    \end{pspicture}
+}
+\caption{Teorema de Th\'{e}venin} \label{pic:Thevenin}
+\end{figure}
+
+\index{teorema!de Norton}El teorema de Norton ens permet substituir una xarxa complexa per un circuit equivalent, format per una font de corrent $\cmplx{J}\ped{Th}$ en para{\l.l}el amb una admit\`{a}ncia $\cmplx{Y}\ped{Th}$.
+
+Atenent a la Figura \vref{pic:Norton}, si coneixem el corrent de curt circuit $\cmplx{I}\ped{cc}$ entre dos nodes $\alpha$ i $\beta$ d'una xarxa, i l'admit\`{a}ncia $\cmplx{Y}_{\alpha\beta}$ d'aquesta xarxa vista des d'aquests dos nodes, podem obtenir els valors del circuit Norton equivalent entre aquests dos nodes, a partir de les relacions seg\"{u}ents:
+\begin{equation}
+   \cmplx{J}\ped{Th} = \cmplx{I}\ped{cc} \qquad\qquad \cmplx{Y}\ped{Th} = \cmplx{Y}_{\alpha\beta}
+\end{equation}
+
+D'aquesta manera, la connexi\'{o} d'aquesta xarxa a trav\'{e}s dels nodes $\alpha$ i $\beta$ a una c\`{a}rrega qualsevol $\cmplx{Z}\ped{Q}$, \'{e}s equivalent pel que fa a aquesta c\`{a}rrega, a connectar el circuit equivalent Norton a la c\`{a}rrega.
+\begin{figure}[h]
+%\vspace{0.5cm}
+\centering
+\PSforPDF{
+    %PsTricks content-type (pstricks.sty package needed)
+    %Add \usepackage{pstricks} in the preamble of your LaTeX file
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \begin{pspicture}(0,0)(146,24)
+    \rput[b](132,22){$\alpha$} \rput[r](60,20){$\alpha$}
+    \rput[r](9,20){$\alpha$} \rput[l](141,12){$\cmplx{Z}\ped{Q}$}
+    \rput[l](122,12){$\cmplx{Y}\ped{Th}$}
+    \rput[l](75,12){$\cmplx{Z}\ped{Q}$}
+    \rput[l](21,12){$\cmplx{I}\ped{cc}$}
+    \rput{0}(132,20){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(62,20){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(11,20){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput[b](132,6){$\beta$} \rput[r](60,4){$\beta$}
+    \rput[r](9,4){$\beta$}
+    \rput{0}(132,4){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(62,4){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(11,4){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput[r](105,12){$\cmplx{J}\ped{Th}$} \rput(109,12){}
+    \pspolygon[linewidth=0.25](106,8)(112,8)(112,16)(106,16)
+    \psline[linewidth=0.25]{->}(109,10)(109,14) \rput(119,12){}
+    \pspolygon[linewidth=0.25](117,7)(121,7)(121,17)(117,17)
+    \rput(138,12){}
+    \pspolygon[linewidth=0.25](136,7)(140,7)(140,17)(136,17)
+    \psline[linewidth=0.25](119,7)(119,4)
+    \psline[linewidth=0.25](119,20)(119,17) \rput(72,12){}
+    \pspolygon[linewidth=0.25](70,7)(74,7)(74,17)(70,17)
+    \rput(58.5,12){} \pspolygon[linewidth=0.25,linestyle=dashed,dash=1
+    1](52,1)(65,1)(65,23)(52,23)
+    \rput(7.5,12){$\cmplx{Y}_{\alpha\beta}$}
+    \pspolygon[linewidth=0.25,linestyle=dashed,dash=1
+    1](1,1)(14,1)(14,23)(1,23) \psline[linewidth=0.25]{->}(12,20)(20,20)
+    (20,20)(20,11) \psline[linewidth=0.25](12,4)(20,4) (20,4)(20,12.5)
+    \psline[linewidth=0.25](63,20)(72,20) (72,20)(72,17)
+    \psline[linewidth=0.25](63,4)(72,4) (72,4)(72,7)
+    \psline[linewidth=0.25](133,20)(138,20) (138,20)(138,17)
+    \psline[linewidth=0.25](133,4)(138,4) (138,4)(138,7)
+    \psline[linewidth=0.25](109,16)(109,20) (109,20)(131,20)
+    \psline[linewidth=0.25](109,8)(109,4) (109,4)(131,4)
+    \rput(90,12){$\equiv$} \psline[linewidth=0.25](74,17)(70,7)
+    \psline[linewidth=0.25](70,17)(74,7)
+    \psline[linewidth=0.25](117,17)(121,7)
+    \psline[linewidth=0.25](121,17)(117,7)
+    \psline[linewidth=0.25](140,17)(136,7)
+    \psline[linewidth=0.25](136,17)(140,7)
+    \end{pspicture}
+}
+\caption{Teorema de Norton} \label{pic:Norton}
+\end{figure}
+
+Els circuits Th\'{e}venin i Norton d'una xarxa s\'{o}n equivalents entre si.
+Els par\`{a}metres que defineixen aquests circuits guarden les relacions
+seg\"{u}ents:
+\begin{equation}\label{eq:Thevenin-Norton}
+   \cmplx{E}\ped{Th} = \cmplx{Z}\ped{Th} \, \cmplx{J}\ped{Th} \qquad\qquad \cmplx{Z}\ped{Th} = \frac{1}{\cmplx{Y}\ped{Th}}
+\end{equation}
+
+Els valors $\cmplx{Z}\ped{Th}$ o  $\cmplx{Y}\ped{Th}$ es poden obtenir substituint totes
+les font de tensi\'{o}  per curt circuits, i totes les font de corrent per circuits
+oberts, i calculant aleshores la imped\`{a}ncia o admit\`{a}ncia equivalent.
+
+\subsection{Teorema de Millman}
+
+\index{teorema!de Millman}Atenent a la Figura \vref{pic:Millman}, el teorema de Millman ens permet
+obtenir la tensi\'{o} de l'extrem com\'{u} $\nu$ de diverses imped\`{a}ncies, respecte d'un punt
+qualsevol $\alpha$, a partir de les tensions dels altres extrems de les imped\`{a}ncies respecte
+ del mateix punt $\alpha$.
+
+\begin{figure}[htb]
+%\vspace{0.3cm}
+\hfill
+\begin{minipage}[b]{7cm}
+\PSforPDF{
+    %PsTricks content-type (pstricks.sty package needed)
+    %Add \usepackage{pstricks} in the preamble of your LaTeX file
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \begin{pspicture}(0,0)(70,55)
+    \psline[linewidth=0.25](54,15)(46,15)
+    \psline[linewidth=0.25](54,35)(46,35)
+    \psline[linewidth=0.25](54,48)(46,48) \rput(40.5,15){}
+    \pspolygon[linewidth=0.25](35,13)(46,13)(46,17)(35,17)
+    \rput(40.5,35){}
+    \pspolygon[linewidth=0.25](35,33)(46,33)(46,37)(35,37)
+    \rput(40.5,48){}
+    \pspolygon[linewidth=0.25](35,46)(46,46)(46,50)(35,50)
+    \rput[r](15,35){2} \rput[r](5,48){1} \rput[l](64,29){$\nu$}
+    \rput[l](64,1){$\alpha$} \rput[r](25,15){n}
+    \rput[b](41,18){$\cmplx{Z}\ped{n}$}
+    \rput[b](41,38){$\cmplx{Z}\ped{2}$}
+    \rput[b](41,51){$\cmplx{Z}\ped{1}$}
+    \rput[br](6,26){$\cmplx{U}_{1\alpha}$}
+    \rput[br](26,7){$\cmplx{U}_{n\alpha}$}
+    \rput[br](16,20){$\cmplx{U}_{2\alpha}$}
+    \rput[bl](63,13){$\cmplx{U}_{\nu\alpha}$}
+    \psline[linewidth=0.25](54,29)(61,29)
+    \psline[linewidth=0.25]{->}(62,27)(62,3)
+    \psline[linewidth=0.25]{->}(27,13)(27,2)
+    \psline[linewidth=0.25]{->}(17,33)(17,2)
+    \psline[linewidth=0.25]{->}(7,46)(7,2)
+    \psline[linewidth=0.25](61,1)(6,1)
+    \psline[linewidth=0.25](35,48)(8,48)
+    \psline[linewidth=0.25](35,35)(18,35)
+    \psline[linewidth=0.25](54,48)(54,15) \rput(40,27.5){}
+    \psline[linewidth=0.25](35,15)(28,15)
+    \rput{0}(17,35){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(27,15){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(7,48){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(62,1){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(62,29){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \psline[linewidth=0.25,linestyle=dashed,dash=1 1](40,31)(40,24)
+    \psline[linewidth=0.25](35,50)(46,46)
+    \psline[linewidth=0.25](46,50)(35,46)
+    \psline[linewidth=0.25](35,37)(46,33)
+    \psline[linewidth=0.25](46,37)(35,33)
+    \psline[linewidth=0.25](35,17)(46,13)
+    \psline[linewidth=0.25](46,17)(35,13)
+    \end{pspicture}
+}
+    \caption{Teorema de Millman} \label{pic:Millman}
+\end{minipage}
+\hfill
+\begin{minipage}[b][4.5cm][t]{6cm}
+    \begin{equation}
+        \cmplx{U}_{\nu\alpha} = \frac{\displaystyle\sum_{k=1}^n \dfrac{\cmplx{U}_{k\alpha}}{\cmplx{Z}_k}} {\displaystyle\sum_{k=1}^n \dfrac{1}{\cmplx{Z}_k}}
+    \end{equation}
+\end{minipage}
+\end{figure}
+
+\begin{exemple}
+
+A partir de la figura seg\"{u}ent, es tracta de determinar els circuits
+Th\'{e}venin i Norton equivalents del circuit format per les tres
+bateries i les seves resist\`{e}ncies, i calcular la tensi\'{o} i la
+intensitat que existirien en una resist\`{e}ncia de c\`{a}rrega
+$R\ped{Q}=50\unit{\ohm}$, que es connect\'{e}s entre els punts $\alpha$
+i $\nu$.
+
+\PSforPDF{
+    %Created by jPicEdt 1.x
+    %PsTricks format (pstricks.sty needed)
+    %Sat Sep 11 12:14:54 CEST 2004
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \begin{pspicture}(0,0)(130.00,38.00)
+    \rput(22.00,14.50){}
+    \psframe[linewidth=0.25,linecolor=black](20.00,9.00)(24.00,20.00)
+    \rput(56.00,14.50){}
+    \psframe[linewidth=0.25,linecolor=black](54.00,9.00)(58.00,20.00)
+    \rput(94.00,14.50){}
+    \psframe[linewidth=0.25,linecolor=black](92.00,9.00)(96.00,20.00)
+    \rput[l](127.00,2.00){$\nu$}
+    \rput[l](127.00,37.00){$\alpha$}
+    \rput[l](26.00,14.00){$0{,}034\unit{\ohm}$}
+    \rput[l](60.00,14.00){$0{,}041\unit{\ohm}$}
+    \rput[l](98.00,14.00){$0{,}029\unit{\ohm}$}
+    \rput[l](29.00,30.00){$125{,}1\unit{V}$}
+    \rput[l](63.00,30.00){$124{,}8\unit{V}$}
+    \rput[l](101.00,30.00){$125{,}2\unit{V}$}
+    \pscircle[linewidth=0.25,linecolor=black](125.00,37.00){1.00}
+    \pscircle[linewidth=0.25,linecolor=black](125.00,2.00){1.00}
+    \psline[linewidth=0.50,linecolor=black]{-}(27.00,30.00)(17.00,30.00)
+    \psline[linewidth=0.50,linecolor=black]{-}(61.00,30.00)(51.00,30.00)
+    \psline[linewidth=0.50,linecolor=black]{-}(99.00,30.00)(89.00,30.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(94.00,20.00)(94.00,28.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(56.00,20.00)(56.00,28.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(22.00,20.00)(22.00,28.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(56.00,30.00)(56.00,37.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(94.00,30.00)(94.00,37.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(94.00,9.00)(94.00,2.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(56.00,9.00)(56.00,2.00)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](20.00,28.00)(24.00,29.00)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](54.00,28.00)(58.00,29.00)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](92.00,28.00)(96.00,29.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(124.00,37.00)(22.00,37.00)(22.00,30.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(124.00,2.00)(22.00,2.00)(22.00,9.00)
+    \end{pspicture}
+}
+
+La imped\`{a}ncia Th\'{e}venin equivalent es calcula, tal com s'ha dit en la Secci\'{o} \ref{sec:T_N},
+substituint en el circuit totes les fonts de tensi\'{o} per curt circuits, aix\'{\i} doncs, ens
+queden tres resist\`{e}ncies en para{\l.l}el entre $\alpha$ i $\nu$:
+
+\[
+Z\ped{Th} = R_{\alpha\nu} =\frac{1}{\dfrac{1}{0{,}034\unit{\ohm}} +
+\dfrac{1}{0{,}041\unit{\ohm}} + \dfrac{1}{0{,}029\unit{\ohm}}} =
+0{,}01133\unit{\ohm}
+\]
+
+Per calcular la font de tensi\'{o} Th\'{e}venin equivalent, utilitzarem el teorema de Millman. Si
+es compara aquest circuit amb el de la Figura \vref{pic:Millman}, veurem que els punts $\alpha$
+i $\nu$ dels dos circuits s\'{o}n equivalents, \'{e}s a dir, $\nu$ \'{e}s el punt com\'{u} de les imped\`{a}ncies, i $\alpha$ \'{e}s
+el punt de refer\`{e}ncia dels altres extrems de les imped\`{a}ncies, respecte del qual les
+tensions s\'{o}n conegudes (tensions de les bateries). Aix\'{\i} doncs tenim:
+
+\[
+U_{\nu\alpha} = \frac{\dfrac{-125{,}1\unit{V}}{0{,}034\unit{\ohm}} +
+\dfrac{-124{,}8\unit{V}}{0{,}041\unit{\ohm}} +
+\dfrac{-125{,}2\unit{V}}{0{,}029\unit{\ohm}}}{\dfrac{1}{0{,}034\unit{\ohm}}
++ \dfrac{1}{0{,}041\unit{\ohm}} + \dfrac{1}{0{,}029\unit{\ohm}}} =
+-125{,}0562\unit{V}
+\]
+
+La font de tensi\'{o}  Th\'{e}venin equivalent \'{e}s per tant:
+\[
+E\ped{Th} = U_{\alpha\nu} = 125{,}0562\unit{V}
+\]
+
+Calculem a continuaci\'{o} l'admit\`{a}ncia i la font de corrent  Norton equivalents, utilitzant
+l'equaci\'{o} \eqref{eq:Thevenin-Norton}:
+\begin{align*}
+    Y\ped{Th} &= \frac{1}{Z\ped{Th}} = \frac{1}{0{,}01133\unit{\ohm}} = 82{,}2613\unit{S}
+    \\[2ex]
+    J\ped{Th} &= \frac{E\ped{Th}}{Z\ped{Th}} =
+    \frac{125{,}0562\unit{V}}{0{,}01133\unit{\ohm}}= 11037{,}6150\unit{A}
+\end{align*}
+
+Tal com s'ha dit en la Secci\'{o} \ref{sec:T_N}, J\ped{Th} \'{e}s igual a la intensitat de curt
+circuit entre els punts $\alpha$ i $\nu$.
+
+Finalment, ja podem calcular el corrent $I\ped{Q}$ i la tensi\'{o} $U\ped{Q}$ en la
+resist\`{e}ncia de c\`{a}rrega, utilitzant el circuit Th\'{e}venin equivalent calculat anteriorment:
+\begin{align*}
+    I\ped{Q} &= \frac{E\ped{Th}}{Z\ped{Th} + R\ped{Q}} = \frac{125{,}0562\unit{V}}
+    {0{,}01133\unit{\ohm} + 50\unit{\ohm}} = 2{,}5001\unit{A} \\[2ex]
+    U\ped{Q} &=  R\ped{Q} I\ped{Q} = 50\unit{\ohm} \cdot 2{,}5001\unit{A} =
+    125{,}0050\unit{V}
+\end{align*}
+
+\end{exemple}
+
+
+\section{Components elementals d'un circuit el\`{e}ctric}
+
+Es presenten a continuaci\'{o} les lleis temporals que lliguen tensions, corrents i pot\`{e}ncies, per
+a diversos components elementals d'un circuit el\`{e}ctric. Es donen tamb\'{e} les relacions entre
+tensions i corrents en el domini freq\"{u}encial (corrent altern sinuso\"{\i}dal, amb $\omega=2\pi f$) i
+en el domini operacional (transformada de Laplace).
+
+Cal tenir en compte que les relacions que es donen, s\'{o}n v\`{a}lides
+nom\'{e}s quan es tenen en consideraci\'{o} els sentits assignats als
+corrents i a les tensions en les figures corresponents.
+
+\subsection{Resist\`{e}ncia} \index{resist\`{e}ncia}
+
+\index{resist\`{e}ncia!llei temporal}Per a una resist\`{e}ncia $R$ (Figura
+\vref{pic:resist}), la llei temporal entre la tensi\'{o} $u(t)$ i el
+corrent $i(t)$, i la llei temporal de la pot\`{e}ncia $p(t)$ s\'{o}n:
+\begin{figure}[h!]
+\hfill
+\begin{minipage}[b]{5cm}
+\PSforPDF{
+    %Created by jPicEdt 1.x
+    %PsTricks format (pstricks.sty needed)
+    %Sat Sep 11 18:37:33 CEST 2004
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \begin{pspicture}(0,0)(36.00,25.00)
+    \rput[r](19.00,9.50){$u(t)$}
+    \psline[linewidth=0.25,linecolor=black]{->}(20.00,15.50)(20.00,3.50)
+    \psline[linewidth=0.25,linecolor=black]{->}(22.00,19.50)(29.00,19.50)
+    \rput[b](25.00,20.50){$i(t)$}
+    \rput[l](33.00,9.50){$R$}
+    \rput(30.00,9.50){}
+    \psframe[linewidth=0.25,linecolor=black](28.00,4.50)(32.00,14.50)
+    \pscircle[linewidth=0.25,linecolor=black](20.00,17.50){1.00}
+    \pscircle[linewidth=0.25,linecolor=black](20.00,1.50){1.00}
+    \psline[linewidth=0.25,linecolor=black]{-}(21.00,17.50)(30.00,17.50)(30.00,14.50)
+    \psline[linewidth=0.25,linecolor=black]{-}(21.00,1.50)(30.00,1.50)(30.00,4.50)
+    \end{pspicture}
+}
+\caption{Resist\`{e}ncia} \label{pic:resist}
+\end{minipage}
+\hfill
+\begin{minipage}[b][3.25cm][t]{8cm}
+   \begin{align}
+      u(t) &= R i(t) \\  p(t) &= u(t) i(t) = R i^2(t) = \frac{u^2(t)}{R}
+   \end{align}
+\end{minipage}
+\end{figure}
+
+\index{resist\`{e}ncia!domini freq\"{u}encial}En el domini freq\"{u}encial, la relaci\'{o} entre
+la tensi\'{o} $\cmplx{U}$ i el corrent $\cmplx{I}$, i la relaci\'{o} entre els arguments de
+la tensi\'{o} $\varphi_{\cmplx{U}}$ i del corrent $\varphi_{\cmplx{I}}$ s\'{o}n:
+\begin{align}
+   \cmplx{U} &= R \cmplx{I} \\ \varphi_{\cmplx{U}} &= \varphi_{\cmplx{I}}
+\end{align}
+
+\index{resist\`{e}ncia!domini operacional} En el domini operacional, la relaci\'{o} entre la tensi\'{o} $U(s)$ i el corrent $I(s)$ \'{e}s:
+\begin{equation}
+   U(s) = R I(s)
+\end{equation}
+
+\subsection{Capacitat} \index{capacitat}
+
+\index{capacitat!llei temporal}Per a una capacitat $C$ (Figura
+\vref{pic:capacit}), les lleis temporals entre la tensi\'{o} $u(t)$ i el
+corrent $i(t)$, i la llei temporal de la pot\`{e}ncia $p(t)$ s\'{o}n:
+\vspace{-1mm}
+\begin{figure}[h!]
+\hfill
+\begin{minipage}[b]{5cm}
+\PSforPDF{
+    %Created by jPicEdt 1.x
+    %PsTricks format (pstricks.sty needed)
+    %Sat Sep 11 15:29:50 CEST 2004
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \begin{pspicture}(0,0)(36.00,25.00)
+    \rput[r](19.00,9.50){$u(t)$}
+    \rput[b](25.00,20.50){$i(t)$}
+    \rput[l](33.00,9.50){$C$}
+    \psline[linewidth=0.50,linecolor=black]{-}(28.00,10.50)(32.00,10.50)
+    \psline[linewidth=0.50,linecolor=black]{-}(28.00,8.50)(32.00,8.50)
+    \pscircle[linewidth=0.25,linecolor=black](20.00,17.50){1.00}
+    \pscircle[linewidth=0.25,linecolor=black](20.00,1.50){1.00}
+    \psline[linewidth=0.25,linecolor=black]{-}(21.00,17.50)(30.00,17.50)(30.00,10.50)
+    \psline[linewidth=0.25,linecolor=black]{-}(21.00,1.50)(30.00,1.50)(30.00,8.50)
+    \psline[linewidth=0.25,linecolor=black]{->}(22.00,19.50)(29.00,19.50)
+    \psline[linewidth=0.25,linecolor=black]{->}(20.00,15.50)(20.00,3.50)
+    \end{pspicture}
+}
+\caption{Capacitat} \label{pic:capacit}
+\end{minipage}
+\hfill
+\begin{minipage}[b][3.8cm][t]{8cm}
+   \begin{align}
+      u(t) &= u(t_0) + \frac{1}{C} \int_{t_0}^t i(t) \diff t \\
+      i(t) &= C \deriv{u(t)}{t} \\
+      p(t) &= u(t) i(t) = C u(t) \deriv{u(t)}{t}
+   \end{align}
+\end{minipage}
+\end{figure}
+
+\index{capacitat!domini freq\"{u}encial}En el domini freq\"{u}encial, la relaci\'{o} entre la tensi\'{o} $\cmplx{U}$ i el corrent $\cmplx{I}$, i la relaci\'{o} entre els arguments de la tensi\'{o} $\varphi_{\cmplx{U}}$ i del corrent $\varphi_{\cmplx{I}}$ s\'{o}n:
+\begin{align}
+   \cmplx{U} &= -\ju \frac{1}{\omega C} \cmplx{I} \\
+   \varphi_{\cmplx{U}} &= \varphi_{\cmplx{I}} - \frac{\pi}{2}
+\end{align}
+
+\index{capacitat!domini operacional}En el domini operacional, la relaci\'{o} entre la tensi\'{o} $U(s)$ i el corrent $I(s)$ \'{e}s:
+\begin{equation}
+   U(s) = \frac{1}{s C} I(s) + \frac{u(t_0)}{s}
+\end{equation}
+
+
+\subsection{Induct\`{a}ncia} \index{induct\`{a}ncia}
+
+\index{induct\`{a}ncia!llei temporal}Per a una induct\`{a}ncia $L$ (Figura \vref{pic:induct}),
+les lleis temporals entre la tensi\'{o} $u(t)$ i el corrent $i(t)$, i la llei temporal
+de la pot\`{e}ncia $p(t)$ s\'{o}n:
+\begin{figure}[htb]
+\hfill
+\begin{minipage}[b]{5cm}
+\PSforPDF{
+    %Created by jPicEdt 1.x
+    %PsTricks format (pstricks.sty needed)
+    %Sat Sep 11 18:43:01 CEST 2004
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \begin{pspicture}(0,0)(36.00,25.00)
+    \psline[linewidth=0.25,linecolor=black]{->}(20.00,15.50)(20.00,3.50)
+    \psline[linewidth=0.25,linecolor=black]{->}(22.00,19.50)(29.00,19.50)
+    \rput[b](25.00,20.50){$i(t)$}
+    \rput[l](33.00,9.50){$L$}
+    \rput[r](19.00,9.50){$u(t)$}
+    \pscircle[linewidth=0.25,linecolor=black](20.00,17.50){1.00}
+    \pscircle[linewidth=0.25,linecolor=black](20.00,1.50){1.00}
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](28.00,4.50)(32.00,14.50)
+    \psline[linewidth=0.25,linecolor=black]{-}(21.00,17.50)(30.00,17.50)(30.00,14.50)
+    \psline[linewidth=0.25,linecolor=black]{-}(21.00,1.50)(30.00,1.50)(30.00,4.50)
+    \end{pspicture}
+}
+\caption{Induct\`{a}ncia} \label{pic:induct}
+\end{minipage}
+\hfill
+\begin{minipage}[b][3.8cm][t]{8cm}
+   \begin{align}
+      i(t) &= i(t_0) + \frac{1}{L} \int_{t_0}^t u(t) \diff t \\
+      u(t) &= L \deriv{i(t)}{t} \\
+      p(t) &= u(t) i(t) = L i(t) \deriv{i(t)}{t}
+   \end{align}
+\end{minipage}
+\end{figure}
+
+\index{induct\`{a}ncia!domini freq\"{u}encial}En el domini freq\"{u}encial, la relaci\'{o} entre la tensi\'{o} $\cmplx{U}$ i el corrent $\cmplx{I}$, i la relaci\'{o} entre els arguments de la tensi\'{o} $\varphi_{\cmplx{U}}$ i del corrent $\varphi_{\cmplx{I}}$ s\'{o}n:
+\begin{align}
+   \cmplx{U} &= \ju \omega L \cmplx{I} \\
+   \varphi_{\cmplx{U}} &= \varphi_{\cmplx{I}} + \frac{\pi}{2}
+\end{align}
+
+\index{induct\`{a}ncia!domini operacional} En el domini operacional, la relaci\'{o} entre la tensi\'{o} $U(s)$ i el corrent $I(s)$ \'{e}s:
+\begin{equation}
+   U(s) = s L I(s) - L i(t_0)
+\end{equation}
+
+
+\subsection{Acoblament magn\`{e}tic} \index{acoblament magn\`{e}tic}
+
+\index{acoblament magn\`{e}tic!llei temporal}Per a un acoblament magn\`{e}tic $M$ entre dues
+induct\`{a}ncies $L_1$ i $L_2$ (Figura \vref{pic:acobl}), les lleis temporals entre les
+tensions $u_1(t)$ i $u_2(t)$ i els corrents $i_1(t)$ i $i_2(t)$,  i la llei temporal
+de la pot\`{e}ncia $p(t)$ s\'{o}n: \pagebreak
+\begin{figure}[h!]
+\hfill
+\begin{minipage}[b]{6cm}
+\PSforPDF{
+    %Created by jPicEdt 1.x
+    %PsTricks format (pstricks.sty needed)
+    %Sat Sep 11 15:33:27 CEST 2004
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \begin{pspicture}(0,0)(53.00,25.00)
+    \rput[l](25.00,9.50){$L_1$}
+    \rput[r](35.00,9.50){$L_2$}
+    \rput[r](11.00,9.50){$u_1(t)$}
+    \rput[l](49.00,9.50){$u_2(t)$}
+    \rput[b](17.00,20.50){$i_1(t)$}
+    \rput[b](43.00,20.50){$i_2(t)$}
+    \pscircle[linewidth=0.25,linecolor=black,fillcolor=black,fillstyle=solid](25.00,15.50){1.00}
+    \pscircle[linewidth=0.25,linecolor=black,fillcolor=black,fillstyle=solid](35.00,15.50){1.00}
+    \rput[b](30.00,16.50){$M$}
+    \pscircle[linewidth=0.25,linecolor=black](12.00,17.50){1.00}
+    \pscircle[linewidth=0.25,linecolor=black](12.00,1.50){1.00}
+    \pscircle[linewidth=0.25,linecolor=black](48.00,17.50){1.00}
+    \pscircle[linewidth=0.25,linecolor=black](48.00,1.50){1.00}
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](20.00,4.50)(24.00,14.50)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](36.00,4.50)(40.00,14.50)
+    \psline[linewidth=0.25,linecolor=black,linestyle=dashed,dash=1.00 1.00]{<->}(27.00,15.50)(33.00,15.50)
+    \psline[linewidth=0.25,linecolor=black]{-}(13.00,17.50)(22.00,17.50)(22.00,14.50)
+    \psline[linewidth=0.25,linecolor=black]{-}(47.00,17.50)(38.00,17.50)(38.00,14.50)
+    \psline[linewidth=0.25,linecolor=black]{-}(47.00,1.50)(38.00,1.50)(38.00,4.50)
+    \psline[linewidth=0.25,linecolor=black]{-}(13.00,1.50)(22.00,1.50)(22.00,4.50)
+    \psline[linewidth=0.25,linecolor=black]{->}(14.00,19.50)(21.00,19.50)
+    \psline[linewidth=0.25,linecolor=black]{<-}(39.00,19.50)(46.00,19.50)
+    \psline[linewidth=0.25,linecolor=black]{->}(12.00,15.50)(12.00,3.50)
+    \psline[linewidth=0.25,linecolor=black]{->}(48.00,15.50)(48.00,3.50)
+    \end{pspicture}
+}
+   \caption{Acoblament magn\`{e}tic} \label{pic:acobl}
+\end{minipage}
+\hfill
+\begin{minipage}[b][3.8cm][t]{10cm}
+   \begin{align}
+      u_1(t) &= L_1 \deriv{i_1(t)}{t} + M \deriv{i_2(t)}{t} \\
+      u_2(t) &= L_2 \deriv{i_2(t)}{t} + M \deriv{i_1(t)}{t} \\
+      p(t) &= \frac{\diff}{\diff t} \left[ \frac{1}{2} L_1 i_1^2(t) + \frac{1}{2} L_2 i_2^2(t) +
+      M i_1(t) i_2(t) \right]
+   \end{align}
+\end{minipage}
+\end{figure}
+
+\index{acoblament magn\`{e}tic!domini freq\"{u}encial}En el domini freq\"{u}encial, les relacions entre les tensions $\cmplx{U}_1$ i $\cmplx{U}_2$ i els corrents $\cmplx{I}_1$ i $\cmplx{I}_2$ s\'{o}n:
+\begin{align}
+   \cmplx{U}_1 &= \ju \omega L_1 \cmplx{I}_1 + \ju \omega M \cmplx{I}_2 \\
+   \cmplx{U}_2 &= \ju \omega L_2 \cmplx{I}_2 + \ju \omega M \cmplx{I}_1
+\end{align}
+
+\index{acoblament magn\`{e}tic!domini operacional}En el domini operacional, les relacions entre les tensions $U_1(s)$  i $U_2(s)$ i els corrents $I_1(s)$ i $I_2(s)$ s\'{o}n:
+\begin{align}
+   U_1(s) &= s L_1 I_1(s) - L_1 i_1(t_0) + s M I_2(s) - M i_2(t_0) \\
+   U_2(s) &= s L_2 I_2(s) - L_2 i_2(t_0) + s M I_1(s) - M i_1(t_0)
+\end{align}
+
+\subsection{Transformador ideal} \index{transformador ideal}
+
+\index{transformador ideal!llei temporal}Per a un transformador ideal
+de relaci\'{o} $\ddot{u}:1$ (Figura \vref{pic:transf}), la llei temporal entre les tensions de
+primari $u_1(t)$ i de secundari $u_2(t)$, la llei temporal entre els corrents de primari
+$i_1(t)$ i de secundari $i_2(t)$, i la llei temporal de la pot\`{e}ncia $p(t)$ s\'{o}n:
+\begin{figure}[htb]
+\hfill
+\begin{minipage}[b]{6cm}
+\PSforPDF{
+    %Created by jPicEdt 1.x
+    %PsTricks format (pstricks.sty needed)
+    %Mon Dec 27 14:16:41 CET 2004
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \begin{pspicture}(0,0)(54.00,27.00)
+    \rput[r](13.00,11.00){$u_1(t)$} \rput[l](43.00,11.00){$u_2(t)$}
+    \psline[linewidth=0.25,linecolor=black]{->}(14.00,17.00)(14.00,5.00)
+    \psline[linewidth=0.25,linecolor=black]{->}(42.00,17.00)(42.00,5.00)
+    \psline[linewidth=0.25,linecolor=black]{->}(16.00,21.00)(23.00,21.00)
+    \psline[linewidth=0.25,linecolor=black]{->}(33.00,21.00)(40.00,21.00)
+    \rput[b](19.00,22.00){$i_1(t)$} \rput[b](36.00,22.00){$i_2(t)$}
+    \pscircle[linewidth=0.25,linecolor=black,fillcolor=black,fillstyle=solid](25.75,17.25){0.75}
+    \pscircle[linewidth=0.25,linecolor=black,fillcolor=black,fillstyle=solid](30.25,17.25){0.75}
+    \rput(28.00,2.00){$\ddot{u}:1$}
+    \pscircle[linewidth=0.25,linecolor=black](14.00,19.00){1.00}
+    \pscircle[linewidth=0.25,linecolor=black](42.00,19.00){1.00}
+    \pscircle[linewidth=0.25,linecolor=black](14.00,3.00){1.00}
+    \pscircle[linewidth=0.25,linecolor=black](42.00,3.00){1.00}
+    \psline[linewidth=0.40,linecolor=black]{-}(28.00,16.00)(28.00,6.00)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](22.00,6.00)(26.00,16.00)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](30.00,6.00)(34.00,16.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(15.00,19.00)(24.00,19.00)(24.00,16.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(41.00,19.00)(32.00,19.00)(32.00,16.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(41.00,3.00)(32.00,3.00)(32.00,6.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(15.00,3.00)(24.00,3.00)(24.00,6.00)
+    \end{pspicture}
+}
+\caption{Transformador ideal} \label{pic:transf}
+\end{minipage}
+\hfill
+\begin{minipage}[b][3.7cm][t]{10cm}
+   \begin{align}
+      u_1(t) &= \ddot{u} u_2(t) \\
+      i_1(t) &= \frac{i_2(t)}{\ddot{u}} \\
+      p(t) &= u_1(t) i_1(t) - u_2(t) i_2(t) = 0
+   \end{align}
+\end{minipage}
+\end{figure}
+
+\index{transformador ideal!domini freq\"{u}encial} En el domini freq\"{u}encial, la relaci\'{o} entre les tensions de primari $\cmplx{U}_1$ i de secundari $\cmplx{U}_2$, la relaci\'{o} entre els corrents de primari $\cmplx{I}_1$ i de secundari $\cmplx{I}_2$, la relaci\'{o} entre els arguments de les tensions de primari $\varphi_{\cmplx{U}_1}$ i de secundari $\varphi_{\cmplx{U}_2}$, i  la relaci\'{o} entre els arguments dels corrents de primari $\varphi_{\cmplx{I}_1}$ i de secundari $\varphi_{\cmplx{I}_2}$s\'{o}n:
+\begin{align}
+   \cmplx{U}_1 &= \ddot{u} \cmplx{U}_2 \\
+   \cmplx{I}_1 &= \frac{\cmplx{I}_2}{\ddot{u}} \\
+   \varphi_{\cmplx{U}_1} &= \varphi_{\cmplx{U}_2} \\
+   \varphi_{\cmplx{I}_1} &= \varphi_{\cmplx{I}_2}
+\end{align}
+
+\index{transformador ideal!domini operacional} En el domini operacional, la relaci\'{o} entre les tensions de primari $U_1(s)$ i de secundari $U_2(s)$,  i la relaci\'{o} entre els corrents de primari $I_1(s)$ i de secundari $I_2(s)$ s\'{o}n:
+\begin{align}
+   U_1(s) &= \ddot{u} U_2(s) \\
+   I_1(s) &= \frac{I_2(s)}{\ddot{u}}
+\end{align}
+
+
+\section{Pot\`{e}ncia complexa} \index{pot\`{e}ncia complexa}
+
+\subsection{Pot\`{e}ncia monof\`{a}sica} \index{pot\`{e}ncia complexa!monof\`{a}sica}
+
+En la Figura \vref{pic:pot_comp_mono} es representa una c\`{a}rrega $\cmplx{Z}=R+\ju X$, la
+qual absorbeix una pot\`{e}ncia complexa $\cmplx{S} = P + \ju Q$.
+
+$R$ i $X$ s\'{o}n respectivament la part resistiva i la part reactiva
+(inductiva o capacitiva) de la c\`{a}rrega, i $P$ i $Q$ s\'{o}n
+respectivament la potencia activa i la potencia reactiva (inductiva
+o capacitiva) absorbida per la c\`{a}rrega.
+
+La pot\`{e}ncia activa absorbida per una c\`{a}rrega sempre \'{e}s positiva, en
+canvi, la pot\`{e}ncia reactiva absorbida per una c\`{a}rrega pot ser
+positiva o negativa, segons que predomini m\'{e}s la part inductiva o la
+part capacitiva de la c\`{a}rrega, respectivament.
+
+\begin{figure}[htb]
+\centering
+\PSforPDF{
+    %PsTricks content-type (pstricks.sty package needed)
+    %Add \usepackage{pstricks} in the preamble of your LaTeX file
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \begin{pspicture}(0,0)(29,25)
+    \rput[r](7,9.5){$\cmplx{U}$}
+    \psline[linewidth=0.25]{->}(8,15.5)(8,3.5)
+    \psline[linewidth=0.25]{->}(10,19.5)(17,19.5)
+    \rput[b](13,20.5){$\cmplx{I}$} \rput[l](21,9.5){$\cmplx{Z}, \;
+    \cmplx{S}$} \rput(18,9.5){}
+    \pspolygon[linewidth=0.25](16,4.5)(20,4.5)(20,14.5)(16,14.5)
+    \rput{0}(8,17.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(8,1.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \psline[linewidth=0.25](9,17.5)(18,17.5) (18,17.5)(18,14.5)
+    \psline[linewidth=0.25](9,1.5)(18,1.5) (18,1.5)(18,4.5)
+    \psline[linewidth=0.25](16,14.5)(20,4.5)
+    \psline[linewidth=0.25](20,14.5)(16,4.5)
+    \end{pspicture}
+}
+\caption{Pot\`{e}ncia complexa monof\`{a}sica} \label{pic:pot_comp_mono}
+\end{figure}
+
+L'angle $\varphi$ entre els vectors $\cmplx{U}$ i $\cmplx{I}$ compleix la seg\"{u}ent relaci\'{o}:
+\begin{equation}
+   \tan\varphi = \frac{X}{R} = \frac{Q}{P}
+\end{equation}
+
+\index{factor de pot\`{e}ncia}A partir d'aquest angle $\varphi$, es defineix el factor de pot\`{e}ncia de la c\`{a}rrega:
+\begin{equation}
+   \text{Factor de pot\`{e}ncia} \equiv \cos\varphi
+\end{equation}
+
+Donat que per a un angle qualsevol $\alpha$, es compleix la igualtat
+trigonom\`{e}trica: $\cos\alpha = \cos(-\alpha)$, quan es d\'{o}na el factor
+de pot\`{e}ncia d'una c\`{a}rrega, cal especificar si \'{e}s inductiu ($Q>0,
+\tan\varphi>0$) o capacitiu ($Q<0, \tan\varphi<0$); aix\`{o} es fa,
+afegint {"<}(i){">} o {"<}(c){">}, respectivament, al valor num\`{e}ric del factor
+de pot\`{e}ncia, per exemple: $\cos\varphi=0,8$(i),
+$\cos\varphi=0,9$(c).
+
+Les relacions que lliguen la pot\`{e}ncia complexa amb la tensi\'{o} i el corrent s\'{o}n:
+\begin{align}
+   \cmplx{S} &=  \cmplx{U} \,\cmplx{I}^* = P + \ju Q \\
+   |\cmplx{S}| &= |\cmplx{U}| |\cmplx{I}| = \sqrt{P^2+Q^2} \\
+   P &= \Re (\cmplx{U} \, \cmplx{I}^*) = |\cmplx{S}| \cos\varphi =
+   |\cmplx{U}| |\cmplx{I}| \cos\varphi\\
+   Q &= \Im (\cmplx{U} \, \cmplx{I}^*) = |\cmplx{S}| \sin\varphi =
+   |\cmplx{U}| |\cmplx{I}|\sin\varphi
+\end{align}
+
+\subsection{Pot\`{e}ncia trif\`{a}sica} \index{pot\`{e}ncia complexa!trif\`{a}sica}
+
+En la Figura \vref{pic:pot_comp_trif} es representen dos sistemes
+d'alimentaci\'{o} a c\`{a}rregues trif\`{a}siques; el de l'esquerra \'{e}s un
+sistema de 4 fils (3 fases + neutre) i el de la dreta \'{e}s un sistema
+de 3 fils (3 fases). En ambd\'{o}s casos, es consideren tres c\`{a}rregues
+$\cmplx{Z}_\alpha = R_\alpha + \ju X_\alpha$, $\cmplx{Z}_\beta=
+R_\beta + \ju X_\beta$ i $\cmplx{Z}_\gamma= R_\gamma + \ju X_\gamma$
+connectades en estrella, les quals absorbeixen respectivament unes
+pot\`{e}ncies complexes $\cmplx{S}_\alpha= P_\alpha + \ju Q_\alpha$,
+$\cmplx{S}_\beta= P_\beta + \ju Q_\beta$ i $\cmplx{S}_\gamma=
+P_\gamma + \ju Q_\gamma$.
+
+$R_\alpha$, $R_\beta$ i $R_\gamma$, i $X_\alpha$, $X_\beta$ i
+$X_\gamma$ s\'{o}n respectivament les parts resistives i les parts
+reactives (inductives o capacitives) de les c\`{a}rregues, i $P_\alpha$,
+$P_\beta$ i $P_\gamma$, i $Q_\alpha$, $Q_\beta$ i $Q_\gamma$ s\'{o}n
+respectivament les potencies actives i les potencies reactives
+(inductives o capacitives) absorbides per les c\`{a}rregues.
+
+El sistema d'alimentaci\'{o} de 3 fils, admet tamb\'{e} c\`{a}rregues
+trif\`{a}siques connectades en triangle; en aquest cas nom\'{e}s cal dur a
+terme la transformaci\'{o} a una connexi\'{o} en estrella (vegeu la Secci\'{o}
+\ref{secc:d_y}), i per tant, la descripci\'{o} que segueix es pot
+considerar del tot general.
+
+\begin{figure}[h]
+\centering \PSforPDF{
+    %PsTricks content-type (pstricks.sty package needed)
+    %Add \usepackage{pstricks} in the preamble of your LaTeX file
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \begin{pspicture}(0,0)(165,70)
+    \rput(63.5,21.5){} \rput(63.5,31.5){} \rput(64,80){}
+    \rput[r](37,21.5){$\gamma$} \rput[r](22,41.5){$\beta$}
+    \rput[r](7,61.5){$\alpha$} \rput[b](64,25){$\cmplx{Z}_\gamma,\;
+    \cmplx{S}_\gamma$} \rput[b](64,45){$\cmplx{Z}_\beta,\;
+    \cmplx{S}_\beta$} \rput[b](64,65){$\cmplx{Z}_\alpha,\;
+    \cmplx{S}_\alpha$} \psline[linewidth=0.25]{->}(29.5,43)(39.5,43)
+    \psline[linewidth=0.25]{->}(44,23)(54,23)
+    \psline[linewidth=0.25]{->}(14,63)(24,63)
+    \psline[linewidth=0.25](11,61.5)(58,61.5)
+    \psline[linewidth=0.25](26,41.5)(58,41.5)
+    \psline[linewidth=0.25](41,21.5)(58,21.5)
+    \rput[b](19,64.5){$\cmplx{I}_\alpha$}
+    \rput[b](34,44.5){$\cmplx{I}_\beta$}
+    \rput[b](48.5,24.5){$\cmplx{I}_\gamma$}
+    \psline[linewidth=0.25](69,41.5)(76,41.5)
+    \psline[linewidth=0.25]{->}(25,39)(25,3)
+    \rput[r](7.5,31.5){$\cmplx{U}_{\alpha\nu}$}
+    \rput[r](23,21.5){$\cmplx{U}_{\beta\nu}$}
+    \rput[r](38,11.5){$\cmplx{U}_{\gamma\nu}$}
+    \psline[linewidth=0.25](69,21.5)(76,21.5)
+    \psline[linewidth=0.25]{->}(40,19)(40,3)
+    \psline[linewidth=0.25]{->}(10,59)(10,3.5) \rput(14.5,64.5){}
+    \rput(13.5,66){} \rput(31.5,78){} \rput(12,65.5){} \rput(50,74.5){}
+    \rput(11.5,65){} \rput[r](7,1.5){$\nu$}
+    \psline[linewidth=0.25]{->}(70,3)(60,3)
+    \rput[b](66,4.5){$\cmplx{I}_\nu$} \rput(145,20){} \rput(145,30){}
+    \rput(159.5,78.5){} \rput[r](97,20){$\gamma$}
+    \rput[r](112,40){$\beta$} \rput[r](97,60){$\alpha$}
+    \rput[b](145.5,23.5){$\cmplx{Z}_\gamma,\; \cmplx{S}_\gamma$}
+    \rput[b](145.5,43.5){$\cmplx{Z}_\beta,\; \cmplx{S}_\beta$}
+    \rput[b](145.5,63.5){$\cmplx{Z}_\alpha,\; \cmplx{S}_\alpha$}
+    \psline[linewidth=0.25]{->}(120.5,41.5)(130.5,41.5)
+    \psline[linewidth=0.25]{->}(121,21.5)(131,21.5)
+    \psline[linewidth=0.25]{->}(120.5,61.5)(130.5,61.5)
+    \psline[linewidth=0.25](101,60)(139.5,60)
+    \psline[linewidth=0.25](116,40)(139.5,40)
+    \psline[linewidth=0.25](101,20)(139.5,20)
+    \rput[b](126,63){$\cmplx{I}_\alpha$}
+    \rput[b](126,43){$\cmplx{I}_\beta$}
+    \rput[b](126,23){$\cmplx{I}_\gamma$}
+    \psline[linewidth=0.25](150.5,40)(157.5,40)
+    \psline[linewidth=0.25]{->}(115,37.5)(115,21)
+    \rput[r](98.5,40){$\cmplx{U}_{\alpha\gamma}$}
+    \rput[r](113.5,30){$\cmplx{U}_{\beta\gamma}$}
+    \psline[linewidth=0.25]{->}(100,57.5)(100,22) \rput(104.5,63){}
+    \rput(103.5,64.5){} \rput(127,76.5){} \rput(102,64){}
+    \rput(145.5,73){} \rput(101.5,63.5){} \rput[l](160.5,40){$\nu$}
+    \psline[linewidth=0.25](69,61.5)(76,61.5) (76,61.5)(76,1.5)
+    (76,1.5)(11,1.5)
+    \pspolygon[linewidth=0.25](58,63.5)(69,63.5)(69,59.5)(58,59.5)
+    \pspolygon[linewidth=0.25](58,43.5)(69,43.5)(69,39.5)(58,39.5)
+    \pspolygon[linewidth=0.25](58,23.5)(69,23.5)(69,19.5)(58,19.5)
+    \psline[linewidth=0.25](69,63.5)(58,59.5)
+    \psline[linewidth=0.25](58,63.5)(69,59.5)
+    \psline[linewidth=0.25](58,43.5)(69,39.5)
+    \psline[linewidth=0.25](69,43.5)(58,39.5)
+    \psline[linewidth=0.25](58,23.5)(69,19.5)
+    \psline[linewidth=0.25](69,23.5)(58,19.5)
+    \pspolygon[linewidth=0.25](139.5,62)(150.5,62)(150.5,58)(139.5,58)
+    \pspolygon[linewidth=0.25](139.5,42)(150.5,42)(150.5,38)(139.5,38)
+    \pspolygon[linewidth=0.25](139.5,22)(150.5,22)(150.5,18)(139.5,18)
+    \psline[linewidth=0.25](158.5,39)(158.5,20) (158.5,20)(150.5,20)
+    \psline[linewidth=0.25](158.5,41)(158.5,60) (158.5,60)(150.5,60)
+    \psline[linewidth=0.25](139.5,18)(150.5,22)
+    \psline[linewidth=0.25](150.5,18)(139.5,22)
+    \psline[linewidth=0.25](150.5,38)(139.5,42)
+    \psline[linewidth=0.25](150.5,42)(139.5,38)
+    \psline[linewidth=0.25](139.5,62)(150.5,58)
+    \psline[linewidth=0.25](150.5,62)(139.5,58)
+    \rput{0}(100,60){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(115,40){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(158.5,40){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(100,20){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(10,61.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(25,41.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(40,21.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(10,1.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \end{pspicture}
+} \caption{Pot\`{e}ncia complexa trif\`{a}sica.
+Sistemes de 4 fils i 3 fils respectivament.}
+\label{pic:pot_comp_trif}
+\end{figure}
+
+En el cas m\'{e}s general, on la c\`{a}rrega trif\`{a}sica \'{e}s dequi{\l.l}ibrada,
+cada imped\`{a}ncia t\'{e} el seu propi factor de pot\`{e}ncia
+$\cos\varphi_\alpha$, $\cos\varphi_\beta$ i $\cos\varphi_\gamma$,
+complint-se:
+\begin{equation}
+    \tan\varphi_\alpha = \frac{X_\alpha}{R_\alpha} = \frac{Q_\alpha}{P_\alpha} \qquad
+    \tan\varphi_\beta = \frac{X_\beta}{R_\beta} = \frac{Q_\beta}{P_\beta} \qquad
+    \tan\varphi_\gamma = \frac{X_\gamma}{R_\gamma} = \frac{Q_\gamma}{P_\gamma}
+\end{equation}
+
+\subsubsection{Sistema equi{\l.l}ibrat o desequi{\l.l}ibrat (de 3 fils o de 4 fils)}
+
+Aquest \'{e}s el cas m\'{e}s general, ja que les tensions, la c\`{a}rrega o
+ambdues a l'hora  poden ser desequi{\l.l}ibrades, i el sistema
+d'alimentaci\'{o} pot ser de 3 fils o de 4 fils.
+
+En el cas del sistema d'alimentaci\'{o} de 4 fils tenim:
+$\cmplx{I}_\alpha+\cmplx{I}_\beta+\cmplx{I}_\gamma=\cmplx{I}_\nu$, i
+en el cas del sistema d'alimentaci\'{o} de 3 fils tenim:
+$\cmplx{I}_\alpha+\cmplx{I}_\beta+\cmplx{I}_\gamma=0$. No obstant,
+si prenem en ambd\'{o}s casos el punt $\nu$ com a refer\`{e}ncia de les
+tensions, el corrent $\cmplx{I}_\nu$ no intervindr\`{a} en el c\`{a}lcul de
+la pot\`{e}ncia. Aix\'{\i} doncs, les relacions que lliguen la pot\`{e}ncia
+complexa trif\`{a}sica $\cmplx{S}\ped{3F} = P\ped{3F} + \ju Q\ped{3F}$
+amb les tensions i corrents s\'{o}n:
+\begin{align}
+    \cmplx{S}\ped{3F} &= \cmplx{S}_\alpha + \cmplx{S}_\beta + \cmplx{S}_\gamma =
+     \cmplx{U}_{\alpha\nu} \cmplx{I}_\alpha^* +
+    \cmplx{U}_{\beta\nu} \cmplx{I}_\beta^* +  \cmplx{U}_{\gamma\nu} \cmplx{I}_\gamma^* =
+    (P_\alpha + P_\beta + P_\gamma) + \ju (Q_\alpha + Q_\beta + Q_\gamma) \label{eq:s_3f} \\
+    |\cmplx{S}\ped{3F}| &= |\cmplx{S}_\alpha + \cmplx{S}_\beta + \cmplx{S}_\gamma| =
+    |\cmplx{U}_{\alpha\nu} \cmplx{I}_\alpha^* +
+    \cmplx{U}_{\beta\nu} \cmplx{I}_\beta^* +  \cmplx{U}_{\gamma\nu} \cmplx{I}_\gamma^*| =
+    \sqrt{(P_\alpha + P_\beta + P_\gamma)^2 + (Q_\alpha + Q_\beta + Q_\gamma)^2} \label{eq:s_3f_mod} \\
+    P\ped{3F} &= \Re(\cmplx{U}_{\alpha\nu} \cmplx{I}_\alpha^*) +
+    \Re(\cmplx{U}_{\beta\nu} \cmplx{I}_\beta^*) +  \Re(\cmplx{U}_{\gamma\nu}
+    \cmplx{I}_\gamma^*) = |\cmplx{S}_\alpha| \cos \varphi_\alpha + |\cmplx{S}_\beta| \cos
+    \varphi_\beta + |\cmplx{S}_\gamma| \cos \varphi_\gamma \\
+    Q\ped{3F} &= \Im(\cmplx{U}_{\alpha\nu} \cmplx{I}_\alpha^*) +
+    \Im(\cmplx{U}_{\beta\nu} \cmplx{I}_\beta^*) +  \Im(\cmplx{U}_{\gamma\nu}
+    \cmplx{I}_\gamma^*) = |\cmplx{S}_\alpha| \sin \varphi_\alpha + |\cmplx{S}_\beta| \sin
+    \varphi_\beta + |\cmplx{S}_\gamma| \sin \varphi_\gamma
+\end{align}
+
+Cal anar amb compte amb l'equaci\'{o} \eqref{eq:s_3f_mod}, i utilitzar-la al peu de la lletra, ja
+que en general tenim: $|\cmplx{S}_\alpha + \cmplx{S}_\beta + \cmplx{S}_\gamma| \neq
+|\cmplx{S}_\alpha| + |\cmplx{S}_\beta| + |\cmplx{S}_\gamma|$.
+
+
+\subsubsection{Sistema equi{\l.l}ibrat (de 3 fils o de 4 fils)}
+
+Aquest \'{e}s un cas particular de l'anterior, que es presenta quan
+tenim un sistema de tensions equi{\l.l}ibrat que alimenta a tres
+imped\`{a}ncies id\`{e}ntiques; en aquest cas es compleix sempre:
+$\cmplx{I}_\nu=0$, i com a conseq\"{u}\`{e}ncia, tenim que els sistemes de 3
+fils i de 4 fils s\'{o}n equivalents.
+
+Les equacions de l'apartat anterior es simplifiquen, i en aquest
+cas, les relacions que lliguen la  pot\`{e}ncia complexa trif\`{a}sica
+equi{\l.l}ibrada $\cmplx{S}\ped{3F}\ap{EQ} = P\ped{3F}\ap{EQ} + \ju
+Q\ped{3F}\ap{EQ}$ amb les tensions i corrents s\'{o}n:
+\begin{align}
+    \cmplx{S}\ped{3F}\ap{EQ} &= 3\cmplx{S}_\alpha = 3\cmplx{U}_{\alpha\nu} \cmplx{I}_\alpha^* =
+    3 (P_\alpha + \ju Q_\alpha) = P\ped{3F}\ap{EQ} +\ju Q\ped{3F}\ap{EQ} \label{eq:s_3f_eq}\\
+    \big|\cmplx{S}\ped{3F}\ap{EQ}\big| &= 3|\cmplx{S}_\alpha | =   3 |\cmplx{U}_{\alpha\nu}| |\cmplx{I}_\alpha| =
+    \sqrt{3} |\cmplx{U}_{\alpha\gamma}| |\cmplx{I}_\alpha| = 3\,\sqrt{P_\alpha^2 + Q_\alpha^2} =
+    \sqrt{\big(P\ped{3F}\ap{EQ}\big)^2 + \big(Q\ped{3F}\ap{EQ}\big)^2} \\
+    P\ped{3F}\ap{EQ} &= 3\Re(\cmplx{U}_{\alpha\nu} \cmplx{I}_\alpha^*) =
+    \big|\cmplx{S}\ped{3F}\ap{EQ}\big| \cos \varphi_\alpha = 3 |\cmplx{U}_{\alpha\nu}| |\cmplx{I}_\alpha|
+    \cos \varphi_\alpha = \sqrt{3} |\cmplx{U}_{\alpha\gamma}||\cmplx{I}_\alpha| \cos \varphi_\alpha \\
+    Q\ped{3F}\ap{EQ} &= 3\Im(\cmplx{U}_{\alpha\nu} \cmplx{I}_\alpha^*) =
+    \big|\cmplx{S}\ped{3F}\ap{EQ}\big|  \sin \varphi_\alpha = 3 |\cmplx{U}_{\alpha\nu}| |\cmplx{I}_\alpha|
+    \sin\varphi_\alpha=\sqrt{3} |\cmplx{U}_{\alpha\gamma}||\cmplx{I}_\alpha|\sin \varphi_\alpha
+\end{align}
+
+En les equacions anteriors s'ha utilitzat la fase $\alpha$, per\`{o} es
+podria haver escollit tamb\'{e} qualsevol de les altres dues. Cal tenir
+en compte a m\'{e}s, que l'angle $\varphi_\alpha$ \'{e}s sempre el format
+pels vectors $\cmplx{U}_{\alpha\nu}$ i $\cmplx{I}_\alpha$, i no pas
+l'angle format pels vectors $\cmplx{U}_{\alpha\gamma}$ i
+$\cmplx{I}_\alpha$.
+
+
+\subsubsection{Sistema equi{\l.l}ibrat o desequi{\l.l}ibrat de 3 fils}
+
+Aquest \'{e}s un cas  general, on les tensions, la c\`{a}rrega o ambdues a
+l'hora  poden ser desequi{\l.l}ibrades, per\`{o} amb l'\'{u}nica restricci\'{o} que
+el sistema d'alimentaci\'{o} sigui de 3 fils.
+
+ Nom\'{e}s en aquest cas (sistema de 3 fils) podem prescindir del punt $\nu$, a l'hora de
+calcular la pot\`{e}ncia, i utilitzar nom\'{e}s les tensions entre fases.
+
+En aquest cas, les relacions que lliguen la pot\`{e}ncia complexa
+trif\`{a}sica $\cmplx{S}\ped{3F} = P\ped{3F} + \ju Q\ped{3F}$ amb les
+tensions i corrents s\'{o}n:
+\begin{align}
+    \cmplx{S}\ped{3F} &= \cmplx{U}_{\alpha\gamma} \cmplx{I}_\alpha^*
+     +  \cmplx{U}_{\beta\gamma} \cmplx{I}_\beta^*  \label{eq:s_3f_3fils}\\
+    |\cmplx{S}\ped{3F}| &= |\cmplx{U}_{\alpha\gamma} \cmplx{I}_\alpha^* +
+    \cmplx{U}_{\beta\gamma} \cmplx{I}_\beta^*| \\
+    P\ped{3F} &= \Re(\cmplx{U}_{\alpha\gamma} \cmplx{I}_\alpha^*) +
+    \Re(\cmplx{U}_{\beta\gamma} \cmplx{I}_\beta^*) \\
+    Q\ped{3F} &= \Im(\cmplx{U}_{\alpha\gamma} \cmplx{I}_\alpha^*) +
+    \Im(\cmplx{U}_{\beta\gamma} \cmplx{I}_\beta^*)
+\end{align}
+
+En les equacions anteriors s'ha utilitzat la fase $\gamma$ com a
+fase de refer\`{e}ncia, per\`{o} es podria haver escollit tamb\'{e} qualsevol de
+les altres dues.
+
+\begin{exemple}
+    Es tracta de trobar la pot\`{e}ncia $\cmplx{S}$ consumida per una c\`{a}rrega
+    trif\`{a}sica equ{\l.l}ibrada, connectada en estrella a un sistema de tensions
+    d'alimentaci\'{o}  de 3 fils, tamb\'{e} equi{\l.l}ibrat; la tensi\'{o} fase--neutre
+    t\'{e} un valor de 220\unit{V} i cadascuna de les tres  imped\`{a}ncies
+    que formen l'estrella t\'{e} un valor de $\cmplx{Z}=22_{\measuredangle
+    45\degree}\unit{\ohm}$. S'utilitzaran totes les equacions que
+    siguin possibles, d'entre les vistes en aquest darrer apartat.
+
+    Prenent com refer\`{e}ncia d'angles la tensi\'{o}
+    $\cmplx{U}_{\beta\gamma}$, obtenim en primer lloc els valors de
+    les diferents tensions necess\`{a}ries per resoldre el nostre
+    problema:
+
+    \hfill
+    \begin{minipage}[b]{7.5cm}
+    \PSforPDF{
+        %PsTricks content-type (pstricks.sty package needed)
+        %Add \usepackage{pstricks} in the preamble of your LaTeX file
+        \psset{xunit=1mm,yunit=1mm,runit=1mm}
+        \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+        \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+        \begin{pspicture}(0,0)(73,60)
+        \psline[linewidth=0.25]{->}(6.03,6.01)(68.11,6.01)
+        \psline[linewidth=0.25]{->}(6.03,6.01)(37.07,56.16)
+        \psline[linewidth=0.25](37.07,56.16)(68.11,6.01)
+        \psline[linewidth=0.25,linecolor=blue]{<-}(37.07,56.16)(37.07,24.4)
+        \psline[linewidth=0.25,linecolor=blue]{->}(37.07,24.4)(68.11,6.01)
+        \psline[linewidth=0.25,linecolor=blue]{->}(37.07,24.4)(6.03,6.01)
+        \rput[bl](38.62,24.82){$\nu$} \rput[b](37.46,57.41){$\alpha$}
+        \rput[r](4.48,5.18){$\gamma$}
+        \rput[l](38.62,36.52){$\cmplx{U}_{\alpha\nu}$}
+        \rput[bl](49.49,18.55){$\cmplx{U}_{\beta\nu}$}
+        \rput[br](25.04,18.55){$\cmplx{U}_{\gamma\nu}$}
+        \rput[br](21.55,33.59){$\cmplx{U}_{\alpha\gamma}$}
+        \rput[t](37.07,4.34){$\cmplx{U}_{\beta\gamma}$}
+        \rput[l](69.5,5){$\beta$}
+        \end{pspicture}
+    }
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b][5.7cm][t]{3.8cm}
+    \begin{align*}
+        \cmplx{U}_{\alpha\nu} &= 220_{\measuredangle 90\degree}\unit{V} \\[1ex]
+        \cmplx{U}_{\beta\nu} &= 220_{\measuredangle -30\degree}\unit{V} \\[1ex]
+        \cmplx{U}_{\gamma\nu} &= 220_{\measuredangle 210\degree}\unit{V} \\[1ex]
+        \cmplx{U}_{\alpha\gamma} &= \sqrt{3}\cdot220_{\measuredangle 60\degree}\unit{V} \\[1ex]
+        \cmplx{U}_{\beta\gamma} &= \sqrt{3}\cdot220_{\measuredangle 0\degree}\unit{V}
+    \end{align*}
+    \end{minipage}
+    \hfill{}
+
+    Els corrents $\cmplx{I}_\alpha$, $\cmplx{I}_\beta$ i $\cmplx{I}_\gamma$ que
+    circulen  per les tres fases s\'{o}n:
+    \[
+        \cmplx{I}_\alpha =\frac{\cmplx{U}_{\alpha\nu}}{\cmplx{Z}} =
+        10_{\measuredangle 45\degree}\unit{A}
+        \qquad\quad
+        \cmplx{I}_\beta =\frac{\cmplx{U}_{\beta\nu}}{\cmplx{Z}} =
+        10_{\measuredangle -75\degree}\unit{A}
+        \qquad\quad
+        \cmplx{I}_\gamma =\frac{\cmplx{U}_{\gamma\nu}}{\cmplx{Z}} =
+        10_{\measuredangle 165\degree}\unit{A}
+    \]
+
+    Per comen\c{c}ar,  utilitzarem l'equaci\'{o} \eqref{eq:s_3f_eq}, ja que tenim
+    un sistema equ{\l.l}ibrat tant pel qu\`{e} fa a les tensions com pel qu\`{e} fa a la c\`{a}rrega:
+    \[
+    \cmplx{S} = 3\,\cmplx{U}_{\alpha\nu} \cmplx{I}_\alpha^* =
+    3\cdot 220_{\measuredangle 90\degree}\unit{V} \cdot
+    10_{\measuredangle -45\degree}\unit{A} = 6600_{\measuredangle 45\degree}\unit{VA}
+    \]
+
+    A continuaci\'{o},  utilitzarem l'equaci\'{o} \eqref{eq:s_3f_3fils}, ja que tenim
+    un sistema d'alimentaci\'{o} de 3 fils:
+    \[
+    \cmplx{S} = \cmplx{U}_{\alpha\gamma} \cmplx{I}_\alpha^*
+     +  \cmplx{U}_{\beta\gamma} \cmplx{I}_\beta^* =
+    \sqrt{3}\cdot220_{\measuredangle 60\degree}\unit{V} \cdot
+    10_{\measuredangle -45\degree}\unit{A} + \sqrt{3}\cdot220_{\measuredangle 0\degree}\unit{V}
+    \cdot 10_{\measuredangle 75\degree}\unit{A}  = 6600_{\measuredangle 45\degree}\unit{VA}
+    \]
+
+     Finalment,  utilitzarem l'equaci\'{o} \eqref{eq:s_3f}, ja que
+     sempre \'{e}s aplicable:
+     \[\begin{split}
+     \cmplx{S} &=  \cmplx{U}_{\alpha\nu} \cmplx{I}_\alpha^* +
+     \cmplx{U}_{\beta\nu} \cmplx{I}_\beta^* +  \cmplx{U}_{\gamma\nu}
+     \cmplx{I}_\gamma^* =\\
+     &= 220_{\measuredangle 90\degree}\unit{V}
+     \cdot 10_{\measuredangle -45\degree}\unit{A} + 220_{\measuredangle
+     -30\degree}\unit{V} \cdot 10_{\measuredangle 75\degree}\unit{A}
+     + 220_{\measuredangle 210\degree}\unit{V} \cdot 10_{\measuredangle
+     -165\degree}\unit{A} =6600_{\measuredangle 45\degree}\unit{VA}
+     \end{split} \]
+
+    Com era d'esperar, el resultat obtingut amb les tres equacions
+    emprades es id\`{e}ntic, ja que en aquest cas, totes tres s\'{o}n
+    aplicables a la resoluci\'{o} d'aquest problema.
+\end{exemple}

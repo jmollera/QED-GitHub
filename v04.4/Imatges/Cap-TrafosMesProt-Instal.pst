@@ -1,0 +1,539 @@
+%%Created by jPicEdt 1.4pre4: mixed JPIC-XML/LaTeX format
+%%Tue Jan 03 20:05:29 CET 2006
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="1.5" x-max="125" y-min="1" y-max="63" auto-bounding="false">
+%<multicurve points="(1.5,1);(1.5,1);(125,1);(125,1)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(15.5,32.5);(15.5,32.5);(25.5,32.5);(25.5,32.5)"
+%	 stroke-width="0.4"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(1.5,11);(1.5,11);(101,11);(101,11)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(1.5,21);(1.5,21);(71.5,21);(71.5,21)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(42,32.5);(42,32.5);(52,32.5);(52,32.5)"
+%	 stroke-width="0.4"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(15.5,29);(15.5,29);(11.5,29);(11.5,29);(11.5,29);(11.5,21);
+%	(11.5,21)"
+%	
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<multicurve points="(25.5,29);(25.5,29);(29.5,29);(29.5,29);(29.5,29);(29.5,1);
+%	(29.5,1)"
+%	
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<multicurve points="(52,29);(52,29);(56,29);(56,29);(56,29);(56,1);
+%	(56,1)"
+%	
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<multicurve points="(42,29);(42,29);(38,29);(38,29);(38,29);(38,11);
+%	(38,11)"
+%	
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<multicurve points="(71.5,24.5);(71.5,24.5);(81.5,24.5);(81.5,24.5)"
+%	 stroke-width="0.4"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(71.5,28);(71.5,28);(67.5,28);(67.5,28);(67.5,28);(67.5,34);
+%	(67.5,34)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(81.5,28);(81.5,28);(85.5,28);(85.5,28);(85.5,28);(85.5,46.5);
+%	(85.5,46.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(101,14.5);(101,14.5);(111,14.5);(111,14.5)"
+%	 stroke-width="0.4"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(111,18);(111,18);(115,18);(115,18);(115,18);(115,46.5);
+%	(115,46.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(81.5,21);(81.5,21);(125,21);(125,21)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(111,11);(111,11);(125,11);(125,11)"
+%	
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(4,21.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%R
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(4,11.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%S
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(4,1.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%T
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(13.5,28)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{P1}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(40,28)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{P1}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(69.5,20)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{P2}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(99,10)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{P2}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(27.5,28)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{P2}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(83.5,20)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{P1}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(54,28)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{P2}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(113,10)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{P1}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(13.5,35)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{S1}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(27.5,35)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{S2}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(40,35)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{S1}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(54,35)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{S2}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(69.5,27)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{S2}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(83.5,27)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{S1}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(99,17)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{S2}}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(113,17)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{S1}}
+%</text>
+%<circle p1="(85,47.5)" p2="(85.5,46.5)" p3="(86,47.5)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(114.5,47.5)" p2="(115,46.5)" p3="(115.5,47.5)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(65,35);(65,35);(65,30);(65,30)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(64,34);(64,34);(64,31);(64,31)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(63,33);(63,33);(63,32);(63,32)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(65,32.5);(65,32.5);(67.5,32.5);(67.5,32.5)"
+%	
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<multicurve points="(67.5,32.5);(67.5,32.5);(97,32.5);(97,32.5);(97,32.5);(97,18);
+%	(97,18);(97,18);(101,18);(101,18)"
+%	
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(120.75,45.25)" p2="(109.25,45.25)" p3="(109.25,56.75)"
+%	
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(91.25,45.25)" p2="(79.75,45.25)" p3="(79.75,56.75)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(115,55.5);(115,55.5);(115,62);(115,62);(115,62);(67.5,62);
+%	(67.5,62);(67.5,62);(67.5,34);(67.5,34)"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(114.5,55.25)" p2="(115,54.25)" p3="(115.5,55.25)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(85.5,62);(85.5,62);(85.5,55.5);(85.5,55.5)"
+%	
+%	 fill-style="none"
+%	 left-arrow="disk-centered" />
+%<circle p1="(85,55.25)" p2="(85.5,54.25)" p3="(86,55.25)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(117,47.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%1
+%</text>
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(87.5,47.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%1
+%</text>
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(117,54.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%2
+%</text>
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(87.5,54.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%2
+%</text>
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(85.5,51)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{A1}}
+%</text>
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(115,51)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{A2}}
+%</text>
+%<circle p1="(23.88,51.88)" p2="(24.38,50.88)" p3="(24.88,51.88)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(26.25,45.75)" p2="(14.75,45.75)" p3="(14.75,57.25)"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(16.12,51.88)" p2="(16.62,50.88)" p3="(17.12,51.88)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(16.5,52.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%1
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(24.5,52.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%2
+%</text>
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(20.5,51.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{V1}}
+%</text>
+%<multicurve points="(15.5,36);(15.5,36);(11.5,36);(11.5,36);(11.5,36);(11.5,51.5);
+%	(11.5,51.5);(11.5,51.5);(16,51.5);(16,51.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(25.5,36);(25.5,36);(29.5,36);(29.5,36);(29.5,36);(29.5,51.5);
+%	(29.5,51.5);(29.5,51.5);(25,51.5);(25,51.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(50.38,51.88)" p2="(50.88,50.88)" p3="(51.38,51.88)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(52.75,45.75)" p2="(41.25,45.75)" p3="(41.25,57.25)"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(42.62,51.88)" p2="(43.12,50.88)" p3="(43.62,51.88)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(43,52.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%1
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(51,52.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%2
+%</text>
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(47,51.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\scriptsize\textsf{V2}}
+%</text>
+%<multicurve points="(42,36);(42,36);(38,36);(38,36);(38,36);(38,51.5);
+%	(38,51.5);(38,51.5);(42.5,51.5);(42.5,51.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(52,36);(52,36);(56,36);(56,36);(56,36);(56,51.5);
+%	(56,51.5);(56,51.5);(51.5,51.5);(51.5,51.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(58.5,35.5);(58.5,35.5);(58.5,40.5);(58.5,40.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(59.5,36.5);(59.5,36.5);(59.5,39.5);(59.5,39.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(60.5,37.5);(60.5,37.5);(60.5,38.5);(60.5,38.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(58.5,38);(58.5,38);(56,38);(56,38)"
+%	
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<multicurve points="(32,35.5);(32,35.5);(32,40.5);(32,40.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(33,36.5);(33,36.5);(33,39.5);(33,39.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(34,37.5);(34,37.5);(34,38.5);(34,38.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(32,38);(32,38);(29.5,38);(29.5,38)"
+%	
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<parallelogram p1="(101,20)" p2="(111,20)" p3="(111,16)"
+%	
+%	 fill-style="solid"
+%	 />
+%<parallelogram p1="(101,13)" p2="(111,13)" p3="(111,9)"
+%	
+%	 fill-style="solid"
+%	 />
+%<parallelogram p1="(71.5,30)" p2="(81.5,30)" p3="(81.5,26)"
+%	
+%	 fill-style="solid"
+%	 />
+%<parallelogram p1="(71.5,23)" p2="(81.5,23)" p3="(81.5,19)"
+%	
+%	 fill-style="solid"
+%	 />
+%<parallelogram p1="(42,38)" p2="(52,38)" p3="(52,34)"
+%	
+%	 fill-style="solid"
+%	 />
+%<parallelogram p1="(42,31)" p2="(52,31)" p3="(52,27)"
+%	
+%	 fill-style="solid"
+%	 />
+%<parallelogram p1="(15.5,38)" p2="(25.5,38)" p3="(25.5,34)"
+%	
+%	 fill-style="solid"
+%	 />
+%<parallelogram p1="(15.5,31)" p2="(25.5,31)" p3="(25.5,27)"
+%	
+%	 fill-style="solid"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PsTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(125,63)
+\psline(1.5,1)(125,1)
+\psline[linewidth=0.4](15.5,32.5)(25.5,32.5)
+\psline(1.5,11)(101,11)
+\psline(1.5,21)(71.5,21)
+\psline[linewidth=0.4](42,32.5)(52,32.5)
+\psline{-*}(15.5,29)(11.5,29)
+(11.5,29)(11.5,21)
+\psline{-*}(25.5,29)(29.5,29)
+(29.5,29)(29.5,1)
+\psline{-*}(52,29)(56,29)
+(56,29)(56,1)
+\psline{-*}(42,29)(38,29)
+(38,29)(38,11)
+\psline[linewidth=0.4](71.5,24.5)(81.5,24.5)
+\psline(71.5,28)(67.5,28)
+(67.5,28)(67.5,34)
+\psline(81.5,28)(85.5,28)
+(85.5,28)(85.5,46.5)
+\psline[linewidth=0.4](101,14.5)(111,14.5)
+\psline(111,18)(115,18)
+(115,18)(115,46.5)
+\psline(81.5,21)(125,21)
+\psline(111,11)(125,11)
+\rput[b](4,21.5){R}
+\rput[b](4,11.5){S}
+\rput[b](4,1.5){T}
+\rput[t](13.5,28){{\scriptsize\textsf{P1}}}
+\rput[t](40,28){{\scriptsize\textsf{P1}}}
+\rput[t](69.5,20){{\scriptsize\textsf{P2}}}
+\rput[t](99,10){{\scriptsize\textsf{P2}}}
+\rput[t](27.5,28){{\scriptsize\textsf{P2}}}
+\rput[t](83.5,20){{\scriptsize\textsf{P1}}}
+\rput[t](54,28){{\scriptsize\textsf{P2}}}
+\rput[t](113,10){{\scriptsize\textsf{P1}}}
+\rput[t](13.5,35){{\scriptsize\textsf{S1}}}
+\rput[t](27.5,35){{\scriptsize\textsf{S2}}}
+\rput[t](40,35){{\scriptsize\textsf{S1}}}
+\rput[t](54,35){{\scriptsize\textsf{S2}}}
+\rput[t](69.5,27){{\scriptsize\textsf{S2}}}
+\rput[t](83.5,27){{\scriptsize\textsf{S1}}}
+\rput[t](99,17){{\scriptsize\textsf{S2}}}
+\rput[t](113,17){{\scriptsize\textsf{S1}}}
+\rput{0}(85.5,47.12){\psellipse[](0,0)(0.62,0.62)}
+\rput{0}(115,47.12){\psellipse[](0,0)(0.62,0.62)}
+\psline(65,35)(65,30)
+\psline(64,34)(64,31)
+\psline(63,33)(63,32)
+\psline{-*}(65,32.5)(67.5,32.5)
+\psline(67.5,32.5)(97,32.5)
+(97,32.5)(97,18)
+(97,18)(101,18)
+\pspolygon[](120.75,45.25)(109.25,45.25)(109.25,56.75)(120.75,56.75)
+\pspolygon[](91.25,45.25)(79.75,45.25)(79.75,56.75)(91.25,56.75)
+\psline(115,55.5)(115,62)
+(115,62)(67.5,62)
+(67.5,62)(67.5,34)
+\rput{0}(115,54.88){\psellipse[](0,0)(0.62,0.62)}
+\psline{*-}(85.5,62)(85.5,55.5)
+\rput{0}(85.5,54.88){\psellipse[](0,0)(0.62,0.62)}
+\rput(117,47.5){1}
+\rput(87.5,47.5){1}
+\rput(117,54.5){2}
+\rput(87.5,54.5){2}
+\rput(85.5,51){{\scriptsize\textsf{A1}}}
+\rput(115,51){{\scriptsize\textsf{A2}}}
+\rput{0}(24.38,51.5){\psellipse[](0,0)(0.62,0.62)}
+\pspolygon[](26.25,45.75)(14.75,45.75)(14.75,57.25)(26.25,57.25)
+\rput{0}(16.62,51.5){\psellipse[](0,0)(0.62,0.62)}
+\rput[b](16.5,52.5){1}
+\rput[b](24.5,52.5){2}
+\rput(20.5,51.5){{\scriptsize\textsf{V1}}}
+\psline(15.5,36)(11.5,36)
+(11.5,36)(11.5,51.5)
+(11.5,51.5)(16,51.5)
+\psline(25.5,36)(29.5,36)
+(29.5,36)(29.5,51.5)
+(29.5,51.5)(25,51.5)
+\rput{0}(50.88,51.5){\psellipse[](0,0)(0.62,0.62)}
+\pspolygon[](52.75,45.75)(41.25,45.75)(41.25,57.25)(52.75,57.25)
+\rput{0}(43.12,51.5){\psellipse[](0,0)(0.62,0.62)}
+\rput[b](43,52.5){1}
+\rput[b](51,52.5){2}
+\rput(47,51.5){{\scriptsize\textsf{V2}}}
+\psline(42,36)(38,36)
+(38,36)(38,51.5)
+(38,51.5)(42.5,51.5)
+\psline(52,36)(56,36)
+(56,36)(56,51.5)
+(56,51.5)(51.5,51.5)
+\psline(58.5,35.5)(58.5,40.5)
+\psline(59.5,36.5)(59.5,39.5)
+\psline(60.5,37.5)(60.5,38.5)
+\psline{-*}(58.5,38)(56,38)
+\psline(32,35.5)(32,40.5)
+\psline(33,36.5)(33,39.5)
+\psline(34,37.5)(34,38.5)
+\psline{-*}(32,38)(29.5,38)
+\pspolygon[fillstyle=solid](101,20)(111,20)(111,16)(101,16)
+\pspolygon[fillstyle=solid](101,13)(111,13)(111,9)(101,9)
+\pspolygon[fillstyle=solid](71.5,30)(81.5,30)(81.5,26)(71.5,26)
+\pspolygon[fillstyle=solid](71.5,23)(81.5,23)(81.5,19)(71.5,19)
+\pspolygon[fillstyle=solid](42,38)(52,38)(52,34)(42,34)
+\pspolygon[fillstyle=solid](42,31)(52,31)(52,27)(42,27)
+\pspolygon[fillstyle=solid](15.5,38)(25.5,38)(25.5,34)(15.5,34)
+\pspolygon[fillstyle=solid](15.5,31)(25.5,31)(25.5,27)(15.5,27)
+\end{pspicture}

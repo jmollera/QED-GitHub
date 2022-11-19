@@ -1,0 +1,267 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Wed Dec 19 18:58:40 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="6" x-max="123" y-min="0.5" y-max="34" auto-bounding="false">
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(25,29.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{Z}_1$
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(97.5,26.5);(97.5,26.5);(103,26.5);(103,26.5)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(9.5,14.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{U}\ped{total}$
+%</text>
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(10.5,24);(10.5,24);(10.5,4);(10.5,4)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(15,29.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(14,31)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(12.5,30.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(12,30)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<circle p3= "(11.5,26.5)"
+%	 p2= "(10.5,25.5)"
+%	 p1= "(9.5,26.5)"
+%	 closure= "plain"
+%	 fill-style= "none"
+%	 />
+%<circle p3= "(11.5,2)"
+%	 p2= "(10.5,1)"
+%	 p1= "(9.5,2)"
+%	 closure= "plain"
+%	 fill-style= "none"
+%	 />
+%<multicurve stroke-style= "dashed"
+%	 stroke-dasharray= "1;1"
+%	 fill-style= "none"
+%	 points= "(48.5,26.5);(48.5,26.5);(61,26.5);(61,26.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(31,26.5);(31,26.5);(36.5,26.5);(36.5,26.5)"
+%	 />
+%<multicurve stroke-style= "dashed"
+%	 stroke-dasharray= "1;1"
+%	 fill-style= "none"
+%	 points= "(73,26.5);(73,26.5);(85.5,26.5);(85.5,26.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(11.5,26.5);(11.5,26.5);(19,26.5);(19,26.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(115,26.5);(115,26.5);(122.5,26.5);(122.5,26.5);(122.5,26.5);(122.5,2);
+%	(122.5,2);(122.5,2);(11.5,2);(11.5,2)"
+%	 />
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(42.5,30)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{Z}_2$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(67,29.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{Z}_i$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(91.5,29.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{Z}_{n-1}$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(109,29.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{Z}_n$
+%</text>
+%<smoothpolygon right-arrow= "head"
+%	 fill-style= "none"
+%	 closed= "false"
+%	 points= "(102.5,22.5);(109,19);(115.5,23)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<smoothpolygon right-arrow= "head"
+%	 fill-style= "none"
+%	 closed= "false"
+%	 points= "(85,22.5);(91.5,19);(98,23)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<smoothpolygon right-arrow= "head"
+%	 fill-style= "none"
+%	 closed= "false"
+%	 points= "(60.5,22.5);(67,19);(73.5,23)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<smoothpolygon right-arrow= "head"
+%	 fill-style= "none"
+%	 closed= "false"
+%	 points= "(36,22.5);(42.5,19);(49,23)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<smoothpolygon right-arrow= "head"
+%	 fill-style= "none"
+%	 closed= "false"
+%	 points= "(18.5,22.5);(25,19);(31.5,23)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<text text-vert-align= "top"
+%	 anchor-point= "(25,19.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{U}_1$
+%</text>
+%<text text-vert-align= "top"
+%	 anchor-point= "(42.5,19.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{U}_2$
+%</text>
+%<text text-vert-align= "top"
+%	 anchor-point= "(67,19.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{U}_i$
+%</text>
+%<text text-vert-align= "top"
+%	 anchor-point= "(91.5,19.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{U}_{n-1}$
+%</text>
+%<text text-vert-align= "top"
+%	 anchor-point= "(109,19.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{U}_n$
+%</text>
+%<parallelogram p3= "(31,28.5)"
+%	 p2= "(19,28.5)"
+%	 p1= "(19,24.5)"
+%	 fill-style= "none"
+%	 />
+%<parallelogram p3= "(48.5,28.5)"
+%	 p2= "(36.5,28.5)"
+%	 p1= "(36.5,24.5)"
+%	 fill-style= "none"
+%	 />
+%<parallelogram p3= "(73,28.5)"
+%	 p2= "(61,28.5)"
+%	 p1= "(61,24.5)"
+%	 fill-style= "none"
+%	 />
+%<parallelogram p3= "(97.5,28.5)"
+%	 p2= "(85.5,28.5)"
+%	 p1= "(85.5,24.5)"
+%	 fill-style= "none"
+%	 />
+%<parallelogram p3= "(115,28.5)"
+%	 p2= "(103,28.5)"
+%	 p1= "(103,24.5)"
+%	 fill-style= "none"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(123,34)
+\rput[b](25,29.5){$\cmplx{Z}_1$}
+\psline(97.5,26.5)(103,26.5)
+\rput[r](9.5,14.5){$\cmplx{U}\ped{total}$}
+\psline{->}(10.5,24)(10.5,4)
+\rput(15,29.5){}
+\rput(14,31){}
+\rput(12.5,30.5){}
+\rput(12,30){}
+\rput{0}(10.5,26.5){\psellipse[](0,0)(1,1)}
+\rput{0}(10.5,2){\psellipse[](0,0)(1,1)}
+\psline[linestyle=dashed,dash=1 1](48.5,26.5)(61,26.5)
+\psline(31,26.5)(36.5,26.5)
+\psline[linestyle=dashed,dash=1 1](73,26.5)(85.5,26.5)
+\psline(11.5,26.5)(19,26.5)
+\psline(115,26.5)
+(122.5,26.5)
+(122.5,2)(11.5,2)
+\rput[b](42.5,30){$\cmplx{Z}_2$}
+\rput[b](67,29.5){$\cmplx{Z}_i$}
+\rput[b](91.5,29.5){$\cmplx{Z}_{n-1}$}
+\rput[b](109,29.5){$\cmplx{Z}_n$}
+\psbezier{->}(102.5,22.5)(107.05,20.05)(110.95,20.2)(115.5,23)
+\psbezier{->}(85,22.5)(89.55,20.05)(93.45,20.2)(98,23)
+\psbezier{->}(60.5,22.5)(65.05,20.05)(68.95,20.2)(73.5,23)
+\psbezier{->}(36,22.5)(40.55,20.05)(44.45,20.2)(49,23)
+\psbezier{->}(18.5,22.5)(23.05,20.05)(26.95,20.2)(31.5,23)
+\rput[t](25,19.5){$\cmplx{U}_1$}
+\rput[t](42.5,19.5){$\cmplx{U}_2$}
+\rput[t](67,19.5){$\cmplx{U}_i$}
+\rput[t](91.5,19.5){$\cmplx{U}_{n-1}$}
+\rput[t](109,19.5){$\cmplx{U}_n$}
+\pspolygon[](19,24.5)(19,28.5)(31,28.5)(31,24.5)
+\pspolygon[](36.5,24.5)(36.5,28.5)(48.5,28.5)(48.5,24.5)
+\pspolygon[](61,24.5)(61,28.5)(73,28.5)(73,24.5)
+\pspolygon[](85.5,24.5)(85.5,28.5)(97.5,28.5)(97.5,24.5)
+\pspolygon[](103,24.5)(103,28.5)(115,28.5)(115,24.5)
+\end{pspicture}

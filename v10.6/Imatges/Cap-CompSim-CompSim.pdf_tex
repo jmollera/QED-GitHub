@@ -1,0 +1,74 @@
+%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Cap-CompSim-CompSim.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{476.22045898bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.27976191)%
+    \put(0,0){\includegraphics[width=\unitlength]{Cap-CompSim-CompSim.pdf}}%
+    \put(0.18387082,0.26724334){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\Upsilon\ped{A}$}}}%
+    \put(0.10676554,0.106213){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
+    \put(0.48856307,0.2075084){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\Upsilon\ped{A,1}$}}}%
+    \put(0.74451541,0.22200576){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\Upsilon\ped{A,2}$}}}%
+    \put(0.95067527,0.22557668){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\Upsilon\ped{A,0}$}}}%
+    \put(0.95284874,0.17613221){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\Upsilon\ped{B,0}$}}}%
+    \put(0.95284874,0.12668782){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\Upsilon\ped{C,0}$}}}%
+    \put(0.71092591,0.04425925){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\Upsilon\ped{C,2}$}}}%
+    \put(0.3516583,0.04364544){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\Upsilon\ped{B,1}$}}}%
+    \put(0.01048458,0.00457136){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\Upsilon\ped{B}$}}}%
+    \put(0.60235549,0.15652958){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\Upsilon\ped{B,2}$}}}%
+    \put(0.31072905,0.23488885){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\Upsilon\ped{C,1}$}}}%
+    \put(0.02497455,0.16605286){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\Upsilon\ped{C}$}}}%
+    \put(0.10683936,0.07645109){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{asim\`{e}tric}}}%
+    \put(0.29414652,0.15422798){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
+    \put(0.29422034,0.12446605){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{directe}}}%
+    \put(0.61041635,0.10571098){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
+    \put(0.61049019,0.07594907){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{invers}}}%
+    \put(0.86943748,0.05859395){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
+    \put(0.86951132,0.02883204){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{homopolar}}}%
+  \end{picture}%
+\endgroup%

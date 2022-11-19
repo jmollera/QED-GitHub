@@ -1,0 +1,896 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Thu Dec 27 00:04:26 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="105" y-min="0" y-max="57" auto-bounding="false">
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(2,37.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(1,38.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(0,33)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(2,32.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<circle fill-style= "none"
+%	 p3= "(6.5,32)"
+%	 p2= "(5.5,31)"
+%	 p1= "(4.5,32)"
+%	 closure= "plain"
+%	 />
+%<circle fill-style= "none"
+%	 p3= "(98,32)"
+%	 p2= "(99,33)"
+%	 p1= "(100,32)"
+%	 closure= "plain"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(13,52);(13,52);(6.5,52);(6.5,52)"
+%	 />
+%<circle fill-style= "none"
+%	 p3= "(98,52)"
+%	 p2= "(99,53)"
+%	 p1= "(100,52)"
+%	 closure= "plain"
+%	 />
+%<circle fill-style= "none"
+%	 p3= "(98,42)"
+%	 p2= "(99,43)"
+%	 p1= "(100,42)"
+%	 closure= "plain"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(64.5,52);(64.5,52);(69.5,52);(69.5,52);(69.5,52);(69.5,32);
+%	(69.5,32);(69.5,32);(75.5,32);(75.5,32)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(75.5,52);(75.5,52);(71.5,52);(71.5,52);(71.5,52);(71.5,47);
+%	(71.5,47);(71.5,47);(67.5,47);(67.5,47);(67.5,47);(67.5,42);
+%	(67.5,42);(67.5,42);(64.5,42);(64.5,42)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(75.5,42);(75.5,42);(71.5,42);(71.5,42);(71.5,42);(71.5,37);
+%	(71.5,37);(71.5,37);(67.5,37);(67.5,37);(67.5,37);(67.5,32);
+%	(67.5,32);(67.5,32);(64.5,32);(64.5,32)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(29,52);(29,52);(34,52);(34,52);(34,52);(34,32);
+%	(34,32);(34,32);(29,32);(29,32)"
+%	 />
+%<multicurve left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(34,42);(34,42);(29,42);(29,42)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(48.5,52);(48.5,52);(43.5,52);(43.5,52);(43.5,52);(43.5,32);
+%	(43.5,32);(43.5,32);(48.5,32);(48.5,32)"
+%	 />
+%<multicurve left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(43.5,42);(43.5,42);(48.5,42);(48.5,42)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(13,42);(13,42);(6.5,42);(6.5,42)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(13,32);(13,32);(6.5,32);(6.5,32)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(98,52);(98,52);(91.5,52);(91.5,52)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(98,42);(98,42);(91.5,42);(91.5,42)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(98,32);(98,32);(91.5,32);(91.5,32)"
+%	 />
+%<circle fill-style= "none"
+%	 p3= "(6.5,42)"
+%	 p2= "(5.5,41)"
+%	 p1= "(4.5,42)"
+%	 closure= "plain"
+%	 />
+%<circle fill-style= "none"
+%	 p3= "(6.5,52)"
+%	 p2= "(5.5,51)"
+%	 p1= "(4.5,52)"
+%	 closure= "plain"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(2.5,52)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%A
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(2.5,42)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%B
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(2.5,32)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%C
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(35.5,42)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%N
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(42,42)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%n
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(102,52)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%a
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(102,42)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%b
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(102,32)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%c
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(73.5,54)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%a'
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(73.5,44)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%b'
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(74,34)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%c'
+%</text>
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(19,10);(19,10);(19,24.5);(19,24.5)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(19,10);(19,10);(32.5,3.5);(32.5,3.5)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(19,10);(19,10);(6,3.5);(6,3.5)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(64,4.5);(64,4.5);(53.5,21);(53.5,21)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(19,26.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%A
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(34,3)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%B
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(4.5,3.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%C
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(65.5,4.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%n
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(51.5,9.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%a'
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(53.5,22.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%a
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(19,7.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%N
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(84.5,18.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%a
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(92,25.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%A
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(92.5,3.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%n,N
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(20,16.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$\cmplx{U}\ped{AN}$
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(60,14)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$\cmplx{U}\ped{an}$
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(26,8.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$\cmplx{U}\ped{BN}$
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(12,8.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{U}\ped{CN}$
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(52.5,14.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{U}\ped{aa'}$
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(58.5,5.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{U}\ped{na'}$
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(87.5,11)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{U}\ped{an}$
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(93.5,15.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$\cmplx{U}\ped{AN}$
+%</text>
+%<multicurve right-arrow= "head"
+%	 left-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(92,23.5);(92,23.5);(92,6);(92,6);(92,6);(85,17);
+%	(85,17)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 left-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(53.5,21);(53.5,21);(53.5,9.5);(53.5,9.5);(53.5,9.5);(64,4.5);
+%	(64,4.5)"
+%	 />
+%<g>
+%<ellipse fill-style= "none"
+%	 p3= "(17,54)"
+%	 p2= "(17,50)"
+%	 p1= "(13,50)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(21,54)"
+%	 p2= "(21,50)"
+%	 p1= "(17,50)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(25,54)"
+%	 p2= "(25,50)"
+%	 p1= "(21,50)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(29,54)"
+%	 p2= "(29,50)"
+%	 p1= "(25,50)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%</g>
+%<ellipse fill-style= "solid"
+%	 p3= "(13,54)"
+%	 p2= "(13,55)"
+%	 p1= "(12,55)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<g>
+%<ellipse fill-style= "none"
+%	 p3= "(17,44)"
+%	 p2= "(17,40)"
+%	 p1= "(13,40)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(21,44)"
+%	 p2= "(21,40)"
+%	 p1= "(17,40)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(25,44)"
+%	 p2= "(25,40)"
+%	 p1= "(21,40)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(29,44)"
+%	 p2= "(29,40)"
+%	 p1= "(25,40)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%</g>
+%<ellipse fill-style= "solid"
+%	 p3= "(13,44)"
+%	 p2= "(13,45)"
+%	 p1= "(12,45)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<g>
+%<ellipse fill-style= "none"
+%	 p3= "(17,34)"
+%	 p2= "(17,30)"
+%	 p1= "(13,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(21,34)"
+%	 p2= "(21,30)"
+%	 p1= "(17,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(25,34)"
+%	 p2= "(25,30)"
+%	 p1= "(21,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(29,34)"
+%	 p2= "(29,30)"
+%	 p1= "(25,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%</g>
+%<ellipse fill-style= "solid"
+%	 p3= "(13,34)"
+%	 p2= "(13,35)"
+%	 p1= "(12,35)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<g>
+%<ellipse fill-style= "none"
+%	 p3= "(52.5,54)"
+%	 p2= "(52.5,50)"
+%	 p1= "(48.5,50)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(56.5,54)"
+%	 p2= "(56.5,50)"
+%	 p1= "(52.5,50)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(60.5,54)"
+%	 p2= "(60.5,50)"
+%	 p1= "(56.5,50)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(64.5,54)"
+%	 p2= "(64.5,50)"
+%	 p1= "(60.5,50)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%</g>
+%<ellipse fill-style= "solid"
+%	 p3= "(48.5,54)"
+%	 p2= "(48.5,55)"
+%	 p1= "(47.5,55)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<g>
+%<ellipse fill-style= "none"
+%	 p3= "(52.5,44)"
+%	 p2= "(52.5,40)"
+%	 p1= "(48.5,40)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(56.5,44)"
+%	 p2= "(56.5,40)"
+%	 p1= "(52.5,40)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(60.5,44)"
+%	 p2= "(60.5,40)"
+%	 p1= "(56.5,40)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(64.5,44)"
+%	 p2= "(64.5,40)"
+%	 p1= "(60.5,40)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%</g>
+%<ellipse fill-style= "solid"
+%	 p3= "(48.5,44)"
+%	 p2= "(48.5,45)"
+%	 p1= "(47.5,45)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<g>
+%<ellipse fill-style= "none"
+%	 p3= "(52.5,34)"
+%	 p2= "(52.5,30)"
+%	 p1= "(48.5,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(56.5,34)"
+%	 p2= "(56.5,30)"
+%	 p1= "(52.5,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(60.5,34)"
+%	 p2= "(60.5,30)"
+%	 p1= "(56.5,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(64.5,34)"
+%	 p2= "(64.5,30)"
+%	 p1= "(60.5,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%</g>
+%<ellipse fill-style= "solid"
+%	 p3= "(48.5,34)"
+%	 p2= "(48.5,35)"
+%	 p1= "(47.5,35)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<g>
+%<ellipse fill-style= "none"
+%	 p3= "(79.5,54)"
+%	 p2= "(79.5,50)"
+%	 p1= "(75.5,50)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(83.5,54)"
+%	 p2= "(83.5,50)"
+%	 p1= "(79.5,50)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(87.5,54)"
+%	 p2= "(87.5,50)"
+%	 p1= "(83.5,50)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(91.5,54)"
+%	 p2= "(91.5,50)"
+%	 p1= "(87.5,50)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%</g>
+%<g>
+%<ellipse fill-style= "none"
+%	 p3= "(79.5,44)"
+%	 p2= "(79.5,40)"
+%	 p1= "(75.5,40)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(83.5,44)"
+%	 p2= "(83.5,40)"
+%	 p1= "(79.5,40)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(87.5,44)"
+%	 p2= "(87.5,40)"
+%	 p1= "(83.5,40)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(91.5,44)"
+%	 p2= "(91.5,40)"
+%	 p1= "(87.5,40)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%</g>
+%<g>
+%<ellipse fill-style= "none"
+%	 p3= "(79.5,34)"
+%	 p2= "(79.5,30)"
+%	 p1= "(75.5,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(83.5,34)"
+%	 p2= "(83.5,30)"
+%	 p1= "(79.5,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(87.5,34)"
+%	 p2= "(87.5,30)"
+%	 p1= "(83.5,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "none"
+%	 p3= "(91.5,34)"
+%	 p2= "(91.5,30)"
+%	 p1= "(87.5,30)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%</g>
+%<ellipse fill-style= "solid"
+%	 p3= "(92.5,54)"
+%	 p2= "(92.5,55)"
+%	 p1= "(91.5,55)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "solid"
+%	 p3= "(92.5,44)"
+%	 p2= "(92.5,45)"
+%	 p1= "(91.5,45)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse fill-style= "solid"
+%	 p3= "(92.5,34)"
+%	 p2= "(92.5,35)"
+%	 p1= "(91.5,35)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(105,57)
+\rput(2,37.5){}
+\rput(1,38.5){}
+\rput(0,33){}
+\rput(2,32.5){}
+\rput{0}(5.5,32){\psellipse[](0,0)(1,1)}
+\rput{0}(99,32){\psellipse[](0,0)(1,1)}
+\psline[linewidth=0.25](13,52)(6.5,52)
+\rput{0}(99,52){\psellipse[](0,0)(1,1)}
+\rput{0}(99,42){\psellipse[](0,0)(1,1)}
+\psline(64.5,52)
+(69.5,52)
+(69.5,32)(75.5,32)
+\psline(75.5,52)
+(71.5,52)
+(71.5,47)
+(67.5,47)
+(67.5,42)(64.5,42)
+\psline(75.5,42)
+(71.5,42)
+(71.5,37)
+(67.5,37)
+(67.5,32)(64.5,32)
+\psline(29,52)
+(34,52)
+(34,32)(29,32)
+\psline{*-}(34,42)(29,42)
+\psline(48.5,52)
+(43.5,52)
+(43.5,32)(48.5,32)
+\psline{*-}(43.5,42)(48.5,42)
+\psline[linewidth=0.25](13,42)(6.5,42)
+\psline[linewidth=0.25](13,32)(6.5,32)
+\psline[linewidth=0.25](98,52)(91.5,52)
+\psline[linewidth=0.25](98,42)(91.5,42)
+\psline[linewidth=0.25](98,32)(91.5,32)
+\rput{0}(5.5,42){\psellipse[](0,0)(1,1)}
+\rput{0}(5.5,52){\psellipse[](0,0)(1,1)}
+\rput(2.5,52){A}
+\rput(2.5,42){B}
+\rput(2.5,32){C}
+\rput[l](35.5,42){N}
+\rput[r](42,42){n}
+\rput(102,52){a}
+\rput(102,42){b}
+\rput(102,32){c}
+\rput(73.5,54){a'}
+\rput(73.5,44){b'}
+\rput(74,34){c'}
+\psline{->}(19,10)(19,24.5)
+\psline{->}(19,10)(32.5,3.5)
+\psline{->}(19,10)(6,3.5)
+\psline{->}(64,4.5)(53.5,21)
+\rput(19,26.5){A}
+\rput(34,3){B}
+\rput(4.5,3.5){C}
+\rput(65.5,4.5){n}
+\rput(51.5,9.5){a'}
+\rput(53.5,22.5){a}
+\rput(19,7.5){N}
+\rput(84.5,18.5){a}
+\rput(92,25.5){A}
+\rput(92.5,3.5){n,N}
+\rput[l](20,16.5){$\cmplx{U}\ped{AN}$}
+\rput[l](60,14){$\cmplx{U}\ped{an}$}
+\rput[l](26,8.5){$\cmplx{U}\ped{BN}$}
+\rput[r](12,8.5){$\cmplx{U}\ped{CN}$}
+\rput[r](52.5,14.5){$\cmplx{U}\ped{aa'}$}
+\rput[r](58.5,5.5){$\cmplx{U}\ped{na'}$}
+\rput[r](87.5,11){$\cmplx{U}\ped{an}$}
+\rput[l](93.5,15.5){$\cmplx{U}\ped{AN}$}
+\psline{<->}(92,23.5)
+(92,6)(85,17)
+\psline{<->}(53.5,21)
+(53.5,9.5)(64,4.5)
+\rput{0}(15,52){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(19,52){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(23,52){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(27,52){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(12.5,54.5){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\rput{0}(15,42){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(19,42){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(23,42){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(27,42){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(12.5,44.5){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\rput{0}(15,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(19,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(23,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(27,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(12.5,34.5){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\rput{0}(50.5,52){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(54.5,52){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(58.5,52){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(62.5,52){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(48,54.5){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\rput{0}(50.5,42){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(54.5,42){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(58.5,42){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(62.5,42){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(48,44.5){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\rput{0}(50.5,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(54.5,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(58.5,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(62.5,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(48,34.5){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\rput{0}(77.5,52){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(81.5,52){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(85.5,52){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(89.5,52){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(77.5,42){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(81.5,42){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(85.5,42){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(89.5,42){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(77.5,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(81.5,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(85.5,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(89.5,32){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(92,54.5){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\rput{0}(92,44.5){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\rput{0}(92,34.5){\psellipse[fillstyle=solid](0,0)(0.5,-0.5)}
+\end{pspicture}

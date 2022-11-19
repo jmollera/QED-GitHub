@@ -1,0 +1,278 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Sun May 04 12:55:05 CEST 2014
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="135" y-min="0" y-max="60" auto-bounding="false">
+%<multicurve left-arrow= "head"
+%	 fill-style= "solid"
+%	 points= "(29.5,55);(29.5,55);(29.5,6);(29.5,6)"
+%	 />
+%<multicurve fill-style= "solid"
+%	 points= "(8.5,30);(8.5,30);(61.5,30);(61.5,30)"
+%	 right-arrow= "head"
+%	 />
+%<text text-vert-align= "center-v"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(62.5,30)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize $t$}
+%</text>
+%<text text-vert-align= "center-v"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(27.5,8)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize $-\sqrt{2}\,V$}
+%</text>
+%<text text-vert-align= "bottom"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(29.5,56)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize $v(t)$}
+%</text>
+%<text text-vert-align= "center-v"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(31.5,52)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize $\sqrt{2}\,V$}
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(23.5,52);(23.5,52);(29.5,52);(29.5,52)"
+%	 stroke-style= "dotted"
+%	 />
+%<text text-vert-align= "baseline"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(26.5,36)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize $\alpha$}
+%</text>
+%<smoothpolygon stroke-width= "0.45"
+%	 closed= "false"
+%	 fill-style= "none"
+%	 stroke-color= "#b47d23"
+%	 points= "(9.5,24);(10.5,27);(11.5,30)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(29.5,8);(29.5,8);(45.5,8);(45.5,8)"
+%	 stroke-style= "dotted"
+%	 />
+%<smoothpolygon stroke-width= "0.45"
+%	 closed= "false"
+%	 fill-style= "none"
+%	 stroke-color= "#b47d23"
+%	 points= "(56.5,30);(57.5,34);(58.5,36.5)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(23.5,52);(23.5,52);(23.5,30);(23.5,30)"
+%	 stroke-style= "dotted"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(29.5,35);(29.5,35);(23.5,35);(23.5,35)"
+%	 right-arrow= "head"
+%	 />
+%<smoothpolygon stroke-width= "0.45"
+%	 closed= "false"
+%	 fill-style= "none"
+%	 stroke-color= "#b47d19"
+%	 points= "(34,30);(45.5,-12);(56.5,30)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<multicurve left-arrow= "head"
+%	 fill-style= "solid"
+%	 points= "(95.5,45);(95.5,45);(95.5,15);(95.5,15)"
+%	 />
+%<multicurve fill-style= "solid"
+%	 points= "(90.5,20);(90.5,20);(125.5,20);(125.5,20)"
+%	 right-arrow= "head"
+%	 />
+%<multicurve stroke-width= "0.45"
+%	 fill-style= "none"
+%	 stroke-color= "#b47d23"
+%	 points= "(95.5,20);(95.5,20);(115.5,40);(115.5,40)"
+%	 right-arrow= "head"
+%	 />
+%<circle p3= "(108.5,33)"
+%	 p2= "(113.5,25)"
+%	 p1= "(114.5,20)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 right-arrow= "head"
+%	 />
+%<text text-vert-align= "center-v"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(114.5,26)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize $\alpha$}
+%</text>
+%<text text-vert-align= "baseline"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(105.5,31)"
+%	 fill-style= "solid"
+%	 text-rotation= "45"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize $V$}
+%</text>
+%<text text-vert-align= "center-v"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(126.5,20)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize Re}
+%</text>
+%<text text-vert-align= "bottom"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(95.5,46)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize Im}
+%</text>
+%<text text-vert-align= "center-v"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(116.5,40)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize $V_{\angle\alpha}$}
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(23.5,31);(23.5,31);(23.5,29);(23.5,29)"
+%	 />
+%<text text-vert-align= "top"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(23.5,28)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize $t_0$}
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(11.5,30);(11.5,30);(11.5,0.5);(11.5,0.5)"
+%	 stroke-style= "dotted"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(56.5,30);(56.5,30);(56.5,0.5);(56.5,0.5)"
+%	 stroke-style= "dotted"
+%	 />
+%<text text-vert-align= "baseline"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(32.5,2.5)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize $T$}
+%</text>
+%<multicurve left-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(56.5,1.5);(56.5,1.5);(11.5,1.5);(11.5,1.5)"
+%	 right-arrow= "head"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(28.5,52);(28.5,52);(30.5,52);(30.5,52)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(28.5,8);(28.5,8);(30.5,8);(30.5,8)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(56.5,31);(56.5,31);(56.5,29);(56.5,29)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(11.5,31);(11.5,31);(11.5,29);(11.5,29)"
+%	 />
+%<smoothpolygon stroke-width= "0.45"
+%	 closed= "false"
+%	 fill-style= "none"
+%	 stroke-color= "#b47d23"
+%	 points= "(11.5,30);(23.5,72);(34,30)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(135,60)
+\psline[fillstyle=solid]{<-}(29.5,55)(29.5,6)
+\psline[fillstyle=solid]{->}(8.5,30)(61.5,30)
+\rput[l](62.5,30){{\scriptsize $t$}}
+\rput[r](27.5,8){{\scriptsize $-\sqrt{2}\,V$}}
+\rput[b](29.5,56){{\scriptsize $v(t)$}}
+\rput[l](31.5,52){{\scriptsize $\sqrt{2}\,V$}}
+\psline[linestyle=dotted](23.5,52)(29.5,52)
+\rput[B](26.5,36){{\scriptsize $\alpha$}}
+\newrgbcolor{userLineColour}{0.71 0.49 0.14}
+\psbezier[linewidth=0.45,linecolor=userLineColour](9.5,24)(10.2,26.1)(10.8,27.9)(11.5,30)
+\psline[linestyle=dotted](29.5,8)(45.5,8)
+\newrgbcolor{userLineColour}{0.71 0.49 0.14}
+\psbezier[linewidth=0.45,linecolor=userLineColour](56.5,30)(57.2,32.8)(57.8,34.75)(58.5,36.5)
+\psline[linestyle=dotted](23.5,52)(23.5,30)
+\psline{->}(29.5,35)(23.5,35)
+\newrgbcolor{userLineColour}{0.71 0.49 0.1}
+\psbezier[linewidth=0.45,linecolor=userLineColour](34,30)(42.05,0.6)(48.8,0.6)(56.5,30)
+\psline[fillstyle=solid]{<-}(95.5,45)(95.5,15)
+\psline[fillstyle=solid]{->}(90.5,20)(125.5,20)
+\newrgbcolor{userLineColour}{0.71 0.49 0.14}
+\psline[linewidth=0.45,linecolor=userLineColour]{->}(95.5,20)(115.5,40)
+\rput{0}(94.29,18.56){\psellipticarc[]{->}(0,0)(20.26,20.26){4.08}{45.47}}
+\rput[l](114.5,26){{\scriptsize $\alpha$}}
+\rput[B]{45}(105.5,31){{\scriptsize $V$}}
+\rput[l](126.5,20){{\scriptsize Re}}
+\rput[b](95.5,46){{\scriptsize Im}}
+\rput[l](116.5,40){{\scriptsize $V_{\angle\alpha}$}}
+\psline(23.5,31)(23.5,29)
+\rput[t](23.5,28){{\scriptsize $t_0$}}
+\psline[linestyle=dotted](11.5,30)(11.5,0.5)
+\psline[linestyle=dotted](56.5,30)(56.5,0.5)
+\rput[B](32.5,2.5){{\scriptsize $T$}}
+\psline{<->}(56.5,1.5)(11.5,1.5)
+\psline(28.5,52)(30.5,52)
+\psline(28.5,8)(30.5,8)
+\psline(56.5,31)(56.5,29)
+\psline(11.5,31)(11.5,29)
+\newrgbcolor{userLineColour}{0.71 0.49 0.14}
+\psbezier[linewidth=0.45,linecolor=userLineColour](11.5,30)(19.9,59.4)(26.65,59.4)(34,30)
+\end{pspicture}

@@ -1,0 +1,478 @@
+\chapter{Transformadors de Pot\`{e}ncia}
+
+Es tracten en aquest cap\'{\i}tol, els transformadors de pot\`{e}ncia
+monof\`{a}sics i trif\`{a}sics. Es fa en primer lloc una introducci\'{o} als
+circuits magn\`{e}tics, i despr\'{e}s es tracten des del  punt de vista
+el\`{e}ctric, utilitzant els seus esquemes equivalents.
+
+\section{Circuit magn\`{e}tic del transformador}
+
+Es d\'{o}na en primer lloc una relaci\'{o} de les magnituds que intervenen
+en un circuit magn\`{e}tic, amb les seves unitats entre par\`{e}ntesis:
+\begin{list}{}
+{\setlength{\labelwidth}{10mm}
+\setlength{\leftmargin}{12mm}\setlength{\labelsep}{2mm}}
+   \item[$\mu$:] Permeabilitat magn\`{e}tica (\unit{N/A^2}).
+   \item[$\mu_0$:] Permeabilitat magn\`{e}tica del buit (\unit{N/A^2}).
+   \item[$\mu\ped{r}$:] Permeabilitat relativa (sense dimensi\'{o}).
+   \item[$\boldsymbol{E}$:] Vector de d'intensitat de camp el\`{e}ctric  (\unit{V/m}).
+   \item[$\boldsymbol{J}$:] Vector de densitat de corrent  (\unit{A/m^2}).
+   \item[$\boldsymbol{H}$:] Vector d'intensitat de camp magn\`{e}tic  (\unit{A/m^2}).
+   \item[$\boldsymbol{B}$:] Vector de densitat de flux magn\`{e}tic, o d'inducci\'{o} magn\`{e}tica  (\unit{T}).
+   \item[$\Phi$:] Flux magn\`{e}tic  (\unit{Wb}).
+   \item[$\Psi$:] Flux magn\`{e}tic  total, concatenat per una bobina (\unit{Wb\cdot volta}).
+   \item[$\mathfrak{R}$:] Reluct\`{a}ncia magn\`{e}tica (\unit{A^2/(m\cdot N)}).
+   \item[$\mathscr{F}$:] For\c{c}a magnetomotriu (\unit{A\cdot volta}).
+   \item[$l$:] Longitud d'un circuit magn\`{e}tic (\unit{m}).
+   \item[$S$:] Secci\'{o} d'un circuit magn\`{e}tic (\unit{m^2}).
+   \item[$N$:] Nombre d'espires d'una bobina (volta).
+\end{list}
+
+La unitat {"<}volta{">} \'{e}s de fet un valor sense dimensi\'{o}, que s'afegeix,
+no obstant a les unitats de $\Psi$ i $\mathscr{F}$, per tal
+d'indicar la contribuci\'{o} de les $N$ espires d'una bobina.
+
+
+\section{El transformador monof\`{a}sic de pot\`{e}ncia}
+
+Es d\'{o}na a continuaci\'{o} una relaci\'{o} de les magnituds que ens trobarem
+
+\section{El transformador trif\`{a}sic de pot\`{e}ncia}
+
+en aquest cap\'{\i}tol, amb les seves unitats entre par\`{e}ntesis:
+
+\section{Determinaci\'{o} dels par\`{a}metres el\`{e}ctrics dels transformadors}
+
+Els transformadors se sotmeten b\`{a}sicament a dos assajos, assaig en
+buit i assaig en curt circuit, per tal de determinar els par\`{a}metres
+del seus circuits el\`{e}ctrics equivalents.
+
+Mitjan\c{c}ant l'assaig en buit es determinen els par\`{a}metres
+transversals del circuit equivalent, i mitjan\c{c}ant l'assaig en curt
+circuit es determinen els seus par\`{a}metres longitudinals.
+
+Per realitzar aquest assajos, cal con\`{e}ixer pr\`{e}viament els par\`{a}metres
+b\`{a}sics del transformador: les tensions nominals de primari i de
+secundari $U\ped{N1}$ i $U\ped{N2}$, i la pot\`{e}ncia nominal
+$S\ped{N}$; com \'{e}s habitual, en el cas dels transformadors
+trif\`{a}sics, les tensions nominals s\'{o}n les tensions fase--fase, i la
+pot\`{e}ncia nominal \'{e}s la pot\`{e}ncia trif\`{a}sica.
+
+Els corrents nominals s'obtenen a partir de les tensions i pot\`{e}ncia
+nominals:
+\begin{equation}
+\begin{array}{l}\text{Transformador}\\
+\text{monof\`{a}sic}
+\end{array} \left\{
+\begin{array}{l}
+   I\ped{N1} = \dfrac{S\ped{N}}{U\ped{N1}} \\[2.7ex]
+   I\ped{N2} = \dfrac{S\ped{N}}{U\ped{N2}}
+\end{array}
+\right. \qquad\qquad
+\begin{array}{l}\text{Transformador}\\
+\text{trif\`{a}sic}
+\end{array} \left\{
+\begin{array}{l}
+   I\ped{N1} = \dfrac{S\ped{N}}{\sqrt{3}U\ped{N1}} \\[2.5ex]
+   I\ped{N2} = \dfrac{S\ped{N}}{\sqrt{3}U\ped{N2}}
+\end{array}
+\right.
+\end{equation}
+
+En les explicacions que v\'{e}nen a continuaci\'{o}, se suposa que el
+primari \'{e}s el costat d'alta tensi\'{o}, i que el secundari \'{e}s el costat
+de baixa tensi\'{o}. Amb aix\`{o}, no es perd la generalitat de
+l'explicaci\'{o}, ja que si la configuraci\'{o} real es la contr\`{a}ria de la
+adoptada aqu\'{\i}, \'{u}nicament caldr\`{a} intercanviar els sub\'{\i}ndexs 1 i 2, en
+les equacions que s'exposaran tot seguit.
+
+\subsection{Assaig en buit}
+
+La manera m\'{e}s usual de fer l'assaig en buit, \'{e}s alimentar el costat
+de baixa tensi\'{o} del transformador a  la seva tensi\'{o} nominal, tot
+deixant el costat d'alta tensi\'{o} en circuit obert. Tamb\'{e} \'{e}s possible,
+no obstant, alimentar pel costat d'alta tensi\'{o} i deixar en circuit
+obert el costat de baixa tensi\'{o}; aix\'{\i} mateix, tampoc no \'{e}s necessari
+alimentar a tensi\'{o} nominal, n'hi ha prou amb un valor proper.
+
+En la Figura \vref{pic:assaig_buit_mono} es pot veure com ha de
+connectar-se un transformador monof\`{a}sic, per tal de realitzar el seu
+assaig en buit.
+
+\begin{figure}[htb]
+\centering
+    \input{Imatges/Cap-Trafos-Potencia-Assaig-Buit-Monofasic.pic}
+\caption{Assaig en buit d'un transformador monof\`{a}sic}
+\label{pic:assaig_buit_mono}
+\end{figure}
+
+A partir del diversos aparells de mesura, obtenim els valors de la
+tensi\'{o} d'alimentaci\'{o} $U\ped{o2}$, del corrent que circula
+$I\ped{o2}$, i de la pot\`{e}ncia consumida $W\ped{o}$, segons:
+\begin{equation}
+    U\ped{o2}\equiv|\cmplx{U}\ped{o2}|=\textsf{V} \qquad
+    I\ped{o2}\equiv|\cmplx{I}\ped{o2}|=\textsf{A}
+    \qquad W\ped{o}=\textsf{W}
+\end{equation}
+
+En la Figura \vref{pic:assaig_buit_trif} es pot veure com ha de
+connectar-se un transformador trif\`{a}sic, per tal de realitzar el seu
+assaig en buit.
+
+\begin{figure}[htb]
+\centering
+    \input{Imatges/Cap-Trafos-Potencia-Assaig-Buit-Trifasic.pic}
+\caption{Assaig en buit d'un transformador trif\`{a}sic}
+\label{pic:assaig_buit_trif}
+\end{figure}
+
+
+A partir del diversos aparells de mesura, obtenim els valors de la
+tensi\'{o} trif\`{a}sica d'alimentaci\'{o} $U\ped{o2}$, del corrent que circula
+$I\ped{o2}$, i de la pot\`{e}ncia consumida $W\ped{o}$, segons:
+\begin{equation}
+    U\ped{o2}\equiv|\cmplx{U}\ped{o2}|=\textsf{V} \qquad
+    I\ped{o2}\equiv|\cmplx{I}\ped{o2}|=\textsf{A} \qquad
+    W\ped{o}=\textsf{W1}+\textsf{W2}
+\end{equation}
+
+\subsection{Assaig en curt circuit}
+
+La manera m\'{e}s usual de fer l'assaig en curt circuit, \'{e}s
+curtcircuitar el costat de baixa tensi\'{o} del transformador, i
+alimentar el costat d'alta tensi\'{o} a  una tensi\'{o} tal, que el corrent
+que circuli sigui igual al nominal. Tamb\'{e} \'{e}s possible, no obstant,
+alimentar pel costat de baixa tensi\'{o} i curtcircuitar el costat
+d'alta tensi\'{o}; aix\'{\i} mateix, tampoc no \'{e}s necessari que el corrent
+que circuli sigui el nominal, n'hi ha prou amb un valor proper.
+
+En la Figura \vref{pic:assaig_cc_mono} es pot veure com ha de
+connectar-se un transformador monof\`{a}sic, per tal de realitzar el seu
+assaig en curt circuit.
+
+\begin{figure}[htb]
+\centering
+    \input{Imatges/Cap-Trafos-Potencia-Assaig-CC-Monofasic.pic}
+\caption{Assaig en curt circuit d'un transformador monof\`{a}sic}
+\label{pic:assaig_cc_mono} \
+\end{figure}
+
+A partir del diversos aparells de mesura, obtenim els valors de la
+tensi\'{o} d'alimentaci\'{o} $U\ped{cc1}$, del corrent que circula
+$I\ped{cc1}$, i de la pot\`{e}ncia consumida $W\ped{cc}$, segons:
+\begin{equation}
+    U\ped{cc1}\equiv|\cmplx{U}\ped{cc1}|=\textsf{V} \qquad
+    I\ped{cc1}\equiv|\cmplx{I}\ped{cc1}|=\textsf{A}
+     \qquad W\ped{cc}=\textsf{W}
+\end{equation}
+
+En la Figura \vref{pic:assaig_cc_trif} es pot veure com ha de
+connectar-se un transformador trif\`{a}sic, per tal de realitzar el seu
+assaig en curt circuit.
+
+\begin{figure}[htb]
+\centering
+    \input{Imatges/Cap-Trafos-Potencia-Assaig-CC-Trifasic.pic}
+\caption{Assaig en curt circuit d'un transformador trif\`{a}sic}
+\label{pic:assaig_cc_trif}
+\end{figure}
+
+
+A partir del diversos aparells de mesura, obtenim els valors de la
+tensi\'{o} trif\`{a}sica d'alimentaci\'{o} $U\ped{cc1}$, del corrent que circula
+$I\ped{cc1}$, i de la pot\`{e}ncia consumida $W\ped{cc}$, segons:
+\begin{equation}
+    U\ped{cc1}\equiv|\cmplx{U}\ped{cc1}|=\textsf{V} \qquad
+    I\ped{cc1}\equiv|\cmplx{I}\ped{cc1}|=\textsf{A} \qquad
+    W\ped{cc}=\textsf{W1}+\textsf{W2}
+\end{equation}
+
+\subsection{Determinaci\'{o} dels par\`{a}metres del transformador a partir dels assajos en buit i en curt circuit}
+
+En la Figura \vref{pic:assaig_buit_cc_esq_equiv}  es representen els
+esquemes equivalents en {"<}L{">} d'un transformador en l'assaig en buit i
+en l'assaig en curt circuit, expressant tots els valor en p.u.
+Aquest esquema, com ja s'ha vist anteriorment, \'{e}s el mateix tan si
+el transformador \'{e}s monof\`{a}sic com si \'{e}s trif\`{a}sic, utilitzant en cada
+cal els valors nominals adequats; per tant, tot el que ve a
+continuaci\'{o} \'{e}s aplicable a ambd\'{o}s tipus de transformadors.
+
+\begin{figure}[htb]
+\centering
+    \input{Imatges/Cap-Trafos-Potencia-Assaig-Buit-CC-Esq-Equiv.pic}
+\caption{Esquemes equivalents d'un transformador en els assajos en
+buit i en curt circuit} \label{pic:assaig_buit_cc_esq_equiv}
+\end{figure}
+
+Les tensions, els corrents i les pot\`{e}ncies d'aquests dos  assajos,
+expressats en p.u. s\'{o}n:
+\begin{align}
+    u\ped{o2} &=\frac{U\ped{o2}}{U\ped{N2}} &
+    i\ped{o2} &=\frac{I\ped{o2}}{I\ped{N2}} &
+    w\ped{o}  &=\frac{W\ped{o}}{S\ped{N}} \\[1ex]
+    u\ped{cc1} &=\frac{U\ped{cc1}}{U\ped{N1}} &
+    i\ped{cc1} &=\frac{I\ped{cc1}}{I\ped{N1}} &
+    w\ped{cc} &=\frac{W\ped{cc}}{S\ped{N}}
+\end{align}
+
+A partir d'aquests valors podem calcular la imped\`{a}ncia longitudinal
+del transformador $\cmplx{z}\ped{cc}=r+\ju x$, i la seva admit\`{a}ncia
+transversal $\cmplx{y}\ped{o}=g\ped{Fe}-\ju b\ped{m}$.
+
+\subsubsection{Determinaci\'{o} de l'admit\`{a}ncia transversal}
+
+En l'assaig en buit, el corrent $\cmplx{i}\ped{o2}$ circula
+\'{u}nicament per l'admit\`{a}ncia $\cmplx{y}\ped{o}$, i tota la pot\`{e}ncia
+$w\ped{o}$ \'{e}s consumida per $g\ped{Fe}$; amb aquestes consideracions
+tenim:
+\begin{equation}
+    g\ped{Fe} = \frac{w\ped{o}}{u\ped{o2}^2} \qquad\qquad
+    |\cmplx{y}\ped{o}| = \frac{i\ped{o2}}{u\ped{o2}}
+    \qquad\qquad
+    b\ped{m} = \sqrt{|\cmplx{y}\ped{o}|^2 - g\ped{Fe}^2}
+\end{equation}
+
+Si aquest assaig es fes pel primari, ens quedaria la imped\`{a}ncia
+$\cmplx{z}\ped{cc}$ en s\`{e}rie amb l'admit\`{a}ncia $\cmplx{y}\ped{o}$, i
+per tant les f\'{o}rmules anteriors no serien correctes, no obstant,
+tenint en compte que $|\cmplx{z}\ped{cc}| \ll |1/\cmplx{y}\ped{o}|$,
+es  considera que el valor de $\cmplx{z}\ped{cc}$ \'{e}s negligible, i
+que les f\'{o}rmules dedu\"{\i}des anteriorment s\'{o}n tamb\'{e} aplicables en
+aquests cas, aix\`{o} s\'{\i}, canviant tots els sub\'{\i}ndex {"<}2{">} per {"<}1{">}.
+
+En el cas que l'assaig en buit es faci a tensi\'{o} nominal, tant  si es
+fa pel secundari com si es fa pel primari, la tensi\'{o} en buit ser\`{a}
+igual a 1 p.u., i per tant es pot ometre el sub\'{\i}ndex {"<}1{">} o {"<}2{">}:
+$u\ped{o2} = u\ped{o1} \equiv u\ped{o} = 1$; el mateix passa amb els
+sub\'{\i}ndexs del corrent en buit: $i\ped{o2} = i\ped{o1} \equiv
+i\ped{o}$. Amb aquestes consideracions tenim:
+\begin{equation}
+    g\ped{Fe} = w\ped{o} \qquad\qquad
+    |\cmplx{y}\ped{o}| = i\ped{o} \qquad\qquad
+    b\ped{m} = \sqrt{i\ped{o}^2 - w\ped{o}^2}
+\end{equation}
+
+\subsubsection{Determinaci\'{o} de la imped\`{a}ncia longitudinal}
+
+En l'assaig en curt circuit, el corrent $\cmplx{i}\ped{cc1}$ circula
+\'{u}nicament per la imped\`{a}ncia $\cmplx{z}\ped{cc}$, i tota la pot\`{e}ncia
+$w\ped{cc}$ \'{e}s consumida per $r$; amb aquestes consideracions tenim:
+\begin{equation}
+    r = \frac{w\ped{cc}}{i\ped{cc1}^2} \qquad\qquad
+    |\cmplx{z}\ped{cc}| = \frac{u\ped{cc1}}{i\ped{cc1}} \qquad\qquad
+    x = \sqrt{|\cmplx{z}\ped{cc}|^2 - r^2}
+\end{equation}
+
+Si aquest assaig es fes pel secundari, ens quedaria la imped\`{a}ncia
+$\cmplx{z}\ped{cc}$ en para{\l.l}el amb l'admit\`{a}ncia
+$\cmplx{y}\ped{o}$, i per tant les f\'{o}rmules anteriors no serien
+correctes, no obstant, tenint en compte que $|\cmplx{y}\ped{o}| \ll
+|1/\cmplx{z}\ped{cc}|$, es considera que el valor de
+$\cmplx{y}\ped{o}$ \'{e}s negligible, i que les f\'{o}rmules dedu\"{\i}des
+anteriorment s\'{o}n tamb\'{e} aplicables en aquests cas, aix\`{o} s\'{\i}, canviant
+tots els sub\'{\i}ndex {"<}1{">} per {"<}2{">}.
+
+En el cas que l'assaig en curt circuit es faci a corrent nominal,
+tant  si es fa pel primari  com si es fa pel secundari, el corrent
+de curt circuit ser\`{a} igual a 1 p.u., i per tant es pot ometre el
+sub\'{\i}ndex {"<}1{">} o {"<}2{">}: $i\ped{cc1} = i\ped{cc2} \equiv i\ped{cc} = 1$;
+el mateix passa amb els sub\'{\i}ndexs de la tensi\'{o} de curt circuit:
+$u\ped{cc1} = u\ped{cc2} \equiv u\ped{cc}$. En aquest cas, el valor
+de $|\cmplx{u}\ped{cc}|$, tamb\'{e} es coneix amb la denominaci\'{o} de
+tensi\'{o} relativa de curt  circuit en tant per u, utilitzant-se  el
+s\'{\i}mbol $\varepsilon\ped{cc}$; per a $r$ i $x$ s'utilitzen tamb\'{e} els
+s\'{\i}mbols $\varepsilon\ped{rcc}$ i $\varepsilon\ped{xcc}$
+respectivament. Amb aquestes consideracions tenim:
+\begin{equation}
+    r \equiv \varepsilon\ped{rcc} = w\ped{cc} \qquad\qquad
+    |\cmplx{z}\ped{cc}| \equiv \varepsilon\ped{cc} = u\ped{cc} \qquad\qquad
+    x \equiv \varepsilon\ped{xcc} = \sqrt{u\ped{cc}^2 - w\ped{cc}^2}
+\end{equation}
+
+\subsection{Placa de caracter\'{\i}stiques}
+
+La placa de caracter\'{\i}stiques d'un transformador, cont\'{e} com a m\'{\i}nim,
+la pot\`{e}ncia, tensions i corrents nominals, i els valors dels assajos
+en buit i en curt circuit.
+
+El par\`{a}metres inclosos normalment s\'{o}n:
+\begin{dinglist}{'121}
+   \item Pot\`{e}ncia nominal: $S\ped{N}$
+   \item Tensions nominals de primari i secundari:  $U\ped{N1}$ i $U\ped{N2}$
+   \item Corrents nominals de primari i secundari:  $I\ped{N1}$ i $I\ped{N2}$
+   \item Relaci\'{o} de transformaci\'{o}: $r\ped{t}$
+   \item Freq\"{u}\`{e}ncia nominal: $f\ped{N}$
+   \item Dades de l'assaig en buit (efectuat a tensi\'{o} nominal):
+   $i\ped{o}$ i $W\ped{o}$
+   \item Dades de l'assaig en curt circuit (efectuat a corrent nominal):
+   $\varepsilon\ped{cc}$ i $W\ped{cc}$
+\end{dinglist}
+
+Els valors de les pot\`{e}ncies $W\ped{o}$ i $W\ped{cc}$ es donen
+usualment en watt, mentre que els valors dels par\`{a}metres $i\ped{o}$
+i $\varepsilon\ped{cc}$ es donen en p.u. o en tant per cent.
+
+\section{Circuit equivalent Th\'{e}venin d'un transformador, vist des del secundari}
+
+El que s'explica a continuaci\'{o} \'{e}s v\`{a}lid per a transformadors
+monof\`{a}sics i trif\`{a}sics, ja que s'utilitzar\`{a} l'esquema equivalent del
+transformador en {"<}T{">}, expressant tots els seus valors en p.u.
+
+En la Figura \vref{pic:esq_equiv_thev_trafo_sec}  es representa a
+l'esquerra, un transformador alimentat des del primari per una font
+de tensi\'{o} $\cmplx{u}\ped{G}$, la qual t\'{e} una imped\`{a}ncia s\`{e}rie
+$\cmplx{z}\ped{G}$, i a  la dreta, el seu esquema equivalent
+Th\'{e}venin.
+
+\begin{figure}[htb]
+\centering
+    \input{Imatges/Cap-Trafos-Potencia-Esq-Equiv-Thevenin.pic}
+\caption{Circuit equivalen Th\'{e}venin d'un transformador vist des del
+secundari} \label{pic:esq_equiv_thev_trafo_sec}
+\end{figure}
+
+La tensi\'{o} i imped\`{a}ncia Th\'{e}venin v\'{e}nen definides per les equacions
+seg\"{u}ents:
+\begin{align}
+    \cmplx{u}\ped{Th} &= \frac{\cmplx{u}\ped{G}}{\cmplx{z}\ped{G} + r_1 + \ju
+    x_1 + \dfrac{1}{g\ped{Fe}-\ju b\ped{m}}} \;\frac{1}{g\ped{Fe}-\ju
+    b\ped{m}} \label{eq:trafo_uth}\\[1ex]
+    \cmplx{z}\ped{Th} &= r_2 + \ju x_2 + \frac{1}{\dfrac{1}{\cmplx{z}\ped{G} + r_1 +
+    \ju x_1} + g\ped{Fe}-\ju b\ped{m}}\label{eq:trafo_zth}
+\end{align}
+
+Tal com s'ha explicat en l'apartat \vref{sec:thev-norton}, la tensi\'{o}
+$\cmplx{u}\ped{Th}$ \'{e}s igual a la tensi\'{o} en buit entre $\alpha$ i
+$\beta$, i la imped\`{a}ncia $\cmplx{z}\ped{Th}$ \'{e}s igual la imped\`{a}ncia
+que existeix entre $\alpha$ i $\beta$ quan es curtcircuita la font
+de tensi\'{o} $\cmplx{u}\ped{G}$.
+
+Normalment no es coneixen $r_1$, $r_2$, $x_1$ i $x_2$ per separat, i
+en canvi, si que es coneixen $r=r_1+r_2$ i $x=x_1+x_2$; en aquest
+cas s'obtenen dues equacions aproximades, a partir de les equacions
+anteriors, substituint $r_1$ i $x_1$ per $r$ i $x$ respectivament en
+les equacions de $\cmplx{u}\ped{Th}$ i $\cmplx{z}\ped{Th}$, i
+menyspreant, addicionalment, el terme $r_2 + \ju x_2$ en l'equaci\'{o}
+de $\cmplx{z}\ped{Th}$. Amb aquestes consideracions tenim:
+\begin{align}
+    \cmplx{u}\ped{Th} &\approx \frac{\cmplx{u}\ped{G}}{\cmplx{z}\ped{G} + r + \ju
+    x + \dfrac{1}{g\ped{Fe}-\ju b\ped{m}}} \;\frac{1}{g\ped{Fe}-\ju
+    b\ped{m}} \label{eq:trafo_uth_aprx}\\[1ex]
+    \cmplx{z}\ped{Th} &\approx \frac{1}{\dfrac{1}{\cmplx{z}\ped{G} + r +
+    \ju x} + g\ped{Fe}-\ju b\ped{m}}\label{eq:trafo_zth_aprx}
+\end{align}
+
+A partir de les equacions \eqref{eq:trafo_uth} i
+\eqref{eq:trafo_zth}, o de les equacions \eqref{eq:trafo_uth_aprx} i
+\eqref{eq:trafo_zth_aprx}, si es vol treballar amb els valors
+redu\"{\i}ts al secundari $\cmplx{U}\ped{Th}^{''}$ i
+$\cmplx{Z}\ped{Th}^{''}$, nom\'{e}s cal multiplicar els valors en p.u.
+que s'obtenen amb aquestes equacions, per les tensions i imped\`{a}ncies
+base del secundari $U\ped{B2}$ i $Z\ped{B2}$, respectivament:
+\begin{align}
+    \cmplx{U}\ped{Th}^{''} &= \cmplx{u}\ped{Th} \, U\ped{B2} \\[1ex]
+    \cmplx{Z}\ped{Th}^{''} &= \cmplx{z}\ped{Th} \, Z\ped{B2}
+\end{align}
+
+
+\section{Connexi\'{o} de transformadors en para{\l.l}el}
+
+El que s'explica a continuaci\'{o} \'{e}s v\`{a}lid per a transformadors
+monof\`{a}sics i trif\`{a}sics; com \'{e}s habitual, en el cas dels
+transformadors trif\`{a}sics, les tensions nominals s\'{o}n les tensions
+fase--fase, i la pot\`{e}ncia nominal \'{e}s la pot\`{e}ncia trif\`{a}sica.
+
+
+\section{Designaci\'{o} de les Classes de Refrigeraci\'{o}}\label{sec:traf_pot_clas_refrig}
+\index{CEI!60076-2} \index{ANSI!C57.12} \index{refrigeraci\'{o}!en
+transformadors de pot\`{e}ncia} \index{convecci\'{o} natural}
+
+Les classes de refrigeraci\'{o} utilitzades en els transformadors de
+pot\`{e}ncia, es designen mitjan\c{c}ant quatre lletres.
+
+Actualment, la definici\'{o} i l'\'{u}s d'aquestes lletres, \'{e}s coincident
+entre la norma europea (\textsf{CEI 60076-2}) i la norma americana
+(\textsf{ANSI C57.12}).
+
+Es defineix a continuaci\'{o} el significat d'aquestes lletres:
+
+\textbf{1a lletra}. Indica l'element refrigerant intern, que est\`{a} en
+contacte amb els debanats del transformador. Els valors possibles
+s\'{o}n els seg\"{u}ents:
+\begin{list}{}
+   {\setlength{\labelwidth}{4.5mm} \setlength{\leftmargin}{4.5mm} \setlength{\labelsep}{2mm}}
+   \item[\textbf{O}] L'element refrigerant \'{e}s un oli mineral o un l\'{\i}quid sint\`{e}tic a\"{\i}llant, amb una temperatura d'ignici\'{o}
+   inferior o igual a 300\unit{\celsius}.
+   \item[\textbf{K}] L'element refrigerant \'{e}s un l\'{\i}quid sint\`{e}tic a\"{\i}llant, amb una temperatura d'ignici\'{o}
+   superior a 300\unit{\celsius}.
+   \item[\textbf{L}] L'element refrigerant \'{e}s un l\'{\i}quid sint\`{e}tic a\"{\i}llant, amb una temperatura d'ignici\'{o}
+   no mesurable.
+\end{list}
+\index{O} \index{K} \index{L}
+
+\textbf{2a lletra}. Indica el mecanisme de circulaci\'{o} de l'element
+refrigerant intern. Els valors possibles s\'{o}n els seg\"{u}ents:
+\begin{list}{}
+   {\setlength{\labelwidth}{4.5mm} \setlength{\leftmargin}{4.5mm} \setlength{\labelsep}{2mm}}
+   \item[\textbf{N}] Circulaci\'{o} mitjan\c{c}ant convecci\'{o} natural,
+    a trav\'{e}s de l'equip refrigerant i pels debanats del transformador.
+   \item[\textbf{F}] Circulaci\'{o} for\c{c}ada a trav\'{e}s de l'equip refrigerant (mitjan\c{c}ant bombes),
+    i circulaci\'{o} mitjan\c{c}ant convecci\'{o} natural pels debanats del
+    transformador. Aquest tipus de circulaci\'{o} tamb\'{e} s'anomena {"<}de flux no
+    dirigit{">}.
+   \item[\textbf{D}] Circulaci\'{o} for\c{c}ada a trav\'{e}s de l'equip refrigerant (mitjan\c{c}ant bombes),
+    i dirigida per aquest equip refrigerant cap als debanats del
+    transformador i, de manera opcional, tamb\'{e} cap a altres parts del transformador. Aquest
+    tipus de circulaci\'{o} tamb\'{e} s'anomena {"<}de flux dirigit{">}.
+\end{list}
+\index{N} \index{F} \index{D}
+
+\textbf{3a lletra}. Indica l'element refrigerant extern. Els valors
+possibles s\'{o}n els seg\"{u}ents:
+\begin{list}{}
+   {\setlength{\labelwidth}{4.5mm} \setlength{\leftmargin}{4.5mm} \setlength{\labelsep}{2mm}}
+   \item[\textbf{A}] L'element refrigerant \'{e}s l'aire.
+   \item[\textbf{W}] L'element refrigerant \'{e}s l'aigua.
+\end{list}
+\index{A} \index{W}
+
+\textbf{4a lletra}. Indica el mecanisme de circulaci\'{o} de l'element
+refrigerant extern. Els valors possibles s\'{o}n els seg\"{u}ents:
+\begin{list}{}
+   {\setlength{\labelwidth}{4.5mm} \setlength{\leftmargin}{4.5mm} \setlength{\labelsep}{2mm}}
+   \item[\textbf{N}] Circulaci\'{o} mitjan\c{c}ant convecci\'{o} natural.
+   \item[\textbf{F}] Circulaci\'{o} for\c{c}ada, mitjan\c{c}ant ventiladors (en el cas de
+   l'aire) o bombes (en el cas de l'aigua).
+\end{list}
+\index{N} \index{F}
+
+En la Taula \vref{taula:classes-refrigeracio-trafos} es presenta una
+comparativa, entres diverses designacions antigues de classes de
+refrigeraci\'{o} (segons les normes americanes) i les designacions
+equivalents actuals:
+\begin{table}[htb]
+   \caption{\label{taula:classes-refrigeracio-trafos}
+   Classes de refrigeraci\'{o} en els transformadors de pot\`{e}ncia}
+   \begin{center}\begin{tabular}{cc}
+   \toprule[1pt]
+   Designaci\'{o} antiga & Designaci\'{o} actual \\
+   (normes \textsf{\textsf{ANSI}})     & (normes \textsf{\textsf{CEI}} i
+   \textsf{\textsf{ANSI}}) \\
+   \midrule
+   OA & ONAN   \\
+   FA & ONAF   \\
+   FOA & OFAF  \\
+   FOW & OFWF  \\
+   FOA & ODAF  \\
+   FOW & ODWF \\
+   \bottomrule[1pt]
+   \end{tabular} \end{center}
+\end{table}
+
+En el cas d'un transformador on puguem seleccionar que la circulaci\'{o}
+sigui natural o for\c{c}ada (amb la pot\`{e}ncia corresponent en cada cas),
+les designacions s\'{o}n del tipus: ONAN/ONAF, ONAN/OFAF, etc.
+
+En el cas dels transformadors secs, l'element refrigerant sempre \'{e}s
+l'aire, ja sigui en circulaci\'{o} natural o for\c{c}ada, i per tant les
+designacions s\'{o}n simplement AN o AF.

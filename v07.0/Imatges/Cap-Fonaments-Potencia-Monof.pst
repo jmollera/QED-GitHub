@@ -1,0 +1,97 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Thu Mar 27 19:01:33 CET 2014
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="29" y-min="0" y-max="23.5" auto-bounding="false">
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(7,9)"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{U}$
+%</text>
+%<multicurve stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(8,15);(8,15);(8,3);(8,3)"
+%	 fill-style= "none"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(10,19);(10,19);(17,19);(17,19)"
+%	 fill-style= "none"
+%	 />
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(13,20)"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{I}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(21,9)"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 text-hor-align= "left"
+%	 >
+%$\cmplx{Z}, \; \cmplx{S}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(18,9)"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<circle p3= "(9,17)"
+%	 p2= "(8,16)"
+%	 p1= "(7,17)"
+%	 closure= "plain"
+%	 fill-style= "none"
+%	 />
+%<circle p3= "(9,1)"
+%	 p2= "(8,0)"
+%	 p1= "(7,1)"
+%	 closure= "plain"
+%	 fill-style= "none"
+%	 />
+%<multicurve points= "(9,17);(9,17);(18,17);(18,17);(18,17);(18,15);
+%	(18,15)"
+%	 fill-style= "none"
+%	 />
+%<multicurve points= "(9,1);(9,1);(18,1);(18,1);(18,1);(18,3);
+%	(18,3)"
+%	 fill-style= "none"
+%	 />
+%<parallelogram p3= "(20,3)"
+%	 p2= "(20,15)"
+%	 p1= "(16,15)"
+%	 fill-style= "none"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(29,23.5)
+\rput[r](7,9){$\cmplx{U}$}
+\psline[linewidth=0.25]{->}(8,15)(8,3)
+\psline[linewidth=0.25]{->}(10,19)(17,19)
+\rput[b](13,20){$\cmplx{I}$}
+\rput[l](21,9){$\cmplx{Z}, \; \cmplx{S}$}
+\rput(18,9){}
+\rput{0}(8,17){\psellipse[](0,0)(1,1)}
+\rput{0}(8,1){\psellipse[](0,0)(1,1)}
+\psline(9,17)
+(18,17)(18,15)
+\psline(9,1)
+(18,1)(18,3)
+\pspolygon[](16,15)(20,15)(20,3)(16,3)
+\end{pspicture}

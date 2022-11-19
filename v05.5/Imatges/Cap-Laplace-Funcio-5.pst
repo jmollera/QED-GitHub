@@ -1,0 +1,185 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Fri Feb 26 18:05:53 CET 2010
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="3.5" x-max="65" y-min="3" y-max="48" auto-bounding="false">
+%<multicurve left-arrow= "head"
+%	 fill-style= "solid"
+%	 points= "(7,48);(7,48);(7,3);(7,3)"
+%	 />
+%<multicurve fill-style= "solid"
+%	 points= "(6,4);(6,4);(57,4);(57,4)"
+%	 right-arrow= "head"
+%	 />
+%<text stroke-width= "0.15"
+%	 fill-style= "solid"
+%	 text-vert-align= "top"
+%	 anchor-point= "(7,2)"
+%	 stroke-style= "dotted"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%{\scriptsize 0}
+%</text>
+%<text stroke-width= "0.15"
+%	 fill-style= "solid"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(5.5,4)"
+%	 stroke-style= "dotted"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%{\scriptsize 0}
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(17,3);(17,3);(17,4);(17,4)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(6,24);(6,24);(7,24);(7,24)"
+%	 />
+%<text stroke-width= "0.15"
+%	 fill-style= "solid"
+%	 text-vert-align= "top"
+%	 anchor-point= "(17,2)"
+%	 stroke-style= "dotted"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%{\scriptsize $\tau$}
+%</text>
+%<text stroke-width= "0.15"
+%	 fill-style= "solid"
+%	 text-vert-align= "top"
+%	 anchor-point= "(27,2)"
+%	 stroke-style= "dotted"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%{\scriptsize $2\tau$}
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(27,3);(27,3);(27,4);(27,4)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(37,3);(37,3);(37,4);(37,4)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(47,3);(47,3);(47,4);(47,4)"
+%	 />
+%<text stroke-width= "0.15"
+%	 fill-style= "solid"
+%	 text-vert-align= "top"
+%	 anchor-point= "(37,2)"
+%	 stroke-style= "dotted"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%{\scriptsize $3\tau$}
+%</text>
+%<text stroke-width= "0.15"
+%	 fill-style= "solid"
+%	 text-vert-align= "top"
+%	 anchor-point= "(47,2)"
+%	 stroke-style= "dotted"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%{\scriptsize $4\tau$}
+%</text>
+%<text stroke-width= "0.15"
+%	 fill-style= "solid"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(5,24)"
+%	 stroke-style= "dotted"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%{\scriptsize $2K$}
+%</text>
+%<text stroke-width= "0.15"
+%	 fill-style= "solid"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(5,14)"
+%	 stroke-style= "dotted"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%{\scriptsize $K$}
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(6,34);(6,34);(7,34);(7,34)"
+%	 />
+%<multicurve stroke-width= "0.45"
+%	 fill-style= "none"
+%	 stroke-color= "#b56e22"
+%	 points= "(7,14);(7,14);(17,14);(17,14);(17,14);(17,24);
+%	(17,24);(17,24);(27,24);(27,24);(27,24);(27,34);
+%	(27,34);(27,34);(37,34);(37,34);(37,34);(37,44);
+%	(37,44);(37,44);(47,44);(47,44)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(6,14);(6,14);(7,14);(7,14)"
+%	 />
+%<text stroke-width= "0.15"
+%	 fill-style= "solid"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(5,34)"
+%	 stroke-style= "dotted"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%{\scriptsize $3K$}
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(6,44);(6,44);(7,44);(7,44)"
+%	 />
+%<text stroke-width= "0.15"
+%	 fill-style= "solid"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(5,44)"
+%	 stroke-style= "dotted"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%{\scriptsize $4K$}
+%</text>
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(65,48)
+\psline[fillstyle=solid]{<-}(7,48)(7,3)
+\psline[fillstyle=solid]{->}(6,4)(57,4)
+\rput[t](7,2){{\scriptsize 0}}
+\rput[r](5.5,4){{\scriptsize 0}}
+\psline(17,3)(17,4)
+\psline(6,24)(7,24)
+\rput[t](17,2){{\scriptsize $\tau$}}
+\rput[t](27,2){{\scriptsize $2\tau$}}
+\psline(27,3)(27,4)
+\psline(37,3)(37,4)
+\psline(47,3)(47,4)
+\rput[t](37,2){{\scriptsize $3\tau$}}
+\rput[t](47,2){{\scriptsize $4\tau$}}
+\rput[r](5,24){{\scriptsize $2K$}}
+\rput[r](5,14){{\scriptsize $K$}}
+\psline(6,34)(7,34)
+\newrgbcolor{userLineColour}{0.71 0.43 0.13}
+\psline[linewidth=0.45,linecolor=userLineColour](7,14)
+(17,14)
+(17,24)
+(27,24)
+(27,34)
+(37,34)
+(37,44)(47,44)
+\psline(6,14)(7,14)
+\rput[r](5,34){{\scriptsize $3K$}}
+\psline(6,44)(7,44)
+\rput[r](5,44){{\scriptsize $4K$}}
+\end{pspicture}

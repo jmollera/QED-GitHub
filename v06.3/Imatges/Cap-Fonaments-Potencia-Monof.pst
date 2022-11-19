@@ -1,0 +1,97 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Tue Dec 18 19:40:16 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="29" y-min="0" y-max="25" auto-bounding="false">
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(7,9.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{U}$
+%</text>
+%<multicurve right-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(8,15.5);(8,15.5);(8,3.5);(8,3.5)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(10,19.5);(10,19.5);(17,19.5);(17,19.5)"
+%	 />
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(13,20.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{I}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(21,9.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$\cmplx{Z}, \; \cmplx{S}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(18,9.5)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<circle p3= "(9,17.5)"
+%	 p2= "(8,16.5)"
+%	 p1= "(7,17.5)"
+%	 closure= "plain"
+%	 fill-style= "none"
+%	 />
+%<circle p3= "(9,1.5)"
+%	 p2= "(8,0.5)"
+%	 p1= "(7,1.5)"
+%	 closure= "plain"
+%	 fill-style= "none"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(9,17.5);(9,17.5);(18,17.5);(18,17.5);(18,17.5);(18,15.5);
+%	(18,15.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(9,1.5);(9,1.5);(18,1.5);(18,1.5);(18,1.5);(18,3.5);
+%	(18,3.5)"
+%	 />
+%<parallelogram p3= "(20,3.5)"
+%	 p2= "(20,15.5)"
+%	 p1= "(16,15.5)"
+%	 fill-style= "none"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(29,25)
+\rput[r](7,9.5){$\cmplx{U}$}
+\psline[linewidth=0.25]{->}(8,15.5)(8,3.5)
+\psline[linewidth=0.25]{->}(10,19.5)(17,19.5)
+\rput[b](13,20.5){$\cmplx{I}$}
+\rput[l](21,9.5){$\cmplx{Z}, \; \cmplx{S}$}
+\rput(18,9.5){}
+\rput{0}(8,17.5){\psellipse[](0,0)(1,1)}
+\rput{0}(8,1.5){\psellipse[](0,0)(1,1)}
+\psline(9,17.5)
+(18,17.5)(18,15.5)
+\psline(9,1.5)
+(18,1.5)(18,3.5)
+\pspolygon[](16,15.5)(20,15.5)(20,3.5)(16,3.5)
+\end{pspicture}

@@ -1,0 +1,1149 @@
+\addtocontents{xms}{\protect\addvspace{10pt}}
+\chapter{Exemples Resolts amb Python}\label{chap:python-exemples}
+
+
+\section{Exemples del capítol \ref*{ch:fonaments}}
+
+\hypertarget{exemple:MillmanBateries}{\subsection{Exemple \ref*{ex:MillmanBateries} \MillmanBateries}}
+
+En el llistat \vref{lst:MillmanBateries} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MillmanBateries}. La resolució es fa de dues maneres: utilitzant primer la funció \funsfbs{millman} del mòdul \funsfbs{qed.eng\_elec}, i fent servir després la classe \funsfbs{Network}  del mateix mòdul.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:MillmanBateries} \MillmanBateries},label=lst:MillmanBateries]{Python/Exemple-1-1.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+Teorema de Millman
+------------------
+Z_Th = 11.3270 mΩ
+E_Th = 125.0562 V
+Y_No = 88.28 S
+J_No = 11.04 kA
+I_Q  = 2.5006 A
+U_Q  = 125.03 V
+
+Mètode dels nusos
+------------------
+Z_Th = 11.3270 mΩ
+E_Th = 125.0562 V
+Y_No = 88.28 S
+J_No = 11.04 kA
+I_Q  = 2.5006 A
+U_Q  = 125.03 V
+\end{lstlisting} 
+
+
+\hypertarget{exemple:MillmanTrifNeutre}{\subsection{Exemple \ref*{ex:MillmanTrifNeutre} \MillmanTrifNeutre}}
+
+En el llistat \vref{lst:MillmanTrifNeutre} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MillmanTrifNeutre}. La resolució es fa de dues maneres: usant primer la funció \funsfbs{millman} del mòdul \funsfbs{qed.eng\_elec}, i fent servir després la classe \funsfbs{Network}  del mateix mòdul. Es fa servir també la classe \funsfbs{ComplexD} del mòdul \funsfbs{qed.utils}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:MillmanTrifNeutre} \MillmanTrifNeutre},label=lst:MillmanTrifNeutre]{Python/Exemple-1-2.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+Teorema de Millman
+------------------------------
+U_GN = 33.3433∠13.1736° V
+I_A  = 3953.6056∠-2.2030° A
+I_B  = 3174.7573∠-125.4941° A
+I_C  = 3453.8265∠127.5857° A
+I_N  = 0.7249∠13.1736° A
+
+Mètode dels nusos
+------------------------------
+U_GN = 33.3433∠13.1736° V
+I_A  = 3953.6056∠-2.2030° A
+I_B  = 3174.7573∠-125.4941° A
+I_C  = 3453.8265∠127.5857° A
+I_N  = 0.7249∠13.1736° A
+\end{lstlisting} 
+
+
+\hypertarget{exemple:Superposicio}{\subsection{Exemple \ref*{ex:Superposicio} \Superposicio}}
+
+En el llistat \vref{lst:Superposicio} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:Superposicio}. La resolució es fa amb la classe \funsfbs{Network} del mòdul \funsfbs{qed.eng\_elec}. Es fa servir també la classe \funsfbs{ComplexD} del mòdul \funsfbs{qed.utils}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:Superposicio} \Superposicio},label=lst:Superposicio]{Python/Exemple-1-4.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+Corrent pel condensador: 2.907∠26.57° A
+\end{lstlisting} 
+
+
+\hypertarget{exemple:CarDescRL}{\subsection{Exemple \ref*{ex:CarDescRL} \CarDescRL}}
+
+En el llistat \vref{lst:CarDescRL} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:CarDescRL}. La resolució es fa utilitzant funcions del mòdul numèric \funsfbs{numpy} i del mòdul gràfic  \funsfbs{matplotlib}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:CarDescRL} \CarDescRL},label=lst:CarDescRL]{Python/Exemple-1-8.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}[mathescape=true]
+$ \includegraphics{Cap-PythonExemp-CarDescRL.pdf} $
+\end{lstlisting}
+
+
+\hypertarget{exemple:CurtcircuitRL}{\subsection{Exemple \ref*{ex:CurtcircuitRL} \CurtcircuitRL}}
+En el llistat \vref{lst:CurtcircuitRL} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:CurtcircuitRL}. La resolució es fa utilitzant funcions del mòdul numèric \funsfbs{numpy} i del mòdul gràfic  \funsfbs{matplotlib}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:CurtcircuitRL} \CurtcircuitRL},label=lst:CurtcircuitRL]{Python/Exemple-1-9.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}[mathescape=true]
+Intensitat simètrica eficaç = 25423.0955 A
+Intensitat asimètrica de pic = 71.9 kA
+Intensitat asimètrica eficaç = 44.0 kA
+$ \includegraphics{Cap-PythonExemp-CurtcircuitRL.pdf} $
+\end{lstlisting}
+
+
+\hypertarget{exemple:CurtcircuitPicRL}{\subsection{Exemple \ref*{ex:CurtcircuitPicRL} \CurtcircuitPicRL}}
+En el llistat \vref{lst:CurtcircuitPicRL} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:CurtcircuitPicRL}. La resolució es fa utilitzant funcions del mòdul numèric \funsfbs{numpy}, i la funció \funsfbs{minimize\_scalar} del mòdul  \funsfbs{scipy.optimize}, la qual troba mínims locals d'una funció; com que en aquest cas  el que es vol trobar és un màxim local, cal posar un signe negatiu davant de la funció que es passa a \funsfbs{minimize\_scalar} i un signe negatiu davant de la solució obtinguda.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:CurtcircuitPicRL} \CurtcircuitPicRL},label=lst:CurtcircuitPicRL]{Python/Exemple-1-10.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+Factor κ (CEI 60909-1) = 1.8452
+Intensitat asimètrica de pic (CEI 60909-1) = 66.3 kA
+Intensitat asimètrica de pic (exacta) = 66075.5 A (t = 9.6650 ms)
+\end{lstlisting}
+
+
+\hypertarget{exemple:Malles}{\subsection{Exemple \ref*{ex:Malles} \Malles}}
+En el llistat \vref{lst:Malles} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:Malles}. La resolució es fa de dues maneres: utilitzant primer la funció \funsfbs{solve} del mòdul \funsfbs{scipy.linalg}, i fent servir després la classe \funsfbs{Network} del mòdul \funsfbs{qed.eng\_elc}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:Malles} \Malles},label=lst:Malles]{Python/Exemple-1-11.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+Resolució algebraica
+--------------------
+I1 = 2.75 A
+I2 = -0.50 A
+I3 = 2.25 A
+I4 = 0.50 A
+I5 = 1.25 A
+I6 = 0.75 A
+
+Mètode dels nusos
+--------------------
+I1 = 2.75 A
+I2 = -0.50 A
+I3 = 2.25 A
+I4 = 0.50 A
+I5 = 1.25 A
+I6 = 0.75 A
+\end{lstlisting} 
+
+
+
+\section{Exemples del capítol \ref*{sec:ch-calc-bas}}
+
+\hypertarget{exemple:TriangleEstrella}{\subsection{Exemple \ref*{ex:TriangleEstrella} \TriangleEstrella}}
+En el llistat \vref{lst:TriangleEstrella} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:TriangleEstrella}. Es fa servir la funció \funsfbs{D\_to\_Y} del mòdul \funsfbs{qed.eng\_elec} per fer la transformació de triangle a estrella.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:TriangleEstrella} \TriangleEstrella},label=lst:TriangleEstrella]{Python/Exemple-2-2.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+Z_A = (4-2j) Ω
+Z_B = (4-2j) Ω
+Z_C = (-2-4j) Ω
+\end{lstlisting}
+
+
+\hypertarget{exemple:ResCircPotAbs}{\subsection{Exemple \ref*{ex:ResCircPotAbs} \ResCircPotAbs}}
+En el llistat \vref{lst:ResCircPotAbs} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:ResCircPotAbs}. Es fa servir la funció \funsfbs{ezs\_u} del mòdul \funsfbs{qed.eng\_elec} per calcular la tensió de la càrrega.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:ResCircPotAbs} \ResCircPotAbs},label=lst:ResCircPotAbs]{Python/Exemple-2-3.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+U   = 0.3165+0.0874j
+I   = 2.1259-0.8346j
+Z_S = 0.1150+0.0863j
+\end{lstlisting}
+
+Es pot observar que algun dels valors obtinguts no és exactament igual al valor obtingut en la resolució manual; això és degut al fet que en la resolució manual s'han utilitzat només quatre xifres decimals, mentre que el programa treballa sempre amb tota la precisió de les variables (típicament, setze xifres decimals).
+
+
+
+\section{Exemples del capítol \ref*{sec:ch-comp-sim}}
+
+\hypertarget{exemple:ImpedEquil}{\subsection{Exemple \ref*{ex:ImpedEquil} \ImpedEquil}}
+En el llistat \vref{lst:ImpedEquil} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:ImpedEquil}. S'usen funcions relatives a les components simètriques del mòdul \funsfbs{qed.eng\_elec} per fer els càlculs. Es fa servir també la classe \funsfbs{ComplexD} del mòdul \funsfbs{qed.utils}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:ImpedEquil} \ImpedEquil},label=lst:ImpedEquil]{Python/Exemple-3-1.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+U_AB = 2760.00∠0.00° V
+U_BC = 1840.00∠-124.23° V
+U_CA = 2300.00∠138.59° V
+
+U_AB_1 = 2267.09∠5.04° V
+U_AB_2 = 539.77∠-21.66° V
+U_AB_0 = 0.00∠153.43° V
+
+U_AG_1 = 1308.91∠-24.96° V
+U_AG_2 = 311.64∠8.34° V
+U_AG_0 = 0.00∠0.00° V
+
+I_A_1 = 130.89∠-24.96° A
+I_A_2 = 31.16∠8.34° A
+I_A_0 = 0.00∠0.00° A
+
+S_3F = 543.11+0.00j kVA
+
+U_AG = 1578.66∠-18.74° V
+U_BG = 1362.86∠-158.16° V
+U_CG = 1039.96∠102.78° V
+
+U_AG = 1578.66∠-18.74° V
+U_BG = 1362.86∠-158.16° V
+U_CG = 1039.96∠102.78° V
+\end{lstlisting}
+
+
+\hypertarget{exemple:ImpedDesequil}{\subsection{Exemple \ref*{ex:ImpedDesequil} \ImpedDesequil}}
+En el llistat \vref{lst:ImpedDesequil} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:ImpedDesequil}. S'usen funcions relatives a les components simètriques del mòdul \funsfbs{qed.eng\_elec} per fer els càlculs. Es fa servir també la classe \funsfbs{ComplexD} del mòdul \funsfbs{qed.utils}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:ImpedDesequil} \ImpedDesequil},label=lst:ImpedDesequil]{Python/Exemple-3-2.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+U_AB = 2760.00∠0.00° V
+U_BC = 1840.00∠-124.23° V
+U_CA = 2300.00∠138.59° V
+
+U_AN = 1101.65∠-14.54° V
+U_BN = 1716.07∠-170.72° V
+U_CN = 1408.22∠117.89° V
+
+U_AN_1 = 1308.91∠-24.96° V
+U_AN_2 = 311.64∠8.34° V
+U_AN_0 = 486.68∠151.73° V
+
+U_GN = 486.68∠151.73° V
+\end{lstlisting}
+
+
+
+
+\section{Exemples del capítol \ref*{sec:ch-series-fourier}}
+
+\hypertarget{exemple:CircuitFourier}{\subsection{Exemple \ref*{ex:CircuitFourier} \CircuitFourier}}
+En el llistat \vref{lst:CircuitFourier} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:CircuitFourier}. La resolució es fa usant funcions del mòdul numèric \funsfbs{numpy} i del mòdul gràfic  \funsfbs{matplotlib}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:CircuitFourier} \CircuitFourier},label=lst:CircuitFourier]{Python/Exemple-4-3.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}[mathescape=true]
+I = 0.5505 A
+P = 3.03 W
+P = 3.03 W
+
+$ \includegraphics{Cap-PythonExemp-CircuitFourier-1.pdf} $
+$ \includegraphics{Cap-PythonExemp-CircuitFourier-2.pdf} $
+$ \includegraphics{Cap-PythonExemp-CircuitFourier-3.pdf} $
+\end{lstlisting} 
+
+L'última gràfica és una ampliació respecte de l'exemple resolt a mà. S'utilitzen les funcions \funsfbs{fft.rfft} i \funsfbs{fft.rfftfreq} del mòdul numèric \funsfbs{numpy} per aplicar la transformada ràpida de Fourier a l'ona rectangular de tensió. El que s'obté correspon a la sèrie de Fourier d'aquesta ona calculada en l'exemple resolt a  mà, és a dir, termes de freqüència \qty{100}{Hz}, \qty{300}{Hz}, \qty{500}{Hz}, etc., d'una amplitud respectiva de \qty{25,4648}{V}, \qty{8,4883}{V}, \qty{5,0292}{V}, etc. L'ús d'aquestes dues funcions no és senzill, i cal llegir amb atenció la documentació del mòdul \funsfbs{numpy}; en particular, cal tenir en compte que per obtenir valors correctes s'ha utilitzat un múltiple enter del període (\qty{40}{ms} en aquest cas) de l'ona.
+
+
+\section{Exemples del capítol \ref*{sec:ch-laplace}}
+
+\hypertarget{exemple:CircuitLaplace}{\subsection{Exemple \ref*{ex:CircuitLaplace} \CircuitLaplace}}
+En el llistat \vref{lst:CircuitLaplace} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:CircuitLaplace}. La resolució es fa fent ús de funcions del mòdul de matemàtica simbòlica \funsfbs{sympy}, del mòdul numèric \funsfbs{numpy} i del mòdul gràfic  \funsfbs{matplotlib}. Del mòdul \funsfbs{sympy} es fa servir bàsicament la funció \funsfbs{Eq} per definir equacions,  la funció \funsfbs{solve} per aïllar una variable d'una equació, la funció \funsfbs{subs} per substituir  una variable per la seva expressió en una equació, i la   funció \funsfbs{inverse\_laplace\_transform} per obtenir la transformada inversa de Laplace. Aquesta  darrera funció requereix que els valors numèrics implicats siguin exactes i és per això que cal fer servir la funció \funsfbs{Rational} quan tenim valors no enters; per exemple, en lloc de \funsfbs{L = 250e-3} cal utilitzar \funsfbs{sympy.Rational(250, 1000)}, i el lloc de \funsfbs{iL\_0 =  U\_bat/(R\_bat + R\_3)} cal utilitzar \funsfbs{iL\_0 = sympy.Rational(U\_bat, R\_bat + R\_3)}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:CircuitLaplace} \CircuitLaplace},label=lst:CircuitLaplace]{Python/Exemple-5-3.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}[mathescape=true]
+iL_0 = 4 A
+uC_0 = 100 V
+iL(s) = 4*(s + 1075)/(s**2 + 1475*s + 700000)
+iL(t) = 4*(3*sqrt(111)*sin(75*sqrt(111)*t/2) + 37*cos(75*sqrt(111)*t/2))*exp(-1475*t/2)/37
+iL(0) = 4 A
+$ \includegraphics{Cap-PythonExemp-CircuitLaplace.pdf} $
+\end{lstlisting} 
+
+
+
+
+
+\section{Exemples del capítol \ref*{sec:ch-cables}}
+
+\hypertarget{exemple:CaigudaDeTensio}{\subsection{Exemple \ref*{ex:CaigudaDeTensio} \CaigudaDeTensio}}
+En el llistat \vref{lst:CaigudaDeTensio} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:CaigudaDeTensio}. La resolució es fa usant el mòdul numèric \funsfbs{numpy} i  la funció \funsfbs{voltage\_drop} del mòdul \funsfbs{qed.eng\_elec}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:CaigudaDeTensio} \CaigudaDeTensio},label=lst:CaigudaDeTensio]{Python/Exemple-7-1.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+Caiguda de tensió: 11.20 V (5.10 %)
+\end{lstlisting} 
+
+
+
+\hypertarget{exemple:AWGammSQ}{\subsection{Exemple \ref*{ex:AWGammSQ} \AWGammSQ}}
+En el llistat \vref{lst:AWGammSQ} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:AWGammSQ}. La resolució es fa usant la funció \funsfbs{AWG\_to\_mm2} del mòdul \funsfbs{qed.eng\_elec}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:AWGammSQ} \AWGammSQ},label=lst:AWGammSQ]{Python/Exemple-7-3.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+AWG 14 equival a 2.1 mm²
+\end{lstlisting} 
+
+
+
+\hypertarget{exemple:mmSQaAWG}{\subsection{Exemple \ref*{ex:mmSQaAWG} \mmSQaAWG}}
+En el llistat \vref{lst:mmSQaAWG} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:mmSQaAWG}. La resolució es fa usant la funció \funsfbs{mm2\_to\_AWG} del mòdul \funsfbs{qed.eng\_elec}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:mmSQaAWG} \mmSQaAWG},label=lst:mmSQaAWG]{Python/Exemple-7-4.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+4 mm² equival a AWG 11
+\end{lstlisting} 
+
+
+
+
+
+\section{Exemples del capítol \ref*{sec:ch-trafos-pot}}
+
+\hypertarget{exemple:ParamTrafo}{\subsection{Exemple \ref*{ex:ParamTrafo} \ParamTrafo}}
+En el llistat \vref{lst:ParamTrafo} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:ParamTrafo}. La resolució es fa usant funcions del mòdul numèric \funsfbs{numpy} i la classe  \funsfbs{ComplexD} del mòdul \funsfbs{qed.utils}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:ParamTrafo} \ParamTrafo},label=lst:ParamTrafo]{Python/Exemple-9-1.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+g_Fe = 0.0050
+b_m = 0.0194
+r = 0.0100
+x = 0.0387
+
+s_2 = 0.5000+0.3750j
+u_2 = 0.9500
+
+i_2 = 0.6579∠-36.87°
+i_0 = 0.0190∠-75.52°
+i_1 = 0.6728∠-37.88°
+
+u_1 = 0.9715∠0.97°
+U_1 = 24286.3∠0.97° V
+
+Δ_u = 0.0215
+Δ_U2 = 8.5801 V
+
+p_Cu = 0.004527
+p_Fe = 0.004513
+η = 0.98
+\end{lstlisting} 
+
+Es pot observar que algun dels valors obtinguts no és exactament igual al valor obtingut en la resolució manual; això és degut al fet que en la resolució manual s'han utilitzat només quatre xifres decimals pels mòduls i dues pels angles, mentre que el programa treballa sempre amb tota la precisió de les variables (típicament, setze xifres decimals).
+
+
+
+
+\section{Exemples del capítol \ref*{sec:ch-motors-ind}}
+
+\hypertarget{exemple:MotTempsArr}{\subsection{Exemple \ref*{ex:MotTempsArr} \MotTempsArr}}
+En el llistat \vref{lst:MotTempsArr} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MotTempsArr}. La resolució es fa fent ús de funcions del mòdul numèric \funsfbs{numpy} i del mòdul d'integració numèrica \funsfbs{scipy.integrate}. D'aquest darrer mòdul s'utilitza la funció \funsfbs{trapezoid} per fer la integració numèrica amb el mètode dels trapezis --- tal com es fa manualment en l'exemple --- i la funció \funsfbs{simpson} per fer la integració numèrica amb el mètode de Simpson, per tal d'obtenir un resultat més precís; la funció \funsfbs{simpson} pot treballar amb divisions d'amplada diferent, tal com és el cas d'aquest exemple. 
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:MotTempsArr} \MotTempsArr},label=lst:MotTempsArr]{Python/Exemple-10-3.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+Temps d'arrencada (trapezoid) = 13.5 s
+Temps d'arrencada (simpson)   = 12.9 s
+\end{lstlisting} 
+
+
+\hypertarget{exemple:CaractMotor}{\subsection{Exemple \ref*{ex:CaractMotor} \CaractMotor}}
+En el llistat \vref{lst:CaractMotor} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:CaractMotor}. La resolució es fa usant funcions del mòdul numèric \funsfbs{numpy} i del mòdul gràfic \funsfbs{matplotlib}. Es fa servir també la classe \funsfbs{ComplexD} del mòdul \funsfbs{qed.utils}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:CaractMotor} \CaractMotor},label=lst:CaractMotor]{Python/Exemple-10-4.py}
+
+El programa calcula, addicionalment a l'exemple resolt a mà, els valors següents: relació entre el corrent d'arrencada i el corrent nominal, corrent de pic asimètric d'arrencada i relació entre aquest corrent i el corrent d'arrencada, potència mecànica d'arrencada --- igual a zero, com era d'esperar ---, relació entre el parell mecànic d'arrencada i el parrell mecànic nominal, factor de potència d'arrencada, velocitat en rad/s del parell mecànic màxim, i relació entre el parell mecànic màxim i el parrell mecànic nominal.
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+
+\begin{lstlisting}[mathescape=true]
+U_1 = 219.393 V
+n_m,sinc = 1500 r/min,     ω_m,sinc = 157.080 rad/s
+n_m,n = 1425 r/min,     ω_m,n = 149.226 rad/s
+
+Z_0 = 4.390+39.512j Ω
+Z_Th = 0.470+1.448j Ω
+E_Th = 211.1737∠0.4596° V
+
+I_1,n = 17.7 A
+I_1,arr = 74.9 A,   I_1,arr/I_1,n = 4.2
+I_1,arr,pic,asim = 139.24 A,   I_1,arr,pic,asim/I_1,arr = 1.86
+
+P_m,n = 9052.8 W
+P_m,arr = 0.0 W
+
+T_m,n = 60.7 N·m
+T_m,arr = 62.8 N·m,   T_m,arr/T_m,n = 1.04
+
+cos φ,n = 0.887
+cos φ,arr = 0.373
+
+η,n = 0.876
+
+s,T_m,max = 0.2283,     n,T_m,max = 1157.62 r/min,     ω,T_m,max = 121.23 rad/s
+T_m,max = 132.7 N·m,     T_m,max/T_m,n = 2.19
+
+
+
+
+
+$ \includegraphics{Cap-PythonExemp-CaractMotor-1.pdf} $
+
+
+
+$ \includegraphics{Cap-PythonExemp-CaractMotor-2.pdf} $
+
+
+
+$ \includegraphics{Cap-PythonExemp-CaractMotor-3.pdf} $
+\end{lstlisting} 
+
+
+
+
+\hypertarget{exemple:TensDeseqMotor}{\subsection{Exemple \ref*{ex:TensDeseqMotor} \TensDeseqMotor}}
+En el llistat \vref{lst:TensDeseqMotor} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:TensDeseqMotor}. La resolució es fa fent servir funcions del mòdul \funsfbs{qed.eng\_elec}. Es fa servir també la classe \funsfbs{ComplexD} del mòdul \funsfbs{qed.utils}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:TensDeseqMotor} \TensDeseqMotor},label=lst:TensDeseqMotor]{Python/Exemple-10-5.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+U_AB = 399.00∠0.00° V
+U_BC = 370.00∠-122.63° V
+U_CA = 370.00∠122.63° V
+
+U_AB,1 = 379.41∠-0.00° V
+U_AB,2 = 19.59∠0.00° V
+U_AB,0 = 0.00∠0.00° V
+
+U_AN,1 = 219.05∠-30.00° V
+U_AN,2 = 11.31∠30.00° V
+U_AN,2/U_AN,1 = 0.052
+
+Z_mot,n,1 = 11.004+5.718j Ω
+Z_mot,n,2 = 0.805+2.712j Ω
+Z_mot,arr,1 = 1.091+2.717j Ω
+
+I_1,n,1 = 17.66∠-57.46° A
+I_1,n,2 = 4.00∠-43.47° A
+I_1,n,2/I_1,n,1 = 0.226
+
+I_1,n,A = 21.57∠-54.89° A
+I_1,n,B = 17.00∠169.48° A
+I_1,n,C = 15.16∠73.48° A
+\end{lstlisting} 
+
+
+\hypertarget{exemple:MotCarregaReduida}{\subsection{Exemple \ref*{ex:MotCarregaReduida} \MotCarregaReduida}}
+En el llistat \vref{lst:MotCarregaReduida} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MotCarregaReduida}. La resolució es fa emprant funcions del mòdul numèric \funsfbs{numpy} i del mòdul gràfic \funsfbs{matplotlib}, i la funció \funsfbs{root} del mòdul matemàtic \funsfbs{scipy.optimize}. La funció \funsfbs{root} calcula el valor de $s$ resolent una equació no lineal; com a valor inicial per resoldre-la  s'utilitza el valor de $s\ped{n}$.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:MotCarregaReduida} \MotCarregaReduida},label=lst:MotCarregaReduida]{Python/Exemple-10-6.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}[mathescape=true]
+U_1 = 219.393 V
+
+Z_0 = 4.390+39.512j Ω
+Z_Th = 0.470+1.448j Ω
+
+P_m,50% = 4526.4 W
+s,50% = 0.022581
+
+Z_mot,50% = 18.015+13.510j Ω
+
+I_1,50% = 9.743 A
+I_1,50%/I_1,n = 0.6
+
+cos φ,50% = 0.800024
+η,50% = 0.882317
+	
+		
+$ \includegraphics{Cap-PythonExemp-MotCarregaReduida-1.pdf} $
+
+
+
+
+
+
+
+
+
+
+$ \includegraphics{Cap-PythonExemp-MotCarregaReduida-2.pdf} $
+\end{lstlisting} 
+
+
+\hypertarget{exemple:MotTensRedSolAp}{\subsection{Exemple \ref*{ex:MotTensRedSolAp} \MotTensRedSolAp}}
+En el llistat \vref{lst:MotTensRedSolAp} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MotTensRedSolAp}. La resolució es fa emprant funcions del mòdul numèric \funsfbs{numpy} i del mòdul gràfic \funsfbs{matplotlib}, i la funció \funsfbs{root} del mòdul matemàtic \funsfbs{scipy.optimize}. La funció \funsfbs{root} calcula el valor de $s$ resolent una equació no lineal; com a valor inicial per resoldre-la  s'utilitza el valor de $s\ped{n}$.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:MotTensRedSolAp} \MotTensRedSolAp},label=lst:MotTensRedSolAp]{Python/Exemple-10-7.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}[mathescape=true]
+Z_0 = 4.390+39.512j Ω
+Z_Th = 0.470+1.448j Ω
+
+P_m,n = 9052.8 W
+
+U_1,80% = 175.514 V
+s,80% = 0.097128
+
+Z_mot,80% = 6.324+3.565j Ω
+
+I_1,80% = 24.177 A
+I_1,80%/I_1,n = 1.4
+
+cos φ,80% = 0.871097
+η,80% = 0.816341
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+$ \includegraphics{Cap-PythonExemp-MotTensRedSolAp-1.pdf} $
+$ \includegraphics{Cap-PythonExemp-MotTensRedSolAp-2.pdf} $
+\end{lstlisting} 
+
+
+
+\hypertarget{exemple:MotTensRedSolEx}{\subsection{Exemple \ref*{ex:MotTensRedSolEx} \MotTensRedSolEx}}
+En el llistat \vref{lst:MotTensRedSolEx} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MotTensRedSolEx}. La resolució es fa usant funcions del mòdul numèric \funsfbs{numpy} i del mòdul gràfic \funsfbs{matplotlib}, i la funció \funsfbs{root} del mòdul matemàtic \funsfbs{scipy.optimize}. La funció \funsfbs{root} calcula el valor de $s$ resolent una equació no lineal; com a valor inicial per resoldre-la  s'utilitza el valor de $s\ped{n}$.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:MotTensRedSolEx} \MotTensRedSolEx},label=lst:MotTensRedSolEx]{Python/Exemple-10-8.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}[mathescape=true]
+U_1,100% = 219.393 V
+U_1,80% = 175.514 V
+
+n_m,sinc = 1500 r/min,  ω_m,sinc = 157.080 rad/s
+
+Z_0 = 4.390+39.512j Ω
+Z_Th = 0.470+1.448j Ω
+
+s,100% = 0.046
+n,100% = 1430.8 r/min
+Z_mot,100% = 11.703+6.182j Ω
+I_1,100% = 16.6 A
+I_1,arr,100% = 74.9 A
+Tm,100% = 56.6 N m
+Tm,arr,100% = 62.8 N m
+cos φ,100% = 0.884
+η,100% = 0.880
+
+s,80% = 0.075
+n,80% = 1388.0 r/min
+Z_mot,80% = 7.926+4.135j Ω
+I_1,80% = 19.6 A
+I_1,arr,80% = 59.9 A
+Tm,80% = 53.4 N m
+Tm,arr,80% = 40.2 N m
+cos φ,80% = 0.887
+η,80% = 0.847
+
+
+
+
+
+
+
+
+$ \includegraphics{Cap-PythonExemp-MotTensRedSolEx-1-1.pdf} $
+
+
+$ \includegraphics{Cap-PythonExemp-MotTensRedSolEx-1-2.pdf} $
+
+
+$ \includegraphics{Cap-PythonExemp-MotTensRedSolEx-2-1.pdf} $
+$ \includegraphics{Cap-PythonExemp-MotTensRedSolEx-2-2.pdf} $
+\end{lstlisting} 
+
+
+
+\hypertarget{exemple:MotTensRedIarr}{\subsection{Exemple \ref*{ex:MotTensRedIarr} \MotTensRedIarr}}
+En el llistat \vref{lst:MotTensRedIarr} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MotTensRedIarr}. La resolució es fa emprant funcions del mòdul numèric \funsfbs{numpy} i del mòdul gràfic \funsfbs{matplotlib}, i la funció \funsfbs{root} del mòdul matemàtic \funsfbs{scipy.optimize}. La funció \funsfbs{root} calcula el valor de $s$ resolent una equació no lineal; com a valor inicial per resoldre-la  es fa servir el valor de $s\ped{n}$. Es fa servir també la classe \funsfbs{ComplexD} del mòdul \funsfbs{qed.utils}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:MotTensRedIarr} \MotTensRedIarr},label=lst:MotTensRedIarr]{Python/Exemple-10-9.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}[mathescape=true]
+U_1,sist = 219.393 V
+Z_sist = 0.003+0.029j Ω
+Z_cable = 0.317+0.010j Ω
+
+n_m,sinc = 1500 r/min,  ω_m,sinc = 157.080 rad/s
+
+Z_0 = 4.390+39.512j Ω
+Z_Th = 0.765+1.490j Ω
+E_Th = 210.7790∠0.8932° V
+
+s,n = 0.048
+U_1,n = 214.3052∠0.5019° V
+I_1,n = 16.85 A
+T_m,n = 56.4 N·m
+
+U_1,arr = 207.4937∠5.2376° V
+I_1,arr = 70.87 A
+T_m,arr = 56.2 N·m
+
+s_T_m,max = 0.2197
+n_T_m,max = 1170.47 r/min,  ω_T_m,max = 122.57 rad/s
+T_m,max = 117.5 N·m
+
+
+
+
+
+
+
+
+
+
+	
+$ \includegraphics{Cap-PythonExemp-MotTensRedIarr-1.pdf} $
+
+
+$ \includegraphics{Cap-PythonExemp-MotTensRedIarr-2.pdf} $
+\end{lstlisting} 
+
+\pagebreak
+
+
+
+
+
+\section{Exemples del capítol \ref*{sec:ch-xarxes-elec}}
+
+\hypertarget{exemple:XarxaAmbAcobl}{\subsection{Exemple \ref*{ex:XarxaAmbAcobl} \XarxaAmbAcobl}}
+En el llistat \vref{lst:XarxaAmbAcobl} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:XarxaAmbAcobl}. S'utilitza la classe \funsfbs{Network} del mòdul \funsfbs{qed.eng\_elec} i  la classe \funsfbs{ComplexD} del mòdul \funsfbs{qed.utils} per resoldre la xarxa.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:XarxaAmbAcobl} \XarxaAmbAcobl},label=lst:XarxaAmbAcobl]{Python/Exemple-11-1.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+U1 = 1.0494∠178.5091°,  I1 = 0.2312∠-61.8063° 
+U2 = 1.0175∠177.4776°,  I2 = 0.7431∠-13.0406° 
+U3 = 0.9727∠169.6442°,  I3 = 1.2782∠-22.6715° 
+U4 = 0.1495∠67.0039°,  I4 = 1.4946∠-22.9961° 
+U5 = 0.2925∠66.2049°,  I5 = 0.6955∠-23.7522° 
+U6 = 0.1431∠65.3702°,  I6 = 0.2166∠-24.9115° 
+U7 = 0.0370∠28.1937°,  I7 = 0.2312∠-61.8063° 
+U8 = 0.9512∠-19.1752°,  I8 = 2.1901∠-23.2362° 
+
+s_G1 = 0.1201+0.2241j
+s_G2 = 0.7433+0.2484j
+s_G3 = 1.2146+0.6736j
+s_Q8 = 2.0781+0.1475j
+\end{lstlisting} 
+
+
+\hypertarget{exemple:XarxaSenseAcobl}{\subsection{Exemple \ref*{ex:XarxaSenseAcobl} \XarxaSenseAcobl}}
+En el llistat \vref{lst:XarxaSenseAcobl} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:XarxaSenseAcobl}. S'utilitza la classe \funsfbs{Network} del mòdul \funsfbs{qed.eng\_elec} per resoldre la xarxa.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:XarxaSenseAcobl} \XarxaSenseAcobl},label=lst:XarxaSenseAcobl]{Python/Exemple-11-2.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+I2 = -0.0294-3.1176j A
+I5 = 0.8235-3.2059j A
+\end{lstlisting} 
+
+\hypertarget{exemple:XarxaThevenin}{\subsection{Exemple \ref*{ex:XarxaThevenin} \XarxaThevenin}}
+En el llistat \vref{lst:XarxaThevenin} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:XarxaThevenin}. S'utilitza la classe \funsfbs{Network} del mòdul \funsfbs{qed.eng\_elec} per resoldre la xarxa.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:XarxaThevenin} \XarxaThevenin},label=lst:XarxaThevenin]{Python/Exemple-11-3.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+E_Th(1,2) = 119.2079+2.0792j V
+Z_Th(1,2) = 4.2574+2.5743j Ω
+J_No(1,2) = 20.7200-12.0400j A
+Y_No(1,2) = 0.1720-0.1040j S
+\end{lstlisting} 
+
+
+
+\section{Exemples del capítol \ref*{sec:ch-flux-carregues}}
+
+\hypertarget{exemple:FluxCarrXarxa}{\subsection{Exemple \ref*{ex:FluxCarrXarxa} \FluxCarrXarxa}}
+En el llistat \vref{lst:FluxCarrXarxa} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:FluxCarrXarxa}. Per resoldre el sistema d'equacions no lineals  es fan servir funcions del mòdul numèric \funsfbs{numpy}, del mòdul de matemàtica numèrica \funsfbs{scipy} i del mòdul de matemàtica simbòlica \funsfbs{sympy}. Primer es defineixen de forma simbòlica les variables i el sistema d'equacions a resoldre usant les funcions \funsfbs{symbols}, \funsfbs{SIN} i \funsfbs{COS}, i després se n'obté el jacobià usant les funcions \funsfbs{Matrix} i \funsfbs{jacobian}; a continuació es fa ús de la funció  \funsfbs{lambdify} per crear les versions numèriques corresponents al sistema d'equacions i al jacobià, i finalment es resol el sistema amb la funció \funsfbs{optimize.root}. Les funcions sinus i cosinus simbòliques són  \funsfbs{sympy.sin} i  \funsfbs{sympy.cos} respectivament, no obstant això,  per tal de fer més llegible les equacions es defineixen els àlies \funsfbs{SIN} i \funsfbs{COS} per a aquestes dues funcions trigonomètriques.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:FluxCarrXarxa} \FluxCarrXarxa},label=lst:FluxCarrXarxa]{Python/Exemple-12-1.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+δ_2 = -0.015277
+v_3 = 1.033587
+δ_3 = -0.014301
+
+s_1 = 0.85681+0.52171j
+s_2 = -0.25000-0.20049j
+s_G1 = 0.85681+0.52171j
+s_G2 = 0.25000+0.04951j
+\end{lstlisting} 
+
+
+\hypertarget{exemple:ControlTensCond}{\subsection{Exemple \ref*{ex:ControlTensCond} \ControlTensCond}}
+En el llistat \vref{lst:ControlTensCond} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:ControlTensCond}. Per resoldre l'apartat a)   es fan servir funcions del mòdul numèric \funsfbs{numpy}, del mòdul de matemàtica numèrica \funsfbs{scipy} i del mòdul de matemàtica simbòlica \funsfbs{sympy}. Primer es defineixen de forma simbòlica les variables i el sistema d'equacions a resoldre usant les funcions \funsfbs{symbols}, \funsfbs{SIN} i \funsfbs{COS}, i després se n'obté el jacobià usant les funcions \funsfbs{Matrix} i \funsfbs{jacobian}; a continuació es fa ús de la funció  \funsfbs{lambdify} per crear les versions numèriques corresponents al sistema d'equacions i al jacobià, i finalment es resol el sistema amb la funció \funsfbs{optimize.root}. L'apartat b) de l'exemple es resol de forma similar, però com que només tenim una equació, en lloc de les funcions \funsfbs{Matrix}, \funsfbs{jacobian} i \funsfbs{optimize.root}, es fan servir les funcions \funsfbs{diff} i \funsfbs{optimize.root\_scalar}. Les funcions sinus i cosinus simbòliques són  \funsfbs{sympy.sin} i  \funsfbs{sympy.cos} respectivament, no obstant això,  per tal de fer més llegible les equacions es defineixen els àlies \funsfbs{SIN} i \funsfbs{COS} per a aquestes dues funcions trigonomètriques.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:ControlTensCond} \ControlTensCond},label=lst:ControlTensCond]{Python/Exemple-12-2.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+Cas a)
+--------------------
+v_2 = 0.970306
+δ_2 = -0.060222
+
+s_12 = 0.82813+0.59423j
+s_G1 = 2.02813+0.89423j
+
+Cas b)
+--------------------
+δ_2 = -0.072323
+
+s_12 = 0.81695-0.04520j
+s_21 = -0.80000-0.00484j
+s_G1 = 2.01695+0.25480j
+s_C2 = -0.00000+0.59516j
+\end{lstlisting} 
+
+
+\hypertarget{exemple:ControlTensTrafo}{\subsection{Exemple \ref*{ex:ControlTensTrafo} \ControlTensTrafo}}
+En el llistat \vref{lst:ControlTensTrafo} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:ControlTensTrafo}. Per resoldre el sistema d'equacions no lineals  es fan servir funcions del mòdul numèric  \funsfbs{numpy}, del mòdul de matemàtica numèrica \funsfbs{scipy} i del mòdul de matemàtica simbòlica \funsfbs{sympy}. Primer es defineixen de forma simbòlica les variables i el sistema d'equacions a resoldre usant les funcions \funsfbs{symbols}, \funsfbs{sin} i \funsfbs{cos}, i després se n'obté el jacobià usant les funcions \funsfbs{Matrix} i \funsfbs{jacobian}; a continuació es fa ús de la funció  \funsfbs{lambdify} per crear les versions numèriques corresponents al sistema d'equacions i al jacobià, i finalment es resol el sistema amb la funció \funsfbs{optimize.root}.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:ControlTensTrafo} \ControlTensTrafo},label=lst:ControlTensTrafo]{Python/Exemple-12-3.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+δ_2 = -0.039196
+m = 0.979639
+\end{lstlisting}
+
+
+
+
+\section{Exemples de l'apèndix \ref*{sec:ch-calc-num}}
+
+\hypertarget{exemple:InterpLinCub}{\subsection{Exemple \ref*{ex:InterpLinCub} \InterpLinCub}}
+En el llistat \vref{lst:InterpLinCub} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:InterpLinCub}. S'utilitza la funció \funsfbs{interp1d} del mòdul \funsfbs{scipy.interpolate} per fer la interpolació.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:InterpLinCub} \InterpLinCub},label=lst:InterpLinCub]{Python/Exemple-E-1.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+Interpolació lineal: 0.9975
+Interpolació cúbica: 1.0000
+\end{lstlisting} 
+
+
+\hypertarget{exemple:InterpDuesDim}{\subsection{Exemple \ref*{ex:InterpDuesDim} \InterpDuesDim}}
+En el llistat \vref{lst:InterpDuesDim} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:InterpDuesDim}. A més de la interpolació lineal, també es fa servir la interpolació cúbica --- més precisa --- per resoldre l'exemple. S'utilitza la funció \funsfbs{interp2d} del mòdul \funsfbs{scipy.interpolate} per fer la interpolació.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:InterpDuesDim} \InterpDuesDim},label=lst:InterpDuesDim]{Python/Exemple-E-2.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+Interpolació lineal: 4.20 cP
+Interpolació cúbica: 4.12 cP
+\end{lstlisting} 
+
+La funció \funsfbs{interp2d} requereix un nombre de punts $n$ mínim: $n \geq (k+1)^2$, amb $k=1$ per a una interpolació lineal, $k=3$ per a una interpolació cúbica, i $k=5$ per a una interpolació de cinquè grau. En el nostre cas tenim 16 punts, que és el mínim necessari en el cas de $k=3$.
+
+\hypertarget{exemple:IntegracioNum}{\subsection{Exemple \ref*{ex:IntegracioNum} \IntegracioNum}}
+En el llistat \vref{lst:IntegracioNum} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:IntegracioNum}. A més de la integració amb els  mètodes dels trapezis i de Simpson --- amb les funcions \funsfbs{trapezoid} i \funsfbs{simpson} del mòdul \funsfbs{scipy.integrate} --- també es fa servir la funció  d'integració genèrica \funsfbs{quad} del mateix mòdul,  la qual usa l'equació de la funció que es vol integrar, i torna la integral i una estimació de l'error. Atès que la funció a integrar té una primitiva coneguda, utilitzarem també la funció \funsfbs{integrate} del mòdul de matemàtica simbòlica \funsfbs{sympy} per calcular la integral de forma exacta.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:IntegracioNum} \IntegracioNum},label=lst:IntegracioNum]{Python/Exemple-E-3.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+Integral (trapezoid) = 0.6956
+Integral (simpson) = 0.6938
+Integral (quad) = 0.6931471805599454, Error = 7.70e-15
+Integral (simbòlica) = log(2) = 0.693147180559945309417232121458
+\end{lstlisting} 
+
+Cal tenir en compte que en la simbologia del mòdul \funsfbs{sympy}, \funsfbs{log(x)} representa un logaritme neperià; un logaritme decimal es representa com \funsfbs{log(x, 10)}.
+
+Es pot observar que el valor obtingut utilitzant la regla de Simpson no és exactament igual al valor obtingut en la resolució manual; això és degut al fet que en la resolució manual s'ha utilitzat de forma conjunta les regles de Simpson 3/8 i 1/3, mentre que la funció \funsfbs{simpson}  utilitza de forma conjunta la regla de Simpson i la dels trapezis quan el nombre de punts és parell; no obstant això, la funció \funsfbs{simpson} té l'avantatge de poder treballar amb divisions d'amplada diferent. L'estimació de l'error de la funció \funsfbs{quad} és prou bona, només cal comparar el valor obtingut de la integral  amb el valor exacte amb 30 decimals.
+
+
+\hypertarget{exemple:SolFunNoLin}{\subsection{Exemple \ref*{ex:SolFunNoLin} \SolFunNoLin}}
+En el llistat \vref{lst:SolFunNoLin} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:SolFunNoLin}. Primer es defineix la funció $f(x)$ i la seva funció derivada, i després es fa servir la funció \funsfbs{root\_scalar}  del mòdul \funsfbs{scipy.optimize} per trobar la solució de $f(x)=0$, amb els mètodes de Newton i de la secant. A continuació es resol el mateix problema utilitzant el mòdul  de matemàtica simbòlica \funsfbs{sympy} a partir de la funció \funsfbs{symbols}, que crea variables simbòliques, de la funció \funsfbs{diff}, que calcula de forma simbòlica la derivada d'una funció, i de la funció  \funsfbs{lambdify}, que crea funcions numèriques a partir de funcions simbòliques.
+\lstset{
+	language=Python,
+	numbers=left,
+	frame=lines,
+	morekeywords=[1]{as,None,match,case,with}
+}
+\lstinputlisting[caption={Python --- Exemple \ref*{ex:SolFunNoLin} \SolFunNoLin},label=lst:SolFunNoLin]{Python/Exemple-E-4.py}
+
+Quan s'executa aquest programa, el resultat que s'obté és:
+\lstset{
+	language=,
+	numbers=none,
+	frame=none
+}
+\begin{lstlisting}
+Resolució numèrica
+----------------------------------------------------------------
+Newton: x = 0.01742101588983377 , f(x) = -1.0913936421275139e-11
+Secant: x = 0.017421015887729187 , f(x) = 1.7249829397769645e-05
+
+Resolució simbòlica + numèrica
+----------------------------------------------------------------
+Newton: x = 0.01742101588983377 , f(x) = -1.0913936421275139e-11
+Secant: x = 0.017421015887729187 , f(x) = 1.7249829397769645e-05
+\end{lstlisting} 

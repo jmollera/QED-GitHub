@@ -1,0 +1,136 @@
+\chapter*{Notació} \addcontentsline{toc}{chapter}{Notació}
+
+Es presenta a continuació la notació seguida en aquest llibre.
+
+Cal fer notar que les variables vectorials i matricials s'escriuen
+en lletra negreta inclinada,  mentre que les variables escalars
+s'escriuen en lletra normal inclinada.
+
+\begin{list}{}
+{\setlength{\labelwidth}{15mm} \setlength{\leftmargin}{20mm}
+\setlength{\labelsep}{5mm}}
+    \item[$\ju$] La unitat imaginària, definida com:
+    $\ju\equiv\sqrt{-1}$\index{j}
+    \item[$V$] Variable real.
+    \item[$\cmplx{V}$] Variable complexa.
+    \item[$\cmplx{V}^*$] Conjugat d'una variable complexa.
+    Es compleixen les relacions:\\[1ex]
+     $(\cmplx{V}_1 \pm \cmplx{V}_2 \pm \cdots  \pm \cmplx{V}_n)^* = \cmplx{V}_1^* \pm
+    \cmplx{V}_2^*\pm\cdots\pm\cmplx{V}_n^*$\\[1ex]
+    $(\cmplx{V}_1 \cmplx{V}_2 \cdots \cmplx{V}_n)^* = \cmplx{V}_1^*  \cmplx{V}_2^*
+    \cdots \cmplx{V}_n^*$\\[1ex]
+    $(\cmplx{V}_1 / \cmplx{V}_2)^* = \cmplx{V}_1^* / \cmplx{V}_2^*$
+    \item[$|\cmplx{V}|$] Mòdul d'una variable complexa.
+    Es compleixen les relacions:\\[1ex]
+      $\cmplx{V}\cmplx{V}^* = |\cmplx{V}|^2$\\[1ex]
+      $1/ \cmplx{V} = \cmplx{V}^* / \,|\cmplx{V}|^2$\\[1ex]
+      $|\cmplx{V}_1 \cmplx{V}_2 \cdots \cmplx{V}_n| =
+       |\cmplx{V}_1| \,|\cmplx{V}_2| \cdots |\cmplx{V}_n|$\\[1ex]
+       $|\cmplx{V}_1 / \cmplx{V}_2| = |\cmplx{V}_1| \,/ \,|\cmplx{V}_2|$\\[1ex]
+      $|\cmplx{V}_1+\cmplx{V}_2+\cdots+\cmplx{V}_n| \leq
+      |\cmplx{V}_1| + |\cmplx{V}_2| + \cdots  +|\cmplx{V}_n|$
+    \item[$\arg\cmplx{V}$] Argument (angle) d'una variable complexa.
+     Es compleixen les relacions:\\[1ex]
+      $\arg\cmplx{V}^* = - \arg\cmplx{V}$\\[1ex]
+      $\arg(\cmplx{V}_1 \cmplx{V}_2 \cdots \cmplx{V}_n) = \arg\cmplx{V}_1 + \arg \cmplx{V}_2 + \cdots + \arg\cmplx{V}_n$\\[1ex]
+      $\arg(\cmplx{V}_1 / \cmplx{V}_2) = \arg\cmplx{V}_1 - \arg \cmplx{V}_2$
+    \item[$\Re\cmplx{V}$] Part real d'una variable complexa. Es compleix: $\Re\cmplx{V} = \dfrac{\cmplx{V} + \cmplx{V}^*}{2}$
+    \item[$\Im\cmplx{V}$] Part imaginària d'una variable complexa. Es compleix: $\Im\cmplx{V} = \dfrac{\cmplx{V} - \cmplx{V}^*}{2 \ju}$
+    \item[$A+\ju B$] Expressió cartesiana (part real i part
+    imaginària) d'una variable complexa.
+    \item[$Z_{\angle \psi}$] Expressió polar (mòdul i argument) d'una variable
+    complexa. Les relacions entre $A, B, Z$ i $\psi$\footnote{Cal tenir en compte que la funció \textsf{arctan} disponible en moltes calculadores i llenguatges de programació, torna de forma  estandarditzada valors compresos entre $-\frac{\piup}{2}$ i $\frac{\piup}{2}$. En aquest cas cal sumar el valor $\piup$, quan $A$ és negatiu, a l'angle obtingut amb la funció \textsf{arctan} per tal d'obtenir l'angle en el quadrant correcte.} són:\\[1ex]
+    $Z=+\sqrt{A^2+B^2}\quad\quad\psi=\arctan{\dfrac{B}{A}}\quad\quad
+    A=Z\cos\psi\quad\quad B=Z\sin\psi$
+    \item[$Z\,\eu^{\ju\psi}$] Expressió d'Euler\index{Euler} d'una variable complexa, definida com\footnote{El valor de $\psi$ ha d'expressar-se sempre en radiant, per tal que el valor de $\eu^{\ju\psi}$ sigui correcte.}:
+     $Z\,\eu^{\ju\psi} \equiv Z(\cos\psi+\ju\sin\psi)$.
+     Es compleixen les relacions:\\[1ex]
+     $Z_1\,\eu^{\ju\psi_1} \, Z_2\,\eu^{\ju\psi_2} = Z_1 Z_2\,\eu^{\ju(\psi_1+\psi_2)}$\\[1ex]
+     $(Z_1\,\eu^{\ju\psi_1}) \,/\, (Z_2\,\eu^{\ju\psi_2}) = \dfrac{Z_1}{Z_2}\,\eu^{\ju(\psi_1-\psi_2)}$
+    \item[$\boldsymbol{V}$] Matriu real o  vector real.
+    \item[$\boldsymbol{V}^{-1}$] Matriu inversa d'una matriu real.
+    \item[$\transp{\boldsymbol{V}}$] Matriu transposada d'una matriu real o vector
+    transposat d'un vector real.
+    \item[$\boldsymbol{V}(n)$] Element $n$-èsim d'un vector real.
+    \item[$\boldsymbol{V}(m,n)$] Element de la fila $m$ i columna $n$ d'una matriu real.
+    \item[$\mcmplx{V}$] Matriu complexa o  vector complex.
+    \item[$\mcmplx{V}^{-1}$] Matriu inversa d'una matriu complexa.
+    \item[$\transp{\mcmplx{V}}$] Matriu transposada d'una matriu complexa o vector
+    transposat d'un vector complex.
+    \item[$\mcmplx{V}^*$] Matriu conjugada d'una matriu complexa o vector
+    conjugat d'un vector complex.
+    \item[$\hermit{V}$] Matriu conjugada transposada d'una matriu complexa o vector
+    conjugat transposat d'un vector complex, definit com: $\hermit{V} \equiv
+    \transp{(\mcmplx{V}^*)}$.
+    \item[$\mcmplx{V}(n)$] Element $n$-èsim d'un vector complex.
+    \item[$\mcmplx{V}(m,n)$] Element de la fila $m$ i columna $n$ d'una matriu complexa.
+\end{list}
+
+Pel que fa als sentits assignats a les fletxes que representen les
+tensions i els corrents en els diversos circuits elèctrics que
+apareixen en aquest llibre, s'utilitza la convenció següent:
+
+\begin{list}{}
+{\setlength{\labelwidth}{15mm} \setlength{\leftmargin}{20mm}
+\setlength{\labelsep}{5mm}}
+    \item[$\begin{CD} @>U>> \end{CD}$] Tensió contínua: la fletxa indica el sentit
+    de la caiguda de tensió, és a dir, va del nus positiu al nus negatiu.
+    \item[$\begin{CD} @>I>> \end{CD}$] Corrent
+    continu: la fletxa indica el sentit  assignat com a positiu al corrent.
+    \item[$\begin{CD} @>\cmplx{U}>> \end{CD}$] Tensió alterna: la fletxa indica el
+    sentit assignat com a positiu a la caiguda de tensió, quan el nus d'origen de la fletxa
+    té un potencial  més positiu que el nus de destinació.
+    \item[$\begin{CD} @>\cmplx{I}>> \end{CD}$] Corrent altern: la fletxa
+    indica el sentit  assignat com a positiu al corrent.
+\end{list}
+
+\pagebreak
+
+En aquest llibre les variable complexes s'utilitzen per representar fasors. Un fasor $A_{\angle \alpha}$ representa una funció sinusoïdal variable en el temps, que pot expressar-se utilitzant la funció cosinus:
+\[y(t)=\sqrt{2}\, A \cos(\omega t + \alpha)\]
+
+O utilitzant la funció sinus:
+\[y(t)=\sqrt{2}\, A \sin(\omega t + \alpha)\]
+
+Quan hi ha diverses funcions sinusoïdal relacionades entre si, cal utilitzar de manera uniforme la funció cosinus o la funció sinus per a totes les funcions. Les variables i paràmetres implicats són:
+\begin{list}{}
+{\setlength{\labelwidth}{15mm} \setlength{\leftmargin}{20mm}
+\setlength{\labelsep}{5mm}}
+    \item[$\boldsymbol{y(t)}$] Funció sinusoïdal; representa normalment una tensió o un corrent.
+    \item[$\boldsymbol{t}$] Temps.
+    \item[$\boldsymbol{f}$] Freqüència de la funció sinusoïdal.
+    \item[$\boldsymbol{T}$] Període de la funció sinusoïdal.
+    \item[$\boldsymbol{\omega}$] Velocitat angular de la funció sinusoïdal. Es compleix: $\omega = 2 \piup f = 2 \piup\,/T$.
+    \item[$\boldsymbol{A}$] Valor eficaç de la funció sinusoïdal (vegeu la secció \vref{sec:val_mitja_ef}); els valors de pic de la funció sinusoïdal  són:  $\pm\sqrt{2}\, A$.
+    \item[$\boldsymbol{\alpha}$] Angle inicial de la funció sinusoïdal. Es compleix:  $\alpha=\omega |t_0|$, tal com es pot veure en el gràfic a continuació.
+
+    Quan s'utilitza la funció cosinus, $\alpha$ és positiu quan es mesura des de l'origen ($t=0$) cap a l'esquerra, fins a trobar el primer valor màxim de la funció, i és negatiu quan es mesura des de l'origen cap a la dreta, fins a trobar també el primer valor màxim de la funció.
+
+    En canvi, quan s'utilitza la funció sinus, $\alpha$ és positiu quan es mesura des de l'origen ($t=0$) cap a l'esquerra, fins a trobar el primer punt on la funció es fa zero (passant de valors negatius a positius), i és negatiu quan es mesura des de l'origen cap a la dreta, fins a trobar també el primer punt on la funció es fa zero (passant de valors negatius a positius).
+    \item[] \input{Imatges/Not-Fasor.pdf_tex}
+\end{list}
+\index{fasor}
+
+\pagebreak
+
+Els símbols que representes els diferents conjunts de nombres són:
+
+\begin{list}{}
+{\setlength{\labelwidth}{15mm} \setlength{\leftmargin}{20mm}
+\setlength{\labelsep}{5mm}}
+    \item[$\mathbb{Z\phantom{{}^+}}$] Nombres enters: $\ldots,-2,-1,0,1,2,\ldots$
+    \item[$\mathbb{N}$, $\mathbb{Z}^+$] Nombres enters positius
+    (naturals): $1,2,3,4,\ldots$
+    \item[$\mathbb{Z}^*\,$] Nombres enters no negatius: $0,1,2,3,4,\ldots$
+    \item[$\mathbb{Z}^-$] Nombres enters negatius: $-1,-2,-3,-4,\ldots$
+    \item[$\mathbb{Q\phantom{{}^+}}$] Nombres racionals.
+    \item[$\mathbb{R\phantom{{}^+}}$] Nombres reals.
+    \item[$\mathbb{R}^+$] Nombres reals positius.
+    \item[$\mathbb{R}^-$] Nombres reals negatius.
+    \item[$\mathbb{C\phantom{{}^+}}$] Nombres complexos.
+\end{list}
+\index{n@$\mathbb{N}$} \index{z@$\mathbb{Z}$}
+\index{z@$\mathbb{Z^+}$} \index{z@$\mathbb{Z^-}$}
+\index{z@$\mathbb{Z^*}$} \index{q@$\mathbb{Q}$}
+\index{r@$\mathbb{R}$} \index{r@$\mathbb{R^+}$}
+\index{r@$\mathbb{R^-}$} \index{c@$\mathbb{C}$}

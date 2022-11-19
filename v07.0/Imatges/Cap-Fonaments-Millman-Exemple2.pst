@@ -1,0 +1,439 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Wed Jan 30 20:54:30 CET 2013
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="110" y-min="0" y-max="65" auto-bounding="false">
+%<parallelogram p3= "(12,8)"
+%	 p2= "(12,20)"
+%	 p1= "(8,20)"
+%	 fill-style= "none"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(31,40);(31.67,41.33);(32.33,41.33);(33,40)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(33,40);(33.67,38.67);(34.33,38.67);(35,40)"
+%	 />
+%<multicurve fill-style= "none"
+%	 left-arrow= "disk-centered"
+%	 points= "(17,40);(17,40);(29,40);(29,40)"
+%	 />
+%<multicurve fill-style= "none"
+%	 left-arrow= "disk-centered"
+%	 points= "(49,40);(49,40);(37,40);(37,40)"
+%	 />
+%<ellipse p3= "(37,44)"
+%	 p2= "(37,36)"
+%	 p1= "(29,36)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(31,25);(31.67,26.33);(32.33,26.33);(33,25)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(33,25);(33.67,23.67);(34.33,23.67);(35,25)"
+%	 />
+%<multicurve fill-style= "none"
+%	 left-arrow= "disk-centered"
+%	 points= "(49,25);(49,25);(37,25);(37,25)"
+%	 />
+%<ellipse p3= "(37,29)"
+%	 p2= "(37,21)"
+%	 p1= "(29,21)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(31,55);(31.67,56.33);(32.33,56.33);(33,55)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(33,55);(33.67,53.67);(34.33,53.67);(35,55)"
+%	 />
+%<multicurve fill-style= "none"
+%	 left-arrow= "disk-centered"
+%	 points= "(49,55);(49,55);(37,55);(37,55)"
+%	 />
+%<ellipse p3= "(37,59)"
+%	 p2= "(37,51)"
+%	 p1= "(29,51)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(29,55);(29,55);(17,55);(17,55);(17,55);(17,25);
+%	(17,25);(17,25);(29,25);(29,25)"
+%	 />
+%<g>
+%<multicurve fill-style= "none"
+%	 points= "(8,3);(8,3);(12,3);(12,3)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(9,2);(9,2);(11,2);(11,2)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(9.5,1);(9.5,1);(10.5,1);(10.5,1)"
+%	 />
+%</g>
+%<multicurve fill-style= "none"
+%	 points= "(10,3);(10,3);(10,8);(10,8)"
+%	 />
+%<g>
+%<multicurve fill-style= "none"
+%	 points= "(78,3);(78,3);(82,3);(82,3)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(79,2);(79,2);(81,2);(81,2)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(79.5,1);(79.5,1);(80.5,1);(80.5,1)"
+%	 />
+%</g>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(49,56.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%A
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(49,41.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%B
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(49,26.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%C
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(16,41)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%N
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(10,20);(10,20);(10,40);(10,40);(10,40);(17,40);
+%	(17,40)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(13,14)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$R\ped{N}=\SI{46}{\ohm}$
+%</text>
+%<multicurve fill-style= "none"
+%	 left-arrow= "head"
+%	 points= "(8.5,34.5);(8.5,34.5);(8.5,26.5);(8.5,26.5)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(7.5,30.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{I}\ped{N}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(77.5,14)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{I}\ped{C}$
+%</text>
+%<multicurve fill-style= "none"
+%	 left-arrow= "head"
+%	 points= "(78.5,10);(78.5,10);(78.5,18);(78.5,18)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(99.5,14)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{I}\ped{A}$
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(33,60)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%\SIpd{230}{0}{V}
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(33,45)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%\SIpd{230}{240}{V}
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(33,30)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%\SIpd{230}{120}{V}
+%</text>
+%<parallelogram p3= "(76,27)"
+%	 p2= "(64,27)"
+%	 p1= "(64,23)"
+%	 fill-style= "none"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(76,25);(76,25);(80,25);(80,25);(80,25);(80,3);
+%	(80,3)"
+%	 />
+%<g>
+%<multicurve fill-style= "none"
+%	 points= "(89,3);(89,3);(93,3);(93,3)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(90,2);(90,2);(92,2);(92,2)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(90.5,1);(90.5,1);(91.5,1);(91.5,1)"
+%	 />
+%</g>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(88.5,14)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{I}\ped{B}$
+%</text>
+%<multicurve fill-style= "none"
+%	 left-arrow= "head"
+%	 points= "(89.5,10);(89.5,10);(89.5,18);(89.5,18)"
+%	 />
+%<parallelogram p3= "(76,42)"
+%	 p2= "(64,42)"
+%	 p1= "(64,38)"
+%	 fill-style= "none"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(76,40);(76,40);(91,40);(91,40);(91,40);(91,3);
+%	(91,3)"
+%	 />
+%<parallelogram p3= "(76,57)"
+%	 p2= "(64,57)"
+%	 p1= "(64,53)"
+%	 fill-style= "none"
+%	 />
+%<g>
+%<multicurve fill-style= "none"
+%	 points= "(100,3);(100,3);(104,3);(104,3)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(101,2);(101,2);(103,2);(103,2)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(101.5,1);(101.5,1);(102.5,1);(102.5,1)"
+%	 />
+%</g>
+%<multicurve fill-style= "none"
+%	 left-arrow= "head"
+%	 points= "(100.5,10);(100.5,10);(100.5,18);(100.5,18)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(76,55);(76,55);(102,55);(102,55);(102,55);(102,3);
+%	(102,3)"
+%	 />
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(70,58)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$R\ped{A}=\SI{50}{m\ohm}$
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(70,43)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$R\ped{B}=\SI{80}{m\ohm}$
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(70,28)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$R\ped{C}=\SI{70}{m\ohm}$
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(49,40);(49,40);(64,40);(64,40)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(64,55);(64,55);(49,55);(49,55)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(64,25);(64,25);(49,25);(49,25)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(13,3)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%G
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(13.5,2)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(83,3)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%G
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(94,3)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%G
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(105,3)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%G
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(37,58);(37,58);(39,58);(39,58)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(38,59);(38,59);(38,57);(38,57)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(37,43);(37,43);(39,43);(39,43)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(38,44);(38,44);(38,42);(38,42)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(37,28);(37,28);(39,28);(39,28)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(38,29);(38,29);(38,27);(38,27)"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(110,65)
+\pspolygon[](8,20)(12,20)(12,8)(8,8)
+\psbezier(31,40)(31.67,41.33)(32.33,41.33)(33,40)
+\psbezier(33,40)(33.67,38.67)(34.33,38.67)(35,40)
+\psline{*-}(17,40)(29,40)
+\psline{*-}(49,40)(37,40)
+\rput{0}(33,40){\psellipse[](0,0)(4,4)}
+\psbezier(31,25)(31.67,26.33)(32.33,26.33)(33,25)
+\psbezier(33,25)(33.67,23.67)(34.33,23.67)(35,25)
+\psline{*-}(49,25)(37,25)
+\rput{0}(33,25){\psellipse[](0,0)(4,4)}
+\psbezier(31,55)(31.67,56.33)(32.33,56.33)(33,55)
+\psbezier(33,55)(33.67,53.67)(34.33,53.67)(35,55)
+\psline{*-}(49,55)(37,55)
+\rput{0}(33,55){\psellipse[](0,0)(4,4)}
+\psline(29,55)
+(17,55)
+(17,25)(29,25)
+\psline(8,3)(12,3)
+\psline(9,2)(11,2)
+\psline(9.5,1)(10.5,1)
+\psline(10,3)(10,8)
+\psline(78,3)(82,3)
+\psline(79,2)(81,2)
+\psline(79.5,1)(80.5,1)
+\rput[b](49,56.5){A}
+\rput[b](49,41.5){B}
+\rput[b](49,26.5){C}
+\rput[br](16,41){N}
+\psline(10,20)
+(10,40)(17,40)
+\rput[l](13,14){$R\ped{N}=\SI{46}{\ohm}$}
+\psline{<-}(8.5,34.5)(8.5,26.5)
+\rput[r](7.5,30.5){$\cmplx{I}\ped{N}$}
+\rput[r](77.5,14){$\cmplx{I}\ped{C}$}
+\psline{<-}(78.5,10)(78.5,18)
+\rput[r](99.5,14){$\cmplx{I}\ped{A}$}
+\rput[b](33,60){\SIpd{230}{0}{V}}
+\rput[b](33,45){\SIpd{230}{240}{V}}
+\rput[b](33,30){\SIpd{230}{120}{V}}
+\pspolygon[](64,23)(64,27)(76,27)(76,23)
+\psline(76,25)
+(80,25)(80,3)
+\psline(89,3)(93,3)
+\psline(90,2)(92,2)
+\psline(90.5,1)(91.5,1)
+\rput[r](88.5,14){$\cmplx{I}\ped{B}$}
+\psline{<-}(89.5,10)(89.5,18)
+\pspolygon[](64,38)(64,42)(76,42)(76,38)
+\psline(76,40)
+(91,40)(91,3)
+\pspolygon[](64,53)(64,57)(76,57)(76,53)
+\psline(100,3)(104,3)
+\psline(101,2)(103,2)
+\psline(101.5,1)(102.5,1)
+\psline{<-}(100.5,10)(100.5,18)
+\psline(76,55)
+(102,55)(102,3)
+\rput[b](70,58){$R\ped{A}=\SI{50}{m\ohm}$}
+\rput[b](70,43){$R\ped{B}=\SI{80}{m\ohm}$}
+\rput[b](70,28){$R\ped{C}=\SI{70}{m\ohm}$}
+\psline(49,40)(64,40)
+\psline(64,55)(49,55)
+\psline(64,25)(49,25)
+\rput[l](13,3){G}
+\rput(13.5,2){}
+\rput[l](83,3){G}
+\rput[l](94,3){G}
+\rput[l](105,3){G}
+\psline(37,58)(39,58)
+\psline(38,59)(38,57)
+\psline(37,43)(39,43)
+\psline(38,44)(38,42)
+\psline(37,28)(39,28)
+\psline(38,29)(38,27)
+\end{pspicture}

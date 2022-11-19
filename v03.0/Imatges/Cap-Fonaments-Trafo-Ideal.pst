@@ -1,0 +1,143 @@
+%%Created by jPicEdt 1.4pre4: mixed JPIC-XML/LaTeX format
+%%Sat Jan 07 13:58:47 CET 2006
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="54" y-min="0" y-max="27" auto-bounding="false">
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(13,11)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$u_1(t)$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(43,11)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$u_2(t)$
+%</text>
+%<multicurve points="(14,17);(14,17);(14,5);(14,5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(42,17);(42,17);(42,5);(42,5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(16,21);(16,21);(23,21);(23,21)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(33,21);(33,21);(40,21);(40,21)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(19,22)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$i_1(t)$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(36,22)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$i_2(t)$
+%</text>
+%<ellipse p1="(25,16.75)" p2="(26.5,16.75)" p3="(26.5,18.25)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="solid"
+%	 />
+%<ellipse p1="(29.5,16.75)" p2="(31,16.75)" p3="(31,18.25)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="solid"
+%	 />
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(28,1.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$m:1$
+%</text>
+%<ellipse p1="(13,18)" p2="(15,18)" p3="(15,20)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<ellipse p1="(41,18)" p2="(43,18)" p3="(43,20)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<ellipse p1="(13,2)" p2="(15,2)" p3="(15,4)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<ellipse p1="(41,2)" p2="(43,2)" p3="(43,4)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(28,16);(28,16);(28,6);(28,6)"
+%	 stroke-width="0.4"
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(22,6)" p2="(26,6)" p3="(26,16)"
+%	 stroke-width="0.15"
+%	 fill-style="solid"
+%	 />
+%<parallelogram p1="(30,6)" p2="(34,6)" p3="(34,16)"
+%	 stroke-width="0.15"
+%	 fill-style="solid"
+%	 />
+%<multicurve points="(15,19);(15,19);(24,19);(24,19);(24,19);(24,16);
+%	(24,16)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(41,19);(41,19);(32,19);(32,19);(32,19);(32,16);
+%	(32,16)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(41,3);(41,3);(32,3);(32,3);(32,3);(32,6);
+%	(32,6)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(15,3);(15,3);(24,3);(24,3);(24,3);(24,6);
+%	(24,6)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PsTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(54,27)
+\rput[r](13,11){$u_1(t)$}
+\rput[l](43,11){$u_2(t)$}
+\psline[linewidth=0.25]{->}(14,17)(14,5)
+\psline[linewidth=0.25]{->}(42,17)(42,5)
+\psline[linewidth=0.25]{->}(16,21)(23,21)
+\psline[linewidth=0.25]{->}(33,21)(40,21)
+\rput[b](19,22){$i_1(t)$}
+\rput[b](36,22){$i_2(t)$}
+\rput{0}(25.75,17.5){\psellipse[linewidth=0.25,fillstyle=solid](0,0)(0.75,0.75)}
+\rput{0}(30.25,17.5){\psellipse[linewidth=0.25,fillstyle=solid](0,0)(0.75,0.75)}
+\rput(28,1.5){$m:1$}
+\rput{0}(14,19){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(42,19){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(14,3){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(42,3){\psellipse[linewidth=0.25](0,0)(1,1)}
+\psline[linewidth=0.4](28,16)(28,6)
+\pspolygon[linewidth=0.15,fillstyle=solid](22,6)(26,6)(26,16)(22,16)
+\pspolygon[linewidth=0.15,fillstyle=solid](30,6)(34,6)(34,16)(30,16)
+\psline[linewidth=0.25](15,19)(24,19)
+(24,19)(24,16)
+\psline[linewidth=0.25](41,19)(32,19)
+(32,19)(32,16)
+\psline[linewidth=0.25](41,3)(32,3)
+(32,3)(32,6)
+\psline[linewidth=0.25](15,3)(24,3)
+(24,3)(24,6)
+\end{pspicture}

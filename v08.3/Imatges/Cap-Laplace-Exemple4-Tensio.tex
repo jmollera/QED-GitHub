@@ -1,0 +1,18 @@
+\documentclass{article}
+\input{../Preambul/Preambul-Img.tex}
+
+\begin{document}
+
+  \psset{xunit=0.2cm,yunit=0.01cm}
+  \begin{pspicture}(-7,-470)(57,500)
+      \psgrid[griddots=20,xunit=1cm,yunit=1cm,subgriddiv=1,gridlabels=0pt](0,-4)(10,4)
+      \psaxes[tickstyle=bottom,linecolor=blue,Dx=5,Dy=100,Ox=0,Oy=-400]{->}(0,-400)(0,-400)(52,450)
+      \psplot[linecolor=red,plotstyle=curve,plotpoints=400,linewidth=1.5pt]{0}{50}
+           {0.3142 x mul 0.6642 sub
+           COS 305.24 mul 0.5 x mul neg EXP 431.67 mul 0.5 x mul 0.9803 sub
+           COS mul sub}
+      \rput(0,480){$u\ped{C}(t)\unit{[V]}$}
+      \rput[l](52.5,-400){$t\unit{[ms]}$}
+  \end{pspicture}
+
+\end{document} 

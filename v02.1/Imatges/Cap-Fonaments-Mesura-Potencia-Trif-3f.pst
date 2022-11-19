@@ -1,0 +1,430 @@
+%%Created by jPicEdt 1.4pre4: mixed JPIC-XML/LaTeX format
+%%Sat Sep 17 10:33:45 CEST 2005
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="6" x-max="143" y-min="0.5" y-max="35" auto-bounding="false">
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(125.5,2.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(6,2.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\gamma$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(19.5,15)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\beta$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(6,27)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\alpha$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(126,6)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{Z}_\gamma$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(125.5,18.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{Z}_\beta$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(125,30.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{Z}_\alpha$
+%</text>
+%<multicurve points="(27,16.5);(27,16.5);(37,16.5);(37,16.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(27,4);(27,4);(37,4);(37,4)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(27,28.5);(27,28.5);(37,28.5);(37,28.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(10,27);(10,27);(50,27);(50,27)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(23.5,15);(23.5,15);(58,15);(58,15)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(10,2.5);(10,2.5);(119.5,2.5);(119.5,2.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(32,30)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{I}_\alpha$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(31.5,18)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{I}_\beta$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(32,5.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{I}_\gamma$
+%</text>
+%<multicurve points="(130.5,15);(130.5,15);(137,15);(137,15)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(22.5,12.5);(22.5,12.5);(22.5,3.5);(22.5,3.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(7,15)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{U}_{\alpha\gamma}$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(20.5,9)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{U}_{\beta\gamma}$
+%</text>
+%<multicurve points="(9,24.5);(9,24.5);(9,4.5);(9,4.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(13.5,30)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%
+%</text>
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(12.5,31.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%
+%</text>
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(11,31)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%
+%</text>
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(10.5,30.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(140,15)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\nu$
+%</text>
+%<multicurve points="(119,29);(119,29);(130,29);(130,29);(130,29);(130,25);
+%	(130,25);(130,25);(119,25);(119,25);(119,25);(119,29)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(130,29);(130,29);(119,25);(119,25)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(119,29);(119,29);(130,25);(130,25)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(119.5,17);(119.5,17);(130.5,13);(130.5,13)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(130.5,17);(130.5,17);(119.5,13);(119.5,13)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<circle p1="(8,27)" p2="(9,26)" p3="(10,27)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(21.5,15)" p2="(22.5,14)" p3="(23.5,15)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(8,2.5)" p2="(9,1.5)" p3="(10,2.5)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(54,27)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\footnotesize\textsf{W1}}
+%</text>
+%<multicurve points="(54,23);(54,23);(54,2.5);(54,2.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<multicurve points="(54,31);(54,31);(54,34);(54,34);(54,34);(61.5,34);
+%	(61.5,34);(61.5,34);(61.5,27);(61.5,27)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<circle p1="(50,27)" p2="(54,23)" p3="(58,27)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(52,32)" p2="(52.5,31.5)" p3="(53,32)" closure="plain"
+%	
+%	 fill-style="solid"
+%	 />
+%<circle p1="(48.5,28.5)" p2="(49,28)" p3="(49.5,28.5)" closure="plain"
+%	
+%	 fill-style="solid"
+%	 />
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(62,15)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\footnotesize\textsf{W2}}
+%</text>
+%<multicurve points="(62,11);(62,11);(62,2.5);(62,2.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<multicurve points="(62,19);(62,19);(62,22);(62,22);(62,22);(69.5,22);
+%	(69.5,22);(69.5,22);(69.5,15);(69.5,15)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<circle p1="(58,15)" p2="(62,11)" p3="(66,15)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(60,20)" p2="(60.5,19.5)" p3="(61,20)" closure="plain"
+%	
+%	 fill-style="solid"
+%	 />
+%<circle p1="(56.5,16.5)" p2="(57,16)" p3="(57.5,16.5)" closure="plain"
+%	
+%	 fill-style="solid"
+%	 />
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(86.5,27)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\footnotesize\textsf{VAr1}}
+%</text>
+%<multicurve points="(86.5,23);(86.5,23);(86.5,2.5);(86.5,2.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<multicurve points="(86.5,31);(86.5,31);(86.5,34);(86.5,34);(86.5,34);(94,34);
+%	(94,34);(94,34);(94,27);(94,27)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<circle p1="(82.5,27)" p2="(86.5,23)" p3="(90.5,27)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(84.5,32)" p2="(85,31.5)" p3="(85.5,32)" closure="plain"
+%	
+%	 fill-style="solid"
+%	 />
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(94.5,15)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\footnotesize\textsf{VAr2}}
+%</text>
+%<multicurve points="(94.5,11);(94.5,11);(94.5,2.5);(94.5,2.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<multicurve points="(94.5,19);(94.5,19);(94.5,22);(94.5,22);(94.5,22);(102,22);
+%	(102,22);(102,22);(102,15);(102,15)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<circle p1="(90.5,15)" p2="(94.5,11)" p3="(98.5,15)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(92.5,20)" p2="(93,19.5)" p3="(93.5,20)" closure="plain"
+%	
+%	 fill-style="solid"
+%	 />
+%<circle p1="(89,16.5)" p2="(89.5,16)" p3="(90,16.5)" closure="plain"
+%	
+%	 fill-style="solid"
+%	 />
+%<multicurve points="(66,15);(66,15);(90.5,15);(90.5,15)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(58,27);(58,27);(82.5,27);(82.5,27)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(98.5,15);(98.5,15);(119.5,15);(119.5,15)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(119.5,17);(119.5,17);(130.5,17);(130.5,17);(130.5,17);(130.5,13);
+%	(130.5,13);(130.5,13);(119.5,13);(119.5,13);(119.5,13);(119.5,17)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(90.5,27);(90.5,27);(119,27);(119,27)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(119.5,4.5);(119.5,4.5);(130.5,0.5);(130.5,0.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(130.5,4.5);(130.5,4.5);(119.5,0.5);(119.5,0.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(119.5,4.5);(119.5,4.5);(130.5,4.5);(130.5,4.5);(130.5,4.5);(130.5,0.5);
+%	(130.5,0.5);(130.5,0.5);(119.5,0.5);(119.5,0.5);(119.5,0.5);(119.5,4.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<circle p1="(137,15)" p2="(138,14)" p3="(139,15)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(138,14);(138,14);(138,2.5);(138,2.5);(138,2.5);(130.5,2.5);
+%	(130.5,2.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(138,16);(138,16);(138,27);(138,27);(138,27);(130,27);
+%	(130,27)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<circle p1="(81,28.5)" p2="(81.5,28)" p3="(82,28.5)" closure="plain"
+%	
+%	 fill-style="solid"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PsTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(143,35)
+\rput(125.5,2.5){}
+\rput[r](6,2.5){$\gamma$}
+\rput[r](19.5,15){$\beta$}
+\rput[r](6,27){$\alpha$}
+\rput[b](126,6){$\cmplx{Z}_\gamma$}
+\rput[b](125.5,18.5){$\cmplx{Z}_\beta$}
+\rput[b](125,30.5){$\cmplx{Z}_\alpha$}
+\psline[linewidth=0.25]{->}(27,16.5)(37,16.5)
+\psline[linewidth=0.25]{->}(27,4)(37,4)
+\psline[linewidth=0.25]{->}(27,28.5)(37,28.5)
+\psline[linewidth=0.25](10,27)(50,27)
+\psline[linewidth=0.25](23.5,15)(58,15)
+\psline[linewidth=0.25](10,2.5)(119.5,2.5)
+\rput[b](32,30){$\cmplx{I}_\alpha$}
+\rput[b](31.5,18){$\cmplx{I}_\beta$}
+\rput[b](32,5.5){$\cmplx{I}_\gamma$}
+\psline[linewidth=0.25](130.5,15)(137,15)
+\psline[linewidth=0.25]{->}(22.5,12.5)(22.5,3.5)
+\rput[r](7,15){$\cmplx{U}_{\alpha\gamma}$}
+\rput[r](20.5,9){$\cmplx{U}_{\beta\gamma}$}
+\psline[linewidth=0.25]{->}(9,24.5)(9,4.5)
+\rput(13.5,30){}
+\rput(12.5,31.5){}
+\rput(11,31){}
+\rput(10.5,30.5){}
+\rput[l](140,15){$\nu$}
+\pspolygon[linewidth=0.25](119,29)(130,29)
+(130,29)(130,25)
+(130,25)(119,25)
+(119,25)(119,29)
+\psline[linewidth=0.25](130,29)(119,25)
+\psline[linewidth=0.25](119,29)(130,25)
+\psline[linewidth=0.25](119.5,17)(130.5,13)
+\psline[linewidth=0.25](130.5,17)(119.5,13)
+\rput{0}(9,27){\psellipse[](0,0)(1,1)}
+\rput{0}(22.5,15){\psellipse[](0,0)(1,1)}
+\rput{0}(9,2.5){\psellipse[](0,0)(1,1)}
+\rput(54,27){{\footnotesize\textsf{W1}}}
+\psline[linewidth=0.25]{-*}(54,23)(54,2.5)
+\psline[linewidth=0.25]{-*}(54,31)(54,34)
+(54,34)(61.5,34)
+(61.5,34)(61.5,27)
+\rput{0}(54,27){\psellipse[](0,0)(4,4)}
+\rput{0}(52.5,32){\psellipse[fillstyle=solid](0,0)(0.5,0.5)}
+\rput{0}(49,28.5){\psellipse[fillstyle=solid](0,0)(0.5,0.5)}
+\rput(62,15){{\footnotesize\textsf{W2}}}
+\psline[linewidth=0.25]{-*}(62,11)(62,2.5)
+\psline[linewidth=0.25]{-*}(62,19)(62,22)
+(62,22)(69.5,22)
+(69.5,22)(69.5,15)
+\rput{0}(62,15){\psellipse[](0,0)(4,4)}
+\rput{0}(60.5,20){\psellipse[fillstyle=solid](0,0)(0.5,0.5)}
+\rput{0}(57,16.5){\psellipse[fillstyle=solid](0,0)(0.5,0.5)}
+\rput(86.5,27){{\footnotesize\textsf{VAr1}}}
+\psline[linewidth=0.25]{-*}(86.5,23)(86.5,2.5)
+\psline[linewidth=0.25]{-*}(86.5,31)(86.5,34)
+(86.5,34)(94,34)
+(94,34)(94,27)
+\rput{0}(86.5,27){\psellipse[](0,0)(4,4)}
+\rput{0}(85,32){\psellipse[fillstyle=solid](0,0)(0.5,0.5)}
+\rput(94.5,15){{\footnotesize\textsf{VAr2}}}
+\psline[linewidth=0.25]{-*}(94.5,11)(94.5,2.5)
+\psline[linewidth=0.25]{-*}(94.5,19)(94.5,22)
+(94.5,22)(102,22)
+(102,22)(102,15)
+\rput{0}(94.5,15){\psellipse[](0,0)(4,4)}
+\rput{0}(93,20){\psellipse[fillstyle=solid](0,0)(0.5,0.5)}
+\rput{0}(89.5,16.5){\psellipse[fillstyle=solid](0,0)(0.5,0.5)}
+\psline[linewidth=0.25](66,15)(90.5,15)
+\psline[linewidth=0.25](58,27)(82.5,27)
+\psline[linewidth=0.25](98.5,15)(119.5,15)
+\pspolygon[linewidth=0.25](119.5,17)(130.5,17)
+(130.5,17)(130.5,13)
+(130.5,13)(119.5,13)
+(119.5,13)(119.5,17)
+\psline[linewidth=0.25](90.5,27)(119,27)
+\psline[linewidth=0.25](119.5,4.5)(130.5,0.5)
+\psline[linewidth=0.25](130.5,4.5)(119.5,0.5)
+\pspolygon[linewidth=0.25](119.5,4.5)(130.5,4.5)
+(130.5,4.5)(130.5,0.5)
+(130.5,0.5)(119.5,0.5)
+(119.5,0.5)(119.5,4.5)
+\rput{0}(138,15){\psellipse[](0,0)(1,1)}
+\psline[linewidth=0.25](138,14)(138,2.5)
+(138,2.5)(130.5,2.5)
+\psline[linewidth=0.25](138,16)(138,27)
+(138,27)(130,27)
+\rput{0}(81.5,28.5){\psellipse[fillstyle=solid](0,0)(0.5,0.5)}
+\end{pspicture}

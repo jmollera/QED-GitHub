@@ -1,0 +1,313 @@
+%%Created by jPicEdt 1.4pre4: mixed JPIC-XML/LaTeX format
+%%Sat Feb 18 19:23:55 CET 2006
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="6" x-max="119" y-min="0.5" y-max="28" auto-bounding="false">
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(23.5,10.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{Z}_1$
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(11,24.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{I}\ped{total}$
+%</text>
+%<multicurve points="(21.5,24.5);(21.5,24.5);(21.5,18);(21.5,18)"
+%	
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<circle p1="(2,27)" p2="(3,26)" p3="(4,27)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(2,1)" p2="(3,0)" p3="(4,1)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(20,5);(20,5);(20,1);(20,1)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(22,16);(22,16);(18,5);(18,5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(22,5);(22,5);(18,16);(18,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(22,16);(22,16);(22,5);(22,5);(22,5);(18,5);
+%	(18,5);(18,5);(18,16);(18,16);(18,16);(22,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(59,27);(59,27);(72.5,27);(72.5,27)"
+%	 stroke-style="dashed" stroke-dasharray="1;1"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(20,27);(20,27);(20,16);(20,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(43.5,10.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{Z}_2$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(69.5,10.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{Z}_i$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(94.5,10.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{Z}_{n-1}$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(113.5,10.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{Z}_n$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(23,21.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{I}_1$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(43,21.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{I}_2$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(69,21.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{I}_i$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(94,21.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{I}_{n-1}$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(113.5,21.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{I}_n$
+%</text>
+%<multicurve points="(40,5);(40,5);(40,1);(40,1)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(42,16);(42,16);(38,5);(38,5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(42,5);(42,5);(38,16);(38,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(42,16);(42,16);(42,5);(42,5);(42,5);(38,5);
+%	(38,5);(38,5);(38,16);(38,16);(38,16);(42,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(40,27);(40,27);(40,16);(40,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(66,5);(66,5);(66,1);(66,1)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(68,16);(68,16);(64,5);(64,5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(68,5);(68,5);(64,16);(64,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(68,16);(68,16);(68,5);(68,5);(68,5);(64,5);
+%	(64,5);(64,5);(64,16);(64,16);(64,16);(68,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(66,27);(66,27);(66,16);(66,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(91,5);(91,5);(91,1);(91,1)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(93,16);(93,16);(89,5);(89,5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(93,5);(93,5);(89,16);(89,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(93,16);(93,16);(93,5);(93,5);(93,5);(89,5);
+%	(89,5);(89,5);(89,16);(89,16);(89,16);(93,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(91,27);(91,27);(91,16);(91,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(112,16);(112,16);(108,5);(108,5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(112,5);(112,5);(108,16);(108,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(112,16);(112,16);(112,5);(112,5);(112,5);(108,5);
+%	(108,5);(108,5);(108,16);(108,16);(108,16);(112,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(4,27);(4,27);(58,27);(58,27)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(59,1);(59,1);(72.5,1);(72.5,1)"
+%	 stroke-style="dashed" stroke-dasharray="1;1"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(4,1);(4,1);(58,1);(58,1)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(110,16);(110,16);(110,27);(110,27);(110,27);(73.5,27);
+%	(73.5,27)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(110,5);(110,5);(110,1);(110,1);(110,1);(73.5,1);
+%	(73.5,1)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(41.5,24.5);(41.5,24.5);(41.5,18);(41.5,18)"
+%	
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(67.5,24.5);(67.5,24.5);(67.5,18);(67.5,18)"
+%	
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(92.5,24.5);(92.5,24.5);(92.5,18);(92.5,18)"
+%	
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(112,24.5);(112,24.5);(112,18);(112,18)"
+%	
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(7,25.5);(7,25.5);(16.5,25.5);(16.5,25.5)"
+%	
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(15.5,2.5);(15.5,2.5);(6,2.5);(6,2.5)"
+%	
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(11.5,4)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{I}\ped{total}$
+%</text>
+%</jpic>
+%%End JPIC-XML
+%PsTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(119,28)
+\rput[l](23.5,10.5){$\cmplx{Z}_1$}
+\rput[t](11,24.5){$\cmplx{I}\ped{total}$}
+\psline{->}(21.5,24.5)(21.5,18)
+\rput{0}(3,27){\psellipse[](0,0)(1,1)}
+\rput{0}(3,1){\psellipse[](0,0)(1,1)}
+\psline(20,5)(20,1)
+\psline(22,16)(18,5)
+\psline(22,5)(18,16)
+\pspolygon(22,16)(22,5)
+(22,5)(18,5)
+(18,5)(18,16)
+(18,16)(22,16)
+\psline[linestyle=dashed,dash=1 1](59,27)(72.5,27)
+\psline(20,27)(20,16)
+\rput[l](43.5,10.5){$\cmplx{Z}_2$}
+\rput[l](69.5,10.5){$\cmplx{Z}_i$}
+\rput[l](94.5,10.5){$\cmplx{Z}_{n-1}$}
+\rput[l](113.5,10.5){$\cmplx{Z}_n$}
+\rput[l](23,21.5){$\cmplx{I}_1$}
+\rput[l](43,21.5){$\cmplx{I}_2$}
+\rput[l](69,21.5){$\cmplx{I}_i$}
+\rput[l](94,21.5){$\cmplx{I}_{n-1}$}
+\rput[l](113.5,21.5){$\cmplx{I}_n$}
+\psline(40,5)(40,1)
+\psline(42,16)(38,5)
+\psline(42,5)(38,16)
+\pspolygon(42,16)(42,5)
+(42,5)(38,5)
+(38,5)(38,16)
+(38,16)(42,16)
+\psline(40,27)(40,16)
+\psline(66,5)(66,1)
+\psline(68,16)(64,5)
+\psline(68,5)(64,16)
+\pspolygon(68,16)(68,5)
+(68,5)(64,5)
+(64,5)(64,16)
+(64,16)(68,16)
+\psline(66,27)(66,16)
+\psline(91,5)(91,1)
+\psline(93,16)(89,5)
+\psline(93,5)(89,16)
+\pspolygon(93,16)(93,5)
+(93,5)(89,5)
+(89,5)(89,16)
+(89,16)(93,16)
+\psline(91,27)(91,16)
+\psline(112,16)(108,5)
+\psline(112,5)(108,16)
+\pspolygon(112,16)(112,5)
+(112,5)(108,5)
+(108,5)(108,16)
+(108,16)(112,16)
+\psline(4,27)(58,27)
+\psline[linestyle=dashed,dash=1 1](59,1)(72.5,1)
+\psline(4,1)(58,1)
+\psline(110,16)(110,27)
+(110,27)(73.5,27)
+\psline(110,5)(110,1)
+(110,1)(73.5,1)
+\psline{->}(41.5,24.5)(41.5,18)
+\psline{->}(67.5,24.5)(67.5,18)
+\psline{->}(92.5,24.5)(92.5,18)
+\psline{->}(112,24.5)(112,18)
+\psline{->}(7,25.5)(16.5,25.5)
+\psline{->}(15.5,2.5)(6,2.5)
+\rput[b](11.5,4){$\cmplx{I}\ped{total}$}
+\end{pspicture}

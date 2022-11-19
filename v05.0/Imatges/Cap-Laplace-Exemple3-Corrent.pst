@@ -1,0 +1,8 @@
+   \psset{xunit=1cm,yunit=1cm}
+   \begin{pspicture}(-1,-2)(11.6,5.2)
+   \psaxes [Dx=1,Dy=1,Ox=0,Oy=-1]{->}(0,-1)(0,-1)(10.5,4.5)
+   \psplot[plotstyle=curve,plotpoints=400,linewidth=1.5pt,linecolor=brown]{0}{10}{0.39509 x mul  0.70697 sub COS  0.7375 x mul neg EXP mul 5.2608 mul}
+   \psgrid[xunit=1cm,yunit=1cm,subgriddiv=1,gridlabels=0pt](0,-1)(10,4)
+   \rput(0,4.8){$i\ped{L}(t)\unit{[A]}$}
+   \rput[l](10.6,-1){$t\unit{[ms]}$}
+   \end{pspicture}

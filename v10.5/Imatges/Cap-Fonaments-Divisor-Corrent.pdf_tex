@@ -1,0 +1,68 @@
+%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Cap-Fonaments-Divisor-Corrent.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{325.98425293bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.26086956)%
+    \put(0,0){\includegraphics[width=\unitlength]{Cap-Fonaments-Divisor-Corrent.pdf}}%
+    \put(0.52272318,0.19146545){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{I}_i$}}}%
+    \put(0.69663623,0.19146545){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{I}_{n-1}$}}}%
+    \put(0.85315797,0.19146545){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{I}_n$}}}%
+    \put(0.52173919,0.09565213){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{Z}_i$}}}%
+    \put(0.69565224,0.09565213){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{Z}_{n-1}$}}}%
+    \put(0.85217397,0.09565213){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{Z}_n$}}}%
+    \put(0.20000006,0.09565213){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{Z}_1$}}}%
+    \put(0.3565218,0.09565213){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{Z}_2$}}}%
+    \put(0.08695652,0.2){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{I}$}}}%
+    \put(0.90434774,0.04347826){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{I}$}}}%
+    \put(0.20000001,0.19130434){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{I}_1$}}}%
+    \put(0.35652175,0.19130434){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{I}_2$}}}%
+    \put(0.98170993,0.00869565){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{B}}}%
+    \put(0.0173853,0.23469477){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{A}}}%
+  \end{picture}%
+\endgroup%

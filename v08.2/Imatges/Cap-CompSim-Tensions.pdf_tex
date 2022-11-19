@@ -1,0 +1,69 @@
+%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Cap-CompSim-Tensions.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{277.79526367bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.61224491)%
+    \put(0,0){\includegraphics[width=\unitlength]{Cap-CompSim-Tensions.pdf}}%
+    \put(0.25550364,0.57440406){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{C}}}%
+    \put(0.92722878,0.0450655){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{A}}}%
+    \put(0.04085948,0.04487371){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{B}}}%
+    \put(0.46553031,0.01628886){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{U}\ped{AB}$}}}%
+    \put(0.57716747,0.32283572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{U}\ped{CA}$}}}%
+    \put(0.15548053,0.33433287){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{U}\ped{BC}$}}}%
+    \put(0.38902009,0.22798915){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{N}}}%
+    \put(0.45198225,0.24543836){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{U}\ped{NK}$}}}%
+    \put(0.53256754,0.23357068){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{K}}}%
+    \put(0.33414617,0.35802419){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{U}\ped{CN}$}}}%
+    \put(0.43421429,0.34866483){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{U}\ped{CK}$}}}%
+    \put(0.25246504,0.16291645){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{U}\ped{BN}$}}}%
+    \put(0.30822217,0.11971916){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{U}\ped{BK}$}}}%
+    \put(0.63547527,0.19459451){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{U}\ped{AK}$}}}%
+    \put(0.64700025,0.1189992){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{U}\ped{AN}$}}}%
+  \end{picture}%
+\endgroup%

@@ -1,0 +1,74 @@
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7
+    5,bracketlength=0.15,rbracketlength=0.15}
+    \begin{pspicture}(0,0)(160,60)
+    \psline[linecolor=blue]{->}(25.79,25)(50.79,25)
+    \psline[linecolor=blue]{->}(25.79,25)(10.79,10)
+    \psline[linecolor=blue]{->}(25.79,25)(25.79,50)
+    \psline[linestyle=dotted](50.79,25)(35.79,10)
+    \psline[linestyle=dotted](35.79,10)(10.79,10)
+    \psline[linestyle=dotted](35.79,10)(25.79,25)
+    \psline[linestyle=dotted](35.79,35)(35.79,10)
+    \newrgbcolor{userLineColour}{0.98 0 0}
+    \psline[linewidth=0.5,linecolor=userLineColour]{->}(35.79,35)(35.79,45)
+    \newrgbcolor{userLineColour}{0.98 0 0}
+    \psline[linewidth=0.5,linecolor=userLineColour]{->}(35.79,35)(45.79,35)
+    \newrgbcolor{userLineColour}{0.98 0 0}
+    \psline[linewidth=0.5,linecolor=userLineColour]{->}(35.79,35)(29.74,29.08)
+    \psline(75.79,25)(105.79,25)
+    \psline[linecolor=blue]{->}(75.79,25)(75.79,50)
+    \psline[linestyle=dotted](100.79,25)(85.79,10)
+    \psline[linestyle=dotted](85.79,10)(60.79,10)
+    \psline[linecolor=blue]{<-}(85.79,10)(75.79,25)
+    \psline[linestyle=dotted](85.79,35)(85.79,10)
+    \newrgbcolor{userLineColour}{0.98 0 0}
+    \psline[linewidth=0.5,linecolor=userLineColour]{->}(85.79,35)(85.79,45)
+    \psline(125.79,25)(155.79,25)
+    \psline[linestyle=dotted](150.79,25)(135.79,10)
+    \psline[linestyle=dotted](135.79,10)(110.79,10)
+    \psline[linestyle=dotted](135.79,40)(135.79,10)
+    \newrgbcolor{userLineColour}{0.98 0 0}
+    \psline[linewidth=0.5,linecolor=userLineColour]{->}(85.79,35)(90.66,27.89)
+    \newrgbcolor{userLineColour}{0.98 0 0}
+    \psline[linewidth=0.5,linecolor=userLineColour]{->}(85.79,35)(95.79,40)
+    \psline(75.79,50)(75.79,55) \psline(25.79,50)(25.79,55)
+    \psline(50.79,25)(55.79,25) \psline(10.79,10)(5.79,5)
+    \psline[linestyle=dotted](35.79,35)(25.79,50)
+    \psline[linestyle=dotted](85.79,35)(75.79,50)
+    \rput{0}(125.49,24.79){\parametricplot[linecolor=blue,arrows=->]{-133.11}{-54.76}{
+    t cos 6.92 mul t sin 6.92 mul }}
+    \psline[linecolor=blue]{->}(125.79,25)(135.79,40)
+    \psline[linewidth=0.5,linecolor=red]{->}(135.79,40)(140.79,31.58)
+    \psline[linewidth=0.5,linecolor=red]{->}(135.79,40)(142.11,49.74)
+    \psline[linewidth=0.5,linecolor=red]{->}(135.79,40)(146.58,41.97)
+    \rput{0}(123.97,30.6){\parametricplot[linecolor=blue,arrows=<-]{22.33}{75.38}{
+    t cos 8.12 mul t sin 8.12 mul }} \psline(125.79,25)(125.79,55)
+    \psline(125.79,25)(105.79,5)
+    \psline[linestyle=dotted](135.79,10)(125.79,25)
+    \rput{0}(75.44,24.84){\parametricplot[linecolor=blue,arrows=->]{-133.17}{-54.56}{
+    t cos 6.91 mul t sin 6.91 mul }} \psline(75.79,25)(55.79,5)
+    \rput[l](55.79,25){} \rput[l](56.97,25){Y} \rput[tr](6.71,4.21){X}
+    \rput[b](25.92,56.32){Z} \rput[l](106.71,24.87){Y}
+    \rput[tr](56.45,4.08){X} \rput[b](75.66,56.18){Z}
+    \rput[l](156.71,24.87){Y} \rput[tr](106.45,4.08){X}
+    \rput[b](125.66,56.18){Z} \rput[r](74.21,49.08){$z$}
+    \rput[l](82.1,17.76){$\rho$} \rput[t](74.87,16.97){$\phi$}
+    \rput[t](125,16.71){$\phi$} \rput[l](130.92,30.53){$r$}
+    \rput[b](129.73,38.03){$\theta$} \rput[r](24.34,48.82){$z$}
+    \rput[b](50.13,26.58){$y$} \rput[br](10.52,11.45){$x$}
+    \rput(66.45,53.82){} \rput[b](35.92,46.32){$\boldsymbol{\hat{z}}$}
+    \rput[tr](29.61,28.82){$\boldsymbol{\hat{x}}$}
+    \rput[l](47.23,35.13){$\boldsymbol{\hat{y}}$}
+    \rput[b](86.05,46.32){$\boldsymbol{\hat{z}}$}
+    \rput[l](97.37,40.26){$\boldsymbol{\hat{\phi}}$}
+    \rput[tl](90.98,28.68){$\boldsymbol{\hat{\rho}}$}
+    \rput[b](143.42,50.92){$\boldsymbol{\hat{r}}$}
+    \rput[l](148.42,42.11){$\boldsymbol{\hat{\phi}}$}
+    \rput[tl](141.18,30.79){$\boldsymbol{\hat{\theta}}$}
+    \rput[r](34.34,35.39){$P$} \rput(25.66,4.74){$P(x,y,z)$}
+    \rput[r](84.61,34.74){$P$} \rput(75.92,4.87){$P(\rho,\phi,z)$}
+    \rput[r](135.79,42.24){$P$}
+    \rput(125.39,4.87){$P(r,\theta,\phi)$}
+    \end{pspicture}

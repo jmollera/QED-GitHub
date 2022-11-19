@@ -1,0 +1,87 @@
+{
+    "InternalPDFViewer": {
+        "Embedded": true,
+        "File": "Qüestions Electrotècniques Diverses.pdf"
+    },
+    "Session": {
+        "Bookmarks": [
+            {
+                "bookmarkNumber": 1,
+                "fileName": "Capitols/Cap-Motors-Induccio.tex",
+                "lineNumber": 755,
+                "text": "Cap-Motors-Induccio.tex\n"
+            },
+            {
+                "bookmarkNumber": 1,
+                "fileName": "Capitols/Cap-Python-Exemples.tex",
+                "lineNumber": 609,
+                "text": "Cap-Python-Exemples.tex\n\\hypertarget{exemple:TensDeseqMotor}{\\subsection{Exemple \\ref*{ex:TensDeseqMotor} \\TensDeseqMotor}}"
+            },
+            {
+                "bookmarkNumber": 2,
+                "fileName": "Capitols/Cap-Python-Exemples.tex",
+                "lineNumber": 546,
+                "text": "Cap-Python-Exemples.tex\nEn el llistat \\vref{lst:CaractMotor} es pot veure el programa utilitzat per resoldre aquest exemple. La resolució es fa usant funcions del mòdul numèric \\funsfbs{numpy} i del mòdul gràfic \\funsfbs{matplotlib}."
+            },
+            {
+                "bookmarkNumber": 1,
+                "fileName": "Capitols/Cap-Series-Fourier.tex",
+                "lineNumber": 603,
+                "text": "Cap-Series-Fourier.tex\nAixí doncs, l'expansió en sèrie de Fourier de la tensió $u(t)$ és:"
+            },
+            {
+                "bookmarkNumber": 1,
+                "fileName": "Capitols/Ape-HP-Prime.tex",
+                "lineNumber": 56,
+                "text": "Ape-HP-Prime.tex\nLa funció \\funsfbs{kcmil\\_a\\_mm2} utilitza l'equació \\eqref{eq:kcmil_mm2} per convertir la secció d'un conductor expressada en \\unit{kcmil}, en la seva secció equivalent expressada en \\unit{mm^2}."
+            },
+            {
+                "bookmarkNumber": 1,
+                "fileName": "Capitols/Cap-Flux-Carregues.tex",
+                "lineNumber": 733,
+                "text": "Cap-Flux-Carregues.tex\nS'utilitzarà en tots els casos el sistema d'equacions no lineals de l'exemple \\vref{ex:control-v-cond}, és a dir:"
+            },
+            {
+                "bookmarkNumber": 1,
+                "fileName": "Capitols/Cap-Xarxes-Electriques.tex",
+                "lineNumber": 713,
+                "text": "Cap-Xarxes-Electriques.tex\nd'admitàncies, segons es veurà a continuació. Cal transformar també les branques d'impedància"
+            },
+            {
+                "bookmarkNumber": 1,
+                "fileName": "Qüestions Electrotècniques Diverses.tex",
+                "lineNumber": 455,
+                "text": "Qüestions Electrotècniques Diverses.tex\n\\appendix"
+            }
+        ],
+        "CurrentFile": "Qüestions Electrotècniques Diverses.tex",
+        "FileVersion": 1,
+        "Files": [
+            {
+                "Col": 38,
+                "EditorGroup": 0,
+                "FileName": "Qüestions Electrotècniques Diverses.tex",
+                "FirstLine": 409,
+                "FoldedLines": "",
+                "Line": 436
+            },
+            {
+                "Col": 271,
+                "EditorGroup": 0,
+                "FileName": "Capitols/Cap-Xarxes-Electriques.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 143
+            },
+            {
+                "Col": 406,
+                "EditorGroup": 0,
+                "FileName": "Capitols/Cap-Python-Llenguatge.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 9
+            }
+        ],
+        "MasterFile": "Qüestions Electrotècniques Diverses.tex"
+    }
+}

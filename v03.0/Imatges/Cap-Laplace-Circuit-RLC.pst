@@ -1,0 +1,139 @@
+%%Created by jPicEdt 1.4pre4: mixed JPIC-XML/LaTeX format
+%%Sun Jan 01 15:05:09 CET 2006
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="8" x-max="83" y-min="1.5" y-max="32" auto-bounding="false">
+%<multicurve points="(39,25);(39,25);(50.5,25);(50.5,25)"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(9,13.5)" p2="(13,17.5)" p3="(17,13.5)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(29,23)" p2="(29,27)" p3="(39,27)"
+%	
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(50.5,23)" p2="(50.5,27)" p3="(60.5,27)"
+%	
+%	 fill-style="solid"
+%	 />
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(11,18.5)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%+
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(8,13.5)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$u(t)$
+%</text>
+%<multicurve points="(16.5,23.5);(16.5,23.5);(25.5,23.5);(25.5,23.5)"
+%	
+%	 fill-style="solid"
+%	 right-arrow="head" />
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(21,23)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$i(t)$
+%</text>
+%<multicurve points="(13,17.5);(13,17.5);(13,25);(13,25);(13,25);(29,25);
+%	(29,25)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(60.5,25);(60.5,25);(71.5,25);(71.5,25)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(71.5,27.5);(71.5,27.5);(71.5,22.5);(71.5,22.5)"
+%	 stroke-width="0.5"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(73.5,27.5);(73.5,27.5);(73.5,22.5);(73.5,22.5)"
+%	 stroke-width="0.5"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(13,9.5);(13,9.5);(13,1.5);(13,1.5);(13,1.5);(82,1.5);
+%	(82,1.5);(82,1.5);(82,25);(82,25);(82,25);(73.5,25);
+%	(73.5,25)"
+%	
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(34,28)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$R$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(55,28)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$L$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(72.5,28)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$C$
+%</text>
+%<multicurve points="(51,21.5);(51,21.5);(60,21.5);(60,21.5)"
+%	
+%	 fill-style="solid"
+%	 right-arrow="head" />
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(55,21)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$i_0$
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(72.5,20.5)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$u_0$
+%</text>
+%<smoothpolygon points="(67.5,23);(72.5,20);(77.5,23.5)" closed="false"
+%	smoothness="0.7;0.7;0.7"
+%	
+%	 fill-style="none"
+%	 right-arrow="head" />
+%</jpic>
+%%End JPIC-XML
+%PsTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(83,32)
+\psline(39,25)(50.5,25)
+\rput{0}(13,13.5){\psellipse[](0,0)(4,4)}
+\pspolygon[](29,23)(29,27)(39,27)(39,23)
+\pspolygon[fillstyle=solid](50.5,23)(50.5,27)(60.5,27)(60.5,23)
+\rput(11,18.5){+}
+\rput[r](8,13.5){$u(t)$}
+\psline[fillstyle=solid]{->}(16.5,23.5)(25.5,23.5)
+\rput[t](21,23){$i(t)$}
+\psline(13,17.5)(13,25)
+(13,25)(29,25)
+\psline(60.5,25)(71.5,25)
+\psline[linewidth=0.5](71.5,27.5)(71.5,22.5)
+\psline[linewidth=0.5](73.5,27.5)(73.5,22.5)
+\psline(13,9.5)(13,1.5)
+(13,1.5)(82,1.5)
+(82,1.5)(82,25)
+(82,25)(73.5,25)
+\rput[b](34,28){$R$}
+\rput[b](55,28){$L$}
+\rput[b](72.5,28){$C$}
+\psline[fillstyle=solid]{->}(51,21.5)(60,21.5)
+\rput[t](55,21){$i_0$}
+\rput[t](72.5,20.5){$u_0$}
+\psbezier{->}(67.5,23)(71,20.9)(74,21.05)(77.5,23.5)
+\end{pspicture}

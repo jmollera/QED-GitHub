@@ -1,0 +1,30 @@
+%Created by jPicEdt 1.x
+%PsTricks format (pstricks.sty needed)
+%Sun Sep 12 12:51:29 CEST 2004
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\begin{pspicture}(0,0)(98.00,60.00)
+\rput[t](46.50,4.00){$\cmplx{U}_{\alphaup\betaup}$}
+\rput[bl](55.50,34.50){$\cmplx{U}_{\gammaup\alphaup}$}
+\rput[b](44.00,25.50){$\cmplx{U}_{\nuup\kappaup}$}
+\rput[br](13.50,31.00){$\cmplx{U}_{\betaup\gammaup}$}
+\rput[tr](32.50,37.53){$\cmplx{U}_{\gammaup\nuup}$}
+\rput[bl](42.00,35.50){$\cmplx{U}_{\gammaup\kappaup}$}
+\rput[br](23.00,16.00){$\cmplx{U}_{\betaup\nuup}$}
+\rput[t](29.25,13.84){$\cmplx{U}_{\betaup\kappaup}$}
+\rput[t](64.55,14.40){$\cmplx{U}_{\alphaup\nuup}$}
+\rput[bl](59.50,22.00){$\cmplx{U}_{\alphaup\kappaup}$}
+\rput[l](95.50,6.00){$\alphaup$} \rput[r](3.00,6.00){$\betaup$}
+\rput[b](24.00,57.00){$\gammaup$} \rput[l](51.50,26.50){$\kappaup$}
+\rput[r](37.16,24.72){$\nuup$}
+\psline[linewidth=0.25,linecolor=black]{->}(94.50,5.50)(24.50,56.00)
+\psline[linewidth=0.25,linecolor=black]{<-}(94.50,5.50)(4.50,5.50)
+\psline[linewidth=0.25,linecolor=black]{->}(24.50,56.00)(4.50,5.50)
+\psline[linewidth=0.25,linecolor=blue]{<-}(4.50,5.50)(39.00,24.00)
+\newrgbcolor{userLineColour}{0.00 0.00 1.00}
+\psline[linewidth=0.25,linecolor=userLineColour]{->}(39.00,24.00)(24.50,56.00)
+\psline[linewidth=0.25,linecolor=blue]{->}(39.00,24.00)(94.50,5.50)
+\psline[linewidth=0.25,linecolor=red]{->}(50.00,25.50)(24.50,56.00)
+\psline[linewidth=0.25,linecolor=red]{->}(50.00,25.50)(4.50,5.50)
+\psline[linewidth=0.25,linecolor=red]{->}(50.00,25.50)(94.50,5.50)
+\psline[linewidth=0.25,linecolor=black]{->}(50.00,25.50)(39.00,24.00)
+\end{pspicture}

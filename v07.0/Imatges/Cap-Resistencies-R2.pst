@@ -1,0 +1,95 @@
+%%Created by jPicEdt 1.4.1: mixed JPIC-XML/LaTeX format
+%%Sat Jan 27 10:26:30 CET 2007
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="17" y-min="0" y-max="5" auto-bounding="false">
+%<multicurve fill-style= "none"
+%	 points= "(0.5,2.5);(0.5,2.5);(3,2.5);(3,2.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(14,2.5);(14,2.5);(16.5,2.5);(16.5,2.5)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(8.5,2.5)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(23,9.5)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%
+%</text>
+%<parallelogram p3= "(14,0.5)"
+%	 p1= "(3,4.5)"
+%	 fill-style= "solid"
+%	 stroke-color= "#cccccc"
+%	 fill-color= "#cccccc"
+%	 p2= "(14,4.5)"
+%	 />
+%<parallelogram p3= "(12.5,0.5)"
+%	 p1= "(12,4.5)"
+%	 fill-style= "solid"
+%	 stroke-color= "#996600"
+%	 fill-color= "#996600"
+%	 p2= "(12.5,4.5)"
+%	 />
+%<parallelogram p3= "(9.5,0.5)"
+%	 p1= "(9,4.5)"
+%	 fill-style= "solid"
+%	 p2= "(9.5,4.5)"
+%	 />
+%<parallelogram p3= "(8,0.5)"
+%	 p1= "(7.5,4.5)"
+%	 fill-style= "solid"
+%	 stroke-color= "#ffff00"
+%	 fill-color= "#ffff00"
+%	 p2= "(8,4.5)"
+%	 />
+%<parallelogram p3= "(6.5,0.5)"
+%	 p1= "(6,4.5)"
+%	 fill-style= "solid"
+%	 stroke-color= "#ff0000"
+%	 fill-color= "#ff0000"
+%	 p2= "(6.5,4.5)"
+%	 />
+%<parallelogram p3= "(5,0.5)"
+%	 p1= "(4.5,4.5)"
+%	 fill-style= "solid"
+%	 stroke-color= "#ff9900"
+%	 fill-color= "#ff9900"
+%	 p2= "(5,4.5)"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(17,5)
+\psline(0.5,2.5)(3,2.5)
+\psline(14,2.5)(16.5,2.5)
+\rput(8.5,2.5){}
+\rput(23,9.5){}
+\newrgbcolor{userLineColour}{0.8 0.8 0.8}
+\newrgbcolor{userFillColour}{0.8 0.8 0.8}
+\pspolygon[linecolor=userLineColour,fillcolor=userFillColour,fillstyle=solid](3,4.5)(14,4.5)(14,0.5)(3,0.5)
+\newrgbcolor{userLineColour}{0.6 0.4 0}
+\newrgbcolor{userFillColour}{0.6 0.4 0}
+\pspolygon[linecolor=userLineColour,fillcolor=userFillColour,fillstyle=solid](12,4.5)(12.5,4.5)(12.5,0.5)(12,0.5)
+\pspolygon[fillstyle=solid](9,4.5)(9.5,4.5)(9.5,0.5)(9,0.5)
+\pspolygon[linecolor=yellow,fillcolor=yellow,fillstyle=solid](7.5,4.5)(8,4.5)(8,0.5)(7.5,0.5)
+\pspolygon[linecolor=red,fillcolor=red,fillstyle=solid](6,4.5)(6.5,4.5)(6.5,0.5)(6,0.5)
+\newrgbcolor{userLineColour}{1 0.6 0}
+\newrgbcolor{userFillColour}{1 0.6 0}
+\pspolygon[linecolor=userLineColour,fillcolor=userFillColour,fillstyle=solid](4.5,4.5)(5,4.5)(5,0.5)(4.5,0.5)
+\end{pspicture}

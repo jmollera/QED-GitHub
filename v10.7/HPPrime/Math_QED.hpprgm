@@ -1,0 +1,32 @@
+#pragma mode( separator(.,;) integer(h32) )
+
+    EXPORT Interpolació_Polinòmica(dades,x)
+    // dades:[[x1,y1], x:abscissa → ordenada y interpolada 
+    //        [x2,y2]
+    //        .......
+    //        [xn,yn]]  
+    BEGIN
+      POLYEVAL(polynomial_regression(dades,rowDim(dades)-1),x);
+    END;
+    
+    EXPORT Interpolació_Polinòmica_2dim(dades,x,y)
+    // dades:[[0,   x1,  x2, ...  xn], x, y → z interpolada
+    //        [y1, z11, z12, ... z1n]
+    //        [y2, z21, z22, ... z2n]
+    //        .......................
+    //        [ym, zm1, zm2, ... zmn]]  
+    BEGIN
+      LOCAL c:=colDim(dades);
+      LOCAL r:=rowDim(dades);
+      LOCAL d:=[[0,0],[0,0]];
+      LOCAL z:=[[0,0],[0,0]];
+      LOCAL k;
+      d(-1):=dades({{1,2},{1,c}});
+      FOR k FROM 2 TO r DO
+        d(-2):=dades({{k,2},{k,c}});
+        z(k-1,2):=Interpolació_Polinòmica(d,x);
+      END;
+      z(-1):=TRN(dades({{2,1},{r,1}}));
+      Interpolació_Polinòmica(z,y);
+    END;
+    

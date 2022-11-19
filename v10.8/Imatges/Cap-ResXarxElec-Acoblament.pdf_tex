@@ -1,0 +1,82 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Cap-ResXarxElec-Acoblament.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{433.70078125bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.29411766)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Cap-ResXarxElec-Acoblament.pdf}}%
+    \put(0.11111093,0.12418299){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{X}\ped{M}$}}}%
+    \put(0.07189544,0.26797384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{I}_{\alphaup\betaup}$}}}%
+    \put(0.07189544,0.04575162){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{I}_{\gammaup\deltaup}$}}}%
+    \put(0.16339872,0.26797384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{Z}_{\alphaup\betaup}$}}}%
+    \put(0.16339872,0.04575162){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{Z}_{\gammaup\deltaup}$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Cap-ResXarxElec-Acoblament.pdf}}%
+    \put(0.01960786,0.25490195){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\alphaup$}}}%
+    \put(0.26797389,0.26143789){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\betaup$}}}%
+    \put(0.26797389,0.03267972){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\deltaup$}}}%
+    \put(0.01960786,0.03921567){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\gammaup$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Cap-ResXarxElec-Acoblament.pdf}}%
+    \put(0.52941182,0.26797384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{I}_{\alphaup\betaup}$}}}%
+    \put(0.52941182,0.04575162){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{I}_{\gammaup\deltaup}$}}}%
+    \put(0.73202621,0.26797384){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{Y}_{\alphaup\betaup}$}}}%
+    \put(0.73202621,0.04575182){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{Y}_{\gammaup\deltaup}$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{Cap-ResXarxElec-Acoblament.pdf}}%
+    \put(0.47712423,0.2549018){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\alphaup$}}}%
+    \put(0.98039224,0.26143774){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\betaup$}}}%
+    \put(0.98039224,0.03267972){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\deltaup$}}}%
+    \put(0.47712423,0.03921567){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\gammaup$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{Cap-ResXarxElec-Acoblament.pdf}}%
+    \put(0.73202621,0.19607842){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{Y}_{\alphaup\deltaup}$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{Cap-ResXarxElec-Acoblament.pdf}}%
+    \put(0.73202621,0.11764704){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{Y}_{\gammaup\betaup}$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{Cap-ResXarxElec-Acoblament.pdf}}%
+    \put(0.92810466,0.12418299){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{Y}_{\betaup\deltaup}$}}}%
+    \put(0.56862751,0.12418299){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{Y}_{\alphaup\gammaup}$}}}%
+    \put(0.73202625,0.32467669){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+  \end{picture}%
+\endgroup%

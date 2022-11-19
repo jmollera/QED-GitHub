@@ -1,0 +1,66 @@
+%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Cap-Laplace-Exemple3-Circuit.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{331.65354004bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.3931624)%
+    \put(0,0){\includegraphics[width=\unitlength]{Cap-Laplace-Exemple3-Circuit.pdf}}%
+    \put(0.84615394,0.24786321){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$L=\SI{250}{mH}$}}}%
+    \put(0.52136758,0.08547003){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$u\ped{C}(t)$}}}%
+    \put(0.31071307,0.3836204){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$t=0$}}}%
+    \put(0.13322778,0.11001764){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$U\ped{bat}=\SI{120}{V}$}}}%
+    \put(0.13675217,0.23076932){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$R\ped{bat}=\SI{5}{\ohm}$}}}%
+    \put(0.43589749,0.25641022){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$R_1=\SI{100}{\ohm}$}}}%
+    \put(0.43589749,0.08547003){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$C=\SI{10}{\micro{}F}$}}}%
+    \put(0.84615394,0.08547003){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$R_3=\SI{25}{\ohm}$}}}%
+    \put(0.64102563,0.38461539){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$i\ped{L}(t)$}}}%
+    \put(0.31624026,0.31516346){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{M}}}%
+    \put(0.64090585,0.04304044){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$i\ped{C}(t)$}}}%
+    \put(0.64102563,0.21367522){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$R_2=\SI{75}{\ohm}$}}}%
+  \end{picture}%
+\endgroup%

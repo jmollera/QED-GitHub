@@ -1,0 +1,176 @@
+\documentclass[catalan,a4paper,twoside,11pt]{book}
+
+\usepackage[T1]{fontenc}
+\usepackage[sc]{mathpazo}
+\usepackage[scaled=.95]{helvet}
+\usepackage{courier}
+
+\usepackage{pifont}   % Dingbats de llistes i enumeracions, i marques de correcte/incorrecte
+\usepackage{marvosym} % S\'{\i}mbol d'una carta (e-mail)
+\usepackage{alltt}    % Representaci\'{o} de codi de programa en lletra typewriter
+
+\usepackage{amsmath}
+\usepackage{amssymb} % S\'{\i}mbols i fonts blackboard
+\usepackage{amscd}   % Definici\'{o} sentitis de corrent i tensi\'{o} en la secci\'{o} Notaci\'{o}
+\usepackage{beccari-v1}
+
+\usepackage{babel}
+\usepackage{varioref}
+\usepackage{longtable, booktabs, array, multirow}
+\usepackage{multicol}
+
+\usepackage{caption}
+\DeclareCaptionFont{CaptFnt}{\sffamily\bfseries\color{NavyBlue}}
+\captionsetup{labelfont=CaptFnt}
+
+\usepackage[final]{graphicx}
+\usepackage[dvipsnames]{xcolor}
+
+
+\newtheorem{exemple}{\sffamily\color{NavyBlue}Exemple}[chapter]  % defineix l'entorn "Exemple"
+
+\setlength{\parskip}{1.5ex plus0.5ex minus0.5ex}     % separaci\'{o} entre par\`{a}grafs
+\setlength{\parindent}{0mm}                          % par\`{a}grafs sense indentaci\'{o}
+\setlength{\columnsep}{1.5em}                        % separaci\'{o} entre columnes
+
+% format de les p\`{a}gines
+\setlength{\hoffset}{0mm}
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{-10.8mm}
+\setlength{\textwidth}{170mm}
+\setlength{\marginparsep}{2mm}
+\setlength{\marginparwidth}{12mm}
+\setlength{\voffset}{0mm}
+\setlength{\textheight}{230mm}
+\setlength{\topmargin}{0mm}
+
+%formats dels peus i cap\c{c}aleres
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headheight}{14pt}
+\renewcommand{\headrulewidth}{0.4pt}
+% redefinici\'{o} de l'estil plain: p\`{a}gines on comen\c{c}a un cap\'{\i}tol
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyfoot[R]{\color{NavyBlue}\sffamily\bfseries \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+% redefinici\'{o} de l'estil de les p\`{a}gines parells en blanc
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}
+\vspace*{\fill}
+\begin{center}
+   %This page intentionally left blank
+\end{center}
+\vspace{\fill}
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+% format dels cap\'{\i}tols
+\usepackage{fncychap}
+\makeatletter%
+  \ChNameVar{\vspace{-7mm}\color{NavyBlue}\fontsize{40}{42}\usefont{OT1}{phv}{b}{n}\selectfont}
+  \ChNumVar{\color{NavyBlue}\fontsize{50}{52}\usefont{OT1}{phv}{b}{n}\selectfont}
+  \ChTitleVar{\color{black}\fontsize{25}{27}\usefont{OT1}{pplx}{b}{n}\selectfont}
+  \ChRuleWidth{1pt}
+  \renewcommand{\DOCH}{%
+    \raggedleft
+    \CNV\FmN{\@chapapp}\space \CNoV\thechapter\nobreak
+    \vskip -15\p@}
+  \renewcommand{\DOTI}[1]{%
+    \CTV\raggedleft\mghrulefill{\RW} \\ \nobreak
+    \vskip 0\p@
+    \CTV\FmTi{#1} \\ \nobreak
+    \vskip -15\p@
+    \mghrulefill{\RW} \\ \nobreak
+    \vskip 40\p@}
+  \renewcommand{\DOTIS}[1]{%
+    \CTV\raggedleft\mghrulefill{\RW} \\ \nobreak
+    \vskip 0\p@
+    \CTV\FmTi{#1} \\ \nobreak
+    \vskip -15\p@
+    \mghrulefill{\RW} \\ \nobreak
+    \vskip 5\p@}
+\makeatother
+
+% format de les seccions, subseccions, ...
+\makeatletter
+\renewcommand{\section}{\@startsection {section}{1}{0pt}%
+   {-3.5ex plus -1ex minus -0.2ex}%
+   {2.3ex plus 0.2ex}%
+   {\Large  \sffamily  \bfseries \color{NavyBlue}}}
+\renewcommand{\subsection}{\@startsection {subsection}{2}{0pt}%
+   {-3.25ex plus -1ex minus -0.2ex}%
+   {1.5ex plus 0.2ex}%
+   {\large  \sffamily  \bfseries \color{NavyBlue}}}
+\renewcommand{\subsubsection}{\@startsection {subsubsection}{3}{0pt}%
+   {-3.25ex plus -1ex minus -0.2ex}%
+   {1.5ex plus 0.2ex}%
+   {\normalsize  \sffamily  \bfseries \color{NavyBlue}}}
+\makeatother
+
+\usepackage{makeidx}
+\makeindex
+
+\usepackage[pdftex=true,
+bookmarks=true,bookmarksopenlevel=0,bookmarksopen=true,bookmarksnumbered=true,
+pdftitle={Q\"{u}estions Diverses d'Electrot\`{e}cnia},pdfauthor={Josep
+Mollera},pdfview={FitH},pdfstartview={FitH}, pdfpagelabels=true,
+colorlinks=true,plainpages=false]{hyperref}
+
+
+\begin{document}
+   \frontmatter
+      % estil de les p\`{a}gines normals parells i senars
+      \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO,RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase\leftmark}
+      \include{Pre-Titol}
+      \tableofcontents
+      \listoftables
+      \listoffigures
+      \include{Pre-Prefaci}
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO,RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase Historial}
+      \include{Pre-Historial}
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO,RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase Notaci\'{o}}
+      \include{Pre-Notacio}
+   \mainmatter
+      % estil de les p\`{a}gines normals parells i senars
+      \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}}
+      \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO]{\color{NavyBlue}\sffamily\bfseries\nouppercase\rightmark}
+      \fancyhead[RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase\leftmark}
+   \part{Electrot\`{e}cnia}
+      \include{Cap-Fonaments}
+      \include{Cap-Components-Simetriques}
+      \include{Cap-Series-Fourier}
+      \include{Cap-Transformada-Laplace}
+      \include{Cap-Calculs-Basics}
+   \part{Components El\`{e}ctrics}
+      \include{Cap-Resistencies}
+      \include{Cap-Cables}
+      \include{Cap-Trafos-Mes-Prot}
+   \part{Sistemes El\`{e}ctrics de   Pot\`{e}ncia}
+      \include{Cap-Xarxes-Electriques}
+      \include{Cap-Flux-Carregues}
+      \include{Cap-Numeracio-ANSI}
+      \appendix
+   \part{Ap\`{e}ndixs}
+      \renewcommand*{\chaptername}{\appendixname}
+      \include{Ape-Alfabet-Grec}
+      \include{Ape-SI}
+      \include{Ape-Constants-Fisiques}
+      \include{Ape-Escales-Log}
+      \include{Ape-Funcions-Trigonometriques}
+      \include{Ape-Proteccio-IP}
+      \include{Ape-Classes-NEMA}
+      \include{Ape-Classes-Refrigeracio-Trafos}
+   \backmatter
+   \printindex
+\end{document}

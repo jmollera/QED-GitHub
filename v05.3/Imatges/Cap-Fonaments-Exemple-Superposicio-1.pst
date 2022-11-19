@@ -1,0 +1,171 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Fri Jan 06 17:35:35 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="92" y-min="0" y-max="35" auto-bounding="false">
+%<text text-vert-align= "center-v"
+%	 fill-style= "solid"
+%	 anchor-point= "(42.5,7)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{I}$
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(37,27);(37,27);(54,27);(54,27)"
+%	 />
+%<circle p3= "(20.5,14)"
+%	 p2= "(16.5,18)"
+%	 p1= "(12.5,14)"
+%	 fill-style= "none"
+%	 closure= "plain"
+%	 />
+%<parallelogram p3= "(37,29)"
+%	 p2= "(27,29)"
+%	 p1= "(27,25)"
+%	 fill-style= "none"
+%	 />
+%<parallelogram p3= "(64,29)"
+%	 p2= "(54,29)"
+%	 p1= "(54,25)"
+%	 fill-style= "solid"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "solid"
+%	 anchor-point= "(14.5,19)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%+
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "solid"
+%	 anchor-point= "(11,14)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$5_{\angle 0\degree}\unit{V}$
+%</text>
+%<multicurve right-arrow= "head"
+%	 fill-style= "solid"
+%	 points= "(43.5,10);(43.5,10);(43.5,3.5);(43.5,3.5)"
+%	 />
+%<multicurve stroke-width= "0.5"
+%	 fill-style= "none"
+%	 points= "(48,15);(48,15);(43,15);(43,15)"
+%	 />
+%<multicurve stroke-width= "0.5"
+%	 fill-style= "none"
+%	 points= "(48,13);(48,13);(43,13);(43,13)"
+%	 />
+%<text text-vert-align= "bottom"
+%	 fill-style= "solid"
+%	 anchor-point= "(32,30.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$4\unit{\ohm}$
+%</text>
+%<g>
+%<smoothpolygon fill-style= "none"
+%	 closed= "false"
+%	 points= "(14.5,14);(15.5,16.5);(16.5,14)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<smoothpolygon fill-style= "none"
+%	 closed= "false"
+%	 points= "(18.5,14);(17.5,11.5);(16.5,14)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%</g>
+%<multicurve fill-style= "none"
+%	 points= "(16.5,18);(16.5,18);(16.5,27);(16.5,27);(16.5,27);(27,27);
+%	(27,27)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(45.5,15);(45.5,15);(45.5,27);(45.5,27)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(45.5,13);(45.5,13);(45.5,1.5);(45.5,1.5)"
+%	 />
+%<text text-vert-align= "bottom"
+%	 fill-style= "solid"
+%	 anchor-point= "(59,30.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$5\unit{\ohm}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "solid"
+%	 anchor-point= "(49.5,14)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$2\unit{\ohm}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "solid"
+%	 anchor-point= "(80,14)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$2_{\angle 0\degree}\unit{A}$
+%</text>
+%<circle p3= "(79,14)"
+%	 p2= "(75,18)"
+%	 p1= "(71,14)"
+%	 fill-style= "none"
+%	 closure= "plain"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(64,27);(64,27);(75,27);(75,27);(75,27);(75,18);
+%	(75,18)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(16.5,10);(16.5,10);(16.5,1.5);(16.5,1.5);(16.5,1.5);(75,1.5);
+%	(75,1.5);(75,1.5);(75,10);(75,10)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "solid"
+%	 points= "(75,11.5);(75,11.5);(75,16.5);(75,16.5)"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(92,35)
+\rput[r](42.5,7){$\cmplx{I}$}
+\psline(37,27)(54,27)
+\rput{0}(16.5,14){\psellipse[](0,0)(4,4)}
+\pspolygon[](27,25)(27,29)(37,29)(37,25)
+\pspolygon[fillstyle=solid](54,25)(54,29)(64,29)(64,25)
+\rput(14.5,19){+}
+\rput[r](11,14){$5_{\angle 0\degree}\unit{V}$}
+\psline[fillstyle=solid]{->}(43.5,10)(43.5,3.5)
+\psline[linewidth=0.5](48,15)(43,15)
+\psline[linewidth=0.5](48,13)(43,13)
+\rput[b](32,30.5){$4\unit{\ohm}$}
+\psbezier(14.5,14)(15.2,15.75)(15.8,15.75)(16.5,14)
+\psbezier(18.5,14)(17.8,12.25)(17.2,12.25)(16.5,14)
+\psline(16.5,18)
+(16.5,27)(27,27)
+\psline(45.5,15)(45.5,27)
+\psline(45.5,13)(45.5,1.5)
+\rput[b](59,30.5){$5\unit{\ohm}$}
+\rput[l](49.5,14){$2\unit{\ohm}$}
+\rput[l](80,14){$2_{\angle 0\degree}\unit{A}$}
+\rput{0}(75,14){\psellipse[](0,0)(4,4)}
+\psline(64,27)
+(75,27)(75,18)
+\psline(16.5,10)
+(16.5,1.5)
+(75,1.5)(75,10)
+\psline[fillstyle=solid]{->}(75,11.5)(75,16.5)
+\end{pspicture}

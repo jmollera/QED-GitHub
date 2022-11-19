@@ -1,0 +1,27 @@
+\usepackage[T1]{fontenc}
+\usepackage[widermath,partialup]{kpfonts}
+\usepackage{pifont}   % Dingbats de llistes i enumeracions, i marques de correcte/incorrecte
+\usepackage{marvosym} % S\'{\i}mbol d'una carta (e-mail)
+\usepackage{alltt}    % Representaci\'{o} de codi de programa en lletra typewriter
+
+\usepackage{amssymb} % S\'{\i}mbols i fonts blackboard
+\usepackage{amscd}   % Definici\'{o} sentitis de corrent i tensi\'{o} en la secci\'{o} Notaci\'{o}
+\usepackage{amsthm}  % Extensi\'{o} de l'entorn \newtheorem
+\usepackage{beccari-v3}
+
+\usepackage{siunitx}
+\sisetup{
+ %inter-unit-product =  \ensuremath{{}{\cdot}{}},
+    inter-unit-product =  \ensuremath{{}\cdot{}},
+    input-symbols = \piup\dots\pm,
+    output-decimal-marker = {,},
+    output-complex-root = \ensuremath{\mathrm{j}},
+    complex-root-position = before-number,
+    list-final-separator = \ensuremath{\text{~i~}},
+    list-pair-separator = \ensuremath{\text{~i~}},
+    range-phrase = \ensuremath{\text{~a~}},
+    arc-separator = {\,}
+}
+\providecommand*{\SIpd}[3]{\ensuremath{\num{#1}_{\angle\ang{#2}}\,\si{#3}}}       % \SI with a complex in polar form (degrees)
+\providecommand*{\SIpr}[3]{\ensuremath{\num{#1}_{\angle\SI{#2}{rad}}\,\si{#3}}}   % \SI with a complex in polar form (rad)
+\providecommand*{\numpd}[2]{\ensuremath{\num{#1}_{\angle\ang{#2}}}}               % \num  with a complex in polar form (degrees)

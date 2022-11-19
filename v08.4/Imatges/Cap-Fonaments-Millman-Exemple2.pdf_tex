@@ -1,0 +1,73 @@
+%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Cap-Fonaments-Millman-Exemple2.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{311.81101074bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.59090911)%
+    \put(0,0){\includegraphics[width=\unitlength]{Cap-Fonaments-Millman-Exemple2.pdf}}%
+    \put(0.96048639,0.02177539){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{G}}}%
+    \put(0.73184675,0.1153116){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{I}\ped{C}$}}}%
+    \put(0.46383079,0.51792253){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{A}}}%
+    \put(0.86949296,0.02145857){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{G}}}%
+    \put(0.77870697,0.02126415){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{G}}}%
+    \put(0.11482233,0.02145857){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{G}}}%
+    \put(0.11977322,0.11168306){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$R\ped{N}=\SI{46}{\ohm}$}}}%
+    \put(0.82370875,0.11470673){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{I}\ped{B}$}}}%
+    \put(0.9149844,0.11415686){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{I}\ped{A}$}}}%
+    \put(0.07000039,0.25091778){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{I}\ped{N}$}}}%
+    \put(0.14395566,0.36446249){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{N}}}%
+    \put(0.464002,0.37183617){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{B}}}%
+    \put(0.46372706,0.22639992){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{C}}}%
+    \put(0.62870406,0.53740286){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$R\ped{A}=\SI{50}{m\ohm}$}}}%
+    \put(0.62682889,0.38980637){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$R\ped{B}=\SI{80}{m\ohm}$}}}%
+    \put(0.62760653,0.24478212){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$R\ped{C}=\SI{70}{m\ohm}$}}}%
+    \put(0.30909275,0.55416191){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\SIpd{230}{0}{V}}}}%
+    \put(0.30964259,0.41010034){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\SIpd{230}{240}{V}}}}%
+    \put(0.30854292,0.26411424){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\SIpd{230}{120}{V}}}}%
+  \end{picture}%
+\endgroup%

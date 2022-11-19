@@ -1,0 +1,65 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Cap-Fonaments-RL-Serie-Exemple.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{212.59840357bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.58666673)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Cap-Fonaments-RL-Serie-Exemple.pdf}}%
+    \put(1.49333368,0.66234048){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.7463195,0.50884698){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$i(t)$}}}%
+    \put(0.31674724,0.55830691){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\SI{2}{\ohm}}}}%
+    \put(0.03419258,0.26880025){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\SI{12}{V}}}}%
+    \put(0.93333349,0.32148184){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\SI{60}{mH}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Cap-Fonaments-RL-Serie-Exemple.pdf}}%
+    \put(0.93247422,0.12601489){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\SI{4}{\ohm}}}}%
+    \put(0.53957915,0.50112939){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\scriptsize A}}}}%
+    \put(0.53728764,0.41185758){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\scriptsize B}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Cap-Fonaments-RL-Serie-Exemple.pdf}}%
+    \put(0.82906996,0.32195553){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$u(t)$}}}%
+  \end{picture}%
+\endgroup%

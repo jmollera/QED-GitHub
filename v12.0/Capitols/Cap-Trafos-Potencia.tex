@@ -1,0 +1,1354 @@
+\addtocontents{xms}{\protect\addvspace{10pt}}
+\chapter{Transformadors de Potència}\index{transformadors de potència}
+
+\section{Introducció}
+Es tracten en aquest capítol els transformadors de potència
+monofàsics i trifàsics des del punt de vista electrotècnic, utilitzant-ne els esquemes equivalents.
+
+\section{Esquema equivalent i placa de característiques}
+
+\subsection{Esquema equivalent}\index{transformadors de potència!esquema equivalent}
+
+Es presenta en primer lloc en la Figura \vref{pic:tr-pot-esquema-equiv} l'esquema elèctric equivalent d'un transformador.
+L'esquema és vàlid tant per a un transformador monofàsic com per a un de trifàsic. En el cas d'un transformador trifàsic, l'esquema representa el circuit equivalent per fase, és a dir l'esquema fase--neutre; els valors per fase són els mateixos, independentment que la connexió dels debanats primari i secundari siguin en estrella, en triangle o en zig-zag.
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Esq-Equiv.pdf_tex}
+    \captionof{figure}{Esquema equivalent d'un transformador}
+    \label{pic:tr-pot-esquema-equiv}
+\end{center}
+
+En aquest esquema equivalent $R_1$ i $X\ped{d1}$ representen la resistència i la reactància de dispersió respectivament del debanat primari, i de forma anàloga, $R_2$ i $X\ped{d2}$ representen la resistència i la reactància de dispersió respectivament del debanat secundari; aquestes quatre magnituds es mesuren en ohm. Per la seva banda, $G\ped{Fe}'$ i $B\ped{m}'$ representen la conductància de pèrdues en el ferro i la susceptància de magnetització respectivament, vistes des del primari; aquestes dues magnituds es mesuren en siemen.
+
+Contràriament al que passa amb les resistències i reactàncies de dispersió dels debanats, la conductància $G\ped{Fe}'$ i la susceptància $B\ped{m}'$ no pertanyen a cap debanat, sinó que són pròpies del transformador; és per això que es parla de valors vistos des del primari (com en la Figura \vref{pic:tr-pot-esquema-equiv}) o vistos des del secundari, representant-los en el costat corresponent.
+
+La tensió i corrent de primari són $\cmplx{U}_1$ i $\cmplx{I}_1$ respectivament, la tensió i corrent de secundari són $\cmplx{U}_2$ i $\cmplx{I}_2$ respectivament, el corrent de secundari vist des del primari és $\cmplx{I}_2'$, i el corrent de buit vist des del primari és $\cmplx{I}_0'$.
+
+Entre el primari i el secundari es coŀloca un transformador ideal (sense pèrdues) amb una relació de transformació $m$ igual a la del transformador real.
+
+Els paràmetres d'aquest esquema equivalent es poden agrupar en una impedància de primari $\cmplx{Z}_1$, una impedància de secundari $\cmplx{Z}_2$ i una  admitància transversal vista des del primari: $\cmplx{Y}_0'$:
+\begin{align}
+    \cmplx{Z}_1 &= R_1 + \ju X\ped{d1} \\
+    \cmplx{Z}_2 &= R_2 + \ju X\ped{d2}\\
+    \cmplx{Y}_0' &= G\ped{Fe}'- \ju B\ped{m}'
+\end{align}
+
+Si es vol, la impedància de secundari $\cmplx{Z}_2$ es pot passar al costat primari del transformador ideal, quedant així un valor $\cmplx{Z}_2'$ referit al primari, de valor:
+\begin{equation}
+    \cmplx{Z}_2' = m^2 \cmplx{Z}_2 =  m^2 (R_2 + \ju X\ped{d2})
+\end{equation}
+
+Les equacions que lliguen les magnituds de la Figura \vref{pic:tr-pot-esquema-equiv} són:
+\begin{align}
+    \cmplx{U}_1 - \cmplx{Z}_1 \cmplx{I}_1 &= m ( \cmplx{U}_2  + \cmplx{Z}_2 \cmplx{I}_2 ) \\
+    \cmplx{I}_2' &=   \frac{\cmplx{I}_2}{m} \\
+    \cmplx{I}_1  &=   \cmplx{I}_2' + \cmplx{I}_0'
+\end{align}
+
+
+\subsection{Placa de característiques}\index{transformadors de potència!placa de característiques}
+
+La  placa de característiques d'un transformador recull els valors nominals  i els valors dels assajos
+en buit i en curtcircuit. Els paràmetres inclosos normalment són:
+\begin{itemize}
+   \item Tensions nominals de primari i secundari  $U\ped{n1}$ i $U\ped{n2}$: Són les tensions que cal aplicar als debanats del transformador, per tal que funcioni correctament en règim permanent. Es poden admetre sobretensions del \SI{5}{\percent} en condicions de funcionament no permanent; la tensió màxima de l'aïllament elèctric determina la tensió màxima que pot suportar el transformador.
+   \item Corrents nominals de primari i secundari  $I\ped{n1}$ i $I\ped{n2}$: Són els corrents màxims que poden circular pels debanats del transformador en règim permanent. En condicions de funcionament no permanent s'admeten sobrecàrregues.
+   \item Potència nominal $S\ped{n}$: És la potència aparent que s'obté a partir de les tensions i corrents nominals de primari i secundari.
+       \begin{equation}
+        S\ped{n} = \begin{cases} U\ped{n1} I\ped{n1} = U\ped{n2} I\ped{n2}, & \text{transformador monofàsic} \\[2mm]
+        \sqrt{3} U\ped{n1} I\ped{n1} = \sqrt{3} U\ped{n2} I\ped{n2}, & \text{transformador trifàsic} \end{cases}
+       \end{equation}
+   \item Relació de transformació $m$: És la relació entre les tensions nominals de primari i secundari, i es calcula com la relació entre ambdues tensions, quan el primari està connectat a la tensió nominal i el secundari està en buit. La relació de  transformació també es pot calcular a partir del nombre d'espires del debanat primari $N_1$ i del debanat secundari $N_2$.\index{transformadors de potència!relació de transformació}
+       \begin{equation}
+        m = \frac{U\ped{n1}}{U\ped{n2}} =  \begin{cases}
+        \dfrac{N_1}{N_2}, & \text{transformador monofàsic} \\[0.4cm]
+        \dfrac{N_1}{N_2}, & \text{transformador trifàsic triangle--triangle} \\[0.4cm]
+        \dfrac{\sqrt{3}N_1}{\sqrt{3}N_2} = \dfrac{N_1}{N_2}, & \text{transformador trifàsic estrella--estrella} \\[0.4cm]
+        \dfrac{N_1}{\sqrt{3}N_2}, & \text{transformador trifàsic triangle--estrella} \\[0.4cm]
+        \dfrac{\sqrt{3}N_1}{N_2}, & \text{transformador trifàsic estrella--triangle} \\[0.4cm]
+        \dfrac{N_1}{\frac{3}{2}N_2} = \dfrac{2 N_1}{3 N_2}, & \text{transformador trifàsic triangle--zig-zag} \\[0.4cm]
+        \dfrac{\sqrt{3}N_1}{\frac{3}{2}N_2} = \dfrac{2 N_1}{\sqrt{3} N_2}, & \text{transformador trifàsic estrella--zig-zag}
+         \end{cases}
+       \end{equation}
+   \item Freqüència nominal $f\ped{n}$: Freqüència a la qual corresponen la resta de valors nominals.
+   \item Connexió trifàsica: En el cas de transformadors trifàsics, s'especifica la connexió (estrella, triangle o zig-zag) de cadascun dels dos debanats, així com el desfasament entre les tensions de primari i secundari (vegeu la secció \vref{sec:connex-index-horari}).
+   \item Dades de l'assaig en buit $i\ped{o}$ i $W\ped{o}$, i de l'assaig en curtcircuit $\varepsilon\ped{cc}$ i $W\ped{cc}$: Els valors de les potències $W\ped{o}$ i $W\ped{cc}$ es donen
+usualment en watt, mentre que els valors dels paràmetres $i\ped{o}$
+i $\varepsilon\ped{cc}$ es donen en per unitat o en tant per cent; a partir d'aquests valors es pot calcular els valors dels paràmetres de l'esquema equivalent del transformador  (vegeu la secció \vref{sec:determ-param-trafo}).
+\end{itemize}
+
+Un transformador pot funcionar en unes condicions diferents de les nominals, com per exemple:
+\begin{itemize}
+   \item Pot treballar a tensions nominals, però subministrant una potència inferior a la nominal; aquest és el cas de funcionament més comú.
+   \item Pot treballar a tensions inferiors a la nominal, però donat que el corrent no ha de superar el seu valor nominal, la potència subministrada haurà de ser menor que la nominal.
+   \item Pot treballar a altres freqüències diferents de la nominal; per a freqüències superiors cal tenir en compte que les pèrdues seran també superiors, i per tant la potència subministrada haurà de ser menor que la nominal.
+\end{itemize}
+
+\section{Esquemes equivalents reduïts}
+
+Quan  volem fer càlculs en circuits elèctrics amb transformadors, l'esquema equivalent d'un transformador de la Figura  \vref{pic:tr-pot-esquema-equiv}, presenta l'inconvenient d'incorporar un transformador ideal, i és per això que interessa més utilitzar esquemes reduïts on aquest transformador ideal desaparegui.
+El procés utilitzat és bàsicament el que ja s'ha descrit en la secció \vref{sec:seccio_pu}. S'escull una potència base $S\ped{B}$, una tensió base pel primari $U\ped{B1}$, i una tensió base pel secundari $U\ped{B2}$; els valors base de primari i secundari dels corrents $I\ped{B1}$ i $I\ped{B2}$, de les impedàncies $Z\ped{B1}$ i $Z\ped{B2}$ i de les admitàncies $Y\ped{B1}$ i $Y\ped{B2}$, es calculen a partir de $S\ped{B}$, $U\ped{B1}$ i $U\ped{B2}$.
+
+La condició que han de satisfer $U\ped{B1}$ i $U\ped{B2}$ per tal que el transformador ideal desaparegui de l'esquema reduït, és que donin lloc a una relació de transformació $m\ped{r}$ del transformador ideal reduït igual a  1:
+\begin{equation}\label{eq:mr}
+    m\ped{r} = 1 \quad \Rightarrow \quad \frac{U\ped{B1}}{U\ped{B2}} = \frac{U\ped{n1}}{U\ped{n2}} = m
+\end{equation}
+
+ Amb aquesta condició, l'esquema de la Figura \vref{pic:tr-pot-esquema-equiv} es converteix en l'esquema de la Figura
+\vref{pic:tr-pot-esquema-equiv-reduit-T}, anomenat usualment esquema reduït en «T».\index{transformadors de potència!esquema redu\"{i}t en \guillemotleft T\guillemotright}
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T.pdf_tex}
+    \captionof{figure}{Esquema reduït en «T» d'un transformador}
+    \label{pic:tr-pot-esquema-equiv-reduit-T}
+\end{center}
+
+Els valors dels paràmetres de l'esquema equivalent reduït en «T», s'obtenen dividint els valors dels paràmetres reals pels valors base corresponents:
+\begin{align}
+    r\ped{1} &=\frac{R\ped{1}}{Z\ped{B1}} &   x\ped{d1} &=\frac{X\ped{d1}}{Z\ped{B1}} \\[1ex]
+    r\ped{2} &=\frac{R\ped{2}}{Z\ped{B2}} &   x\ped{d2} &=\frac{X\ped{d2}}{Z\ped{B2}} \\[1ex]
+    b\ped{m} &=\frac{B\ped{m}'}{Y\ped{B1}}  &   g\ped{Fe} &=\frac{G\ped{Fe}'}{Y\ped{B1}} \\[1ex]
+    \cmplx{u}_1 &=\frac{\cmplx{U}_1}{U\ped{B1}} &   \cmplx{i}_1 &=\frac{\cmplx{I}_1}{I\ped{B1}} \\[1ex]
+    \cmplx{u}_2 &=\frac{\cmplx{U}_2}{U\ped{B2}} &   \cmplx{i}_2 &=\frac{\cmplx{I}_2}{I\ped{B2}} \\[1ex]
+    \cmplx{i}_0 &=\frac{\cmplx{I}_0'}{I\ped{B1}} &   m\ped{r} &=1
+\end{align}
+
+Un cop es tenen els valor reduïts, es treballa amb aquest esquema com si es tractés d'un circuit monofàsic fase--neutre, independentment de si el transformador real original era monofàsic o trifàsic.
+
+En la pràctica, a causa del petit error comès i que no sempre es disposa per separat de les impedàncies primàries i secundàries,  s'ajunten aquests valors en una resistència $r$ i una  impedància $x$ úniques, formant l'anomenada impedància de curtcircuit $\cmplx{z}\ped{cc}$.
+\begin{equation}
+    r= r\ped{1}+r\ped{2} \qquad\quad x= x\ped{d1}+x\ped{d2} \qquad\quad \cmplx{z}\ped{cc} = r + \ju x
+\end{equation}
+Per convenció $\cmplx{z}\ped{cc}$ se situa en el costat d'alta tensió; per tant, depenent que el primari  sigui el costat d'alta tensió (AT) i el secundari el de baixa tensió (BT), o a l'inrevés, tenim els esquemes reduïts de la Figura \vref{pic:tr-pot-esquema-equiv-reduit-L}, anomenats usualment esquemes reduïts en «L».  \index{transformadors de potència!esquemes redu\"{i}ts en \guillemotleft L\guillemotright}
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-L.pdf_tex}
+    \captionof{figure}{Esquemes reduïts en «L» d'un transformador}
+    \label{pic:tr-pot-esquema-equiv-reduit-L}
+\end{center}
+
+\vspace{-4mm}
+Finalment, quan el transformador treballa en càrrega, és a dir, està lluny de treballar en buit i per tant es compleix $|\cmplx{i}_2| \gg |\cmplx{i}_0|$, es pot eliminar l'admitància transversal en els esquemes equivalents reduïts en «T» o en «L», ja que l'error comès és molt petit.
+
+En la  Taula \vref{taula:valors-base} es relacionen els valors base dels tres tipus d'esquemes equivalents reduïts més utilitzats: l'esquema en per unitat, l'esquema reduït al primari i l'esquema reduït al secundari.\index{transformadors de potència!valors base}
+
+\vspace{5mm}
+\begin{ThreePartTable}
+\begin{TableNotes}
+    \item[a] {\footnotesize Com és usual en el cas de circuits trifàsics, les potències són  potències trifàsiques,  les tensions són  tensions fase--fase i l'esquema equivalent reduït és un esquema equivalent fase--neutre.}
+\end{TableNotes}
+\begin{longtable}{ccccccc}
+\caption{\label{taula:valors-base}Valors base per a diferents tipus d'esquemes reduïts} \\
+\toprule[1pt]
+    \renewcommand*{\multirowsetup}{\centering}
+    \multirow{2}{12mm}{\rule{0mm}{4mm}Valor\\{Base}}  &    \multicolumn{3}{c}{Transformador monofàsic} &   \multicolumn{3}{c}{Transformador trifàsic\tnote{a}}         \\
+    \cmidrule(rl){2-4} \cmidrule(rl){5-7}
+      &    \multicolumn{1}{c}{en pu}  & \multicolumn{1}{c}{reduït al 1ari}  & \multicolumn{1}{c}{reduït al 2ari}
+           &    \multicolumn{1}{c}{en pu} &   \multicolumn{1}{c}{reduït al 1ari}  & \multicolumn{1}{c}{reduït al 2ari} \\
+\midrule \endfirsthead
+\caption[]{Valors base per a diferents tipus d'esquemes reduïts (\emph{ve de la pàgina anterior})} \\
+\toprule[1pt]
+    \renewcommand*{\multirowsetup}{\centering}
+    \multirow{2}{12mm}{\rule{0mm}{4mm}Valor\\{Base}}  &    \multicolumn{3}{c}{Transformador monofàsic} &   \multicolumn{3}{c}{Transformador trifàsic\tnote{a}}         \\
+    \cmidrule(rl){2-4} \cmidrule(rl){5-7}
+      &    \multicolumn{1}{c}{en pu}  & \multicolumn{1}{c}{reduït al 1ari}  & \multicolumn{1}{c}{reduït al 2ari}
+           &    \multicolumn{1}{c}{en pu} &   \multicolumn{1}{c}{reduït al 1ari}  & \multicolumn{1}{c}{reduït al 2ari} \\
+\midrule \endhead
+\midrule
+\multicolumn{7}{r}{\sffamily\bfseries\color{NavyBlue}(\emph{continua a la pàgina següent})}
+\endfoot
+\insertTableNotes
+\endlastfoot
+$S\ped{B}/\si{VA}$ &      $S\ped{n}$ &   1 &     1  &      $S\ped{n}$  &  3 &   3 \\[0.4cm]
+$U\ped{B1}/\si{V}$ & $U\ped{n1}$ & 1 & $m$ & $U\ped{n1}$ & $\sqrt{3}$  & $\sqrt{3} m$\\[0.4cm]
+$U\ped{B2}/\si{V}$ & $U\ped{n2}$ & $\dfrac{1}{m}$ & 1 & $U\ped{n2}$ & $\dfrac{\sqrt{3}}{m}$ & $\sqrt{3}$ \\[0.4cm]
+$I\ped{B1}/\si{A}$ & $\dfrac{S\ped{n}}{U\ped{n1}}$ & 1 & $\dfrac{1}{m}$ & $\dfrac{S\ped{n}}{\sqrt{3}U\ped{n1}}$ & 1  & $\dfrac{1}{m}$\\[0.4cm]
+$I\ped{B2}/\si{A}$ & $\dfrac{S\ped{n}}{U\ped{n2}}$  & $m$ & 1 & $\dfrac{S\ped{n}}{\sqrt{3}U\ped{n2}}$   & $m$ & 1\\[0.4cm]
+$Z\ped{B1}/\si{\ohm}$ & $\dfrac{U\ped{n1}^2}{S\ped{n}}$ & 1 & $m^2$ & $\dfrac{U\ped{n1}^2}{S\ped{n}}$ & 1 & $m^2$\\[0.4cm]
+$Z\ped{B2}/\si{\ohm}$ & $\dfrac{U\ped{n2}^2}{S\ped{n}}$  & $\dfrac{1}{m^2}$ & 1& $\dfrac{U\ped{n2}^2}{S\ped{n}}$  & $\dfrac{1}{m^2}$ & 1\\[0.4cm]
+$Y\ped{B1}/\si{S}$ & $\dfrac{S\ped{n}}{U\ped{n1}^2}$ & 1 & $\dfrac{1}{m^2}$ & $\dfrac{S\ped{n}}{U\ped{n1}^2}$ & 1 & $\dfrac{1}{m^2}$ \\[0.4cm]
+$Y\ped{B2}/\si{S}$ & $\dfrac{S\ped{n}}{U\ped{n2}^2}$  & $m^2$ & 1 & $\dfrac{S\ped{n}}{U\ped{n2}^2}$ &$m^2$ &  1\\[0.4cm]
+\bottomrule[1pt]
+\end{longtable}
+\end{ThreePartTable}
+
+
+Quan hi ha més d'un transformador en un circuit, s'utilitza normalment l'esquema reduït en per unitat, escollint una potència base única i tantes tensions base com nivells de tensió  originin els transformadors; cadascuna de les parelles de tensions base consecutives han de complir la relació de l'equació \eqref{eq:mr}. En la secció \vref{sec:canvi-base} es pot veure un exemple amb dos transformadors.
+
+\section{Circuit equivalent Thévenin vist des del secundari}\label{sec:trafo-thevenin}\index{transformadors de potència!circuit equivalent Thévenin}
+
+El que s'explica a continuació és vàlid per a transformadors
+monofàsics i trifàsics, ja que s'utilitzarà l'esquema equivalent del
+transformador en «T», expressant tots els seus valors en per unitat.
+
+En la Figura \vref{pic:esq_equiv_thev_trafo_sec}  es representa a
+l'esquerra, un transformador alimentat des del primari per una font
+de tensió $\cmplx{u}\ped{G}$, la qual té una impedància sèrie
+$\cmplx{z}\ped{G}$, i a  la dreta el seu circuit equivalent
+Thévenin.
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Esq-Equiv-Thevenin.pdf_tex}
+    \captionof{figure}{Circuit equivalen Thévenin d'un transformador vist des del secundari}
+    \label{pic:esq_equiv_thev_trafo_sec}
+\end{center}
+
+La tensió i impedància Thévenin venen definides per les equacions
+següents:
+\begin{align}
+    \cmplx{u}\ped{Th} &= \frac{\cmplx{u}\ped{G}}{\cmplx{z}\ped{G} + r_1 + \ju
+    x\ped{d1} + \dfrac{1}{g\ped{Fe}-\ju b\ped{m}}} \;\frac{1}{g\ped{Fe}-\ju
+    b\ped{m}} \label{eq:trafo_uth}\\[1ex]
+    \cmplx{z}\ped{Th} &= r_2 + \ju x\ped{d2} + \frac{1}{\dfrac{1}{\cmplx{z}\ped{G} + r_1 +
+    \ju x\ped{d1}} + g\ped{Fe}-\ju b\ped{m}}\label{eq:trafo_zth}
+\end{align}
+
+Tal com s'ha explicat en l'apartat \vref{sec:T_N}, la tensió
+$\cmplx{u}\ped{Th}$ és igual a la tensió en buit entre $\alphaup$ i
+$\betaup$, i la impedància $\cmplx{z}\ped{Th}$ és igual la impedància
+que existeix entre $\alphaup$ i $\betaup$ quan es curtcircuita la font
+de tensió $\cmplx{u}\ped{G}$.
+
+Normalment no es coneixen $r_1$, $r_2$, $x\ped{d1}$ i $x\ped{d2}$ per separat, i
+en canvi sí que es coneixen $r=r_1+r_2$ i $x=x\ped{d1}+x\ped{d2}$; en aquest
+cas s'obtenen dues equacions aproximades, a partir de les equacions
+anteriors, substituint $r_1$ i $x\ped{d1}$ per $r$ i $x$ respectivament en
+les equacions de $\cmplx{u}\ped{Th}$ i $\cmplx{z}\ped{Th}$, i
+menyspreant addicionalment el terme $r_2 + \ju x\ped{d2}$ en l'equació
+de $\cmplx{z}\ped{Th}$. Amb aquestes consideracions tenim:
+\begin{align}
+    \cmplx{u}\ped{Th} &\approx \frac{\cmplx{u}\ped{G}}{\cmplx{z}\ped{G} + r + \ju
+    x + \dfrac{1}{g\ped{Fe}-\ju b\ped{m}}} \;\frac{1}{g\ped{Fe}-\ju
+    b\ped{m}} \label{eq:trafo_uth_aprx}\\[1ex]
+    \cmplx{z}\ped{Th} &\approx \frac{1}{\dfrac{1}{\cmplx{z}\ped{G} + r +
+    \ju x} + g\ped{Fe}-\ju b\ped{m}}\label{eq:trafo_zth_aprx}
+\end{align}
+
+A partir de les equacions \eqref{eq:trafo_uth} i
+\eqref{eq:trafo_zth}, o de les equacions \eqref{eq:trafo_uth_aprx} i
+\eqref{eq:trafo_zth_aprx}, si es vol treballar amb els valors
+reduïts al secundari $\cmplx{U}\ped{Th}^{''}$ i
+$\cmplx{Z}\ped{Th}^{''}$, només cal multiplicar els valors en per unitat
+que s'obtenen amb aquestes equacions, per les tensions i impedàncies
+base del secundari $U\ped{B2}$ i $Z\ped{B2}$ respectivament:
+\begin{align}
+    \cmplx{U}\ped{Th}^{''} &= \cmplx{u}\ped{Th} \, U\ped{B2} \\[1ex]
+    \cmplx{Z}\ped{Th}^{''} &= \cmplx{z}\ped{Th} \, Z\ped{B2}
+\end{align}
+
+
+\section{Rendiment, caiguda de tensió i regulació de voltatge}
+
+\subsection{Rendiment}\index{transformadors de potència!rendiment}
+
+El rendiment $\eta$ d'un transformador es calcula tenint en compte la potència activa subministrada en el secundari $p_2$ i les pèrdues de potència activa en el coure dels debanats $p\ped{Cu}$ i en el ferro del circuit magnètic $p\ped{Fe}$:
+\begin{equation}
+    \eta = \frac{p_2}{p_2 + p\ped{Cu} + p\ped{Fe}}
+\end{equation}
+
+La potència $p_2$ ve determinada per la càrrega connectada en el secundari del transformador, i utilitzant els esquemes equivalents reduïts es pot calcular com:
+\begin{equation}
+    p_2 = \Re(\cmplx{u}_2 \,\cmplx{i}_2^*)
+\end{equation}
+
+Les pèrdues de potències  en el coure i en el ferro es calculen, utilitzant els esquemes equivalents reduïts en «L», a partir de les expressions següents:
+
+\begin{equation}
+\begin{array}{c}\text{Transformador}\\
+\text{AT/BT}
+\end{array} \left\{
+\begin{array}{l}
+   p\ped{Cu} = r \,|\cmplx{i}_1|^2 \\[2.7ex]
+   p\ped{Fe} = g\ped{Fe} |\cmplx{u}_2|^2
+\end{array}
+\right. \qquad\qquad
+\begin{array}{c}\text{Transformador}\\
+\text{BT/AT}
+\end{array} \left\{
+\begin{array}{l}
+   p\ped{Cu} = r \,|\cmplx{i}_2|^2 \\[2.5ex]
+   p\ped{Fe} = g\ped{Fe} |\cmplx{u}_1|^2
+\end{array}
+\right.
+\end{equation}
+
+\subsection{Caiguda de tensió i regulació de voltatge}\index{transformadors de potència!caiguda de tensió}\index{transformadors de potència!regulació de voltatge}
+
+La caiguda de tensió $\Delta u$ d'un transformador  es defineix com la diferència entre la tensió secundària quan el transformador està en buit i aquesta mateixa tensió quan el transformador treballa en càrrega.
+
+Observant els esquemes equivalents reduïts, es veu que quan el transformador treballa en buit tenim $\cmplx{i}_2=0$, i donat que la impedància transversal és molt més gran que la longitudinal, la tensió en buit del secundari és pràcticament igual a la primària. Per tant, la caiguda de tensió és:
+\begin{equation}
+    \Delta u = |\cmplx{u}_1| - |\cmplx{u}_2|
+\end{equation}
+
+Normalment aquest valor és positiu, però quan la carrega connectada al secundari és fortament capacitiva, podem tenir  $|\cmplx{u}_2| > |\cmplx{u}_1|$ i per tant tenim una caiguda de tensió negativa; això es coneix com l'efecte Ferranti.\index{efecte Ferranti}
+
+La regulació de voltatge RV no és més que la relació entre la caiguda de tensió i la tensió de secundari:
+\begin{equation}
+    \text{RV} = \frac{|\cmplx{u}_1| - |\cmplx{u}_2|}{|\cmplx{u}_2|}
+\end{equation}
+
+\section{Determinació dels paràmetres elèctrics}\label{sec:determ-param-trafo}\index{transformadors de potència!determinació de paràmetres}
+
+Els transformadors se sotmeten bàsicament a dos assajos, l'assaig en
+buit i l'assaig en curtcircuit, per tal de determinar els paràmetres
+dels seus circuits elèctrics equivalents.
+
+Mitjançant l'assaig en buit es determinen els paràmetres
+transversals del circuit equivalent, i mitjançant l'assaig en curtcircuit es determinen els seus paràmetres longitudinals.
+
+Per  realitzar aquests assajos cal conèixer prèviament els paràmetres
+bàsics del transformador: les tensions nominals de primari i de
+secundari $U\ped{n1}$ i $U\ped{n2}$, i la potència nominal
+$S\ped{n}$; com és habitual, en el cas dels transformadors
+trifàsics, les tensions nominals són les tensions fase--fase i la
+potència nominal és la potència trifàsica.
+
+Els corrents nominals s'obtenen a partir de les tensions i potència
+nominals:
+\begin{equation}
+\begin{array}{c}\text{Transformador}\\
+\text{monofàsic}
+\end{array} \left\{
+\begin{array}{l}
+   I\ped{n1} = \dfrac{S\ped{n}}{U\ped{n1}} \\[2.7ex]
+   I\ped{n2} = \dfrac{S\ped{n}}{U\ped{n2}}
+\end{array}
+\right. \qquad\qquad
+\begin{array}{c}\text{Transformador}\\
+\text{trifàsic}
+\end{array} \left\{
+\begin{array}{l}
+   I\ped{n1} = \dfrac{S\ped{n}}{\sqrt{3}U\ped{n1}} \\[2.5ex]
+   I\ped{n2} = \dfrac{S\ped{n}}{\sqrt{3}U\ped{n2}}
+\end{array}
+\right.
+\end{equation}
+
+En les explicacions que venen a continuació se suposa que el
+primari és el costat d'alta tensió i que el secundari és el costat
+de baixa tensió. Amb això no es perd la generalitat de
+l'explicació, ja que si la configuració real és la contrària de l'adoptada aquí, únicament caldrà intercanviar els subíndexs 1 i 2 en
+les equacions que s'exposaran tot seguit.
+
+\subsection{Assaig en buit}\index{transformadors de potència!assaig en buit}
+
+La manera més usual de fer l'assaig en buit és alimentar el costat
+de baixa tensió del transformador a  la seva tensió nominal, tot
+deixant el costat d'alta tensió en circuit obert. També és possible
+tanmateix, alimentar pel costat d'alta tensió i deixar en circuit
+obert el costat de baixa tensió; altrament, tampoc no és necessari
+alimentar a tensió nominal, només cal fer-ho a un valor proper.
+
+En la Figura \vref{pic:assaig_buit_mono} es pot veure com ha de
+connectar-se un transformador monofàsic, per tal de realitzar-ne
+l'assaig en buit.
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Assaig-Buit-Monofasic.pdf_tex}
+    \captionof{figure}{Assaig en buit d'un transformador monofàsic}
+    \label{pic:assaig_buit_mono}
+\end{center}
+
+A partir dels diversos aparells de mesura, obtenim els valors de la
+tensió d'alimentació $U\ped{o2}$, del corrent que circula
+$I\ped{o2}$ i de la potència consumida $W\ped{o}$, segons:
+\begin{equation}
+    U\ped{o2}\equiv|\cmplx{U}\ped{o2}|=\textsf{V} \qquad
+    I\ped{o2}\equiv|\cmplx{I}\ped{o2}|=\textsf{A}
+    \qquad W\ped{o}=\textsf{W}
+\end{equation}
+
+En la Figura \vref{pic:assaig_buit_trif} es pot veure com ha de
+connectar-se un transformador trifàsic, per tal de realitzar-ne l'assaig en buit.
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Assaig-Buit-Trifasic.pdf_tex}
+    \captionof{figure}{Assaig en buit d'un transformador trifàsic}
+    \label{pic:assaig_buit_trif}
+\end{center}
+
+
+A partir dels diversos aparells de mesura, obtenim els valors de la
+tensió trifàsica d'alimentació $U\ped{o2}$, del corrent que circula
+$I\ped{o2}$ i de la potència consumida $W\ped{o}$, segons:
+\begin{equation}
+    U\ped{o2}\equiv|\cmplx{U}\ped{o2}|=\textsf{V} \qquad
+    I\ped{o2}\equiv|\cmplx{I}\ped{o2}|=\textsf{A} \qquad
+    W\ped{o}=\textsf{W1}+\textsf{W2}
+\end{equation}
+
+\subsection{Assaig en curtcircuit}\index{transformadors de potència!assaig en curtcircuit}
+
+La manera més usual de fer l'assaig en curtcircuit és
+curtcircuitar el costat de baixa tensió del transformador i
+alimentar el costat d'alta tensió a  una tensió tal, que el corrent
+que circuli sigui igual al nominal. També és possible tanmateix,
+alimentar pel costat de baixa tensió i curtcircuitar el costat
+d'alta tensió; altrament, tampoc no és necessari que el corrent
+que circuli sigui el nominal, només cal que sigui un valor proper.
+
+En la Figura \vref{pic:assaig_cc_mono} es pot veure com ha de
+connectar-se un transformador monofàsic, per tal de realitzar-ne l'assaig en curtcircuit.
+
+\break
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Assaig-CC-Monofasic.pdf_tex}
+    \captionof{figure}{Assaig en curtcircuit d'un transformador monofàsic}
+    \label{pic:assaig_cc_mono} \
+\end{center}
+
+A partir dels diversos aparells de mesura, obtenim els valors de la
+tensió d'alimentació $U\ped{cc1}$, del corrent que circula
+$I\ped{cc1}$ i de la potència consumida $W\ped{cc}$, segons:
+\begin{equation}
+    U\ped{cc1}\equiv|\cmplx{U}\ped{cc1}|=\textsf{V} \qquad
+    I\ped{cc1}\equiv|\cmplx{I}\ped{cc1}|=\textsf{A}
+     \qquad W\ped{cc}=\textsf{W}
+\end{equation}
+
+En la Figura \vref{pic:assaig_cc_trif} es pot veure com ha de
+connectar-se un transformador trifàsic, per tal de realitzar-ne l'assaig en curtcircuit.
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Assaig-CC-Trifasic.pdf_tex}
+    \captionof{figure}{Assaig en curtcircuit d'un transformador trifàsic}
+    \label{pic:assaig_cc_trif}
+\end{center}
+
+
+A partir dels diversos aparells de mesura, obtenim els valors de la
+tensió trifàsica d'alimentació $U\ped{cc1}$, del corrent que circula
+$I\ped{cc1}$ i de la potència consumida $W\ped{cc}$, segons:
+\begin{equation}
+    U\ped{cc1}\equiv|\cmplx{U}\ped{cc1}|=\textsf{V} \qquad
+    I\ped{cc1}\equiv|\cmplx{I}\ped{cc1}|=\textsf{A} \qquad
+    W\ped{cc}=\textsf{W1}+\textsf{W2}
+\end{equation}
+
+\subsection{Determinació dels paràmetres a partir dels assajos en buit i en curtcircuit}
+
+En la Figura \vref{pic:assaig_buit_cc_esq_equiv}  es representen els
+esquemes equivalents en «L» d'un transformador en l'assaig en buit i
+en l'assaig en curtcircuit, expressant tots els valor en per unitat.
+Aquest esquema, com ja s'ha vist anteriorment, és el mateix tant si
+el transformador és monofàsic com si és trifàsic, utilitzant en cada
+cas els valors nominals adequats; per tant, tot el que s'explica  a
+continuació és aplicable a ambdós tipus de transformadors.
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Assaig-Buit-CC-Esq-Equiv.pdf_tex}
+    \captionof{figure}{Esquemes equivalents d'un transformador en els assajos en buit i en curtcircuit} \label{pic:assaig_buit_cc_esq_equiv}
+\end{center}
+
+Les tensions, els corrents i les potències d'aquests dos  assajos,
+expressats en per unitat són:
+\begin{align}
+    u\ped{o2} &=\frac{U\ped{o2}}{U\ped{n2}} &
+    i\ped{o2} &=\frac{I\ped{o2}}{I\ped{n2}} &
+    w\ped{o}  &=\frac{W\ped{o}}{S\ped{n}} \\[1ex]
+    u\ped{cc1} &=\frac{U\ped{cc1}}{U\ped{n1}} &
+    i\ped{cc1} &=\frac{I\ped{cc1}}{I\ped{n1}} &
+    w\ped{cc} &=\frac{W\ped{cc}}{S\ped{n}}
+\end{align}
+
+A partir d'aquests valors podem calcular la impedància longitudinal
+del transformador $\cmplx{z}\ped{cc}=r+\ju x$, i la seva admitància
+transversal $\cmplx{y}\ped{o}=g\ped{Fe}-\ju b\ped{m}$.
+
+\subsubsection{Admitància transversal}\index{transformadors de potència!determinació admitància transversal}
+
+En l'assaig en buit el corrent $i\ped{o2}$ circula
+únicament per l'admitància $\cmplx{y}\ped{o}$, i tota la potència
+$w\ped{o}$ és consumida per $g\ped{Fe}$; amb aquestes consideracions
+tenim:
+\begin{equation}
+    g\ped{Fe} = \frac{w\ped{o}}{u\ped{o2}^2} \qquad\qquad
+    |\cmplx{y}\ped{o}| = \frac{i\ped{o2}}{u\ped{o2}}
+    \qquad\qquad
+    b\ped{m} = \sqrt{|\cmplx{y}\ped{o}|^2 - g\ped{Fe}^2}
+\end{equation}
+
+Si aquest assaig es fes pel primari, ens quedaria la impedància
+$\cmplx{z}\ped{cc}$ en sèrie amb l'admitància $\cmplx{y}\ped{o}$, i
+per tant les fórmules anteriors no serien correctes, malgrat això,
+tenint en compte que $|\cmplx{z}\ped{cc}| \ll |1/\cmplx{y}\ped{o}|$,
+es  considera que el valor de $\cmplx{z}\ped{cc}$ és negligible, i
+que les fórmules deduïdes anteriorment són també aplicables en
+aquest cas, això sí, canviant tots els subíndexs «2» per «1».
+
+En el cas que l'assaig en buit es faci a tensió nominal, tant  si es
+fa pel secundari com si es fa pel primari, la tensió en buit serà
+igual a \SI{1}{pu}, i per tant es poden ometre els subíndexs «1» o «2»:
+$u\ped{o2} = u\ped{o1} \equiv u\ped{o} = 1$; el mateix passa amb els
+subíndexs del corrent en buit: $i\ped{o2} = i\ped{o1} \equiv
+i\ped{o}$. Amb aquestes consideracions tenim:
+\begin{equation}
+    u\ped{o} = 1 \qquad \Rightarrow \qquad g\ped{Fe} = w\ped{o} \qquad
+    |\cmplx{y}\ped{o}| = i\ped{o} \qquad
+    b\ped{m} = \sqrt{i\ped{o}^2 - w\ped{o}^2}
+    \label{eq:assaig-buit-nomianl}
+\end{equation}
+
+\subsubsection{Impedància longitudinal}\index{transformadors de potència!determinació impedància longitudinal}
+
+En l'assaig en curtcircuit el corrent $i\ped{cc1}$ circula
+únicament per la impedància $\cmplx{z}\ped{cc}$, i tota la potència
+$w\ped{cc}$ és consumida per $r$; amb aquestes consideracions tenim:
+\begin{equation}
+    r = \frac{w\ped{cc}}{i\ped{cc1}^2} \qquad\qquad
+    |\cmplx{z}\ped{cc}| = \frac{u\ped{cc1}}{i\ped{cc1}} \qquad\qquad
+    x = \sqrt{|\cmplx{z}\ped{cc}|^2 - r^2}
+\end{equation}
+
+Si aquest assaig es fes pel secundari, ens quedaria la impedància
+$\cmplx{z}\ped{cc}$ en paraŀlel amb l'admitància
+$\cmplx{y}\ped{o}$, i per tant les fórmules anteriors no serien
+correctes, malgrat això, tenint en compte que $|\cmplx{y}\ped{o}| \ll
+|1/\cmplx{z}\ped{cc}|$, es considera que el valor de
+$\cmplx{y}\ped{o}$ és negligible, i que les fórmules deduïdes
+anteriorment són també aplicables en aquest cas, això sí, canviant
+tots els subíndexs «1» per «2».
+
+En el cas que l'assaig en curtcircuit es faci a corrent nominal,
+tant  si es fa pel primari  com si es fa pel secundari, el corrent
+de curtcircuit serà igual a \SI{1}{pu}, i per tant es poden ometre els
+subíndexs «1» o «2»: $i\ped{cc1} = i\ped{cc2} \equiv i\ped{cc} = 1$;
+el mateix passa amb els subíndexs de la tensió de curtcircuit:
+$u\ped{cc1} = u\ped{cc2} \equiv u\ped{cc}$. En aquest cas, el valor
+de $u\ped{cc}$ també es coneix amb la denominació de
+tensió relativa de curt  circuit en tant per u, i s'utilitza  el
+símbol $\varepsilon\ped{cc}$; per a $r$ i $x$ s'utilitzen també els
+símbols $\varepsilon\ped{rcc}$ i $\varepsilon\ped{xcc}$
+respectivament. Amb aquestes consideracions tenim:
+\begin{equation}
+    i\ped{cc} = 1 \qquad \Rightarrow \qquad r \equiv \varepsilon\ped{rcc} = w\ped{cc} \qquad
+    |\cmplx{z}\ped{cc}| \equiv \varepsilon\ped{cc} = u\ped{cc} \qquad
+    x \equiv \varepsilon\ped{xcc} = \sqrt{u\ped{cc}^2 - w\ped{cc}^2}
+    \label{eq:assaig-cc-nomianl}
+\end{equation}
+
+Si es desitja utilitzar l'esquema equivalent reduït en «T» de la Figura \vref{pic:tr-pot-esquema-equiv-reduit-T}, es poden utilitzar amb prou aproximació les relacions següents:
+\begin{equation}
+    r_1 = r_2 = \frac{r}{2} \qquad\qquad x\ped{d1} = x\ped{d1} = \frac{x}{2}
+\end{equation}
+
+
+\begin{exemple}[Determinació dels paràmetres d'un transformador]
+	\addcontentsxms{Determinació dels paràmetres d'un transformador}
+    Tenim un transformador monofàsic amb les següents característiques:
+
+    \[S\ped{n}=\SI{400}{kVA},\,U\ped{n1}=\SI{25}{kV},\, U\ped{n2}=\SI{400}{V},\, \varepsilon\ped{cc}=\num{0,04},\, W\ped{cc}=\SI{4}{kW},\, i\ped{o}=\num{0,02},\,  W\ped{o}=\SI{2}{kW}\]
+
+     El transformador té connectada una càrrega en el secundari que consumeix \SI{200}{kW} amb $\cos{\varphi}=\num{0,8}\text{(i)}$; en aquestes condicions la tensió secundària és de \SI{380}{V}.
+    Es tracta de trobar en primer lloc els paràmetres del transformador, i a continuació la tensió primària, la caiguda de tensió referida al secundari i el rendiment.
+
+    Començarem per trobar els paràmetres del transformador en per unitat, utilitzant els valors base propis del transformador, als quals estan referits $\varepsilon\ped{cc}$ i $i\ped{o}$, és a dir:
+
+    \[ S\ped{B}=\SI{400}{kVA},\quad U\ped{B1}=\SI{25}{kV},\quad U\ped{B2}=\SI{400}{V}\]
+
+    Donat que no es diu el contrari suposarem que l'assaig en buit s'ha realitzat aplicant la tensió nominal al secundari (BT) i deixant obert el primari (AT), i que l'assaig en curtcircuit s'ha fet fent circular el corrent nominal pel primari (AT) tot curtcircuitant el secundari (BT). En aquestes condicions podem aplicar les equacions \eqref{eq:assaig-buit-nomianl} i \eqref{eq:assaig-cc-nomianl}:
+
+   \begin{align*}
+        g\ped{Fe} &= w\ped{o} = \frac{\SI{2}{kW}}{\SI{400}{kVA}} = \num{0,005} \\
+        |\cmplx{y}\ped{o}| &= i\ped{o}  = \num{0,02} \\
+        b\ped{m} &= \sqrt{i\ped{o}^2 - w\ped{o}^2} = \sqrt{\num{0,02}^2 - \num{0,005}^2} = \num{0,0194}\\
+        r &= w\ped{cc} = \frac{\SI{4}{kW}}{\SI{400}{kVA}} = \num{0,01} \\
+        |\cmplx{z}\ped{cc}| &=  \varepsilon\ped{cc} = \num{0,04} \\
+        x &= \sqrt{\varepsilon\ped{cc}^2 - w\ped{cc}^2} = \sqrt{\num{0,04}^2-\num{0,01}^2} = \num{0,0387}
+  \end{align*}
+
+        A continuació, convertim la potència absorbida per la càrrega i la tensió secundària, la qual prendrem com a referència d'angles,  a valors expressats en per unitat:
+  \begin{align*}
+    \cmplx{s}_2 &= \frac{\SI{200}{kW}}{\SI{400}{kVA}} + \ju \frac{\left(200\times \frac{\sqrt{1-\num{0,8}^2}}{\num{0,8}}\right)\si{\,kvar}}{\SI{400}{kVA}} =
+    \num{0,5 + j 0,375}\\[1ex]
+    \cmplx{u}_2 &= \frac{\SI{380}{V}}{\SI{400}{V}} = \num{0,95}
+  \end{align*}
+
+    Amb aquests valors ens queda l'esquema següent:
+
+    \begin{center}
+        \input{Imatges/Cap-TrafosPot-Exemple-TR.pdf_tex}
+    \end{center}
+
+    Calculem ara $\cmplx{i}_2$, $\cmplx{i}_0$, $\cmplx{i}_1$ i $\cmplx{u}_1$:
+    \begin{align*}
+    \cmplx{i}_2 &= \frac{\cmplx{s}_2^*}{\cmplx{u}_2^*} = \frac{\num{0,5 - j 0,375}}{\num{0,95}} = \numpd{0,6579}{-36,87} \\[1ex]
+    \cmplx{i}_0 &= \cmplx{u}_2 (g\ped{Fe}-\ju b\ped{m}) = \num{0,95}\times(\num{0,005-j0,0194}) = \numpd{0,0190}{-75,55} \\[1ex]
+    \cmplx{i}_1 &= \cmplx{i}_2 + \cmplx{i}_0 =\numpd{0,6579}{-36,87} +\numpd{0,0190}{-75,55} = \numpd{0,6728}{-37,88} \\[1ex]
+    \cmplx{u}_1 &=(r+\ju x) \cmplx{i}_1 + \cmplx{u}_2 = (\num{0,01+j 0,0387}) \times \numpd{0,6728}{-37,88} + \num{0,95} =
+    \numpd{0,9715}{0,97}
+  \end{align*}
+
+  La tensió primària expressada en volt és:
+  \[
+    \cmplx{U}_1 = \numpd{0,9715}{0,97}\times \SI{25}{kV} = \SIpd{24287,5}{0,97}{V}
+  \]
+
+   La caiguda de tensió és:
+   \[
+        \Delta u = |\cmplx{u}_1| - |\cmplx{u}_2| = \num{0,9715} - \num{0,95} = \num{0,0215}
+   \]
+
+   Aquest valor referit al secundari val:
+   \[
+        \Delta U_2 =\num{0,0215}\times \SI{400}{V} = \SI{8,6}{V}
+   \]
+
+   Calculem finalment el rendiment el transformador, a partir de les pèrdues en el coure  i en el ferro:
+   \begin{align*}
+    p\ped{Cu} &= r |\cmplx{i}_1|^2  = \num{0,01}\times \num{0,6728}^2 = \num{0,004527}\\
+    p\ped{Fe} &= g\ped{Fe} |\cmplx{u}_2|^2 = \num{0,005}\times \num{0,95}^2 = \num{0,004513}\\
+    \eta &= \frac{p_2}{p_2 + p\ped{Cu} + p\ped{Fe}} = \frac{\num{0,5}}{\num{0,5} + \num{0,004527} + \num{0,004513} } = \num{0,98}
+  \end{align*}
+
+\end{exemple}
+
+\section{Transformadors de tres debanats}\label{sec:trafo-3-deban}\index{transformadors de potència!de tres debanats}
+
+Un transformador de tres debanats té un debanat primari i dos debanats secundaris; la potència del debanat primari es reparteix entre els dos secundaris, les tensions dels quals poden ser iguals o diferents.
+
+Anomenant «P» al primari, «S» a un secundari, i «T» (terciari) a l'altre secundari, l'esquema equivalent reduït d'un transformador de tres debanats, tenint en compte només les impedàncies longitudinals,  és el representat en la Figura \vref{pic:trafo-3-deban}.
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-3-debanats.pdf_tex}
+    \captionof{figure}{Esquema equivalent reduït d'un transformador de tres debanats}
+    \label{pic:trafo-3-deban}
+\end{center}
+
+Com en el cas dels transformadors de dos debanats, cal escollir tensions base proporcionals a les tensions nominals dels tres debanats i una potència base única.
+
+Les tres impedàncies d'aquest circuit $\cmplx{z}\ped{P} = r\ped{P} + \ju x\ped{P}$, $\cmplx{z}\ped{S} = r\ped{S} + \ju x\ped{S}$ i $\cmplx{z}\ped{T} = r\ped{T} + \ju x\ped{T}$ es calculen a partir de les impedàncies entre parells de debanats $\cmplx{z}\ped{PS}$, $\cmplx{z}\ped{PT}$ i $\cmplx{z}\ped{ST}$, que són les que s'obtenen dels assajos del transformador:
+\begin{subequations}
+\begin{align}
+    \cmplx{z}\ped{P} &= \frac{\cmplx{z}\ped{PS}+\cmplx{z}\ped{PT}-\cmplx{z}\ped{ST}}{2}  \\[1ex]
+    \cmplx{z}\ped{S} &= \frac{\cmplx{z}\ped{PS}+\cmplx{z}\ped{ST}-\cmplx{z}\ped{PT}}{2}  \\[1ex]
+    \cmplx{z}\ped{T} &= \frac{\cmplx{z}\ped{PT}+\cmplx{z}\ped{ST}-\cmplx{z}\ped{PS}}{2}
+\end{align}
+\end{subequations}
+
+En aquestes equacions  les tres impedàncies $\cmplx{z}\ped{PS}$, $\cmplx{z}\ped{PT}$ i $\cmplx{z}\ped{ST}$ han d'estar donades en per unitat referides a una base comuna, o han d'estar donades en ohm referides a un mateix debanat. Cal dir a més que el punt d'unió de les tres impedàncies $\cmplx{z}\ped{P}$, $\cmplx{z}\ped{S}$ i $\cmplx{z}\ped{T}$ no té res a veure amb el neutre del sistema, i que aquestes impedàncies calculades poden tenir parts reals amb valors  negatius.
+
+
+\begin{exemple}[Impedàncies del circuit equivalent d'un transformador de tres debanats]
+	\addcontentsxms{Impedàncies del circuit equivalent d'un transformador de tres debanats}
+    Tenim un transformador de tres debanats amb les següents característiques: primari de \SI{15}{MVA} i \SI{66}{kV}, secundari de \SI{10}{MVA} i \SI{13,2}{kV} i terciari de \SI{5}{MVA} i \SI{2,3}{kV}; les impedàncies entre debanats són: $\cmplx{z}\ped{PS} = \num{j 0,07}$ (referida a \SI{15}{MVA} i \SI{66}{kV}/\SI{13,2}{kV}), $\cmplx{z}\ped{PT} = \num{j 0,09}$ (referida a \SI{15}{MVA} i \SI{66}{kV}/\SI{2,3}{kV}) i $\cmplx{z}\ped{ST} = \num{j 0,08}$ (referida a \SI{10}{MVA} i \SI{13,2}{kV}/\SI{2,3}{kV}).  Es tracta de calcular les impedàncies del circuit equivalent reduït expressades en ohm en el primari, i expressades en per unitat en una base de \SI{30}{MVA} i \SI{66}{kV}/\SI{13,2}{kV}/\SI{2,3}{kV}.
+
+    Comencem calculant les impedàncies en ohm referides al primari, convertint en primer lloc els tres valors $\cmplx{z}\ped{PS}$, $\cmplx{z}\ped{PT}$ i $\cmplx{z}\ped{ST}$ a valors òhmics $\cmplx{z}\ped{PS}'$, $\cmplx{z}\ped{PT}'$ i $\cmplx{z}\ped{ST}'$ referits a aquest debanat. Per obtenir $\cmplx{z}\ped{PS}'$ i $\cmplx{z}\ped{PT}'$ només cal multiplicar aquests valors per la impedància base del primari; en el cas de $\cmplx{z}\ped{ST}'$ són necessaris dos passos, primer multipliquem per la impedància base del secundari, amb la qual cosa tindrem una impedància $\cmplx{z}\ped{ST}''$ referida al secundari,  i després multipliquem per la relació de transformació entre primari i secundari al quadrat, per tal de referir-la al primari:
+
+    \begin{align*}
+        \cmplx{z}\ped{PS}' &=  \num{j 0,07} \times \frac{(\SI{66}{kV})^2}{\SI{15}{MVA}} = \SI{j 20,328}{\ohm}\\
+        \cmplx{z}\ped{PT}' &=  \num{j 0,09} \times \frac{(\SI{66}{kV})^2}{\SI{15}{MVA}} = \SI{j 26,136}{\ohm}\\
+        \cmplx{z}\ped{ST}'' &= \num{j 0,08} \times \frac{(\SI{13,2}{kV})^2}{\SI{10}{MVA}} = \SI{j 1,39392}{\ohm}\\
+        \cmplx{z}\ped{ST}' &=  \SI{1,39392}{\ohm} \times {\left(\frac{\SI{66}{kV}}{\SI{13,2}{kV}}\right)}^2 = \SI{j 34,848}{\ohm}
+    \end{align*}
+
+    Els valors buscats $\cmplx{z}\ped{P}'$, $\cmplx{z}\ped{S}'$ i $\cmplx{z}\ped{T}'$ són:
+
+    \begin{align*}
+        \cmplx{z}\ped{P}' &=  \frac{\SI{j 20,328}{\ohm} + \SI{j 26,136}{\ohm} - \SI{j 34,848}{\ohm}}{2} = \SI{j 5,808}{\ohm} \\[1ex]
+        \cmplx{z}\ped{S}' &=  \frac{\SI{j 20,328}{\ohm} + \SI{j 34,848}{\ohm} - \SI{j 26,136}{\ohm}}{2} = \SI{j 14,520}{\ohm} \\[1ex]
+        \cmplx{z}\ped{T}' &=  \frac{\SI{j 26,136}{\ohm} + \SI{j 34,848}{\ohm} - \SI{j 20,328}{\ohm}}{2} = \SI{j 20,328}{\ohm}
+    \end{align*}
+
+    Calculem ara els valors de les impedàncies en per unitat en la base demanada, convertint en primer lloc els tres valors $\cmplx{z}\ped{PS}$, $\cmplx{z}\ped{PT}$ i $\cmplx{z}\ped{ST}$ a aquesta base; només caldrà fer una conversió de potències, ja que les tensions base i nominals són les mateixes:
+
+    \begin{align*}
+        \cmplx{z}\ped{PS} &=  \num{j 0,07} \times \frac{\SI{30}{MVA}}{\SI{15}{MVA}} = \num{j 0,14}\\[1ex]
+        \cmplx{z}\ped{PT} &=  \num{j 0,09} \times \frac{\SI{30}{MVA}}{\SI{15}{MVA}} = \num{j 0,18}\\[1ex]
+        \cmplx{z}\ped{ST} &=  \num{j 0,08} \times \frac{\SI{30}{MVA}}{\SI{10}{MVA}} = \num{j 0,24}
+    \end{align*}
+
+    Els valors buscats $\cmplx{z}\ped{P}$, $\cmplx{z}\ped{S}$ i $\cmplx{z}\ped{T}$ són:
+
+    \begin{align*}
+        \cmplx{z}\ped{P} &=  \frac{\num{j 0,14} + \num{j 0,18} - \num{j 0,24}}{2} = \num{j 0,04} \\[1ex]
+        \cmplx{z}\ped{S} &=  \frac{\num{j 0,14} + \num{j 0,24} - \num{j 0,18}}{2} = \num{j 0,10} \\[1ex]
+        \cmplx{z}\ped{T} &=  \frac{\num{j 0,18} + \num{j 0,24} - \num{j 0,14}}{2} = \num{j 0,14}
+    \end{align*}
+
+     Com és natural, si multipliquem aquests valors en per unitat  $\cmplx{z}\ped{P}$, $\cmplx{z}\ped{S}$ i $\cmplx{z}\ped{T}$ per la impedància base del primari: $\frac{(\SI{66}{kV})^2}{\SI{30}{MVA}}=\SI{145,2}{\ohm}$, obtindrem els valors òhmics $\cmplx{z}\ped{P}'$,     $\cmplx{z}\ped{S}'$ i $\cmplx{z}\ped{T}'$ que hem calculat anteriorment.
+
+\end{exemple}
+
+
+\section{Característiques particulars  dels transformadors trifàsics}\label{sec:caract-trans-trif}
+
+\subsection{Tipus de connexions}\index{transformadors de potència!trifàsics!tipus de connexions}
+
+
+Connectant tres transformadors monofàsics entre si podem crear-ne un de trifàsic (banc trifàsic). Tanmateix, és més comú construir els transformadors trifàsics d'una sola peça, ja sigui amb un nucli de tres columnes (transformador de columnes) o amb un nucli de cinc columnes (transformador cuirassat).\footnote{Per a una discussió més extensa, es pot veure la secció 2 de la norma CEI 60076-8 \emph{Power transformers -- Application guide}.}\index{CEI!60076-08@60076-8}
+
+Tant el primari com el secundari poden connectar-se de tres maneres diferents: en estrella (Y) en triangle (D) o en zig-zag (Z); les característiques principals de cadascuna d'aquestes connexions són:
+
+\begin{itemize}
+   \item \textbf{Y}. La connexió en estrella permet tenir el neutre accessible. El corrent de línia és el que circula per cada debanat; cada debanat suporta la tensió fase--neutre. No té un bon comportament amb càrregues desequilibrades.
+   \item \textbf{D}. La connexió en triangle no pot proporcionar un neutre. El corrent que circula per cada debanat és el de línia dividit per $\sqrt{3}$; cada debanat suporta la tensió fase--fase. Per a una mateixa tensió i potència, els debanats d'un transformador connectat en triangle han de tenir $\sqrt{3}$ vegades més espires que els d'un transformador connectat en estrella; la quantitat de coure, no obstant això, pot ser la mateixa perquè la secció pot ser menor, donat que el corrent que circula pels debanats és $\sqrt{3}$ vegades menor. Té un bon comportament amb càrregues desequilibrades perquè redistribueix parcialment el desequilibri entre les fases.
+   \item \textbf{Z}. La connexió en zig-zag permet tenir el neutre accessible, però requereix dues bobines iguals per fase. El corrent que circula per cada debanat és el de línia; cadascuna de les dues bobines d'un debanat suporta la tensió fase--fase dividida per 3; aquestes dues tensions no estan en fase i la seva suma és igual a la tensió fase--neutre. Per a una mateixa tensió i potència, els debanats d'un transformador connectat en zig-zag han de tenir $2/\sqrt{3}$ vegades més espires que els d'un transformador connectat en estrella; la quantitat de coure és més gran, ja que la secció ha de mantenir-se igual, donat que el corrent que circula pels debanats és el mateix. Té un bon comportament amb càrregues desequilibrades.
+\end{itemize}
+
+Les combinacions possibles de connexions de primari i secundari són moltes. Les més usuals són les següents:
+\begin{itemize}
+   \item \textbf{Estrella--Estrella}. És poc utilitzada, ja que no es comporta bé amb càrregues desequilibrades, originant desplaçaments dels neutres o deformacions de les ones de tensió. Aquest comportament millora connectant el neutre del primari a terra.
+   \item \textbf{Triangle--Estrella}. Són molt utilitzats com a transformadors de distribució a causa de l'accessibilitat del neutre i perquè admeten tota mena de càrregues desequilibrades. També són útils com a transformadors elevadors de principi de línia.
+   \item \textbf{Estrella--Triangle}. Són útils com a transformadors reductors al final de línia.
+   \item \textbf{Triangle--Triangle}. Es comporten bé amb càrregues desequilibrades, però l'absència de neutre pot ser un inconvenient si es volen utilitzar per a distribució.
+   \item \textbf{Triangle--Zig-zag i Estrella--Zig-zag}. Són bastant utilitzats en distribució de baixa potència, gràcies al seu bon comportament amb càrregues desequilibrades. La connexió zig-zag es troba sempre en el costat de baixa tensió, per la possibilitat que té de crear un neutre artificial.
+   \item \textbf{Estrella--Estrella--Triangle} Permet tenir accessible ambdós  neutres i tolera  bé les càrregues  desequilibrades. El debanat en triangle (terciari) no acostuma a tenir càrrega i s'utilitza per donar un camí de circulació als corrents homopolars originats en desequilibris o durant curtcircuits. S'utilitza per interconnectar sistemes d'alta tensió.
+\end{itemize}
+
+
+\subsection{Índex horari i grup de connexió}\label{sec:connex-index-horari}\index{transformadors de potència!trifàsics!índex horari}\index{transformadors de potència!trifàsics!grup de connexió}
+
+En un transformador monofàsic el desfasament entre les tensions primària i secundària només pot ser \ang{0} o \ang{180}; el mateix passa amb els corrents. En canvi, en el cas de transformadors trifàsics hi ha més desfasaments possibles, depenent del tipus de connexió; el desfasament és sempre múltiple de \ang{30} ($\frac{\piup}{6}\si{\,rad}$).
+
+L'índex horari és l'angle entre una magnitud  primària (tensió o corrent) i la magnitud secundària corresponent, per exemple entre $\cmplx{U}\ped{AB}$ i $\cmplx{U}\ped{ab}$, o entre $\cmplx{U}\ped{AN}$ i $\cmplx{U}\ped{an}$.
+
+L'índex horari es refereix a un transformador alimentat pel costat de tensió més alta  amb un sistema trifàsic simètric de seqüència directa. Donat que els desfasaments possibles són múltiples de \ang{30}, hi ha dotze casos possibles i això ha fet que es creï l'analogia d'un rellotge: la busca dels minuts es coŀloca a les dotze i representa la tensió del costat de tensió més alta, i la busca de les hores es coŀloca amb l'angle de desfasament i representa la tensió corresponent del costat de tensió més baixa. Per exemple, si la tensió del costat de tensió més baixa queda a les cinc, això ens indica que aquesta tensió retarda $5\times \ang{30}= \ang{150}$ a la tensió corresponent del costat de tensió més alta.
+
+L'índex horari ens indica de fet, l'angle de retard de la tensió del costat de tensió més baixa respecte del costat de tensió més alta, quan el transformador es troba en buit.
+
+Normalment no és necessari tenir en compte l'índex horari en els càlculs, ja que no cal conèixer el desfasament real entre magnituds primàries i secundàries; quan això sigui necessari es poden fer els càlculs de la manera usual sense tenir en compte l'índex horari, i afegir el desfasament posteriorment. Si $h$ és l'índex horari (entre 0 i 11), la relació entre l'angle d'una magnitud del costat de tensió més alta $\varphi\ped{AT}$ i l'angle de la magnitud corresponent del costat de tensió més baixa $\varphi\ped{BT}$ és, expressat en radiant:
+\begin{equation}
+    \varphi\ped{AT} = \varphi\ped{BT} + h\frac{\piup}{6}\label{eq:fi-AT-BT}
+\end{equation}
+
+
+A partir del tipus de connexió del primari i del secundari en estrella (Y), triangle (D) o zig-zag (Z), i de l'índex horari, queda definit el grup de connexió del transformador; normalment està format per dues lletres i un número:
+\begin{dingautolist}{'312}
+   \item La primera lletra, escrita en majúscula, indica la connexió del debanat de tensió més alta, independentment de si és el primari o el secundari.
+   \item La segona lletra, escrita en minúscula, indica la connexió del debanat de tensió més baixa.
+   \item Un número al final indica l'índex horari (entre 0 i 11).
+\end{dingautolist}
+
+Una nomenclatura més completa afegeix la lletra «N» o «n» després de la lletra del debanat corresponent, si el neutre és físicament accessible, per exemple Dyn11 o YNd6.
+
+
+\begin{exemple}[Determinació de l'índex horari d'un transformador]
+	\addcontentsxms{Determinació de l'índex horari d'un transformador}
+    Es tracta de deduir l'índex horari de dos transformadors a partir de les seves connexions.
+
+
+    El primer transformador és del tipus Yz:
+     \vspace{-2mm}
+    \begin{center}
+        \input{Imatges/Cap-TrafosPot-Exemple-Yz.pdf_tex}
+    \end{center}
+     Per tal de deduir-ne l'índex horari, compararem les tensions
+    $\cmplx{U}\ped{AN}$ i $\cmplx{U}\ped{an}$. Comencem dibuixant les tres tensions fase--neutre $\cmplx{U}\ped{AN}$, $\cmplx{U}\ped{BN}$ i $\cmplx{U}\ped{CN}$. Donat que $\cmplx{U}\ped{an} = \cmplx{U}\ped{aa'} + \cmplx{U}\ped{a'n}$, dibuixem primer la tensió $\cmplx{U}\ped{aa'}$, que està en fase amb la tensió $\cmplx{U}\ped{AN}$, i a continuació la tensió $\cmplx{U}\ped{na'}$, que està en fase amb la tensió $\cmplx{U}\ped{BN}$; un cop tenim situats els punts a i n, ja podem dibuixar la tensió $\cmplx{U}\ped{an}$. Dibuixant ara juntes $\cmplx{U}\ped{AN}$ i $\cmplx{U}\ped{an}$  veiem que l'índex horari és 11.
+
+
+     El segon transformador és del tipus Dyn:
+      \vspace{-2mm}
+    \begin{center}
+       \input{Imatges/Cap-TrafosPot-Exemple-Dy.pdf_tex}
+    \end{center}
+      Per tal de deduir-ne l'índex horari, compararem com en el cas anterior, les tensions $\cmplx{U}\ped{AN}$ i $\cmplx{U}\ped{an}$. Comencem dibuixant les tres tensions fase--neutre $\cmplx{U}\ped{AN}$, $\cmplx{U}\ped{BN}$ i $\cmplx{U}\ped{CN}$ i la tensió fase--fase $\cmplx{U}\ped{AB}$.  A continuació dibuixem la tensió $\cmplx{U}\ped{na}$, que està en fase amb la tensió $\cmplx{U}\ped{AB}$; Dibuixant ara juntes $\cmplx{U}\ped{AN}$ i $\cmplx{U}\ped{an}$ (mateixa orientació que $\cmplx{U}\ped{na}$, però sentit contrari),  veiem que l'índex horari és 5.
+\end{exemple}
+
+El desfasament introduït per l'índex horari es pot modelar utilitzant  un transformador ideal amb relació de transformació complexa. En el cas de l'esquema equivalent de la Figura  \vref{pic:tr-pot-esquema-equiv}, el transformador allí dibuixat
+se substitueix per un de relació $\cmplx{m}\!:\!1$, tal com es veu en la figura \vref{pic:tr-pot-esquema-equiv-complex}.
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Esq-Equiv-Complex.pdf_tex}
+    \captionof{figure}{Esquema equivalent d'un transformador -- Índex horari}
+    \label{pic:tr-pot-esquema-equiv-complex}
+\end{center}
+
+Igualment en aquest cas, la impedància de secundari $\cmplx{Z}_2=R_2 + \ju X\ped{d2}$ es pot passar al costat primari del transformador ideal, quedant així un valor $\cmplx{Z}_2'$ referit al primari, de valor:
+\begin{equation}
+    \cmplx{Z}_2' = |\cmplx{m}|^2 \cmplx{Z}_2  = |\cmplx{m}|^2 (R_2 + \ju X\ped{d2})\label{eq:ZmZ}
+\end{equation}
+
+Les equacions que lliguen les magnituds de la Figura \vref{pic:tr-pot-esquema-equiv-complex} són:
+\begin{subequations}
+\begin{align}
+    \cmplx{U}_1 - \cmplx{Z}_1 \cmplx{I}_1 &= \cmplx{m} ( \cmplx{U}_2  + \cmplx{Z}_2 \cmplx{I}_2 ) \label{eq:UmZ}\\
+    \cmplx{I}'_2 &= \frac{\cmplx{I}_2}{\cmplx{m}^*} \label{eq:ImI}\\
+    \cmplx{I}_1  &=   \cmplx{I}_2' + \cmplx{I}_0' \label{eq:III}
+\end{align}
+\end{subequations}
+
+A partir de l'índex horari $h$, i depenent de si el primari és el costat de tensió més alta o el de tensió més baixa, tenim:
+\begin{equation}
+\cmplx{m} = \begin{cases}
+     (U\ped{n1}/U\ped{n2})_{\angle h \frac{\piup}{6}\si{\,rad}}, & \text{transformador AT/BT}\\[2.7ex]
+     (U\ped{n1}/U\ped{n2})_{\angle -h \frac{\piup}{6}\si{\,rad}}, & \text{transformador BT/AT}
+\end{cases}
+\label{eq:rel-transf-cmplx}
+\end{equation}
+
+En el cas de l'esquema equivalent reduït en «T» de la Figura \vref{pic:tr-pot-esquema-equiv-reduit-T}, cal afegir un transformador ideal de relació de transformació  $\cmplx{m}\ped{r}\!:\!1$. Aquest transformador pot afegir-se indistintament  al principi o al final de l'esquema equivalent reduït, ja que es compleix $|\cmplx{m}\ped{r}|=1$;  en la figura \vref{fig:esq-reduit-T-complex} s'ha afegit aquest transformador a l'inici.
+
+\break
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T-Complex.pdf_tex}
+    \captionof{figure}{Esquema reduït en «T» d'un transformador -- Índex horari}
+    \label{fig:esq-reduit-T-complex}
+\end{center}
+
+La mateixa operació ha de fer-se en el cas dels dos esquemes equivalents reduïts en «L» de la Figura \vref{pic:tr-pot-esquema-equiv-reduit-L}.
+
+Les relacions entre magnituds de primari i secundari d'aquest transformador ideal reduït són:
+\begin{subequations}
+\begin{align}
+    \cmplx{u}_1 &= \cmplx{m}\ped{r}\cmplx{u}'_1 \label{eq:UmU-reduit}\\
+    \cmplx{i}_1 &= \frac{\cmplx{i}'_1}{\cmplx{m}^*\ped{r}} \label{eq:ImI-reduit}
+\end{align}
+\end{subequations}
+
+A partir de l'índex horari $h$, i depenent de si el primari és el costat de tensió més alta o el de tensió més baixa, tenim:
+\begin{equation}
+\cmplx{m}\ped{r} = \begin{cases}
+      1_{\angle h\frac{\piup}{6}\si{\,rad}}, & \text{transformador AT/BT}\\[2.7ex]
+      1_{\angle -h\frac{\piup}{6}\si{\,rad}}, & \text{transformador BT/AT}
+\end{cases}
+\label{eq:rel-transf-cmplx-reduit}
+\end{equation}
+
+
+\subsection{Circuit homopolar}\label{sec:circuit_homopolar}\index{transformadors de potència!circuit homopolar}
+
+La connexió del circuit equivalent homopolar dels transformadors trifàsics de dos i tres debanat, depèn del tipus de connexió (estrella aïllada, estrella connectada a terra o triangle) que tinguin cadascun dels seus debanats.
+
+\subsubsection{Transformadors de dos debanats}\label{sec:cir-hom-2-deb}
+\index{components simètriques!transformadors trifàsics!circuits homopolars}
+
+Es presenten a continuació les diferents combinacions possibles de tipus de connexió de primari i secundari, amb el seu circuit homopolar equivalent.
+
+Totes les impedàncies representades són valors en per unitat; $\cmplx{z}_0$ és la impedància homopolar del transformador, i $\cmplx{z}\ped{N1}$ i $\cmplx{z}\ped{N2}$ són les impedàncies de connexió a terra dels debanats primari i secundari respectivament. En el cas d'estrelles connectades sòlidament a terra, tindrem $\cmplx{z}\ped{N1}=0$ i $\cmplx{z}\ped{N2}=0$.
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Hom-YNyn.pdf_tex}
+    \captionof{figure}{Esquema homopolar d'un transformador YNyn}
+\end{center}
+
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Hom-YNy.pdf_tex}
+    \captionof{figure}{Esquema homopolar d'un transformador YNy}
+\end{center}
+
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Hom-Yyn.pdf_tex}
+    \captionof{figure}{Esquema homopolar d'un transformador Yyn}
+\end{center}
+
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Hom-Yy.pdf_tex}
+    \captionof{figure}{Esquema homopolar d'un transformador Yy}
+\end{center}
+
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Hom-Dd.pdf_tex}
+    \captionof{figure}{Esquema homopolar d'un transformador Dd}
+\end{center}
+
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Hom-Yd.pdf_tex}
+    \captionof{figure}{Esquema homopolar d'un transformador Yd}
+\end{center}
+
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Hom-Dy.pdf_tex}
+    \captionof{figure}{Esquema homopolar d'un transformador Dy}
+\end{center}
+
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Hom-YNd.pdf_tex}
+    \captionof{figure}{Esquema homopolar d'un transformador YNd}
+\end{center}
+
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Hom-Dyn.pdf_tex}
+    \captionof{figure}{Esquema homopolar d'un transformador Dyn}
+\end{center}
+
+
+\subsubsection{Transformadors de tres debanats}\label{sec:cir-hom-3-deb}
+
+Es presenta a continuació un transformador de tres debanats amb el seu circuit homopolar equivalent; cadascun dels tres debanats té una de les tres connexions possibles (estrella aïllada, estrella connectada a terra o triangle), amb la qual cosa queden coberts tots els casos possibles.
+
+Les impedàncies del transformador representades són valors en per unitat; $\cmplx{z}\ped{P0}$, $\cmplx{z}\ped{S0}$ i $\cmplx{z}\ped{T0}$ són les tres impedàncies homopolars equivalents del transformador, obtingudes de la mateixa manera que s'ha exposat en la secció \ref{sec:trafo-3-deban}, i $\cmplx{z}\ped{NS}$ és  la impedància de connexió a terra del debanat secundari. En el cas que l'estrella estigui connectada sòlidament a terra, tindrem $\cmplx{z}\ped{NS}=0$.
+
+\begin{center}
+    \input{Imatges/Cap-TrafosPot-Hom-Dyny.pdf_tex}
+    \captionof{figure}{Esquema homopolar d'un transformador de tres debanats}
+\end{center}
+
+
+\subsection{Tensions i corrents de seqüència directa, inversa i homopolar}
+\index{components simètriques!transformadors trifàsics}
+
+Totes les equacions de la secció \vref{sec:connex-index-horari} són vàlides per a tensions i corrents de seqüència directa.
+
+En el cas de tensions i corrents de seqüència inversa, els desfasaments que origina el transformador a causa del seu índex horari, entre les magnituds  del costat de tensió més alta AT i les magnituds corresponents del costat de tensió més baixa BT, són els contraris que en el cas de la seqüència directa. Per tant, l'equació  \eqref{eq:fi-AT-BT} es converteix en:
+\begin{equation}
+    \varphi\ped{AT} = \varphi\ped{BT} - h\frac{\piup}{6} \quad\text{(seqüència inversa)}
+\end{equation}
+
+De la mateixa manera, l'equació \eqref{eq:rel-transf-cmplx} es converteix en:
+\begin{equation}\label{eq:rel-transf-cmplx-inv}
+\cmplx{m} = \begin{cases}
+     (U\ped{n1}/U\ped{n2})_{\angle -h \frac{\piup}{6}\si{\,rad}}, & \text{transformador AT/BT}\\[2.7ex]
+     (U\ped{n1}/U\ped{n2})_{\angle h \frac{\piup}{6}\si{\,rad}}, & \text{transformador BT/AT}
+\end{cases}
+\text{\quad(seqüència inversa)}
+\end{equation}
+
+Les equacions \eqref{eq:ZmZ}, \eqref{eq:UmZ}, \eqref{eq:ImI} i \eqref{eq:III} segueixen sent vàlides, utilitzant el valor de $\cmplx{m}$ de seqüència inversa definit en l'equació \eqref{eq:rel-transf-cmplx-inv}.
+
+Finalment, l'equació \eqref{eq:rel-transf-cmplx-reduit} es converteix en:
+\begin{equation}\label{eq:rel-transf-r-cmplx-inv}
+\cmplx{m}\ped{r}  = \begin{cases}
+      1_{\angle -h\frac{\piup}{6}\si{\,rad}}, & \text{transformador AT/BT}\\[2.7ex]
+      1_{\angle h\frac{\piup}{6}\si{\,rad}}, & \text{transformador BT/AT}
+\end{cases}
+\text{\quad(seqüència inversa)}
+\end{equation}
+
+Les equacions \eqref{eq:UmU-reduit} i \eqref{eq:ImI-reduit} segueixen sent vàlides, utilitzant el valor de $\cmplx{m}\ped{r}$ de seqüència inversa definit en l'equació \eqref{eq:rel-transf-r-cmplx-inv}.
+
+En el cas de tensions i corrents de seqüència homopolar, el transformador no  origina cap desfasament entre les magnituds  del costat de tensió més alta AT i les magnituds del costat de tensió més baixa BT, independentment de quin sigui al seu índex horari. Les equacions \eqref{eq:fi-AT-BT}, \eqref{eq:rel-transf-cmplx} i \eqref{eq:rel-transf-cmplx-reduit} es converteixen en:
+\begin{alignat}{3}
+  \varphi\ped{AT} &= \varphi\ped{BT} &&\quad\text{(seqüència homopolar)} \\
+  m &= U\ped{n1}/U\ped{n2} &&\quad\text{(seqüència homopolar)}\label{eq:rel-transf-cmplx-hom} \\
+  m\ped{r} &= 1 &&\quad\text{(seqüència homopolar)}
+\end{alignat}
+
+Cal tenir en compte que aquestes tres últimes equacions  només són aplicables en el cas dels transformadors YNyn, ja que aquest tipus de connexió és l'única que té un circuit homopolar equivalent amb continuïtat entre el primari i el secundari, i per tant hi poden haver tensions i corrents homopolars tant en el primari com en el secundari.
+
+En el cas dels transformadors YNd, només hi poden haver tensions i corrents homopolars en el primari, ja que tal com es pot veure en el seu circuit homopolar equivalent, el secundari té el circuit obert; les tensions i corrents homopolars en el secundari són per tant nuŀles.
+
+
+En el cas dels transformadors Dyn, només hi poden haver tensions i corrents homopolars en el secundari, ja que tal com es pot veure en el seu circuit homopolar equivalent, el primari té el circuit obert; les tensions i corrents homopolars en el primari són per tant nuŀles.
+
+En la resta de casos: transformadors YNy, Yyn, Yy, Dd, Yd i Dy, les tensions i corrents homopolars en el primari i en el secundari són  nuŀles, ja que tal com es pot veure en els seus circuits homopolars equivalents, tant el primari com el secundari tenen el circuit obert.
+
+
+\begin{exemple}[Curtcircuits asimètrics en el secundari d'un transformador]
+	\addcontentsxms{Curtcircuits asimètrics en el secundari d'un transformador}
+    En aquest exemple s'estudien els curtcircuits fase--terra i fase--fase en el secundari de dos transformadors alimentats des d'una font de tensió trifàsica, un amb la connexió Dyn11 i l'altre amb la connexió YNyn11. La relació de transformació és en ambdós casos: $\SI{6,25}{kV}\!:\!\SI{400}{V}$. El corrent de curtcircuit en el secundari és un valor conegut, i el que es vol trobar és el corrent que circula pel primari. Se suposa en tots dos casos que els transformadors són ideals, i per tant no es tenen en compte les impedàncies internes.
+
+
+    Donat que l'índex horari és 11 en els dos casos, utilitzant les equacions \eqref{eq:rel-transf-cmplx}, \eqref{eq:rel-transf-cmplx-inv} i \eqref{eq:rel-transf-cmplx-hom}, obtindrem els valors de $\cmplx{m}$ per a les seqüències directa, inversa i homopolar:
+    \begin{align*}
+        \cmplx{m}_1 &= (\SI{6,25}{kV} / \SI{400}{V})_{\angle \frac{11 \piup}{6}\si{\,rad}} =
+        \num{15,625}_{\angle \frac{-\piup}{6}\si{\,rad}} = \numpd{15,625}{-30} \\
+        \cmplx{m}_2 &= (\SI{6,25}{kV} / \SI{400}{V})_{\angle \frac{-11 \piup}{6}\si{\,rad}} =
+        \num{15,625}_{\angle \frac{\piup}{6}\si{\,rad}} =\numpd{15,625}{30}  \\
+        m_0 &= \SI{6,25}{kV} / \SI{400}{V} = \num{15,625}
+    \end{align*}
+
+   \textbf{ Transformador Dyn11. Curtcircuit fase--terra.}
+
+    \begin{center}
+       \input{Imatges/Cap-TrafosPot-Exemple-IccFN-Dyn.pdf_tex}
+    \end{center}
+
+    A partir del corrent de curtcircuit fase--terra, es veu directament que els corrents de les tres fases del secundari són:
+    \begin{align*}
+        \cmplx{I}\ped{a} &= \cmplx{I}\ped{sc} = \SIpd{32}{-74}{kA} \\
+        \cmplx{I}\ped{b} &= 0  \\
+        \cmplx{I}\ped{c} &= 0
+    \end{align*}
+
+    A continuació obtenim les components simètriques d'aquests tres corrents de secundari, aplicant les equacions \eqref{eq:c_sim_c2}, \eqref{eq:c_sim_a2} i \eqref{eq:c_sim_b2}:
+    \begin{align*}
+        \cmplx{I}\ped{a,0} &= \frac{1}{3} (\cmplx{I}\ped{a} + \cmplx{I}\ped{b} +
+        \cmplx{I}\ped{c}) = \SIpd{10,6667}{-74}{kA} \\
+        \cmplx{I}\ped{a,1} &= \frac{1}{3} (\cmplx{I}\ped{a} + \au \cmplx{I}\ped{b} +
+         \au^2 \cmplx{I}\ped{c}) = \SIpd{10,6667}{-74}{kA}  \\
+        \cmplx{I}\ped{a,2} &= \frac{1}{3} (\cmplx{I}\ped{a} + \au^2 \cmplx{I}\ped{b} +
+         \au \cmplx{I}\ped{c}) = \SIpd{10,6667}{-74}{kA}
+    \end{align*}
+
+    Obtenim ara les components simètriques de primari, a partir de $\cmplx{m}_1$ i $\cmplx{m}_2$, utilitzant l'equació \eqref{eq:ImI}; tal com s'ha dit anteriorment, el corrent homopolar de primari serà nul, ja que els transformadors amb connexió DYn tenen un circuit homopolar equivalent amb el primari en circuit obert:
+    \begin{align*}
+        \cmplx{I}\ped{A,0} &= 0 \\
+        \cmplx{I}\ped{A,1} &= \frac{\cmplx{I}\ped{a,1}}{\cmplx{m}^*_1} = \frac{\SIpd{10,6667}{-74}{kA}}{\numpd{15,625}{30}} =  \SIpd{0,6827}{-104}{kA} \\
+        \cmplx{I}\ped{A,2} &= \frac{\cmplx{I}\ped{a,2}}{\cmplx{m}^*_2} = \frac{\SIpd{10,6667}{-74}{kA}}{\numpd{15,625}{-30}} = \SIpd{0,6827}{-44}{kA}
+    \end{align*}
+
+    Finalment calculem el corrent de les tres fases del primari aplicant les equacions \eqref{eq:c_sim_a}, \eqref{eq:c_sim_b} i \eqref{eq:c_sim_c}:
+     \begin{align*}
+        \cmplx{I}\ped{A} &= \cmplx{I}\ped{A,0} + \cmplx{I}\ped{A,1} + \cmplx{I}\ped{A,2} = \SIpd{1,1824}{-74}{kA} \\
+        \cmplx{I}\ped{B} &= \cmplx{I}\ped{A,0} + \au^2 \cmplx{I}\ped{A,1} + \au \cmplx{I}\ped{A,2} = \SIpd{1,1824}{106}{kA} \\
+        \cmplx{I}\ped{C} &= \cmplx{I}\ped{A,0} + \au \cmplx{I}\ped{A,1} + \au^2 \cmplx{I}\ped{A,2} = 0
+    \end{align*}
+
+    Es pot comprovar que es compleix: $\cmplx{I}\ped{A} + \cmplx{I}\ped{B} + \cmplx{I}\ped{C} = 0$
+
+    La distribució de corrents entre les tres fases del primari és típica dels transformadors DYn amb un índex horari igual a \SI{+-30}{\degree}; per una fase circula un corrent en fase amb el corrent de curtcircuit secundari, per una altra fase circula el mateix corrent però desfasat \SI{180}{\degree}, i per la tercera fase no hi circula corrent.
+
+    En aquests casos, els valors dels corrents de primari poden obtenir-se directament, a partir del corrent de curtcircuit secundari, de la relació de transformació i del factor $\frac{1}{\sqrt{3}}$:
+    \[
+        |\cmplx{I}\ped{A}| = |\cmplx{I}\ped{B}| = \frac{1}{\sqrt{3}} \times \frac{\SI{32}{kA}}{\num{15,625}} = \SI{1,1824}{kA}
+    \]
+
+    \textbf{ Transformador Dyn11. Curtcircuit fase--fase.}
+
+    \begin{center}
+       \input{Imatges/Cap-TrafosPot-Exemple-IccFF-Dyn.pdf_tex}
+    \end{center}
+
+    A partir del corrent de curtcircuit fase--fase, es veu directament que els corrents de les tres fases del secundari són:
+    \begin{align*}
+        \cmplx{I}\ped{a} &= 0  \\
+        \cmplx{I}\ped{b} &= \cmplx{I}\ped{sc} = \SIpd{28}{-164}{kA}  \\
+        \cmplx{I}\ped{c} &= -\cmplx{I}\ped{sc} = \SIpd{28}{16}{kA}
+    \end{align*}
+
+    A continuació obtenim les components simètriques d'aquests tres corrents de secundari, aplicant les equacions \eqref{eq:c_sim_c2}, \eqref{eq:c_sim_a2} i \eqref{eq:c_sim_b2}:
+    \begin{align*}
+        \cmplx{I}\ped{a,0} &= \frac{1}{3} (\cmplx{I}\ped{a} + \cmplx{I}\ped{b} +
+        \cmplx{I}\ped{c}) = 0 \\
+        \cmplx{I}\ped{a,1} &= \frac{1}{3} (\cmplx{I}\ped{a} + \au \cmplx{I}\ped{b} +
+         \au^2 \cmplx{I}\ped{c}) = \SIpd{16,1658}{-74}{kA}  \\
+        \cmplx{I}\ped{a,2} &= \frac{1}{3} (\cmplx{I}\ped{a} + \au^2 \cmplx{I}\ped{b} +
+         \au \cmplx{I}\ped{c}) = \SIpd{16,1658}{106}{kA}
+    \end{align*}
+
+    Obtenim ara les components simètriques de primari, a partir de $\cmplx{m}_1$ i $\cmplx{m}_2$, utilitzant l'equació \eqref{eq:ImI}; tal com s'ha dit anteriorment, el corrent homopolar de primari serà nul, ja que els transformadors amb connexió DYn tenen un circuit homopolar equivalent amb el primari en circuit obert:
+    \begin{align*}
+        \cmplx{I}\ped{A,0} &= 0 \\
+        \cmplx{I}\ped{A,1} &= \frac{\cmplx{I}\ped{a,1}}{\cmplx{m}^*_1} = \frac{\SIpd{16,1658}{-74}{kA}}{\numpd{15,625}{30}} =  \SIpd{1,0346}{-104}{kA} \\
+        \cmplx{I}\ped{A,2} &= \frac{\cmplx{I}\ped{a,2}}{\cmplx{m}^*_2} = \frac{\SIpd{16,1658}{106}{kA}}{\numpd{15,625}{-30}} = \SIpd{1,0346}{136}{kA}
+    \end{align*}
+
+    Finalment calculem el corrent de les tres fases del primari aplicant les equacions \eqref{eq:c_sim_a}, \eqref{eq:c_sim_b} i \eqref{eq:c_sim_c}:
+     \begin{align*}
+        \cmplx{I}\ped{A} &= \cmplx{I}\ped{A,0} + \cmplx{I}\ped{A,1} + \cmplx{I}\ped{A,2} = \SIpd{1,0346}{-164}{kA} \\
+        \cmplx{I}\ped{B} &= \cmplx{I}\ped{A,0} + \au^2 \cmplx{I}\ped{A,1} + \au \cmplx{I}\ped{A,2} = \SIpd{1,0346}{-164}{kA} \\
+        \cmplx{I}\ped{C} &= \cmplx{I}\ped{A,0} + \au \cmplx{I}\ped{A,1} + \au^2 \cmplx{I}\ped{A,2} = \SIpd{2,0692}{16}{kA}
+    \end{align*}
+
+    Es pot comprovar que es compleix: $\cmplx{I}\ped{A} + \cmplx{I}\ped{B} + \cmplx{I}\ped{C} = 0$
+
+    La distribució de corrents entre les tres fases del primari és típica dels transformadors DYn amb un índex horari igual a \SI{+-30}{\degree}; per dues de les fases circula un corrent del mateix valor i en fase amb el corrent de curtcircuit secundari, i per la tercera fase circula un corrent de valor doble i desfasat \SI{180}{\degree}.
+
+    En aquests casos, els valors dels corrents de primari poden obtenir-se directament, a partir del corrent de curtcircuit secundari, de la relació de transformació i dels factors $\frac{1}{\sqrt{3}}$ i  $\frac{2}{\sqrt{3}}$:
+    \begin{align*}
+        |\cmplx{I}\ped{A}| = |\cmplx{I}\ped{B}| = \frac{1}{\sqrt{3}} \times \frac{\SI{28}{kA}}{\num{15,625}} = \SI{1,0346}{kA} \\
+        |\cmplx{I}\ped{C}|= \frac{2}{\sqrt{3}} \times \frac{\SI{28}{kA}}{\num{15,625}} = \SI{2,0692}{kA}
+    \end{align*}
+
+    \break
+    \textbf{ Transformador YNyn11. Curtcircuit fase--terra.}
+
+    \begin{center}
+       \input{Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf_tex}
+    \end{center}
+
+    A partir del corrent de curtcircuit fase--terra, es veu directament que els corrents de les tres fases del secundari són:
+    \begin{align*}
+        \cmplx{I}\ped{a} &= \cmplx{I}\ped{sc} = \SIpd{32}{-74}{kA} \\
+        \cmplx{I}\ped{b} &= 0  \\
+        \cmplx{I}\ped{c} &= 0
+    \end{align*}
+
+    A continuació obtenim les components simètriques d'aquests tres corrents de secundari, aplicant les equacions \eqref{eq:c_sim_c2}, \eqref{eq:c_sim_a2} i \eqref{eq:c_sim_b2}:
+    \begin{align*}
+        \cmplx{I}\ped{a,0} &= \frac{1}{3} (\cmplx{I}\ped{a} + \cmplx{I}\ped{b} +
+        \cmplx{I}\ped{c}) = \SIpd{10,6667}{-74}{kA} \\
+        \cmplx{I}\ped{a,1} &= \frac{1}{3} (\cmplx{I}\ped{a} + \au \cmplx{I}\ped{b} +
+         \au^2 \cmplx{I}\ped{c}) = \SIpd{10,6667}{-74}{kA}  \\
+        \cmplx{I}\ped{a,2} &= \frac{1}{3} (\cmplx{I}\ped{a} + \au^2 \cmplx{I}\ped{b} +
+         \au \cmplx{I}\ped{c}) = \SIpd{10,6667}{-74}{kA}
+    \end{align*}
+
+    Obtenim ara les components simètriques de primari, a partir de $m_0$, $\cmplx{m}_1$ i $\cmplx{m}_2$, utilitzant l'equació \eqref{eq:ImI}:
+    \begin{align*}
+        \cmplx{I}\ped{A,0} &= \frac{\cmplx{I}\ped{a,0}}{m_0} = \frac{\SIpd{10,6667}{-74}{kA}}{\num{15,625}} =  \SIpd{0,6827}{-74}{kA}\\
+        \cmplx{I}\ped{A,1} &= \frac{\cmplx{I}\ped{a,1}}{\cmplx{m}^*_1} = \frac{\SIpd{10,6667}{-74}{kA}}{\numpd{15,625}{30}} =  \SIpd{0,6827}{-104}{kA} \\
+        \cmplx{I}\ped{A,2} &= \frac{\cmplx{I}\ped{a,2}}{\cmplx{m}^*_2} = \frac{\SIpd{10,6667}{-74}{kA}}{\numpd{15,625}{-30}} = \SIpd{0,6827}{-44}{kA}
+    \end{align*}
+
+    Finalment calculem el corrent de les tres fases del primari aplicant les equacions \eqref{eq:c_sim_a}, \eqref{eq:c_sim_b} i \eqref{eq:c_sim_c}:
+     \begin{align*}
+        \cmplx{I}\ped{A} &= \cmplx{I}\ped{A,0} + \cmplx{I}\ped{A,1} + \cmplx{I}\ped{A,2} = \SIpd{1,8651}{-74}{kA} \\
+        \cmplx{I}\ped{B} &= \cmplx{I}\ped{A,0} + \au^2 \cmplx{I}\ped{A,1} + \au \cmplx{I}\ped{A,2} = \SIpd{0,4997}{106}{kA} \\
+        \cmplx{I}\ped{C} &= \cmplx{I}\ped{A,0} + \au \cmplx{I}\ped{A,1} + \au^2 \cmplx{I}\ped{A,2} = \SIpd{0,6827}{-74}{kA}
+    \end{align*}
+
+    El corrent primari de curtcircuit a terra és:
+    \[
+        \cmplx{I}\ped{SC} = \cmplx{I}\ped{A} + \cmplx{I}\ped{B} + \cmplx{I}\ped{C} = \SIpd{2,0480}{-74}{kA}
+    \]
+
+    Aquest valor també es pot trobar a partir de $\cmplx{I}\ped{A,0}$, tal com s'explica en la secció \vref{sec:corrent-neutre}:
+       \[
+        \cmplx{I}\ped{SC} = 3 \cmplx{I}\ped{A,0} = 3 \times \SIpd{0,6827}{-74}{kA} = \SIpd{2,0480}{-74}{kA}
+    \]
+
+    La distribució de corrents entre les tres fases del primari és típica dels transformadors YNyn amb un índex horari igual a \SI{+-30}{\degree}; els corrents que circulen per les tres fases tenen valors diferents entre si, dos estan en fase amb el corrent de curtcircuit secundari, i l'altre està desfasat \SI{180}{\degree}.
+
+    En aquests casos, els valors dels corrents de primari poden obtenir-se directament, a partir del corrent de curtcircuit secundari, de la relació de transformació i dels factors $\frac{1}{\sqrt{3}} \pm \frac{1}{3}$ i $\frac{1}{3}$. El corrent de curtcircuit a terra primari està en fase amb el corrent de curtcircuit secundari, i pot obtenir-se directament a partir de la relació de transformació:
+    \begin{align*}
+        |\cmplx{I}\ped{A}| &= \left(\frac{1}{\sqrt{3}}+\frac{1}{3}\right) \times \frac{\SI{32}{kA}}{\num{15,625}} = \SI{1,8651}{kA} \\
+        |\cmplx{I}\ped{B}| &= \left(\frac{1}{\sqrt{3}}-\frac{1}{3}\right) \times \frac{\SI{32}{kA}}{\num{15,625}} = \SI{0,4997}{kA} \\
+        |\cmplx{I}\ped{C}| &= \frac{1}{3} \times \frac{\SI{32}{kA}}{\num{15,625}} = \SI{0,6827}{kA} \\
+        |\cmplx{I}\ped{SC}| &= \frac{\SI{32}{kA}}{\num{15,625}} = \SI{2,048}{kA}
+    \end{align*}
+
+
+    \textbf{ Transformador YNyn11. Curtcircuit fase--fase.}
+
+    \begin{center}
+       \input{Imatges/Cap-TrafosPot-Exemple-IccFF-YNyn.pdf_tex}
+    \end{center}
+
+    A partir del corrent de curtcircuit fase--fase, es veu directament que els corrents de les tres fases del secundari són:
+    \begin{align*}
+        \cmplx{I}\ped{a} &= 0  \\
+        \cmplx{I}\ped{b} &= \cmplx{I}\ped{sc} = \SIpd{28}{-164}{kA}  \\
+        \cmplx{I}\ped{c} &= -\cmplx{I}\ped{sc} = \SIpd{28}{16}{kA}
+    \end{align*}
+
+    A continuació obtenim les components simètriques d'aquests tres corrents de secundari, aplicant les equacions \eqref{eq:c_sim_c2}, \eqref{eq:c_sim_a2} i \eqref{eq:c_sim_b2}:
+    \begin{align*}
+        \cmplx{I}\ped{a,0} &= \frac{1}{3} (\cmplx{I}\ped{a} + \cmplx{I}\ped{b} +
+        \cmplx{I}\ped{c}) = 0 \\
+        \cmplx{I}\ped{a,1} &= \frac{1}{3} (\cmplx{I}\ped{a} + \au \cmplx{I}\ped{b} +
+         \au^2 \cmplx{I}\ped{c}) = \SIpd{16,1658}{-74}{kA}  \\
+        \cmplx{I}\ped{a,2} &= \frac{1}{3} (\cmplx{I}\ped{a} + \au^2 \cmplx{I}\ped{b} +
+         \au \cmplx{I}\ped{c}) = \SIpd{16,1658}{106}{kA}
+    \end{align*}
+
+    Obtenim ara les components simètriques de primari, a partir de $m_0$, $\cmplx{m}_1$ i $\cmplx{m}_2$, utilitzant l'equació \eqref{eq:ImI}:
+    \begin{align*}
+        \cmplx{I}\ped{A,0} &= \frac{\cmplx{I}\ped{a,0}}{m_0} = 0 \\
+        \cmplx{I}\ped{A,1} &= \frac{\cmplx{I}\ped{a,1}}{\cmplx{m}^*_1} = \frac{\SIpd{16,1658}{-74}{kA}}{\numpd{15,625}{30}} =  \SIpd{1,0346}{-104}{kA} \\
+        \cmplx{I}\ped{A,2} &= \frac{\cmplx{I}\ped{a,2}}{\cmplx{m}^*_2} = \frac{\SIpd{16,1658}{106}{kA}}{\numpd{15,625}{-30}} = \SIpd{1,0346}{136}{kA}
+    \end{align*}
+
+    Finalment calculem el corrent de les tres fases del primari aplicant les equacions \eqref{eq:c_sim_a}, \eqref{eq:c_sim_b} i \eqref{eq:c_sim_c}:
+     \begin{align*}
+        \cmplx{I}\ped{A} &= \cmplx{I}\ped{A,0} + \cmplx{I}\ped{A,1} + \cmplx{I}\ped{A,2} = \SIpd{1,0346}{-164}{kA} \\
+        \cmplx{I}\ped{B} &= \cmplx{I}\ped{A,0} + \au^2 \cmplx{I}\ped{A,1} + \au \cmplx{I}\ped{A,2} = \SIpd{1,0346}{-164}{kA} \\
+        \cmplx{I}\ped{C} &= \cmplx{I}\ped{A,0} + \au \cmplx{I}\ped{A,1} + \au^2 \cmplx{I}\ped{A,2} = \SIpd{2,0692}{16}{kA}
+    \end{align*}
+
+    Es pot comprovar que es compleix: $\cmplx{I}\ped{A} + \cmplx{I}\ped{B} + \cmplx{I}\ped{C} = 0$
+
+    La distribució de corrents entre les tres fases del primari és típica dels transformadors YNYn amb un índex horari igual a \SI{+-30}{\degree}; per dues de les fases circula un corrent del mateix valor  i en fase amb el corrent de curtcircuit secundari, i per la tercera fase circula un corrent de valor doble i desfasat \SI{180}{\degree}.
+
+     En aquests casos, els valors dels corrents de primari poden obtenir-se directament, a partir del corrent de curtcircuit secundari, de la relació de transformació i dels factors $\frac{1}{\sqrt{3}}$ i  $\frac{2}{\sqrt{3}}$:
+    \begin{align*}
+        |\cmplx{I}\ped{A}| = |\cmplx{I}\ped{B}| = \frac{1}{\sqrt{3}} \times \frac{\SI{28}{kA}}{\num{15,625}} = \SI{1,0346}{kA} \\
+        |\cmplx{I}\ped{C}|= \frac{2}{\sqrt{3}} \times \frac{\SI{28}{kA}}{\num{15,625}} = \SI{2,0692}{kA}
+    \end{align*}
+
+\end{exemple}
+
+
+
+\section{\texorpdfstring{Connexió de transformadors en paraŀlel}{Connexió de transformadors en paral-lel}}
+\index{transformadors de potència!connexió en paraŀlel}
+
+El que s'explica a continuació és vàlid per a transformadors
+monofàsics i trifàsics; com és habitual, en el cas dels
+transformadors trifàsics, les tensions nominals són les tensions
+fase--fase, i la potència nominal és la potència trifàsica.\footnote{Per a una discussió més extensa,  podeu veure la secció 6 de la norma CEI 60076-8 \emph{Power transformers -- Application guide}.}\index{CEI!60076-08@60076-8}
+
+\subsection{Condicions mínimes de connexió}\index{transformadors de potència!connexió en paraŀlel!condicions mínimes}
+
+Les condicions mínimes que han de complir dos transformadors A i B per poder ser connectats en paraŀlel, és tenir la mateixa relació de transformació (no cal que les tensions nominals siguin iguals, encara que sí que han de ser properes), i en el cas de transformadors trifàsics, tenir a més el mateix índex horari:
+\begin{align}
+    m\ped{A} &= m\ped{B}\\
+    h\ped{A} &= h\ped{B}
+\end{align}
+
+La condició $m\ped{A} = m\ped{B}$ és necessària per evitar circulació de corrent entre els dos transformadors connectats en paraŀlel. Si $m\ped{A} \neq m\ped{B}$, utilitzant el circuit equivalent  Thévenin vist des del secundari d'ambdós transformadors, deduït en la secció \vref{sec:trafo-thevenin}, podem obtenir el corrent $\cmplx{I}\ped{circ}^{''}$ que circula del transformador A cap al B, estant els secundaris en buit, a partir de les impedàncies i tensions Thévenin dels dos transformadors:
+\begin{equation}
+    \cmplx{I}\ped{circ}^{''} = \frac{\cmplx{U}\ped{Th,A}^{''}-\cmplx{U}\ped{Th,B}^{''}}{\cmplx{Z}\ped{Th,A}^{''}+
+    \cmplx{Z}\ped{Th,B}^{''}}
+\end{equation}
+
+Pel que fa als índexs horaris, no cal de fet que siguin estrictament iguals, n'hi ha prou  que els índexs siguin compatibles, és a dir que variant les connexions externes es puguin obtenir dos desfasaments iguals; això és possible quan els dos índexs difereixen en un angle múltiple de \ang{60}. Per tant tenim:
+
+\begin{equation}
+    h\ped{A} \text{ i } h\ped{B} \text{ són compatibles en qualsevol dels casos següents: }
+    \left\{
+        \begin{array}{l}
+           |h\ped{A} - h\ped{B}| = 0 \\[1ex]
+           |h\ped{A} - h\ped{B}| = 2 \\[1ex]
+           |h\ped{A} - h\ped{B}| = 4 \\[1ex]
+           |h\ped{A} - h\ped{B}| = 6 \\[1ex]
+           |h\ped{A} - h\ped{B}| = 8 \\[1ex]
+           |h\ped{A} - h\ped{B}| = 10
+        \end{array}
+    \right.
+    \label{eq:index_comp}
+\end{equation}
+
+
+\begin{exemple}[Connexió en paraŀlel de transformadors amb diferent índex horari]
+	\addcontentsxms{Connexió en paraŀlel de transformadors amb diferent índex horari}
+    En la figura següent es pot veure com han de connectar-se en paraŀlel tres transformadors amb grups de connexió Dy1, Dy5 i Dy11.
+
+      La diferència entre els índexs horaris dels transformadors Dy1 i Dy5 és 4, entre els dels transformadors Dy1 i Dy11 és 10, i entre els dels transformadors Dy5 i Dy11 és 6; aquestes diferències compleixen amb l'equació \eqref{eq:index_comp}, i per tant els índexs horaris dels tres transformadors són compatibles entre si.
+
+
+    Comencem connectant el  transformador Dy1 de manera natural, és a dir, els debanats primaris A, B i C amb les fases R, S i T respectivament, i els debanats secundaris a, b i c amb les fases r, s i t respectivament.
+
+   \begin{center}
+        \input{Imatges/Cap-TrafosPot-Exemple-TR-parallel.pdf_tex}
+    \end{center}
+
+    Si comparem ara els diagrames de fasors dels transformadors Dy1 i Dy5 veiem que les tensions secundàries del Dy5 són les mateixes que les del Dy1 girades \ang{120}. Així doncs, només  cal connectar els debanats primaris com en el cas anterior, i connectar els debanats secundaris c, a i b amb les fases r, s i t respectivament.
+
+
+    Ens ocupem finalment del transformador Dy11. Si connectéssim els debanats primaris com en els dos casos anteriors, tindríem el diagrama de fasors donat per les lletres entre parèntesis i les línies a traços; comparant-lo amb el diagrama de fasors del transformador Dy1, es veu que els fasors (a), (b) i (c) del Dy11 són simètrics respecte d'un eix vertical, amb els fasors a, c i b respectivament del Dy1. Així doncs, si connectem el primari del Dy11 seguint una seqüència de tensions inversa, és a dir connectem els debanats A, C i B amb les fases R, S i T respectivament, obtindrem un transformador Dy1, com es veu en el diagrama de fasors donat per les lletres sense parèntesis i les línies contínues; només cal ara connectar els debanats secundaris a, c i b amb les fases r, s i t respectivament.
+\end{exemple}
+
+\subsection{Condicions per a una connexió correcta}\index{transformadors de potència!connexió en paraŀlel!connexió correcta}
+ Es diu que dos transformadors en paraŀlel  A i B tenen una connexió correcta, quan a més de complir les condicions mínimes de connexió, tenen unes tensions de curtcircuit iguals:
+\begin{align}
+    m\ped{A} &= m\ped{B}\\
+    h\ped{A} &= h\ped{B}\\
+    u\ped{cc,A} &= u\ped{cc,B} \quad (U\ped{cc,A} = U\ped{cc,B})
+\end{align}
+
+La condició addicional  $u\ped{cc,A} = u\ped{cc,B}$ garanteix que no hi hagi sobrecàrregues en cap dels transformadors, ja que els corrents i les potències es reparteixen entre els dos transformadors de manera proporcional als seus corrents nominals; en el cas que les tensions nominals de A i B siguin a més iguals, es produeix un repartiment proporcional a les seves potències nominals.
+
+Per tal que es compleixi $u\ped{cc,A} = u\ped{cc,B}$, la relació entre els valors de placa de característiques $\varepsilon\ped{cc,A}$ i $\varepsilon\ped{cc,B}$ ha de ser:
+\begin{equation}
+    \frac{\varepsilon\ped{cc,B}}{\varepsilon\ped{cc,A}} = \frac{U\ped{n,A}}{U\ped{n,B}}
+\end{equation}
+
+\subsection{Condicions per a una connexió òptima}\index{transformadors de potència!connexió en paraŀlel!connexió òptima}
+
+ Es diu que dos transformadors en paraŀlel A i B tenen una connexió òptima, quan a més de complir les condicions d'una connexió correcta, tenen unes tensions de curtcircuit iguals no només en mòdul sinó també en argument:
+\begin{align}
+    m\ped{A} &= m\ped{B}\\
+    h\ped{A} &= h\ped{B}\\
+    u\ped{cc,A} &= u\ped{cc,B} \quad (U\ped{cc,A} = U\ped{cc,B})\\
+    \varphi\ped{cc,A} &=\varphi\ped{cc,B}
+\end{align}
+
+La condició addicional $\varphi\ped{cc,A} =\varphi\ped{cc,B}$ evita pèrdues innecessàries en el coure, les quals es produirien en cas contrari.
+
+Per tal que es compleixi $u\ped{cc,A} = u\ped{cc,B} $ i $\varphi\ped{cc,A} =\varphi\ped{cc,B}$, la relació entre els valors de placa de característiques $\varepsilon\ped{cc,A}$, $\varepsilon\ped{cc,B}$, $W\ped{cc,A}$ i $W\ped{cc,B}$ ha de ser:
+\begin{equation}
+    \frac{\varepsilon\ped{cc,B}}{\varepsilon\ped{cc,A}} = \frac{U\ped{n,A}}{U\ped{n,B}} \qquad\qquad
+    \frac{W\ped{cc,B}}{W\ped{cc,A}} = \frac{S\ped{n,B} \,\varepsilon\ped{cc,B}}{S\ped{n,A}\, \varepsilon\ped{cc,A}}
+\end{equation}
+
+\section{Corrent d'irrupció («inrush current»)}\index{transformadors de potència!corrent d'irrupció (\guillemotleft inrush current\guillemotright)}\index{corrent d'irrupció}\index{inrush current@\guillemotleft inrush current\guillemotright}
+
+El corrent d'irrupció s'origina quan es  connecta un transformador a la línia de potència. Aquest corrent és de molt curta durada, però d'un valor molt elevat; el valor depèn de l'instant de connexió (fase de la tensió) i del flux residual del transformador d'una connexió prèvia.
+
+El corrent d'irrupció, que només circula pel primari del transformador, pot arribar a valors de fins a $(\numrange{25}{30}) I\ped{n}$ els primers \SI{10}{ms}, corrent que decreix a valors de fins  a $(\numrange{12}{15}) I\ped{n}$ als \SI{100}{ms}.
+
+\section{Designació de les classes de refrigeració}\index{CEI!60076-02@60076-2}\label{sec:trafos-pot-refrig}
+\index{IEEE!C57.12.00} \index{transformadors de potència!designació de classes de refrigeració}
+
+Les classes de refrigeració utilitzades en els transformadors de
+potència es designen mitjançant quatre lletres.
+
+Actualment, la definició i l'ús d'aquestes lletres és coincident
+entre la norma europea (CEI 60076-2) i la norma americana
+(IEEE C57.12.00).
+
+Es defineix a continuació el significat d'aquestes lletres:
+
+\subsubsection*{1a lletra}
+Indica l'element refrigerant intern que està en
+contacte amb els debanats del transformador. Els valors possibles
+són els següents:
+
+\begin{list}{}
+   {\setlength{\labelwidth}{10mm} \setlength{\leftmargin}{10mm} \setlength{\labelsep}{2mm}}
+   \item[\textbf{O}] L'element refrigerant és un oli mineral o un líquid sintètic aïllant, amb una temperatura d'ignició
+   inferior o igual a \SI{300}{\degreeCelsius}.
+   \item[\textbf{K}] L'element refrigerant és un líquid sintètic aïllant, amb una temperatura d'ignició
+   superior a \SI{300}{\degreeCelsius}.
+   \item[\textbf{L}] L'element refrigerant és un líquid sintètic aïllant, amb una temperatura d'ignició
+   no mesurable.
+\end{list}
+\index{O} \index{K} \index{L}
+
+\subsubsection*{2a lletra}
+Indica el mecanisme de circulació de l'element
+refrigerant intern. Els valors possibles són els següents:
+
+\begin{list}{}
+   {\setlength{\labelwidth}{10mm} \setlength{\leftmargin}{10mm} \setlength{\labelsep}{2mm}}
+   \item[\textbf{N}] Circulació mitjançant convecció natural,
+    a través de l'equip refrigerant i pels debanats del transformador.
+   \item[\textbf{F}] Circulació forçada a través de l'equip refrigerant (mitjançant bombes),
+    i circulació mitjançant convecció natural pels debanats del
+    transformador. Aquest tipus de circulació també s'anomena «de flux no
+    dirigit».
+   \item[\textbf{D}] Circulació forçada a través de l'equip refrigerant (mitjançant bombes),
+    i dirigida per aquest equip refrigerant cap als debanats del
+    transformador i, de manera opcional, també cap a altres parts del transformador. Aquest
+    tipus de circulació també s'anomena «de flux dirigit».
+\end{list}
+\index{N} \index{F} \index{D}
+
+\subsubsection*{3a lletra}
+ Indica l'element refrigerant extern. Els valors
+possibles són els següents:
+
+\begin{list}{}
+   {\setlength{\labelwidth}{10mm} \setlength{\leftmargin}{10mm} \setlength{\labelsep}{2mm}}
+   \item[\textbf{A}] L'element refrigerant és l'aire.
+   \item[\textbf{W}] L'element refrigerant és l'aigua.
+\end{list}
+\index{A} \index{W}
+
+\subsubsection*{4a lletra}
+ Indica el mecanisme de circulació de l'element
+refrigerant extern. Els valors possibles són els següents:
+\begin{list}{}
+   {\setlength{\labelwidth}{10mm} \setlength{\leftmargin}{10mm} \setlength{\labelsep}{2mm}}
+   \item[\textbf{N}] Circulació mitjançant convecció natural.
+   \item[\textbf{F}] Circulació forçada, mitjançant ventiladors (en el cas de
+   l'aire) o bombes (en el cas de l'aigua).
+\end{list}
+\index{N} \index{F}
+
+En la Taula \vref{taula:classes-refrigeracio-trafos} es presenta una
+comparativa entre diverses designacions antigues de classes de
+refrigeració (segons les normes americanes) i les designacions
+equivalents actuals.
+
+\begin{center}
+   \captionof{table}{Classes de refrigeració en els transformadors de potència}
+   \label{taula:classes-refrigeracio-trafos}
+   \begin{tabular}{cc}
+   \toprule[1pt]
+   Designació antiga & Designació actual \\
+   (norma IEEE)     & (normes CEI i IEEE) \\
+   \midrule
+   OA & ONAN   \\
+   FA & ONAF   \\
+   FOA & OFAF  \\
+   FOW & OFWF  \\
+   FOA & ODAF  \\
+   FOW & ODWF \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+\index{OA}\index{FA}\index{FOA}\index{FOW}\index{ONAN}\index{ONAF}\index{OFAF}\index{OFWF}\index{ODAF}\index{ODWF}
+
+En el cas d'un transformador on puguem seleccionar que la circulació
+sigui natural o forçada,
+les designacions són del tipus: ONAN/ONAF, ONAN/OFAF, etc.
+
+En el cas dels transformadors secs l'element refrigerant sempre és
+l'aire, sigui en circulació natural o forçada, i per tant les
+designacions són simplement AN o AF.
+
+
+
+
+

@@ -1,0 +1,193 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Sun Dec 09 18:52:42 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="90" y-min="0" y-max="86" auto-bounding="false">
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.4"
+%	 points= "(6,26);(6,26);(81.5,26);(81.5,26);(81.5,26);(27,81.5);
+%	(27,81.5);(27,81.5);(6,26)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(55,56.5)"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$a$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(59,62.5)"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(14.5,56)"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$b$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(44.5,24)"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$c$
+%</text>
+%<ellipse left-arrow= "head"
+%	 p3= "(12.74,32.5)"
+%	 p2= "(12.25,18.31)"
+%	 p1= "(-3.99,18.31)"
+%	 fill-style= "none"
+%	 right-arrow= "head"
+%	 closure= "open"
+%	 angle-end= "61.82"
+%	 angle-start= "4.82"
+%	 />
+%<ellipse left-arrow= "head"
+%	 p3= "(88.87,34)"
+%	 p2= "(89,18.5)"
+%	 p1= "(72.57,18.25)"
+%	 fill-style= "none"
+%	 right-arrow= "head"
+%	 closure= "open"
+%	 angle-end= "180.03"
+%	 angle-start= "129.31"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(12,30.5)"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$\alpha$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(72.5,30.5)"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\beta$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(29,72)"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 stroke-style= "dotted"
+%	 >
+%$\gamma$
+%</text>
+%<multicurve fill-style= "none"
+%	 right-arrow= "head"
+%	 points= "(43.5,43.5);(43.5,43.5);(84.5,52.5);(84.5,52.5)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(67,50.5)"
+%	 text-rotation= "11"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$R$
+%</text>
+%<ellipse stroke-color= "#3300cc"
+%	 p3= "(53.87,26.09)"
+%	 p2= "(53.87,65.87)"
+%	 p1= "(15.13,65.69)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 right-arrow= "head"
+%	 points= "(34.5,46);(34.5,46);(53.29,50.07);(53.29,50.07)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(42.5,49.5)"
+%	 text-rotation= "11"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$r$
+%</text>
+%<circle left-arrow= "head"
+%	 p3= "(24.5,75)"
+%	 p2= "(27.72,74.31)"
+%	 p1= "(32,76.5)"
+%	 fill-style= "none"
+%	 right-arrow= "head"
+%	 closure= "open"
+%	 />
+%<circle stroke-color= "#3300cc"
+%	 p3= "(25.5,81)"
+%	 p2= "(85.5,39.5)"
+%	 p1= "(2,40)"
+%	 fill-style= "none"
+%	 closure= "plain"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(33.67,46.49);(33.67,46.49);(34.67,45.49);(34.67,45.49)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(34.67,46.49);(34.67,46.49);(33.67,45.49);(33.67,45.49)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(43,44);(43,44);(44,43);(44,43)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(44,44);(44,44);(43,43);(43,43)"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(90,86)
+\pspolygon[linewidth=0.4](6,26)
+(81.5,26)
+(27,81.5)(6,26)
+\rput(55,56.5){$a$}
+\rput(59,62.5){}
+\rput(14.5,56){$b$}
+\rput(44.5,24){$c$}
+\rput{6.26}(4.38,25.4){\psellipticarc[]{<->}(0,0)(8.14,7.08){-2.36}{54.64}}
+\rput{4.02}(80.72,26.12){\psellipticarc[]{<->}(0,0)(8.22,7.75){125.97}{176.69}}
+\rput[l](12,30.5){$\alpha$}
+\rput[r](72.5,30.5){$\beta$}
+\rput(29,72){$\gamma$}
+\psline{->}(43.5,43.5)(84.5,52.5)
+\rput{11}(67,50.5){$R$}
+\newrgbcolor{userLineColour}{0.2 0 0.8}
+\rput{85.16}(34.5,45.89){\psellipse[linecolor=userLineColour](0,0)(19.89,-19.37)}
+\psline{->}(34.5,46)(53.29,50.07)
+\rput{11}(42.5,49.5){$r$}
+\rput{0}(27.33,80.35){\psellipticarc[]{<->}(0,0)(6.05,6.05){-117.88}{-39.5}}
+\newrgbcolor{userLineColour}{0.2 0 0.8}
+\rput{0}(43.77,43.29){\psellipse[linecolor=userLineColour](0,0)(41.9,41.9)}
+\psline(33.67,46.49)(34.67,45.49)
+\psline(34.67,46.49)(33.67,45.49)
+\psline(43,44)(44,43)
+\psline(44,44)(43,43)
+\end{pspicture}

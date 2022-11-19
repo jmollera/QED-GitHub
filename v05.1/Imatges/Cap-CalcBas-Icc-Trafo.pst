@@ -1,0 +1,138 @@
+%%Created by jPicEdt 1.4.1: mixed JPIC-XML/LaTeX format
+%%Sat Jan 27 10:07:57 CET 2007
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="52" y-min="0" y-max="20" auto-bounding="false">
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(28,5.5)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$U\ped{TN1}\!:\!U\ped{TN2}$
+%</text>
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "disk-centered"
+%	 points= "(36,15);(36,15);(48.5,15);(48.5,15)"
+%	 />
+%<ellipse closure= "open"
+%	 p3= "(36,20)"
+%	 p1= "(26,10)"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 angle-end= "360"
+%	 p2= "(36,10)"
+%	 angle-start= "0"
+%	 />
+%<ellipse closure= "open"
+%	 p3= "(29,20)"
+%	 p1= "(19,10)"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 angle-end= "360"
+%	 p2= "(29,10)"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(48.5,15);(48.5,15);(46,13);(46,13);(46,13);(48.5,13);
+%	(48.5,13);(48.5,13);(45.5,10.5);(45.5,10.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(9.5,15);(9.5,15);(19,15);(19,15)"
+%	 />
+%<parallelogram p3= "(9.5,20)"
+%	 fill-hatch-width= "0.1"
+%	 p1= "(0.5,10)"
+%	 fill-style= "crosshatch"
+%	 stroke-width= "0.15"
+%	 fill-hatch-sep= "1.42"
+%	 p2= "(9.5,10)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(48,11)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$I\ped{F}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(50,10)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(48.5,16)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%F
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(5.5,7)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$U\ped{N}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(28,2.5)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$S\ped{TN},\; x\ped{cc}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(-0.5,6.5)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(5,2.5)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$S\ped{cc}$
+%</text>
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(52,20)
+\rput[b](28,5.5){$U\ped{TN1}\!:\!U\ped{TN2}$}
+\psline[linewidth=0.25]{-*}(36,15)(48.5,15)
+\rput{0}(31,15){\psellipse[linewidth=0.25](0,0)(5,5)}
+\rput{0}(24,15){\psellipse[linewidth=0.25](0,0)(5,5)}
+\psline[linewidth=0.25]{->}(48.5,15)
+(46,13)
+(48.5,13)(45.5,10.5)
+\psline[linewidth=0.25](9.5,15)(19,15)
+\pspolygon[linewidth=0.15,fillstyle=crosshatch,hatchwidth=0.1,hatchsep=1.42](0.5,10)(9.5,10)(9.5,20)(0.5,20)
+\rput[l](48,11){$I\ped{F}$}
+\rput(50,10){}
+\rput[b](48.5,16){F}
+\rput(5.5,7){$U\ped{N}$}
+\rput(28,2.5){$S\ped{TN},\; x\ped{cc}$}
+\rput(-0.5,6.5){}
+\rput(5,2.5){$S\ped{cc}$}
+\end{pspicture}

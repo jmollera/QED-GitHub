@@ -1,0 +1,265 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Mon Dec 24 12:43:42 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="6" x-max="140" y-min="1" y-max="39" auto-bounding="false">
+%<circle p3= "(16,16)"
+%	 p2= "(12,20)"
+%	 p1= "(8,16)"
+%	 closure= "plain"
+%	 fill-style= "none"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(7,16)"
+%	 text-frame= "noframe"
+%	 fill-style= "solid"
+%	 text-hor-align= "right"
+%	 >
+%$u(t)$
+%</text>
+%<multicurve right-arrow= "head"
+%	 points= "(46,21);(46,21);(46,12);(46,12)"
+%	 fill-style= "solid"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(45,17)"
+%	 text-frame= "noframe"
+%	 fill-style= "solid"
+%	 text-hor-align= "right"
+%	 >
+%$i(t)$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(30,31)"
+%	 text-frame= "noframe"
+%	 fill-style= "solid"
+%	 text-hor-align= "center-h"
+%	 >
+%$R=\SI{10}{\ohm}$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(30,7)"
+%	 text-frame= "noframe"
+%	 fill-style= "solid"
+%	 text-hor-align= "center-h"
+%	 >
+%$L=\SI{50}{mH}$
+%</text>
+%<multicurve left-arrow= "head"
+%	 points= "(78.5,30.5);(78.5,30.5);(78.5,2.5);(78.5,2.5)"
+%	 fill-style= "solid"
+%	 />
+%<multicurve right-arrow= "head"
+%	 points= "(78,15.5);(78,15.5);(125,15.5);(125,15.5)"
+%	 fill-style= "solid"
+%	 />
+%<text stroke-style= "dotted"
+%	 text-vert-align= "top"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(79,15)"
+%	 text-frame= "noframe"
+%	 fill-style= "solid"
+%	 text-hor-align= "left"
+%	 >
+%{\scriptsize 0}
+%</text>
+%<text stroke-style= "dotted"
+%	 text-vert-align= "top"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(92.5,15)"
+%	 text-frame= "noframe"
+%	 fill-style= "solid"
+%	 text-hor-align= "left"
+%	 >
+%{\scriptsize 5}
+%</text>
+%<text stroke-style= "dotted"
+%	 text-vert-align= "top"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(106,15)"
+%	 text-frame= "noframe"
+%	 fill-style= "solid"
+%	 text-hor-align= "left"
+%	 >
+%{\scriptsize 10}
+%</text>
+%<text stroke-style= "dotted"
+%	 text-vert-align= "top"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(119.5,15)"
+%	 text-frame= "noframe"
+%	 fill-style= "solid"
+%	 text-hor-align= "left"
+%	 >
+%{\scriptsize 15}
+%</text>
+%<text stroke-style= "dotted"
+%	 text-vert-align= "center-v"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(126,15.5)"
+%	 text-frame= "noframe"
+%	 fill-style= "solid"
+%	 text-hor-align= "left"
+%	 >
+%$t\unit{[ms]}$
+%</text>
+%<text stroke-style= "dotted"
+%	 text-vert-align= "center-v"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(77.5,26.5)"
+%	 text-frame= "noframe"
+%	 fill-style= "solid"
+%	 text-hor-align= "right"
+%	 >
+%{\scriptsize 20}
+%</text>
+%<text stroke-style= "dotted"
+%	 text-vert-align= "center-v"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(77.5,4.5)"
+%	 text-frame= "noframe"
+%	 fill-style= "solid"
+%	 text-hor-align= "right"
+%	 >
+%{\scriptsize -20}
+%</text>
+%<multicurve points= "(78,4.5);(78,4.5);(79,4.5);(79,4.5)"
+%	 fill-style= "solid"
+%	 />
+%<text stroke-style= "dotted"
+%	 text-vert-align= "bottom"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(78.5,31)"
+%	 text-frame= "noframe"
+%	 fill-style= "solid"
+%	 text-hor-align= "center-h"
+%	 >
+%$u(t)\unit{[V]}$
+%</text>
+%<multicurve stroke-width= "0.45"
+%	 stroke-color= "#b47d23"
+%	 points= "(78.5,26.5);(78.5,26.5);(92,26.5);(92,26.5);(92,26.5);(92,4.5);
+%	(92,4.5);(92,4.5);(105.5,4.5);(105.5,4.5);(105.5,4.5);(105.5,26.5);
+%	(105.5,26.5);(105.5,26.5);(119,26.5);(119,26.5);(119,26.5);(119,4.5);
+%	(119,4.5);(119,4.5);(123,4.5);(123,4.5)"
+%	 fill-style= "none"
+%	 />
+%<text stroke-style= "dotted"
+%	 text-vert-align= "center-v"
+%	 stroke-width= "0.15"
+%	 anchor-point= "(77.5,15.5)"
+%	 text-frame= "noframe"
+%	 fill-style= "solid"
+%	 text-hor-align= "right"
+%	 >
+%{\scriptsize 0}
+%</text>
+%<parallelogram p3= "(36,30)"
+%	 p2= "(24,30)"
+%	 p1= "(24,26)"
+%	 fill-style= "none"
+%	 />
+%<g>
+%<ellipse p3= "(26,6)"
+%	 p2= "(26,2)"
+%	 p1= "(22,2)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 fill-style= "none"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(30,6)"
+%	 p2= "(30,2)"
+%	 p1= "(26,2)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 fill-style= "none"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(34,6)"
+%	 p2= "(34,2)"
+%	 p1= "(30,2)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 fill-style= "none"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(38,6)"
+%	 p2= "(38,2)"
+%	 p1= "(34,2)"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 fill-style= "none"
+%	 angle-start= "0"
+%	 />
+%</g>
+%<multicurve points= "(12,20);(12,20);(12,28);(12,28);(12,28);(24,28);
+%	(24,28)"
+%	 fill-style= "none"
+%	 />
+%<multicurve points= "(12,12);(12,12);(12,4);(12,4);(12,4);(22,4);
+%	(22,4)"
+%	 fill-style= "none"
+%	 />
+%<multicurve points= "(36,28);(36,28);(48,28);(48,28);(48,28);(48,4);
+%	(48,4);(48,4);(38,4);(38,4)"
+%	 fill-style= "none"
+%	 />
+%<multicurve points= "(8.8,21.13);(8.8,21.13);(10.8,21.13);(10.8,21.13)"
+%	 fill-style= "none"
+%	 />
+%<multicurve points= "(9.8,22.13);(9.8,22.13);(9.8,20.13);(9.8,20.13)"
+%	 fill-style= "none"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(140,39)
+\rput{0}(12,16){\psellipse[](0,0)(4,4)}
+\rput[r](7,16){$u(t)$}
+\psline[fillstyle=solid]{->}(46,21)(46,12)
+\rput[r](45,17){$i(t)$}
+\rput[b](30,31){$R=\SI{10}{\ohm}$}
+\rput[b](30,7){$L=\SI{50}{mH}$}
+\psline[fillstyle=solid]{<-}(78.5,30.5)(78.5,2.5)
+\psline[fillstyle=solid]{->}(78,15.5)(125,15.5)
+\rput[tl](79,15){{\scriptsize 0}}
+\rput[tl](92.5,15){{\scriptsize 5}}
+\rput[tl](106,15){{\scriptsize 10}}
+\rput[tl](119.5,15){{\scriptsize 15}}
+\rput[l](126,15.5){$t\unit{[ms]}$}
+\rput[r](77.5,26.5){{\scriptsize 20}}
+\rput[r](77.5,4.5){{\scriptsize -20}}
+\psline[fillstyle=solid](78,4.5)(79,4.5)
+\rput[b](78.5,31){$u(t)\unit{[V]}$}
+\newrgbcolor{userLineColour}{0.71 0.49 0.14}
+\psline[linewidth=0.45,linecolor=userLineColour](78.5,26.5)
+(92,26.5)
+(92,4.5)
+(105.5,4.5)
+(105.5,26.5)
+(119,26.5)
+(119,4.5)(123,4.5)
+\rput[r](77.5,15.5){{\scriptsize 0}}
+\pspolygon[](24,26)(24,30)(36,30)(36,26)
+\rput{0}(24,4){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(28,4){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(32,4){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(36,4){\psellipticarc[](0,0)(2,2){0}{180}}
+\psline(12,20)
+(12,28)(24,28)
+\psline(12,12)
+(12,4)(22,4)
+\psline(36,28)
+(48,28)
+(48,4)(38,4)
+\psline(8.8,21.13)(10.8,21.13)
+\psline(9.8,22.13)(9.8,20.13)
+\end{pspicture}

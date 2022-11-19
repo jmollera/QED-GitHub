@@ -1,0 +1,61 @@
+%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Cap-TrafosPot-Assaig-CC-Trifasic.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{340.1574707bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.28333331)%
+    \put(0,0){\includegraphics[width=\unitlength]{Cap-TrafosPot-Assaig-CC-Trifasic.pdf}}%
+    \put(0.10833334,0.16666666){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{U}\ped{cc1}$}}}%
+    \put(0.79495481,0.03442388){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{AT/BT}}}%
+    \put(0.4583334,0.20833336){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{\textsf{W1}}}}}%
+    \put(0.32499994,0.20833342){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{\textsf{A}}}}}%
+    \put(0.225,0.15835443){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{\textsf{V}}}}}%
+    \put(0.1425845,0.24108644){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{I}\ped{cc1}$}}}%
+    \put(0.55,0.10833339){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{\textsf{W2}}}}}%
+  \end{picture}%
+\endgroup%

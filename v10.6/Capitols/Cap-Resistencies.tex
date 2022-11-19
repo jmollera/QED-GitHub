@@ -1,0 +1,188 @@
+\chapter{Resistències}\label{chap:resistencies}
+
+\section{Codificació en colors} \index{resistències!codificació en colors}
+
+La codificació en colors  de les resistències
+consisteix en tres o quatre bandes de color, que codifiquen el seu valor òhmic, més una o dues bandes de color addicionals, una mica separades, per codificar-ne la tolerància i el coeficient de temperatura.
+
+Quan s'utilitzen tres bandes per codificar  el valor òhmic, les dues primeres defineixen els dos dígits que formen el valor
+base i la tercera el factor  multiplicador; en el cas d'utilitzar-ne quatre, les tres primeres defineixen els tres dígits que formen el valor base i la quarta  el factor multiplicador. Quan hi ha una o dues bandes més a la dreta, i separades de les que defineixen el valor òhmic, la primera indica la tolerància de la resistència, i la segona, si existeix, indica el coeficient de variació de la resistència  amb la temperatura.
+
+En la taula següent es presenta la codificació en colors de les resistències.
+
+
+\begin{center}
+\begin{threeparttable}
+   \captionof{table}{Codificació en colors de les resistències}\label{tb:resit}
+   \vspace{-5mm}
+   \begin{tabular}{llccccc}
+   \toprule[1pt]
+     \multicolumn{2}{c}{\multirow{2}{15mm}{\rule{0mm}{4mm}Color}} &
+     \multicolumn{1}{c}{\multirow{2}{15mm}{\rule{0mm}{4mm}1r dígit}} &
+     \multicolumn{1}{c}{\multirow{2}{25mm}{\rule{0mm}{4mm}2n i 3r dígits}} &
+     \multicolumn{1}{c}{Factor} & \multicolumn{1}{c}{Tolerància} & \multicolumn{1}{c}{Coeficient de temperatura\tnote{a}}   \\
+     & & & & {multiplicador} & \si{\percent} & \si{\micro\ohm/(\ohm.\kelvin)} \\
+   \midrule
+           & ---     &  --- &  --- &  --- & 20 & --- \\
+   {\textcolor[rgb]{0.83,0.83,0.83}\faSquare} & plata  &  --- &  --- &  $10^{-2}$ & 10 & --- \\
+   {\textcolor[rgb]{0.80,0.82,0.17}\faSquare} & or    &  --- &  --- &  $10^{-1}$ & 5 & --- \\
+   \faSquare & negre   &  ---   &  0   &  1   & --- & 250 \\
+   {\textcolor[rgb]{0.57,0.00,0.00}\faSquare} & marró   &  1    &  1   &  10   & 1  & 100\\
+   {\textcolor[rgb]{1.00,0.00,0.00}\faSquare} & vermell &  2    &  2   &  $10^2$   & 2  & 50\\
+   {\textcolor[rgb]{1.00,0.55,0.09}\faSquare} & carabassa &  3    &  3   &  $10^3$   & ---  & 15\\
+   {\textcolor[rgb]{1.00,1.00,0.00}\faSquare} & groc    &  4    &  4   &  $10^4$   & ---  & 25\\
+   {\textcolor[rgb]{0.00,1.00,0.00}\faSquare} & verd    &  5    &  5   &  $10^5$   & \num{0,5}  & 20\\
+   {\textcolor[rgb]{0.00,0.00,1.00}\faSquare} & blau    &  6    &  6   &  $10^6$   & \num{0,25}  & 10\\
+   {\textcolor[rgb]{0.68,0.31,0.68}\faSquare} & violeta &  7    &  7   &  $10^7$   & \num{0,1}  & 5\\
+   {\textcolor[rgb]{0.48,0.48,0.48}\faSquare} & gris    &  8    &  8   &  ---   & \num{0,05}  & 1\\
+   {\faSquareO} & blanc   &  9   &  9   &  ---   & ---  & ---\\
+   \bottomrule[1pt]
+   \end{tabular}
+   \begin{tablenotes}
+    \item[a] {\footnotesize És més freqüent veure aquest valor expressat en \si{ppm/\degreeCelsius}.  Ambdues unitats són equivalents: \SI{1}{ppm/\degreeCelsius} = \SI{1}{\micro\ohm/(\ohm.\kelvin)}.}
+    \end{tablenotes}
+\end{threeparttable}
+\end{center}
+
+
+Fa temps existien també resistències de tolerància $\SI{50}{\percent}$,
+però avui dia ja no se'n fabriquen. Les resistències de tolerància $\SI{20}{\percent}$ s'utilitzen molt poc, i alguns fabricants no les subministren.
+
+
+\begin{exemple}[Valors de resistències de tres i quatre bandes]
+   Es tracta d'obtenir els valors òhmics i les toleràncies de les dues resistències següents,
+   definides pels colors:
+    \begin{enumerate}
+       \renewcommand{\labelenumi}{\alph{enumi})}
+       \item \begin{minipage}{1.8cm}
+               \includegraphics{Cap-Resistencies-R1.pdf}
+            \end{minipage} (Blau-Gris-Groc Or)
+       \item  \begin{minipage}{1.8cm}
+               \includegraphics{Cap-Resistencies-R2.pdf}
+            \end{minipage} (Carabassa-Vermell-Groc-Negre Marró)
+    \end{enumerate}
+    \begin{align*}
+       \intertext{En el primer cas tenim:}
+       \text{a) Blau-Gris-Groc Or}\,  &\rightarrow\,
+       \begin{cases}
+          \text{Resistència}: &\SI{68e4}{\ohm} = \SI{680}{k\ohm} \\
+          \text{Tolerància}:  &\SI{5}{\percent}
+       \end{cases} \\
+       \intertext{I en el segon cas tenim:}
+       \text{b) Carabassa-Vermell-Groc-Negre Marró}\,  &\rightarrow\,
+       \begin{cases}
+          \text{Resistència}: &324 \times \SI{1}{\ohm} = \SI{324}{\ohm} \\
+          \text{Tolerància}:  &\SI{1}{\percent}
+       \end{cases}
+    \end{align*}
+\end{exemple}
+
+\section{Valors estàndard} \index{resistències!valors estàndard}
+
+Els valors de les resistències que es fabriquen estan estandarditzats, i depenent
+del valor de la tolerància el ventall de valors possibles és més o menys ample.
+
+En les taules següents es llisten els valors estàndard de les sèries de resistències que existeixen,  segons la seva tolerància. Aquests valors estan definits en la norma CEI 60063.\index{CEI!60063}
+
+Els valors que es donen estan normalitzats per a la dècada compresa
+entre \SI{100}{\ohm} i \SI{1000}{\ohm}. Els valors d'altres dècades
+s'obtenen simplement, multiplicant o dividint els valors de les
+taules per les corresponents  potències de 10.
+
+\begin{center}
+   \captionof{table}{Sèrie E6 -- Resistències de tolerància \SI{20}{\percent}}
+   \begin{tabular}{cccccc}
+   \toprule[1pt]
+   100 & 150 & 220 & 330 & 470 &  680  \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+\vspace{5mm}
+
+\begin{center}
+   \captionof{table}{Sèrie E12 -- Resistències de tolerància \SI{10}{\percent}}
+   \begin{tabular}{cccccccccccc}
+   \toprule[1pt]
+   100 & 120 & 150 & 180 & 220 & 270 & 330 & 390 & 470 & 560 & 680 & 820 \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+\vspace{5mm}
+
+\begin{center}
+   \captionof{table}{Sèrie E24 -- Resistències de tolerància \SI{5}{\percent}}
+   \begin{tabular}{cccccccccccc}
+   \toprule[1pt]
+   100 & 110 & 120 & 130 & 150 & 160 & 180 & 200 & 220 & 240 & 270 & 300 \\
+   330 & 360 & 390 & 430 & 470 & 510 & 560 & 620 & 680 & 750 & 820 & 910 \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+\vspace{5mm}
+
+\begin{center}
+   \captionof{table}{Sèrie E48 -- Resistències de tolerància \SI{2}{\percent}}
+   \begin{tabular}{cccccccccccc}
+   \toprule[1pt]
+   100 & 105 & 110 & 115 & 121 & 127 & 133 & 140 & 147 & 154 & 162 & 169 \\
+   178 & 187 & 196 & 205 & 215 & 226 & 237 & 249 & 261 & 274 & 287 & 301 \\
+   316 & 332 & 348 & 365 & 383 & 402 & 422 & 442 & 464 & 487 & 511 & 536 \\
+   562 & 590 & 619 & 649 & 681 & 715 & 750 & 787 & 825 & 866 & 909 & 953 \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+\vspace{5mm}
+
+\begin{center}
+   \captionof{table}{Sèrie E96 -- Resistències de tolerància \SI{1}{\percent}}
+   \begin{tabular}{cccccccccccc}
+   \toprule[1pt]
+   100 & 102 & 105 & 107 & 110 & 113 & 115 & 118 & 121 & 124 & 127 & 130 \\
+   133 & 137 & 140 & 143 & 147 & 150 & 154 & 158 & 162 & 165 & 169 & 174 \\
+   178 & 182 & 187 & 191 & 196 & 200 & 205 & 210 & 215 & 221 & 226 & 232 \\
+   237 & 243 & 249 & 255 & 261 & 267 & 274 & 280 & 287 & 294 & 301 & 309 \\
+   316 & 324 & 332 & 340 & 348 & 357 & 365 & 374 & 383 & 392 & 402 & 412 \\
+   422 & 432 & 442 & 453 & 464 & 475 & 487 & 499 & 511 & 523 & 536 & 549 \\
+   562 & 576 & 590 & 604 & 619 & 634 & 649 & 665 & 681 & 698 & 715 & 732 \\
+   750 & 768 & 787 & 806 & 825 & 845 & 866 & 887 & 909 & 931 & 953 & 976 \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+\vspace{5mm}
+
+\begin{center}
+   \captionof{table}{Sèrie E192 -- Resistències de toleràncies \SIlist{0,5; 0,25; 0,1}{\percent}}
+   \begin{tabular}{cccccccccccc}
+   \toprule[1pt]
+   100 & 101 & 102 & 104 & 105 & 106 & 107 & 109 & 110 & 111 & 113 & 114 \\
+   115 & 117 & 118 & 120 & 121 & 123 & 124 & 126 & 127 & 129 & 130 & 132 \\
+   133 & 135 & 137 & 138 & 140 & 142 & 143 & 145 & 147 & 149 & 150 & 152 \\
+   154 & 156 & 158 & 160 & 162 & 164 & 165 & 167 & 169 & 172 & 174 & 176 \\
+   178 & 180 & 182 & 184 & 187 & 189 & 191 & 193 & 196 & 198 & 200 & 203 \\
+   205 & 208 & 210 & 213 & 215 & 218 & 221 & 223 & 226 & 229 & 232 & 234 \\
+   237 & 240 & 243 & 246 & 249 & 252 & 255 & 258 & 261 & 264 & 267 & 271 \\
+   274 & 277 & 280 & 284 & 287 & 291 & 294 & 298 & 301 & 305 & 309 & 312 \\
+   316 & 320 & 324 & 328 & 332 & 336 & 340 & 344 & 348 & 352 & 357 & 361 \\
+   365 & 370 & 374 & 379 & 383 & 388 & 392 & 397 & 402 & 407 & 412 & 417 \\
+   422 & 427 & 432 & 437 & 442 & 448 & 453 & 459 & 464 & 470 & 475 & 481 \\
+   487 & 493 & 499 & 505 & 511 & 517 & 523 & 530 & 536 & 542 & 549 & 556 \\
+   562 & 569 & 576 & 583 & 590 & 597 & 604 & 612 & 619 & 626 & 634 & 642 \\
+   649 & 657 & 665 & 673 & 681 & 690 & 698 & 706 & 715 & 723 & 732 & 741 \\
+   750 & 759 & 768 & 777 & 787 & 796 & 806 & 816 & 825 & 835 & 845 & 856 \\
+   866 & 876 & 887 & 898 & 909 & 920 & 931 & 942 & 953 & 965 & 976 & 988 \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+
+
+\section{Potència} \index{resistències!potència}\label{sec:resist-pot}
+
+Les resistències tenen a més del valor òhmic, un altre paràmetre assignat: la potència màxima $P$ que poden dissipar.
+
+Els valors usuals de potència són: \SIlist{1/4;1/2;1;2;5;25}{W}.
+
+Per tal de no fer malbé una resistència, cal escollir un valor de potència superior al màxim que la resistència haurà de dissipar. Per tant, si el valor de la resistència és $R$ i la tensió màxima que haurà de suportar és $U$, caldrà escollir un valor de potència $P$ que compleixi:
+\begin{equation}
+  P > \frac{U^2}{R}
+\end{equation}
+

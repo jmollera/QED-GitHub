@@ -1,0 +1,136 @@
+%%Created by jPicEdt 1.4.1: mixed JPIC-XML/LaTeX format
+%%Sun Jan 21 16:32:32 CET 2007
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="73" y-min="0" y-max="60" auto-bounding="false">
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(6.03,6.01);(6.03,6.01);(68.11,6.01);(68.11,6.01)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(6.03,6.01);(6.03,6.01);(37.07,56.16);(37.07,56.16)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(37.07,56.16);(37.07,56.16);(68.11,6.01);(68.11,6.01)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 stroke-color= "#0000ff"
+%	 points= "(37.07,56.16);(37.07,56.16);(37.07,24.4);(37.07,24.4)"
+%	 left-arrow= "head"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 stroke-color= "#0000ff"
+%	 right-arrow= "head"
+%	 points= "(37.07,24.4);(37.07,24.4);(68.11,6.01);(68.11,6.01)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 stroke-color= "#0000ff"
+%	 right-arrow= "head"
+%	 points= "(37.07,24.4);(37.07,24.4);(6.03,6.01);(6.03,6.01)"
+%	 />
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(38.62,24.82)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\nu$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(37.46,57.41)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\alpha$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(4.48,5.18)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\gamma$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(38.62,36.52)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{U}_{\alpha\nu}$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(49.49,18.55)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{U}_{\beta\nu}$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(25.04,18.55)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{U}_{\gamma\nu}$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(21.55,33.59)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{U}_{\alpha\gamma}$
+%</text>
+%<text text-vert-align= "top"
+%	 anchor-point= "(37.07,4.34)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{U}_{\beta\gamma}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(69.5,5)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\beta$
+%</text>
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(73,60)
+\psline[linewidth=0.25]{->}(6.03,6.01)(68.11,6.01)
+\psline[linewidth=0.25]{->}(6.03,6.01)(37.07,56.16)
+\psline[linewidth=0.25](37.07,56.16)(68.11,6.01)
+\psline[linewidth=0.25,linecolor=blue]{<-}(37.07,56.16)(37.07,24.4)
+\psline[linewidth=0.25,linecolor=blue]{->}(37.07,24.4)(68.11,6.01)
+\psline[linewidth=0.25,linecolor=blue]{->}(37.07,24.4)(6.03,6.01)
+\rput[bl](38.62,24.82){$\nu$}
+\rput[b](37.46,57.41){$\alpha$}
+\rput[r](4.48,5.18){$\gamma$}
+\rput[l](38.62,36.52){$\cmplx{U}_{\alpha\nu}$}
+\rput[bl](49.49,18.55){$\cmplx{U}_{\beta\nu}$}
+\rput[br](25.04,18.55){$\cmplx{U}_{\gamma\nu}$}
+\rput[br](21.55,33.59){$\cmplx{U}_{\alpha\gamma}$}
+\rput[t](37.07,4.34){$\cmplx{U}_{\beta\gamma}$}
+\rput[l](69.5,5){$\beta$}
+\end{pspicture}

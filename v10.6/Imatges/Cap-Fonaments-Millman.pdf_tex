@@ -1,0 +1,66 @@
+%% Creator: Inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Cap-Fonaments-Millman.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{184.25196533bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.86153843)%
+    \put(0,0){\includegraphics[width=\unitlength]{Cap-Fonaments-Millman.pdf}}%
+    \put(0.04598436,0.7601875){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{1}}}%
+    \put(0.5692308,0.83076921){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{Z}\ped{1}$}}}%
+    \put(0.93735872,0.47038404){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\nuup$}}}%
+    \put(0.5692308,0.63076923){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{Z}\ped{2}$}}}%
+    \put(0.5692308,0.3076923){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{Z}_n$}}}%
+    \put(0.9388414,0.02162703){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\alphaup$}}}%
+    \put(0.9236406,0.26812292){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\cmplx{U}_{\nuup\alphaup}$}}}%
+    \put(0.20153001,0.56069623){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{2}}}%
+    \put(0.35394272,0.2397168){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$n$}}}%
+    \put(0.06069727,0.39423452){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{U}_{1\alphaup}$}}}%
+    \put(0.21133681,0.31552352){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{U}_{2\alphaup}$}}}%
+    \put(0.36766436,0.14135994){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{U}_{n\alphaup}$}}}%
+  \end{picture}%
+\endgroup%

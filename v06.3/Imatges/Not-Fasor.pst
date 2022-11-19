@@ -1,0 +1,270 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Sun Jan 19 21:13:20 CET 2014
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="125" y-min="0" y-max="55" auto-bounding="false">
+%<multicurve left-arrow= "head"
+%	 fill-style= "solid"
+%	 points= "(22,50);(22,50);(22,1);(22,1)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "solid"
+%	 points= "(1,25);(1,25);(54,25);(54,25)"
+%	 />
+%<text stroke-style= "dotted"
+%	 stroke-width= "0.15"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(55,25)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%{\scriptsize $t$}
+%</text>
+%<text stroke-style= "dotted"
+%	 stroke-width= "0.15"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(20,3)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%{\scriptsize $-\sqrt{2}\,V$}
+%</text>
+%<text stroke-style= "dotted"
+%	 stroke-width= "0.15"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(22,51)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%{\scriptsize $v(t)$}
+%</text>
+%<text stroke-style= "dotted"
+%	 stroke-width= "0.15"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(24,47)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%{\scriptsize $\sqrt{2}\,V$}
+%</text>
+%<multicurve stroke-style= "dotted"
+%	 fill-style= "none"
+%	 points= "(16,47);(16,47);(22,47);(22,47)"
+%	 />
+%<smoothpolygon stroke-color= "#b47d23"
+%	 stroke-width= "0.45"
+%	 closed= "false"
+%	 fill-style= "none"
+%	 points= "(4,25);(16,67);(26.5,25)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<text stroke-style= "dotted"
+%	 stroke-width= "0.15"
+%	 text-vert-align= "baseline"
+%	 anchor-point= "(19,31)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%{\scriptsize $\alpha$}
+%</text>
+%<smoothpolygon stroke-color= "#b47d23"
+%	 stroke-width= "0.45"
+%	 closed= "false"
+%	 fill-style= "none"
+%	 points= "(2,19);(3,22);(4,25)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<multicurve stroke-style= "dotted"
+%	 fill-style= "none"
+%	 points= "(22,3);(22,3);(38,3);(38,3)"
+%	 />
+%<smoothpolygon stroke-color= "#b47d23"
+%	 stroke-width= "0.45"
+%	 closed= "false"
+%	 fill-style= "none"
+%	 points= "(49,25);(50,29);(51,31.5)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<multicurve stroke-style= "dotted"
+%	 fill-style= "none"
+%	 points= "(16,47);(16,47);(16,25);(16,25)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(22,30);(22,30);(16,30);(16,30)"
+%	 />
+%<smoothpolygon stroke-color= "#b47d19"
+%	 stroke-width= "0.45"
+%	 closed= "false"
+%	 fill-style= "none"
+%	 points= "(26.5,25);(38,-17);(49,25)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<multicurve left-arrow= "head"
+%	 fill-style= "solid"
+%	 points= "(90,50);(90,50);(90,20);(90,20)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "solid"
+%	 points= "(85,25);(85,25);(120,25);(120,25)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 stroke-color= "#b47d23"
+%	 stroke-width= "0.45"
+%	 fill-style= "none"
+%	 points= "(90,25);(90,25);(110,45);(110,45)"
+%	 />
+%<circle right-arrow= "head"
+%	 p3= "(103,38)"
+%	 p2= "(108,30)"
+%	 p1= "(109,25)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 />
+%<text stroke-style= "dotted"
+%	 stroke-width= "0.15"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(109,31)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%{\scriptsize $\alpha$}
+%</text>
+%<text stroke-style= "dotted"
+%	 stroke-width= "0.15"
+%	 text-vert-align= "baseline"
+%	 anchor-point= "(100,36)"
+%	 fill-style= "solid"
+%	 text-rotation= "45"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%{\scriptsize $V$}
+%</text>
+%<text stroke-style= "dotted"
+%	 stroke-width= "0.15"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(121,25)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%{\scriptsize Re}
+%</text>
+%<text stroke-style= "dotted"
+%	 stroke-width= "0.15"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(90,51)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%{\scriptsize Im}
+%</text>
+%<text stroke-style= "dotted"
+%	 stroke-width= "0.15"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(111,45)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%{\scriptsize $V_{\angle\alpha}$}
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(16,25);(16,25);(16,24);(16,24)"
+%	 />
+%<text stroke-style= "dotted"
+%	 stroke-width= "0.15"
+%	 text-vert-align= "top"
+%	 anchor-point= "(16,23)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%{\scriptsize $t_0$}
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(22,47);(22,47);(23,47);(23,47)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(22,3);(22,3);(21,3);(21,3)"
+%	 />
+%<multicurve stroke-style= "dotted"
+%	 fill-style= "none"
+%	 points= "(4,25);(4,25);(4,10);(4,10)"
+%	 />
+%<multicurve stroke-style= "dotted"
+%	 fill-style= "none"
+%	 points= "(49,25);(49,25);(49,10);(49,10)"
+%	 />
+%<text stroke-style= "dotted"
+%	 stroke-width= "0.15"
+%	 text-vert-align= "baseline"
+%	 anchor-point= "(25,13)"
+%	 fill-style= "solid"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%{\scriptsize $T$}
+%</text>
+%<multicurve right-arrow= "head"
+%	 left-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(49,12);(49,12);(4,12);(4,12)"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(125,55)
+\psline[fillstyle=solid]{<-}(22,50)(22,1)
+\psline[fillstyle=solid]{->}(1,25)(54,25)
+\rput[l](55,25){{\scriptsize $t$}}
+\rput[r](20,3){{\scriptsize $-\sqrt{2}\,V$}}
+\rput[b](22,51){{\scriptsize $v(t)$}}
+\rput[l](24,47){{\scriptsize $\sqrt{2}\,V$}}
+\psline[linestyle=dotted](16,47)(22,47)
+\newrgbcolor{userLineColour}{0.71 0.49 0.14}
+\psbezier[linewidth=0.45,linecolor=userLineColour](4,25)(12.4,54.4)(19.15,54.4)(26.5,25)
+\rput[B](19,31){{\scriptsize $\alpha$}}
+\newrgbcolor{userLineColour}{0.71 0.49 0.14}
+\psbezier[linewidth=0.45,linecolor=userLineColour](2,19)(2.7,21.1)(3.3,22.9)(4,25)
+\psline[linestyle=dotted](22,3)(38,3)
+\newrgbcolor{userLineColour}{0.71 0.49 0.14}
+\psbezier[linewidth=0.45,linecolor=userLineColour](49,25)(49.7,27.8)(50.3,29.75)(51,31.5)
+\psline[linestyle=dotted](16,47)(16,25)
+\psline{->}(22,30)(16,30)
+\newrgbcolor{userLineColour}{0.71 0.49 0.1}
+\psbezier[linewidth=0.45,linecolor=userLineColour](26.5,25)(34.55,-4.4)(41.3,-4.4)(49,25)
+\psline[fillstyle=solid]{<-}(90,50)(90,20)
+\psline[fillstyle=solid]{->}(85,25)(120,25)
+\newrgbcolor{userLineColour}{0.71 0.49 0.14}
+\psline[linewidth=0.45,linecolor=userLineColour]{->}(90,25)(110,45)
+\rput{0}(88.79,23.56){\psellipticarc[]{->}(0,0)(20.26,20.26){4.08}{45.47}}
+\rput[l](109,31){{\scriptsize $\alpha$}}
+\rput[B]{45}(100,36){{\scriptsize $V$}}
+\rput[l](121,25){{\scriptsize Re}}
+\rput[b](90,51){{\scriptsize Im}}
+\rput[l](111,45){{\scriptsize $V_{\angle\alpha}$}}
+\psline(16,25)(16,24)
+\rput[t](16,23){{\scriptsize $t_0$}}
+\psline(22,47)(23,47)
+\psline(22,3)(21,3)
+\psline[linestyle=dotted](4,25)(4,10)
+\psline[linestyle=dotted](49,25)(49,10)
+\rput[B](25,13){{\scriptsize $T$}}
+\psline{<->}(49,12)(4,12)
+\end{pspicture}

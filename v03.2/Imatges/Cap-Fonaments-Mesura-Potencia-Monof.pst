@@ -1,0 +1,169 @@
+%%Created by jPicEdt 1.4pre4: mixed JPIC-XML/LaTeX format
+%%Tue Jan 03 23:10:45 CET 2006
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="61" y-min="0" y-max="27" auto-bounding="false">
+%<multicurve points="(6,19);(6,19);(20,19);(20,19)"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(20,19)" p2="(24,23)" p3="(28,19)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(28,19);(28,19);(36.5,19);(36.5,19)"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(36.5,19)" p2="(40.5,23)" p3="(44.5,19)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(44.5,19);(44.5,19);(54,19);(54,19);(54,19);(54,16);
+%	(54,16)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(24,23);(24,23);(24,26);(24,26);(24,26);(31.5,26);
+%	(31.5,26);(31.5,26);(31.5,19);(31.5,19)"
+%	
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<circle p1="(22,24)" p2="(22.5,23.5)" p3="(23,24)" closure="plain"
+%	
+%	 fill-style="solid"
+%	 />
+%<circle p1="(18.5,20.5)" p2="(19,20)" p3="(19.5,20.5)" closure="plain"
+%	
+%	 fill-style="solid"
+%	 />
+%<multicurve points="(40.5,23);(40.5,23);(40.5,26);(40.5,26);(40.5,26);(48,26);
+%	(48,26);(48,26);(48,19);(48,19)"
+%	
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<circle p1="(38.5,24)" p2="(39,23.5)" p3="(39.5,24)" closure="plain"
+%	
+%	 fill-style="solid"
+%	 />
+%<circle p1="(35,20.5)" p2="(35.5,20)" p3="(36,20.5)" closure="plain"
+%	
+%	 fill-style="solid"
+%	 />
+%<multicurve points="(56,16);(56,16);(56,5);(56,5);(56,5);(52,5);
+%	(52,5);(52,5);(52,16);(52,16);(52,16);(56,16)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(56,5);(56,5);(52,16);(52,16)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(56,16);(56,16);(52,5);(52,5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(54,5);(54,5);(54,2);(54,2);(54,2);(6,2);
+%	(6,2)"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(4,19)" p2="(5,18)" p3="(6,19)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(4,2)" p2="(5,1)" p3="(6,2)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(5,17);(5,17);(5,4);(5,4)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(7.5,20.5);(7.5,20.5);(14,20.5);(14,20.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(10.5,22)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{I}$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(3.5,11.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{U}$
+%</text>
+%<multicurve points="(24,15);(24,15);(24,2);(24,2)"
+%	
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<multicurve points="(40.5,15);(40.5,15);(40.5,2);(40.5,2)"
+%	
+%	 fill-style="none"
+%	 right-arrow="disk-centered" />
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(24,19)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\textsf{W}}
+%</text>
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(40.5,19)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%{\textsf{VAr}}
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(57.5,11)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$\cmplx{Z}$
+%</text>
+%</jpic>
+%%End JPIC-XML
+%PsTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(61,27)
+\psline(6,19)(20,19)
+\rput{0}(24,19){\psellipse[](0,0)(4,4)}
+\psline(28,19)(36.5,19)
+\rput{0}(40.5,19){\psellipse[](0,0)(4,4)}
+\psline(44.5,19)(54,19)
+(54,19)(54,16)
+\psline{-*}(24,23)(24,26)
+(24,26)(31.5,26)
+(31.5,26)(31.5,19)
+\rput{0}(22.5,24){\psellipse[fillstyle=solid](0,0)(0.5,0.5)}
+\rput{0}(19,20.5){\psellipse[fillstyle=solid](0,0)(0.5,0.5)}
+\psline{-*}(40.5,23)(40.5,26)
+(40.5,26)(48,26)
+(48,26)(48,19)
+\rput{0}(39,24){\psellipse[fillstyle=solid](0,0)(0.5,0.5)}
+\rput{0}(35.5,20.5){\psellipse[fillstyle=solid](0,0)(0.5,0.5)}
+\pspolygon[linewidth=0.25](56,16)(56,5)
+(56,5)(52,5)
+(52,5)(52,16)
+(52,16)(56,16)
+\psline[linewidth=0.25](56,5)(52,16)
+\psline[linewidth=0.25](56,16)(52,5)
+\psline(54,5)(54,2)
+(54,2)(6,2)
+\rput{0}(5,19){\psellipse[](0,0)(1,1)}
+\rput{0}(5,2){\psellipse[](0,0)(1,1)}
+\psline[linewidth=0.25]{->}(5,17)(5,4)
+\psline[linewidth=0.25]{->}(7.5,20.5)(14,20.5)
+\rput[b](10.5,22){$\cmplx{I}$}
+\rput[r](3.5,11.5){$\cmplx{U}$}
+\psline{-*}(24,15)(24,2)
+\psline{-*}(40.5,15)(40.5,2)
+\rput(24,19){{\textsf{W}}}
+\rput(40.5,19){{\textsf{VAr}}}
+\rput[l](57.5,11){$\cmplx{Z}$}
+\end{pspicture}

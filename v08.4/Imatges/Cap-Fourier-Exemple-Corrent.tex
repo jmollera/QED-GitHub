@@ -1,0 +1,21 @@
+\documentclass{article}
+\input{../Preambul/Preambul-Img.tex}
+
+\begin{document}
+
+  \psset{xunit=0.75cm,yunit=3cm}
+  \begin{pspicture}(-1.5,-1.2)(18,1.35)
+      \psgrid[griddots=20,xunit=1.5cm,yunit=1.5cm,subgriddiv=1,gridlabels=0pt](0,-2)(8,2)
+      \psaxes[tickstyle=bottom,linecolor=blue,Dx=2,Dy=0.5,Ox=0,Oy=-1.0,comma]{->}(0,-1)(0,-1)(16.5,1.15)
+      \psplot[linecolor=red,plotstyle=curve,plotpoints=400,linewidth=1.5pt]{0}{16}
+          {x 0.6283 mul 1.2626 sub 57.2958 mul sin 0.7724 mul
+           x 0.6283 3 mul mul 1.4651 sub 57.2958 mul sin 0.0896 mul add
+           x 0.6283 5 mul mul 1.5072 sub 57.2958 mul sin 0.0324 mul add
+           x 0.6283 7 mul mul 1.5254 sub 57.2958 mul sin 0.0165 mul add
+           x 0.6283 9 mul mul 1.5354 sub 57.2958 mul sin 0.0100 mul add
+           x 0.6283 11 mul mul 1.5419 sub 57.2958 mul sin 0.0067 mul add}
+      \rput(0,1.25){$i(t)\unit{[A]}$}
+      \rput[l](16.7,-1){$t\unit{[ms]}$}
+  \end{pspicture}
+
+\end{document} 

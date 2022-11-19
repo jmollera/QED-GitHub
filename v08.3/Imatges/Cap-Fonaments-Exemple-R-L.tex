@@ -1,0 +1,17 @@
+\documentclass{article}
+\input{../Preambul/Preambul-Img.tex}
+
+\begin{document}
+
+  \psset{xunit=0.5mm,yunit=0.5mm}
+  \begin{pspicture}(-20,-60)(230,100)
+      \psgrid[griddots=20,xunit=1cm,yunit=1cm,subgriddiv=1,gridlabels=0pt](0,-2)(10,4)
+      \psaxes[tickstyle=bottom,linecolor=blue,Dx=20,Dy=20,Ox=0,Oy=-40,comma]{->}(0,-40)(0,-40)(207,87)
+      \psplot[linecolor=red,plotstyle=curve,plotpoints=400,linewidth=1.5pt]{0}{200}
+          {x 1000 div 314.1593 mul 1.5136 sub SIN 35953.6865 mul x 1000 div -18
+          mul EXP 35894.8169 mul add 1000 div}
+      \rput(0,93){$i(t)\unit{[kA]}$}
+      \rput[l](209,-40){$t\unit{[ms]}$}
+  \end{pspicture}
+
+\end{document} 

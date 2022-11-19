@@ -1,0 +1,107 @@
+%%Created by jPicEdt 1.4.1: mixed JPIC-XML/LaTeX format
+%%Sun Jan 21 16:14:21 CET 2007
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="29" y-min="0" y-max="25" auto-bounding="false">
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(7,9.5)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{U}$
+%</text>
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(8,15.5);(8,15.5);(8,3.5);(8,3.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(10,19.5);(10,19.5);(17,19.5);(17,19.5)"
+%	 />
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(13,20.5)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{I}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(21,9.5)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{Z}, \; \cmplx{S}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(18,9.5)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(16,4.5);(16,4.5);(20,4.5);(20,4.5);(20,4.5);(20,14.5);
+%	(20,14.5);(20,14.5);(16,14.5);(16,14.5);(16,14.5);(16,4.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(16,14.5);(16,14.5);(20,4.5);(20,4.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(20,14.5);(20,14.5);(16,4.5);(16,4.5)"
+%	 />
+%<circle closure= "plain"
+%	 p3= "(9,17.5)"
+%	 p1= "(7,17.5)"
+%	 fill-style= "none"
+%	 p2= "(8,16.5)"
+%	 />
+%<circle closure= "plain"
+%	 p3= "(9,1.5)"
+%	 p1= "(7,1.5)"
+%	 fill-style= "none"
+%	 p2= "(8,0.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(9,17.5);(9,17.5);(18,17.5);(18,17.5);(18,17.5);(18,14.5);
+%	(18,14.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(9,1.5);(9,1.5);(18,1.5);(18,1.5);(18,1.5);(18,4.5);
+%	(18,4.5)"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(29,25)
+\rput[r](7,9.5){$\cmplx{U}$}
+\psline[linewidth=0.25]{->}(8,15.5)(8,3.5)
+\psline[linewidth=0.25]{->}(10,19.5)(17,19.5)
+\rput[b](13,20.5){$\cmplx{I}$}
+\rput[l](21,9.5){$\cmplx{Z}, \; \cmplx{S}$}
+\rput(18,9.5){}
+\pspolygon(16,4.5)
+(20,4.5)
+(20,14.5)
+(16,14.5)(16,4.5)
+\psline(16,14.5)(20,4.5)
+\psline(20,14.5)(16,4.5)
+\rput{0}(8,17.5){\psellipse[](0,0)(1,1)}
+\rput{0}(8,1.5){\psellipse[](0,0)(1,1)}
+\psline(9,17.5)
+(18,17.5)(18,14.5)
+\psline(9,1.5)
+(18,1.5)(18,4.5)
+\end{pspicture}

@@ -1,0 +1,94 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Sun Dec 09 18:29:38 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="3.5" x-max="65" y-min="3" y-max="20" auto-bounding="false">
+%<multicurve left-arrow= "head"
+%	 fill-style= "solid"
+%	 points= "(7,19);(7,19);(7,4);(7,4)"
+%	 />
+%<multicurve fill-style= "solid"
+%	 right-arrow= "head"
+%	 points= "(6,5);(6,5);(57,5);(57,5)"
+%	 />
+%<text text-vert-align= "top"
+%	 fill-style= "solid"
+%	 anchor-point= "(7,3)"
+%	 stroke-width= "0.15"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize 0}
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "solid"
+%	 anchor-point= "(5.5,5)"
+%	 stroke-width= "0.15"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize 0}
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(17,4);(17,4);(17,5);(17,5)"
+%	 />
+%<text text-vert-align= "top"
+%	 fill-style= "solid"
+%	 anchor-point= "(17,3)"
+%	 stroke-width= "0.15"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize $\tau$}
+%</text>
+%<circle left-arrow= "head"
+%	 p3= "(42.51,5.1)"
+%	 p2= "(42.84,8.6)"
+%	 p1= "(41,13)"
+%	 fill-style= "none"
+%	 right-arrow= "head"
+%	 closure= "open"
+%	 stroke-width= "0.35"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "solid"
+%	 anchor-point= "(44,10)"
+%	 stroke-width= "0.15"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 stroke-style= "dotted"
+%	 >
+%{\scriptsize $\alpha$}
+%</text>
+%<multicurve stroke-color= "#b56e22"
+%	 fill-style= "none"
+%	 stroke-width= "0.45"
+%	 points= "(7,5);(7,5);(17,5);(17,5);(17,5);(52,17);
+%	(52,17)"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(65,20)
+\psline[fillstyle=solid]{<-}(7,19)(7,4)
+\psline[fillstyle=solid]{->}(6,5)(57,5)
+\rput[t](7,3){{\scriptsize 0}}
+\rput[r](5.5,5){{\scriptsize 0}}
+\psline(17,4)(17,5)
+\rput[t](17,3){{\scriptsize $\tau$}}
+\rput{0}(34.35,7.63){\psellipticarc[linewidth=0.35]{<->}(0,0)(8.54,8.54){-17.26}{38.9}}
+\rput[l](44,10){{\scriptsize $\alpha$}}
+\newrgbcolor{userLineColour}{0.71 0.43 0.13}
+\psline[linewidth=0.45,linecolor=userLineColour](7,5)
+(17,5)(52,17)
+\end{pspicture}

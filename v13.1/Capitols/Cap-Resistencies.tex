@@ -1,0 +1,216 @@
+\addtocontents{xms}{\protect\addvspace{10pt}}
+\chapter{Resistències}\index{resistències}
+
+\section{Codificació en colors} \index{resistències!codificació en colors}\label{sec:resistencies-colors}
+
+La codificació en colors  de les resistències
+consisteix en tres o quatre bandes de color, que en determinen el  valor òhmic, més una o dues bandes addicionals de color situades una mica separades a la dreta, per determinar-ne la tolerància i el coeficient de temperatura. Les dues bandes addicionals també poden estar situades a la dreta sense cap separació; en aquest cas la primera banda, que correspon a la tolerància, té una amplada d'entre 1,5 i 2 vegades l'amplada de la resta de bandes.
+
+La codificació en colors està definida en la norma CEI 60062 \textit{Marking codes for resistors and capacitors}.\index{CEI!60062-00@60062} L'edició de l'any 2016 d'aquesta norma va introduir el color rosa per designar un factor multiplicador de $10^{-3}$.
+
+En la taula \vref{tb:resit} es presenta la codificació en colors de les resistències segons la  norma CEI 60062.
+
+\begin{center}
+\begin{threeparttable}
+   \captionof{table}{Codificació en colors de les resistències}\label{tb:resit}
+   \vspace{-5mm}
+   \begin{tabular}{llcccc}
+   \toprule[1pt]
+     \multicolumn{2}{c}{\multirow{2}{15mm}{\rule{0mm}{4mm}Color}} &
+     \multicolumn{1}{c}{Dígits} & \multicolumn{1}{c}{Factor} & \multicolumn{1}{c}{Tolerància} & \multicolumn{1}{c}{Coeficient de temperatura\tnote{a}}   \\
+     & & {significatius} & {multiplicador} & \% & \qty[print-unity-mantissa = false, per-mode = symbol]{1e-6}{\per\kelvin} \\
+   \midrule
+           & ---    &  --- &  --- & $\pm 20$ & --- \\
+   {\textcolor[rgb]{0.98,0.72,0.94}\faSquare} & rosa  &  --- &  $10^{-3}$ & --- & --- \\        
+   {\textcolor[rgb]{0.83,0.83,0.83}\faSquare} & plata  &  --- &  $10^{-2}$ & $\pm 10$ & --- \\
+   {\textcolor[rgb]{0.83,0.67,0.08}\faSquare} & or    &  --- &  $10^{-1}$ & $\pm 5$ & --- \\
+   \faSquare & negre   &  0   & 1   &  ---  & $\pm 250$ \\
+   {\textcolor[rgb]{0.55,0.31,0.04}\faSquare} & marró    &  1   &  10   & $\pm 1$  & $\pm 100$\\
+   {\textcolor[rgb]{1.00,0.00,0.00}\faSquare} & vermell  &  2   &  $10^2$   & $\pm 2$  & $\pm 50$\\
+   {\textcolor[rgb]{1.00,0.55,0.09}\faSquare} & carabassa  &  3   &  $10^3$   & \num{\pm 0,05}  & $\pm 15$\\
+   {\textcolor[rgb]{1.00,1.00,0.00}\faSquare} & groc      &  4   &  $10^4$   & \num{\pm 0,02}  & $\pm 25$\\
+   {\textcolor[rgb]{0.07,0.66,0.27}\faSquare} & verd     &  5   &  $10^5$   & \num{\pm 0,5}  & $\pm 20$\\
+   {\textcolor[rgb]{0.08,0.44,0.80}\faSquare} & blau    &  6   &  $10^6$   & \num{\pm 0,25}  & $\pm 10$\\
+   {\textcolor[rgb]{0.68,0.31,0.68}\faSquare} & violeta    &  7   &  $10^7$   & \num{\pm 0,1}  & $\pm 5$\\
+   {\textcolor[rgb]{0.48,0.48,0.48}\faSquare} & gris     &  8   &  $10^8$  & \num{\pm 0,01}  & $\pm 1$\\
+   {\faSquareO} & blanc   &  9   &  $10^9$   & ---  & ---\\
+   \bottomrule[1pt]
+   \end{tabular}
+   \begin{tablenotes}
+    \item[a] {\footnotesize Aquest valor representa la variació òhmica de la resistència amb la temperatura. També es pot veure expressat  en altres unitats equivalents: \qty[per-mode = symbol]{1e-6}{\per\kelvin} = \qty[per-mode = symbol]{1e-6}{\per\degreeCelsius} =  \qty{1}{ppm/K} = \qty{1}{ppm/\degreeCelsius}.}
+    \end{tablenotes}
+\end{threeparttable}
+\end{center}
+
+Les resistències amb una tolerància del \qty{\pm 20}{\percent} que tenen un valor resistiu  definit per dos dígits, es marquen amb tres bandes de color: les dues primeres bandes són dígits significatius i la tercera banda és el factor multiplicador. L'absència d'una quarta banda indica que la tolerància és del  \qty{\pm 20}{\percent}.
+
+Les resistències amb una tolerància inferior al \qty{\pm 20}{\percent} que tenen un valor resistiu  definit per dos dígits, es marquen amb quatre bandes de color: les dues primeres bandes són dígits significatius, la tercera banda és el factor multiplicador i la quarta banda és la tolerància.
+
+Les resistències que tenen un valor resistiu  definit per tres dígits, es marquen amb cinc bandes de color: les tres primeres bandes són dígits significatius, la quarta banda és el factor multiplicador i la cinquena banda és la tolerància.
+
+La banda de color que indica el coeficient de temperatura només s'utilitza en les resistències  que tenen un valor resistiu  definit per tres dígits, segons el paràgraf anterior, i se situa a la dreta de la banda que indica la tolerància, passant a ser doncs la sisena banda.
+
+\begin{exemple}[Valors de resistències de dos i tres dígits significatius]\label{ex:resistencies-colors}
+	\addcontentsxms{Valors de resistències de dos i tres dígits significatius}
+   Es tracta d'obtenir els valors òhmics, les toleràncies i els coeficients de temperatura de les tres resistències següents,
+   definides pels colors:
+    \begin{enumerate}
+       \renewcommand{\labelenumi}{\alph{enumi})}
+       \item \begin{minipage}{1.8cm}
+               \includegraphics{Cap-Resistencies-R1.pdf}
+            \end{minipage} (Blau-Gris-Or-Or)
+       \item  \begin{minipage}{1.8cm}
+               \includegraphics{Cap-Resistencies-R2.pdf}
+            \end{minipage} (Carabassa-Vermell-Groc-Negre-Marró)
+        \item  \begin{minipage}{1.8cm}
+        	\includegraphics{Cap-Resistencies-R3.pdf}
+        \end{minipage} (Verd-Groc-Vermell-Groc-Violeta-Vermell)
+    \end{enumerate}
+    \begin{align*}
+       \intertext{a) En aquest  cas tenim una resistència de dos dígits significatius i quatre bandes:}
+      \begin{minipage}{1.8cm}
+      	\includegraphics{Cap-Resistencies-R1.pdf}
+      \end{minipage}  \,  &
+       \begin{cases}
+          \text{Resistència}: &\qty{68e-1}{\ohm} = \qty{6,8}{\ohm} \\
+          \text{Tolerància}:  &\qty{\pm 5}{\percent} \, \Rightarrow \, \qty{\pm 0,34}{\ohm}
+       \end{cases} \\
+       \intertext{b) En aquest  cas  tenim una resistència de tres dígits significatius i cinc bandes:}
+       \begin{minipage}{1.8cm}
+       	\includegraphics{Cap-Resistencies-R2.pdf}
+       \end{minipage} \,  &
+       \begin{cases}
+          \text{Resistència}: &324 \times \qty{1}{\ohm} = \qty{324}{\ohm} \\
+          \text{Tolerància}:  &\qty{\pm 1}{\percent} \, \Rightarrow \, \qty{\pm 3,24}{\ohm}
+       \end{cases}
+	    \intertext{c) En aquest  cas  tenim una resistència de tres dígits significatius i sis bandes:}
+	   \begin{minipage}{1.8cm}
+	   	\includegraphics{Cap-Resistencies-R3.pdf}
+	   \end{minipage} \,  &
+	   \begin{cases}
+	   	\text{Resistència}: &\qty{542e4}{\ohm} = \qty{5,42}{\mega\ohm} \\
+	   	\text{Tolerància}:  &\qty{\pm 0,1}{\percent} \, \Rightarrow \, \qty{\pm 5,42}{\kilo\ohm} \\
+	   	\text{Coeficient de temperatura}:  & \qty[per-mode = symbol]{\pm 50e-6}{\per\kelvin} \, \Rightarrow \, \qty{\pm 271}{\ohm / K}
+   		\end{cases}
+   \end{align*}
+\end{exemple}
+
+\section{Valors estàndard}\label{sec:resistencies-series} \index{resistències!valors estàndard}
+
+Els valors de les resistències que es fabriquen estan estandarditzats segons la norma CEI 60063 \textit{Preferred number series for resistors and capacitors}.\index{CEI!60063-00@60063}
+
+Aquesta norma defineix diverses sèries de resistències, cadascuna amb un nombre diferent d'elements. Cada sèrie s'identifica amb la lletra «E» seguida d'un número que indica la quantitat  d'elements base que formen la sèrie. Els valors base que apareixen en cada sèrie són els valors òhmics d'una dècada determinada; multiplicant o dividint aquests valors per 10, s'obtenen tots els valors òhmics possibles.
+
+Cada sèrie té una tolerància màxima possible, de manera que quan s'aplica a un valor determinat, el resultat  obtingut no es pugui trepitjar amb el valor  següent o amb l'anterior.
+
+Les sèries E3, E6, E12 i E24, les quals tenen valors òhmics amb dos dígits significatius, es poden veure en les taules següents:
+
+\vspace{3mm}
+\begin{center}
+	\captionof{table}{Sèrie E3 --- Tolerància > 20 \%}
+	\begin{tabular}{ccc}
+		\toprule[1pt]
+		10 & 22 & 47   \\
+		\bottomrule[1pt]
+	\end{tabular}
+\end{center}
+
+\vspace{3mm}
+\begin{center}
+   \captionof{table}{Sèrie E6 --- Tolerància  20 \%}
+   \begin{tabular}{cccccc}
+   \toprule[1pt]
+   10 & 15 & 22 & 33 & 47 &  68  \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+
+\vspace{3mm}
+\begin{center}
+   \captionof{table}{Sèrie E12 --- Tolerància  10 \%}}
+   \begin{tabular}{cccccccccccc}
+   \toprule[1pt]
+   10 & 12 & 15 & 18 & 22 & 27 & 33 & 39 & 47 & 56 & 68 & 82 \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+
+\vspace{3mm}
+\begin{center}
+   \captionof{table}{Sèrie E24 --- Tolerància  5 \%}
+   \begin{tabular}{cccccccccccc}
+   \toprule[1pt]
+   10 & 11 & 12 & 13 & 15 & 16 & 18 & 20 & 22 & 24 & 27 & 30 \\
+   33 & 36 & 39 & 43 & 47 & 51 & 56 & 62 & 68 & 75 & 82 & 91 \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+
+Les sèries E48, E96 i E192, les quals tenen valors òhmics amb tres dígits significatius, es poden veure en les taules següents:
+
+\vspace{3mm}
+\begin{center}
+   \captionof{table}{Sèrie E48 --- Tolerància  2 \%}
+   \begin{tabular}{cccccccccccc}
+   \toprule[1pt]
+   100 & 105 & 110 & 115 & 121 & 127 & 133 & 140 & 147 & 154 & 162 & 169 \\
+   178 & 187 & 196 & 205 & 215 & 226 & 237 & 249 & 261 & 274 & 287 & 301 \\
+   316 & 332 & 348 & 365 & 383 & 402 & 422 & 442 & 464 & 487 & 511 & 536 \\
+   562 & 590 & 619 & 649 & 681 & 715 & 750 & 787 & 825 & 866 & 909 & 953 \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+
+\vspace{3mm}
+\begin{center}
+   \captionof{table}{Sèrie E96 --- Tolerància  1 \%}
+   \begin{tabular}{cccccccccccc}
+   \toprule[1pt]
+   100 & 102 & 105 & 107 & 110 & 113 & 115 & 118 & 121 & 124 & 127 & 130 \\
+   133 & 137 & 140 & 143 & 147 & 150 & 154 & 158 & 162 & 165 & 169 & 174 \\
+   178 & 182 & 187 & 191 & 196 & 200 & 205 & 210 & 215 & 221 & 226 & 232 \\
+   237 & 243 & 249 & 255 & 261 & 267 & 274 & 280 & 287 & 294 & 301 & 309 \\
+   316 & 324 & 332 & 340 & 348 & 357 & 365 & 374 & 383 & 392 & 402 & 412 \\
+   422 & 432 & 442 & 453 & 464 & 475 & 487 & 499 & 511 & 523 & 536 & 549 \\
+   562 & 576 & 590 & 604 & 619 & 634 & 649 & 665 & 681 & 698 & 715 & 732 \\
+   750 & 768 & 787 & 806 & 825 & 845 & 866 & 887 & 909 & 931 & 953 & 976 \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+
+\vspace{3mm}
+\begin{center}
+   \captionof{table}{Sèrie E192 --- Tolerància $\leq$ 0,5 \%}
+   \begin{tabular}{cccccccccccc}
+   \toprule[1pt]
+   100 & 101 & 102 & 104 & 105 & 106 & 107 & 109 & 110 & 111 & 113 & 114 \\
+   115 & 117 & 118 & 120 & 121 & 123 & 124 & 126 & 127 & 129 & 130 & 132 \\
+   133 & 135 & 137 & 138 & 140 & 142 & 143 & 145 & 147 & 149 & 150 & 152 \\
+   154 & 156 & 158 & 160 & 162 & 164 & 165 & 167 & 169 & 172 & 174 & 176 \\
+   178 & 180 & 182 & 184 & 187 & 189 & 191 & 193 & 196 & 198 & 200 & 203 \\
+   205 & 208 & 210 & 213 & 215 & 218 & 221 & 223 & 226 & 229 & 232 & 234 \\
+   237 & 240 & 243 & 246 & 249 & 252 & 255 & 258 & 261 & 264 & 267 & 271 \\
+   274 & 277 & 280 & 284 & 287 & 291 & 294 & 298 & 301 & 305 & 309 & 312 \\
+   316 & 320 & 324 & 328 & 332 & 336 & 340 & 344 & 348 & 352 & 357 & 361 \\
+   365 & 370 & 374 & 379 & 383 & 388 & 392 & 397 & 402 & 407 & 412 & 417 \\
+   422 & 427 & 432 & 437 & 442 & 448 & 453 & 459 & 464 & 470 & 475 & 481 \\
+   487 & 493 & 499 & 505 & 511 & 517 & 523 & 530 & 536 & 542 & 549 & 556 \\
+   562 & 569 & 576 & 583 & 590 & 597 & 604 & 612 & 619 & 626 & 634 & 642 \\
+   649 & 657 & 665 & 673 & 681 & 690 & 698 & 706 & 715 & 723 & 732 & 741 \\
+   750 & 759 & 768 & 777 & 787 & 796 & 806 & 816 & 825 & 835 & 845 & 856 \\
+   866 & 876 & 887 & 898 & 909 & 920 & 931 & 942 & 953 & 965 & 976 & 988 \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+
+
+\section{Potència} \index{resistències!potència}\label{sec:resist-pot}
+
+Les resistències tenen a més del valor òhmic, un altre paràmetre assignat: la potència màxima $P\ped{R}$ que poden dissipar.
+
+Els valors usuals de potència són: \qtylist[parse-numbers = false]{\frac{1}{4}; \frac{1}{2}; 1; 2; 5; 25}{W}.
+
+Per tal de no fer malbé una resistència, cal escollir un valor de potència superior al màxim que la resistència haurà de dissipar. Per tant, si el valor de la resistència és $R$ i la tensió  que haurà de suportar és $U\ped{R}$, caldrà escollir un valor de potència $P\ped{R}$ que compleixi:
+\begin{equation}
+  P\ped{R} > \frac{U\ped{R}^2}{R}
+\end{equation}

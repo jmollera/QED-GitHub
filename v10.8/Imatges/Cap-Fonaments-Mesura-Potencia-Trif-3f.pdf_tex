@@ -1,0 +1,75 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Cap-Fonaments-Mesura-Potencia-Trif-3f.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{396.85039062bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.25)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Cap-Fonaments-Mesura-Potencia-Trif-3f.pdf}}%
+    \put(0.17082652,0.12859407){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{I}\ped{B}$}}}%
+    \put(0.3499998,0.09999997){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{\footnotesize\textsf{W2}}}}}%
+    \put(0.60714331,0.10003583){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{\footnotesize\textsf{var2}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Cap-Fonaments-Mesura-Potencia-Trif-3f.pdf}}%
+    \put(0.17079927,0.04301908){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{I}\ped{C}$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Cap-Fonaments-Mesura-Potencia-Trif-3f.pdf}}%
+    \put(0.82849689,0.22014713){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{Z}\ped{A}$}}}%
+    \put(0.82860044,0.13456162){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{Z}\ped{B}$}}}%
+    \put(0.82919466,0.04854821){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{Z}\ped{C}$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{Cap-Fonaments-Mesura-Potencia-Trif-3f.pdf}}%
+    \put(0.95069059,0.09992787){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{N}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{Cap-Fonaments-Mesura-Potencia-Trif-3f.pdf}}%
+    \put(0.80000006,0.35482526){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.02190596,0.10640631){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{U}\ped{AC}$}}}%
+    \put(0.17107356,0.21399772){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\cmplx{I}\ped{A}$}}}%
+    \put(0.28571429,0.18575024){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{\footnotesize\textsf{W1}}}}}%
+    \put(0.54285715,0.18575024){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{{\footnotesize\textsf{var1}}}}}%
+    \put(0.09285715,0.06432167){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{$\cmplx{U}\ped{BC}$}}}%
+    \put(0.01389032,0.18575024){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{A}}}%
+    \put(0.08626058,0.10003592){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{B}}}%
+    \put(0.01458585,0.01448063){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{C}}}%
+  \end{picture}%
+\endgroup%

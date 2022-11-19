@@ -1,0 +1,157 @@
+%%Created by jPicEdt 1.4pre4: mixed JPIC-XML/LaTeX format
+%%Sat Jan 07 13:56:31 CET 2006
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="57" y-min="0" y-max="25" auto-bounding="false">
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(25,9.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$L_1$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(35,9.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$L_2$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(11,9.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$u_1(t)$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(49,9.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$u_2(t)$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(17,20.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$i_1(t)$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(43,20.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$i_2(t)$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(30,17)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$M$
+%</text>
+%<ellipse p1="(11,16.5)" p2="(13,16.5)" p3="(13,18.5)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<ellipse p1="(11,0.5)" p2="(13,0.5)" p3="(13,2.5)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<ellipse p1="(47,16.5)" p2="(49,16.5)" p3="(49,18.5)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<ellipse p1="(47,0.5)" p2="(49,0.5)" p3="(49,2.5)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(20,4.5)" p2="(24,4.5)" p3="(24,14.5)"
+%	 stroke-width="0.15"
+%	 fill-style="solid"
+%	 />
+%<parallelogram p1="(36,4.5)" p2="(40,4.5)" p3="(40,14.5)"
+%	 stroke-width="0.15"
+%	 fill-style="solid"
+%	 />
+%<multicurve points="(25.5,16);(25.5,16);(34.5,16);(34.5,16)"
+%	 stroke-width="0.25" stroke-style="dashed" stroke-dasharray="1;1"
+%	 fill-style="none"
+%	 left-arrow="head" right-arrow="head" />
+%<multicurve points="(13,17.5);(13,17.5);(22,17.5);(22,17.5);(22,17.5);(22,14.5);
+%	(22,14.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(47,17.5);(47,17.5);(38,17.5);(38,17.5);(38,17.5);(38,14.5);
+%	(38,14.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(47,1.5);(47,1.5);(38,1.5);(38,1.5);(38,1.5);(38,4.5);
+%	(38,4.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(13,1.5);(13,1.5);(22,1.5);(22,1.5);(22,1.5);(22,4.5);
+%	(22,4.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(14,19.5);(14,19.5);(21,19.5);(21,19.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(39,19.5);(39,19.5);(46,19.5);(46,19.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 left-arrow="head" />
+%<multicurve points="(12,15.5);(12,15.5);(12,3.5);(12,3.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(48,15.5);(48,15.5);(48,3.5);(48,3.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<ellipse p1="(23.25,15.25)" p2="(24.75,15.25)" p3="(24.75,16.75)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="solid"
+%	 />
+%<ellipse p1="(35.25,15.25)" p2="(36.75,15.25)" p3="(36.75,16.75)" angle-start="0" angle-end="360" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="solid"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PsTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(57,25)
+\rput[l](25,9.5){$L_1$}
+\rput[r](35,9.5){$L_2$}
+\rput[r](11,9.5){$u_1(t)$}
+\rput[l](49,9.5){$u_2(t)$}
+\rput[b](17,20.5){$i_1(t)$}
+\rput[b](43,20.5){$i_2(t)$}
+\rput[b](30,17){$M$}
+\rput{0}(12,17.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(12,1.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(48,17.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(48,1.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+\pspolygon[linewidth=0.15,fillstyle=solid](20,4.5)(24,4.5)(24,14.5)(20,14.5)
+\pspolygon[linewidth=0.15,fillstyle=solid](36,4.5)(40,4.5)(40,14.5)(36,14.5)
+\psline[linewidth=0.25,linestyle=dashed,dash=1 1]{<->}(25.5,16)(34.5,16)
+\psline[linewidth=0.25](13,17.5)(22,17.5)
+(22,17.5)(22,14.5)
+\psline[linewidth=0.25](47,17.5)(38,17.5)
+(38,17.5)(38,14.5)
+\psline[linewidth=0.25](47,1.5)(38,1.5)
+(38,1.5)(38,4.5)
+\psline[linewidth=0.25](13,1.5)(22,1.5)
+(22,1.5)(22,4.5)
+\psline[linewidth=0.25]{->}(14,19.5)(21,19.5)
+\psline[linewidth=0.25]{<-}(39,19.5)(46,19.5)
+\psline[linewidth=0.25]{->}(12,15.5)(12,3.5)
+\psline[linewidth=0.25]{->}(48,15.5)(48,3.5)
+\rput{0}(24,16){\psellipse[linewidth=0.25,fillstyle=solid](0,0)(0.75,0.75)}
+\rput{0}(36,16){\psellipse[linewidth=0.25,fillstyle=solid](0,0)(0.75,0.75)}
+\end{pspicture}

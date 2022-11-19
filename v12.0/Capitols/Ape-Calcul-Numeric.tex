@@ -1,0 +1,399 @@
+\addtocontents{xms}{\protect\addvspace{10pt}}
+\chapter{Càlcul Numèric} \index{càlcul numèric}
+
+\section{Interpolació mitjançant polinomis de Lagrange}\index{interpolació}\index{polinomis de Lagrange}
+\label{sec:poli_lagr}
+
+Es descriuen en aquesta secció els polinomis de Lagrange, i el seu ús en la interpolació de dades.
+
+Un polinomi d'interpolació de Lagrange $P(x)$, és un polinomi de grau $n-1$ que passa exactament per $n$ punts:
+$(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)$. Aquest polinomi és definit per l'expressió:
+\begin{equation}
+  P(x) = \sum_{i=1}^{n}  y_i L_i(x) \label{eq:poly_lag_1}
+\end{equation}
+
+On $L_i(x)$ són les anomenades funcions de Lagrange, calculades segons l'expressió:
+\begin{equation}
+  L_i(x) = \prod_{\substack{k=1 \\ k\neq i}}^{n} \frac{x-x_k}{x_i-x_k} \label{eq:poly_lag_2}
+\end{equation}
+
+Es donen a continuació les fórmules explícites per a $n = 2$, $n=3$ i $n=4$:
+
+\begin{itemize}
+    \item \textbf{Interpolació lineal} $\boldsymbol{(n=2)}$ \index{interpolació!lineal}
+    \begin{equation}\label{eq:interp_lin}
+      P(x) = \frac{x-x_2}{x_1-x_2}\, y_1 + \frac{x-x_1}{x_2-x_1}\, y_2 = y_1 + (x-x_1) \frac{y_2-y_1}{x_2-x_1}
+    \end{equation}
+
+    \item \textbf{Interpolació quadràtica} $\boldsymbol{(n=3)}$ \index{interpolació!quadràtica}
+    \begin{equation}
+      P(x) = \frac{(x-x_2)(x-x_3)}{(x_1-x_2)(x_1-x_3)}\, y_1 + \frac{(x-x_1)(x-x_3)}{(x_2-x_1)(x_2-x_3)}\, y_2 +
+      \frac{(x-x_1)(x-x_2)}{(x_3-x_1)(x_3-x_2)}\, y_3
+    \end{equation}
+
+    \item \textbf{Interpolació cúbica} $\boldsymbol{(n=4)}$ \index{interpolació!cúbica}
+    \begin{equation}\begin{split}\label{eq:interp_cub}
+      P(x) &= \frac{(x-x_2)(x-x_3)(x-x_4)}{(x_1-x_2)(x_1-x_3)(x_1-x_4)}\, y_1 +
+              \frac{(x-x_1)(x-x_3)(x-x_4)}{(x_2-x_1)(x_2-x_3)(x_2-x_4)}\, y_2 + {} \\[1.5ex]
+           &+ \frac{(x-x_1)(x-x_2)(x-x_4)}{(x_3-x_1)(x_3-x_2)(x_3-x_4)}\, y_3 +
+              \frac{(x-x_1)(x-x_2)(x-x_3)}{(x_4-x_1)(x_4-x_2)(x_4-x_3)}\, y_4
+    \end{split}\end{equation}
+\end{itemize}
+
+
+L'error en la interpolació dependrà molt del tipus de dades que tinguem i del grau del polinomi que utilitzem. Si els punts que volem interpolar estan molt junts o si la seva gràfica és suau, n'hi haurà prou amb una interpolació lineal. D'altra banda, si els punts estan molt separats o si la seva gràfica dista molt de ser lineal, serà millor emprar polinomis de grau superior.
+
+
+\begin{exemple}[Interpolació lineal i cúbica]
+	\addcontentsxms{Interpolació lineal i cúbica}
+    En la taula següent hi ha quatre punts de la funció $y = \sin x$, al voltant de $x=\frac{\pi}{2}\approx\num{1,57}$. Es tracta de trobar el valor de $\sin \frac{\pi}{2}$ mitjançant una interpolació lineal i una de cúbica.
+    \vspace{-8mm}
+    \begin{center}
+        \[\begin{array}{ccc}
+           \toprule[1pt]
+              \text{Punt} & x  & y \\
+           \midrule
+              1 & \num{1,2} & \num{0,9320} \\
+              2 & \num{1,4} & \num{0,9854} \\
+              3 & \num{1,6} & \num{0,9996} \\
+              4 & \num{1,8} & \num{0,9738} \\
+           \bottomrule[1pt]
+        \end{array} \]
+    \end{center}
+
+    Fem primer la interpolació lineal a $x= \frac{\pi}{2}$, utilitzant l'equació \eqref{eq:interp_lin} amb els punts 2 i 3:
+    \[ P\left(\tfrac{\pi}{2}\right) = \num{0,9854}+\left(\frac{\pi}{2}-\num{1,4}\right)\times\frac{\num{0,9996}-\num{0,9854}}{\num{1,6}-\num{1,4}}=
+    \num{0,9975} \]
+
+    A continuació fem la interpolació cúbica a $x= \frac{\pi}{2}$, utilitzant l'equació \eqref{eq:interp_cub} amb els punts 1, 2, 3 i 4:
+    \[\begin{split}
+      P\left(\tfrac{\pi}{2}\right) &= \frac{(\tfrac{\pi}{2}-\num{1,4})(\tfrac{\pi}{2}-\num{1,6})(\tfrac{\pi}{2}-\num{1,8})}{(\num{1,2}-\num{1,4})(\num{1,2}-\num{1,6})(\num{1,2}-\num{1,8})}\, \num{0,9320} +
+              \frac{(\tfrac{\pi}{2}-\num{1,2})(\tfrac{\pi}{2}-\num{1,6})(\tfrac{\pi}{2}-\num{1,8})}{(\num{1,4}-\num{1,2})(\num{1,4}-\num{1,6})(\num{1,4}-\num{1,8})}\, \num{0,9854} + {} \\[1.5ex]
+           &+ \frac{(\tfrac{\pi}{2}-\num{1,2})(\tfrac{\pi}{2}-\num{1,4})(\tfrac{\pi}{2}-\num{1,8})}{(\num{1,6}-\num{1,2})(\num{1,6}-\num{1,4})(\num{1,6}-\num{1,8})}\, \num{0,9996}+
+              \frac{(\tfrac{\pi}{2}-\num{1,2})(\tfrac{\pi}{2}-\num{1,4})(\tfrac{\pi}{2}-\num{1,6})}{(\num{1,8}-\num{1,2})(\num{1,8}-\num{1,4})(\num{1,8}-\num{1,6})}\, \num{0,9738} = {} \\[1.5ex]
+           &= \num{1,0000}
+    \end{split}\]
+
+
+    Com era d'esperar, la interpolació cúbica dona un valor més exacte.
+\end{exemple}
+
+En el cas de tenir dades bidimensionals, és a dir, una matriu de valors que depenen de dues variables, també podem aplicar la interpolació  mitjançant polinomis de Lagrange, interpolant primer respecte d'una variable i després respecte de l'altra. Amb l'exemple següent es pot veure com s'aplica aquest mètode.
+
+
+\begin{exemple}[Interpolació en dues dimensions]
+	\addcontentsxms{Interpolació en dues dimensions}
+    Utilitzarem un exemple de \cite{EJB}. En la taula següent tenim uns valors que representen la viscositat dinàmica d'un líquid expressada en centipoise, segons dues variables: la concentració de glicol etilè
+    expressada en tant per cent, i la temperatura expressada en graus Fahrenheit.
+
+    \begin{center}
+       \begin{tabular}{ccccc}
+       \multicolumn{5}{c}{Viscositat dinàmica/cP}\\
+       \toprule[1pt]
+       \multirow{2}{25mm}{\rule{0mm}{4.5mm}Temperatura} & \multicolumn{4}{c}{Concentració}\\
+       \cmidrule(rl){2-5}
+                            & \SI{40}{\percent} & \SI{50}{\percent} & \SI{60}{\percent} & \SI{70}{\percent} \\
+       \cmidrule(lr){1-5}
+       \SI{60}{\degree{}F}  & \num{3,38}  & \num{4,55}  & \num{6,33}  & \num{8,97} \\
+       \SI{70}{\degree{}F}  & \num{2,87}  & \num{3,81}  & \num{5,17}  & \num{7,22} \\
+       \SI{80}{\degree{}F}  & \num{2,46}  & \num{3,23}  & \num{4,28}  & \num{5,88} \\
+       \SI{90}{\degree{}F}  & \num{2,13}  & \num{2,76}  & \num{3,58}  & \num{4,85} \\
+       \bottomrule[1pt]
+       \end{tabular}
+    \end{center}
+
+    Es tracta de trobar el valor de la viscositat dinàmica del líquid per a una concentració de glicol etilè
+    del \SI{56,3}{\percent} i una temperatura de \SI{76}{\degree{}F}.
+
+    Donat que tenim dades suficients, podríem utilitzar una interpolació cúbica, no obstant farem servir una interpolació lineal, per tal de simplificar els càlculs, utilitzant les dades corresponents  a les concentracions de glicol etilè del  \SIlist{50;60}{\percent}, i a les temperatures de  \SIlist{70;80}{\degree{}F}.
+
+    Interpolem primer el valor de la viscositat dinàmica $v_{70}$ corresponent a una concentració del \SI{56,3}{\percent}, utilitzant els valors de la fila de temperatura igual a  \SI{70}{\degree{}F}:
+    \[
+         v_{70}=\SI{3,81}{cP}+(\SI{56,3}{\percent}-\SI{50}{\percent})\times
+         \frac{\SI{5,17}{cP}-\SI{3,81}{cP}}{\SI{60}{\percent}-\SI{50}{\percent}}=\SI{4,6668}{cP}
+    \]
+
+    Interpolem a continuació el valor de la viscositat dinàmica $v_{80}$ corresponent a una concentració del \SI{56,3}{\percent}, utilitzant els valors de la fila de temperatura igual a  \SI{80}{\degree{}F}:
+    \[
+         v_{80} =\SI{3,23}{cP}+(\SI{56,3}{\percent}-\SI{50}{\percent})\times
+         \frac{\SI{4,28}{cP}-\SI{3,23}{cP}}{\SI{60}{\percent}-\SI{50}{\percent}}=\SI{3,8915}{cP}
+    \]
+
+    Finalment, a partir d'aquests dos valors calculats, interpolem la viscositat dinàmica $v$ corresponent  a una temperatura de
+    \SI{76}{\degree{}F}.
+    \[
+         v =\SI{4,6668}{cP}+(\SI{76}{\degree{}F}-\SI{70}{\degree{}F})\times
+         \frac{\SI{3,8915}{cP}-\SI{4,6668}{cP}}{\SI{80}{\degree{}F}-\SI{70}{\degree{}F}}=\SI{4,20}{cP}
+    \]
+
+\end{exemple}
+
+\section{Integració}\index{integració}\label{sec:int-mum}
+
+Es descriuen en aquesta secció diversos mètodes d'integració numèrica de funcions, ja sigui coneixent només una sèrie de punts de la funció: $(x_1, y_1), (x_2, y_2), \dots ,(x_n, y_n)$, o ja sigui coneixent-ne l'expressió explícita: $y=f(x)$. La integració de la funció entre $x_1$ i $x_n$, ens donarà l'àrea $A$ existent entre la funció i l'eix d'abscisses.
+
+ \begin{equation}
+    A = \int_{x_1}^{x_n} f(x) \diff x
+ \end{equation}
+
+\subsection{Regla dels trapezis}\index{integració!regla dels trapezis}
+
+Aquest mètode serveix per a qualsevol nombre de punts $n$ de la funció que es vol integrar, amb $n \geq 2$.
+
+L'àrea $A$ entre el punt inicial $(x_1, y_1)$ i el punt final $(x_n, y_n)$, és definida per l'equació:
+
+ \begin{equation}\label{eq:trap-uneven}
+    A = \sum_{i=1}^{n-1} \frac{y_i + y_{i+1}}{2} (x_{i+1}-x_i)
+ \end{equation}
+
+En el cas que els $n$ punts estiguin separats uniformement una distància $h = (x_2-x_1) = (x_3-x_2) = \dots = (x_n-x_{n-1})$, la regla dels trapezis esdevé:
+
+ \begin{equation}\label{eq:trap}
+    A = \frac{h}{2} \left( y_1 + y_n + 2 \sum_{i=2}^{n-1} y_i \right)
+ \end{equation}
+
+Si coneixem l'expressió explícita $y=f(x)$ de la funció que volem integrar entre els punts $x=a$ i $x=b$, podem fixar el nombre de punts $n$ que volem utilitzar, i llavors el valor $h$ queda definit per l'equació:
+\begin{equation}\label{eq:trap_1}
+    h = \frac{b-a}{n-1}\\
+\end{equation}
+
+Tanmateix, les abscisses $x_1, x_2, x_3,x_4, \dotsc , x_n$ que haurem d'utilitzar, són:
+\begin{align}\label{eq:trap_2}
+    x_1 &= a \notag\\
+    x_2 &= a + h \notag\\
+    x_3 &= a + 2 h \notag\\
+    x_4 &= a + 3 h\\
+    {} &\hspace{1.5ex}\vdots {} \notag\\
+    x_n &= a + (n-1)h =b \notag
+\end{align}
+
+L'ordre de l'error d'integració de la regla dels trapezis és: $O(h^2)$. És a dir, una divisió de $h$ per 2, ocasiona una divisió per 4 de l'error.
+
+\subsection{Regla de Simpson 1/3}\index{integració!regla de Simpson 1/3}
+
+Aquest mètode serveix per a un nombre senar de punts $n$ de la funció que es vol integrar, amb $n \geq 3$. A més, els punts han d'estar separats uniformement una distància $h = (x_2-x_1) = (x_3-x_2) = \dots = (x_n-x_{n-1})$.
+
+L'àrea $A$ entre el punt inicial $(x_1, y_1)$ i el punt final $(x_n, y_n)$, és definida per l'equació:
+
+ \begin{equation}\label{eq:simp_1_3}
+   A =  \frac{h}{3} \sum_{i=1,3,5\dots}^{n-2} \hspace{-0.5em} \big( y_i + 4 y_{i+1} + y_{i+2} \big) =
+   \frac{h}{3} \left( y_1 + y_n + 4 \hspace{-0.5em} \sum_{i=2,4,6\dots}^{n-1} \hspace{-0.5em} y_i +
+   2 \hspace{-0.5em} \sum_{j=3,5,7\dots}^{n-2} \hspace{-0.5em} y_j \right)
+ \end{equation}
+
+Les equacions \eqref{eq:trap_1} i \eqref{eq:trap_2}, descrites en la regla dels trapezis, també es poden utilitzar en aquest mètode quan  coneixem l'expressió explícita $y=f(x)$ de la funció que volem integrar entre els punts $x=a$ i $x=b$, i volem fixar el nombre de punts $n$.
+
+L'ordre de l'error d'integració de la regla de Simpson 1/3 és: $O(h^4)$. És a dir, una divisió de $h$ per 2, ocasiona una divisió per 16 de l'error.
+
+ \subsection{Regla de Simpson 3/8}\index{integració!regla de Simpson 3/8}
+
+Aquest mètode serveix per a un nombre parell de punts $n$ de la funció que es vol integrar, amb $n \geq 4$. A més, els punts han d'estar separats uniformement una distància $h = (x_2-x_1) = (x_3-x_2) = \dots = (x_n-x_{n-1})$.
+
+L'àrea $A$ entre el punt inicial $(x_1, y_1)$ i el punt final $(x_n, y_n)$, és definida per l'equació:
+
+ \begin{equation}\label{eq:simp_3_8}
+   A =  \frac{3h}{8} \sum_{i=1}^{n} \big( y_i + 3 y_{i+1} + 3 y_{i+2} + y_{i+3}\big)
+ \end{equation}
+
+ Les equacions \eqref{eq:trap_1} i \eqref{eq:trap_2}, descrites en la regla dels trapezis, també es poden utilitzar en aquest mètode quan  coneixem l'expressió explícita $y=f(x)$ de la funció que volem integrar entre els punts $x=a$ i $x=b$, i volem fixar el nombre de punts $n$.
+
+ L'ordre de l'error d'integració de la regla de Simpson 3/8 és: $O(h^4)$. En ser del mateix ordre que el de la regla de Simpson 1/3, la regla de Simpson 3/8 només s'usa quan $n$ és parell per avaluar la integral per a $x_1$, $x_2$, $x_3$ i $x_4$, utilitzant la regla de Simpson 1/3 per avaluar la resta de la integral per a  $x_4, x_5, \dotsc , x_n$.
+
+
+\begin{exemple}[Integració numèrica d'una funció]
+	\addcontentsxms{Integració numèrica d'una funció}
+    Es tracta de calcular numèricament la integral $\int_1^2 \frac{1}{x} \diff x$, utilitzant les regles dels trapezis i de Simpson.
+
+    Calculem primer el valor exacte d'aquesta integral, per tal de poder-lo comparar amb els que obtindrem  numèricament:
+    \[
+      \int_1^2 \frac{1}{x} \diff x = \ln x \Bigr|_{x=1}^{x=2} = \ln 2 - \ln 1 = \ln 2 = \num{0,6931}
+    \]
+
+    Si utilitzem sis punts ($n=6$), tindrem a partir de l'equació \eqref{eq:trap_1} una distància $h$ entre punts de:
+    \[
+        h = \frac{2-1}{6-1} = \num{0,2}
+    \]
+
+    Els valors $x_i$ i $y_i$ que utilitzarem, són doncs:
+    \vspace{-8mm}
+    \begin{center}
+        \[\begin{array}{ccc}
+           \toprule[1pt]
+              i & x_i  & y_i = 1/x_i \\
+           \midrule
+              1 & \num{1,0} & \num{1,0000} \\
+              2 & \num{1,2} & \num{0,8333} \\
+              3 & \num{1,4} & \num{0,7143} \\
+              4 & \num{1,6} & \num{0.6250} \\
+              5 & \num{1,8} & \num{0.5556} \\
+              6 & \num{2,0} & \num{0,5000} \\
+           \bottomrule[1pt]
+        \end{array} \]
+    \end{center}
+
+    \pagebreak
+    Utilitzant la regla dels trapezis, equació \eqref{eq:trap}, tenim:
+
+    \[
+        \int_1^2 \frac{1}{x} \diff x \approx \frac{\num{0,2}}{2} \big(\num{1,0000}+\num{0,5000} +2 \times(\num{0,8333}+ \num{0,7143} +
+        \num{0,6250} + \num{0,5556}) \big) = \num{0,6956}
+    \]
+
+    Utilitzant la regla de Simpson 3/8 entre $x_1$ i $x_4$, equació \eqref{eq:simp_3_8}, i la  regla de Simpson 1/3 entre $x_4$ i $x_6$, equació \eqref{eq:simp_1_3}, tenim:
+    \[\begin{split}
+        \int_1^2 \frac{1}{x} \diff x &\approx \frac{3\times\num{0,2}}{8} \big(\num{1,0000}+3\times\num{0,8333} +3\times \num{0,7143} +
+        \num{0,6250} \big) +{}\\[0.5em]
+        {}&+ \frac{\num{0,2}}{3} \big(\num{0,6250} +4\times \num{0,5556} + \num{0,5000} \big)
+        = \num{0,6932}
+    \end{split}\]
+
+    Com era d'esperar, l'aplicació conjunta de les regles de Simpson 3/8 i 1/3 dona un resultat més precís que la regla dels trapezis.
+\end{exemple}
+
+
+\section{Solució de funcions no lineals}\index{funcions no lineals!solució}\label{sec:func-no-lin}
+
+Es descriuen en aquesta secció dos mètodes de resolució de funcions no lineals, és a dir, es vol resoldre l'equació: \begin{equation}
+   f(x) = 0 \end{equation}
+
+Els mètodes descrits són el de Newton i el de la recta secant. Ambdós mètodes són iteratius i tenen una convergència cap a la solució força ràpida. El mètode de Newton requereix un valor inicial aproximat de la solució, i el mètode de la recta secant en requereix dos.
+
+El millor mètode per obtenir valors inicials aproximats de la solució és dibuixar la funció i localitzar-ne visualment el punt on talla l'eix d'abscisses. Si els valors inicials aproximats utilitzats per iniciar la iteració són massa lluny de la solució real, pot ser que el procés iteratiu no convergeixi.
+
+
+\subsection{Mètode de Newton}\index{funcions no lineals!mètode de Newton}
+
+Aquest mètode, que requereix el càlcul de la funció derivada $f'(x)$, s'iŀlustra en la Figura \vref{pic:metode-newton}.
+
+A partir d'un punt $x_{i-1}$, es calcula $f(x_{i-1})$ i es traça la recta tangent a la funció $f(x)$ en aquest punt, per a la qual cosa cal conèixer la funció derivada $f'(x)$. A continuació es calcula la intersecció d'aquesta recta amb l'eix d'abscisses, obtenint el nou punt $x_i$. El procés es repeteix calculant $f(x_i)$, traçant una nova recta tangent en aquest punt, i trobant la nova intersecció amb l'eix d'abscisses; seguint aquest procés ens aproparem cada vegada més a la solució $x_n$, on es compleix $f(x_n)=0$.
+
+\begin{center}
+    \input{Imatges/Ape-Calcul-Numeric-Newton.pdf_tex}
+    \captionof{figure}{Mètode de Newton}
+    \label{pic:metode-newton}
+\end{center}
+
+El procés iteratiu és el següent:
+
+\begin{dingautolist}{'312}
+    \item Es parteix d'un valor aproximat de la solució: $x_0$.
+
+    \item   S'aplica de manera successiva l'equació:
+            \begin{equation}\label{eq:newton}
+              x_i = x_{i-1} - \frac{f(x_{i-1})}{f'(x_{i-1})} \qquad\qquad (i=1,2,3,\dots,\infty)
+            \end{equation}
+
+    \item   El procés s'atura quan es compleix una de les condicions següents, o quan es compleixen ambdues condicions alhora:
+            \begin{subequations}\begin{align}
+              |x_i - x_{i-1}| &\leq \varepsilon_1 \\
+              |f(x_i)| &\leq \varepsilon_2
+            \end{align}\end{subequations}
+
+            On $\varepsilon_1$ i $\varepsilon_2$ són dos valors positius petits, els quals es fixen en funció de la precisió que es vulgui assolir en la solució.
+\end{dingautolist}
+
+
+
+\subsection{Mètode de la recta secant}\index{funcions no lineals!mètode la recta secant}
+
+Aquest mètode s'iŀlustra en la Figura \vref{pic:metode-secant}. S'utilitza en lloc del mètode de Newton quan el càlcul de  la funció derivada $f'(x)$ és molt complex, o quan no és possible fer-ho analíticament; en contrapartida, la convergència cap a la solució real és una
+mica més lenta.
+
+A partir de dos punts $x_{i-2}$ i $x_{i-1}$, es calcula $f(x_{i-2})$ i $f(x_{i-1})$ i es traça la recta secant a la funció $f(x)$ que passa per aquests dos punts. A continuació es calcula la intersecció d'aquesta recta amb l'eix d'abscisses, obtenint el nou punt $x_i$. El procés es repeteix calculant $f(x_i)$, traçant una nova recta secant que passi per aquest punt i l'anterior, i trobant la nova intersecció amb l'eix d'abscisses; seguint aquest procés ens aproparem cada vegada més a la solució $x_n$, on es compleix $f(x_n)=0$.
+
+\begin{center}
+    \input{Imatges/Ape-Calcul-Numeric-secant.pdf_tex}
+    \captionof{figure}{Mètode de la recta secant}
+    \label{pic:metode-secant}
+\end{center}
+
+
+El procés iteratiu és el següent:
+
+\begin{dingautolist}{'312}
+    \item Es parteix de dos valors aproximats de la solució: $x_0$ i $x_1$.
+
+    \item   S'aplica de manera successiva l'equació:
+            \begin{equation}\label{eq:secant-1}
+              x_i = x_{i-1} - \frac{f(x_{i-1})}{g'(x_{i-1})} \qquad\qquad (i=2,3,4,\dots,\infty)
+            \end{equation}
+
+            On:
+            \begin{equation}\label{eq:secant-2}
+              g'(x_{i-1}) = \frac{f(x_{i-1}) - f(x_{i-2}) } {x_{i-1} - x_{i-2}} \qquad (i=2,3,4,\dots,\infty)
+            \end{equation}
+
+    \item   El procés s'atura quan es compleix una de les condicions següents, o quan es compleixen ambdues condicions alhora:
+            \begin{subequations}\begin{align}
+              |x_i - x_{i-1}| &\leq \varepsilon_1 \\
+              |f(x_i)| &\leq \varepsilon_2
+            \end{align}\end{subequations}
+
+            On $\varepsilon_1$ i $\varepsilon_2$ són dos valors positius petits, els quals es fixen en funció de la precisió que es vulgui assolir en la solució.
+\end{dingautolist}
+
+
+\begin{exemple}[Solució d'una funció no lineal]
+	\addcontentsxms{Solució d'una funció no lineal}
+    Utilitzant la funció $i(t)$ obtinguda en exemple \vref{ex:cc-RL}, es tracta de calcular el punt proper a $t = \SI{20}{ms}$, on es compleix $i(t)=0$. Per tal d'adoptar la nomenclatura d'aquesta secció, substituïm $i(t)$ i $t$, per $f(x)$ i $x$ respectivament; l'equació que volem resoldre és doncs:
+    \[
+        f(x) = \num{35953,6865}\sin(\num{314,1593}\,x-\num{1,5136}) + \num{35894,8169}\,\eu^{-18 x} = 0
+    \]
+
+    Per tal de poder utilitzar el mètode de Newton, comencem calculant la funció derivada:
+    \begin{align*}
+        f'(x) &= \num{314,1593}\times\num{35953,6865}\cos(\num{314,1593}\,x-\num{1,5136}) -18\times \num{35894,8169}\,\eu^{-18 x}= \\
+        {} &= \num{11295184,9833}\cos(\num{314,1593}\,x-\num{1,5136}) - \num{646106,7042}\,\eu^{-18 x}
+    \end{align*}
+
+    Observant la gràfica de l'exemple \vref{ex:cc-RL}, prenem com a  aproximació inicial de la solució el valor: $x_0 = \num{0,015}$.
+
+    A continuació, utilitzant l'equació \eqref{eq:newton}, creem la taula següent:
+
+\begin{center}
+   \centering
+   \begin{tabular}{S[table-format=1.0]S[table-format=2.9]S[table-format=2.2e+2]
+   S[table-format=2.5e+2]S[table-format=+3.5e+2]}
+   \toprule[1pt]
+        {$i$} & {$x_i$}  & {$|x_i - x_{i-1}|$} & {$f(x_i)$} & {$f'(x_i)$} \\
+   \midrule
+        0 &	0,015000000 &	{}       & 2,53461E+04	& -1,17699E+07 \\
+        1 &	0,017153456 &	2,15E-03 & 2,28349E+03	& -8,86324E+06 \\	
+        2 &	0,017411093 &	2,58E-04 & 8,14612E+01	& -8,22205E+06 \\	
+        3 &	0,017421000 &	9,91E-06 & 1,27243E-01	& -8,19635E+06 \\	
+        4 &	0,017421016 &	1,55E-08 & 3,13004E-07	& -8,19631E+06 \\	
+        5 &	0,017421016 &	0        & 0           	& -8,19631E+06 \\	
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+
+Després de cinc iteracions trobem la solució buscada: $x=\num{0,017421016}$
+
+Fem ara el mateix càlcul utilitzant el mètode de la recta secant. Prenem com a  aproximacions inicials de la solució els valors: $x_0 = \num{0,015}$ i $x_1 = \num{0,016}$.
+
+ A continuació, utilitzant les equacions \eqref{eq:secant-1} i \eqref{eq:secant-2}, creem la taula següent:
+
+\begin{center}
+   \centering
+   \begin{tabular}{S[table-format=1.0]S[table-format=2.9]S[table-format=2.2e+2]
+   S[table-format=2.5e+2]S[table-format=+3.5e+2]}
+   \toprule[1pt]
+        {$i$} & {$x_i$}  & {$|x_i - x_{i-1}|$} & {$f(x_i)$} & {$g'(x_i)$} \\
+   \midrule
+       0	&  0,015000000 & {}       & 2,53461E+04 & {}             \\
+       1	&  0,016000000 & 1,00E-03 & 1,38657E+04 & -1,14804E+07 \\
+       2	&  0,017207777 & 1,21E-03 & 1,80558E+03 & -9,98539E+06 \\
+       3	&  0,017388599 & 1,81E-04 & 2,67062E+02 & -8,50846E+06 \\
+       4	&  0,017419987 & 3,14E-05 & 8,43851E+00 & -8,23961E+06 \\
+       5	&  0,017421011 & 1,02E-06 & 4,29711E-02 & -8,19765E+06 \\
+       6	&  0,017421016 & 5,24E-09 & 7,00743E-06 & -8,19632E+06 \\
+       7	&  0,017421016 & 0        & 0           & -8,19632E+06 \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+
+
+Després de set iteracions trobem la solució buscada: $x=\num{0,017421016}$
+
+
+\end{exemple} 

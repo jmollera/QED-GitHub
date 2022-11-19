@@ -1,0 +1,226 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Tue Mar 26 19:32:00 CET 2013
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="106" y-min="0" y-max="37" auto-bounding="false">
+%<parallelogram p3= "(83,32)"
+%	 p2= "(73,32)"
+%	 p1= "(73,28)"
+%	 fill-style= "none"
+%	 />
+%<parallelogram p3= "(17,7)"
+%	 p2= "(17,17)"
+%	 p1= "(13,17)"
+%	 fill-style= "none"
+%	 />
+%<ellipse p3= "(21,33)"
+%	 p2= "(21,21)"
+%	 p1= "(9,21)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<g>
+%<multicurve fill-style= "none"
+%	 points= "(13,3);(13,3);(17,3);(17,3)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(14,2);(14,2);(16,2);(16,2)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(14.5,1);(14.5,1);(15.5,1);(15.5,1)"
+%	 />
+%</g>
+%<multicurve fill-style= "none"
+%	 points= "(15,3);(15,3);(15,7);(15,7)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(15,31);(15,31);(15,27);(15,27)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(15,27);(15,27);(18,25);(18,25)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(15,27);(15,27);(12,25);(12,25)"
+%	 />
+%<multicurve fill-style= "none"
+%	 left-arrow= "disk-centered"
+%	 points= "(15,27);(15,27);(15,17);(15,17)"
+%	 />
+%<ellipse p3= "(31,33)"
+%	 p2= "(31,21)"
+%	 p1= "(19,21)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(25,31);(25,31);(25,27);(25,27)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(25,27);(25,27);(28,25);(28,25)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(25,27);(25,27);(22,25);(22,25)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(31,27);(31,27);(36,27);(36,27)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(9,27);(9,27);(4,27);(4,27)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(12,12)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$\cmplx{z}\ped{N1}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(37.5,27)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%2
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(2.5,27)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%1
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(20,33)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{z}_0$
+%</text>
+%<parallelogram p3= "(69,32)"
+%	 p2= "(59,32)"
+%	 p1= "(59,28)"
+%	 fill-style= "none"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(83,30);(83,30);(87,30);(87,30)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(69,30);(69,30);(73,30);(73,30)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 left-arrow= "disk-centered"
+%	 points= "(97,30);(97,30);(102,30);(102,30)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(103.5,30)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%2
+%</text>
+%<multicurve right-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(59,30);(59,30);(54,30);(54,30)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(52.5,30)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%1
+%</text>
+%<multicurve right-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 left-arrow= "disk-centered"
+%	 points= "(54,21);(54,21);(102,21);(102,21)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(52.5,21)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%0
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(103.5,21)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%0
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(78,33)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$\cmplx{z}_0$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(64,33)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$3\cmplx{z}\ped{N1}$
+%</text>
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(106,37)
+\pspolygon[](73,28)(73,32)(83,32)(83,28)
+\pspolygon[](13,17)(17,17)(17,7)(13,7)
+\rput{0}(15,27){\psellipse[](0,0)(6,6)}
+\psline(13,3)(17,3)
+\psline(14,2)(16,2)
+\psline(14.5,1)(15.5,1)
+\psline(15,3)(15,7)
+\psline(15,31)(15,27)
+\psline(15,27)(18,25)
+\psline(15,27)(12,25)
+\psline{*-}(15,27)(15,17)
+\rput{0}(25,27){\psellipse[](0,0)(6,6)}
+\psline(25,31)(25,27)
+\psline(25,27)(28,25)
+\psline(25,27)(22,25)
+\psline{-*}(31,27)(36,27)
+\psline{-*}(9,27)(4,27)
+\rput[r](12,12){$\cmplx{z}\ped{N1}$}
+\rput[l](37.5,27){2}
+\rput[r](2.5,27){1}
+\rput[b](20,33){$\cmplx{z}_0$}
+\pspolygon[](59,28)(59,32)(69,32)(69,28)
+\psline{-*}(83,30)(87,30)
+\psline(69,30)(73,30)
+\psline{*-*}(97,30)(102,30)
+\rput[l](103.5,30){2}
+\psline{-*}(59,30)(54,30)
+\rput[r](52.5,30){1}
+\psline{*-*}(54,21)(102,21)
+\rput[r](52.5,21){0}
+\rput[l](103.5,21){0}
+\rput[b](78,33){$\cmplx{z}_0$}
+\rput[b](64,33){$3\cmplx{z}\ped{N1}$}
+\end{pspicture}

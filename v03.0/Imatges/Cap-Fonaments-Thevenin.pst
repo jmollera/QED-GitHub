@@ -1,0 +1,377 @@
+%%Created by jPicEdt 1.4.1: mixed JPIC-XML/LaTeX format
+%%Sun Jan 21 10:37:12 CET 2007
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="1" x-max="147" y-min="1" y-max="27" auto-bounding="false">
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(9,20)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%$\alpha$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(21,12)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{U}\ped{o}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(9,4)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%$\beta$
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(12,20);(12,20);(19,20);(19,20)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(12,4);(12,4);(19,4);(19,4)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(7.5,12)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{Z}_{\alpha\beta}$
+%</text>
+%<multicurve stroke-style= "dashed"
+%	 stroke-dasharray= "1;1"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(1,1);(1,1);(14,1);(14,1);(14,1);(14,23);
+%	(14,23);(14,23);(1,23);(1,23);(1,23);(1,1)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(20,18);(20,18);(20,6);(20,6)"
+%	 />
+%<circle closure= "plain"
+%	 p3= "(12,20)"
+%	 p1= "(10,20)"
+%	 fill-style= "none"
+%	 p2= "(11,19)"
+%	 />
+%<circle closure= "plain"
+%	 p3= "(12,4)"
+%	 p1= "(10,4)"
+%	 fill-style= "none"
+%	 p2= "(11,3)"
+%	 />
+%<circle closure= "plain"
+%	 p3= "(21,4)"
+%	 p1= "(19,4)"
+%	 fill-style= "none"
+%	 p2= "(20,3)"
+%	 />
+%<circle closure= "plain"
+%	 p3= "(21,20)"
+%	 p1= "(19,20)"
+%	 fill-style= "none"
+%	 p2= "(20,19)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(61,20)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%$\alpha$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(76,12)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{Z}\ped{Q}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(61,4)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%$\beta$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(59.5,12)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%
+%</text>
+%<multicurve stroke-style= "dashed"
+%	 stroke-dasharray= "1;1"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(53,1);(53,1);(66,1);(66,1);(66,1);(66,23);
+%	(66,23);(66,23);(53,23);(53,23);(53,23);(53,1)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(73,12)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%
+%</text>
+%<parallelogram p3= "(75,7)"
+%	 p1= "(71,17)"
+%	 fill-style= "none"
+%	 p2= "(75,17)"
+%	 />
+%<circle closure= "plain"
+%	 p3= "(64,20)"
+%	 p1= "(62,20)"
+%	 fill-style= "none"
+%	 p2= "(63,19)"
+%	 />
+%<circle closure= "plain"
+%	 p3= "(64,4)"
+%	 p1= "(62,4)"
+%	 fill-style= "none"
+%	 p2= "(63,3)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(64,20);(64,20);(73,20);(73,20);(73,20);(73,17);
+%	(73,17)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(64,4);(64,4);(73,4);(73,4);(73,4);(73,7);
+%	(73,7)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(75,17);(75,17);(71,7);(71,7)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(75,7);(75,7);(71,17);(71,17)"
+%	 />
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(132.5,22)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%$\alpha$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(121.5,23)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{Z}\ped{Th}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(141.5,12)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{Z}\ped{Q}$
+%</text>
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(107.5,17);(107.5,17);(109.5,17);(109.5,17)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(108.5,18);(108.5,18);(108.5,16);(108.5,16)"
+%	 />
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(132.5,6)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%$\beta$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(105.5,12)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{E}\ped{Th}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(138.5,12)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(121.5,20)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 text-frame= "noframe"
+%	 >
+%
+%</text>
+%<circle closure= "plain"
+%	 p3= "(133.5,20)"
+%	 p1= "(131.5,20)"
+%	 fill-style= "none"
+%	 p2= "(132.5,19)"
+%	 />
+%<circle closure= "plain"
+%	 p3= "(133.5,4)"
+%	 p1= "(131.5,4)"
+%	 fill-style= "none"
+%	 p2= "(132.5,3)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(133.5,20);(133.5,20);(138.5,20);(138.5,20);(138.5,20);(138.5,17);
+%	(138.5,17)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(133.5,4);(133.5,4);(138.5,4);(138.5,4);(138.5,4);(138.5,7);
+%	(138.5,7)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(131.5,20);(131.5,20);(126.5,20);(126.5,20)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(131.5,4);(131.5,4);(110.5,4);(110.5,4);(110.5,4);(110.5,8);
+%	(110.5,8)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(116.5,20);(116.5,20);(110.5,20);(110.5,20);(110.5,20);(110.5,16);
+%	(110.5,16)"
+%	 />
+%<parallelogram p3= "(140.5,7)"
+%	 p1= "(136.5,17)"
+%	 fill-style= "none"
+%	 p2= "(140.5,17)"
+%	 />
+%<parallelogram p3= "(126.5,18)"
+%	 p1= "(116.5,22)"
+%	 fill-style= "none"
+%	 p2= "(126.5,22)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(116.5,22);(116.5,22);(126.5,18);(126.5,18)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(136.5,17);(136.5,17);(140.5,7);(140.5,7)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(140.5,17);(140.5,17);(136.5,7);(136.5,7)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(126.5,22);(126.5,22);(116.5,18);(116.5,18)"
+%	 />
+%<circle closure= "plain"
+%	 p3= "(114.5,12)"
+%	 p1= "(106.51,12.01)"
+%	 fill-style= "none"
+%	 p2= "(110.51,8.01)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(91.5,12)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\equiv$
+%</text>
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(147,27)
+\rput[r](9,20){$\alpha$}
+\rput[l](21,12){$\cmplx{U}\ped{o}$}
+\rput[r](9,4){$\beta$}
+\psline(12,20)(19,20)
+\psline(12,4)(19,4)
+\rput(7.5,12){$\cmplx{Z}_{\alpha\beta}$}
+\pspolygon[linewidth=0.25,linestyle=dashed,dash=1 1](1,1)
+(14,1)
+(14,23)
+(1,23)(1,1)
+\psline[linewidth=0.25]{->}(20,18)(20,6)
+\rput{0}(11,20){\psellipse[](0,0)(1,1)}
+\rput{0}(11,4){\psellipse[](0,0)(1,1)}
+\rput{0}(20,4){\psellipse[](0,0)(1,1)}
+\rput{0}(20,20){\psellipse[](0,0)(1,1)}
+\rput[r](61,20){$\alpha$}
+\rput[l](76,12){$\cmplx{Z}\ped{Q}$}
+\rput[r](61,4){$\beta$}
+\rput(59.5,12){}
+\pspolygon[linewidth=0.25,linestyle=dashed,dash=1 1](53,1)
+(66,1)
+(66,23)
+(53,23)(53,1)
+\rput(73,12){}
+\pspolygon[](71,17)(75,17)(75,7)(71,7)
+\rput{0}(63,20){\psellipse[](0,0)(1,1)}
+\rput{0}(63,4){\psellipse[](0,0)(1,1)}
+\psline(64,20)
+(73,20)(73,17)
+\psline(64,4)
+(73,4)(73,7)
+\psline(75,17)(71,7)
+\psline(75,7)(71,17)
+\rput[b](132.5,22){$\alpha$}
+\rput[b](121.5,23){$\cmplx{Z}\ped{Th}$}
+\rput[l](141.5,12){$\cmplx{Z}\ped{Q}$}
+\psline[linewidth=0.25](107.5,17)(109.5,17)
+\psline[linewidth=0.25](108.5,18)(108.5,16)
+\rput[b](132.5,6){$\beta$}
+\rput[r](105.5,12){$\cmplx{E}\ped{Th}$}
+\rput(138.5,12){}
+\rput(121.5,20){}
+\rput{0}(132.5,20){\psellipse[](0,0)(1,1)}
+\rput{0}(132.5,4){\psellipse[](0,0)(1,1)}
+\psline(133.5,20)
+(138.5,20)(138.5,17)
+\psline(133.5,4)
+(138.5,4)(138.5,7)
+\psline(131.5,20)(126.5,20)
+\psline(131.5,4)
+(110.5,4)(110.5,8)
+\psline(116.5,20)
+(110.5,20)(110.5,16)
+\pspolygon[](136.5,17)(140.5,17)(140.5,7)(136.5,7)
+\pspolygon[](116.5,22)(126.5,22)(126.5,18)(116.5,18)
+\psline(116.5,22)(126.5,18)
+\psline(136.5,17)(140.5,7)
+\psline(140.5,17)(136.5,7)
+\psline(126.5,22)(116.5,18)
+\rput{0}(110.5,12){\psellipse[](0,0)(4,4)}
+\rput(91.5,12){$\equiv$}
+\end{pspicture}

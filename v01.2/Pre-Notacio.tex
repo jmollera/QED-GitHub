@@ -1,0 +1,67 @@
+\chapter*{Notaci\'{o}} \addcontentsline{toc}{chapter}{Notaci\'{o}}
+
+Es presenta a continuaci\'{o} la notaci\'{o} seguida en aquest llibre.
+
+Cal fer notar que les variables vectorials o matricials s'escriuen
+en lletra negreta inclinada,  mentre que les variables escalars
+s'escriuen en lletra normal inclinada.
+
+\begin{list}{}
+{\setlength{\labelwidth}{15mm} \setlength{\leftmargin}{25mm}
+\setlength{\labelsep}{10mm}}
+    \item[$V$] Una variable real.
+    \item[$\cmplx{V}$] Una variable complexa.
+    \item[$\cmplx{V}^*$] Conjugat d'una variable complexa.
+    Es compleixen les igualtats:\\[1ex]
+     $(\cmplx{V}_1+\cmplx{V}_2+\cdots+\cmplx{V}_n)^* = \cmplx{V}_1^* +
+    \cmplx{V}_2^*+\cdots+\cmplx{V}_n^*$\\[1ex]
+    $(\cmplx{V}_1 \cmplx{V}_2 \cdots \cmplx{V}_n)^* = \cmplx{V}_1^*  \cmplx{V}_2^*
+    \cdots \cmplx{V}_n^*$
+    \item[$|\cmplx{V}|$] M\`{o}dul d'una variable complexa.
+    Es compleix la igualtat:  $\cmplx{V}\cmplx{V}^* = |\cmplx{V}|^2$
+    \item[$\arg(\cmplx{V})$] Argument (angle) d'una variable complexa.
+    \item[$\Re(\cmplx{V})$] Part real d'una variable complexa.
+    \item[$\Im(\cmplx{V})$] Part imagin\`{a}ria d'una variable complexa.
+    \item[$\ju$] La unitat imagin\`{a}ria, definida com:
+    $\ju\equiv\sqrt{-1}$\index{j}
+    \item[$A+\ju B$] Expressi\'{o} cartesiana (part real i part
+    imagin\`{a}ria) d'una variable complexa.
+    \item[$Z_{\measuredangle \delta}$] Expressi\'{o} polar (m\`{o}dul i argument) d'una variable
+    complexa. Les relacions entre $A, B, Z$ i $\delta$ s\'{o}n:\\[1ex]
+    $Z=+\sqrt{A^2+B^2},\quad\delta=\arctan{\dfrac{B}{A}},\quad
+    A=Z\cos\delta,\quad B=Z\sin\delta$
+    \item[$Z\,\eu^{\ju\delta}$] Expressi\'{o} d'Euler\index{Euler} d'una variable complexa, definida com:
+     $Z\,\eu^{\ju\delta} \equiv Z(\cos\delta+\ju\sin\delta)$
+    \item[$\boldsymbol{V}$] Una matriu real o un vector real.
+    \item[$\boldsymbol{V}^{-1}$] Matriu inversa d'una matriu real.
+    \item[$\transp{\boldsymbol{V}}$] Matriu transposada d'una matriu real o vector
+    transposat d'un vector real.
+    \item[$\boldsymbol{V}(n)$] Element $n$-\`{e}sim d'un vector real.
+    \item[$\boldsymbol{V}(m,n)$] Element de la fila $m$ i columna $n$ d'una matriu real.
+    \item[$\mcmplx{V}$] Una matriu complexa o un vector complex.
+    \item[$\mcmplx{V}^{-1}$] Matriu inversa d'una matriu complexa.
+    \item[\transp{$\mcmplx{V}}$] Matriu transposada d'una matriu complexa o vector
+    transposat d'un vector complex.
+    \item[$\mcmplx{V}(n)$] Element $n$-\`{e}sim d'un vector complex.
+    \item[$\mcmplx{V}(m,n)$] Element de la fila $m$ i columna $n$ d'una matriu complexa.
+\end{list}
+
+Pel qu\`{e} fa als sentits assignats a les fletxes que representen les
+tensions i els corrents, en els diversos circuits el\`{e}ctrics que
+apareixen en aquest llibre, s'utilitza la convenci\'{o} seg\"{u}ent:
+
+\begin{list}{}
+{\setlength{\labelwidth}{15mm} \setlength{\leftmargin}{25mm}
+\setlength{\labelsep}{10mm}}
+    \item[$\begin{CD} @>U>> \end{CD}$] Tensi\'{o} cont\'{\i}nua; la fletxa indica el sentit
+    de la caiguda de tensi\'{o}, \'{e}s a dir, va del node positiu al node negatiu.
+    \item[$\begin{CD} @>I>> \end{CD}$] Corrent
+    continu; la fletxa indica el sentit  assignat com a positiu a la
+    intensitat.
+    \item[$\begin{CD} @>\cmplx{U}>> \end{CD}$] Tensi\'{o} alterna; la fletxa indica el
+    sentit assignat com a positiu a la caiguda de tensi\'{o}, quan el node d'origen de la fletxa
+    t\'{e} un potencial  m\'{e}s positiu que el node de destinaci\'{o}.
+    \item[$\begin{CD} @>\cmplx{I}>> \end{CD}$] Corrent altern; la fletxa
+    indica el sentit  assignat com a positiu a la
+    intensitat.
+\end{list}

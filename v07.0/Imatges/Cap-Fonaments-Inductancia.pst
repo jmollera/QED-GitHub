@@ -1,0 +1,122 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Tue Dec 18 19:27:35 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="36" y-min="0" y-max="25" auto-bounding="false">
+%<multicurve right-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(18,15);(18,15);(18,3);(18,3)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(20,19);(20,19);(27,19);(27,19)"
+%	 />
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(23,20)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$i(t)$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(31,9)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$L$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(17,10)"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$u(t)$
+%</text>
+%<ellipse p3= "(19,18)"
+%	 p2= "(19,16)"
+%	 p1= "(17,16)"
+%	 stroke-width= "0.25"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(19,2)"
+%	 p2= "(19,0)"
+%	 p1= "(17,0)"
+%	 stroke-width= "0.25"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<g>
+%<ellipse p3= "(30,13)"
+%	 p2= "(30,17)"
+%	 p1= "(26,17)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse p3= "(30,9)"
+%	 p2= "(30,13)"
+%	 p1= "(26,13)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse p3= "(30,5)"
+%	 p2= "(30,9)"
+%	 p1= "(26,9)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%<ellipse p3= "(30,1)"
+%	 p2= "(30,5)"
+%	 p1= "(26,5)"
+%	 closure= "open"
+%	 fill-style= "none"
+%	 angle-end= "90"
+%	 angle-start= "-90"
+%	 />
+%</g>
+%<multicurve fill-style= "none"
+%	 points= "(19,1);(19,1);(28,1);(28,1)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(19,17);(19,17);(28,17);(28,17)"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(36,25)
+\psline[linewidth=0.25]{->}(18,15)(18,3)
+\psline[linewidth=0.25]{->}(20,19)(27,19)
+\rput[b](23,20){$i(t)$}
+\rput[l](31,9){$L$}
+\rput[r](17,10){$u(t)$}
+\rput{0}(18,17){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(18,1){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(28,15){\psellipticarc[](0,0)(2,-2){-90}{90}}
+\rput{0}(28,11){\psellipticarc[](0,0)(2,-2){-90}{90}}
+\rput{0}(28,7){\psellipticarc[](0,0)(2,-2){-90}{90}}
+\rput{0}(28,3){\psellipticarc[](0,0)(2,-2){-90}{90}}
+\psline(19,1)(28,1)
+\psline(19,17)(28,17)
+\end{pspicture}

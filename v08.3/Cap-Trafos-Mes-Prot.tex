@@ -1,0 +1,1040 @@
+\chapter{Transformadors de Mesura i Protecci\'{o}}\label{sec:tr_mes_prot}
+\index{transformadors de mesura i protecci\'{o}}
+
+
+\section{Introducci\'{o}}
+Es tracten en aquest cap\'{\i}tol els transformadors de
+mesura i de protecci\'{o}, tant de tensi\'{o} com de corrent. Aquest
+tractament es fa, m\'{e}s detalladament, des del punt de vista de la norma \textsf{CEI 60044}, no obstant, es dedica tamb\'{e} un
+apartat a descriure la norma  \textsf{IEEE C57.13}, i la
+relaci\'{o} entre ambdues.\index{CEI!60044-0@60044}\index{IEEE!C57.13}
+
+En la Figura \vref{pic:TT_TI} es representen unes connexions
+habituals d'un transformador de tensi\'{o} (anomenats usualment Tt), a
+la part superior, i d'un transformador de corrent (anomenats
+usualment Tc), a la part inferior. Els sentits de les tensions
+i corrents s'han representat tenint en compte els terminals
+equivalents (marcats amb un punt) dels primaris i secundaris.
+\index{Tt}\index{Tc}
+
+\hfill
+\begin{minipage}[b]{90mm}
+    \hspace{1.5cm}
+    \input{Imatges/Cap-TrafosMesProt-TI-TT.pdf_tex}
+    \captionof{figure}{Transformadors de tensi\'{o} i de corrent}
+    \label{pic:TT_TI}
+\end{minipage}
+\hfill
+\begin{minipage}[b][70mm][t]{50mm}
+   \begin{align}
+      \cmplx{U}\ped{s} &= \cmplx{U}\ped{p} \frac{U\ped{ns}}{U\ped{np}}
+      \\[24mm]
+      \cmplx{I}\ped{s} &= \cmplx{I}\ped{p} \frac{I\ped{ns}}{I\ped{np}}
+   \end{align}
+\end{minipage}
+
+Les relacions de transformaci\'{o} nominals d'aquests transformadors de
+tensi\'{o} i de corrent s\'{o}n respectivament $U\ped{np}\!:\!U\ped{ns}$ i
+$I\ped{np}\!:\!I\ped{ns}$.
+
+Al costat de la Figura
+\vref{pic:TT_TI} es poden veure les relacions que lliguen les
+tensions i corrents de primari amb les de secundari, suposant que
+els transformadors s\'{o}n ideals.
+
+
+Els transformadors de tensi\'{o} es connecten a la l\'{\i}nia principal en
+derivaci\'{o}; el  primari est\`{a} sotm\`{e}s, per tant, a la tensi\'{o} de la
+l\'{\i}nia. Els Tt per a connexi\'{o} entre fases tenen els dos borns
+primaris a\"{\i}llats, mentre que els que estan previstos per ser
+connectats entre fase y terra nom\'{e}s en tenen un a\"{\i}llat, ja que
+l'altre es connecta directament a terra. Els transformadors de
+corrent, en canvi, es connecten amb el primari intercalat en la
+l\'{\i}nia principal;  pel primari del Tc circula, per tant, el corrent
+ de la l\'{\i}nia.
+
+ Com a mesura de protecci\'{o} per a les persones, \'{e}s usual
+connectar a terra un dels dos terminals del secundari dels
+transformadors. Cal recordar a m\'{e}s, en el cas dels transformadors de
+corrent, que el secundari no ha de quedar mai en circuit obert, ja
+que es produirien sobretensions que podrien malmetre el
+transformador.
+
+\section{Errors de mesura dels transformadors reals}
+
+At\`{e}s que en realitat els transformadors que es construeixen no s\'{o}n
+ideals, tots tenen un error en la transformaci\'{o} de la magnitud
+prim\`{a}ria en la secund\`{a}ria, tant pel que fa al m\`{o}dul com pel que fa
+a l'angle.
+
+\subsection{Error de relaci\'{o}}\index{transformadors
+de mesura i protecci\'{o}!error de relaci\'{o}}
+
+Aquest \'{e}s l'error de m\`{o}dul existent entre les magnituds prim\`{a}ria i
+secundaria; es denomina m\'{e}s espec\'{\i}ficament, error de corrent en el
+cas dels Tc i error de tensi\'{o} en el cas dels Tt.
+
+En el cas dels Tc, si $I\ped{p}$ i $I\ped{s}$ s\'{o}n els corrents que
+realment circulen pel primari i pel secundari respectivament,
+l'error de relaci\'{o} $\epsilon\ped{r}$ val:
+\begin{equation}
+    \epsilon\ped{r} = \frac{\frac{I\ped{np}}{I\ped{ns}} I\ped{s} - I\ped{p}} {I\ped{p}}
+\end{equation}
+\index{$\epsilon\ped{r}$}
+
+En el cas dels Tt, si $U\ped{p}$ i $U\ped{s}$ s\'{o}n les tensions que
+realment existeixen en el primari i en el secundari respectivament,
+l'error de relaci\'{o} $\epsilon\ped{r}$ val:
+\begin{equation}
+    \epsilon\ped{r} = \frac{\frac{U\ped{np}}{U\ped{ns}} U\ped{s} - U\ped{p}} {U\ped{p}}
+\end{equation}
+\index{$\epsilon\ped{r}$}
+
+Els errors de relaci\'{o} (de tensi\'{o} o de corrent) s'expressen
+normalment en tant per cent.
+
+\subsection{Error de fase}\index{transformadors
+de mesura i protecci\'{o}!error de fase}
+
+Aquest \'{e}s l'error d'angle  existent entre les magnituds prim\`{a}ria i
+secundaria; aquesta definici\'{o} \'{e}s rigorosa \'{u}nicament en el cas de
+tensions o corrents sinuso\"{\i}dals, on aquests valors es poden
+representar mitjan\c{c}ant fasors. L'error de fase $\epsilon\ped{\phiup}$ es considera positiu quan la magnitud secund\`{a}ria avan\c{c}a a la prim\`{a}ria.
+\index{$\epsilon\ped{\phiup}$}
+
+ Cal fer notar que mentre que l'error de relaci\'{o}
+vist anteriorment afecta a qualsevol tipus d'aparell que es
+connecti en el secundari, l'error de fase no afecta a aparells que
+\'{u}nicament mesuren el m\`{o}dul de la tensi\'{o} o del corrent (amper\'{\i}metre,
+volt\'{\i}metre, etc.), i s\'{\i} afecta, en canvi a aparells que mesuren
+simult\`{a}niament diverses tensions o corrents (watt\'{\i}metre, comptador
+d'energia, sincronitzador, etc.)
+
+Els errors de fase s'expressen en el valor de l'angle, mesurat en
+minuts d'arc o en centiradiant (crad).
+
+\subsection{Classe, c\`{a}rrega i pot\`{e}ncia de precisi\'{o}}\index{transformadors
+de mesura i protecci\'{o}!classe de precisi\'{o}}\index{transformadors de
+mesura i protecci\'{o}!pot\`{e}ncia de precisi\'{o}
+($S\ped{n}$)}\index{transformadors de mesura i protecci\'{o}!c\`{a}rrega de
+precisi\'{o} ($Z\ped{ns}$)}
+
+Les normes defineixen les anomenades {"<}classes de precisi\'{o}{">},
+cadascuna de les quals t\'{e} assignades uns l\'{\i}mits admissibles dels
+errors de relaci\'{o} i de fase. Aix\'{\i} doncs, a cada transformador
+s'assigna una determinada classe de precisi\'{o} en funci\'{o} dels errors
+de relaci\'{o} i de fase que presenta.
+
+Els errors de relaci\'{o} i de fase que presenta un transformador no s\'{o}n
+constants, sin\'{o} que depenen de les seg\"{u}ents condicions:
+\begin{dinglist}{'167}
+   \item La tensi\'{o} present en el secundari, en el cas dels Tt, i el corrent que
+   circula    pel secundari, en el cas dels Tc.
+   \item La c\`{a}rrega connectada en el secundari (en s\`{e}rie en el cas dels Tc,
+   i en para{\l.l}el en el cas dels Tt), definida pel nombre i tipus d'aparells connectats.
+   \item La freq\"{u}\`{e}ncia de funcionament.
+\end{dinglist}
+
+Per tant, la classe de precisi\'{o} assignada a un Tc o a un Tt ha de
+referir-se a un determinat valor de la c\`{a}rrega, a la qual est\`{a}
+sotm\`{e}s el transformador. Es defineix, en conseq\"{u}\`{e}ncia, el terme
+{"<}c\`{a}rrega de precisi\'{o}{">} com el valor de la c\`{a}rrega en el secundari
+(expressada en \ohm), a la que est\`{a} referida la classe de precisi\'{o}
+assignada; \'{e}s m\'{e}s usual, no obstant,  utilitzar el terme {"<}pot\`{e}ncia
+de precisi\'{o}{">}, que es el valor de la c\`{a}rrega (expressada com pot\`{e}ncia
+aparent en VA),
+ a la que est\`{a} referida la classe de precisi\'{o}.
+
+La relaci\'{o} entre la c\`{a}rrega de precisi\'{o} $Z\ped{ns}$ i la pot\`{e}ncia de
+precisi\'{o} $S\ped{n}$ en el cas dels Tt \'{e}s:
+\begin{equation}
+    S\ped{n} = \frac{U\ped{ns}^2}{Z\ped{ns}}
+\end{equation}
+
+i en el cas del Tc:
+\begin{equation}\label{eq:sn_ti}
+    S\ped{n} = I\ped{ns}^2 \,Z\ped{ns}
+\end{equation}
+
+
+\section{Caracter\'{\i}stiques dels transformadors de tensi\'{o} segons la norma \textsf{CEI 60044}}
+\index{transformadors de mesura i protecci\'{o} (Tt)}\index{CEI!60044-0@60044}
+
+\subsection{Caracter\'{\i}stiques comunes dels Tt de mesura i de protecci\'{o}}
+
+Segons quina sigui la seva funci\'{o}, els Tt es classifiquen en:
+\begin{dinglist}{'167}
+   \item \textbf{Transformadors de mesura}: s\'{o}n els utilitzats per alimentar
+            instruments de mesura (volt\'{\i}metres, watt\'{\i}metres, etc.),
+            comptadors d'energia i altres aparells que requereixin senyal de tensi\'{o}.
+   \item \textbf{Transformadors de protecci\'{o}}: s\'{o}n els utilitzats per
+   alimentar rel\'{e}s de protecci\'{o}.
+\end{dinglist}
+
+Es presenten a continuaci\'{o} les caracter\'{\i}stiques comunes als Tt de
+mesura i de protecci\'{o}.
+
+\subsubsection{Tensi\'{o} prim\`{a}ria nominal ($U\ped{np}$)}
+\index{transformadors de mesura i protecci\'{o} (Tt)!tensi\'{o} nominal
+prim\`{a}ria ($U\ped{np}$)}
+
+\'{E}s la tensi\'{o} assignada al primari del transformador, a partir de la
+qual es determinen les seves caracter\'{\i}stiques de funcionament i
+d'a\"{\i}llament.
+
+Els valors normalitzats per a transformadors connectats entres dues fases s\'{o}n els exposats en la norma \textsf{CEI 60038}.\index{CEI!60038-00@60038}
+
+En el cas de transformadors connectats entre fase i terra, o entre el punt neutre d'un sistema i terra, els valor normalitzats de la norma \textsf{CEI 60038} es dividiran per $\sqrt{3}$.
+
+
+\subsubsection{Tensi\'{o} secund\`{a}ria nominal ($U\ped{ns}$)}
+\index{transformadors de mesura i protecci\'{o} (Tt)!tensi\'{o} nominal
+secund\`{a}ria ($U\ped{ns}$)}
+
+\'{E}s la tensi\'{o} assignada al secundari del transformador.
+Els valors normalitzats s\'{o}n:
+\begin{dinglist}{'167}
+    \item 100\unit{V} i 110\unit{V}, en el cas de transformadors connectats
+    entre dues fases.
+    \item $\dfrac{100}{\sqrt{3}}\unit{V}$ i
+        $\dfrac{110}{\sqrt{3}}\unit{V}$, en el cas de transformadors
+        connectats entre fase i terra.
+    \item 100\unit{V}, 110\unit{V}, $\dfrac{100}{\sqrt{3}}\unit{V}$,
+    $\dfrac{110}{\sqrt{3}}\unit{V}$, $\dfrac{100}{3}\unit{V}$   i
+    $\dfrac{110}{3}\unit{V}$, en el cas de transformadors
+    connectats en triangle obert.
+\end{dinglist}
+
+\subsubsection{Relaci\'{o} de transformaci\'{o} nominal ($K\ped{n}$)}
+\index{transformadors de mesura i protecci\'{o} (Tt)!relaci\'{o} de
+transformaci\'{o} nominal($K\ped{n}$)}
+
+ Relaci\'{o}  dels dos par\`{a}metres anteriors: $K\ped{n} = \dfrac{U\ped{np}}{U\ped{ns}}$.
+
+ Valors usuals s\'{o}n: 10, 12, 15, 20, 25, 30, 40, 50, 60 i 80, i els seus m\'{u}ltiples decimals.
+
+\subsubsection{Freq\"{u}\`{e}ncia nominal ($f\ped{n}$)}
+\index{transformadors de mesura i protecci\'{o} (Tt)!freq\"{u}\`{e}ncia nominal ($f\ped{n}$)}
+
+ \'{E}s la freq\"{u}\`{e}ncia d'operaci\'{o} per a la qual  est\`{a} dissenyat el transformador, usualment \SI{50}{Hz}.
+
+\subsubsection{Pot\`{e}ncia de precisi\'{o} nominal ($S\ped{n}$)}
+\index{transformadors de mesura i protecci\'{o} (Tt)!pot\`{e}ncia de
+precisi\'{o} ($S\ped{n}$)}
+
+Els valors normalitzats de la pot\`{e}ncia de precisi\'{o}, per
+a un factor de pot\`{e}ncia 0,8 inductiu s\'{o}n: \SIlist{10; 15; 25; 30; 50; 75; 100; 150;
+ 200; 300; 400; 500}{VA}.
+
+ Els valors preferits s\'{o}n: \SIlist{10; 25; 50; 100; 200; 500}{VA}.
+
+En el cas de transformadors trif\`{a}sics, $S\ped{n}$ \'{e}s la pot\`{e}ncia per fase.
+
+\subsubsection{Factor de tensi\'{o} nominal}
+\index{transformadors de mesura i protecci\'{o} (Tt)!factor de tensi\'{o}
+nominal}
+
+ \'{E}s el factor pel qual ha de
+multiplicar-se la tensi\'{o} nominal prim\`{a}ria, per tal de determinar la
+tensi\'{o} m\`{a}xima que el Tt pot suportar durant un temps determinat,
+sense sobrepassar ni l'escalfament admissible ni els l\'{\i}mits d'error
+corresponents a la seva classe de precisi\'{o}. Les sobretensions poden
+presentar-se en el transformador,  per la fluctuaci\'{o}
+pr\`{o}pia de la xarxa on estiguin connectats, o per l'efecte de curtcircuits.
+
+Tots els  Tt han de tenir un factor de tensi\'{o} nominal igual a 1,2 en perman\`{e}ncia.
+
+A m\'{e}s, per a certes connexions, el Tt ha de tenir addicionalment el factor de tensi\'{o}
+nominal seg\"{u}ent:
+ \begin{dinglist}{'167}
+   \item 1,5 durant 30 s,  per a transformadors connectats entre fase i terra, en sistemes que tenen el neutre connectat a terra de forma efectiva (aquells que en produir-se una falta fase--terra, la sobretensi\'{o} que apareix en les fases sanes no supera 1,4 vegades la tensi\'{o} nominal).
+   \item 1,9 durant 30 s,  per a transformadors connectats entre fase i terra, en sistemes que tenen el neutre connectat a terra de forma no efectiva (aquells que en produir-se una falta fase--terra, la sobretensi\'{o} que apareix en les fases sanes  supera 1,4 vegades la tensi\'{o} nominal), i on es produeix una desconnexi\'{o} autom\`{a}tica  en cas de faltes fase--terra.
+   \item 1,9 durant 8 h,  per a transformadors connectats entre fase i terra, en sistemes que tenen el neutre a\"{\i}llat o el neutre connectat a terra mitjan\c{c}ant un circuit ressonant, i on no es produeix una desconnexi\'{o} autom\`{a}tica  en cas de faltes fase--terra.
+\end{dinglist}
+
+\subsubsection{Identificaci\'{o} dels terminals}
+\index{transformadors de mesura i protecci\'{o} (Tt)!identificaci\'{o} dels terminals}
+
+ Les lletres {"<}A{">}, {"<}B{">}, {"<}C{">} i {"<}N{">} s'utilitzen per identificar els terminal primaris, i les lletres {"<}a{">}, {"<}b{">}, {"<}c{">} i {"<}n{">} s'utilitzen per identificar els terminal secundaris hom\`{o}legs.
+
+ Les lletres {"<}A{">}, {"<}B{">} i {"<}C{">} s'utilitzen pels terminals connectats a les fases i la {"<}N{">} pel terminal connectat a terra.
+
+ En el cas de secundaris connectats en triangle obert, els dos terminals s'identifiquen amb les lletres {"<}da{">} i {"<}dn{">}.
+
+ En el cas d'un Tt amb doble secundari, els terminals del  primer s'identifiquen amb les lletres  {"<}1a{">}, {"<}1b{">}, {"<}1c{">} i {"<}1n{">}, i els del segon amb les lletres  {"<}2a{">}, {"<}2b{">}, {"<}2c{">} i {"<}2n{">}.
+
+ En el cas d'un Tt amb un  secundari amb preses m\'{u}ltiples, els terminals s'identifiquen amb les lletres  {"<}a1{">}, {"<}a2{">}, {"<}a3{">}, ..., {"<}b{">} (o {"<}n{">}).
+
+\subsection{Caracter\'{\i}stiques particulars dels Tt de mesura}
+
+Es presenten a continuaci\'{o} les caracter\'{\i}stiques particulars dels Tt
+de mesura.
+
+\subsubsection{Classe de precisi\'{o}}
+\index{transformadors de mesura i protecci\'{o} (Tt)!classe de precisi\'{o}}
+
+ Els valors normalitzats s\'{o}n
+0,1, 0,2, 0,5, 1 i 3.
+
+En la Taula \vref{taula:errors_tt_m}
+s'indiquen els l\'{\i}mits dels errors de tensi\'{o} i  de fase, per a
+tensions compreses entre $80\unit{\%}\,U\ped{ns}$ i
+$120\unit{\%}\,U\ped{ns}$, i per a c\`{a}rregues compreses entre
+$25\unit{\%}\,S\ped{n}$ i $100\unit{\%}\,S\ped{n}$, amb un factor de
+potencia 0,8 inductiu.
+
+
+\begin{table}[htb]
+   \caption{\label{taula:errors_tt_m} Classes de precisi\'{o} per a Tt de mesura i protecci\'{o}}
+   \begin{center}\begin{tabular}{cccc}
+   \toprule[1pt]
+   \renewcommand*{\multirowsetup}{\centering}
+   \multirow{2}{17mm}{\rule{0mm}{4.5mm}Classe de\\precisi\'{o}} &
+   \multirow{2}{27mm}{\rule{0mm}{4.5mm}Error de tensi\'{o}\\ \rule{4mm}{0mm}[$\pm$ \% $U\ped{ns}$]}&
+   \multicolumn{2}{c}{Error de fase} \\
+   \cmidrule(rl){3-4}
+    &   & [$\pm$ minuts d'arc]  & [$\pm$ crad] \\
+   \midrule
+   0,1 & 0,1 & 5  & 0,15 \\
+   0,2 & 0,2 & 10 & 0,3 \\
+   0,5 & 0,5 & 20 & 0,6 \\
+   1 & 1,0 & 40 & 1,2 \\
+   3 & 3,0 &  ---  & --- \\
+   \bottomrule[1pt]
+   \end{tabular} \end{center}
+\end{table}
+
+\subsection{Caracter\'{\i}stiques particulars dels Tt de protecci\'{o}}
+
+Es presenten a continuaci\'{o} les caracter\'{\i}stiques particulars dels Tt
+de protecci\'{o}.
+
+\subsubsection{Classe de precisi\'{o}}
+\index{transformadors de mesura i protecci\'{o} (Tt)!classe de precisi\'{o}}
+
+ Els Tt de protecci\'{o}, excepte aquells destinats a ser connectats en triangle obert, tenen
+les mateixes classes de precisi\'{o} que els Tt de mesura, i per tant
+tamb\'{e} els \'{e}s aplicable la Taula \vref{taula:errors_tt_m}.
+
+Addicionalment, els Tt de protecci\'{o}, pels marges de tensi\'{o} compresos
+entre $5\unit{\%}\,U\ped{ns}$ i $80\unit{\%}\,U\ped{ns}$  i entre
+$120\unit{\%}\,U\ped{ns}$ i el valor $U\ped{ns}$  multiplicat pel
+factor de tensi\'{o} nominal (per exemple $190\unit{\%}\,U\ped{ns}$),
+tenen assignada una altra classe de precisi\'{o}; els valors
+normalitzats s\'{o}n 3P i 6P.
+
+Aix\'{\i}, per exemple, un Tt amb factor de
+tensi\'{o} nominal 1,9 i classe de precisi\'{o} 0,5 3P, t\'{e} la classe de
+precisi\'{o} 0,5 entre $80\unit{\%}\,U\ped{ns}$ i
+$120\unit{\%}\,U\ped{ns}$, i la classe de precisi\'{o} 3P entre
+$5\unit{\%}\,U\ped{ns}$ i $80\unit{\%}\,U\ped{ns}$ i entre
+$120\unit{\%}\,U\ped{ns}$ i $190\unit{\%}\,U\ped{ns}$.
+
+En la Taula \vref{taula:errors_tt_p} s'indiquen els l\'{\i}mits dels
+errors de tensi\'{o} i  de fase, per a c\`{a}rregues compreses entre
+$25\unit{\%}\,S\ped{n}$ i $100\unit{\%}\,S\ped{n}$, amb un factor de
+potencia 0,8 inductiu, dins dels dos marges de tensions indicats
+anteriorment. Per a tensions de l'ordre del $2\unit{\%}
+\,U\ped{ns}$, els errors tenen un valor doble dels indicats en
+aquesta taula.
+
+\begin{table}[htb]
+   \caption{\label{taula:errors_tt_p} Classes de precisi\'{o} addicionals per a Tt de protecci\'{o}}
+   \begin{center}\begin{tabular}{cccc}
+   \toprule[1pt]
+   \renewcommand*{\multirowsetup}{\centering}
+   \multirow{2}{17mm}{\rule{0mm}{4.5mm}Classe de\\precisi\'{o}} &
+   \multirow{2}{27mm}{\rule{0mm}{4.5mm}Error de tensi\'{o}\\ \rule{4mm}{0mm}[$\pm$ \% $U\ped{ns}$]}&
+   \multicolumn{2}{c}{Error de fase} \\
+   \cmidrule(rl){3-4}
+    &   & [$\pm$ minuts d'arc]  & [$\pm$ crad] \\
+   \midrule
+   3P & 3 & 120 & 3,5 \\
+   6P & 6 & 240 & 7,0 \\
+   \bottomrule[1pt]
+   \end{tabular} \end{center}
+\end{table}
+
+La classe de precisi\'{o} dels transformadors destinats a ser connectats en triangle obert ser\`{a} 6P.
+
+\section{Caracter\'{\i}stiques dels transformadors de corrent segons la norma  \textsf{CEI 60044}}
+\index{transformadors de mesura i protecci\'{o} (Tc)}\index{CEI!60044-0@60044}
+
+\subsection{Caracter\'{\i}stiques comunes dels Tc de mesura i de protecci\'{o}}
+
+Segons quina sigui la seva funci\'{o}, els Tc es classifiquen de forma
+an\`{a}loga als Tt, en:
+\begin{dinglist}{'167}
+   \item \textbf{Transformadors de mesura}: s\'{o}n els utilitzats per alimentar
+            instruments de mesura (amper\'{\i}metres, watt\'{\i}metres, etc.),
+            comptadors d'energia i altres aparells que requereixin senyal de corrent.
+   \item \textbf{Transformadors de protecci\'{o}}: s\'{o}n els utilitzats per
+   alimentar rel\'{e}s de protecci\'{o}.
+\end{dinglist}
+
+Es presenten a continuaci\'{o} les caracter\'{\i}stiques comunes als Tc de
+mesura i de protecci\'{o}.
+
+
+\subsubsection{Corrent primari nominal ($I\ped{np}$)}
+\index{transformadors de mesura i protecci\'{o} (Tc)!corrent nominal
+prim\`{a}ria ($I\ped{np}$)}
+
+ \'{E}s el corrent assignat al
+primari del transformador. Els valors normalitzats
+s\'{o}n: \SIlist{10; 12,5; 15; 20; 25;30; 40; 50; 60;75}{A}, i els
+seus m\'{u}ltiples i subm\'{u}ltiples decimals.
+
+Els valors preferits s\'{o}n: \SIlist{10; 15; 20; 30; 50;75}{A}.
+
+
+\subsubsection{Corrent secund\`{a}ria nominal ($I\ped{ns}$)}
+\index{transformadors de mesura i protecci\'{o} (Tc)!corrent nominal
+secund\`{a}ria ($I\ped{ns}$)}
+
+ \'{E}s el corrent assignat al
+secundari del transformador. Els valors normalitzats
+s\'{o}n: \SIlist{1;2;5}{A}, essent aquest darrer valor el
+preferit. En el cas de transformadors connectats en triangle, tamb\'{e} s\'{o}n normalitzats els valors anteriors dividits per $ \sqrt{3}$.
+
+\subsubsection{Relaci\'{o} de transformaci\'{o} nominal ($K\ped{n}$)}
+\index{transformadors de mesura i protecci\'{o} (Tc)!relaci\'{o} de
+transformaci\'{o} nominal ($K\ped{n}$)}
+
+Relaci\'{o} dels dos  par\`{a}metres anteriors: $K\ped{n} = \dfrac{I\ped{np}}{I\ped{ns}}$.
+
+\subsubsection{Freq\"{u}\`{e}ncia nominal ($f\ped{n}$)}
+\index{transformadors de mesura i protecci\'{o} (Tc)!freq\"{u}\`{e}ncia nominal ($f\ped{n}$)}
+
+ \'{E}s la freq\"{u}\`{e}ncia d'operaci\'{o} per a la qual    est\`{a} dissenyat el transformador, usualment \SI{50}{Hz}.
+
+\subsubsection{Error compost ($\epsilon\ped{c}$)}\index{transformadors
+de mesura i protecci\'{o} (Tc)!error compost}
+
+Per a corrents de primari i secundari sinuso\"{\i}dals l'error compost $\epsilon\ped{c}$ es defineix  en funci\'{o} dels errors de relaci\'{o} $\epsilon\ped{r}$ i de fase  $\epsilon\ped{\phiup}$, com:\index{$\epsilon\ped{c}$}
+\begin{equation}
+    \epsilon\ped{c} = \sqrt{\epsilon\ped{r}^2 +  \epsilon\ped{\phiup}^2}
+\end{equation}
+
+Els errors compost i de relaci\'{o} han d'expressar-se en \%, i l'error
+de fase en crad.
+
+En el cas general de corrents primari $i\ped{p}(t)$ i secundari $i\ped{s}(t)$ no sinuso\"{\i}dals, per\`{o} peri\`{o}dics amb per\'{\i}ode $T$, l'error compost $\epsilon\ped{c}$ es defineix com:
+\begin{equation}
+    \epsilon\ped{c} = \frac{1}{I\ped{p}} \sqrt{\frac{1}{T} \int_0^T \left(K\ped{n} i\ped{s}(t) - i\ped{p}(t)\right)^2 \diff t}
+\end{equation}
+
+\subsubsection{Pot\`{e}ncia de precisi\'{o} ($S\ped{n}$)}
+\index{transformadors de mesura i protecci\'{o} (Tc)!pot\`{e}ncia de
+precisi\'{o} ($S\ped{n}$)}
+
+ Els valors normalitzats de la pot\`{e}ncia de precisi\'{o} fins a \SI{30}{VA}
+s\'{o}n: \SIlist{2,5; 5;10; 15; 30}{VA}.
+
+Es poden escollir valors per sobre de \SI{30}{VA} segons les necessitats de cada cas.
+
+\subsubsection{Sobrecorrents  assignats ($I\ped{th}$, $I\ped{dyn}$, $I\ped{cth}$)}
+\index{transformadors de mesura i protecci\'{o} (Tc)!sobrecorrents
+assignats ($I\ped{th}$, $I\ped{dyn}$, $I\ped{cth}$)}
+
+ Els Tc
+tenen el primari connectat en s\`{e}rie amb una l\'{\i}nia de pot\`{e}ncia, i per tant han
+d'estar preparats per suportar curtcircuits fins que algun
+interruptor desconnecti la l\'{\i}nia on hi ha la falta; aquest
+corrent es transforma en el secundari en un corrent de valor
+tamb\'{e} elevat, havent de suportar el transformador els efectes t\`{e}rmics
+i din\`{a}mics que aix\`{o} comporta.
+
+Es defineix el {"<}corrent t\`{e}rmic nominal de curta durada{">}
+($I\ped{th}$), com el valor efica\c{c} del  corrent primari que el
+transformador pot suportar durant 1\unit{s}, amb el debanat
+secundari en curtcircuit, sense patir efectes perjudicials; es
+considera que aquest temps \'{e}s suficient perqu\`{e} les proteccions
+pertinents actu\"{\i}n, eliminant el curtcircuit. En qualsevol cas, si
+$I\ped{cc}$ \'{e}s el corrent de curtcircuit i $t$ \'{e}s la seva durada
+(expressada en s), ha de complir-se: $I\ped{th}\geq
+I\ped{cc}\sqrt{t}$. El valor d'aquest corrent t\`{e}rmic,
+acostuma a expressar-se com a un valor m\'{u}ltiple del corrent
+nominal (per exemple: $I\ped{th}=150\,I\ped{np}$).
+
+Es defineix el {"<}corrent din\`{a}mic nominal{">} ($I\ped{dyn}$), com el
+valor de cresta del corrent t\`{e}rmic nominal de curta durada ($I\ped{th}$).
+Normalment es pren el valor: $I\ped{dyn} =
+\num{1,8}\sqrt{2}I\ped{th}\approx \num{2,5}I\ped{th}$. El transformador ha de
+suportar les forces electrodin\`{a}miques produ\"{\i}des per aquest corrent.
+
+Es defineix finalment el {"<}corrent t\`{e}rmic nominal continu{">} ($I\ped{cth}$), com
+el valor del m\`{a}xim corrent que pot circular pel primari del
+transformador  de forma permanent, amb el secundari connectat a la
+c\`{a}rrega de precisi\'{o}, sense que l'escalfament del transformador surti
+dels l\'{\i}mits previstos i mantenint-se dins de la
+seva classe de precisi\'{o}. El valor usual \'{e}s: $I\ped{cth} = I\ped{np}$. Quan es requereix un valor m\'{e}s elevat, els valor preferits s\'{o}n:
+$I\ped{cth} = \num{1,2}I\ped{np}$, $I\ped{cth} = \num{1,5}I\ped{np}$ i $I\ped{cth} = 2 I\ped{np}$.
+
+\subsection{Caracter\'{\i}stiques particulars dels Tc de mesura}
+
+Els circuits magn\`{e}tics d'aquests transformadors, es dissenyen de
+manera que se saturin r\`{a}pidament, de manera que
+sobrecorrents elevats en el primari  no repercuteixin en el secundari,
+ja que els aparells que normalment s'hi connecten (amper\'{\i}metres,
+comptadors d'energia, etc.) no estan preparats per suportar grans
+sobrecorrents.
+
+Es presenten a continuaci\'{o} les caracter\'{\i}stiques particulars dels Tc
+de mesura.
+
+\subsubsection{Corrent l\'{\i}mit primari  assignat ($I\ped{PL}$)}
+\index{transformadors de mesura i protecci\'{o} (Tc)!corrent l\'{\i}mit
+primari  assignat ($I\ped{PL}$)}
+
+El corrent  l\'{\i}mit primari
+\'{e}s el corrent primari, a partir del qual l'error compost \'{e}s igual
+o superior al 10\unit{\%}, amb una c\`{a}rrega igual a la c\`{a}rrega de
+precisi\'{o} del transformador.
+
+\subsubsection{Factor de seguretat ($F\ped{S}$) }
+\index{transformadors de mesura i protecci\'{o} (Tc)!factor de seguretat
+($F\ped{S}$)}
+
+ El factor de seguretat
+es defineix com la relaci\'{o} entre el corrent l\'{\i}mit primari
+i el corrent primari nominal: $F\ped{S} = I\ped{PL} / I\ped{np}$.
+
+En el cas d'un curtcircuit en la l\'{\i}nia on est\`{a} intercalat el
+transformador, la seguretat dels aparells connectats en el secundari
+del Tc \'{e}s tant m\'{e}s gran com m\'{e}s petit \'{e}s  $F\ped{S}$. Valors usuals
+per a la majoria d'aparells s\'{o}n:  $\num{2,5}<F\ped{S}<10$, i per
+alimentar a comptadors: $3<F\ped{S}<5$.
+
+Cal tenir en compte que el valor de $F\ped{S}$ est\`{a} lligat
+ al valor de $S\ped{n}$, i que nom\'{e}s \'{e}s v\`{a}lid
+quan tenim aquest consum de  pot\`{e}ncia en el secundari; per a un
+valor de pot\`{e}ncia $S$ diferent de $S\ped{n}$, tindrem un valor
+$F'\ped{S}$ tamb\'{e} diferent de  $F\ped{S}$. La relaci\'{o} que
+lliga aquests valors, tenint en compte la resist\`{e}ncia del debanat
+secundari del transformador  $R\ped{s}$ \'{e}s:
+\begin{equation}
+    F\ped{S} (S\ped{n}+R\ped{s}I\ped{ns}^2) =
+    F'\ped{S} (S+R\ped{s}I\ped{ns}^2)
+\end{equation}
+
+
+\subsubsection{Classe de precisi\'{o}}
+\index{transformadors de mesura i protecci\'{o} (Tc)!classe de precisi\'{o}}
+
+ Els valors normalitzats s\'{o}n 0,1, 0,2, 0,5, 1, 3 i 5.
+
+En la Taula \vref{taula:errors_ti_m1}
+s'indiquen els l\'{\i}mits, per a diversos corrents de secundari
+$I\ped{s}$, dels errors de corrent i  de fase, de les classes de
+precisi\'{o} 0,1, 0,2, 0,5 i 1,  per a c\`{a}rregues compreses entre
+$25\unit{\%}\,S\ped{n}$ i $100\unit{\%}\,S\ped{n}$.
+
+\begin{table}[h]
+   \caption{\label{taula:errors_ti_m1} Classes de precisi\'{o} 0,1, 0,2, 0,5 i 1 per a Tc de mesura}
+   \begin{center}\begin{tabular}{ccccc<{\hspace{1.5em}}cccc<{\hspace{1.5em}}cccc}
+   \toprule[1pt]
+   \renewcommand*{\multirowsetup}{\centering}
+   \multirow{2}{17mm}{\rule{0mm}{4.5mm}Classe de\\precisi\'{o}} &
+   \multicolumn{4}{c}{\multirow{2}{35mm}{\rule{0mm}{4.5mm}Error de corent\\ \rule{6mm}{0mm}[$\pm$ \% $I\ped{ns}$]}} &
+   \multicolumn{8}{c}{Error de fase} \\
+   \cmidrule(rl){6-13}
+    &  & & & & \multicolumn{4}{c}{\hspace{-1em}[$\pm$ minuts d'arc]}  &
+   \multicolumn{4}{c}{[$\pm$ crad]} \\
+   \midrule
+    0,1 & 0,4 & 0,2 & 0,1 & 0,1 & 15 & 8 & 5 & 5 & 0,45 & 0,24 & 0,15 & 0,15 \\
+    0,2 & 0,75 & 0,35 & 0,2 & 0,2 & 30 & 15 & 10 & 10  & 0,9 & 0,45 & 0,3 & 0,3 \\
+    0,5 & 1,5 & 0,75 & 0,5 & 0,5 & 90 & 45 & 30 & 30 & 2,7 & 1,35 & 0,9  & 0,9 \\
+    1 & 3,0 & 1,5 & 1,0 & 1,0 & 180 & 90 & 60 & 60 & 5,4 & 2,7 & 1,8 & 1,8 \\
+    \midrule
+    $I\ped{s}$ [\% $I\ped{ns}$]\,: & 5 & 20 & 100 & 120 & 5 & 20 & 100 & 120 & 5 & 20 & 100 & 120 \\
+   \bottomrule[1pt]
+   \end{tabular} \end{center}
+\end{table}
+
+
+En la Taula \vref{taula:errors_ti_m2} s'indiquen els
+l\'{\i}mits, per a diversos corrents de secundari $I\ped{s}$, dels errors
+de corrent de les classes de precisi\'{o} 3 i 5,  per a  c\`{a}rregues
+compreses entre $50\unit{\%}\,S\ped{n}$ i $100\unit{\%}\,S\ped{n}$.
+\vspace{5mm}
+\begin{table}[h]
+   \vspace{-5mm}
+   \caption{\label{taula:errors_ti_m2} Classes de precisi\'{o} 3 i 5 per a Tc de mesura}
+   \begin{center}\begin{tabular}{c>{\hspace{2em}}cc}
+   \toprule[1pt]
+   Classe de & \multicolumn{2}{c}{Error de corrent} \\
+   %\cmidrule(rl){2-3}
+   precisi\'{o} &  \multicolumn{2}{c}{\hspace{0.5em}[$\pm$ \% $I\ped{ns}$]} \\
+   \midrule
+    3 & 3 & 3 \\
+    5 & 5 & 5 \\
+    \midrule
+    $I\ped{s}$ [\% $I\ped{ns}$]\,: & 50 & 120 \\
+   \bottomrule[1pt]
+   \end{tabular} \end{center}
+\end{table}
+
+
+Existeixen tamb\'{e} els valors normalitzats 0,2 S i  0,5 S, que mantenen la precisi\'{o} per a valors baixos de corrent.
+En la Taula \vref{taula:errors_ti_m3}
+s'indiquen els l\'{\i}mits, per a diversos corrents de secundari
+$I\ped{s}$, dels errors de corrent i  de fase d'aquestes dues classes de
+precisi\'{o},  per a c\`{a}rregues compreses entre
+$25\unit{\%}\,S\ped{n}$ i $100\unit{\%}\,S\ped{n}$.
+
+\begin{table}[h]
+    \fontsize{9pt}{11pt}\selectfont
+   \caption{\label{taula:errors_ti_m3} Classes de precisi\'{o} 0,2 S i 0,5 S per a Tc de mesura}
+   \begin{center}\begin{tabular}{cccccc<{\hspace{1em}}ccccc<{\hspace{1em}}ccccc}
+   \toprule[1pt]
+   \renewcommand*{\multirowsetup}{\centering}
+   \multirow{2}{17mm}{\rule{0mm}{4.5mm}Classe de\\precisi\'{o}} &
+   \multicolumn{5}{c}{\multirow{2}{35mm}{\rule{0mm}{4.5mm}Error de corrent\\ \rule{6mm}{0mm}[$\pm$ \% $I\ped{ns}$]}} &
+   \multicolumn{10}{c}{Error de fase} \\
+   \cmidrule(rl){7-16}
+    &  & & & & &\multicolumn{5}{c}{\hspace{-1em}[$\pm$ minuts d'arc]}  &
+   \multicolumn{5}{c}{[$\pm$ crad]} \\
+   \midrule
+    0,2 S & 0,75 & 0,35 & 0,2 & 0,2 & 0,2 & 30 & 15 & 10 & 10 & 10 & 0,9 & 0,45 & 0,3 & 0,3 & 0,3 \\
+    0,5 S& 1,5 & 0,75 & 0,5 & 0,5 & 0,5 & 90 & 45 & 30 & 30 & 30  & 2,7 & 1,35 & 0,9 & 0,9& 0,9 \\
+    \midrule
+    $I\ped{s}$ [\% $I\ped{ns}$]\,: & 1 & 5 & 20 & 100 & 120 & 1 & 5 & 20 & 100 & 120 & 1 & 5 & 20 & 100 & 120 \\
+   \bottomrule[1pt]
+   \end{tabular} \end{center}
+\end{table}
+
+En les tres taules anteriors, es considera que el factor de
+potencia \'{e}s igual 1 quan la pot\`{e}ncia subministrada pel secundari \'{e}s inferior a 5\unit{VA}, i 0,8 inductiu per a valors de pot\`{e}ncia superiors. En qualsevol cas, la pot\`{e}ncia ser\`{a} sempre superior a 1\unit{VA}.
+
+
+\subsection{Caracter\'{\i}stiques particulars dels Tc de protecci\'{o}}
+
+Contr\`{a}riament als transformadors de mesura, els transformadors de
+protecci\'{o} es dissenyen de manera que no se saturin fins a  valors
+de sobrecorrents primaris elevats, ja que interessa que el
+secundari segueixi reflectint el que passa en el primari per a
+ sobrecorrents elevats (encara que sigui amb errors m\'{e}s grans), per
+tal que els rel\'{e}s de protecci\'{o} connectats al transformador, actu\"{\i}n
+als valors de sobrecorrents a qu\`{e} estan ajustats.
+
+Es presenten a continuaci\'{o} les caracter\'{\i}stiques particulars dels Tc
+de protecci\'{o}.
+
+\subsubsection{Corrent l\'{\i}mit de precisi\'{o} assignat ($I\ped{LP}$)}
+\index{transformadors de mesura i protecci\'{o} (Tc)!corrent l\'{\i}mit de
+precisi\'{o} assignat ($I\ped{LP}$)}
+
+El corrent
+l\'{\i}mit de precisi\'{o} \'{e}s el corrent primari m\`{a}xim, per al qual el transformador mant\'{e} el l\'{\i}mit
+de l'error compost que t\'{e} assignat.
+
+\subsubsection{Factor l\'{\i}mit de precisi\'{o} ($F\ped{LP}$) }
+\index{transformadors de mesura i protecci\'{o} (Tc)!factor l\'{\i}mit de
+precisi\'{o} ($F\ped{LP}$)}
+
+ El factor l\'{\i}mit de precisi\'{o}
+es defineix com la relaci\'{o} entre el corrent l\'{\i}mit de precisi\'{o}
+i el corrent primari nominal: $F\ped{LP} = I\ped{LP} /I\ped{np}$.
+Els valors normalitzats s\'{o}n: 5, 10, 15, 20 i 30.
+
+Mentre es compleixi  $I\ped{p}<F\ped{LP} I\ped{np}$, queda garantit
+que el transformador no se saturar\`{a}, i per tant el corrent
+secundari seguir\`{a} reflectint amb suficient precisi\'{o} el valor del
+corrent primari.
+
+Cal tenir en compte que el valor de $F\ped{LP}$ est\`{a} lligat
+ al valor de $S\ped{n}$, i que nom\'{e}s \'{e}s v\`{a}lid
+quan tenim aquest consum de  pot\`{e}ncia en el secundari; per a un
+valor de pot\`{e}ncia $S$ diferent de $S\ped{n}$, tindrem un valor
+$F'\ped{LP}$ tamb\'{e} diferent de  $F\ped{LP}$. La relaci\'{o} que
+lliga aquests valors, tenint en compte la resist\`{e}ncia del debanat
+secundari del transformador  $R\ped{s}$ \'{e}s:
+\begin{equation}\label{eq:flp}
+    F\ped{LP} (S\ped{n}+R\ped{s}I\ped{ns}^2) =
+    F'\ped{LP} (S+R\ped{s}I\ped{ns}^2)
+\end{equation}
+
+Valors t\'{\i}pics per a la resist\`{e}ncia del debanat secundari s\'{o}n:
+\begin{dinglist}{'167}
+    \item Secundaris de 5\unit{A}: $R\ped{s} = \SIrange{0,2}{0,4}{\ohm}$
+    \item Secundaris d'1\unit{A}:  $R\ped{s} = \SIrange{1,5}{3,5}{\ohm}$
+\end{dinglist}
+
+\subsubsection{Classe de precisi\'{o}}
+\index{transformadors de mesura i protecci\'{o} (Tc)!classe de precisi\'{o}}
+
+ Els valors normalitzats s\'{o}n 5P i 10P.
+
+En la Taula \vref{taula:errors_ti_p} s'indiquen els l\'{\i}mits dels
+errors de corrent i de fase,  per al corrent nominal
+$I\ped{ns}$ i  la c\`{a}rrega de precisi\'{o} nominal $S\ped{n}$,  amb un
+factor de potencia 0,8 inductiu; s'indica, a m\'{e}s, l'error
+compost per al corrent $I\ped{LP}$.
+
+La classe de precisi\'{o} i el factor l\'{\i}mit de precisi\'{o} s'expressen
+sempre de forma conjunta, per exemple 5P15 s'interpreta com: classe
+de precisi\'{o} 5P i $F\ped{LP}=15.$
+\begin{table}[h]
+    \caption{\label{taula:errors_ti_p} Classes de precisi\'{o} per a Tc de protecci\'{o}}
+    \begin{center}\begin{tabular}{ccccc}
+    \toprule[1pt]
+    \renewcommand*{\multirowsetup}{\centering}
+    \multirow{2}{17mm}{\rule{0mm}{4.5mm}Classe de\\precisi\'{o}} &
+    \multirow{2}{30mm}{\rule{0mm}{4.5mm}Error de corrent\\ \rule{6mm}{0mm}[$\pm$ \% $I\ped{ns}$]} &
+    \multicolumn{2}{c}{Error de fase} &
+    \multirow{2}{25mm}{\rule{0mm}{4.5mm}Error compost\\ \rule{4mm}{0mm}[$\pm$ \% $I\ped{ns}$]}\\
+    \cmidrule(rl){3-4}
+    &   & [$\pm$ minuts d'arc]  & [$\pm$ crad] & \\
+    \midrule
+    5P & 1 & 60 & 1,8 & 5 \\
+    10P & 3 & --- & --- & 10\\
+    \midrule
+    $I\ped{s}$: & $I\ped{ns}$ & $I\ped{ns}$ & $I\ped{ns}$ & $I\ped{LP}$ \\
+    \bottomrule[1pt]
+    \end{tabular} \end{center}
+\end{table}
+
+\begin{exemple}[Determinaci\'{o} de les caracter\'{\i}stiques d'un transformador de corrent]
+    Es tracta de determinar els valors de $S\ped{n}$ i $F\ped{LP}$,  per
+    a un Tc destinant a alimentar  un rel\'{e} de protecci\'{o} i un convertidor
+    de corrent de \SIrange{4}{20}{mA}. Les caracter\'{\i}stiques
+    dels diferents components s\'{o}n:
+    \begin{dinglist}{'167}
+        \item Tc: Classe de precisi\'{o}  5P, $I\ped{ns}=5\unit{A}$,
+        $R\ped{s}=\SI{0,3}{\ohm}$
+        \item Rel\'{e}: $S\ped{n,rel\grave{e}}=\SI{0,25}{VA}$,
+        $I\ped{n,rel\grave{e}}=5\unit{A}$, $I\ped{m\grave{a}x,rel\grave{e}}=
+        80 I\ped{n,rel\grave{e}}$
+        \item Convertidor: $S\ped{n,conv.}=1\unit{VA}$,
+        $I\ped{n,conv.}=5\unit{A}$
+        \item Cables de connexi\'{o}: C\`{a}rrega = $\SI{1,6}{VA}$
+    \end{dinglist}
+
+    La pot\`{e}ncia total que est\`{a} connectada al secundari del transformador
+    \'{e}s:
+    \[
+        S = \SI{0,25}{VA} + \SI{1}{VA} + \SI{1,6}{VA} = \SI{2,85}{VA}
+    \]
+
+    Prenem com a factor l\'{\i}mit de precisi\'{o},  a aquesta potencia, el
+    factor limitant del corrent m\`{a}xim que pot suportar el rel\'{e} de
+    protecci\'{o}, aix\'{\i} doncs tenim:
+    \[
+        F'\ped{LP} = \frac{80 I\ped{n,rel\grave{e}}}{I\ped{ns}} =
+        \frac{80\times 5\unit{A}}{5\unit{A}} = 80
+    \]
+
+    Si apliquem ara l'equaci\'{o} \eqref{eq:flp}, tenim:
+    \begin{align*}
+        F\ped{LP}\times(S\ped{n}+\SI{0,3}{\ohm} \times (5\unit{A})^2) &=
+        80\times(\SI{2,85}{VA}+\SI{0,3}{\ohm} \times (5\unit{A})^2) \\
+        F\ped{LP}\times(S\ped{n}+\SI{7,5}{VA}) &= 828\unit{VA}
+    \end{align*}
+
+    Escollim a continuaci\'{o} el valor normalitzat $S\ped{n}=
+    15\unit{VA}$, i calculem $F\ped{LP}$:
+    \[
+        F\ped{LP} = \frac{828\unit{VA}}{15\unit{VA}+\SI{7,5}{VA}}
+        = \num{36,8}
+    \]
+
+    Finalment, escollim el valor normalitzat immediatament inferior al valor
+    de c\`{a}lcul obtingut: $F\ped{LP} = 30$, i
+    recalculem el valor $F'\ped{LP}$ que tindrem realment:
+    \[
+    F'\ped{LP} = \frac{30\times(15\unit{VA} + \SI{7,5}{VA})}
+    {\SI{2,85}{VA} + \SI{7,5}{VA}} = 65 < 80
+    \]
+
+    El valor resultant \'{e}s per tant acceptable. Aix\'{\i} doncs les
+    caracter\'{\i}stiques buscades del transformador s\'{o}n: $15\unit{VA}$ 5P30.
+\end{exemple}
+
+
+\section{Resum de caracter\'{\i}stiques segons les normes \textsf{CEI 60044}}\index{CEI!60044-0@60044}
+
+Es resumeix a continuaci\'{o} les caracter\'{\i}stiques que apareixen en la placa de caracter\'{\i}stiques dels transformador de mesura i protecci\'{o}. La paraula
+{"<}classe{">} s'abrevia a {"<}cl.{">}:
+
+\begin{dinglist}{'167}
+   \item \textbf{Tt}: Tensions nominals  prim\`{a}ria ($U\ped{np}$) i secund\`{a}ria ($U\ped{ns}$), freq\"{u}\`{e}ncia nominal ($f\ped{n}$),
+    pot\`{e}ncia nominal ($S\ped{n}$), factor de tensi\'{o} i     designaci\'{o} dels terminals. Addicionalment tenim:
+       \begin{dinglist}{'167}
+           \item \textbf{Tt de mesura}: Classe de precisi\'{o}, per  exemple cl.~0,5.
+           \item \textbf{Tt de protecci\'{o}}: Classes de precisi\'{o}, per  exemple cl.~0,5 3P.
+        \end{dinglist}
+    \item \textbf{Tc}: Corrents nominals primari ($I\ped{np}$) i secundari ($I\ped{np}$), freq\"{u}\`{e}ncia nominal ($f\ped{n}$),
+     pot\`{e}ncia nominal ($S\ped{n}$),  corrents t\`{e}rmic nominal de curta durada ($I\ped{th}$), din\`{a}mic nominal ($I\ped{dyn}$) i t\`{e}rmic nominal continu ($I\ped{cth}$), i     designaci\'{o} dels terminals. Addicionalment tenim:
+        \begin{dinglist}{'167}
+           \item \textbf{Tc de mesura}: Classe de precisi\'{o} i factor de seguretat, per exemple cl.~0,5 $F\ped{S} 10$
+           \item \textbf{Tc de protecci\'{o}}: Classe i factor l\'{\i}mit de precisi\'{o}. Normalment s'expressen de forma conjunta, i s'omet l'abreviatura {"<}cl.{">},  per exemple 5P15.
+        \end{dinglist}
+\end{dinglist}
+
+\pagebreak
+\section{Caracter\'{\i}stiques dels transformadors de tensi\'{o} segons la norma \textsf{IEEE C57.13}}
+\index{transformadors de mesura i protecci\'{o} (Tt)}\index{IEEE!C57.13}
+
+\subsubsection{Tensi\'{o}}
+
+El valor est\`{a}ndard de la tensi\'{o} de
+secundari \'{e}s 120\unit{V}, amb un rang de tensions que pot anar de 108\unit{V} a 132\unit{V}. Aquest valors es divideixen per $\sqrt{3}$ en el cas de transformadors connectats entre fase i terra.
+
+
+\subsubsection{Classe i pot\`{e}ncia de precisi\'{o}}
+
+Els Tt es designen a partir dels dos
+elements indicats a continuaci\'{o}.
+
+\begin{dingautolist}{'312}
+    \item \textbf{Classe de precisi\'{o}}: Aquest concepte \'{e}s equivalent
+    a l'utilitzat en les normes \textsf{CEI}. Els valors
+    normalitzats s\'{o}n: cl.~0,3, 0,6, 1,2 i 2,4.
+    \item \textbf{Pot\`{e}ncia de precisi\'{o}}: Aquest concepte \'{e}s equivalent
+    a l'utilitzat en les normes \textsf{CEI}. Els valors
+    normalitzats es designen mitjan\c{c}ant lletres, i es poden veure en
+    la Taula \vref{taula:s_ieee_tt}.
+
+    \begin{table}[h]
+    \caption{\label{taula:s_ieee_tt} Pot\`{e}ncies \textsf{IEEE} de precisi\'{o}  per a Tt}
+    \begin{center}\begin{tabular}{ccc}
+    \toprule[1pt]
+    Lletra de & Pot\`{e}ncia de & $\cos\varphi$\\
+    designaci\'{o} &  precisi\'{o} [VA] &  (inductiu)\\
+    \midrule
+        W & 12,5 & 0,10\\
+        X & 25 & 0,70 \\
+        Y & 75 & 0,85 \\
+        Z & 200 & 0,85 \\
+        ZZ & 400 & 0,85 \\
+        M & 35 & 0,20 \\
+    \bottomrule[1pt]
+    \end{tabular} \end{center}
+    \end{table}
+\end{dingautolist}
+
+Aquests dos elements s'expressen de forma conjunta, per exemple:
+1,2Y.
+
+\subsubsection{Identificaci\'{o} dels terminals}
+
+Els terminal s'identifiquen amb lletres. S'utilitza la lletra H per designar els terminals del primari, i la lletra X per designar els terminals del secundari (i tamb\'{e} la Y, Z, U, W, V,  etc.{}, en el cas de m\'{u}ltiples secundaris); cada terminal estar\`{a} numerat, per exemple: H\ped{1}, H\ped{2},  X\ped{1}, X\ped{2}. Els terminal hom\`{o}legs s\'{o}n H\ped{1} i X\ped{1} (i tamb\'{e} Y\ped{1}, Z\ped{1}, U\ped{1}, W\ped{1}, V\ped{1}, etc.{}, en el cas de m\'{u}ltiples secundaris).
+
+En el cas de m\'{u}ltiples primaris, els terminals es designen amb la lletra H, numerant-los per parelles (H\ped{1}, H\ped{2}, H\ped{3}, H\ped{4}, etc.{}). Els terminals senars s\'{o}n terminals hom\`{o}legs.
+
+Quan els secundaris tenen preses m\'{u}ltiples, el terminals s'identifiquen com X\ped{1}, X\ped{2}, X\ped{3}, etc.{}, (o Y\ped{1}, Y\ped{2}, Y\ped{3}, etc.{}, Z\ped{1}, Z\ped{2}, Z\ped{3}, etc.{}). Quan el terminal X\ped{1} no s'utilitza, el terminal utilitzat amb el menor n\'{u}mero \'{e}s l'hom\`{o}leg del terminal primari; per exemple, un transformador amb un primari H\ped{1}, H\ped{2}, i un secundari  X\ped{1}, X\ped{2}, X\ped{3}, X\ped{4}, X\ped{5}, on els terminals secundaris utilitzats s\'{o}n els X\ped{2} i  X\ped{4}, els terminals hom\`{o}legs s\'{o}n H\ped{1} i X\ped{2}.
+
+
+\section{Caracter\'{\i}stiques dels transformadors de corrent segons la norma \textsf{IEEE C57.13}}
+\index{transformadors de mesura i protecci\'{o} (Tt)}\index{IEEE!C57.13}
+
+
+\subsection{Tc de mesura}
+
+Els Tc de mesura  es designen a partir
+dels tres elements indicats a continuaci\'{o}.
+
+\begin{dingautolist}{'312}
+    \item \textbf{Classe de precisi\'{o}}: Aquest concepte \'{e}s equivalent
+    a l'utilitzat en les normes \textsf{CEI}. Els valors
+    normalitzats s\'{o}n: cl.~0,3, 0,6, 1,2 i 2,4.
+    \item \textbf{La lletra {"<}B{">}}:\index{B} \'{E}s la inicial de la paraula
+    {"<}burden{">}  (c\`{a}rrega).\index{burden@\guillemotleft burden\guillemotright}
+    \item \textbf{C\`{a}rrega de precisi\'{o}}: Aquest concepte \'{e}s equivalent
+    a l'utilitzat en les normes \textsf{CEI}. Els valors
+    normalitzats s\'{o}n: $Z\ped{ns}$ = \SIlist{0,1;0,2;0,5;0,9;1,8}{\ohm}.
+
+    La pot\`{e}ncia de precisi\'{o} es pot calcular, a partir del
+    corrent  nominal secundari $I\ped{ns}$, utilitzant l'equaci\'{o}
+    \eqref{eq:sn_ti}.
+\end{dingautolist}
+
+Aquests tres elements s'expressen de forma conjunta, per exemple:
+0,3B0,2.
+
+\subsection{Tc de protecci\'{o}}
+
+Els Tc de protecci\'{o} es designen a
+partir dels tres elements indicats a continuaci\'{o}.
+
+\begin{dingautolist}{'312}
+    \item \textbf{Error compost}: Indica l'error compost m\`{a}xim (en tant per cent) del
+    transformador, quan el corrent que circula pel
+    transformador \'{e}s 20 vegades el corrent nominal. Aquest concepte
+     \'{e}s equivalent a la classe de precisi\'{o} de la norma \textsf{CEI},
+     amb $F\ped{LP}=20$. Nom\'{e}s s'utilitza amb els transformadors antics (tipus {"<}L{">} o {"<}H{">}); en el cas del transformadors actuals
+     (tipus {"<}C{">}, {"<}K{">} o {"<}T{">}), l'error \'{e}s sempre el \SI{10}{\%}, i no s'indica.
+
+    \item \textbf{Les lletres {"<}C{">}, {"<}K{">}, {"<}T{">}, {"<}L{">} o {"<}H{">}}: La lletra {"<}C{">} \'{e}s la inicial de la
+    paraula  {"<}calculated{">} (calculada). El flux de dispersi\'{o} d'aquests transformadors \'{e}s negligible, i el seu error es pot calcular.\index{C}\index{calculated@\guillemotleft calculated\guillemotright}
+
+    La lletra {"<}K{">} \'{e}s equivalent a la {"<}C{">}, per\`{o} la tensi\'{o} del colze de la corba d'excitaci\'{o} ha de ser com a m\'{\i}nim el \SI{70}{\%}
+    de la tensi\'{o} nominal de secundari.\index{K}
+
+    La lletra {"<}T{">} \'{e}s la inicial de la   paraula  {"<}tested{">} (mesurada). El flux de dispersi\'{o} d'aquests transformadors \'{e}s apreciable, i el seu error nom\'{e}s es pot obtenir mitjan\c{c}ant mesures.\index{T}\index{tested@\guillemotleft tested\guillemotright}
+
+    Les lletres {"<}L{">} i {"<}H{">} s\'{o}n denominacions antigues,  no utilitzades actualment. La lletra {"<}L{">} \'{e}s la inicial de {"<}low leakage{">} (baixa
+    dispersi\'{o}), i la lletra {"<}H{">} \'{e}s la inicial de {"<}high leakage{">} (alta dispersi\'{o}).\index{L}\index{low leakage@\guillemotleft low leakage\guillemotright}\index{H}\index{high leakage@\guillemotleft high leakage\guillemotright}
+
+    \item \textbf{Tensi\'{o} nominal de secundari}: \'{E}s la tensi\'{o} m\`{a}xima
+    que hi pot haver en el secundari, per tal de no sobrepassar l'error compost que t\'{e}
+    assignat el transformador, quan el corrent que hi circula
+     \'{e}s 20 vegades el corrent nominal. Els valors
+    normalitzats s\'{o}n: \SIlist{10; 50; 100; 200; 400; 800}{V}.
+
+    La c\`{a}rrega de precisi\'{o} en el secundari
+    $Z\ped{ns}$ i la pot\`{e}ncia de precisi\'{o} $S\ped{n}$, s'obtenen a partir d'aquesta
+    tensi\'{o} m\`{a}xima de secundari $U\ped{m\grave{a}x,s}$
+    i del corrent     nominal de secundari $I\ped{ns}$, segons les equacions seg\"{u}ents:
+    \begin{align}
+        Z\ped{ns} &= \frac{U\ped{m\grave{a}x,s}}{20 I\ped{ns}}\\
+        S\ped{n} &= Z\ped{ns} \,I\ped{ns}^2 = \frac{U\ped{m\grave{a}x,s} I\ped{ns}}{20}
+        \label{eq:sn_ti_ieee}
+    \end{align}
+\end{dingautolist}
+
+Aquests dos o tres elements s'expressen de forma conjunta, per exemple:
+10L200 o C400.
+
+
+\begin{exemple}[Equival\`{e}ncia entre transformadors \textsf{IEEE} i \textsf{CEI}]
+    Es tracte de trobar els transformadors equivalents, segons les normes \textsf{CEI}, als dos
+    transformadors seg\"{u}ents, donats segons les nomes \textsf{IEEE}: 0,3B0,2 i
+    C50; el corrent nominal de secundari \'{e}s:    $I\ped{ns}=5\unit{A}$.
+
+    En el primer cas, tenim de forma directa: cl.~0,3; la pot\`{e}ncia de precisi\'{o} la trobem
+    aplicant l'equaci\'{o} \eqref{eq:sn_ti}:
+    \[
+        S\ped{n} =(\SI{5}{A})^2 \times \SI{0,2}{\ohm} =  \SI{5}{VA}
+    \]
+    At\`{e}s que 0,3 no \'{e}s una classe de precisi\'{o} \textsf{CEI} normalitzada,
+    escollir\'{\i}em un transformador de caracter\'{\i}stiques: $5\unit{VA}$ cl.~0,2; caldria a m\'{e}s, definir el factor de
+    seguretat apropiat per a la nostra aplicaci\'{o}.
+
+    En el segon cas, tenim de forma directa la classe i el factor l\'{\i}mit de
+    precisi\'{o}: 10P20; la pot\`{e}ncia de precisi\'{o} la trobem
+    aplicant l'equaci\'{o} \eqref{eq:sn_ti_ieee}:
+    \[
+        S\ped{n} = \SI{50}{V} \times  \SI{5}{A}\, / 20 = \SI{12,5}{VA}
+    \]
+    At\`{e}s que \SI{12,5}{VA} no \'{e}s una pot\`{e}ncia de precisi\'{o} \textsf{CEI} normalitzada,
+     escollir\'{\i}em un transformador de caracter\'{\i}stiques:
+    \SI{15}{VA} 10P20; caldria a m\'{e}s, comprovar el factor l\'{\i}mit de precisi\'{o} real
+    que tindrem en la nostra aplicaci\'{o}, utilitzant l'equaci\'{o} \eqref{eq:flp}.
+\end{exemple}
+
+\section{Connexi\'{o} de Tc i Tt a aparells de mesura o de
+protecci\'{o}}\label{sec:conex_ti_tt}\index{transformadors de mesura i
+protecci\'{o}!connexi\'{o}}
+
+A vegades es presenta la necessitat de connectar un nou aparell de
+mesura o de protecci\'{o} en una insta{\l.l}aci\'{o} existent, on els
+transformadors de tensi\'{o} i corrent ja estan muntats i connectats a
+d'altres aparells. En aquest cas, cal parar atenci\'{o} a la connexi\'{o}
+que ens demana el nou aparell que volem insta{\l.l}ar, per tal de no
+equivocar-nos.
+
+La connexi\'{o} dels Tt a un nou aparell sol ser simple, ja que nom\'{e}s
+cal veure a quin terminal de l'aparell cal connectar cadascuna de
+les tensions (fases R, S i T), i reproduir aquesta connexi\'{o} en la
+nostra insta{\l.l}aci\'{o}.
+
+La connexi\'{o} dels Tc a un nou aparell demana una mica m\'{e}s
+d'atenci\'{o}, ja que a m\'{e}s de saber a  quins terminals de l'aparell hem
+de connectar els corrents (de les fases R, S i T), hem de fixar-nos
+en els sentits de circulaci\'{o} d'aquests corrents que ens demana
+l'aparell, i mantenir-los quan incorporem l'aparell a la nostra
+insta{\l.l}aci\'{o}. La manera de no equivocar-se, \'{e}s suposar un sentit de
+circulaci\'{o} arbitrari del corrent  pel primari del Tc (per exemple,
+de la font de tensi\'{o} cap a la c\`{a}rrega), i veure a continuaci\'{o}, fent
+servir els terminals hom\`{o}legs P1-S1 i P2-S2, quin \'{e}s el sentit de
+circulaci\'{o} del corrent en el secundari del Tc cap a l'aparell;
+aquest sentit \'{e}s el que haurem de respectar en la nostra
+insta{\l.l}aci\'{o}, quan hi afegim el nou aparell.
+
+
+\begin{exemple}[Connexi\'{o} d'un watt\'{\i}metre a una insta{\l.l}aci\'{o} existent]
+    Es representa a continuaci\'{o} la connexi\'{o} d'un watt\'{\i}metre, extret
+    d'un cat\`{a}leg.
+
+    El costat del circuit primari on es troben les c\`{a}rregues, ve indicat
+    per les l\'{\i}nies, amb una creu al mig, que uneixen les tres fases.
+
+    \begin{center}
+        \input{Imatges/Cap-TrafosMesProt-Watt.pdf_tex}
+    \end{center}
+
+    A continuaci\'{o} es representa una insta{\l.l}aci\'{o} existent, amb dos Tt i
+    dos Tc, que alimenten a dos volt\'{\i}metres i a dos amper\'{\i}metres
+    respectivament; les c\`{a}rregues es troben a la dreta del circuit
+    primari.
+
+    Es tracta d'afegir el nou watt\'{\i}metre a aquesta
+    insta{\l.l}aci\'{o}.
+
+    \begin{center}
+        \input{Imatges/Cap-TrafosMesProt-Instal.pdf_tex}
+    \end{center}
+
+    La connexi\'{o} completa amb els dos volt\'{\i}metres, els dos amper\'{\i}metres i el watt\'{\i}metre, \'{e}s el seg\"{u}ent.
+
+    \begin{center}
+        \input{Imatges/Cap-TrafosMesProt-Instal-Watt.pdf_tex}
+    \end{center}
+
+    A continuaci\'{o} es detalla pas a pas com arribar a aquesta connexi\'{o}.
+
+    Comencem fixant-nos en les tensions del watt\'{\i}metre, i veiem que cal
+    connectar-li la tensi\'{o} de la fase R al terminal 1, la tensi\'{o} de la
+    fase S al terminal 3, i la tensi\'{o} de la fase T al terminal 2.
+
+    Per aconseguir-ho en la nostra insta{\l.l}aci\'{o}, sense tocar la
+    connexi\'{o} dels dos volt\'{\i}metres existents, nom\'{e}s cal connectar
+    el terminal {"<}\textsf{a}{">} del primer Tt al terminal 1 del watt\'{\i}metre (tensi\'{o} de
+    la fase R), el terminal {"<}\textsf{a}{">} del segon Tt al terminal 3 del watt\'{\i}metre
+    (tensi\'{o} de la fase S), i el terminal {"<}\textsf{b}{">} d'un dels dos Tt
+    al terminal 2 del watt\'{\i}metre (tensi\'{o} de la fase T).
+
+    Ens fixem a continuaci\'{o} en els corrents del watt\'{\i}metre. Si suposem
+    de forma arbitr\`{a}ria, uns corrents pels circuits primaris dels Tc,
+    que vagin d'esquerra a dreta (aix\`{o} \'{e}s, cap a les c\`{a}rregues), veiem
+    que aquests corrents entren pels terminals {"<}\textsf{S1}{">} dels primaris dels Tc,
+    i per tant surten, transformats, pels terminals {"<}\textsf{P1}{">} dels secundaris
+    dels Tc. Aix\'{\i} doncs, el corrent que circula pel secundari del primer
+    Tc, entra al watt\'{\i}metre pel terminal 4, i en surt pel terminal 5, i
+    el corrent que circula pel secundari del segon Tc, entra al
+    watt\'{\i}metre pel terminal 6, i en surt pel terminal 7. Aquest sentit
+    de circulaci\'{o} dels corrents \'{e}s el que hem de mantenir, quan
+    connectem el watt\'{\i}metre a la nostra insta{\l.l}aci\'{o}.
+
+    Per aconseguir-ho en la nostra insta{\l.l}aci\'{o}, sense tocar la
+    connexi\'{o} dels dos amper\'{\i}metres existents, comencem per suposar un
+    sentit dels corrents primaris id\`{e}ntic al suposat anteriorment, \'{e}s a
+    dir cap a les c\`{a}rregues (aix\`{o} \'{e}s, d'esquerra a dreta). L'objectiu
+    ser\`{a} veure el sentit de circulaci\'{o} dels corrents de secundari
+    respecte dels terminals {"<}\textsf{S1}{">} dels dos Tc, ja que disposem d'un fil per
+    a cadascun dels dos terminals de forma separada; no passa el mateix
+    amb els dos terminals {"<}\textsf{S2}{">}, ja que \'{u}nicament disposem d'un fil pel
+    qual circula la suma dels dos corrents. Per tant, veiem que amb el
+    sentit de circulaci\'{o} que hem adoptat, aquests corrents surten pels
+    terminals {"<}\textsf{P1}{">} dels primaris dels Tc, i per tant entren, transformats,
+    pels terminals {"<}\textsf{S1}{">} dels secundaris dels Tc.
+
+    Aquests corrents que entren pels terminals {"<}\textsf{S1}{">}, i que hem de dur al
+    watt\'{\i}metre, seran corrents que vistos des del watt\'{\i}metre, en
+    sortiran; per tant si ens fixem en l'an\`{a}lisi que hem fet en el
+    circuit inicial del watt\'{\i}metre, veiem que els terminal per on surten
+    els corrents s\'{o}n el 5 i el 7. Per tant ara queda clar que hem de
+    connectar el terminal {"<}\textsf{S1}{">} del primer Tc, despr\'{e}s de passar per
+    l'amper\'{\i}metre \textsf{A1}, al terminal 5 del watt\'{\i}metre, i el
+    terminal {"<}\textsf{S1}{">} del segon Tc, despr\'{e}s de passar per l'amper\'{\i}metre
+    \textsf{A2}, al terminal 7 del watt\'{\i}metre. Finalment, nom\'{e}s ens cal
+    tancar el circuit dels corrents secundaris, unint entre s\'{\i} els dos
+    terminals d'entrada 4  i 6, i connectant-los amb el fil com\'{u} que
+    uneix els dos terminals {"<}\textsf{S2}{">} dels dos Tc.
+
+    Com es pot veure, no t\'{e} cap incid\`{e}ncia sobre la connexi\'{o}, quin \'{e}s
+    el terminal del secundari que est\`{a} connectat a terra, ni en el cas
+    dels Tt ni en el cas dels Tc.
+\end{exemple}

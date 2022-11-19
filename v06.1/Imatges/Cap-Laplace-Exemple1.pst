@@ -1,0 +1,268 @@
+%%Created by jPicEdt 1.4pre4: mixed JPIC-XML/LaTeX format
+%%Thu Feb 16 19:52:31 CET 2006
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="3.5" x-max="137" y-min="3" y-max="36" auto-bounding="false">
+%<multicurve points="(5,31);(5,31);(5,4);(5,4)"
+%	
+%	 fill-style="solid"
+%	 left-arrow="head" />
+%<multicurve points="(4,5);(4,5);(55,5);(55,5)"
+%	
+%	 fill-style="solid"
+%	 right-arrow="head" />
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(5,3)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize 0}
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(56,5)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%$t$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(3.5,27.5)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize 3}
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(3.5,12.5)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize 1}
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(5,31.5)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%$f(t)$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(3.5,5)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize 0}
+%</text>
+%<multicurve points="(5,5);(5,5);(12.5,27.5);(12.5,27.5);(12.5,27.5);(27.5,5);
+%	(27.5,5);(27.5,5);(35,27.5);(35,27.5);(35,27.5);(50,5);
+%	(50,5);(50,5);(52.5,12.5);(52.5,12.5)"
+%	 stroke-width="0.45" stroke-color="#b47d23"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(12.5,4);(12.5,4);(12.5,6);(12.5,6)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(20,4);(20,4);(20,6);(20,6)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(27.5,4);(27.5,4);(27.5,6);(27.5,6)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(35,4);(35,4);(35,6);(35,6)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(42.5,4);(42.5,4);(42.5,6);(42.5,6)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(50,4);(50,4);(50,6);(50,6)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(4,12.5);(4,12.5);(6,12.5);(6,12.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(4,20);(4,20);(6,20);(6,20)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(4,27.5);(4,27.5);(6,27.5);(6,27.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(3.5,20)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize 2}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(12.5,3)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize 1}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(20,3)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize 2}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(27.5,3)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize 3}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(35,3)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize 4}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(42.5,3)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize 5}
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(50,3)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize 6}
+%</text>
+%<multicurve points="(84,31);(84,31);(84,4);(84,4)"
+%	
+%	 fill-style="solid"
+%	 left-arrow="head" />
+%<multicurve points="(83,5);(83,5);(134,5);(134,5)"
+%	
+%	 fill-style="solid"
+%	 right-arrow="head" />
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(84,3)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize 0}
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(135,5)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%$t$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(82.5,27.5)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize $\hat{U}$}
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(84,31.5)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%$u(t)$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(82.5,5)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize 0}
+%</text>
+%<multicurve points="(106.5,4);(106.5,4);(106.5,6);(106.5,6)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(129,4);(129,4);(129,6);(129,6)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(83,27.5);(83,27.5);(85,27.5);(85,27.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(106.5,3)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize $\tau$}
+%</text>
+%<smoothpolygon points="(84,5);(95.5,47.5);(106.5,5)" closed="false"
+%	smoothness="0.7;0.7;0.7"
+%	 stroke-width="0.45" stroke-color="#b47d23"
+%	 fill-style="none"
+%	 />
+%<smoothpolygon points="(106.5,5);(118,47.5);(129,5)" closed="false"
+%	smoothness="0.7;0.7;0.7"
+%	 stroke-width="0.45" stroke-color="#b47d19"
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(129,3)" text-frame="noframe"
+%	 stroke-width="0.15" stroke-style="dotted"
+%	 fill-style="solid"
+%	 >
+%{\scriptsize $2\tau$}
+%</text>
+%<smoothpolygon points="(129,5);(130,9);(131,11.5)" closed="false"
+%	smoothness="0.7;0.7;0.7"
+%	 stroke-width="0.45" stroke-color="#b47d23"
+%	 fill-style="none"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PsTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(137,36)
+\psline[fillstyle=solid]{<-}(5,31)(5,4)
+\psline[fillstyle=solid]{->}(4,5)(55,5)
+\rput[t](5,3){{\scriptsize 0}}
+\rput[l](56,5){$t$}
+\rput[r](3.5,27.5){{\scriptsize 3}}
+\rput[r](3.5,12.5){{\scriptsize 1}}
+\rput[b](5,31.5){$f(t)$}
+\rput[r](3.5,5){{\scriptsize 0}}
+\newrgbcolor{userLineColour}{0.71 0.49 0.14}
+\psline[linewidth=0.45,linecolor=userLineColour](5,5)(12.5,27.5)
+(12.5,27.5)(27.5,5)
+(27.5,5)(35,27.5)
+(35,27.5)(50,5)
+(50,5)(52.5,12.5)
+\psline(12.5,4)(12.5,6)
+\psline(20,4)(20,6)
+\psline(27.5,4)(27.5,6)
+\psline(35,4)(35,6)
+\psline(42.5,4)(42.5,6)
+\psline(50,4)(50,6)
+\psline(4,12.5)(6,12.5)
+\psline(4,20)(6,20)
+\psline(4,27.5)(6,27.5)
+\rput[r](3.5,20){{\scriptsize 2}}
+\rput[t](12.5,3){{\scriptsize 1}}
+\rput[t](20,3){{\scriptsize 2}}
+\rput[t](27.5,3){{\scriptsize 3}}
+\rput[t](35,3){{\scriptsize 4}}
+\rput[t](42.5,3){{\scriptsize 5}}
+\rput[t](50,3){{\scriptsize 6}}
+\psline[fillstyle=solid]{<-}(84,31)(84,4)
+\psline[fillstyle=solid]{->}(83,5)(134,5)
+\rput[t](84,3){{\scriptsize 0}}
+\rput[l](135,5){$t$}
+\rput[r](82.5,27.5){{\scriptsize $\hat{U}$}}
+\rput[b](84,31.5){$u(t)$}
+\rput[r](82.5,5){{\scriptsize 0}}
+\psline(106.5,4)(106.5,6)
+\psline(129,4)(129,6)
+\psline(83,27.5)(85,27.5)
+\rput[t](106.5,3){{\scriptsize $\tau$}}
+\newrgbcolor{userLineColour}{0.71 0.49 0.14}
+\psbezier[linewidth=0.45,linecolor=userLineColour](84,5)(92.05,34.75)(98.8,34.75)(106.5,5)
+\newrgbcolor{userLineColour}{0.71 0.49 0.1}
+\psbezier[linewidth=0.45,linecolor=userLineColour](106.5,5)(114.55,34.75)(121.3,34.75)(129,5)
+\rput[t](129,3){{\scriptsize $2\tau$}}
+\newrgbcolor{userLineColour}{0.71 0.49 0.14}
+\psbezier[linewidth=0.45,linecolor=userLineColour](129,5)(129.7,7.8)(130.3,9.75)(131,11.5)
+\end{pspicture}

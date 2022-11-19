@@ -1,0 +1,296 @@
+%%Created by jPicEdt 1.4.1: mixed JPIC-XML/LaTeX format
+%%Tue Jan 23 19:36:25 CET 2007
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="168" y-min="0" y-max="47" auto-bounding="false">
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(70,27.18);(70,27.18);(70,7.5);(70,7.5)"
+%	 right-arrow= "head"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(117.46,20.18);(117.46,20.18);(105,20.18);(105,20.18)"
+%	 right-arrow= "head"
+%	 />
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(31.5,42.68)"
+%	 text-hor-align= "center-h"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%$\cmplx{\chi}_\alpha$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(6,20.68)"
+%	 text-hor-align= "right"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%$\cmplx{\chi}_\gamma$
+%</text>
+%<text text-vert-align= "top"
+%	 anchor-point= "(7.5,4.68)"
+%	 text-hor-align= "center-h"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%$\cmplx{\chi}_\beta$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(87.5,37.68)"
+%	 text-hor-align= "left"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%$\cmplx{\chi}_\alpha\ap{(1)}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(52,37.68)"
+%	 text-hor-align= "right"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%$\cmplx{\chi}_\gamma\ap{(1)}$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(126,31.18)"
+%	 text-hor-align= "center-h"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%$\cmplx{\chi}_\alpha\ap{(2)}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(104.5,20.68)"
+%	 text-hor-align= "right"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%$\cmplx{\chi}_\beta\ap{(2)}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(127,8.68)"
+%	 text-hor-align= "center-h"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%$\cmplx{\chi}_\gamma\ap{(2)}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(151,31.18)"
+%	 text-hor-align= "right"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%$\cmplx{\chi}_\alpha\ap{(0)}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(151,23.18)"
+%	 text-hor-align= "right"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%$\cmplx{\chi}_\beta\ap{(0)}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(151,15.68)"
+%	 text-hor-align= "right"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%$\cmplx{\chi}_\gamma\ap{(0)}$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(17.5,13.14)"
+%	 text-hor-align= "left"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%Sistema
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(53,23.18)"
+%	 text-hor-align= "left"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%Sistema
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(103.5,12.18)"
+%	 text-hor-align= "left"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%Sistema
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(149,7.18)"
+%	 text-hor-align= "left"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%Sistema
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(17.5,7.68)"
+%	 text-hor-align= "left"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%asimètric
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(53,18.18)"
+%	 text-hor-align= "left"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%directe
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(103.5,7.18)"
+%	 text-hor-align= "left"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%invers
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(149,1.68)"
+%	 text-hor-align= "left"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%homopolar
+%</text>
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(70,27.18);(70,27.18);(52.5,37.18);(52.5,37.18)"
+%	 right-arrow= "head"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(70,27.18);(70,27.18);(86.5,37.18);(86.5,37.18)"
+%	 right-arrow= "head"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(117.5,20.18);(117.5,20.18);(125.5,30.18);(125.5,30.18)"
+%	 right-arrow= "head"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(117.5,20.18);(117.5,20.18);(125.5,10.68);(125.5,10.68)"
+%	 right-arrow= "head"
+%	 />
+%<multicurve left-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(152,31.18);(152,31.18);(162,36.18);(162,36.18)"
+%	 />
+%<multicurve left-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(152,15.68);(152,15.68);(162,20.68);(162,20.68)"
+%	 />
+%<multicurve left-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(152,23.18);(152,23.18);(162,28.18);(162,28.18)"
+%	 />
+%<multicurve left-arrow= "head"
+%	 stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(31.5,41.68);(31.5,41.68);(21,28.18);(21,28.18)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(21,28.18);(21,28.18);(8,5.18);(8,5.18)"
+%	 right-arrow= "head"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(21,28.18);(21,28.18);(7.5,20.18);(7.5,20.18)"
+%	 right-arrow= "head"
+%	 />
+%<text text-vert-align= "top"
+%	 anchor-point= "(70,6.68)"
+%	 text-hor-align= "center-h"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%$\cmplx{\chi}_\beta\ap{(1)}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(40,20.5)"
+%	 text-hor-align= "center-h"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%$\equiv$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(86.5,20.5)"
+%	 text-hor-align= "center-h"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%+
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(135,20.5)"
+%	 text-hor-align= "center-h"
+%	 text-frame= "noframe"
+%	 fill-style= "none"
+%	 >
+%+
+%</text>
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(168,47)
+\psline[linewidth=0.25]{->}(70,27.18)(70,7.5)
+\psline[linewidth=0.25]{->}(117.46,20.18)(105,20.18)
+\rput[b](31.5,42.68){$\cmplx{\chi}_\alpha$}
+\rput[r](6,20.68){$\cmplx{\chi}_\gamma$}
+\rput[t](7.5,4.68){$\cmplx{\chi}_\beta$}
+\rput[l](87.5,37.68){$\cmplx{\chi}_\alpha\ap{(1)}$}
+\rput[r](52,37.68){$\cmplx{\chi}_\gamma\ap{(1)}$}
+\rput[b](126,31.18){$\cmplx{\chi}_\alpha\ap{(2)}$}
+\rput[r](104.5,20.68){$\cmplx{\chi}_\beta\ap{(2)}$}
+\rput(127,8.68){$\cmplx{\chi}_\gamma\ap{(2)}$}
+\rput[r](151,31.18){$\cmplx{\chi}_\alpha\ap{(0)}$}
+\rput[r](151,23.18){$\cmplx{\chi}_\beta\ap{(0)}$}
+\rput[r](151,15.68){$\cmplx{\chi}_\gamma\ap{(0)}$}
+\rput[bl](17.5,13.14){Sistema}
+\rput[bl](53,23.18){Sistema}
+\rput[bl](103.5,12.18){Sistema}
+\rput[bl](149,7.18){Sistema}
+\rput[bl](17.5,7.68){asimètric}
+\rput[bl](53,18.18){directe}
+\rput[bl](103.5,7.18){invers}
+\rput[bl](149,1.68){homopolar}
+\psline[linewidth=0.25]{->}(70,27.18)(52.5,37.18)
+\psline[linewidth=0.25]{->}(70,27.18)(86.5,37.18)
+\psline[linewidth=0.25]{->}(117.5,20.18)(125.5,30.18)
+\psline[linewidth=0.25]{->}(117.5,20.18)(125.5,10.68)
+\psline[linewidth=0.25]{<-}(152,31.18)(162,36.18)
+\psline[linewidth=0.25]{<-}(152,15.68)(162,20.68)
+\psline[linewidth=0.25]{<-}(152,23.18)(162,28.18)
+\psline[linewidth=0.25]{<-}(31.5,41.68)(21,28.18)
+\psline[linewidth=0.25]{->}(21,28.18)(8,5.18)
+\psline[linewidth=0.25]{->}(21,28.18)(7.5,20.18)
+\rput[t](70,6.68){$\cmplx{\chi}_\beta\ap{(1)}$}
+\rput(40,20.5){$\equiv$}
+\rput(86.5,20.5){+}
+\rput(135,20.5){+}
+\end{pspicture}

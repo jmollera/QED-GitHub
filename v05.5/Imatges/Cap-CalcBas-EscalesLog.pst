@@ -1,0 +1,168 @@
+%%Created by jPicEdt 1.4.1: mixed JPIC-XML/LaTeX format
+%%Fri Jan 26 19:21:05 CET 2007
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="150" y-min="0" y-max="40" auto-bounding="false">
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(0,29);(0,29);(150,29);(150,29)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(5,34);(5,34);(5,24);(5,24)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(47,34);(47,34);(47,24);(47,24)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(72,34);(72,34);(72,24);(72,24)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(89,34);(89,34);(89,24);(89,24)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(103,34);(103,34);(103,24);(103,24)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(113,34);(113,34);(113,24);(113,24)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(123,34);(123,34);(123,24);(123,24)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(131,34);(131,34);(131,24);(131,24)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(138,34);(138,34);(138,24);(138,24)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(145,34);(145,34);(145,24);(145,24)"
+%	 />
+%<ellipse closure= "open"
+%	 p3= "(34,30)"
+%	 p1= "(32,28)"
+%	 fill-style= "solid"
+%	 stroke-width= "0.25"
+%	 angle-end= "360"
+%	 p2= "(34,28)"
+%	 angle-start= "0"
+%	 />
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(33,36)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$x$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(145,36)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$10^{N+1}$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(5,36)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$10^N$
+%</text>
+%<multicurve stroke-style= "dashed"
+%	 stroke-dasharray= "1;1"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(5,22.85);(5,22.85);(5,0);(5,0)"
+%	 />
+%<multicurve stroke-style= "dashed"
+%	 stroke-dasharray= "1;1"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(33,27);(33,27);(33,11.42);(33,11.42)"
+%	 />
+%<multicurve stroke-style= "dashed"
+%	 stroke-dasharray= "1;1"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(145,22.85);(145,22.85);(145,0);(145,0)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(5,2.5);(5,2.5);(145,2.5);(145,2.5)"
+%	 left-arrow= "head"
+%	 />
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(19,15)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$D$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(77,4)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$L$
+%</text>
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(5,13);(5,13);(33,13);(33,13)"
+%	 left-arrow= "head"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(33,34);(33,34);(33,31);(33,31)"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(150,40)
+\psline[linewidth=0.25](0,29)(150,29)
+\psline[linewidth=0.25](5,34)(5,24)
+\psline[linewidth=0.25](47,34)(47,24)
+\psline[linewidth=0.25](72,34)(72,24)
+\psline[linewidth=0.25](89,34)(89,24)
+\psline[linewidth=0.25](103,34)(103,24)
+\psline[linewidth=0.25](113,34)(113,24)
+\psline[linewidth=0.25](123,34)(123,24)
+\psline[linewidth=0.25](131,34)(131,24)
+\psline[linewidth=0.25](138,34)(138,24)
+\psline[linewidth=0.25](145,34)(145,24)
+\rput{0}(33,29){\psellipse[linewidth=0.25,fillstyle=solid](0,0)(1,1)}
+\rput[b](33,36){$x$}
+\rput[b](145,36){$10^{N+1}$}
+\rput[b](5,36){$10^N$}
+\psline[linewidth=0.25,linestyle=dashed,dash=1 1](5,22.85)(5,0)
+\psline[linewidth=0.25,linestyle=dashed,dash=1 1](33,27)(33,11.42)
+\psline[linewidth=0.25,linestyle=dashed,dash=1 1](145,22.85)(145,0)
+\psline[linewidth=0.25]{<->}(5,2.5)(145,2.5)
+\rput[b](19,15){$D$}
+\rput[b](77,4){$L$}
+\psline[linewidth=0.25]{<->}(5,13)(33,13)
+\psline[linewidth=0.25]{->}(33,34)(33,31)
+\end{pspicture}

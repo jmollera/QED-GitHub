@@ -1,0 +1,36 @@
+#pragma mode( separator(.,;) integer(h32) )
+
+EXPORT Rec_a_Cil(rec)
+BEGIN
+LOCAL cil:=polar_coordinates(rec(1),rec(2));
+  RETURN [cil(1),cil(2),rec(3)];
+END;
+
+EXPORT Cil_a_Rec(cil)
+BEGIN
+LOCAL rec:=rectangular_coordinates(cil(1),cil(2));
+  RETURN [rec(1),rec(2),cil(3)];
+END;
+
+EXPORT Esf_a_Cil(esf)
+BEGIN
+LOCAL cil:=rectangular_coordinates(esf(1),esf(2));
+  RETURN [cil(2),esf(3),cil(1)];
+END;
+
+EXPORT Cil_a_Esf(cil)
+BEGIN
+LOCAL esf:=polar_coordinates(cil(3),cil(1));
+  RETURN [esf(1),esf(2),cil(2)];
+END;
+
+EXPORT Rec_a_Esf(rec)
+BEGIN
+ RETURN  Cil_a_Esf(Rec_a_Cil(rec));
+END;
+
+EXPORT Esf_a_Rec(esf)
+BEGIN
+  RETURN Cil_a_Rec(Esf_a_Cil(esf));
+END;
+

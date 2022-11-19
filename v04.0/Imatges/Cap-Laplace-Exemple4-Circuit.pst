@@ -1,0 +1,169 @@
+%%Created by jPicEdt 1.4pre4: mixed JPIC-XML/LaTeX format
+%%Wed Jan 04 16:26:52 CET 2006
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="91" y-min="0" y-max="32" auto-bounding="false">
+%<multicurve points="(5,16.5);(5,16.5);(5,24);(5,24);(5,24);(14.5,24);
+%   (14.5,24);(14.5,24);(19,27.5);(19,27.5)"
+%
+%    fill-style="none"
+%    />
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(17.5,22)" text-frame="noframe"
+%
+%    fill-style="none"
+%    >
+%M
+%</text>
+%<smoothpolygon points="(14.81,26.65);(17.23,26);(17.29,23.44)" closed="false"
+%   smoothness="0.7;0.7;0.7"
+%
+%    fill-style="none"
+%    right-arrow="head" />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(16.5,28)" text-frame="noframe"
+%
+%    fill-style="solid"
+%    >
+%$t=0$
+%</text>
+%<multicurve points="(47,24);(47,24);(58.5,24);(58.5,24)"
+%
+%    fill-style="none"
+%    />
+%<circle p1="(1,12.5)" p2="(5,16.5)" p3="(9,12.5)" closure="plain"
+%
+%    fill-style="none"
+%    />
+%<parallelogram p1="(37,22)" p2="(37,26)" p3="(47,26)"
+%
+%    fill-style="none"
+%    />
+%<parallelogram p1="(58.5,22)" p2="(58.5,26)" p3="(68.5,26)"
+%
+%    fill-style="solid"
+%    />
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(3,17.5)" text-frame="noframe"
+%
+%    fill-style="solid"
+%    >
+%+
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(10,12.5)" text-frame="noframe"
+%
+%    fill-style="solid"
+%    >
+%$u(t)=\sqrt{2}\cdot 220\cos(100\piup t)\unit{V}$
+%</text>
+%<multicurve points="(24.5,22.5);(24.5,22.5);(33.5,22.5);(33.5,22.5)"
+%
+%    fill-style="solid"
+%    right-arrow="head" />
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(28.5,21.5)" text-frame="noframe"
+%
+%    fill-style="solid"
+%    >
+%$i(t)$
+%</text>
+%<multicurve points="(68.5,24);(68.5,24);(79.5,24);(79.5,24)"
+%
+%    fill-style="none"
+%    />
+%<multicurve points="(79.5,26.5);(79.5,26.5);(79.5,21.5);(79.5,21.5)"
+%    stroke-width="0.5"
+%    fill-style="none"
+%    />
+%<multicurve points="(81.5,26.5);(81.5,26.5);(81.5,21.5);(81.5,21.5)"
+%    stroke-width="0.5"
+%    fill-style="none"
+%    />
+%<multicurve points="(5,8.5);(5,8.5);(5,0.5);(5,0.5);(5,0.5);(90,0.5);
+%   (90,0.5);(90,0.5);(90,24);(90,24);(90,24);(81.5,24);
+%   (81.5,24)"
+%
+%    fill-style="none"
+%    />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(42,27)" text-frame="noframe"
+%
+%    fill-style="solid"
+%    >
+%$R=500\unit{\ohm}$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(63,27)" text-frame="noframe"
+%
+%    fill-style="solid"
+%    >
+%$L=0{,}5\unit{H}$
+%</text>
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(81,27)" text-frame="noframe"
+%
+%    fill-style="solid"
+%    >
+%$C=4$\micro{}F
+%</text>
+%<text text-vert-align="top" text-hor-align="center-h" anchor-point="(80.5,19.5)" text-frame="noframe"
+%
+%    fill-style="solid"
+%    >
+%$u\ped{C}(t)$
+%</text>
+%<smoothpolygon points="(75.5,22);(80.5,19);(85.5,22.5)" closed="false"
+%   smoothness="0.7;0.7;0.7"
+%
+%    fill-style="none"
+%    right-arrow="head" />
+%<multicurve points="(19.5,25);(19.5,25);(19.5,24);(19.5,24);(19.5,24);(37,24);
+%   (37,24)"
+%
+%    fill-style="none"
+%    />
+%<g>
+%<smoothpolygon points="(3,12.5);(4,15);(5,12.5)" closed="false"
+%   smoothness="0.7;0.7;0.7"
+%
+%    fill-style="none"
+%    />
+%<smoothpolygon points="(7,12.5);(6,10);(5,12.5)" closed="false"
+%   smoothness="0.7;0.7;0.7"
+%
+%    fill-style="none"
+%    />
+%</g>
+%</jpic>
+%%End JPIC-XML
+%PsTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(91,32)
+\psline(5,16.5)(5,24)
+(5,24)(14.5,24)
+(14.5,24)(19,27.5)
+\rput(17.5,22){M}
+\psbezier{->}(14.81,26.65)(16.5,26.2)(17.25,25.23)(17.29,23.44)
+\rput[b](16.5,28){$t=0$}
+\psline(47,24)(58.5,24)
+\rput{0}(5,12.5){\psellipse[](0,0)(4,4)}
+\pspolygon[](37,22)(37,26)(47,26)(47,22)
+\pspolygon[fillstyle=solid](58.5,22)(58.5,26)(68.5,26)(68.5,22)
+\rput(3,17.5){+}
+\rput[l](10,12.5){$u(t)=\sqrt{2}\cdot 220\cos(100\piup t)\unit{V}$}
+\psline[fillstyle=solid]{->}(24.5,22.5)(33.5,22.5)
+\rput[t](28.5,21.5){$i(t)$}
+\psline(68.5,24)(79.5,24)
+\psline[linewidth=0.5](79.5,26.5)(79.5,21.5)
+\psline[linewidth=0.5](81.5,26.5)(81.5,21.5)
+\psline(5,8.5)(5,0.5)
+(5,0.5)(90,0.5)
+(90,0.5)(90,24)
+(90,24)(81.5,24)
+\rput[b](42,27){$R=500\unit{\ohm}$}
+\rput[b](63,27){$L=0{,}5\unit{H}$}
+\rput[b](81,27){$C=4$\micro{}F}
+\rput[t](80.5,19.5){$u\ped{C}(t)$}
+\psbezier{->}(75.5,22)(79,19.9)(82,20.05)(85.5,22.5)
+\psline(19.5,25)(19.5,24)
+(19.5,24)(37,24)
+\psbezier(3,12.5)(3.7,14.25)(4.3,14.25)(5,12.5)
+\psbezier(7,12.5)(6.3,10.75)(5.7,10.75)(5,12.5)
+\end{pspicture}

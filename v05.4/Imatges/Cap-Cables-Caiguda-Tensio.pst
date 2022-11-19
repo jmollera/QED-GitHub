@@ -1,0 +1,110 @@
+%%Created by jPicEdt 1.4.1: mixed JPIC-XML/LaTeX format
+%%Sat Jan 27 10:30:27 CET 2007
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="110" y-min="0" y-max="33" auto-bounding="false">
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(52,27.5)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{U}\ped{O}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(20,12)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\varphi$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(79.5,9.5)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\ju\,X\ped{Cable}\,\cmplx{I}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(32,19)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{U}\ped{F}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(9,12)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{I}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(52.5,4)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$R\ped{Cable}\,\cmplx{I}$
+%</text>
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(1,27);(1,27);(16,4.5);(16,4.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(1,27);(1,27);(50.5,10.5);(50.5,10.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(50.5,10.5);(50.5,10.5);(57,1);(57,1)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(57,1);(57,1);(109.5,27);(109.5,27)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(1,27);(1,27);(109.5,27);(109.5,27)"
+%	 />
+%<multicurve stroke-style= "dashed"
+%	 stroke-dasharray= "1;1"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(13,9);(18,11);(21,14.67);(22,20)"
+%	 left-arrow= "head"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(110,33)
+\rput[b](52,27.5){$\cmplx{U}\ped{O}$}
+\rput[l](20,12){$\varphi$}
+\rput[l](79.5,9.5){$\ju\,X\ped{Cable}\,\cmplx{I}$}
+\rput[l](32,19){$\cmplx{U}\ped{F}$}
+\rput[r](9,12){$\cmplx{I}$}
+\rput[r](52.5,4){$R\ped{Cable}\,\cmplx{I}$}
+\psline[linewidth=0.25]{->}(1,27)(16,4.5)
+\psline[linewidth=0.25]{->}(1,27)(50.5,10.5)
+\psline[linewidth=0.25]{->}(50.5,10.5)(57,1)
+\psline[linewidth=0.25]{->}(57,1)(109.5,27)
+\psline[linewidth=0.25]{->}(1,27)(109.5,27)
+\psbezier[linewidth=0.25,linestyle=dashed,dash=1 1]{<->}(13,9)(18,11)(21,14.67)(22,20)
+\end{pspicture}

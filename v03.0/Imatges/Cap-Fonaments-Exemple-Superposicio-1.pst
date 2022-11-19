@@ -1,0 +1,155 @@
+%%Created by jPicEdt 1.4pre4: mixed JPIC-XML/LaTeX format
+%%Sun Feb 19 10:40:55 CET 2006
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="92" y-min="0" y-max="35" auto-bounding="false">
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(42.5,7)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$\cmplx{I}$
+%</text>
+%<multicurve points="(37,27);(37,27);(54,27);(54,27)"
+%	
+%	 fill-style="none"
+%	 />
+%<circle p1="(12.5,14)" p2="(16.5,18)" p3="(20.5,14)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(27,25)" p2="(27,29)" p3="(37,29)"
+%	
+%	 fill-style="none"
+%	 />
+%<parallelogram p1="(54,25)" p2="(54,29)" p3="(64,29)"
+%	
+%	 fill-style="solid"
+%	 />
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(14.5,19)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%+
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(11,14)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$5_{\measuredangle 0\degree}\unit{V}$
+%</text>
+%<multicurve points="(43.5,10);(43.5,10);(43.5,3.5);(43.5,3.5)"
+%	
+%	 fill-style="solid"
+%	 right-arrow="head" />
+%<multicurve points="(48,15);(48,15);(43,15);(43,15)"
+%	 stroke-width="0.5"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(48,13);(48,13);(43,13);(43,13)"
+%	 stroke-width="0.5"
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(32,30.5)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$4\unit{\ohm}$
+%</text>
+%<g>
+%<smoothpolygon points="(14.5,14);(15.5,16.5);(16.5,14)" closed="false"
+%	smoothness="0.7;0.7;0.7"
+%	
+%	 fill-style="none"
+%	 />
+%<smoothpolygon points="(18.5,14);(17.5,11.5);(16.5,14)" closed="false"
+%	smoothness="0.7;0.7;0.7"
+%	
+%	 fill-style="none"
+%	 />
+%</g>
+%<multicurve points="(16.5,18);(16.5,18);(16.5,27);(16.5,27);(16.5,27);(27,27);
+%	(27,27)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(45.5,15);(45.5,15);(45.5,27);(45.5,27)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(45.5,13);(45.5,13);(45.5,1.5);(45.5,1.5)"
+%	
+%	 fill-style="none"
+%	 />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(59,30.5)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$5\unit{\ohm}$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(49.5,14)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$2\unit{\ohm}$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(80,14)" text-frame="noframe"
+%	
+%	 fill-style="solid"
+%	 >
+%$2_{\measuredangle 0\degree}\unit{A}$
+%</text>
+%<circle p1="(71,14)" p2="(75,18)" p3="(79,14)" closure="plain"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(64,27);(64,27);(75,27);(75,27);(75,27);(75,18);
+%	(75,18)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(16.5,10);(16.5,10);(16.5,1.5);(16.5,1.5);(16.5,1.5);(75,1.5);
+%	(75,1.5);(75,1.5);(75,10);(75,10)"
+%	
+%	 fill-style="none"
+%	 />
+%<multicurve points="(75,11.5);(75,11.5);(75,16.5);(75,16.5)"
+%	
+%	 fill-style="solid"
+%	 right-arrow="head" />
+%</jpic>
+%%End JPIC-XML
+%PsTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(92,35)
+\rput[r](42.5,7){$\cmplx{I}$}
+\psline(37,27)(54,27)
+\rput{0}(16.5,14){\psellipse[](0,0)(4,4)}
+\pspolygon[](27,25)(27,29)(37,29)(37,25)
+\pspolygon[fillstyle=solid](54,25)(54,29)(64,29)(64,25)
+\rput(14.5,19){+}
+\rput[r](11,14){$5_{\measuredangle 0\degree}\unit{V}$}
+\psline[fillstyle=solid]{->}(43.5,10)(43.5,3.5)
+\psline[linewidth=0.5](48,15)(43,15)
+\psline[linewidth=0.5](48,13)(43,13)
+\rput[b](32,30.5){$4\unit{\ohm}$}
+\psbezier(14.5,14)(15.2,15.75)(15.8,15.75)(16.5,14)
+\psbezier(18.5,14)(17.8,12.25)(17.2,12.25)(16.5,14)
+\psline(16.5,18)(16.5,27)
+(16.5,27)(27,27)
+\psline(45.5,15)(45.5,27)
+\psline(45.5,13)(45.5,1.5)
+\rput[b](59,30.5){$5\unit{\ohm}$}
+\rput[l](49.5,14){$2\unit{\ohm}$}
+\rput[l](80,14){$2_{\measuredangle 0\degree}\unit{A}$}
+\rput{0}(75,14){\psellipse[](0,0)(4,4)}
+\psline(64,27)(75,27)
+(75,27)(75,18)
+\psline(16.5,10)(16.5,1.5)
+(16.5,1.5)(75,1.5)
+(75,1.5)(75,10)
+\psline[fillstyle=solid]{->}(75,11.5)(75,16.5)
+\end{pspicture}

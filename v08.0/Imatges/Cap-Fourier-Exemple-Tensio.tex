@@ -1,0 +1,18 @@
+\documentclass{article}
+\input{../Preambul/Preambul-Img.tex}
+
+\begin{document}
+
+    \psset{xunit=0.75cm,yunit=0.1cm}
+    \begin{pspicture}(-1.3,-36.0)(18.0,39.5)
+        \psgrid[griddots=20,xunit=1.5cm,yunit=1cm,subgriddiv=1,gridlabels=0pt](0,-3)(8,3)
+        \psaxes[tickstyle=bottom,linecolor=blue,Dx=2,Dy=10,Ox=0,Oy=-30]{->}(0,-30)(0,-30)(16.5,34)
+        \psplot[linecolor=red,plotstyle=curve,plotpoints=400,linewidth=1.5pt]{0}{16}
+            {36 x mul sin 36 3 x mul mul sin 3 div add
+            36 5 x mul mul sin 5 div add 36 7 x mul mul sin 7 div add 36 9 x mul mul sin 9 div add
+            36 11 x mul mul sin 11 div add 80 mul 3.1416 div}
+        \rput(0,37.1){$u(t)\unit{[V]}$}
+        \rput[l](16.7,-30){$t\unit{[ms]}$}
+    \end{pspicture}
+
+\end{document} 

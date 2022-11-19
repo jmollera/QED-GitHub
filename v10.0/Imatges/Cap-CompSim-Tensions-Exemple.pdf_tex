@@ -1,0 +1,63 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Cap-CompSim-Tensions-Exemple.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{277.79526367bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.61224491)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Cap-CompSim-Tensions-Exemple.pdf}}%
+    \put(1.25510205,0.36734692){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.25550365,0.57440406){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{C}}}%
+    \put(0.92722875,0.04506549){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{A}}}%
+    \put(0.0408595,0.04487371){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{B}}}%
+    \put(0.46553031,0.01052921){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{2760 V}}}%
+    \put(0.58292711,0.32283572){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{2300 V}}}%
+    \put(0.14972091,0.32281361){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{1840 V}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Cap-CompSim-Tensions-Exemple.pdf}}%
+    \put(0.37534094,0.23014901){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{G}}}%
+  \end{picture}%
+\endgroup%

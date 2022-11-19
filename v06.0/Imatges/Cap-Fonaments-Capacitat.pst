@@ -1,0 +1,98 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Mon Dec 17 21:48:16 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="36" y-min="0" y-max="25" auto-bounding="false">
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(18,10)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$u(t)$
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(24,21)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$i(t)$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(33,10)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$C$
+%</text>
+%<ellipse stroke-width= "0.25"
+%	 p3= "(20,19)"
+%	 p2= "(20,17)"
+%	 p1= "(18,17)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse stroke-width= "0.25"
+%	 p3= "(20,3)"
+%	 p2= "(20,1)"
+%	 p1= "(18,1)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(20,18);(20,18);(29,18);(29,18);(29,18);(29,11);
+%	(29,11)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(20,2);(20,2);(29,2);(29,2);(29,2);(29,9);
+%	(29,9)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(21,20);(21,20);(28,20);(28,20)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(19,16);(19,16);(19,4);(19,4)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(32,11);(32,11);(26,11);(26,11)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(32,9);(32,9);(26,9);(26,9)"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(36,25)
+\rput[r](18,10){$u(t)$}
+\rput[b](24,21){$i(t)$}
+\rput[l](33,10){$C$}
+\rput{0}(19,18){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(19,2){\psellipse[linewidth=0.25](0,0)(1,1)}
+\psline[linewidth=0.25](20,18)
+(29,18)(29,11)
+\psline[linewidth=0.25](20,2)
+(29,2)(29,9)
+\psline[linewidth=0.25]{->}(21,20)(28,20)
+\psline[linewidth=0.25]{->}(19,16)(19,4)
+\psline(32,11)(26,11)
+\psline(32,9)(26,9)
+\end{pspicture}

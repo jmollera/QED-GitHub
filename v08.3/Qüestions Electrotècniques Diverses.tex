@@ -1,0 +1,56 @@
+\documentclass[catalan,a4paper,twoside,11pt]{book}
+
+\input{Preambul/Preambul-Tex.tex}
+
+\begin{document}
+   \frontmatter
+      % estil de les p\`{a}gines normals parells i senars
+      \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO,RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase\leftmark}
+      \include{Pre-Titol}
+      \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{\'{I}ndex}\tableofcontents
+      \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{\'{I}ndex de taules}\listoftables
+      \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{\'{I}ndex de figures}\listoffigures
+      \include{Pre-Prefaci}
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO,RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase Historial}
+      \include{Pre-Historial}
+     \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO,RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase Notaci\'{o}}
+      \include{Pre-Notacio}
+   \mainmatter
+      % estil de les p\`{a}gines normals parells i senars
+      \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}}
+      \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO]{\color{NavyBlue}\sffamily\bfseries\nouppercase\rightmark}
+      \fancyhead[RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase\leftmark}
+   \part{Electrot\`{e}cnia}
+      \include{Cap-Fonaments}
+      \include{Cap-Calculs-Basics}
+      \include{Cap-Components-Simetriques}
+      \include{Cap-Series-Fourier}
+      \include{Cap-Transformada-Laplace}
+   \part{Components El\`{e}ctrics}
+      \include{Cap-Resistencies}
+      \include{Cap-Cables}
+      \include{Cap-Trafos-Mes-Prot}
+      \include{Cap-Trafos-Potencia}
+   \part{Sistemes El\`{e}ctrics de   Pot\`{e}ncia}
+      \include{Cap-Xarxes-Electriques}
+      \include{Cap-Flux-Carregues}
+      \include{Cap-Normatives-Diverses}
+   \part{Ap\`{e}ndixs}
+      \appendix
+      \renewcommand*{\chaptername}{\appendixname}
+      \include{Ape-Alfabet-Grec}
+      \include{Ape-SI}
+      \include{Ape-Constants-Fisiques}
+      \include{Ape-Funcions-Trigonometriques}
+      \include{Ape-Calcul-Numeric}
+   \part{Bibliografia i \'{I}ndex}
+      \backmatter
+      \include{Pos-Bibliografia}
+      \printindex
+ \end{document}

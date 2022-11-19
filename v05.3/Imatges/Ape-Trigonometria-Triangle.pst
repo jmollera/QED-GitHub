@@ -1,0 +1,200 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Sat Jul 14 11:26:29 CEST 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="-6" x-max="86" y-min="-2.5" y-max="52" auto-bounding="false">
+%<multicurve stroke-width= "0.4"
+%	 points= "(2,5);(2,5);(84.5,5);(84.5,5);(84.5,5);(25.5,46);
+%	(25.5,46);(25.5,46);(2,5)"
+%	 fill-style= "none"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(56,28)"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 >
+%$a$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(58.5,27.5)"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 >
+%
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(10,25.5)"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 >
+%$b$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(41,2.5)"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 >
+%$c$
+%</text>
+%<ellipse p3= "(9.5,12)"
+%	 p2= "(9,-2.5)"
+%	 p1= "(-6,-2.5)"
+%	 left-arrow= "head"
+%	 stroke-dasharray= "1;1"
+%	 stroke-style= "dashed"
+%	 closure= "open"
+%	 angle-end= "61.34"
+%	 right-arrow= "head"
+%	 angle-start= "1.91"
+%	 fill-style= "none"
+%	 />
+%<ellipse p3= "(91.94,12.12)"
+%	 p2= "(92.06,-2.12)"
+%	 p1= "(77.37,-2.25)"
+%	 left-arrow= "head"
+%	 stroke-dasharray= "0.9;1.1"
+%	 stroke-style= "dashed"
+%	 closure= "open"
+%	 angle-end= "179.23"
+%	 right-arrow= "head"
+%	 angle-start= "144.98"
+%	 fill-style= "none"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(10.5,9.5)"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 >
+%$\alpha$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(74,8)"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 >
+%$\beta$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(27,39.5)"
+%	 stroke-style= "dotted"
+%	 stroke-width= "0.4"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 >
+%$\gamma$
+%</text>
+%<circle p3= "(84.5,2)"
+%	 p2= "(27,47)"
+%	 p1= "(2,2.5)"
+%	 closure= "open"
+%	 stroke-width= "0.4"
+%	 fill-style= "none"
+%	 />
+%<multicurve stroke-dasharray= "1;1"
+%	 stroke-style= "dashed"
+%	 points= "(43,8.5);(43,8.5);(80.5,27.5);(80.5,27.5)"
+%	 right-arrow= "head"
+%	 fill-style= "none"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(70,24.5)"
+%	 text-rotation= "26"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 >
+%$R$
+%</text>
+%<multicurve points= "(43,9);(43,9);(43,8);(43,8)"
+%	 fill-style= "none"
+%	 />
+%<multicurve points= "(42.5,8.5);(42.5,8.5);(43.5,8.5);(43.5,8.5)"
+%	 fill-style= "none"
+%	 />
+%<ellipse p3= "(48.25,5.13)"
+%	 p2= "(48.25,38.19)"
+%	 p1= "(14,38.03)"
+%	 closure= "open"
+%	 angle-end= "360"
+%	 angle-start= "0"
+%	 fill-style= "none"
+%	 />
+%<multicurve points= "(30.5,21.5);(30.5,21.5);(31.5,21.5);(31.5,21.5)"
+%	 fill-style= "none"
+%	 />
+%<multicurve points= "(31,22);(31,22);(31,21);(31,21)"
+%	 fill-style= "none"
+%	 />
+%<multicurve stroke-dasharray= "1;1"
+%	 stroke-style= "dashed"
+%	 points= "(31,21.5);(31,21.5);(46.5,29);(46.5,29)"
+%	 right-arrow= "head"
+%	 fill-style= "none"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(37,26.5)"
+%	 text-rotation= "26"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 >
+%$r$
+%</text>
+%<circle p3= "(23.5,42.5)"
+%	 p2= "(25.72,41.81)"
+%	 p1= "(29,43.5)"
+%	 left-arrow= "head"
+%	 stroke-dasharray= "1;1"
+%	 stroke-style= "dashed"
+%	 closure= "open"
+%	 right-arrow= "head"
+%	 fill-style= "none"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(86,52)
+\pspolygon[linewidth=0.4](2,5)
+(84.5,5)
+(25.5,46)(2,5)
+\rput(56,28){$a$}
+\rput(58.5,27.5){}
+\rput(10,25.5){$b$}
+\rput(41,2.5){$c$}
+\rput{22.01}(1.75,4.75){\psellipticarc[linestyle=dashed,dash=1 1]{<->}(0,0)(7.55,7.2){-21.08}{38.35}}
+\rput{0.88}(84.66,4.94){\psellipticarc[linestyle=dashed,dash=0.9 1.1]{<->}(0,0)(7.35,7.12){144.59}{178.84}}
+\rput(10.5,9.5){$\alpha$}
+\rput(74,8){$\beta$}
+\rput(27,39.5){$\gamma$}
+\rput{0}(43.29,8.58){\psellipticarc[linewidth=0.4](0,0)(41.73,41.73){-9.07}{188.37}}
+\psline[linestyle=dashed,dash=1 1]{->}(43,8.5)(80.5,27.5)
+\rput{26}(70,24.5){$R$}
+\psline(43,9)(43,8)
+\psline(42.5,8.5)(43.5,8.5)
+\rput{3.82}(31.12,21.58){\psellipse[](0,0)(17.13,-16.53)}
+\psline(30.5,21.5)(31.5,21.5)
+\psline(31,22)(31,21)
+\psline[linestyle=dashed,dash=1 1]{->}(31,21.5)(46.5,29)
+\rput{26}(37,26.5){$r$}
+\rput{0}(25.74,45.8){\psellipticarc[linestyle=dashed,dash=1 1]{<->}(0,0)(3.99,3.99){-124.18}{-35.21}}
+\end{pspicture}

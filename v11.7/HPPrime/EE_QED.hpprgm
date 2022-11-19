@@ -1,0 +1,126 @@
+#pragma mode( separator(.,;) integer(h32) )
+
+    EXPORT Z_Sèrie(z)
+    // z:impedàncies {Z1, Z2, ...} → impedància sèrie
+    BEGIN
+      RETURN ΣLIST(z);
+    END;
+
+	EXPORT Z_Paraŀlel(z)
+    // z:impedàncies {Z1, Z2, ...} → impedància paraŀlel
+    BEGIN
+      RETURN ΠLIST(z)/ΣLIST(ΠLIST(z)/z);
+    END;
+    
+    EXPORT Millman(u,z)
+    // u:tensions {Uax,Ubx,Ucx,...}, z:impedàncies {Zan,Zbn,Zcn,...} → tensió Unx 
+	// n és el punt neutre de les impedàncies, i x és un punt qualsevol
+    BEGIN
+      RETURN ΣLIST(u ./ z) * Z_Paraŀlel(z);
+    END;
+
+    EXPORT Triangle_a_Estrella(zd)
+    // zd:impedàncies en triangle {Zab,Zbc,Zca} → impedàncies en estrella {Zan,Zbn,Zcn}
+    BEGIN
+      LOCAL z:=ΠLIST(zd)/ΣLIST(zd);
+      RETURN {z/zd(2),z/zd(3),z/zd(1)};
+    END;
+    
+    EXPORT Estrella_a_Triangle(zy)
+    // zy:impedàncies en estrella {Zan,Zbn,Zcn} → impedàncies en triangle {Zab,Zbc,Zca}
+    BEGIN
+      LOCAL z:=zy(1)*(zy(2)+zy(3))+zy(2)*zy(3);
+      RETURN {z/zy(3),z/zy(1),z/zy(2)};
+    END;
+
+    EXPORT EZS_U(E,Z,S)
+    // E:font de tensió, Z:impedància, S:potència de la càrrega → tensió U de la càrrega
+    BEGIN
+      LOCAL ZcS:=CONJ(Z)*S;
+      LOCAL ImUe:=IM(ZcS)/ABS(E);
+      LOCAL ReUe:=POLYROOT({1,−ABS(E),RE(ZcS)+ImUe^2});  
+      IF TYPE(ReUe(1))==3 THEN
+        RETURN "No hi ha solució"; // Arrels complexes
+      ELSE
+        RETURN (MAX(ReUe),ImUe)*SIGN(E);
+      END;
+    END;
+    
+    EXPORT kcmil_a_mm2(kcmil)
+    // kcmil:secció en kcmil → secció en mm²
+    BEGIN
+      RETURN kcmil*0.506707479098;
+    END;
+    
+    EXPORT mm2_a_kcmil(mm2)
+    // mm2:secció en mm² → secció en kcmil
+    BEGIN
+      RETURN mm2/0.506707479098;
+    END;
+    
+    EXPORT AWG_a_mm2(AWG)
+    // AWG:número AWG → secció en mm²
+    // Cal entrar 0, -1, -2 i -3 en el cas dels números AWG 1/0, 2/0, 3/0 i 4/0
+    BEGIN
+      RETURN 53.4751207321/(92^(AWG/19.5));
+    END;
+    
+    EXPORT mm2_a_AWG(mm2)
+    // mm2:secció en mm² → número AWG més proper
+    // Els resultats 0, -1, -2 i -3 són equivalents als números AWG 1/0, 2/0, 3/0 i 4/0
+    BEGIN
+      RETURN ROUND(4.31245284200*LN(53.4751207321/mm2),0);
+    END;
+
+    EXPORT Triangle_a_Fasors(u)
+    // u:triangle de tensions {Uab,Ubc,Uca} → fasors de tensió {Uab,Ubc,Uca}
+    // la tensió Uab es pren com el fasor de referència (angle igual a zero)
+    BEGIN
+      LOCAL φ:=Triangle_Solver.SSS(u(1),u(3),u(2));
+      RETURN {u(1),u(2)*(−1,0)*(1,∡φ(2)),u(3)*(−1,0)/(1,∡φ(3))};
+    END;
+    
+    EXPORT FN_a_FF(u)
+    // u:tensions fase-neutre {Uan,Ubn,Ucn} → tensions fase-fase {Uab,Ubc,Uca}
+    BEGIN
+      RETURN {u(1)-u(2),u(2)-u(3),u(3)-u(1)};
+    END;
+    
+    EXPORT FF_a_FN(u,z)
+    // u:tensions fase-fase {Uab,Ubc,Uca}, z:impedàncies {Zan,Zbn,Zcn} → tensions fase-neutre {Uan,Ubn,Ucn}
+    BEGIN
+      RETURN {u(1)/z(2)-u(3)/z(3),u(2)/z(3)-u(1)/z(1),u(3)/z(1)-u(2)/z(2)} * Z_Paraŀlel(z);
+    END;
+    
+    EXPORT FF_a_FG(u)
+    // u:tensions fase-fase {Uab,Ubc,Uca} → tensions fase-G {Uag,Ubg,Ucg}
+    // G és el baricentre del triangle de tensions fase-fase
+    BEGIN
+      RETURN {u(1)-u(3),u(2)-u(1),u(3)-u(2)}/3;
+    END;
+    
+    EXPORT ABC_a_A012(x)
+    // x:fasors {A,B,C} → fasors de seqüència {A0,A1,A2}
+    BEGIN
+      LOCAL A:=[[1,1,1],[1,(-1/2,√3/2),(-1/2,-√3/2)],[1,(-1/2,-√3/2),(-1/2,√3/2)]];
+      RETURN mat2list(A*list2mat(x,1)/3);
+    END;
+    
+    EXPORT A012_a_ABC(x)
+    // x:fasors de seqüència {A0,A1,A2} → fasors {A,B,C}
+    BEGIN
+      LOCAL A:=[[1,1,1],[1,(-1/2,-√3/2),(-1/2,√3/2)],[1,(-1/2,√3/2),(-1/2,-√3/2)]];
+      RETURN mat2list(A*list2mat(x,1));
+    END;
+    
+    EXPORT AN12_a_AB12(x)
+    // x:fasors de seqüència fase-neutre {AN1,AN2} → fasors de seqüència fase-fase {AB1,AB2}
+    BEGIN
+      RETURN √3*{x(1)*exp(π*/6),x(2)*exp(-π*/6)};
+    END;
+    
+    EXPORT AB12_a_AN12(x)
+    // x:fasors de seqüència fase-fase {AB1,AB2} → fasors de seqüència fase-neutre {AN1,AN2}
+    BEGIN
+      RETURN {x(1)/exp(π*/6),x(2)/exp(-π*/6)}/√3;
+    END;

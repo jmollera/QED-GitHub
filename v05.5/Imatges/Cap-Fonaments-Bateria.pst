@@ -1,0 +1,107 @@
+%%Created by jPicEdt 1.4pre4: mixed JPIC-XML/LaTeX format
+%%Tue Jan 03 23:15:16 CET 2006
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="17.5" x-max="42" y-min="0.5" y-max="25" auto-bounding="false">
+%<text text-vert-align="center-v" text-hor-align="left" anchor-point="(34.5,9.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$u(t)$
+%</text>
+%<multicurve points="(33,15.5);(33,15.5);(33,3.5);(33,3.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<multicurve points="(24.5,19.5);(24.5,19.5);(31.5,19.5);(31.5,19.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 right-arrow="head" />
+%<text text-vert-align="bottom" text-hor-align="center-h" anchor-point="(28,20.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$i(t)$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="right" anchor-point="(20,9.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%$U\ped{bat}$
+%</text>
+%<text text-vert-align="center-v" text-hor-align="center-h" anchor-point="(24,9.5)" text-frame="noframe"
+%	
+%	 fill-style="none"
+%	 >
+%
+%</text>
+%<ellipse p1="(32,16.5)" p2="(34,16.5)" p3="(34,18.5)" angle-start="0" angle-end="0" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<ellipse p1="(32,0.5)" p2="(34,0.5)" p3="(34,2.5)" angle-start="0" angle-end="0" closure="open"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(32,1.5);(32,1.5);(24,1.5);(24,1.5);(24,1.5);(24,6);
+%	(24,6)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(32,17.5);(32,17.5);(24,17.5);(24,17.5);(24,17.5);(24,13.5);
+%	(24,13.5)"
+%	 stroke-width="0.25"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(21,13.5);(21,13.5);(27,13.5);(27,13.5)"
+%	 stroke-width="0.35"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(22.5,12);(22.5,12);(25.5,12);(25.5,12)"
+%	 stroke-width="0.6"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(21,10.5);(21,10.5);(27,10.5);(27,10.5)"
+%	 stroke-width="0.35"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(22.5,9);(22.5,9);(25.5,9);(25.5,9)"
+%	 stroke-width="0.6"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(21,7.5);(21,7.5);(27,7.5);(27,7.5)"
+%	 stroke-width="0.35"
+%	 fill-style="none"
+%	 />
+%<multicurve points="(22.5,6);(22.5,6);(25.5,6);(25.5,6)"
+%	 stroke-width="0.6"
+%	 fill-style="none"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PsTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+\psset{xunit=1mm,yunit=1mm,runit=1mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(42,25)
+\rput[l](34.5,9.5){$u(t)$}
+\psline[linewidth=0.25]{->}(33,15.5)(33,3.5)
+\psline[linewidth=0.25]{->}(24.5,19.5)(31.5,19.5)
+\rput[b](28,20.5){$i(t)$}
+\rput[r](20,9.5){$U\ped{bat}$}
+\rput(24,9.5){}
+\rput{0}(33,17.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(33,1.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+\psline[linewidth=0.25](32,1.5)(24,1.5)
+(24,1.5)(24,6)
+\psline[linewidth=0.25](32,17.5)(24,17.5)
+(24,17.5)(24,13.5)
+\psline[linewidth=0.35](21,13.5)(27,13.5)
+\psline[linewidth=0.6](22.5,12)(25.5,12)
+\psline[linewidth=0.35](21,10.5)(27,10.5)
+\psline[linewidth=0.6](22.5,9)(25.5,9)
+\psline[linewidth=0.35](21,7.5)(27,7.5)
+\psline[linewidth=0.6](22.5,6)(25.5,6)
+\end{pspicture}

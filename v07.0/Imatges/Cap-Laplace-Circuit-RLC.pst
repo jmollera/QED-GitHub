@@ -1,0 +1,190 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Mon Dec 24 18:28:35 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="8" x-max="83" y-min="1.5" y-max="32" auto-bounding="false">
+%<multicurve fill-style= "none"
+%	 points= "(39,25);(39,25);(47.5,25);(47.5,25)"
+%	 />
+%<circle p3= "(17,13.5)"
+%	 p2= "(13,17.5)"
+%	 p1= "(9,13.5)"
+%	 fill-style= "none"
+%	 closure= "plain"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "solid"
+%	 anchor-point= "(11,18.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%+
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "solid"
+%	 anchor-point= "(8,13.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$u(t)$
+%</text>
+%<multicurve right-arrow= "head"
+%	 fill-style= "solid"
+%	 points= "(16,23);(16,23);(24.5,23);(24.5,23)"
+%	 />
+%<text text-vert-align= "top"
+%	 fill-style= "solid"
+%	 anchor-point= "(20,22.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$i(t)$
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(13,17.5);(13,17.5);(13,25);(13,25);(13,25);(27,25);
+%	(27,25)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(63.5,25);(63.5,25);(71.5,25);(71.5,25)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(13,9.5);(13,9.5);(13,1.5);(13,1.5);(13,1.5);(82,1.5);
+%	(82,1.5);(82,1.5);(82,25);(82,25);(82,25);(73.5,25);
+%	(73.5,25)"
+%	 />
+%<text text-vert-align= "bottom"
+%	 fill-style= "solid"
+%	 anchor-point= "(33.5,28.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$R$
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "solid"
+%	 anchor-point= "(55.5,28.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$L$
+%</text>
+%<text text-vert-align= "bottom"
+%	 fill-style= "solid"
+%	 anchor-point= "(72.5,28.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$C$
+%</text>
+%<multicurve right-arrow= "head"
+%	 fill-style= "solid"
+%	 points= "(51,23);(51,23);(60,23);(60,23)"
+%	 />
+%<text text-vert-align= "top"
+%	 fill-style= "solid"
+%	 anchor-point= "(55,22.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$i_0$
+%</text>
+%<text text-vert-align= "top"
+%	 fill-style= "solid"
+%	 anchor-point= "(72.5,20)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$u_0$
+%</text>
+%<smoothpolygon right-arrow= "head"
+%	 fill-style= "none"
+%	 closed= "false"
+%	 points= "(67.5,22);(72.5,19);(77.5,22.5)"
+%	 smoothness= "0.7;0.7;0.7"
+%	 />
+%<parallelogram p3= "(39,27)"
+%	 p2= "(27,27)"
+%	 p1= "(27,23)"
+%	 fill-style= "none"
+%	 />
+%<g>
+%<ellipse p3= "(51.5,27)"
+%	 p2= "(51.5,23)"
+%	 p1= "(47.5,23)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(55.5,27)"
+%	 p2= "(55.5,23)"
+%	 p1= "(51.5,23)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(59.5,27)"
+%	 p2= "(59.5,23)"
+%	 p1= "(55.5,23)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(63.5,27)"
+%	 p2= "(63.5,23)"
+%	 p1= "(59.5,23)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "180"
+%	 angle-start= "0"
+%	 />
+%</g>
+%<g>
+%<multicurve fill-style= "none"
+%	 points= "(73.5,22);(73.5,22);(73.5,28);(73.5,28)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(71.5,22);(71.5,22);(71.5,28);(71.5,28)"
+%	 />
+%</g>
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(83,32)
+\psline(39,25)(47.5,25)
+\rput{0}(13,13.5){\psellipse[](0,0)(4,4)}
+\rput(11,18.5){+}
+\rput[r](8,13.5){$u(t)$}
+\psline[fillstyle=solid]{->}(16,23)(24.5,23)
+\rput[t](20,22.5){$i(t)$}
+\psline(13,17.5)
+(13,25)(27,25)
+\psline(63.5,25)(71.5,25)
+\psline(13,9.5)
+(13,1.5)
+(82,1.5)
+(82,25)(73.5,25)
+\rput[b](33.5,28.5){$R$}
+\rput[b](55.5,28.5){$L$}
+\rput[b](72.5,28.5){$C$}
+\psline[fillstyle=solid]{->}(51,23)(60,23)
+\rput[t](55,22.5){$i_0$}
+\rput[t](72.5,20){$u_0$}
+\psbezier{->}(67.5,22)(71,19.9)(74,20.05)(77.5,22.5)
+\pspolygon[](27,23)(27,27)(39,27)(39,23)
+\rput{0}(49.5,25){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(53.5,25){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(57.5,25){\psellipticarc[](0,0)(2,2){0}{180}}
+\rput{0}(61.5,25){\psellipticarc[](0,0)(2,2){0}{180}}
+\psline(73.5,22)(73.5,28)
+\psline(71.5,22)(71.5,28)
+\end{pspicture}

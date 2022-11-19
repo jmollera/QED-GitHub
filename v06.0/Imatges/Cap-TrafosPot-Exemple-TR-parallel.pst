@@ -1,0 +1,857 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Thu Dec 27 09:26:52 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="145" y-min="0" y-max="75" auto-bounding="false">
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(23,51.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(22,47)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(15,43)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(17,42.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(17,58)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%A
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(21.5,58)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%B
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(26,58)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%C
+%</text>
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(21,12);(21,12);(21,26.5);(21,26.5)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(21,12);(21,12);(34.5,5.5);(34.5,5.5)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(21,12);(21,12);(8,5.5);(8,5.5)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(21.5,27)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%A,R
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(34.5,4.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%B,S
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(8,4.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%C,T
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(3.5,73.5);(3.5,73.5);(141,73.5);(141,73.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(3.5,70);(3.5,70);(141,70);(141,70)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(3.5,66.5);(3.5,66.5);(141,66.5);(141,66.5)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(2,73.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%R
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(2,70)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%S
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(2,66.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%T
+%</text>
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(17,59.5);(17,59.5);(17,73.5);(17,73.5)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(21.5,59.5);(21.5,59.5);(21.5,70);(21.5,70)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(26,59.5);(26,59.5);(26,66.5);(26,66.5)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(17,51.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%a
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(21.5,51.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%b
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(26,51.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%c
+%</text>
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(26,36);(26,36);(26,50);(26,50)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(21.5,39.5);(21.5,39.5);(21.5,50);(21.5,50)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(17,43);(17,43);(17,50);(17,50)"
+%	 />
+%<parallelogram fill-style= "none"
+%	 p3= "(29.5,48)"
+%	 p2= "(29.5,61.5)"
+%	 p1= "(13.5,61.5)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(51,43)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(53,42.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(123,48)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(87,43)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(89,42.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(3.5,43);(3.5,43);(141,43);(141,43)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(3.5,39.5);(3.5,39.5);(141,39.5);(141,39.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(3.5,36);(3.5,36);(141,36);(141,36)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(2,43)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%r
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(2,39.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%s
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(2,36)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%t
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(31,55)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%Dy1
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(81.5,55)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%Dy5
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(132,55)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%Dy11
+%</text>
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(21,12);(21,12);(11.5,12);(11.5,12)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(21,12);(21,12);(26,20);(26,20)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(21,12);(21,12);(26,4);(26,4)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(26.5,20.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%a,r
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(30.5,22)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(26,4)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%b,s
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(10.5,12)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%c,t
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(73.5,52)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(64,47.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(67.5,58)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%A
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(72,58)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%B
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(76.5,58)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%C
+%</text>
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(67.5,59.5);(67.5,59.5);(67.5,73.5);(67.5,73.5)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(72,59.5);(72,59.5);(72,70);(72,70)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(76.5,59.5);(76.5,59.5);(76.5,66.5);(76.5,66.5)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(67.5,51.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%a
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(72,51.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%b
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(76.5,51.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%c
+%</text>
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(76.5,43);(76.5,43);(76.5,50);(76.5,50)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(72,36);(72,36);(72,50);(72,50)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(67.5,39.5);(67.5,39.5);(67.5,50);(67.5,50)"
+%	 />
+%<parallelogram fill-style= "none"
+%	 p3= "(80,48)"
+%	 p2= "(80,61.5)"
+%	 p1= "(64,61.5)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(124,51.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(123,48)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(118,58)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%A
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(122.5,58)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%B
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(127,58)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%C
+%</text>
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(118,59.5);(118,59.5);(118,73.5);(118,73.5)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(122.5,59.5);(122.5,59.5);(122.5,66.5);(122.5,66.5)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(127,59.5);(127,59.5);(127,70);(127,70)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(118,51.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%a
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(122.5,51.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%b
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(127,51.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%c
+%</text>
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(127,39.5);(127,39.5);(127,50);(127,50)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(122.5,36);(122.5,36);(122.5,50);(122.5,50)"
+%	 />
+%<multicurve right-arrow= "disk-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 points= "(118,43);(118,43);(118,50);(118,50)"
+%	 />
+%<parallelogram fill-style= "none"
+%	 p3= "(130.5,48)"
+%	 p2= "(130.5,61.5)"
+%	 p1= "(114.5,61.5)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(72,12);(72,12);(72,26.5);(72,26.5)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(72,12);(72,12);(85.5,5.5);(85.5,5.5)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(72,12);(72,12);(59,5.5);(59,5.5)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(72.5,27)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%A,R
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(85.5,4.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%B,S
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(59,4.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%C,T
+%</text>
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(72,12);(72,12);(62.5,12);(62.5,12)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(72,12);(72,12);(77,20);(77,20)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(72,12);(72,12);(77,4);(77,4)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(77.5,20.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%c,r
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(81.5,22)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(77,3.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%a,s
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(61.5,12)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%b,t
+%</text>
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(122.5,12);(122.5,12);(122.5,26.5);(122.5,26.5)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(122.5,12);(122.5,12);(136,5.5);(136,5.5)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(122.5,12);(122.5,12);(109.5,5.5);(109.5,5.5)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(122.5,27)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%(A),A,R
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(138,4.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%(B),C,S
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(107.5,4.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%(C),B,T
+%</text>
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(122.5,12);(122.5,12);(113,12);(113,12)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(122.5,12);(122.5,12);(127.5,20);(127.5,20)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(122.5,12);(122.5,12);(127.5,4);(127.5,4)"
+%	 />
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(128,20.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%a,r
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(132,22)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(127.5,3.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%c,s
+%</text>
+%<text fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(112,12)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%b,t
+%</text>
+%<multicurve right-arrow= "head"
+%	 stroke-style= "dotted"
+%	 fill-style= "none"
+%	 points= "(122.5,12);(122.5,12);(117.5,20);(117.5,20)"
+%	 />
+%<multicurve right-arrow= "head"
+%	 stroke-style= "dotted"
+%	 fill-style= "none"
+%	 points= "(122.5,12);(122.5,12);(117.5,4);(117.5,4)"
+%	 />
+%<multicurve left-arrow= "head"
+%	 stroke-style= "dotted"
+%	 fill-style= "none"
+%	 points= "(132,12);(132,12);(122.5,12);(122.5,12)"
+%	 />
+%<text right-arrow= "circle-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 text-vert-align= "bottom"
+%	 anchor-point= "(117,20.5)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%(a)
+%</text>
+%<text right-arrow= "circle-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 text-vert-align= "top"
+%	 anchor-point= "(117.5,4)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%(c)
+%</text>
+%<text right-arrow= "circle-centered"
+%	 left-arrow= "disk-centered"
+%	 fill-style= "none"
+%	 text-vert-align= "center-v"
+%	 anchor-point= "(133,12)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%(b)
+%</text>
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(145,75)
+\rput(23,51.5){}
+\rput(22,47){}
+\rput(15,43){}
+\rput(17,42.5){}
+\rput[t](17,58){A}
+\rput[t](21.5,58){B}
+\rput[t](26,58){C}
+\psline{->}(21,12)(21,26.5)
+\psline{->}(21,12)(34.5,5.5)
+\psline{->}(21,12)(8,5.5)
+\rput[b](21.5,27){A,R}
+\rput[t](34.5,4.5){B,S}
+\rput[t](8,4.5){C,T}
+\psline(3.5,73.5)(141,73.5)
+\psline(3.5,70)(141,70)
+\psline(3.5,66.5)(141,66.5)
+\rput(2,73.5){R}
+\rput(2,70){S}
+\rput(2,66.5){T}
+\psline{*-*}(17,59.5)(17,73.5)
+\psline{*-*}(21.5,59.5)(21.5,70)
+\psline{*-*}(26,59.5)(26,66.5)
+\rput[b](17,51.5){a}
+\rput[b](21.5,51.5){b}
+\rput[b](26,51.5){c}
+\psline{*-*}(26,36)(26,50)
+\psline{*-*}(21.5,39.5)(21.5,50)
+\psline{*-*}(17,43)(17,50)
+\pspolygon[](13.5,61.5)(29.5,61.5)(29.5,48)(13.5,48)
+\rput(51,43){}
+\rput(53,42.5){}
+\rput(123,48){}
+\rput(87,43){}
+\rput(89,42.5){}
+\psline(3.5,43)(141,43)
+\psline(3.5,39.5)(141,39.5)
+\psline(3.5,36)(141,36)
+\rput(2,43){r}
+\rput(2,39.5){s}
+\rput(2,36){t}
+\rput[l](31,55){Dy1}
+\rput[l](81.5,55){Dy5}
+\rput[l](132,55){Dy11}
+\psline{->}(21,12)(11.5,12)
+\psline{->}(21,12)(26,20)
+\psline{->}(21,12)(26,4)
+\rput[b](26.5,20.5){a,r}
+\rput[b](30.5,22){}
+\rput[t](26,4){b,s}
+\rput[r](10.5,12){c,t}
+\rput(73.5,52){}
+\rput(64,47.5){}
+\rput[t](67.5,58){A}
+\rput[t](72,58){B}
+\rput[t](76.5,58){C}
+\psline{*-*}(67.5,59.5)(67.5,73.5)
+\psline{*-*}(72,59.5)(72,70)
+\psline{*-*}(76.5,59.5)(76.5,66.5)
+\rput[b](67.5,51.5){a}
+\rput[b](72,51.5){b}
+\rput[b](76.5,51.5){c}
+\psline{*-*}(76.5,43)(76.5,50)
+\psline{*-*}(72,36)(72,50)
+\psline{*-*}(67.5,39.5)(67.5,50)
+\pspolygon[](64,61.5)(80,61.5)(80,48)(64,48)
+\rput(124,51.5){}
+\rput(123,48){}
+\rput[t](118,58){A}
+\rput[t](122.5,58){B}
+\rput[t](127,58){C}
+\psline{*-*}(118,59.5)(118,73.5)
+\psline{*-*}(122.5,59.5)(122.5,66.5)
+\psline{*-*}(127,59.5)(127,70)
+\rput[b](118,51.5){a}
+\rput[b](122.5,51.5){b}
+\rput[b](127,51.5){c}
+\psline{*-*}(127,39.5)(127,50)
+\psline{*-*}(122.5,36)(122.5,50)
+\psline{*-*}(118,43)(118,50)
+\pspolygon[](114.5,61.5)(130.5,61.5)(130.5,48)(114.5,48)
+\psline{->}(72,12)(72,26.5)
+\psline{->}(72,12)(85.5,5.5)
+\psline{->}(72,12)(59,5.5)
+\rput[b](72.5,27){A,R}
+\rput[t](85.5,4.5){B,S}
+\rput[t](59,4.5){C,T}
+\psline{->}(72,12)(62.5,12)
+\psline{->}(72,12)(77,20)
+\psline{->}(72,12)(77,4)
+\rput[b](77.5,20.5){c,r}
+\rput[b](81.5,22){}
+\rput[t](77,3.5){a,s}
+\rput[r](61.5,12){b,t}
+\psline{->}(122.5,12)(122.5,26.5)
+\psline{->}(122.5,12)(136,5.5)
+\psline{->}(122.5,12)(109.5,5.5)
+\rput[b](122.5,27){(A),A,R}
+\rput[t](138,4.5){(B),C,S}
+\rput[t](107.5,4.5){(C),B,T}
+\psline{->}(122.5,12)(113,12)
+\psline{->}(122.5,12)(127.5,20)
+\psline{->}(122.5,12)(127.5,4)
+\rput[b](128,20.5){a,r}
+\rput[b](132,22){}
+\rput[t](127.5,3.5){c,s}
+\rput[r](112,12){b,t}
+\psline[linestyle=dotted]{->}(122.5,12)(117.5,20)
+\psline[linestyle=dotted]{->}(122.5,12)(117.5,4)
+\psline[linestyle=dotted]{<-}(132,12)(122.5,12)
+\rput[b](117,20.5){(a)}
+\rput[t](117.5,4){(c)}
+\rput[l](133,12){(b)}
+\end{pspicture}

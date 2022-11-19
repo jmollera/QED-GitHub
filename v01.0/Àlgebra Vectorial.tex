@@ -1,0 +1,592 @@
+\documentclass[catalan,a4paper,twoside,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage[scaled=.95]{helvet}
+\usepackage{courier}
+
+\usepackage{amsmath, amssymb, amscd}
+\usepackage{beccari-v2}
+
+\usepackage{babel}
+\usepackage{varioref}
+\usepackage{indentfirst}
+
+\usepackage[final]{graphicx}
+\usepackage{pstricks}
+\usepackage{pst-plot}
+\usepackage{pst-pdf}
+
+\usepackage{multicol}
+
+\setlength{\parskip}{1.5ex plus0.5ex minus0.5ex}     % separaci\'{o} entre par\`{a}grafs
+\setlength{\columnsep}{2em}                        % separaci\'{o} entre columnes
+
+% format de les p\`{a}gines
+\setlength{\hoffset}{0mm} \setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{-10.8mm} \setlength{\textwidth}{170mm}
+\setlength{\marginparsep}{2mm} \setlength{\marginparwidth}{12mm}
+\setlength{\voffset}{0mm} \setlength{\textheight}{230mm}
+\setlength{\topmargin}{0mm}
+
+\usepackage{ifpdf}
+\ifpdf
+    \usepackage[pdftex=true,
+    bookmarks=true,bookmarksopenlevel=0,bookmarksopen=true,bookmarksnumbered=true,
+    pdftitle={\`{A}lgebra Vectorial},pdfauthor={Josep
+    Mollera},pdfview={FitH},pdfstartview={FitH}, pdfpagelabels=true,
+    colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,plainpages=false]{hyperref}
+\fi
+
+\begin{document}
+
+\title{\`{A}lgebra Vectorial v1.0}
+\author{Josep Mollera Barriga}
+\date{9 de gener de 2006}
+\maketitle
+
+\begin{multicols}{2}
+\scriptsize \tableofcontents
+\end{multicols}
+
+\section{Definicions}
+
+Es d\'{o}na  en primer lloc la definici\'{o} de les magnituds que
+apareixen en les seccions seg\"{u}ents.
+
+\begin{list}{}
+{\setlength{\labelwidth}{14mm}
+\setlength{\leftmargin}{16mm}\setlength{\labelsep}{2mm}}
+   \item[$V$:] Volum d'integraci\'{o}.
+   \item[$S$:]  Superf\'{\i}cie d'integraci\'{o}. $S$ \'{e}s la superf\'{\i}cie que
+   limita el volum $V$.
+   \item[$C$:] Corba d'integraci\'{o}. $C$ \'{e}s la corba tancada que
+   limita la superf\'{\i}cie $S$.
+   \item[$\diff\tau$:] Diferencial de volum, del volum V.
+   \item[$\boldsymbol{\diff a}$:] Vector diferencial de superf\'{\i}cie, de la superf\'{\i}cie
+   $S$. $\boldsymbol{\diff a}$ \'{e}s perpendicular a $S$.
+   \item[$\boldsymbol{\diff l}$:] Vector diferencial de longitud, de la corba
+   $C$. $\boldsymbol{\diff l}$ \'{e}s tangent a $C$.
+   \item[$(x,y,z)$:] Coordenades d'un punt en un sistema de
+   coordenades cartesianes.
+   \item[$(\rho,\varphi,z)$:] Coordenades d'un punt en un sistema de
+   coordenades cil\'{\i}ndriques.
+   \item[$(r,\theta,\varphi)$:] Coordenades d'un punt en un sistema de
+   coordenades esf\`{e}riques.
+   \item[$\boldsymbol{\hat{\imath}},\boldsymbol{\hat{\jmath}},\boldsymbol{\hat{k}}$:]
+   Vectors directors d'un sistema de  coordenades
+   cartesianes.
+   \item[$\boldsymbol{\hat{\rho}},\boldsymbol{\hat{\varphi}},\boldsymbol{\hat{z}}$:] Vectors directors d'un sistema de
+   coordenades cil\'{\i}ndriques.
+   \item[$\boldsymbol{\hat{r}},\boldsymbol{\hat{\theta}},\boldsymbol{\hat{\varphi}}$:] Vectors directors d'un sistema de
+   coordenades esf\`{e}riques.
+   \item[$P$:] Punt en $\mathbb{R}^3$.
+   \item[$\boldsymbol{A,B,C}$:] Vectors en $\mathbb{R}^3$.
+   \item[$\alpha$:] Angle entre dos vectors en $\mathbb{R}^3$.
+   \item[$f,g$:] Funcions escalars; $f,g: \mathbb{R}^3\rightarrow\mathbb{R}$.
+   \item[$\boldsymbol{F,G}$:] Funcions vectorials; $\boldsymbol{F,G}:\mathbb{R}^3\rightarrow\mathbb{R}^3$.
+   \item[$\boldsymbol{\nabla}f$:] Gradient de la funci\'{o} escalar $f$;
+   $\boldsymbol{\nabla}f:\mathbb{R}\rightarrow\mathbb{R}^3$
+   \item[$\boldsymbol{\nabla\cdot F}$:] Diverg\`{e}ncia de la funci\'{o} vectorial $\boldsymbol{F}$;
+   $\boldsymbol{\nabla\cdot F}: \mathbb{R}^3\rightarrow\mathbb{R}$.
+   \item[$\boldsymbol{\nabla\times F}$:] Rotacional de la funci\'{o} vectorial $\boldsymbol{F}$;
+   $\boldsymbol{\nabla\times F}:
+   \mathbb{R}^3\rightarrow\mathbb{R}^3$.
+   \item[$\boldsymbol{\nabla^2}f$:] Laplaci\`{a} de la funci\'{o} escalar $f$;
+   $\boldsymbol{\nabla^2}f: \mathbb{R}\rightarrow\mathbb{R}$.
+   \item[$\boldsymbol{\nabla^2F}$:] Laplaci\`{a} de la funci\'{o} vectorial $\boldsymbol{F}$; $\boldsymbol{\nabla^2F}: \mathbb{R}^3\rightarrow\mathbb{R}^3$.
+\end{list}
+
+\newcommand{\va}{\ensuremath{\,\boldsymbol{\hat{\imath}}}}
+\newcommand{\vb}{\ensuremath{\,\boldsymbol{\hat{\jmath}}}}
+\newcommand{\vc}{\ensuremath{\,\boldsymbol{\hat{k}}}}
+\section{Sistemes de coordenades}
+
+Es representen en la Figura \vref{pic:coord-cart-cil-esf}, tres dels
+sistemes de coordenades m\'{e}s utilitzats: el cartesi\`{a}, el
+cil\'{\i}ndric i l'esf\`{e}ric.
+
+En el sistema de coordenades cartesianes, els vectors directors
+tenen una orientaci\'{o} fixa, mentre que en els sistemes de
+coordenades cil\'{\i}ndriques i esf\`{e}riques, els vectors
+directors tenen una orientaci\'{o} variable, que dep\`{e}n del punt
+$P$ al qual ens estiguem referint.
+\begin{figure}[h]
+\centering
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7
+    5,bracketlength=0.15,rbracketlength=0.15}
+    \begin{pspicture}(0,0)(160,60)
+    \psline[linecolor=blue]{->}(25.79,25)(50.79,25)
+    \psline[linecolor=blue]{->}(25.79,25)(10.79,10)
+    \psline[linecolor=blue]{->}(25.79,25)(25.79,50)
+    \psline[linestyle=dotted](50.79,25)(35.79,10)
+    \psline[linestyle=dotted](35.79,10)(10.79,10)
+    \psline[linestyle=dotted](35.79,10)(25.79,25)
+    \psline[linestyle=dotted](35.79,35)(35.79,10)
+    \newrgbcolor{userLineColour}{0.98 0 0}
+    \psline[linewidth=0.5,linecolor=userLineColour]{->}(35.79,35)(35.79,45)
+    \newrgbcolor{userLineColour}{0.98 0 0}
+    \psline[linewidth=0.5,linecolor=userLineColour]{->}(35.79,35)(45.79,35)
+    \newrgbcolor{userLineColour}{0.98 0 0}
+    \psline[linewidth=0.5,linecolor=userLineColour]{->}(35.79,35)(29.74,29.08)
+    \psline(75.79,25)(105.79,25)
+    \psline[linecolor=blue]{->}(75.79,25)(75.79,50)
+    \psline[linestyle=dotted](100.79,25)(85.79,10)
+    \psline[linestyle=dotted](85.79,10)(60.79,10)
+    \psline[linecolor=blue]{<-}(85.79,10)(75.79,25)
+    \psline[linestyle=dotted](85.79,35)(85.79,10)
+    \newrgbcolor{userLineColour}{0.98 0 0}
+    \psline[linewidth=0.5,linecolor=userLineColour]{->}(85.79,35)(85.79,45)
+    \psline(125.79,25)(155.79,25)
+    \psline[linestyle=dotted](150.79,25)(135.79,10)
+    \psline[linestyle=dotted](135.79,10)(110.79,10)
+    \psline[linestyle=dotted](135.79,40)(135.79,10)
+    \newrgbcolor{userLineColour}{0.98 0 0}
+    \psline[linewidth=0.5,linecolor=userLineColour]{->}(85.79,35)(90.66,27.89)
+    \newrgbcolor{userLineColour}{0.98 0 0}
+    \psline[linewidth=0.5,linecolor=userLineColour]{->}(85.79,35)(95.79,40)
+    \psline(75.79,50)(75.79,55) \psline(25.79,50)(25.79,55)
+    \psline(50.79,25)(55.79,25) \psline(10.79,10)(5.79,5)
+    \psline[linestyle=dotted](35.79,35)(25.79,50)
+    \psline[linestyle=dotted](85.79,35)(75.79,50)
+    \rput{0}(125.49,24.79){\parametricplot[linecolor=blue,arrows=->]{-133.11}{-54.76}{
+    t cos 6.92 mul t sin 6.92 mul }}
+    \psline[linecolor=blue]{->}(125.79,25)(135.79,40)
+    \psline[linewidth=0.5,linecolor=red]{->}(135.79,40)(140.79,31.58)
+    \psline[linewidth=0.5,linecolor=red]{->}(135.79,40)(142.11,49.74)
+    \psline[linewidth=0.5,linecolor=red]{->}(135.79,40)(146.58,41.97)
+    \rput{0}(123.97,30.6){\parametricplot[linecolor=blue,arrows=<-]{22.33}{75.38}{
+    t cos 8.12 mul t sin 8.12 mul }} \psline(125.79,25)(125.79,55)
+    \psline(125.79,25)(105.79,5)
+    \psline[linestyle=dotted](135.79,10)(125.79,25)
+    \rput{0}(75.44,24.84){\parametricplot[linecolor=blue,arrows=->]{-133.17}{-54.56}{
+    t cos 6.91 mul t sin 6.91 mul }} \psline(75.79,25)(55.79,5)
+    \rput[l](55.79,25){} \rput[l](56.97,25){Y} \rput[tr](6.71,4.21){X}
+    \rput[b](25.92,56.32){Z} \rput[l](106.71,24.87){Y}
+    \rput[tr](56.45,4.08){X} \rput[b](75.66,56.18){Z}
+    \rput[l](156.71,24.87){Y} \rput[tr](106.45,4.08){X}
+    \rput[b](125.66,56.18){Z} \rput[r](74.21,49.08){$z$}
+    \rput[l](82.1,17.76){$\rho$} \rput[t](74.87,16.97){$\varphi$}
+    \rput[t](125,16.71){$\varphi$} \rput[l](130.92,30.53){$r$}
+    \rput[b](129.73,38.03){$\theta$} \rput[r](24.34,48.82){$z$}
+    \rput[b](50.13,26.58){$y$} \rput[br](10.52,11.45){$x$}
+    \rput(66.45,53.82){} \rput[b](35.92,46.32){$\boldsymbol{\hat{k}}$}
+    \rput[tr](29.61,28.82){$\boldsymbol{\hat{\imath}}$}
+    \rput[l](47.23,35.13){$\boldsymbol{\hat{\jmath}}$}
+    \rput[b](86.05,46.32){$\boldsymbol{\hat{z}}$}
+    \rput[l](97.37,40.26){$\boldsymbol{\hat{\varphi}}$}
+    \rput[tl](90.98,28.68){$\boldsymbol{\hat{\rho}}$}
+    \rput[b](143.42,50.92){$\boldsymbol{\hat{r}}$}
+    \rput[l](148.42,42.11){$\boldsymbol{\hat{\varphi}}$}
+    \rput[tl](141.18,30.79){$\boldsymbol{\hat{\theta}}$}
+    \rput[r](34.34,35.39){$P$} \rput(25.66,4.74){$P(x,y,z)$}
+    \rput[r](84.61,34.74){$P$} \rput(75.92,4.87){$P(\rho,\varphi,z)$}
+    \rput[r](135.79,42.24){$P$}
+    \rput(125.39,4.87){$P(r,\theta,\varphi)$}
+    \end{pspicture}
+\caption{Coordenades cartesianes, cil\'{\i}ndriques i esf\`{e}riques}
+\label{pic:coord-cart-cil-esf}
+\end{figure}
+
+Els rangs de les coordenades de cadascun del tres sistemes s\'{o}n:
+\begin{align}
+    &\text{Cartesianes:} & & x\in(-\infty,\infty) & &
+    y\in(-\infty,\infty) & & z\in(-\infty,\infty) \\
+    &\text{Cil\'{\i}ndriques:} & & \rho\in[0,\infty) & &
+    \varphi\in[0,2\pi) & & z\in(-\infty,\infty) \\
+    &\text{Esf\`{e}riques:} & & r\in[0,\infty) & &
+    \theta\in[0,\pi] & & \varphi\in[0,2\pi)
+\end{align}
+
+\subsection{Relacions entre les coordenades cartesianes i
+cil\'{\i}ndriques}
+
+Les coordenades cartesianes  d'un punt $P(x,y,z)$, s'obtenen partir
+de les seves coordenades cil\'{\i}ndriques $P(\rho,\varphi,z)$,
+mitjan\c{c}ant les relacions seg\"{u}ents:
+\begin{subequations}\begin{align}
+    x &=\rho\cos\varphi \\ y &=\rho\sin\varphi \\ z &=z
+\end{align}\end{subequations}
+
+Les coordenades  cil\'{\i}ndriques  d'un punt $P(\rho,\varphi,z)$,
+s'obtenen partir de les seves coordenades cartesianes $P(x,y,z)$,
+mitjan\c{c}ant les relacions seg\"{u}ents:
+\begin{subequations}\begin{align}
+    \rho &= \sqrt{x^2+y^2}\\
+    \varphi &=  \arctan\frac{y}{x}\\
+    z &= z
+\end{align}\end{subequations}
+
+El canvi de sistema de coordenades, de cil\'{\i}ndriques a cartesianes,
+s'obt\'{e} mitjan\c{c}ant les relacions seg\"{u}ents:
+\begin{subequations}\begin{align}
+    \boldsymbol{\hat{\rho}} &=\cos\varphi\va+\sin\varphi\vb \\
+    \boldsymbol{\hat{\varphi}} &=-\sin\varphi\va+\cos\varphi\vb \\
+    \boldsymbol{\hat{z}} &=\vc
+\end{align}\end{subequations}
+
+El canvi de sistema de coordenades, de cartesianes a cil\'{\i}ndriques,
+s'obt\'{e} mitjan\c{c}ant les relacions seg\"{u}ents:
+\begin{subequations}\begin{align}
+    \va &=\cos\varphi\,\boldsymbol{\hat{\rho}}-\sin\varphi\,\boldsymbol{\hat{\varphi}} \\
+    \vb &=\sin\varphi\,\boldsymbol{\hat{\rho}}+\cos\varphi\,\boldsymbol{\hat{\varphi}} \\
+    \vc &=\boldsymbol{\hat{z}}
+\end{align}\end{subequations}
+
+\subsection{Relacions entre les coordenades cartesianes i
+esf\`{e}riques}
+
+Les coordenades cartesianes  d'un punt $P(x,y,z)$, s'obtenen partir
+de les seves coordenades esf\`{e}riques $P(r,\theta,\varphi)$,
+mitjan\c{c}ant les relacions seg\"{u}ents:
+\begin{subequations}\begin{align}
+    x &=r\sin\theta\cos\varphi \\ y &=r\sin\theta\sin\varphi \\ z &=r\cos\theta
+\end{align}\end{subequations}
+
+Les coordenades  esf\`{e}riques  d'un punt $P(r,\theta,\varphi)$,
+s'obtenen partir de les seves coordenades cartesianes $P(x,y,z)$,
+mitjan\c{c}ant les relacions seg\"{u}ents:
+\begin{subequations}\begin{align}
+    r &=\sqrt{x^2+y^2+z^2}\\
+    \theta&=\arccos\frac{z}{\sqrt{x^2+y^2+z^2}}\\
+    \varphi &=\arctan\frac{y}{x}
+\end{align}\end{subequations}
+
+
+El canvi de sistema de coordenades, d'esf\`{e}riques a cartesianes,
+s'obt\'{e} mitjan\c{c}ant les relacions seg\"{u}ents:
+\begin{subequations}\begin{align}
+    \boldsymbol{\hat{r}} &=\sin\theta\cos\varphi\va+ \sin\theta\sin\varphi\vb+\cos\theta\vc\\
+    \boldsymbol{\hat{\theta}} &=\cos\theta\cos\varphi\va+
+    \cos\theta\sin\varphi\vb-\sin\theta\vc\\
+    \boldsymbol{\hat{\varphi}}&=-\sin\varphi\va+\cos\varphi\vb
+\end{align}\end{subequations}
+
+El canvi de sistema de coordenades, de cartesianes a esf\`{e}riques,
+s'obt\'{e} mitjan\c{c}ant les relacions seg\"{u}ents:
+\begin{subequations}\begin{align}
+    \va &=\sin\theta\cos\varphi\,\boldsymbol{\hat{r}}+
+    \cos\theta\cos\varphi\,\boldsymbol{\hat{\theta}}-\sin\varphi\,\boldsymbol{\hat{\varphi}}\\
+    \vb &=\sin\theta\sin\varphi\,\boldsymbol{\hat{r}}+
+    \cos\theta\sin\varphi\,\boldsymbol{\hat{\theta}}+\cos\varphi\,\boldsymbol{\hat{\varphi}}\\
+    \vc &=\cos\theta\,\boldsymbol{\hat{r}}-\sin\theta\,\boldsymbol{\hat{\theta}}
+\end{align}\end{subequations}
+
+\subsection{Relacions entre les coordenades cil\'{\i}ndriques i
+esf\`{e}riques}
+
+Les coordenades cil\'{\i}ndriques  d'un punt $P(\rho,\varphi,z)$,
+s'obtenen partir de les seves coordenades esf\`{e}riques
+$P(r,\theta,\varphi)$, mitjan\c{c}ant les relacions seg\"{u}ents:
+\begin{subequations}\begin{align}
+    \rho &=r\sin\theta \\ \varphi &=\varphi \\z &=r\cos\theta
+\end{align}\end{subequations}
+
+Les coordenades  esf\`{e}riques  d'un punt $P(r,\theta,\varphi)$,
+s'obtenen partir de les seves coordenades cil\'{\i}ndriques
+$P(\rho,\varphi,z)$, mitjan\c{c}ant les relacions seg\"{u}ents:
+\begin{subequations}\begin{align}
+    r &=\sqrt{\rho^2+z^2}\\
+    \theta &=\arctan\frac{\rho}{z}\\
+    \varphi &=\varphi
+\end{align}\end{subequations}
+
+El canvi de sistema de coordenades, d'esf\`{e}riques a cil\'{\i}ndriques,
+s'obt\'{e} mitjan\c{c}ant les relacions seg\"{u}ents:
+\begin{subequations}\begin{align}
+    \boldsymbol{\hat{r}} &=\sin\theta\,\boldsymbol{\hat{\rho}}+\cos\theta\,\boldsymbol{\hat{z}}\\
+    \boldsymbol{\hat{\theta}}
+    &=\cos\theta\,\boldsymbol{\hat{\rho}}-\sin\theta\,\boldsymbol{\hat{z}}\\
+    \boldsymbol{\hat{\varphi}}&=\boldsymbol{\hat{\varphi}}
+\end{align}\end{subequations}
+
+El canvi de sistema de coordenades, de cil\'{\i}ndriques a esf\`{e}riques,
+s'obt\'{e} mitjan\c{c}ant les relacions seg\"{u}ents:
+\begin{subequations}\begin{align}
+    \boldsymbol{\hat{\rho}} &=\sin\theta\,\boldsymbol{\hat{r}}+
+    \cos\theta\,\boldsymbol{\hat{\theta}}\\
+    \boldsymbol{\hat{\varphi}}&=\boldsymbol{\hat{\varphi}}\\
+    \boldsymbol{\hat{z}} &=\cos\theta\,\boldsymbol{\hat{r}}-
+    \sin\theta\,\boldsymbol{\hat{\theta}}
+\end{align}\end{subequations}
+
+
+\section{Operacions  b\`{a}siques}
+
+En les equacions seg\"{u}ents, $(A_x,A_y,A_z)$ i $(B_x,B_y,B_z)$
+s\'{o}n les components dels vectors $\boldsymbol{A}$ i
+$\boldsymbol{B}$ respectivament, en un sistema de coordenades
+cartesianes.
+
+\textbf{M\`{o}dul}:
+\begin{equation}
+    |\boldsymbol{A}|=  \sqrt{A_x^2 + A_y^2 + A_z^2}
+\end{equation}
+
+\textbf{Addici\'{o}}:
+\begin{equation}
+    \boldsymbol{A+B}= (A_x+B_x)\va + (A_y+B_y)\vb + (A_z+B_z)\vc
+\end{equation}
+
+\textbf{Substracci\'{o}}:
+\begin{equation}
+    \boldsymbol{A-B}= (A_x-B_x)\va + (A_y-B_y)\vb + (A_z-B_z)\vc
+\end{equation}
+
+\textbf{Producte escalar}:
+\begin{align}
+    \boldsymbol{A\cdot B} &= A_x B_x + A_y B_y + A_z B_z\\
+    \boldsymbol{A\cdot B} &=|\boldsymbol{A}| |\boldsymbol{B}| \cos\alpha\\
+    \boldsymbol{A\cdot B} &=\boldsymbol{B\cdot A}\\
+    \boldsymbol{A\cdot(B+C)} &= \boldsymbol{A\cdot B+ A\cdot C}
+\end{align}
+
+El producte escalar de dos vectors perpendiculars  \'{e}s nul.
+
+\textbf{Producte vectorial}:
+\begin{align}
+    \boldsymbol{A\times B} &= (A_y B_z - A_z B_y)\va + (A_z B_x - A_x B_z)\vb +
+    (A_x B_y - A_y B_x)\vc \\
+    |\boldsymbol{A\times B}| &=|\boldsymbol{A}| |\boldsymbol{B}| \sin\alpha\\
+    \boldsymbol{A\times B} &=-(\boldsymbol{B\times A})\\
+    \boldsymbol{A\times(B+C)} &= \boldsymbol{A\times B+ A\times C}
+\end{align}
+
+El producte vectorial de dos vectors para{\l.l}els  \'{e}s nul.
+
+El producte vectorial de dos vectors, \'{e}s un altre vector, el
+sentit del qual ve donat per la regla del cargol: \'{e}s el sentit
+d'avan\c{c} que t\'{e} un cargol, amb el seu eix perpendicular al
+pla format pels vectors  $\boldsymbol{A}$ i $\boldsymbol{B}$, quan
+gira en el sentit que portaria el primer vector  $\boldsymbol{A}$ a
+trobar el segon vector $\boldsymbol{B}$, utilitzant el menor angle
+possible.
+
+\textbf{Derivada temporal}:
+\begin{equation}
+    \deriv{\boldsymbol{A}}{t} = \deriv{A_x}{t}\va +
+    \deriv{A_y}{t}\vb + \deriv{A_z}{t}\vc
+\end{equation}
+
+
+\section{Operadors diferencials }
+
+\subsection{Coordenades cartesianes}
+
+En les equacions seg\"{u}ents, $(F_x,F_y,F_z)$  s\'{o}n les
+components de la funci\'{o}  $\boldsymbol{F}$, en un sistema de
+coordenades cartesianes. En aquestes coordenades tenim:
+\begin{align}
+    \boldsymbol{\diff l} &= \diff x \va + \diff y \vb + \diff z \vc\\[1ex]
+    \boldsymbol{\diff a} &= \diff x \diff y \vc \qquad\text{(en un pla
+    para{\l.l}el al X-Y)}\\[1ex]
+    \boldsymbol{\diff a} &= \diff x \diff z \vb \qquad\text{ (en un pla
+    para{\l.l}el al X-Z)}\\[1ex]
+    \boldsymbol{\diff a} &= \diff y \diff z \va \qquad\text{ (en un pla
+    para{\l.l}el al Y-Z)}\\[1ex]
+    \diff\tau &= \diff x \diff y \diff z\\[1ex]
+    \boldsymbol{\nabla}f &= \pderiv{f}{x}\va + \pderiv{f}{y}\vb
+    + \pderiv{f}{z}\vc\\[1ex]
+    \boldsymbol{\nabla\cdot F} &= \pderiv{F_x}{x} + \pderiv{F_y}{y}
+    + \pderiv{F_z}{z}\\[1ex]
+    \boldsymbol{\nabla\times F} &= \left[\pderiv{F_z}{y}-\pderiv{F_y}{z}\right]\va +
+    \left[\pderiv{F_x}{z}-\pderiv{F_z}{x}\right]\vb +
+    \left[\pderiv{F_y}{x}-\pderiv{F_x}{y}\right]\vc\\[1ex]
+    \boldsymbol{\nabla^2}f &= \pderiv[2]{f}{x} + \pderiv[2]{f}{y}+ \pderiv[2]{f}{z}\\[1ex]
+    \boldsymbol{\nabla^2F} &= \boldsymbol{\nabla^2} F_x \va + \boldsymbol{\nabla^2} F_y
+    \vb + \boldsymbol{\nabla^2} F_z \vc
+\end{align}
+
+\subsection{Coordenades cil\'{\i}ndriques}
+
+\renewcommand{\va}{\ensuremath{\,\boldsymbol{\hat{\rho}}}}
+\renewcommand{\vb}{\ensuremath{\,\boldsymbol{\hat{\varphi}}}}
+\renewcommand{\vc}{\ensuremath{\,\boldsymbol{\hat{z}}}}
+En les equacions seg\"{u}ents, $(F_\rho,F_\varphi,F_z)$  s\'{o}n les
+components de la funci\'{o}  $\boldsymbol{F}$, en un sistema de
+coordenades cil\'{\i}ndriques. En aquestes coordenades tenim:
+\begin{align}
+    \boldsymbol{\diff l} &= \diff \rho \va + \rho\diff \varphi \vb + \diff z \vc\\[1ex]
+    \boldsymbol{\diff a} &= \rho\diff \varphi \diff \rho \vc \qquad\text{(en sentit longitudinal)}\\[1ex]
+    \boldsymbol{\diff a} &= \rho\diff \varphi \diff z \va \qquad\text{(en sentit transversal)}\\[1ex]
+    \diff\tau &= \rho \diff \rho \diff \varphi \diff z\\[1ex]
+    \boldsymbol{\nabla}f &= \pderiv{f}{\rho}\va + \frac{1}{\rho}\pderiv{f}{\varphi}\vb
+    + \pderiv{f}{z}\vc
+\end{align}
+
+\begin{align}
+    \boldsymbol{\nabla\cdot F} &= \frac{1}{\rho}\pderiv{}{\rho}(\rho F_\rho) +
+    \frac{1}{\rho}\pderiv{F_\varphi}{\varphi}+ \pderiv{F_z}{z}\\[1ex]
+    \boldsymbol{\nabla\times F} &= \left[\frac{1}{\rho}\pderiv{F_z}{\varphi}-
+    \pderiv{F_\varphi}{z}\right]\va +
+    \left[\pderiv{F_\rho}{z}-\pderiv{F_z}{\rho}\right]\vb +
+    \frac{1}{\rho}\left[\pderiv{}{\rho}(\rho F_\varphi)-\pderiv{F_\rho}{\varphi}\right]\vc\\[1ex]
+    \boldsymbol{\nabla^2}f &= \frac{1}{\rho}\pderiv{}{\rho}\left(\rho\pderiv{f}{\rho}
+    \right)
+    + \frac{1}{\rho^2}\pderiv[2]{f}{\varphi}+ \pderiv[2]{f}{z}\\[1ex]
+    \boldsymbol{\nabla^2F} &=\boldsymbol{\nabla}(\boldsymbol{\nabla\cdot
+    F}) -\boldsymbol{\nabla\times\nabla\times F}
+\end{align}
+
+
+\subsection{Coordenades esf\`{e}riques}
+
+\renewcommand{\va}{\ensuremath{\,\boldsymbol{\hat{r}}}}
+\renewcommand{\vb}{\ensuremath{\,\boldsymbol{\hat{\theta}}}}
+\renewcommand{\vc}{\ensuremath{\,\boldsymbol{\hat{\varphi}}}}
+En les equacions seg\"{u}ents, $(F_r,F_\theta,F_\varphi)$  s\'{o}n
+les components de la funci\'{o}  $\boldsymbol{F}$, en un sistema de
+coordenades esf\`{e}riques. En aquestes coordenades tenim:
+\begin{align}
+    \boldsymbol{\diff l} &= \diff r \va + r\diff\theta \vb + r \sin\theta\diff \varphi \vc\\[1ex]
+    \boldsymbol{\diff a} &= r^2 \sin\theta \diff \theta \diff \varphi \va\\[1ex]
+    \diff\tau &= r^2 \sin\theta\diff r \diff \theta \diff \varphi\\[1ex]
+    \boldsymbol{\nabla}f &= \pderiv{f}{r}\va + \frac{1}{r}\pderiv{f}{\theta}\vb
+    + \frac{1}{r\sin\theta}\pderiv{f}{\varphi}\vc\\[1ex]
+    \boldsymbol{\nabla\cdot F} &= \frac{1}{r^2}\pderiv{}{r}(r^2 F_r) +
+    \frac{1}{r\sin\theta}\pderiv{}{\theta}(F_\theta\sin\theta)+
+    \frac{1}{r\sin\theta}\pderiv{F_\varphi}{\varphi}\\[1ex]
+    \boldsymbol{\nabla\times F} &= \frac{1}{r\sin\theta}\left[\pderiv{}{\theta}
+    (F_\varphi\sin\theta)-\pderiv{F_\theta}{\varphi}\right]\va +
+    \frac{1}{r}\left[\frac{1}{\sin\theta}\pderiv{F_r}{\varphi}-
+    \pderiv{}{r}(r F_\varphi)\right]\vb +{} \nonumber \\[1ex]
+     &+\frac{1}{r}\left[\pderiv{}{r}(r F_\theta)-\pderiv{F_r}{\theta}\right]\vc\\[1ex]
+    \boldsymbol{\nabla^2}f &= \frac{1}{r^2}\pderiv{}{r}\left(r^2\pderiv{f}{r}
+    \right) + \frac{1}{r^2\sin\theta}\pderiv{}{\theta}\left(\sin\theta\pderiv{f}{\theta}\right) +
+    \frac{1}{r^2\sin^2\theta}\pderiv[2]{f}{\varphi}\\[1ex]
+    \boldsymbol{\nabla^2F} &=\boldsymbol{\nabla}(\boldsymbol{\nabla\cdot
+    F}) -\boldsymbol{\nabla\times\nabla\times F}
+\end{align}
+
+\section{Identitats }
+
+Tenim les seg\"{u}ents identitats:
+\begin{align}
+    \boldsymbol{\nabla^2}f &=
+    \boldsymbol{\nabla\cdot}(\boldsymbol{\nabla}f)\\[0.5ex]
+    \boldsymbol{\nabla}(fg) &=
+    f\boldsymbol{\nabla}g+g\boldsymbol{\nabla}f
+\end{align}
+
+\begin{align}
+    \boldsymbol{\nabla\cdot}(f\boldsymbol{F}) &=
+    (\boldsymbol{\nabla}f)\boldsymbol{\cdot F} + f(\boldsymbol{\nabla\cdot F})\\[0.5ex]
+    \boldsymbol{\nabla\cdot}(\boldsymbol{F\times G}) &=
+    \boldsymbol{G\cdot}(\boldsymbol{\nabla\times F}) -
+    \boldsymbol{F\cdot}(\boldsymbol{\nabla\times G})\\[0.5ex]
+    \boldsymbol{\nabla\times}(f\boldsymbol{F}) &=
+    (\boldsymbol{\nabla}f)\boldsymbol{\times F} + f(\boldsymbol{\nabla\times F})\\[0.5ex]
+    \boldsymbol{\nabla\times\nabla\times F} &= \boldsymbol{\nabla}(\boldsymbol{\nabla\cdot F})
+    - \boldsymbol{\nabla^2 F}
+\end{align}
+
+\section{Teoremes }
+
+\textbf{Teorema de la diverg\`{e}ncia:}
+\begin{equation}
+    \iiint_V\boldsymbol{\nabla\cdot F}\,\diff \tau = \iint_S\boldsymbol{F\cdot\diff a}
+\end{equation}
+
+\textbf{Teorema del gradient:}
+\begin{equation}
+    \iiint_V\boldsymbol{\nabla}f\diff \tau=\iint_S f\boldsymbol{\diff a}
+\end{equation}
+
+\textbf{Teorema del rotacional:}
+\begin{equation}
+    \iiint_V(\boldsymbol{\nabla\times F})\,\diff \tau=-\iint_S
+    \boldsymbol{F\times\diff a}
+\end{equation}
+
+\textbf{Teorema d'Stokes:}
+\begin{equation}
+    \iint_S(\boldsymbol{\nabla\times F})\boldsymbol{\cdot\diff a} =
+    \oint_C\boldsymbol{F\cdot\diff l}
+\end{equation}
+
+En la Figura \vref{pic:signe-teo-stockes} s'i{\l.l}ustra el conveni de
+signes dels vectors $\boldsymbol{\diff l}$ i $\boldsymbol{\diff a}$.
+
+\begin{figure}[h]
+\centering
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7
+    5,bracketlength=0.15,rbracketlength=0.15}
+    \begin{pspicture}(0,0)(45,39.42)
+    \pscustom[]{\psbezier(30.5,23.46)(31.16,18.59)(31.45,15.3)(31.45,12.5)
+    \psbezier(31.45,12.5)(31.45,9.7)(31.48,7.2)(31.56,4.18) }
+    \pscustom[]{\psbezier(2.95,30)(3.3,25.45)(3.9,22.3)(4.95,19.5)
+    \psbezier(4.95,19.5)(6,16.7)(7.12,14.38)(8.7,11.75)
+    \psbezier(8.7,11.75)(10.27,9.12)(12.45,7.18)(15.95,5.25)
+    \psbezier(15.95,5.25)(19.45,3.32)(22.15,2.58)(24.95,2.75)
+    \psbezier(24.95,2.75)(27.75,2.92)(30.07,3.45)(32.7,4.5)
+    \psbezier(32.7,4.5)(35.32,5.55)(37.2,6.75)(38.95,8.5)
+    \psbezier(38.95,8.5)(40.7,10.25)(41.6,12.35)(41.95,15.5)
+    \psbezier(41.95,15.5)(42.3,18.65)(42.37,21.2)(42.2,24)
+    \psbezier(42.2,24)(42.02,26.8)(41.72,28.82)(41.2,30.75)
+    \psbezier(41.2,30.75)(40.67,32.68)(40.36,33.88)(40.17,34.78) }
+    \pscustom[]{\psbezier(5.45,18)(7.55,15.9)(9.27,14.77)(11.2,14.25)
+    \psbezier(11.2,14.25)(13.12,13.72)(14.77,13.58)(16.7,13.75)
+    \psbezier(16.7,13.75)(18.62,13.92)(20.42,14.15)(22.7,14.5)
+    \psbezier(22.7,14.5)(24.97,14.85)(26.7,15.3)(28.45,16)
+    \psbezier(28.45,16)(30.2,16.7)(31.7,17.3)(33.45,18)
+    \psbezier(33.45,18)(35.2,18.7)(36.4,19.3)(37.45,20)
+    \psbezier(37.45,20)(38.5,20.7)(39.24,21.27)(39.92,21.9)
+    \psbezier(39.92,21.9)(40.6,22.53)(41.27,23.12)(42.15,23.86) }
+    \pscustom[]{\psbezier(12.45,7.5)(15.6,6.8)(17.47,6.5)(18.7,6.5)
+    \psbezier(18.7,6.5)(19.92,6.5)(21.12,6.65)(22.7,7)
+    \psbezier(22.7,7)(24.27,7.35)(25.92,7.72)(28.2,8.25)
+    \psbezier(28.2,8.25)(30.47,8.78)(31.97,9.22)(33.2,9.75)
+    \psbezier(33.2,9.75)(34.42,10.28)(35.55,10.88)(36.95,11.75)
+    \psbezier(36.95,11.75)(38.35,12.62)(39.21,13.28)(39.82,13.92)
+    \psbezier(39.82,13.92)(40.43,14.56)(41.09,15.27)(42.02,16.29) }
+    \pscustom[]{\psbezier(22.95,21.5)(23.3,17.3)(23.56,14.49)(23.82,12.14)
+    \psbezier(23.82,12.14)(24.08,9.8)(24.25,8.26)(24.38,7.02)
+    \psbezier(24.38,7.02)(24.52,5.77)(24.74,4.4)(25,2.83) }
+    \pscustom[]{\psbezier(35.95,26.5)(36.65,20.55)(36.95,16.95)(36.95,14.5)
+    \psbezier(36.95,14.5)(36.95,12.05)(36.95,9.78)(36.95,6.95) }
+    \pscustom[]{\psbezier(16.16,20.5)(16.36,16.3)(16.67,13.52)(17.2,11.25)
+    \psbezier(17.2,11.25)(17.72,8.98)(18.22,6.78)(18.86,3.92) }
+    \pscustom[]{\psbezier(10.49,21.25)(10.46,17.73)(10.6,15.1)(10.95,13)
+    \psbezier(10.95,13)(11.3,10.9)(11.7,9.36)(12.28,7.87) }
+    \psbezier(5.45,25)(5.8,21.15)(6.1,18.45)(6.45,16)
+    \pscustom[]{\psbezier(2.95,29.75)(2.95,31.67)(3.62,32.88)(5.2,33.75)
+    \psbezier(5.2,33.75)(6.77,34.62)(8.12,35.15)(9.7,35.5)
+    \psbezier(9.7,35.5)(11.27,35.85)(12.77,35.7)(14.7,35)
+    \psbezier(14.7,35)(16.62,34.3)(17.97,33.7)(19.2,33)
+    \psbezier(19.2,33)(20.42,32.3)(21.55,32)(22.95,32)
+    \psbezier(22.95,32)(24.35,32)(25.47,32.3)(26.7,33)
+    \psbezier(26.7,33)(27.92,33.7)(28.75,34.38)(29.45,35.25)
+    \psbezier(29.45,35.25)(30.15,36.12)(30.97,36.95)(32.2,38)
+    \psbezier(32.2,38)(33.42,39.05)(34.4,39.42)(35.45,39.25)
+    \psbezier(35.45,39.25)(36.5,39.08)(37.4,38.62)(38.45,37.75)
+    \psbezier(38.45,37.75)(39.5,36.88)(40.1,35.45)(40.45,33)
+    \psbezier(40.45,33)(40.8,30.55)(39.22,28.45)(35.2,26)
+    \psbezier(35.2,26)(31.17,23.55)(26.75,22.05)(20.45,21)
+    \psbezier(20.45,21)(14.15,19.95)(10.17,20.62)(7.2,23.25)
+    \psbezier(7.2,23.25)(4.22,25.88)(2.95,27.82)(2.95,29.75)
+    \closepath}
+    \pscustom[]{\psbezier(22.21,2.93)(24.65,3.12)(26.13,3.27)(27.14,3.43)
+    \psbezier(27.14,3.43)(28.15,3.59)(28.97,3.78)(29.87,4.06)
+    \psbezier(29.87,4.06)(30.77,4.33)(31.67,4.65)(32.87,5.1)
+    \psbezier(32.87,5.1)(34.06,5.56)(35.53,6.25)(37.74,7.41) }
+    \pscustom[]{\psbezier(39.91,30.04)(40.32,27.18)(40.6,25.32)(40.83,23.82)
+    \psbezier(40.83,23.82)(41.06,22.32)(41.2,21.15)(41.29,19.9)
+    \psbezier(41.29,19.9)(41.38,18.66)(41.4,17.6)(41.35,16.36)
+    \psbezier(41.35,16.36)(41.31,15.11)(41.23,13.73)(41.09,11.75) }
+    \psline[linewidth=0.5,linecolor=red]{->}(28.99,23.13)(24.06,21.49)
+    \psline[linewidth=0.5,linecolor=red]{->}(27.34,19.05)(32.94,14.25)
+    \rput(26.45,24.5){$\boldsymbol{\diff l}$}
+    \rput[r](30.45,12.5){$\boldsymbol{\diff a}$} \rput(22.45,34){$C$}
+    \rput[l](42.95,19.5){$S$}
+    \end{pspicture}
+\caption{Conveni de signes del teorema d'Stokes}
+\label{pic:signe-teo-stockes}
+\end{figure}
+
+\end{document}

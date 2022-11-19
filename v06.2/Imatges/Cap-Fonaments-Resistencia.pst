@@ -1,0 +1,105 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Mon Dec 17 21:43:37 CET 2012
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="36" y-min="0" y-max="26" auto-bounding="false">
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(19,10)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "right"
+%	 >
+%$u(t)$
+%</text>
+%<multicurve stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(20,17);(20,17);(20,3);(20,3)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 fill-style= "none"
+%	 points= "(22,21);(22,21);(29,21);(29,21)"
+%	 />
+%<text text-vert-align= "bottom"
+%	 fill-style= "none"
+%	 anchor-point= "(25,22)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$i(t)$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(33,10)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "left"
+%	 >
+%$R$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(30,9)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%
+%</text>
+%<ellipse stroke-width= "0.25"
+%	 p3= "(21,20)"
+%	 p2= "(21,18)"
+%	 p1= "(19,18)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse stroke-width= "0.25"
+%	 p3= "(21,2)"
+%	 p2= "(21,0)"
+%	 p1= "(19,0)"
+%	 fill-style= "none"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(21,19);(21,19);(30,19);(30,19);(30,19);(30,16);
+%	(30,16)"
+%	 />
+%<multicurve stroke-width= "0.25"
+%	 fill-style= "none"
+%	 points= "(21,1);(21,1);(30,1);(30,1);(30,1);(30,4);
+%	(30,4)"
+%	 />
+%<parallelogram p3= "(32,4)"
+%	 p2= "(32,16)"
+%	 p1= "(28,16)"
+%	 fill-style= "none"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(36,26)
+\rput[r](19,10){$u(t)$}
+\psline[linewidth=0.25]{->}(20,17)(20,3)
+\psline[linewidth=0.25]{->}(22,21)(29,21)
+\rput[b](25,22){$i(t)$}
+\rput[l](33,10){$R$}
+\rput(30,9){}
+\rput{0}(20,19){\psellipse[linewidth=0.25](0,0)(1,1)}
+\rput{0}(20,1){\psellipse[linewidth=0.25](0,0)(1,1)}
+\psline[linewidth=0.25](21,19)
+(30,19)(30,16)
+\psline[linewidth=0.25](21,1)
+(30,1)(30,4)
+\pspolygon[](28,16)(32,16)(32,4)(28,4)
+\end{pspicture}

@@ -1,0 +1,629 @@
+\chapter{C\`{a}lculs B\`{a}sics}
+
+Es tracten en aquest cap\'{\i}tol c\`{a}lculs b\`{a}sics, que poden servir en la
+resoluci\'{o} de diversos problemes electrot\`{e}cnics.
+
+\ifpdf
+    \section{\texorpdfstring{Transformaci\'{o} estrella $\boldsymbol{\leftrightarrow}$ triangle d'imped\`{a}ncies}
+    {Transformaci\'{o} estrella-triangle d'imped\`{a}ncies}}
+\else
+    \section{Transformaci\'{o} estrella--triangle d'imped\`{a}ncies}
+\fi
+\label{secc:d_y} \index{transformaci\'{o}
+estrella $\leftrightarrow$ triangle}
+
+En un sistema trif\`{a}sic, pot interessar transformar tres imped\`{a}ncies connectades en
+estrella, en tres imped\`{a}ncies equivalents connectades en triangle
+$(\text{Y}\rightarrow\Delta)$, o a l'inrev\'{e}s, transformar tres imped\`{a}ncies connectades en
+triangle, en tres imped\`{a}ncies equivalents connectades en estrella
+$(\Delta\rightarrow\text{Y})$. Atenent a la Figura \vref{pic:Y_D}, tenim les seg\"{u}ents
+transformacions:
+\begin{equation}\label{eq:Y_D}
+   \text{Y}\rightarrow\Delta\;\left\{
+   \begin{array}{lll}
+      \cmplx{Z}_{\alpha\beta} &= &\displaystyle \cmplx{Z}_{\alpha} + \cmplx{Z}_{\beta} + \frac{\cmplx{Z}_{\alpha}\,\cmplx{Z}_{\beta}}{\cmplx{Z}_{\gamma}}  \\[2.5ex]
+      \cmplx{Z}_{\beta\gamma} &= &\displaystyle \cmplx{Z}_{\beta} + \cmplx{Z}_{\gamma} + \frac{\cmplx{Z}_{\beta}\,\cmplx{Z}_{\gamma}}{\cmplx{Z}_{\alpha}}  \\[2.5ex]
+      \cmplx{Z}_{\gamma\alpha} &= &\displaystyle \cmplx{Z}_{\gamma} + \cmplx{Z}_{\alpha} + \frac{\cmplx{Z}_{\gamma}\, \cmplx{Z}_{\alpha}}{\cmplx{Z}_{\beta}}
+   \end{array}
+   \right.
+   \qquad\qquad
+   \Delta\rightarrow\text{Y}\;\left\{
+   \begin{array}{lll}
+      \cmplx{Z}_{\alpha} &= &\dfrac{\cmplx{Z}_{\alpha\beta}\, \cmplx{Z}_{\gamma\alpha}}{  \cmplx{Z}_{\alpha\beta} + \cmplx{Z}_{\beta\gamma}+ \cmplx{Z}_{\gamma\alpha}}  \\[2.5ex]
+      \cmplx{Z}_{\beta} &= &\dfrac{\cmplx{Z}_{\beta\gamma}\, \cmplx{Z}_{\alpha\beta}}{  \cmplx{Z}_{\alpha\beta} + \cmplx{Z}_{\beta\gamma}+ \cmplx{Z}_{\gamma\alpha}}  \\[2.5ex]
+      \cmplx{Z}_{\gamma} &= &\dfrac{\cmplx{Z}_{\gamma\alpha}\, \cmplx{Z}_{\beta\gamma}}{  \cmplx{Z}_{\alpha\beta} + \cmplx{Z}_{\beta\gamma}+ \cmplx{Z}_{\gamma\alpha}}
+   \end{array}
+   \right.
+\end{equation}
+
+\begin{figure}[htb]
+    \centering \PSforPDF{ %PsTricks content-type (pstricks.sty package needed)
+    %Add \usepackage{pstricks} in the preamble of your LaTeX file
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \begin{pspicture}(0,0)(110,35)
+    \psline[linewidth=0.25](3,20)(3,28)
+    \psline[linewidth=0.25](18,20)(18,28)
+    \psline[linewidth=0.25](18,1)(18,9)
+    \psline[linewidth=0.25](33,20)(33,28) \rput(3,14.5){}
+    \pspolygon[linewidth=0.25](1,9)(5,9)(5,20)(1,20) \rput(18,14.5){}
+    \pspolygon[linewidth=0.25](16,9)(20,9)(20,20)(16,20)
+    \rput(33,14.5){}
+    \pspolygon[linewidth=0.25](31,9)(35,9)(35,20)(31,20)
+    \psline[linewidth=0.25](71,20)(71,28)
+    \psline[linewidth=0.25](86,20)(86,28)
+    \psline[linewidth=0.25](101,20)(101,28) \rput(71,14.5){}
+    \pspolygon[linewidth=0.25](69,9)(73,9)(73,20)(69,20)
+    \rput(86,14.5){}
+    \pspolygon[linewidth=0.25](84,9)(88,9)(88,20)(84,20)
+    \rput(101,14.5){}
+    \pspolygon[linewidth=0.25](99,9)(103,9)(103,20)(99,20)
+    \rput[b](71,31){$\alpha$} \rput[b](3,31){$\alpha$}
+    \rput[b](86,31){$\beta$} \rput[b](18,31){$\beta$}
+    \rput[b](101,31){$\gamma$} \rput[b](33,31){$\gamma$}
+    \rput[l](6,14){$\cmplx{Z}_{\alpha}$}
+    \rput[l](21,14){$\cmplx{Z}_{\beta}$}
+    \rput[l](36,14){$\cmplx{Z}_{\gamma}$}
+    \rput[l](74,14){$\cmplx{Z}_{\alpha\beta}$}
+    \rput[l](89,14){$\cmplx{Z}_{\beta\gamma}$}
+    \rput[l](104,14){$\cmplx{Z}_{\gamma\alpha}$}
+    \rput{0}(33,29){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(101,29){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(18,29){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(86,29){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(3,29){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(71,29){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \psline[linewidth=0.25](3,9)(3,1) (3,1)(33,1) (33,1)(33,9)
+    \psline[linewidth=0.25](101,9)(101,1) (101,1)(67,1) (67,1)(67,24)
+    (67,24)(71,24) \psline[linewidth=0.25](86,24)(82,24) (82,24)(82,5)
+    (82,5)(71,5) (71,5)(71,9) \psline[linewidth=0.25](101,24)(97,24)
+    (97,24)(97,5) (97,5)(86,5) (86,5)(86,9)
+    \psline[linewidth=0.25](69,20)(73,9)
+    \psline[linewidth=0.25](73,20)(69,9)
+    \psline[linewidth=0.25](84,9)(88,20)
+    \psline[linewidth=0.25](84,20)(88,9)
+    \psline[linewidth=0.25](99,20)(103,9)
+    \psline[linewidth=0.25](103,20)(99,9)
+    \psline[linewidth=0.25](31,20)(35,9)
+    \psline[linewidth=0.25](35,20)(31,9)
+    \psline[linewidth=0.25](20,9)(16,20)
+    \psline[linewidth=0.25](20,20)(16,9)
+    \psline[linewidth=0.25](5,9)(1,20)
+    \psline[linewidth=0.25](5,20)(1,9)
+    \end{pspicture}
+} \caption{Transformaci\'{o} estrella $\leftrightarrow$ triangle
+d'imped\`{a}ncies} \label{pic:Y_D}
+\end{figure}
+
+\begin{exemple}
+Es vol transformar tres imped\`{a}ncies connectades en triangle, de
+valors $ \cmplx{Z}_{\alpha\beta}=10\unit{\ohm}$,
+$\cmplx{Z}_{\beta\gamma}=-\ju10\unit{\ohm}$ i
+$\cmplx{Z}_{\gamma\alpha}=-\ju10\unit{\ohm}$, en tres imped\`{a}ncies
+equivalents connectades en estrella.
+
+A partir de les equacions \eqref{eq:Y_D}  tenim:
+\begin{align*}
+   \cmplx{Z}_{\alpha} & = \frac{10\unit{\ohm}\cdot(-\ju10\unit{\ohm})}{10\unit{\ohm} - \ju10\unit{\ohm} - \ju10\unit{\ohm}} = 4 - \ju 2\unit{\ohm} \\[1.5ex]
+   \cmplx{Z}_{\beta} & = \frac{-\ju10\unit{\ohm}\cdot10\unit{\ohm}}{10\unit{\ohm} - \ju10\unit{\ohm} - \ju10\unit{\ohm}} = 4 - \ju 2\unit{\ohm} \\[1.5ex]
+\cmplx{Z}_{\gamma} &=
+\frac{-\ju10\unit{\ohm}\cdot(-\ju10\unit{\ohm})}{10\unit{\ohm} -
+\ju10\unit{\ohm} - \ju10\unit{\ohm}} = -2 - \ju 4\unit{\ohm}
+\end{align*}
+
+\'{E}s possible, com en aquest cas pel que fa a $\cmplx{Z}_{\gamma}$, obtenir un valor amb una
+part real negativa (resist\`{e}ncia negativa); no obstant, encara que no existeixi f\'{\i}sicament
+aquesta resist\`{e}ncia, el seu valor \'{e}s matem\`{a}ticament correcte i es pot utilitzar en c\`{a}lculs
+subseg\"{u}ents.
+\end{exemple}
+
+
+\section{C\`{a}lculs en p.u.} \label{sec:seccio_pu} \index{p.u.}
+
+Les magnituds expressades en p.u.\ (per unitat) s\'{o}n \'{u}tils quan es treballa
+amb xarxes de corrent altern on hi ha transformadors, i per tant m\'{e}s d'un nivell de tensi\'{o}.
+
+\subsection{M\`{e}tode de c\`{a}lcul} \index{p.u.!m\`{e}tode de c\`{a}lcul}
+
+\index{p.u.!magnituds base fonamentals} El primer pas consisteix en escollir unes magnituds
+base. Les magnituds base fonamentals s\'{o}n la pot\`{e}ncia i la tensi\'{o}; s'escull una pot\`{e}ncia
+base $S\ped{B}$ per a tota la xarxa, i tantes tensions base com nivells de tensi\'{o} diferents
+tingui la xarxa $U_{\text{B}_1}, U_{\text{B}_2}, \ldots, U_{\text{B}_n}$:
+\begin{equation}
+   \text{Magnituds base fonamentals}\;\left\{
+\begin{array}{l}
+   S\ped{B} \\
+   U_{\text{B}_1}, U_{\text{B}_2}, \ldots, U_{\text{B}_n}
+\end{array}
+\right.
+\end{equation}
+
+Normalment s'escull com a tensions base, les tensions nominals dels transformadors de la
+xarxa, i com a pot\`{e}ncia base, la potencia nominal d'un del transformadors o generadors de la xarxa.
+
+\index{p.u.!magnituds base}A partir de la pot\`{e}ncia base i de les tensions base, es
+defineixen els corrents base $I_{\text{B}_i}$, les imped\`{a}ncies base $Z_{\text{B}_i}$ i les
+admit\`{a}ncies base $Y_{\text{B}_i}$. Segons que el corrent sigui monof\`{a}sic o trif\`{a}sic, tenim:
+\begin{equation}
+\begin{array}{c} \text{Corrent monof\`{a}sic} \\ (i=1,\ldots,n) \end{array}
+\left\{
+\begin{array}{lll}
+   I_{\text{B}_i} &= &\dfrac{S\ped{B}}{U_{\text{B}_i}} \\[2.5ex]
+   Z_{\text{B}_i} &= &\dfrac{U_{\text{B}_i}^2}{S\ped{B}} \\[2.5ex]
+   Y_{\text{B}_i} &= &\dfrac{S\ped{B}}{U_{\text{B}_i}^2}
+\end{array}
+\right.
+\qquad\qquad
+\begin{array}{c} \text{Corrent trif\`{a}sic} \\ (i=1,\ldots,n) \end{array}
+\left\{
+\begin{array}{llc}
+   I_{\text{B}_i} &= &\dfrac{S\ped{B}}{\sqrt{3} U_{\text{B}_i}} \\[2.5ex]
+   Z_{\text{B}_i} &= &\dfrac{U_{\text{B}_i}^2}{S\ped{B}} \\[2.5ex]
+   Y_{\text{B}_i} &= &\dfrac{S\ped{B}}{U_{\text{B}_i}^2}
+\end{array}
+\right.
+\end{equation}
+
+Les magnituds expressades en p.u.\ (escrites usualment en min\'{u}scules) s'obtenen
+dividint les magnituds reals (escrites usualment en maj\'{u}scules) pels valors base corresponents:
+\begin{equation}
+   \cmplx{s} = \frac{\cmplx{S}}{S\ped{B}} \qquad \cmplx{u} = \frac{\cmplx{U}}{U\ped{B}} \qquad \cmplx{i} = \frac{\cmplx{I}}{I\ped{B}} \qquad \cmplx{z} = \frac{\cmplx{Z}}{Z\ped{B}} \qquad \cmplx{y} = \frac{\cmplx{Y}}{Y\ped{B}}
+\end{equation}
+
+Quan es tracta de corrent trif\`{a}sic, $\cmplx{S}$ \'{e}s la pot\`{e}ncia trif\`{a}sica, $\cmplx{U}$ \'{e}s la tensi\'{o} fase-fase, $\cmplx{I}$ \'{e}s el corrent de fase, i $\cmplx{Z}$ i $\cmplx{Y}$ s\'{o}n respectivament les imped\`{a}ncies i admit\`{a}ncies de fase.
+
+El pas seg\"{u}ent consisteix en representar el circuit equivalent en p.u., i resoldre'l com si es tract\'{e}s d'un circuit monof\`{a}sic; aix\'{\i} doncs, el factor $\sqrt{3}$ no interv\'{e} en els c\`{a}lculs a l'hora de resoldre un circuit en p.u.\ procedent d'un circuit trif\`{a}sic.
+
+Un cop resolt el circuit, es multipliquen les magnituds obtingudes en p.u.\ pels
+seus valors base respectius, per tal d'obtenir les magnituds reals:
+\begin{equation}
+   \cmplx{S} = \cmplx{s} S\ped{B} \qquad \cmplx{U} = \cmplx{u} U\ped{B} \qquad \cmplx{I} = \cmplx{i} I\ped{B} \qquad \cmplx{Z} = \cmplx{z} Z\ped{B} \qquad \cmplx{Y} = \cmplx{y} Y\ped{B}
+\end{equation}
+
+\subsection{Canvi de base} \index{p.u.!canvi de base}
+
+Normalment les imped\`{a}ncies de transformadors (imped\`{a}ncia de curt circuit) o de generadors (imped\`{a}ncia sincr\`{o}nica, transit\`{o}ria, etc.) estan referides a les magnituds nominals de la m\`{a}quina en q\"{u}esti\'{o}. Si les magnituds base escollides coincideixen amb les nominals de la m\`{a}quina, la imped\`{a}ncia de la m\`{a}quina en q\"{u}esti\'{o} estar\`{a} expressada ja directament en p.u.; en canvi si les magnituds base s\'{o}n diferents de les nominals de la m\`{a}quina, caldr\`{a} fer un canvi de base per tal de referir la imped\`{a}ncia de la m\`{a}quina a les magnituds base escollides.
+
+De forma gen\`{e}rica, si $\cmplx{z}$ \'{e}s una imped\`{a}ncia referida a la base $U\ped{B}$ i $S\ped{B}$, podem obtenir la imped\`{a}ncia $\cmplx{z}'$ referida a la base $U_{\text{B}'}$ i $S_{\text{B}'}$, mitjan\c{c}ant el canvi:
+\begin{equation}
+   \cmplx{z}' = \cmplx{z} \; \frac{Z\ped{B}}{Z\ped{B}'} = \cmplx{z} \; \frac{U\ped{B}^2}{S\ped{B}} \; \frac{S_{\text{B}'}}{U_{\text{B}'}^2}
+\end{equation}
+
+\begin{exemple}
+
+Es tracte de calcular el corrent de curt circuit trif\`{a}sic en el punt F de la xarxa seg\"{u}ent, suposant
+que el sistema est\`{a} treballant en buit.
+\begin{figure}[htb]
+\vspace{3mm}
+\centering
+\PSforPDF{
+    %Created by jPicEdt 1.x
+    %PsTricks format (pstricks.sty needed)
+    %Sat Sep 11 23:13:53 CEST 2004
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \begin{pspicture}(0,0)(117.00,15.00)
+    \pscircle[linewidth=0.25,linecolor=black](6.00,6.00){5.00}
+    \psline[linewidth=0.25,linecolor=black]{-}(11.00,6.00)(16.00,6.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(17.00,10.00)(22.00,10.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(39.00,10.00)(44.00,10.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(45.00,6.00)(82.00,6.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(111.00,6.00)(116.00,6.00)
+    \pscircle[linewidth=0.25,linecolor=black](34.00,10.00){5.00}
+    \psbezier[linewidth=0.25,linecolor=black]{-}(4.00,6.00)(4.67,7.33)(5.33,7.33)(6.00,6.00)
+    \psbezier[linewidth=0.25,linecolor=black]{-}(6.00,6.00)(6.67,4.67)(7.33,4.67)(8.00,6.00)
+    \rput[b](6.00,12.00){G}
+    \rput[b](31.00,1.00){T1}
+    \rput[b](65.00,7.00){L}
+    \rput[b](97.00,1.00){T2}
+    \rput[b](116.00,8.00){F}
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](16.00,3.50)(17.00,12.50)
+    \pscircle[linewidth=0.25,linecolor=black](27.00,10.00){5.00}
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](44.00,3.50)(45.00,12.50)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](110.00,3.50)(111.00,12.50)
+    \psline[linewidth=0.25,linecolor=black]{-}(83.00,10.00)(88.00,10.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(105.00,10.00)(110.00,10.00)
+    \pscircle[linewidth=0.25,linecolor=black](100.00,10.00){5.00}
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](82.00,3.50)(83.00,12.50)
+    \pscircle[linewidth=0.25,linecolor=black](93.00,10.00){5.00}
+    \psline[linewidth=0.25,linecolor=black]{<-}(116.00,5.50)(113.50,3.50)(115.50,3.50)(113.00,1.00)
+    \pscircle[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](116.00,6.00){0.50}
+    \end{pspicture}
+}
+\end{figure}
+
+Les dades del generador G, del transformador T1, de la l\'{\i}nia L i del transformador T2 s\'{o}n:
+\begin{align*}
+   S\ped{G} &= 60\unit{MVA} & S\ped{T1} &= 40\unit{MVA} & l\ped{L} &= 22\unit{km} & S\ped{T2} &= 12\unit{MVA} \\
+   U\ped{G} &= 10{,}5\unit{kV} & \Ddot{U}\ped{T1} &= 10{,}5:63\unit{kV} & U\ped{L} &= 60\unit{kV} & \Ddot{U}\ped{T2} &= 60:10{,}5\unit{kV} \\
+   X''\ped{G} &= 12\unit{\%} & X\ped{T1} &= 10\unit{\%} & X\ped{L} &= 0,4\unit{\ohm/km} & X\ped{T2} &= 8\unit{\%}
+\end{align*}
+
+Escollim en primer lloc les seg\"{u}ents magnituds base: $S\ped{B} = 60\unit{MVA}$ i $U\ped{B}
+= 10{,}5\unit{kV} / 63\unit{kV} / 10{,}5\unit{kV}$.
+
+Calculem a continuaci\'{o} els valors en p.u.\ dels diferents elements de la xarxa:
+
+\textbf{Generador}. En coincidir les magnituds base amb les nominals del generador tenim
+ directament:
+\[
+x''\ped{G} = 0{,}12\unit{p.u.}
+\]
+
+\textbf{Transformador 1}. La relaci\'{o} de transformaci\'{o} i la react\`{a}ncia s\'{o}n respectivament:
+\[
+\Ddot{u}\ped{T1} = \frac{10{,}5\unit{kV}}{10{,}5\unit{kV}} : \frac{63\unit{kV}}{63\unit{kV}} = 1:1 \qquad\qquad x\ped{T1} = 0{,}10 \cdot \frac{(63\unit{kV})^2}{40\unit{MVA}} \cdot \frac{60\unit{MVA}}{(63\unit{kV})^2}  = 0{,}15\unit{p.u.}
+\]
+
+\textbf{L\'{\i}nia}. La react\`{a}ncia \'{e}s:
+\[x\ped{L} = \frac{0{,}4\unit{\ohm/km} \cdot 22\unit{km}} {(63\unit{kV})^2/60\unit{MVA}}  = 0{,}1330\unit{p.u.}
+\]
+
+\textbf{Transformador 2}. La relaci\'{o} de transformaci\'{o} i la react\`{a}ncia s\'{o}n respectivament:
+\[
+\Ddot{u}\ped{T2} = \frac{60\unit{kV}}{63\unit{kV}} : \frac{10,5\unit{kV}}{10,5\unit{kV}} = 0{,}9524:1 \qquad\qquad x\ped{T2} = 0{,}08 \cdot \frac{(10{,}5\unit{kV})^2}{12\unit{MVA}} \cdot \frac{60\unit{MVA}}{(10{,}5\unit{kV})^2}  = 0{,}4\unit{p.u.}
+\]
+
+\textbf{Tensi\'{o} en el punt F}. La tensi\'{o} abans del curt circuit \'{e}s la mateixa que la del generador G, elevada pel transformador T1 i redu\"{\i}da despr\'{e}s pel transformador T2:
+\[
+\cmplx{u}\ped{F} = \frac{10{,}5\unit{kV} \cdot \frac{63\unit{kV}}{10{,}5\unit{kV}} \cdot \frac{10{,}5\unit{kV}}{60\unit{kV}}}{10{,}5\unit{kV}} = 1{,}05\unit{p.u.}
+\]
+
+A partir d'aquests valors calculats, tenim el seg\"{u}ent circuit equivalent en p.u.\ durant el
+curt circuit en el punt F:
+\begin{figure}[h]
+\vspace{3mm}
+\centering
+\PSforPDF{
+    %Created by jPicEdt 1.x
+    %PsTricks format (pstricks.sty needed)
+    %Sat Sep 11 12:39:19 CEST 2004
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \begin{pspicture}(0,0)(122.00,24.00)
+    \psbezier[linewidth=0.25,linecolor=black]{-}(106.00,10.00)(106.67,11.33)(107.33,11.33)(108.00,10.00)
+    \psbezier[linewidth=0.25,linecolor=black]{-}(108.00,10.00)(108.67,8.67)(109.33,8.67)(110.00,10.00)
+    \rput[l](113.00,10.00){1,05}
+    \rput[b](25.00,1.00){$1:1$}
+    \psline[linewidth=0.25,linecolor=black]{-}(44.00,17.00)(53.00,17.00)
+    \rput[b](78.50,0.50){$0{,}9524:1$}
+    \rput[b](7.50,19.50){0,12}
+    \rput[b](40.50,19.50){0,15}
+    \rput[b](56.50,19.50){0,1330}
+    \rput[b](94.00,19.50){0,4}
+    \psline[linewidth=0.25,linecolor=black]{-}(110.00,5.50)(110.00,3.50)
+    \psline[linewidth=0.25,linecolor=black]{-}(111.00,4.50)(109.00,4.50)
+    \psline[linewidth=0.25,linecolor=black]{->}(102.50,14.00)(102.50,5.00)
+    \rput[r](101.00,10.00){$\cmplx{i}''\ped{cc}$}
+    \pscircle[linewidth=0.25,linecolor=black](108.00,10.00){4.00}
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](3.50,15.50)(11.00,18.50)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](36.75,15.50)(44.25,18.50)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](53.00,15.50)(60.50,18.50)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=solid](90.25,15.50)(97.75,18.50)
+    \pscircle[linewidth=0.25,linecolor=black](75.00,10.00){5.00}
+    \pscircle[linewidth=0.25,linecolor=black](82.00,10.00){5.00}
+    \pscircle[linewidth=0.25,linecolor=black](21.50,10.00){5.00}
+    \pscircle[linewidth=0.25,linecolor=black](28.50,10.00){5.00}
+    \psline[linewidth=0.25,linecolor=black]{-}(11.00,17.00)(16.00,17.00)(18.50,14.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(3.50,17.00)(1.00,17.00)(1.00,3.00)(15.50,3.00)(18.50,6.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(31.50,14.00)(34.50,17.00)(37.00,17.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(31.50,6.00)(34.50,3.00)(69.00,3.00)(72.00,6.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(60.50,17.00)(69.50,17.00)(72.00,14.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(85.00,14.00)(88.00,17.00)(90.50,17.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(97.50,17.00)(108.00,17.00)(108.00,14.00)
+    \psline[linewidth=0.25,linecolor=black]{-}(85.00,6.00)(88.00,3.00)(108.00,3.00)(108.00,6.00)
+    \end{pspicture}
+}
+\end{figure}
+
+
+El corrent de curt circuit buscat val:
+\[
+|\cmplx{i}''\ped{cc}| = \left| \frac{1{,}05}{\ju \left( 0{,}4 + \frac{0{,}15 + 0{,}1330}{0{,}9524^2} + \frac{0{,}12}{0{,}9524^2 \cdot 1^2} \right)} \right| = 1{,}2436\unit{p.u.} \qquad |\cmplx{I}''\ped{cc}| = 1{,}2436\cdot\frac{60\unit{MVA}}{\sqrt{3}\cdot 10{,}5\unit{kV}} = 4{,}1\unit{kA}
+\]
+
+\end{exemple}
+
+\section{Resoluci\'{o} de circuits coneixent la pot\`{e}ncia absorbida per la c\`{a}rrega}
+
+Es tracta en aquest apartat la resoluci\'{o} de circuits simples, formats per
+una font de tensi\'{o} en s\`{e}rie amb una imped\`{a}ncia, la qual alimenta a una
+c\`{a}rrega; aquesta c\`{a}rrega no est\`{a} definida per la seva imped\`{a}ncia o admit\`{a}ncia, si
+no per la pot\`{e}ncia que absorbeix.
+
+En la Figura \vref{pic:EZS} es representen els circuits que es vol resoldre, tant
+per a corrent continu com per a corrent altern. $E$, $R$ i $P$ (o $\cmplx{E}$, $\cmplx{Z}$ i $\cmplx{S}$) s\'{o}n els valors coneguts, i $U$ i $I$ (o $\cmplx{U}$ i $\cmplx{I}$) s\'{o}n els valors que es vol trobar.
+\begin{figure}[htb]
+\vspace{3mm}
+\centering
+\PSforPDF{
+    %PsTricks content-type (pstricks.sty package needed)
+    %Add \usepackage{pstricks} in the preamble of your LaTeX file
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1}
+    \psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+    \begin{pspicture}(0,0)(125,25)
+    \rput[b](92,20.5){$\cmplx{Z}$} \rput[b](19,20.5){$R$}
+    \psline[linewidth=0.25](5,14.5)(7,14.5)
+    \psline[linewidth=0.25](6,15.5)(6,13.5)
+    \rput[r](76,9.5){$\cmplx{E}$} \rput[r](3,9.5){$E$}
+    \rput[r](111,9.5){$\cmplx{U}$} \rput[r](38,9.5){$U$}
+    \rput(92,17.5){} \rput(19,17.5){}
+    \pspolygon[linewidth=0.25](14,15.5)(24,15.5)(24,19.5)(14,19.5)
+    \psline[linewidth=0.25](24,17.5)(38,17.5)
+    \psline[linewidth=0.25]{->}(100,19.5)(109,19.5)
+    \psline[linewidth=0.25]{->}(27,19.5)(36,19.5)
+    \psline[linewidth=0.25]{->}(112,15.5)(112,3.5)
+    \psline[linewidth=0.25]{->}(39,15.5)(39,3.5)
+    \psbezier[linewidth=0.25](79,9.5)(79.67,10.83)(80.33,10.83)(81,9.5)
+    \rput[l](122,9.5){$\cmplx{S}$} \rput[l](49,9.5){$P$}
+    \rput(119,9.5){}
+    \pspolygon[linewidth=0.25](117,4.5)(121,4.5)(121,14.5)(117,14.5)
+    \rput(46,9.5){}
+    \pspolygon[linewidth=0.25](44,4.5)(48,4.5)(48,14.5)(44,14.5)
+    \psbezier[linewidth=0.25](81,9.5)(81.67,8.17)(82.33,8.17)(83,9.5)
+    \rput[b](104,20.5){$\cmplx{I}$} \rput[b](31,20.5){$I$}
+    \psline[linewidth=0.25](6,10.5)(10,10.5)
+    \psline[linewidth=0.25](6,8.5)(10,8.5)
+    \rput{0}(39,17.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(39,1.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(112,17.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(112,1.5){\psellipse[linewidth=0.25](0,0)(1,1)}
+    \rput{0}(8,9.5){\psellipse[linewidth=0.25](0,0)(4,4)}
+    \psline[linewidth=0.25](8,13.5)(8,17.5) (8,17.5)(14,17.5)
+    \psline[linewidth=0.25](8,5.5)(8,1.5) (8,1.5)(38,1.5)
+    \psline[linewidth=0.25](40,17.5)(46,17.5) (46,17.5)(46,14.5)
+    \psline[linewidth=0.25](40,1.5)(46,1.5) (46,1.5)(46,4.5)
+    \rput(92,17.5){}
+    \pspolygon[linewidth=0.25](87,15.5)(97,15.5)(97,19.5)(87,19.5)
+    \psline[linewidth=0.25](97,17.5)(111,17.5)
+    \psline[linewidth=0.25](81,13.5)(81,17.5) (81,17.5)(87,17.5)
+    \psline[linewidth=0.25](81,5.5)(81,1.5) (81,1.5)(111,1.5)
+    \psline[linewidth=0.25](113,17.5)(119,17.5) (119,17.5)(119,14.5)
+    \psline[linewidth=0.25](113,1.5)(119,1.5) (119,1.5)(119,4.5)
+    \psline[linewidth=0.25](78,14.5)(80,14.5)
+    \psline[linewidth=0.25](79,15.5)(79,13.5)
+    \rput{0}(81,9.5){\psellipse[linewidth=0.25](0,0)(4,4)}
+    \psline[linewidth=0.25](117,14.5)(121,4.5)
+    \psline[linewidth=0.25](121,14.5)(117,4.5)
+    \psline[linewidth=0.25](97,19.5)(87,15.5)
+    \psline[linewidth=0.25](87,19.5)(97,15.5)
+    \end{pspicture}
+}
+\caption{Resoluci\'{o} de circuits coneixent la pot\`{e}ncia absorbida per la c\`{a}rrega} \label{pic:EZS}
+\end{figure}
+
+\subsection{Circuits de corrent continu}
+
+A partir del circuit de l'esquerra de la Figura \vref{pic:EZS} tenim les dues equacions seg\"{u}ents:
+\begin{align}
+   E &= R I + U \label{eq:ERP_1} \\
+   P &= U I     \label{eq:ERP_2}
+\end{align}
+
+Multiplicant l'equaci\'{o} \eqref{eq:ERP_1} per $U$ i substituint l'equaci\'{o} \eqref{eq:ERP_2} en aquest resultat, tenim:
+\begin{equation}
+   E U = R I U + U^2 = R P + U^2 \quad \rightarrow \quad U^2 - E U + R P = 0 \label{eq:ERP_3}
+\end{equation}
+
+A partir de les equacions descrites anteriorment, el circuit es resol seguint els seg\"{u}ents passos:
+\begin{dingautolist}{'312}
+   \item Obtenim $U$, resolent l'equaci\'{o} de 2n grau \eqref{eq:ERP_3}.
+   \item Dels dos valors reals que obtenim, ens quedem amb el m\'{e}s elevat. Si en lloc de dos valors reals, obtingu\'{e}ssim
+   un parell de valors conjugats complexes, aix\`{o} ens indicaria que el circuit no t\'{e} una soluci\'{o} f\'{\i}sicament possible, i per tant no seria resoluble.
+   \item Finalment, calculem $I$ substituint el valor trobat d'$U$ en l'equaci\'{o} \eqref{eq:ERP_2}.
+\end{dingautolist}
+
+\subsection{Circuits de corrent altern}
+
+A partir del circuit de la dreta de la Figura \vref{pic:EZS} tenim les dues equacions seg\"{u}ents:
+\begin{align}
+   \cmplx{E} &= \cmplx{Z} \, \cmplx{I} + \cmplx{U} \label{eq:EZS_1} \\
+   \cmplx{S} &= \cmplx{U} \, \cmplx{I}^*           \label{eq:EZS_2}
+\end{align}
+
+Conjugant l'equaci\'{o} \eqref{eq:EZS_1}, multiplicant-la per $\cmplx{U}$ i substituint l'equaci\'{o} \eqref{eq:EZS_2} en aquest resultat, tenim:
+\begin{equation}
+   \cmplx{E}^* \, \cmplx{U} = \cmplx{Z}^* \cmplx{I}^* \, \cmplx{U} + \cmplx{U}^* \, \cmplx{U} =
+   \cmplx{Z}^* \, \cmplx{S} + |\cmplx{U}|^2 \quad \rightarrow \quad
+   |\cmplx{U}|^2 - \cmplx{E}^* \, \cmplx{U} + \cmplx{Z}^* \, \cmplx{S} = 0
+   \label{eq:EZS_3}
+\end{equation}
+
+Fem a continuaci\'{o} una rotaci\'{o} dels vectors $\cmplx{E}$ i $\cmplx{U}$, de valor
+$\eu^{-\ju\delta}$, on $\delta$ \'{e}s l'argument del vector $\cmplx{E}$; d'aquesta manera, el
+nou vector $E'$ nom\'{e}s tindr\`{a} part real, i el nou vector $\cmplx{U}'$ estar\`{a} rotat respecte
+del vector $\cmplx{U}$.
+\begin{align}
+   \delta &= \arg(\cmplx{E}) \label{eq:EZS_9} \\
+   E' &= \cmplx{E} \, \eu^{-\ju\delta} = |\cmplx{E}|  \label{eq:EZS_4} \\
+   \cmplx{U}' &= \cmplx{U} \, \eu^{-\ju\delta}   \label{eq:EZS_5}
+\end{align}
+
+Expressem a continuaci\'{o} l'equaci\'{o} \eqref{eq:EZS_3} utilitzant aquestes dos nous vectors:
+\begin{equation}
+   |\cmplx{U}'|^2 - E' \, \cmplx{U}' + \cmplx{Z}^* \, \cmplx{S} = 0 \label{eq:EZS_6}
+\end{equation}
+
+Finalment, separem l'equaci\'{o} \eqref{eq:EZS_6} en dues, una per a la part real i una altra per a la part imagin\`{a}ria. Cal tenir en compte que $|\cmplx{U}'|^2$ nom\'{e}s t\'{e} part real, de valor $\Re^2(\cmplx{U}') + \Im^2(\cmplx{U}')$.
+\begin{align}
+   \Re^2(\cmplx{U}') + \Im^2(\cmplx{U}') - E' \, \Re(\cmplx{U}') + \Re(\cmplx{Z}^* \, \cmplx{S}) &= 0 \label{eq:EZS_7} \\
+   - E' \, \Im(\cmplx{U}') + \Im(\cmplx{Z}^* \, \cmplx{S}) &= 0 \label{eq:EZS_8}
+\end{align}
+
+A partir de les equacions descrites anteriorment, el circuit es resol seguint els seg\"{u}ents passos:
+\begin{dingautolist}{'312}
+   \item Calculem $E'$ a partir de l'equaci\'{o} \eqref{eq:EZS_4}
+   \item Obtenim $\Im(\cmplx{U}')$, resolent l'equaci\'{o} \eqref{eq:EZS_8}.
+   \item Substitu\"{\i}m el valor obtingut per a $\Im(\cmplx{U}')$ en l'equaci\'{o} \eqref{eq:EZS_7}, i obtenim $\Re(\cmplx{U}')$ resolent aquesta equaci\'{o} de 2n grau.
+   \item Dels dos valors reals que obtenim, ens quedem amb el m\'{e}s elevat. Si en lloc de dos valors reals, obtingu\'{e}ssim un parell de valors conjugats complexes, aix\`{o} ens indicaria que el circuit no t\'{e} una soluci\'{o} f\'{\i}sicament possible, i per tant no seria resoluble.
+   \item A partir del valor  obtingut per a $\cmplx{U}'$ en el passos anteriors, i del valor de $\delta$ obtingut a partir de l'equaci\'{o} \eqref{eq:EZS_9}, calculem el valor buscat d'$\cmplx{U}$, utilitzant l'equaci\'{o} \eqref{eq:EZS_5}
+   \item Finalment, calculem $\cmplx{I}$ substituint el valor trobat d'$\cmplx{U}$ en l'equaci\'{o} \eqref{eq:EZS_2}
+\end{dingautolist}
+
+\begin{exemple}
+Resoldre el circuit de la dreta de la Figura \vref{pic:EZS}, donats el seg\"{u}ents valors en p.u.:
+\[
+   \cmplx{E} = 0{,}4 + \ju 0{,}3 \qquad \cmplx{Z} = \ju 0{,}1 \qquad
+   \cmplx{S} = 0{,}6 + \ju 0{,}45
+\]
+
+Calculem primer $\delta$ i $E'$, segons les equacions \eqref{eq:EZS_9} i \eqref{eq:EZS_4},
+i $\cmplx{Z}^* \cmplx{S}$:
+\begin{align*}
+   \delta &= \arg(0{,}4 + \ju 0{,}3) = 0{,}6435\unit{rad} \\
+   E' &= |0{,}4 + \ju 0{,}3| = 0{,5} \\
+   \cmplx{Z}^* \cmplx{S} &= - \ju 0{,}1 \cdot (0{,}6 + \ju 0{,}45) = 0{,}045 - \ju 0{,}06
+\end{align*}
+
+Calculem a continuaci\'{o} $\Im(\cmplx{U}')$, segons l'equaci\'{o} \eqref{eq:EZS_8}:
+\[
+   \Im(\cmplx{U}') = \frac{\Im(\cmplx{Z}^* \cmplx{S})}{E'} = \frac{-0{,}06}{0{,}5} = -0{,}12
+\]
+
+Formem a continuaci\'{o} el polinomi de 2n grau en $\Re(\cmplx{U}')$ i el resolem, segons l'equaci\'{o} \eqref{eq:EZS_7}:
+\begin{align*}
+   \Re^2(\cmplx{U}') + (-0{,}12)^2 - 0{,}5 \cdot \Re(\cmplx{U}') + 0{,}045 &= 0 \\
+   \Re^2(\cmplx{U}') - 0{,}5 \cdot \Re(\cmplx{U}') + 0{,}0594 &= 0  \;\rightarrow\; \Re(\cmplx{U}') =
+   \left\{ \begin{matrix}
+     0{,}1943 \\
+     \boxed{0{,}3057}
+   \end{matrix}
+   \right.
+\end{align*}
+
+Prenent el valor m\'{e}s elevat de $\Re(\cmplx{U}')$ calculem finalment $\cmplx{U}$, segons l'equaci\'{o} \eqref{eq:EZS_5}:
+\[
+   \cmplx{U} = \cmplx{U}' \, \eu^{\ju \delta} = (0{,}3057 - \ju 0{,}12) \cdot \eu^{\ju 0{,}6435} =
+   0{,}3165 + \ju 0{,}0874
+\]
+
+Per acabar, obtenim $\cmplx{I}$, segons l'equaci\'{o} \eqref{eq:EZS_2}:
+\[
+   \cmplx{I} = \frac{\cmplx{S}^*}{\cmplx{U}^*} = \frac{0{,}6-\ju 0{,}45}{0{,}3165 - \ju 0{,}0874}
+   = 2{,}1262 - \ju 0{,}8347
+\]
+
+\end{exemple}
+
+
+
+\section{Corrent de curt circuit en el  secundari d'un transformador}
+\index{corrent de curt circuit!en el  secundari d'un transformador}
+
+ Es tracta en aquest apartat, el c\`{a}lcul del corrent de curt
+circuit trif\`{a}sic en el secundari d'un transformador, que t\'{e} el
+primari connectat  a una xarxa de pot\`{e}ncia.
+
+A partir de la Figura \vref{pic:cc_sec_trafo}, es tracta de trobar
+el valor del corrent de curt circuit $I\ped{F}$ en el punt F, essent
+la resta de par\`{a}metres valors coneguts.
+
+$U\ped{N}$, $U\ped{TN1}$ i $U\ped{TN2}$ estan donats en V,
+$S\ped{cc}$ i $S\ped{TN}$ en VA, i $x\ped{cc}$ en p.u. respecte dels
+valors nominals del transformador.
+
+\begin{figure}[htb]
+\vspace{3mm} \centering \PSforPDF{
+    %Created by jPicEdt 1.x
+    %PsTricks format (pstricks.sty needed)
+    %Sun Nov 28 15:07:02 CET 2004
+    \psset{xunit=1mm,yunit=1mm,runit=1mm}
+    \begin{pspicture}(0,0)(52.00,20.00)
+    \rput[b](28.00,5.50){$U\ped{TN1}:U\ped{TN2}$}
+    \psline[linewidth=0.25,linecolor=black]{-*}(36.00,15.00)(48.50,15.00)
+    \pscircle[linewidth=0.25,linecolor=black](31.00,15.00){5.00}
+    \pscircle[linewidth=0.25,linecolor=black](24.00,15.00){5.00}
+    \psline[linewidth=0.25,linecolor=black]{<-}(48.50,15.00)(46.00,13.00)(48.00,13.00)(45.50,10.50)
+    \psline[linewidth=0.25,linecolor=black]{-}(9.50,15.00)(19.00,15.00)
+    \psframe[linewidth=0.15,linecolor=black,fillcolor=black,fillstyle=crosshatch,hatchwidth=0.1,hatchsep=1.42,hatchangle=45.00,hatchcolor=black](0.50,10.00)(9.50,20.00)
+    \rput[l](48.00,11.00){$I\ped{F}$} \rput(50.00,10.00){}
+    \rput[b](48.50,16.00){F} \rput(5.50,7.00){$U\ped{N}$}
+    \rput(28.00,2.50){$S\ped{TN},\; x\ped{cc}$} \rput(-0.50,6.50){}
+    \rput(5.00,2.50){$S\ped{cc}$}
+    \end{pspicture}
+} \caption{Corrent de curt circuit en el  secundari d'un
+transformador} \label{pic:cc_sec_trafo}
+\end{figure}
+
+Per tal de simplificar el problema, suposarem que tant la imped\`{a}ncia
+de curt circuit del transformador, com la imped\`{a}ncia equivalent de
+la xarxa de pot\`{e}ncia s\'{o}n totalment inductives; d'aquesta manera,
+podrem treballar amb les diverses variables implicades, com si
+fossin nombres reals. Suposarem a m\'{e}s, que no hi ha circulaci\'{o} de
+corrent abans del curt circuit.
+
+Pel qu\`{e} fa a la xarxa de pot\`{e}ncia, si en lloc de la pot\`{e}ncia de curt
+circuit $S\ped{cc}$, el que coneixem \'{e}s el corrent de curt circuit
+disponible $I\ped{cc}$, podem obtenir el valor de la pot\`{e}ncia de
+curt circuit a partir de l'expressi\'{o}:
+\begin{equation}
+    S\ped{cc} = \sqrt{3} U\ped{N} I\ped{cc}
+\end{equation}
+\index{pot\`{e}ncia de curt circuit}
+
+ Si prenem com a valors base els
+par\`{a}metres del transformador ($U\ped{TN1}$, $U\ped{TN2}$ i
+$S\ped{TN}$), la relaci\'{o} de transformaci\'{o} i la imped\`{a}ncia de curt
+circuit del transformador, expressats en p.u., seran 1:1 i
+$x\ped{cc}$ respectivament. An\`{a}logament, la tensi\'{o} i la imped\`{a}ncia
+equivalents de la xarxa de pot\`{e}ncia, expressats en p.u., seran
+$\frac{U\ped{N}}{U\ped{TN1}}$ i $\frac{U\ped{N}^2}{S\ped{cc}}
+\frac{S\ped{TN}}{U\ped{TN1}^2}$ respectivament.
+
+Amb aquests valors, el corrent de curt circuit $i\ped{F}$, expressat
+en p.u., val:
+\begin{equation}
+    i\ped{F} = \frac{\dfrac{U\ped{N}}{U\ped{TN1}}}{\dfrac{U\ped{N}^2}{S\ped{cc}}
+    \dfrac{S\ped{TN}}{U\ped{TN1}^2} + x\ped{cc}}
+\end{equation}
+
+I per tant, aquest corrent $I\ped{F}$, expressat en A, val:
+\begin{equation}
+    I\ped{F} = i\ped{F}\; \frac{S\ped{TN}}{\sqrt{3}U\ped{TN2}} =
+    \frac{S\ped{TN} U\ped{N}}{\sqrt{3} U\ped{TN1}U\ped{TN2}
+    \left(\dfrac{U\ped{N}^2}{S\ped{cc}}
+    \dfrac{S\ped{TN}}{U\ped{TN1}^2} + x\ped{cc}\right)}
+\end{equation}
+
+Si la xarxa de pot\`{e}ncia es considera de pot\`{e}ncia infinita, tenim:
+\begin{equation}
+    I\ped{F} = \frac{S\ped{TN} U\ped{N}}{\sqrt{3} U\ped{TN1}U\ped{TN2}
+    x\ped{cc}}\qquad\qquad (\text{amb }S\ped{cc}=\infty)
+\end{equation}
+
+Si a m\'{e}s, la tensi\'{o} de la xarxa coincideix amb la tensi\'{o} prim\`{a}ria
+del transformador, tenim respectivament:
+\begin{align}
+    I\ped{F} &= \frac{S\ped{TN}}{\sqrt{3} U\ped{TN2}
+    \left(\dfrac{S\ped{TN}}{S\ped{cc}} +
+    x\ped{cc}\right)}\qquad\qquad(\text{amb }U\ped{N}=U\ped{TN1})\\[1ex]
+    I\ped{F} &= \frac{S\ped{TN}}{\sqrt{3} U\ped{TN2}
+    x\ped{cc}}\qquad\qquad(\text{amb }U\ped{N}=U\ped{TN1}\text{ i }
+    S\ped{cc}=\infty)
+\end{align}
+
+\begin{exemple}
+A partir de la Figura \vref{pic:cc_sec_trafo}, es tracta de trobar
+$I\ped{F}$, amb els seg\"{u}ents valors: $U\ped{N}=6900\unit{V}$,
+$S\ped{cc}=200\unit{MVA}$, $U\ped{TN1}=6900\unit{V}$,
+$U\ped{TN2}=400\unit{V}$, $S\ped{TN}=850\unit{kVA}$ i
+$x\ped{cc}=5\unit{\%}$.
+
+El valor buscat \'{e}s:
+\begin{align}
+    I\ped{F} = \frac{850\unit{kVA}}{\sqrt{3}\cdot 400\unit{V}\cdot
+    \left(\dfrac{850\unit{kVA}}{200\unit{MVA}} +
+    0{,}05\right)} = 22{,}6\unit{kA}
+\end{align}
+\end{exemple}
+
+\begin{exemple}
+Es tracta de resoldre el mateix problema, suposant que la xarxa \'{e}s
+de pot\`{e}ncia infinita.
+
+El valor buscat \'{e}s:
+\begin{align}
+    I\ped{F} = \frac{850\unit{kVA}}{\sqrt{3}\cdot 400\unit{V}\cdot
+    0{,}05} = 24{,}5\unit{kA}
+\end{align}
+\end{exemple}

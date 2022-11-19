@@ -1,0 +1,175 @@
+%%Created by jPicEdt 1.4.1: mixed JPIC-XML/LaTeX format
+%%Sat Jan 27 16:59:11 CET 2007
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="130" y-min="0" y-max="34" auto-bounding="false">
+%<ellipse closure= "open"
+%	 p3= "(21,34)"
+%	 p1= "(11,24)"
+%	 fill-style= "none"
+%	 stroke-width= "0.25"
+%	 angle-end= "360"
+%	 p2= "(21,24)"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(14,29);(14.67,30.33);(15.33,30.33);(16,29)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(16,29);(16.67,27.67);(17.33,27.67);(18,29)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(10,19)"
+%	 text-hor-align= "right"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\boxed{1}$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(104,19)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\boxed{2}$
+%</text>
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(16,24);(16,24);(16,19);(16,19)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(101,18);(101,18);(101,15);(101,15)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.5"
+%	 points= "(99,8);(99,8);(103,8);(103,8)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.5"
+%	 points= "(99,7);(99,7);(103,7);(103,7)"
+%	 />
+%<text text-vert-align= "top"
+%	 anchor-point= "(13,5)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{s}\ped{L1}=1{,}2+\ju0{,}3$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(98,28)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{s}\ped{L2}=0{,}8+\ju0{,}6$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(105,7)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$|\cmplx{s}\ped{Q2}|_{\text{màx.}}=0{,}6$
+%</text>
+%<text text-vert-align= "center-v"
+%	 anchor-point= "(23,19)"
+%	 text-hor-align= "left"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{v}_1=1{,}05$
+%</text>
+%<text text-vert-align= "bottom"
+%	 anchor-point= "(62,14)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{z}\ped{t}=0{,}028+\ju 0{,}096$
+%</text>
+%<text text-vert-align= "top"
+%	 anchor-point= "(62,11)"
+%	 text-hor-align= "center-h"
+%	 fill-style= "none"
+%	 text-frame= "noframe"
+%	 >
+%$\cmplx{y}\ped{t}=\ju 0{,}10$
+%</text>
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(101,7);(101,7);(101,2);(101,2)"
+%	 />
+%<parallelogram p3= "(21,19)"
+%	 p1= "(11,18)"
+%	 fill-style= "solid"
+%	 stroke-width= "0.15"
+%	 p2= "(21,18)"
+%	 />
+%<parallelogram p3= "(103,19)"
+%	 p1= "(93,18)"
+%	 fill-style= "solid"
+%	 stroke-width= "0.15"
+%	 p2= "(103,18)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(19,18);(19,18);(19,13);(19,13);(19,13);(95,13);
+%	(95,13);(95,13);(95,18.5);(95,18.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(101,8);(101,8);(101,11);(101,11);(101,11);(103,15);
+%	(103,15)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 right-arrow= "head"
+%	 points= "(13,18);(13,18);(13,6);(13,6)"
+%	 />
+%<multicurve fill-style= "none"
+%	 stroke-width= "0.25"
+%	 points= "(98,27);(98,27);(98,19);(98,19)"
+%	 left-arrow= "head"
+%	 />
+%</jpic>
+%%End JPIC-XML
+%PSTricks content-type (pstricks.sty package needed)
+%Add \usepackage{pstricks} in the preamble of your LaTeX file
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\psset{unit=\JPicScale mm}
+\psset{linewidth=0.3,dotsep=1,hatchwidth=0.3,hatchsep=1.5,shadowsize=1,dimen=middle}
+\psset{dotsize=0.7 2.5,dotscale=1 1,fillcolor=black}
+\psset{arrowsize=1 2,arrowlength=1,arrowinset=0.25,tbarsize=0.7 5,bracketlength=0.15,rbracketlength=0.15}
+\begin{pspicture}(0,0)(130,34)
+\rput{0}(16,29){\psellipse[linewidth=0.25](0,0)(5,5)}
+\psbezier[linewidth=0.25](14,29)(14.67,30.33)(15.33,30.33)(16,29)
+\psbezier[linewidth=0.25](16,29)(16.67,27.67)(17.33,27.67)(18,29)
+\rput[r](10,19){$\boxed{1}$}
+\rput[l](104,19){$\boxed{2}$}
+\psline[linewidth=0.25](16,24)(16,19)
+\psline[linewidth=0.25](101,18)(101,15)
+\psline[linewidth=0.5](99,8)(103,8)
+\psline[linewidth=0.5](99,7)(103,7)
+\rput[t](13,5){$\cmplx{s}\ped{L1}=1{,}2+\ju0{,}3$}
+\rput[b](98,28){$\cmplx{s}\ped{L2}=0{,}8+\ju0{,}6$}
+\rput[l](105,7){$|\cmplx{s}\ped{Q2}|_{\text{màx.}}=0{,}6$}
+\rput[l](23,19){$\cmplx{v}_1=1{,}05$}
+\rput[b](62,14){$\cmplx{z}\ped{t}=0{,}028+\ju 0{,}096$}
+\rput[t](62,11){$\cmplx{y}\ped{t}=\ju 0{,}10$}
+\psline[linewidth=0.25](101,7)(101,2)
+\pspolygon[linewidth=0.15,fillstyle=solid](11,18)(21,18)(21,19)(11,19)
+\pspolygon[linewidth=0.15,fillstyle=solid](93,18)(103,18)(103,19)(93,19)
+\psline[linewidth=0.25](19,18)
+(19,13)
+(95,13)(95,18.5)
+\psline[linewidth=0.25](101,8)
+(101,11)(103,15)
+\psline[linewidth=0.25]{->}(13,18)(13,6)
+\psline[linewidth=0.25]{<-}(98,27)(98,19)
+\end{pspicture}
