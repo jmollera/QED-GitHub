@@ -1,0 +1,155 @@
+\chapter*{Notació} \addcontentsline{toc}{chapter}{Notació}
+
+Es presenta a continuació la notació seguida en aquest llibre.
+
+Cal fer notar que les variables escalars
+s'escriuen en lletra  inclinada, i que les variables vectorials i matricials s'escriuen
+en lletra negreta inclinada.
+
+\begin{list}{}
+{\setlength{\labelwidth}{15mm} \setlength{\leftmargin}{20mm}
+\setlength{\labelsep}{5mm}}
+    \item[$\ju$] La unitat imaginària, definida com:
+    $\ju\equiv\sqrt{-1}$\index{j}
+    \item[$V$] Una variable real.
+    \item[$\cmplx{V}$] Una variable complexa.
+    \item[$\cmplx{V}^*$] Conjugat d'una variable complexa.
+    Es compleixen les relacions:\\[1ex]
+     $(\cmplx{V}_1 \pm \cmplx{V}_2 \pm \cdots  \pm \cmplx{V}_n)^* = \cmplx{V}_1^* \pm
+    \cmplx{V}_2^*\pm\cdots\pm\cmplx{V}_n^*$\\[1ex]
+    $(\cmplx{V}_1 \cmplx{V}_2 \cdots \cmplx{V}_n)^* = \cmplx{V}_1^*  \cmplx{V}_2^*
+    \cdots \cmplx{V}_n^*$\\[1ex]
+    $(\cmplx{V}_1 / \cmplx{V}_2)^* = \cmplx{V}_1^* / \cmplx{V}_2^*$
+    \item[$|\cmplx{V}|$] Mòdul d'una variable complexa.
+    Es compleixen les relacions:\\[1ex]
+      $\cmplx{V}\cmplx{V}^* = |\cmplx{V}|^2$\\[1ex]
+      $1/ \cmplx{V} = \cmplx{V}^* / \,|\cmplx{V}|^2$\\[1ex]
+      $|\cmplx{V}_1 \cmplx{V}_2 \cdots \cmplx{V}_n| =
+       |\cmplx{V}_1| \,|\cmplx{V}_2| \cdots |\cmplx{V}_n|$\\[1ex]
+       $|\cmplx{V}_1 / \cmplx{V}_2| = |\cmplx{V}_1| \,/ \,|\cmplx{V}_2|$\\[1ex]
+      $|\cmplx{V}_1+\cmplx{V}_2+\cdots+\cmplx{V}_n| \leq
+      |\cmplx{V}_1| + |\cmplx{V}_2| + \cdots  +|\cmplx{V}_n|$
+    \item[$\arg\cmplx{V}$] Argument (angle) d'una variable complexa.
+     Es compleixen les relacions:\\[1ex]
+      $\arg\cmplx{V}^* = - \arg\cmplx{V}$\\[1ex]
+      $\arg(-\cmplx{V}) =  \arg\cmplx{V} + \piup$\\[1ex]
+      $\arg(\cmplx{V}_1 \cmplx{V}_2 \cdots \cmplx{V}_n) = \arg\cmplx{V}_1 + \arg \cmplx{V}_2 + \cdots + \arg\cmplx{V}_n$\\[1ex]
+      $\arg(\cmplx{V}_1 / \cmplx{V}_2) = \arg\cmplx{V}_1 - \arg \cmplx{V}_2$
+    \item[$\Re\cmplx{V}$] Part real d'una variable complexa. Es compleix: $\Re\cmplx{V} = \dfrac{\cmplx{V} + \cmplx{V}^*}{2}$
+    \item[$\Im\cmplx{V}$] Part imaginària d'una variable complexa. Es compleix: $\Im\cmplx{V} = \dfrac{\cmplx{V} - \cmplx{V}^*}{2 \ju}$
+    \item[$A+\ju B$] Expressió cartesiana (part real i part
+    imaginària) d'una variable complexa.
+    \item[$Z_{\angle \theta}$] Expressió polar (mòdul i argument) d'una variable
+    complexa. Les relacions entre $A, B, Z$ i $\theta$ són:\footnote{Cal tenir en compte que la funció \textsf{arctan} disponible en moltes calculadores i llenguatges de programació, torna de forma  estandarditzada valors compresos entre $-\frac{\piup}{2}$ i $\frac{\piup}{2}$. En aquest cas cal sumar el valor $\piup$, quan $A$ és negatiu, a l'angle obtingut amb la funció \textsf{arctan} per tal d'obtenir l'angle en el quadrant correcte.}\\[1ex]
+    $Z=+\sqrt{A^2+B^2}\quad\quad\theta=\arctan{\dfrac{B}{A}}\quad\quad
+    A=Z\cos\theta\quad\quad B=Z\sin\theta$
+    \item[$Z\,\eu^{\ju\theta}$] Expressió d'Euler\index{Euler} d'una variable complexa, definida com:\footnote{El valor de $\theta$ ha d'expressar-se sempre en radiant, per tal que el valor de $\eu^{\ju\theta}$ sigui correcte.}
+     $Z\,\eu^{\ju\theta} \equiv Z(\cos\theta+\ju\sin\theta)$.
+     Es compleixen les relacions:\\[1ex]
+     $Z_1\,\eu^{\ju\theta_1} \, Z_2\,\eu^{\ju\theta_2} = Z_1 Z_2\,\eu^{\ju(\theta_1+\theta_2)}$\\[1ex]
+     %$(Z_1\,\eu^{\ju\theta_1}) \,/\, (Z_2\,\eu^{\ju\theta_2}) = \dfrac{Z_1}{Z_2}\,\eu^{\ju(\theta_1-\theta_2)}$
+     $\dfrac{Z_1\,\eu^{\ju\theta_1}}{Z_2\,\eu^{\ju\theta_2}} = \dfrac{Z_1}{Z_2}\,\eu^{\ju(\theta_1-\theta_2)}$
+    \item[$\boldsymbol{V}$] Una matriu real o un vector real.
+    \item[$\boldsymbol{V}^{-1}$] Matriu inversa d'una matriu real.
+    \item[$\transp{\boldsymbol{V}}$] Matriu transposada d'una matriu real, o vector
+    transposat d'un vector real.
+    \item[$\boldsymbol{V}(n)$] Element $n$-èsim d'un vector real.
+    \item[$\boldsymbol{V}(m,n)$] Element de la fila $m$ i columna $n$ d'una matriu real.
+    \item[$\mcmplx{V}$] Una matriu complexa o un vector complex.
+    \item[$\mcmplx{V}^{-1}$] Matriu inversa d'una matriu complexa.
+    \item[$\transp{\mcmplx{V}}$] Matriu transposada d'una matriu complexa, o vector
+    transposat d'un vector complex.
+    \item[$\mcmplx{V}^*$] Matriu conjugada d'una matriu complexa, o vector
+    conjugat d'un vector complex.
+    \item[$\hermit{V}$] Matriu conjugada transposada d'una matriu complexa, o vector
+    conjugat transposat d'un vector complex, definit com: $\hermit{V} \equiv
+    \transp{(\mcmplx{V}^*)}$.
+    \item[$\mcmplx{V}(n)$] Element $n$-èsim d'un vector complex.
+    \item[$\mcmplx{V}(m,n)$] Element de la fila $m$ i columna $n$ d'una matriu complexa.
+\end{list}
+
+Pel que fa als sentits assignats a les fletxes que representen les
+tensions i els corrents en els diversos circuits elèctrics que
+apareixen en aquest llibre, s'utilitza la convenció següent:
+
+\begin{list}{}
+{\setlength{\labelwidth}{15mm} \setlength{\leftmargin}{20mm}
+\setlength{\labelsep}{5mm}}
+    \item[$\begin{CD} @>U>> \end{CD}$] Tensió contínua: la fletxa indica el sentit
+    de la caiguda de tensió, és a dir, va del nus positiu al nus negatiu.
+    \item[$\begin{CD} @>I>> \end{CD}$] Corrent
+    continu: la fletxa indica el sentit  assignat com a positiu al corrent.
+    \item[$\begin{CD} @>\cmplx{U}>> \end{CD}$] Tensió alterna: la fletxa indica el
+    sentit assignat com a positiu a la caiguda de tensió, quan el nus d'origen de la fletxa
+    té un potencial  més positiu que el nus de destinació.
+    \item[$\begin{CD} @>\cmplx{I}>> \end{CD}$] Corrent altern: la fletxa
+    indica el sentit  assignat com a positiu al corrent.
+\end{list}
+
+\pagebreak
+
+En aquest llibre les variables complexes s'utilitzen per representar fasors. Un fasor $Z_{\angle \theta}$ és equivalent a una funció sinusoidal variable en el temps, la qual pot expressar-se utilitzant la funció cosinus:
+\[y(t)=\sqrt{2}\, Z \cos(\omega t + \theta)\]
+
+O utilitzant la funció sinus:
+\[y(t)=\sqrt{2}\, Z \sin(\omega t + \theta)\]
+
+Quan hi ha diverses funcions sinusoidals relacionades entre si, cal utilitzar de manera uniforme la funció cosinus o la funció sinus per a totes les funcions. Les variables i paràmetres implicats són:
+\begin{list}{}
+{\setlength{\labelwidth}{15mm} \setlength{\leftmargin}{20mm}
+\setlength{\labelsep}{5mm}}
+    \item[$\boldsymbol{y(t)}$] Funció sinusoidal; representa normalment una tensió o un corrent.
+    \item[$\boldsymbol{t}$] Temps.
+    \item[$\boldsymbol{f}$] Freqüència de la funció sinusoidal.
+    \item[$\boldsymbol{T}$] Període de la funció sinusoidal.
+    \item[$\boldsymbol{\omega}$] Velocitat angular de la funció sinusoidal. Es compleix: $\omega = 2 \piup f = 2 \piup\,/T$.
+    \item[$\boldsymbol{Z}$] Valor eficaç de la funció sinusoidal (vegeu la secció \vref{sec:val_mitja_ef}); els valors de pic de la funció sinusoidal  són:  $\pm\sqrt{2}\, Z$.
+    \item[$\boldsymbol{\theta}$] Angle inicial de la funció sinusoidal, on  $\theta=\omega \tau$, o $\theta=-\omega (T-\tau)$; el significat del temps $\tau$  es pot veure en el gràfic que hi ha més avall.
+
+    Quan es fa servir la funció cosinus, $\theta$ és positiu quan s'utilitza $\tau$, és a dir, el temps mesurat  des de l'origen ($t=0$) cap a l'esquerra, fins a trobar el primer valor màxim de la funció, i $\theta$ és negatiu quan s'utilitza $T-\tau$, és a dir, el temps mesurat des de l'origen cap a la dreta, fins a trobar també el primer valor màxim de la funció.
+
+    Quan es fa servir la funció sinus, $\theta$ és positiu quan s'utilitza $\tau$, és a dir, el temps mesurat des de l'origen ($t=0$) cap a l'esquerra, fins a trobar el primer punt on la funció es fa zero (passant de valors negatius a positius), i $\theta$ és negatiu quan s'utilitza $T-\tau$, és a dir, el temps mesurat des de l'origen cap a la dreta, fins a trobar també el primer punt on la funció es fa zero (passant de valors negatius a positius).
+    \item[] \input{Imatges/Not-Fasor.pdf_tex}
+\end{list}
+\index{fasor}
+
+\pagebreak
+
+Els símbols que representen els diferents conjunts de nombres i intervals, segons la norma internacional ISO 80000-2 \textit{Quantities and units --- Part 2: Mathematics}, són els següents:
+
+\begin{list}{}
+{\setlength{\labelwidth}{15mm} \setlength{\leftmargin}{20mm}
+\setlength{\labelsep}{5mm}}
+    \item[\mathsfb{N}] Conjunt dels nombres naturals: $\{\,0,1,2,3,4,\ldots\,\}$. També s'utilitza el símbol $\mathbb{N}$.
+    \item[\mathsfb{N^*}] Conjunt dels nombres naturals, excloent el zero: $\mathsfb{N^*} = \{ n \in \mathsfb{N} \mid n \ne 0\}$. També s'utilitza el símbol $\mathbb{N^*}$.
+    \item[\mathsfb{Z}] Conjunt dels nombres enters: $\{\,\ldots,-3,-2,-1,0,1,2,3,\ldots\,\}$.
+     També s'utilitza el símbol $\mathbb{Z}$.
+    \item[\mathsfb{Z^*}] Conjunt dels nombres enters, excloent el zero: $\mathsfb{Z^*} = \{ n \in \mathsfb{Z} \mid n \ne 0\}$. També s'utilitza el símbol $\mathbb{Z^*}$.
+     \item[\mathsfb{Q}] Conjunt dels nombres racionals. També s'utilitza el símbol $\mathbb{Q}$.
+     \item[\mathsfb{Q^*}] Conjunt dels nombres racionals, excloent el zero: $\mathsfb{Q^*} = \{ r \in \mathsfb{Q} \mid r \ne 0\}$. També s'utilitza el símbol $\mathbb{Q^*}$.
+     \item[\mathsfb{R}] Conjunt dels nombres reals. També s'utilitza el símbol $\mathbb{R}$.
+	 \item[\mathsfb{R^*}] Conjunt dels nombres reals, excloent el zero: $\mathsfb{R^*} = \{ x \in \mathsfb{R} \mid x \ne 0\}$. També s'utilitza el símbol $\mathbb{R^*}$.
+     \item[\mathsfb{C}] Conjunt dels nombres complexos. També s'utilitza el símbol $\mathbb{C}$.
+     \item[\mathsfb{C^*}] Conjunt dels nombres complexos, excloent el zero: $\mathsfb{C^*} = \{ z \in \mathsfb{C} \mid z \ne 0\}$. També s'utilitza el símbol $\mathbb{C^*}$.
+     \item[\mathsfb{P}] Conjunt dels nombres primers: $\{\,2,3,5,7,11,13,17,\ldots\,\}$. També s'utilitza el símbol $\mathbb{P}$.
+     \item[{$[a,b]$}] Interval tancat des de $a$ inclòs fins a $b$ inclòs: $[a,b] = \{x \in \mathsfb{R} \mid a \leq x \leq b\}$.
+     \item[{$(a,b]$}] Interval semiobert per l'esquerra des de $a$ exclòs fins a $b$ inclòs: $(a,b] = \{x \in \mathsfb{R} \mid a < x \leq b\}$. També s'utilitza la notació $]a,b]$.
+     \item[{$[a,b)$}] Interval semiobert per la dreta des de $a$ inclòs fins a $b$ exclòs: $[a,b) = \{x \in \mathsfb{R} \mid a \leq x < b\}$. També s'utilitza la notació $[a,b[$.
+     \item[{$(a,b)$}] Interval obert des de $a$ exclòs fins a $b$ exclòs: $(a,b) = \{x \in \mathsfb{R} \mid a < x < b\}$. També s'utilitza la notació $]a,b[$.
+     \item[{$(-\infty,b]$}] Interval iŀlimitat tancat fins a $b$ inclòs: $(-\infty,b] = \{x \in \mathsfb{R} \mid x \leq b\}$.  També s'utilitza la notació $]-\infty,b]$.
+     \item[{$(-\infty,b)$}] Interval iŀlimitat obert fins a $b$ exclòs: $(-\infty,b) = \{x \in \mathsfb{R} \mid x < b\}$. També s'utilitza la notació $]-\infty,b[$.
+     \item[{$[a,+\infty)$}] Interval iŀlimitat tancat des de $a$ inclòs: $[a, +\infty) = \{x \in \mathsfb{R} \mid  x \geq a\}$. També s'utilitzen les notacions $[a, \infty)$, $[a, +\infty[$ i $[a, \infty[$.
+	 \item[{$(a,+\infty)$}] Interval iŀlimitat obert des de $a$ exclòs: $(a, +\infty) = \{x \in \mathsfb{R} \mid  x > a\}$. També s'utilitzen les notacions $(a, \infty)$, $]a, +\infty[$ i $]a, \infty[$.
+\end{list}
+\index{n@$\mathsf{N}$} \index{n@$\mathsf{N^*}$}
+\index{z@$\mathsf{Z}$} \index{z@$\mathsf{Z^*}$}
+\index{q@$\mathsf{Q}$} \index{q@$\mathsf{Q^*}$}
+\index{r@$\mathsf{R}$} \index{r@$\mathsf{R^*}$}
+\index{c@$\mathsf{C}$} \index{c@$\mathsf{C^*}$}
+\index{p@$\mathsf{P}$}
+\index{n@$\mathbb{N}$} \index{n@$\mathbb{N^*}$}
+\index{z@$\mathbb{Z}$} \index{z@$\mathbb{Z^*}$}
+\index{q@$\mathbb{Q}$} \index{q@$\mathbb{Q^*}$}
+\index{r@$\mathbb{R}$} \index{r@$\mathbb{R^*}$}
+\index{c@$\mathbb{C}$} \index{c@$\mathbb{C^*}$}
+\index{p@$\mathbb{P}$} 

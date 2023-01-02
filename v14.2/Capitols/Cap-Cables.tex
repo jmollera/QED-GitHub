@@ -1,0 +1,552 @@
+\addtocontents{xms}{\protect\addvspace{10pt}}
+\chapter{Cables}\label{sec:ch-cables}\index{cables}
+
+\section{Introducció}
+Es tracten en aquest capítol qüestions relatives als cables elèctrics.
+
+\section{Resistència}\index{cables!resistència}
+
+\subsection{Resistència d'un conductor}
+
+La resistència $R$ d'un conductor depèn de la resistivitat $\rho$
+del material, i de la llargada $l$ i  la secció
+$S$  del conductor.
+\begin{equation}
+   R= \rho \frac{l}{S}
+\end{equation}
+\index{$\rho$}
+
+\index{resistivitat!variació amb la temperatura}La resistivitat no
+és un valor constant sinó que depèn de la temperatura, a major
+temperatura major resistivitat. Coneixent la resistivitat $\rho_1$ a una
+temperatura $T_1$ es pot calcular la resistivitat $\rho_2$ a una altra
+temperatura $T_2$, a partir del coeficient de variació de la
+resistivitat amb la temperatura $\alpha_1$ donat a la temperatura $T_1$.
+\begin{equation}
+   \rho_2 = \rho_1 [1 + \alpha_1 (T_2 - T_1)]\label{eq:resistivitat}
+\end{equation}
+\index{$\alpha$}
+
+\index{resistivitat!valors}En la taula
+\vref{taula:param-elc} es donen valors de resistivitat i de
+coeficients de variació de la resistivitat amb la temperatura a
+\qty{20}{\degreeCelsius} i a \qty{0}{\degreeCelsius}, de diversos materials.
+
+\begin{center}
+   \captionof{table}{Paràmetres elèctrics d'alguns materials}
+   \label{taula:param-elc}
+   \begin{tabular}{lccc}
+   \toprule[1pt]
+   Material & $\rho_{\qty{20}{\degreeCelsius}} \,\big/\, \unit[per-mode = fraction]{\ohm\milli\metre\squared\per\metre}$ & $\alpha_{\qty{20}{\degreeCelsius}} \,\big/\, \unit{\degreeCelsius^{-1}}$ &
+   $\alpha_{\qty{0}{\degreeCelsius}} \,\big/\, \unit{\degreeCelsius^{-1}}$
+   \\
+   \midrule
+      Alumini & \num{0,02825} & \num{0,00391} & \num{0,00424} \\
+      Coure   & \num{0,01723} & \num{0,00393} & \num{0,00427} \\
+      Plata   & \num{0,01645} & \num{0,00380} & \num{0,00412} \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+
+La resistència així calculada és vàlida quan el corrent que circula
+pel cable és corrent continu.
+
+Quan el corrent que circula pel cable és
+corrent altern cal tenir en compte l'efecte peŀlicular, el qual
+ provoca un augment de la resistència causat perquè el corrent
+tendeix a circular més per la zona perifèrica del conductor que no pas per
+la zona central; l'efecte és important per a valors elevats de la
+secció del conductor o de la freqüència del corrent.\index{efecte peŀlicular}
+
+\index{resistència!efectiva}La resistència efectiva es troba a
+partir de la resistència calculada anteriorment per a corrent
+continu, i d'un factor $k$ que té en compte l'efecte peŀlicular.
+\begin{equation}
+   R\ped{efectiva} = k R
+\end{equation}
+
+En la taula \vref{taula:const_r_ef} es donen valors de $k$ per a conductors de coure i d'alumini, i per a diversos valors del producte de la secció del conductor per la freqüència del corrent. Aquests valors s'han obtingut de la  referència \cite{RASa}, pàgina 114.
+
+\begin{center}
+   \captionof{table}{Valors de $k$ per al càlcul de la resistència efectiva}
+   \label{taula:const_r_ef}
+   \begin{tabular}{S[table-format=6.0]S[table-format=1.3]S[table-format=1.3]}
+   \toprule[1pt]
+   {Secció$\,\times\,$Freqüència} & \multicolumn{2}{c}{$k$} \\
+   \cmidrule(rl){1-1} \cmidrule(rl){2-3}
+    \unit{mm^2.Hz} & \multicolumn{1}{c}{Cu} & \multicolumn{1}{c}{Al} \\
+   \midrule
+  5000 &  1,000 & 1,000 \\
+  10000 & 1,008 & 1,000 \\
+  15000 & 1,025 & 1,006 \\
+  20000 & 1,045 & 1,015 \\
+  25000 & 1,070 & 1,026 \\
+  30000 & 1,096 & 1,040 \\
+  35000 & 1,126 & 1,053 \\
+  40000 & 1,158 & 1,069 \\
+  45000 & 1,195 & 1,085 \\
+  50000 & 1,230 & 1,104 \\
+  75000 & 1,433 & 1,206 \\
+  100000 & 1,622 & 1,330 \\
+   \bottomrule[1pt]
+  \end{tabular}
+\end{center}
+
+\subsection{Resistència d'un cable}
+
+La resistència d'un cable $R\ped{Cable}$ depèn del nombre de conductors per fase $n$ (o
+per pol, en corrent continu), de la resistència de cada conductor $R\ped{Conductor}$ i del
+tipus de tensió elèctrica a la qual estigui sotmès el cable (monofàsica, trifàsica,
+contínua, etc.).
+
+\subsubsection*{Corrent continu o altern monofàsic}
+\begin{equation}\label{eq:r_cc_mono}
+    R\ped{Cable} = 2\, \frac{R\ped{Conductor}}{n}
+\end{equation}
+
+El valor multiplicatiu 2 prové del fet que cal tenir en compte tant el conductor d'anada
+com el de tornada.
+
+\subsubsection*{Corrent altern trifàsic equilibrat}
+\vspace{-5mm}
+\begin{equation}\label{eq:r_trifas}
+R\ped{Cable} = \frac{R\ped{Conductor\;fase}}{n}
+\end{equation}
+
+Atès que no circula corrent pel neutre, la seva resistència no  té cap influència.
+
+\subsubsection*{Corrent altern trifàsic desequilibrat}
+\begin{equation}
+    R\ped{Cable\;fase} = \frac{R\ped{Conductor\;fase}}{n\ped{fase}} \qquad\qquad
+    R\ped{Cable\; neutre} = \frac{R\ped{Conductor\;neutre}}{n\ped{neutre}}
+\end{equation}
+
+En aquest cas cal tenir en compte que els corrents que circulen per les fases i pel neutre
+són diferents.
+
+
+\section{Caiguda de tensió}\index{cables!caiguda de tensió}
+
+La caiguda de tensió $\Delta U$ en un cable es defineix com la diferència entre els mòduls de les tensions a l'origen $|{\cmplx{U}\ped{O}}|$ i al final $|\cmplx{U}\ped{F}|$ del cable.
+\begin{equation}
+   \Delta U \equiv |\cmplx{U}\ped{O}| - |\cmplx{U}\ped{F}|
+\end{equation}
+
+\subsection{Caiguda de tensió en corrent continu}\index{cables!caiguda de tensió!en corrent continu}
+
+En corrent continu la caiguda de tensió depèn del corrent $I$ que circula pel cable i de la  resistència del  cable mateix, calculada segons l'equació \eqref{eq:r_cc_mono}.
+\begin{equation}
+   \Delta U = I R\ped{Cable}
+\end{equation}
+
+\subsection{Caiguda de tensió en corrent altern}\index{cables!caiguda de tensió!en corrent altern}
+
+\index{factor!de potència}En corrent altern la caiguda de tensió
+depèn del  corrent $\cmplx{I}$ que circula pel cable, de la
+resistència i la reactància del  cable mateix, i del factor de
+potència $\cos \varphi$. El diagrama fasorial d'aquestes magnituds
+es pot veure en la figura \vref{pic:cdt_ca}.
+
+\begin{center}
+   \input{Imatges/Cap-Cables-Caiguda-Tensio.pdf_tex}
+   \captionof{figure}{Caiguda de tensió en corrent altern}
+   \label{pic:cdt_ca}
+\end{center}
+
+Quan es tracta de corrent monofàsic, la resistència del cable es calcula segons l'equació
+\eqref{eq:r_cc_mono}; la reactància del cable $X\ped{Cable}$ es calcula de forma anàloga
+amb la mateixa equació, a partir de la reactància dels conductors $X\ped{Conductor}$.
+
+Pel que fa al corrent trifàsic, se suposa equilibrat i, per tant, s'utilitza l'equació
+\eqref{eq:r_trifas} per calcular la resistència del cable $R\ped{Cable}$ --- i de forma
+anàloga la reactància $X\ped{Cable}$. Addicionalment, els corrents fan referència als
+corrents de fase i les tensions a les tensions fase-neutre; l'angle $\varphi$ és, doncs,
+ l'angle entre la tensió final fase-neutre i el corrent de fase.
+
+Disposem en aquest cas de dues equacions, una d'exacta i una altra d'aproximada (per a valors elevats de $\cos \varphi$).
+
+\begin{subequations}
+\begin{align}
+   \Delta U &= |\cmplx{I}| \,( R\ped{Cable} \cos \varphi + X\ped{Cable} \sin \varphi) + |\cmplx{U}\ped{O}| - \sqrt{|\cmplx{U}\ped{O}|^2 - |\cmplx{I}|^2 ( X\ped{Cable} \cos \varphi - R\ped{Cable} \sin \varphi )^2} \label{eq:cdt_trif_exact} \\[2ex]
+   \Delta U &\approx |\cmplx{I}| \,( R\ped{Cable} \cos \varphi + X\ped{Cable} \sin \varphi), \qquad \cos \varphi \gtrapprox \num{0,8} \label{eq:cdt_trif_aprox}
+\end{align}
+\end{subequations}
+
+
+\begin{exemple}[\CaigudaDeTensio{} \hyperlink{exemple:CaigudaDeTensio}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:CaigudaDeTensio}
+	\addcontentsxms{\CaigudaDeTensio}
+       Es tracta de calcular la caiguda de tensió en un sistema trifàsic on $|\cmplx{U}\ped{O}| = \qty{380}{V}$ (fase-fase), $|\cmplx{I}|=\qty{630}{A}$ i $\cos \varphi = \num{0,87}$(i). La unió entre els extrems origen  i final es fa amb tres cables unipolars en paraŀlel de $\qty{240}{mm^2}$ de secció cadascun i $\qty{400}{m}$ de llargada; els valors per fase de resistència i inductància són $\qty{0,095}{\ohm/km}$ i $\qty{0,102}{\ohm/km}$ respectivament.
+
+    A partir de l'equació \eqref{eq:r_trifas} calculem els valors de $R\ped{Cable}$ i de $X\ped{Cable}$:
+
+    \[
+       R\ped{Cable} = \frac{\qty{0,095}{\ohm/km}\times \qty{0,4}{km}}{3} = \qty{0,0127}{\ohm}
+    \]
+    \[
+       X\ped{Cable} = \frac{\qty{0,102}{\ohm/km}\times \qty{0,4}{km}}{3} = \qty{0,0136}{\ohm}
+    \]
+
+    Obtenim a continuació el valor de $\sin \varphi$:
+
+    \[
+       \sin \varphi = \sqrt{1-\num{0,87}^2} = \num{0,49}
+    \]
+
+    Calculem, en primer lloc, la caiguda de tensió de forma aproximada utilitzant l'equació \eqref{eq:cdt_trif_aprox}:
+
+    \[
+       \Delta U \approx \qty{630}{A} \times ( \qty{0,0127}{\ohm} \times \num{0,87} + \qty{0,0136}{\ohm} \times \num{0,49} ) = \qty{11,16}{V}
+    \]
+
+    Valor que en tant per cent respecte de la tensió a l'origen representa:
+
+    \[
+        \Delta u = \frac{\qty{11,16}{V}}{\frac{380}{\sqrt{3}}\unit{\,V}} \times 100 = \qty{5,09}{\percent}
+    \]
+
+    Finalment, calculem la caiguda de tensió exacta utilitzant l'equació \eqref{eq:cdt_trif_exact}:
+
+    \[ \begin{split}
+       \Delta U &=  \qty{630}{A} \times( \qty{0,0127}{\ohm} \times \num{0,87} + \qty{0,0136}{\ohm} \times \num{0,49}) + \qty[parse-numbers = false]{\frac{380}{\sqrt{3}}}{V}  \\
+        & \quad - \sqrt{\left(\qty[parse-numbers = false]{\frac{380}{\sqrt{3}}}{V}\right)^2 - \left(\qty{630}{A}\right)^2 \times  \left( \qty{0,0136}{\ohm} \times \num{0,87} - \qty{0,0127}{\ohm} \times \num{0,49} \right)^2 } \,= \qty{11,19}{V}
+    \end{split} \]
+
+    Valor que en tant per cent respecte de la tensió a l'origen representa:
+
+    \[
+        \Delta u = \frac{\qty{11,19}{V}}{\qty[parse-numbers = false]{\frac{380}{\sqrt{3}}}{V}} \times 100 = \qty{5,10}{\percent}
+    \]
+\end{exemple}
+
+\section{Capacitat tèrmica en curtcircuit}\index{cables!capacitat tèrmica en curtcircuit}\label{ces:cables_Icc_termica}
+
+Quan hi ha un curtcircuit en un cable, tota la calor generada no es transmet a l'exterior en els instants inicials sinó que s'acumula en la massa del conductor, incrementant-ne la temperatura --- procés adiabàtic. En aquestes condicions, la norma CEI 60724 \textit{Short-circuit temperature limits of electric cables with rated voltages of 1 kV (Um = 1,2 kV) and 3 kV (Um = 3,6 kV)}, dona la següent equació per a cables de tensió assignada d'\qty{1}{kV} i \qty{3}{kV}:\index{CEI!60724-00@60724}
+
+\begin{equation}
+   I\ped{cc}^2 \,t\ped{cc} = K^2 S^2 \ln \frac{\beta + \theta\ped{f}}{\beta + \theta\ped{i}}
+\end{equation}
+Amb:
+
+\begin{list}{}
+   {\setlength{\labelwidth}{10mm} \setlength{\leftmargin}{12mm} \setlength{\labelsep}{2mm}}
+   \item[\hspace{5mm}$\boldsymbol{I\ped{cc}}$\hfill] Corrent de curtcircuit.
+   \item[\hspace{5mm}$\boldsymbol{t\ped{cc}}$\hfill] Temps màxim que pot durar el curtcircuit sense que es malmeti el cable.
+   \item[\hspace{5mm}$\boldsymbol{K}$\hfill] Paràmetre que depèn del material del conductor.
+   \item[\hspace{5mm}$\boldsymbol{S}$\hfill] Secció del cable.
+   \item[\hspace{5mm}$\boldsymbol{\beta}$\hfill] Invers del coeficient de variació de la resistivitat amb la temperatura ($\beta = 1/ \alpha$).
+   \item[\hspace{5mm}$\boldsymbol{\theta\ped{i}}$\hfill] Temperatura inicial del curtcircuit (depèn del material de l'aïllament del conductor).
+   \item[\hspace{5mm}$\boldsymbol{\theta\ped{f}}$\hfill] Temperatura final del curtcircuit (depèn del material de l'aïllament del conductor).
+\end{list}
+
+La mateixa norma CEI 60724 dona valors per a $K$, $\beta$, $\theta\ped{i}$ i $\theta\ped{f}$ per a diferents materials del conductor i de l'aïllament, arribant finalment a la fórmula següent, la qual utilitza el paràmetre $C$:
+\begin{equation}\label{eq:Icc_termica}
+   I\ped{cc}/{\scriptstyle\unit{A}} = C\, \frac{S/{\scriptstyle\unit{mm^2}}}{\sqrt{t\ped{cc}/{\scriptstyle\unit{s}}}}
+\end{equation}
+
+
+En la taula \vref{taula:const_termica} es donen valors de $C$ per a diferents materials del conductor i de l'aïllament, segons la norma CEI 60724.
+
+\begin{center}
+   \captionof{table}{Valors de $C$ per al càlcul de curtcircuits en cables} \label{taula:const_termica}
+   \begin{tabular}{c>{\hspace{2.5em}}cc}
+   \toprule[1pt]
+   \renewcommand*{\multirowsetup}{\centering}
+   \multirow{2}{25mm}{\rule{0mm}{4mm}Material del\\conductor} & \multicolumn{2}{c}{$C$, segons el material de l'aïllament} \\ \cmidrule(rl){2-3}
+    & PVC & EPR i XLPE \\
+   \midrule
+   Cu & 115 & 143 \\
+   Al & 76 & 94 \\
+   \bottomrule[1pt]
+   \end{tabular}
+\end{center}
+
+
+\begin{exemple}[\CapTermicaCable{}]
+	\addcontentsxms{\CapTermicaCable}	
+       Es tracta de calcular el temps màxim que un cable de coure de $\qty{50}{mm^2}$ amb aïllament d'EPR, pot suportar un corrent de curtcircuit de $\qty{15}{kA}$.
+
+    A partir de la taula \vref{taula:const_termica} tenim: $C=143$. Utilitzant l'equació \eqref{eq:Icc_termica} calculem el temps màxim demanat:
+    \[
+       \num{15000} = 143 \times \frac{50}{\sqrt{t\ped{cc}/{\scriptstyle\unit{s}}}} \quad \Rightarrow \quad
+       t\ped{cc} =  \left(143\times \frac{50}{\num{15000}} \right) ^2 \,\unit{s} = \qty{0,23}{s}
+    \]
+\end{exemple}
+
+\section{Conversió entre unitats americanes i unitats SI}
+
+\subsection{\textit{Mils} (mil), \textit{circular mils} (cmil o CM) i \textit{thousand circular mils} (kcmil o MCM)}\label{sec:MCM}
+\index{mil}\index{cmil}\index{CM}\index{kcmil}\index{MCM}
+\index{mils@\textit{mils}} \index{circular mils@\textit{circular mils}} \index{thousand circular mils@\textit{thousand circular mils}}
+
+\index{mils@\textit{mils}!difinició} \index{circular mils@\textit{circular mils}!difinició} \index{thousand circular mils@\textit{thousand circular mils}!difinició}Les definicions d'aquestes tres unitats utilitzades en la mesura de diàmetres i seccions de conductors són:\footnote{Actualment, són molt més usats els símbols cmil i kcmil, que no pas els seus equivalents respectius CM i MCM.}
+\begin{align}
+  \qty{1}{mil} &\equiv \text{Una miŀlèsima de polsada} \\
+  \qty{1}{cmil} = \qty{1}{CM} &\equiv  \text{Àrea d'un cercle de diàmetre igual a \qty{1}{mil}} \\
+  \qty{1}{kcmil} = \qty{1}{MCM} &\equiv \qty{1000}{cmil} = \qty{1000}{CM}
+\end{align}
+
+\index{mils@\textit{mils}!conversions} \index{circular mils@\textit{circular mils}!conversions} \index{thousand circular mils@\textit{thousand circular mils}!conversions}Es donen a continuació algunes conversions d'aquestes unitats:
+\begin{align}
+   \qty{1}{mil} &= \qty{e-3}{in}  \\
+  \qty{1}{mil} &= \qty{e-3}{in} \times \frac{\qty{25,4}{mm}}{\qty{1}{in}} = \qty{25,4e-3}{mm}  \\
+  \qty{1}{cmil} &= \qty[parse-numbers=false]{\frac{\piup}{4}}{mil^2} \approx \qty{0,785398}{mil^2}   \\
+   \qty{1}{cmil} &= \frac{\piup}{4}\times \qty{e-6}{in^2} \approx \qty{0,785398e-6}{in^2} \\
+   \qty{1}{cmil} &= \frac{\piup}{4} \times \qty{e-6}{in^2} \times \frac{\qty{645,16}{mm^2}}{\qty{1}{in^2}} \approx \qty{506,7075e-6}{mm^2}
+   \\[1ex]
+   \qty{1}{kcmil} &= \qty{785,398}{mil^2}  = \qty{0,785398e-3}{in^2} \approx \qty{0,5067075}{mm^2}\label{eq:kcmil_mm2}
+\end{align}
+
+Una relació útil entre diàmetres  i seccions és la següent: la secció $S$ d'un cercle expressada en cmil és igual al quadrat del diàmetre $d$ del cercle expressat en mil.
+\begin{equation}
+   S/{\scriptstyle\unit{cmil}}  = (d/{\scriptstyle\unit{mil}})^2
+\end{equation}
+
+En la taula \vref{taula:MCM} es relacionen els diàmetres i seccions en diverses unitats, dels conductors usualment disponibles compresos entre $\qty{2000}{kcmil}$ i $\qty{250}{kcmil}$.
+
+\begin{center}
+    \captionof{table}{Dimensions de cables definits en kcmil}
+    \label{taula:MCM}
+    \begin{tabular}{S[table-format=4.0]S[table-format=1.6]S[table-format=4.4]
+                    S[table-format=4.5]S[table-format=1.7]S[table-format=2.5]}
+    \toprule[1pt]
+    \multicolumn{3}{c}{Secció} &   \multicolumn{3}{c}{Diàmetre}         \\
+    \cmidrule(rl){1-3} \cmidrule(rl){4-6}
+    \multicolumn{1}{c}{kcmil}  &    \multicolumn{1}{c}{\unit{in^2}}  & \multicolumn{1}{c}{\unit{mm^2}}  & \multicolumn{1}{c}{mil}
+           &    \multicolumn{1}{c}{in} &   \multicolumn{1}{c}{mm}   \\
+    \midrule
+    2000 &   1,570796 &   1013,4150 & 1414,21356 &  1,4142136 &   35,92102 \\
+    1750 &   1,374447 &   886,7381  & 1322,87566 &  1,3228757 &   33,60104 \\
+    1600 &   1,256637 &   810,7320  & 1264,91106 &  1,2649111 &   32,12874 \\
+    1500 &   1,178097 &   760,0612  & 1224,74487 &  1,2247449 &   31,10852 \\
+    1250 &   0,981748 &   633,3843  & 1118,03399 &  1,1180340 &   28,39806 \\
+    1000 &   0,785398 &   506,7075  & 1000,00000 &  1,0000000 &   25,40000 \\
+     800 &   0,628319 &   405,3660  &  894,42719 &  0,8944272 &   22,71845 \\
+     750 &   0,589049 &   380,0306  &  866,02540 &  0,8660254 &   21,99705 \\
+     700 &   0,549779 &   354,6952  &  836,66003 &  0,8366600 &   21,25116 \\
+     600 &   0,471239 &   304,0245  &  774,59667 &  0,7745967 &   19,67476 \\
+     500 &   0,392699 &   253,3537  &  707,10678 &  0,7071068 &   17,96051 \\
+     450 &   0,353429 &   228,0184  &  670,82039 &  0,6708204 &   17,03884 \\
+     400 &   0,314159 &   202,6830  &  632,45553 &  0,6324555 &   16,06437 \\
+     350 &   0,274889 &   177,3476  &  591,60798 &  0,5916080 &   15,02684 \\
+     300 &   0,235619 &   152,0122  &  547,72256 &  0,5477226 &   13,91215 \\
+     250 &   0,196350 &   126,6769  &  500,00000 &  0,5000000 &   12,70000 \\
+    \bottomrule[1pt]
+    \end{tabular}
+\end{center}
+
+D'aquesta taula es pot extreure la següent relació aproximada entre una secció $S$ expressada en $\unit{mm^2}$ i la mateixa secció $S$ expressada en $\unit{kcmil}$:
+\begin{equation}
+  S/{\scriptstyle\unit{mm^2}} \approx \frac{ S/{\scriptstyle\unit{kcmil}}}{2}
+\end{equation}
+
+
+
+\subsection{\textit{American Wire Gauge} (AWG)}\label{sec:awg}
+\index{AWG (\textit{American Wire Gauge})}
+
+\index{AWG (\textit{American Wire Gauge})!definició}
+L'\textit{American Wire Gauge}, anomenat també \textit{Brown \& Sharp Gauge}, és un sistema de numeració de conductors circulars segons el seu diàmetre. A cada número AWG li correspon un valor de diàmetre; els successius diàmetres formen una progressió geomètrica descendent --- en augmentar el número AWG disminueix el diàmetre.
+
+La raó d'aquesta progressió geomètrica s'obté de la següent consideració: hi ha dos valors de referència: 36 AWG, el qual té assignat un diàmetre de \qty{5}{mil}, i 0000 AWG, el qual té assignat un diàmetre de \qty{460}{mil}. Entre aquests dos valors de referència hi ha una diferència de 39 unitats (vegeu la taula \vref{taula:AWG}), i, per tant, sent $r\ped{d}$ la raó de diàmetres buscada, tenim:
+
+\begin{equation}
+   \qty{460}{mil} \times r\ped{d}^{39} = \qty{5}{mil} \quad \Rightarrow \quad r\ped{d} = \left( \frac{\qty{5}{mil}}{\qty{460}{mil}} \right)^{1/39} = \left( \frac{1}{92} \right)^{1/39} = 92^{-1/39}
+\end{equation}
+
+En ser la secció d'un conductor proporcional al quadrat del seu diàmetre, les seccions dels successius números AWG formen una progressió geomètrica  descendent de raó $r\ped{S}$ igual a: \begin{equation}
+   r\ped{S} = r\ped{d}^2 = 92^{-2/39}
+\end{equation}
+
+Finalment, en ser la resistència d'un conductor inversament proporcional a la seva secció, les resistències dels successius números AWG formen una progressió geomètrica ascendent de raó $r\ped{R}$ igual a:
+\begin{equation}
+   r\ped{R} = \frac{1}{r\ped{S}} = 92^{2/39}
+\end{equation}
+
+A partir d'aquestes raons, i coneixent el diàmetre $d$, la secció $S$ i la resistència $R$ d'un número AWG $n$, podem calcular aquests tres paràmetres per a un altre número AWG, $k$ unitats posterior o $k$ unitats anterior:
+
+\begin{equation}
+   \begin{array}{rllllll}
+     \text{AWG:}         & & n & & n+k                & & n-k \\
+     \text{Diàmetre:}    & & d & & d\, 92^{-k/39}  & & d\, 92^{k/39} \\
+     \text{Secció:}      & & S & & S\, 92^{-2k/39} & & S\, 92^{2k/39} \\
+     \text{Resistència:} & & R & & R\, 92^{2k/39}  & & R\, 92^{-2k/39}
+   \end{array}
+\end{equation}
+
+Per a alguns valors particulars de $k$ es compleixen de forma aproximada les següents relacions:
+
+\begin{list}{}
+   {\setlength{\labelwidth}{15mm} \setlength{\leftmargin}{17mm} \setlength{\labelsep}{2mm}}
+
+   \item[$\boldsymbol{k=6}$\hfill] En augmentar en 6  unitats un número AWG, el diàmetre es divideix per 2
+                 $(92^{-6/39}\approx \num{0,5})$.
+
+   \item[$\boldsymbol{k=-6}$\hfill] En disminuir en 6 unitats un número AWG, el diàmetre es multiplica per 2
+                 $(92^{6/39}\approx 2)$.
+
+   \item[$\boldsymbol{k=20}$\hfill] En augmentar en 20  unitats un número AWG, el diàmetre es divideix per 10
+                 $(92^{-20/39}\approx \num{0,1})$.
+
+   \item[$\boldsymbol{k=-20}$\hfill] En disminuir en 20 unitats un número AWG, el diàmetre es multiplica per 10
+                 $(92^{20/39}\approx 10)$.
+
+   \item[$\boldsymbol{k=3}$\hfill] En augmentar en 3 unitats un número AWG, la secció es divideix per 2
+                 $(92^{-2\times 3/39}\approx \num{0,5})$ i la resistència es multiplica per 2
+                 $(92^{2\times 3/39}\approx 2)$.
+
+   \item[$\boldsymbol{k=-3}$\hfill] En disminuir en 3 unitats un número AWG, la secció es multiplica per 2
+                  $(92^{2\times 3/39}\approx 2)$ i la resistència es divideix per 2
+                  $(92^{-2\times 3/39}\approx \num{0,5})$.
+
+   \item[$\boldsymbol{k=10}$\hfill] En augmentar en 10 unitats un número AWG, la secció es divideix per 10
+                 $(92^{-2\times 10/39}\approx \num{0,1})$ i la resistència es multiplica per 10
+                 $(92^{2\times 10/39}\approx 10)$.
+
+   \item[$\boldsymbol{k=-10}$\hfill] En disminuir en 10 unitats un número AWG, la secció es multiplica per 10
+                  $(92^{2\times 10/39}\approx 10)$ i la resistència es divideix per 10
+                  $(92^{-2\times 10/39}\approx \num{0,1})$.
+\end{list}
+
+\index{AWG (\textit{American Wire Gauge})!equivalències}En la taula \vref{taula:AWG} es relacionen els diàmetres i seccions en diverses unitats dels conductors compresos entre 0000 AWG i 40 AWG.
+
+\begin{longtable}{S[table-format=4.0]S[table-format=3.3]
+                  S[table-format=2.6]S[table-format=2.4]
+                  S[table-format=6.3]S[table-format=1.3e1]
+                  S[table-format=3.6]}
+\caption{\label{taula:AWG}Dimensions de cables AWG} \\
+\toprule[1pt]
+    \multicolumn{1}{c}{Cable}  &    \multicolumn{3}{c}{Diàmetre} &   \multicolumn{3}{c}{Secció}         \\
+    \cmidrule(rl){1-1} \cmidrule(rl){2-4} \cmidrule(rl){5-7}
+      \multicolumn{1}{c}{AWG} &   \multicolumn{1}{c}{mil}  & \multicolumn{1}{c}{in}  & \multicolumn{1}{c}{mm}  &   \multicolumn{1}{c}{cmil} & \multicolumn{1}{c}{\unit{in^2}}  & \multicolumn{1}{c}{\unit{mm^2}} \\
+\midrule \endfirsthead
+\caption[]{Dimensions de cables AWG (\emph{ve de la pàgina anterior})} \\
+\toprule[1pt]
+    \multicolumn{1}{c}{Cable} & \multicolumn{3}{c}{Diàmetre} & \multicolumn{3}{c}{Secció} \\
+    \cmidrule(rl){1-1} \cmidrule(rl){2-4} \cmidrule(rl){5-7}
+    \multicolumn{1}{c}{AWG} &   \multicolumn{1}{c}{mil}  & \multicolumn{1}{c}{in}  & \multicolumn{1}{c}{mm}  &   \multicolumn{1}{c}{cmil} & \multicolumn{1}{c}{\unit{in^2}}  & \multicolumn{1}{c}{\unit{mm^2}} \\
+\midrule \endhead
+\midrule
+\multicolumn{7}{r}{\sffamily\bfseries\color{NavyBlue}(\emph{continua a la pàgina següent})}
+\endfoot
+\endlastfoot
+{0000} & 460,000 &   0,460000 &    11,6840 & 211600,000 &  1,662e-1 & 107,219303 \\
+{\phantom{0}000} & 409,642 &   0,409642 &    10,4049 & 167806,429 &  1,318e-1 &  85,028773 \\
+{\phantom{00}00}  &  364,797 &   0,364797 &     9,2658 & 133076,548 &  1,045e-1 &  67,430882 \\
+  0  &  324,861 &   0,324861 &     8,2515 & 105534,501 &  8,289e-2 &  53,475121 \\
+ 1 &    289,297 &   0,289297 &     7,3481 &  83692,664 &  6,573e-2 &  42,407699 \\
+ 2 &    257,626 &   0,257626 &     6,5437 &  66371,300 &  5,213e-2 &  33,630834 \\
+ 3 &    229,423 &   0,229423 &     5,8273 &  52634,834 &  4,134e-2 &  26,670464 \\
+ 4 &    204,307 &   0,204307 &     5,1894 &  41741,321 &  3,278e-2 &  21,150639 \\
+ 5 &    181,941 &   0,181941 &     4,6213 &  33102,372 &  2,600e-2 &  16,773220 \\
+ 6 &    162,023 &   0,162023 &     4,1154 &  26251,375 &  2,062e-2 &  13,301768 \\
+ 7 &    144,285 &   0,144285 &     3,6649 &  20818,287 &  1,635e-2 &  10,548782 \\
+ 8 &    128,490 &   0,128490 &     3,2636 &  16509,652 &  1,297e-2 &   8,365564 \\
+ 9 &    114,424 &   0,114424 &     2,9064 &  13092,749 &  1,028e-2 &   6,634194 \\
+10 &    101,897 &   0,101897 &     2,5882 &  10383,022 &  8,155e-3 &   5,261155 \\
+11 &     90,742 &   0,090742 &     2,3048 &   8234,111 &  6,467e-3 &   4,172286 \\
+12 &     80,808 &   0,080808 &     2,0525 &   6529,947 &  5,129e-3 &   3,308773 \\
+13 &     71,962 &   0,071962 &     1,8278 &   5178,483 &  4,067e-3 &   2,623976 \\
+14 &     64,084 &   0,064084 &     1,6277 &   4106,724 &  3,225e-3 &   2,080908 \\
+15 &     57,068 &   0,057068 &     1,4495 &   3256,780 &  2,558e-3 &   1,650235 \\
+16 &     50,821 &   0,050821 &     1,2908 &   2582,744 &  2,028e-3 &   1,308696 \\
+17 &     45,257 &   0,045257 &     1,1495 &   2048,209 &  1,609e-3 &   1,037843 \\
+18 &     40,303 &   0,040303 &     1,0237 &   1624,304 &  1,276e-3 &   0,823047 \\
+19 &     35,891 &   0,035891 &     0,9116 &   1288,131 &  1,012e-3 &   0,652706 \\
+20 &     31,961 &   0,031961 &     0,8118 &   1021,535 &  8,023e-4 &   0,517619 \\
+21 &     28,462 &   0,028462 &     0,7229 &    810,114 &  6,363e-4 &   0,410491 \\
+22 &     25,347 &   0,025347 &     0,6438 &    642,449 &  5,046e-4 &   0,325534 \\
+23 &     22,572 &   0,022572 &     0,5733 &    509,486 &  4,001e-4 &   0,258160 \\
+24 &     20,101 &   0,020101 &     0,5106 &    404,040 &  3,173e-4 &   0,204730 \\
+25 &     17,900 &   0,017900 &     0,4547 &    320,419 &  2,517e-4 &   0,162359 \\
+26 &     15,941 &   0,015941 &     0,4049 &    254,104 &  1,996e-4 &   0,128756 \\
+27 &     14,196 &   0,014196 &     0,3606 &    201,513 &  1,583e-4 &   0,102108 \\
+28 &     12,641 &   0,012641 &     0,3211 &    159,807 &  1,255e-4 &   0,080976 \\
+29 &     11,258 &   0,011258 &     0,2859 &    126,733 &  9,954e-5 &   0,064217 \\
+30 &     10,025 &   0,010025 &     0,2546 &    100,504 &  7,894e-5 &   0,050926 \\
+31 &      8,928 &   0,008928 &     0,2268 &     79,703 &  6,260e-5 &   0,040386 \\
+32 &      7,950 &   0,007950 &     0,2019 &     63,207 &  4,964e-5 &   0,032028 \\
+33 &      7,080 &   0,007080 &     0,1798 &     50,126 &  3,937e-5 &   0,025399 \\
+34 &      6,305 &   0,006305 &     0,1601 &     39,752 &  3,122e-5 &   0,020142 \\
+35 &      5,615 &   0,005615 &     0,1426 &     31,524 &  2,476e-5 &   0,015974 \\
+36 &      5,000 &   0,005000 &     0,1270 &     25,000 &  1,963e-5 &   0,012668 \\
+37 &      4,453 &   0,004453 &     0,1131 &     19,826 &  1,557e-5 &   0,010046 \\
+38 &      3,965 &   0,003965 &     0,1007 &     15,723 &  1,235e-5 &   0,007967 \\
+39 &      3,531 &   0,003531 &     0,0897 &     12,469 &  9,793e-6 &   0,006318 \\
+40 &      3,145 &   0,003145 &     0,0799 &      9,888 &  7,766e-6 &   0,005010 \\
+\bottomrule[1pt]
+\end{longtable}
+
+\index{AWG (\textit{American Wire Gauge})!conversió a \unit{mm^2}} Es donen a continuació les equacions per passar directament d'un número AWG a la seva secció equivalent $S$  expressada en \unit{mm^2}, i al seu diàmetre equivalent $d$  expressat en \unit{mm}.
+\begin{align}
+   S/{\scriptstyle\unit{mm^2}}  &= \frac{ \piup \times \num{25,4}^2 \times 460^2}{4 \times 10^6 \times 92^{\frac{2(\text{AWG}+3)}{39}}} =
+   \frac{ \piup \times \num{25,4}^2 \times 460^2}{4 \times 10^6 \times 92^{6/39} \times 92^{\text{AWG}/\num{19,5}}} \approx
+   \frac{\num{53,4751207321}}{92^{\text{AWG}/\num{19,5}}}\label{eq:awg_mm2}\\[2ex]
+   d/{\scriptstyle\unit{mm}}  &= \sqrt{\frac{\num{25,4}^2 \times 460^2}{10^6 \times 92^{\frac{2(\text{AWG}+3)}{39}}}} =
+   \frac{\num{25,4} \times 460}{10^3 \times 92^{3/39} \times 92^{\text{AWG}/39}} \approx
+   \frac{\num{8,25146280217}}{92^{\text{AWG}/39}}\label{eq:awg_mm}
+\end{align}
+
+En aquestes dues equacions cal utilitzar els valors $-1, -2$ i $-3$  pels números 00 AWG,
+000 AWG i 0000 AWG respectivament.
+
+
+\begin{exemple}[\AWGammSQ{} \hyperlink{exemple:AWGammSQ}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:AWGammSQ}
+	\addcontentsxms{\AWGammSQ}
+    Es tracta de calcular la secció $S$ en \unit{mm^2} corresponent al número 14 AWG.
+
+    Utilitzant l'equació \eqref{eq:awg_mm2} tenim:
+    \[
+        S = \dfrac{\num{53,4751207321}}{92^{14/\num{19,5}}} 
+        \,\unit{mm^2} = \qty{2,1}{mm^2}
+    \]
+\end{exemple}
+
+
+Es donen a continuació dues equacions que poden considerar-se les inverses de les equacions \eqref{eq:awg_mm2} i \eqref{eq:awg_mm}, ja que ens permeten trobar el número AWG aproximat, corresponent a una secció $S$ donada en \unit{mm^2} o a un diàmetre $d$ donat en \unit{mm}:
+\begin{align}
+   \text{AWG} &= \frac{\num{19,5}}{\ln 92} \times \ln \frac{\piup \times
+   \num{25,4}^2 \times 460^2}{4 \times 10^6 \times 92^{6/39} \times S/{\scriptstyle\unit{mm^2}}} \approx
+   \num{4,31245284200} \times \ln \frac{\num{53,4751207321}}{S/{\scriptstyle\unit{mm^2}}}\label{eq:mm2_awg} \\[2ex]
+   \text{AWG} &= \frac{39}{\ln 92} \times \ln \frac{\num{25,4} \times 460}{10^3 \times 92^{3/39} \times d/{\scriptstyle\unit{mm}}} \approx
+   \num{8,62490568399} \times \ln \frac{\num{8,25146280217}}{d/{\scriptstyle\unit{mm}}}\label{eq:mm_awg}
+\end{align}
+
+Aquestes dues equacions ens donaran en general un valor decimal que caldrà arrodonir al valor enter  més proper.
+
+Si obtenim com a resultat els números $-1, -2$ o $-3$, cal recordar que aquests valors equivalen als números 00 AWG,
+000 AWG i 0000 AWG respectivament. Si s'obtenen números més negatius ($-4, -5,$ $-6, ...$) això ens indica que no hi ha cap número AWG corresponent a la nostra secció o diàmetre, ja que el màxim valor possible és 0000 AWG.
+
+
+
+\begin{exemple}[\mmSQaAWG{} \hyperlink{exemple:mmSQaAWG}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:mmSQaAWG}
+	\addcontentsxms{\mmSQaAWG}
+    Es tracta de calcular el número AWG aproximat, corresponent a un conductor de $S=\qty{4}{mm^2}$.
+
+    Utilitzant l'equació \eqref{eq:mm2_awg} tenim:
+    \[
+        \text{AWG} = \num{4,31245284200} \times \ln \dfrac{\num{53,4751207321}}{4} =
+        \num{11,18} \, \approx \, 11
+    \]
+\end{exemple}
+
+A més de les sigles «AWG», hi ha altres formes alternatives d'escriptura. En el cas dels conductors compresos entre 1 AWG i 40 AWG, també es pot veure escrit (prenent com a exemple el conductor 4 AWG):
+\begin{itemize}
+   \item \#4 (on el símbol «\#» s'utilitza com a substitut de \textit{number})
+   \item No. 4 (on «No.» és l'abreviació de \textit{number})
+   \item No. 4 AWG
+   \item 4 ga. (on «ga.» és l'abreviació de \textit{gauge})
+\end{itemize}
+
+En el cas dels conductors 0 AWG, 00 AWG, 000 AWG i 0000 AWG també es pot veure escrit (prenent com a exemple el conductor 000 AWG):
+\begin{itemize}
+   \item 3/0
+   \item 3/0 AWG
+   \item \#000
+   \item \#3/0
+\end{itemize}
+
+
+En el cas de cables formats per més d'un conductor, el cable es denomina utilitzant la secció dels conductors, seguida del nombre de conductors que formen el cable. Per exemple: \#14/2 o 14-2 identifica un cable format per dos conductors de 14 AWG.
+
+En el cas d'un conductor format per múltiples fils, el cable es denomina utilitzant l'AWG total --- suma de les seccions de cada fil --- seguit del nombre de fils i de l'AWG de cada fil. Per exemple: 22 AWG 7/30 identifica un conductor de 22 AWG, format per 7 fils de  30 AWG.
+
