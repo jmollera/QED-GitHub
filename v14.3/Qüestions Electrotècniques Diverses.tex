@@ -1,0 +1,477 @@
+\documentclass[catalan,a4paper,twoside,11pt]{book}
+
+\pdfminorversion=7 % Crea un fitxer PDF v. 1.7
+\pdfsuppresswarningpagegroup=1 % Suprimeix els warnings PDF multiple page...
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\DeclareUnicodeCharacter{013F}{\L.}  % Ela geminada majúscula
+\DeclareUnicodeCharacter{0140}{\l.}  % Ela geminada minúscula
+\DeclareUnicodeCharacter{2114}{\rule[1.15ex]{1.5ex}{0.5pt}\hspace{-1.5ex}lb}  % l b barra
+
+\usepackage{newpxtext}
+\usepackage{eulerpx}
+\usepackage{pifont}      % Dingbats d'enumeracions
+\usepackage{fontawesome5} % Dingbats de correcte, incorrecte, interrogant, admiració, quadrat, items, carta, copyright i Python
+\renewcommand{\labelitemi}{\faCaretRight}  % Símbol pels items de 1r nivell
+\renewcommand{\labelitemii}{\faAngleRight} % Símbol pels items de 2n nivell
+
+\usepackage{listings} % Llistats de programes
+\makeatletter
+\AtBeginDocument{% Canvia l'amplada del camp numèric del l'index de llistats a 3em
+	\renewcommand\lstlistoflistings{\bgroup
+		\let\contentsname\lstlistlistingname
+		\def\l@lstlisting##1##2{\@dottedtocline{1}{1.5em}{3em}{##1}{##2}}
+		\let\lst@temp\@starttoc \def\@starttoc##1{\lst@temp{lol}}%
+		\tableofcontents \egroup}
+}
+\makeatother
+\renewcommand{\lstlistingname}{Llistat}
+\renewcommand{\lstlistlistingname}{Índex de Llistats de  Programes}
+\lstset{
+	basicstyle=\footnotesize\ttfamily,
+	xleftmargin=4mm,
+	xrightmargin=0mm,
+	belowskip=5pt,
+	columns=fixed,
+	breaklines=true,
+	keywordstyle=\bfseries\textcolor[rgb]{0.0,0.0,0.75},
+	stringstyle=\ttfamily\textcolor[rgb]{0.0,0.5,0.0},
+	commentstyle=\textcolor[rgb]{0.55,0.31,0.04},
+	showspaces=false,
+	showstringspaces=false,	
+	numberstyle=\tiny,
+	numbersep=4pt,
+	framerule=1pt,
+    literate=
+	{à}{{\`{a}}}1
+	{è}{{\`{e}}}1
+	{é}{{\'{e}}}1
+	{í}{{\'{i}}}1
+	{ï}{{\"{i}}}1
+	{ò}{{\`{o}}}1
+	{ó}{{\'{o}}}1
+	{ú}{{\'{u}}}1
+	{ü}{{\"{u}}}1
+	{ç}{{\c{c}}}1
+	{ŀl}{{\lgem}}1
+	{À}{{\`{A}}}1
+	{È}{{\`{E}}}1
+	{É}{{\'{E}}}1
+	{Í}{{\'{I}}}1
+	{Ï}{{\"{I}}}1
+	{Ò}{{\`{O}}}1
+	{Ó}{{\'{O}}}1
+	{Ú}{{\'{U}}}1
+	{Ü}{{\"{U}}}1
+	{Ç}{{\c{C}}}1
+	{ĿL}{{\Lgem}}1
+	{}{{\textit{\textbf{i}}}}1
+	{·}{{\ensuremath{\cdot}}}1
+	{α}{{\ensuremath{\alphaup}}}1
+	{δ}{{\ensuremath{\deltaup}}}1
+	{Δ}{{\ensuremath{\Deltaup}}}1
+	{ε}{{\ensuremath{\varepsilonup}}}1
+	{η}{{\ensuremath{\etaup}}}1
+	{κ}{{\ensuremath{\kappaup}}}1
+	{ρ}{{\ensuremath{\rhoup}}}1
+	{π}{{\ensuremath{\piup}}}1
+	{Π}{{\ensuremath{\Pi}}}1
+	{Σ}{{\ensuremath{\Sigma}}}1
+	{𝜑}{{\ensuremath{\varphiup}}}1
+	{φ}{{\ensuremath{\phiup}}}1
+	{ω}{{\ensuremath{\omegaup}}}1
+	{Ω}{{\ensuremath{\Omega}}}1
+	{τ}{{\ensuremath{\tauup}}}1
+	{²}{{\texttwosuperior}}1
+	{∠}{{\ensuremath{\angle}}}1
+	{∡}{{\ensuremath{\measuredangle}}}1
+	{√}{{\ensuremath{\sqrt{\phantom{|}}}}}1
+	{°}{{\ensuremath{^\circ}}}1
+	{±}{{\ensuremath{\pm}}}1
+	{→}{{\ensuremath{\rightarrow} }}2
+}
+\lstdefinelanguage{HPPRIME}
+{   morekeywords={EXPORT,BEGIN,END,LOCAL,RETURN,IF,THEN,ELSE,FOR,FROM,TO,DO},
+	sensitive=true,
+	morecomment=[l]{//},
+	morestring=[b]"
+}
+
+\usepackage{amscd}   % Fletxes de definició dels sentits de corrent i tensió en la secció Notació
+\usepackage{beccari-v7}
+\allowdisplaybreaks[4] % Permet dividir múltiples equacions entre dues pàgines
+
+\usepackage{etoolbox}
+\robustify\dots
+\usepackage{siunitx}
+\DeclareSIUnit\noop{\relax} %Per permetre prefixes sols
+\sisetup{
+    input-digits = 0123456789\dots,
+    output-decimal-marker = {,},
+    output-complex-root = j,
+    complex-root-position = before-number,
+    arc-separator = {\,}
+}
+% \qty with a complex in polar form (degrees)
+\providecommand*{\qtypd}[3]{\ensuremath{\num{#1}_{\angle\ang{#2}}\,\unit{#3}}}
+% \qty with a complex in polar form (rad)
+\providecommand*{\qtypr}[3]{\ensuremath{\num{#1}_{\angle\SI{#2}{rad}}\,\unit{#3}}}
+% \num  with a complex in polar form (degrees)
+\providecommand*{\numpd}[2]{\ensuremath{\num{#1}_{\angle\ang{#2}}}}
+
+\usepackage{babel}
+\addto\captionscatalan{%
+	\renewcommand\contentsname{Índex General}%
+	\renewcommand\listfigurename{Índex de Figures}%
+	\renewcommand\listtablename{Índex de Taules}%
+	\renewcommand\indexname{Índex Alfabètic}%
+}
+
+\usepackage{varioref}
+\usepackage{multicol}
+\usepackage{longtable, booktabs, array, multirow, threeparttablex}
+
+\usepackage{caption} % Capçaleres de taules i peus de figures
+\captionsetup{hypcap=false,labelsep=quad,skip=10pt,format=hang,font={sf,bf,color={NavyBlue}}}
+\captionsetup[table]{position=above}
+\captionsetup[figure]{position=below}
+
+\usepackage{etoolbox,tocloft} 
+\cftsetindents{section}{1.5em}{2.8em}
+\cftsetindents{subsection}{4.3em}{3.6em}
+\makeatletter % alineació a la dreta del números romans de pàgina a l'Índex
+\patchcmd{\cftsecfillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\patchcmd{\cftsubsecfillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\patchcmd{\cftsubsubsecfillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\patchcmd{\cftparafillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\patchcmd{\cftsubparafillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\makeatother
+\newcommand{\listexamplename}{Índex d'Exemples} % Índex d'exemples
+\newlistof[chapter]{addcontentsxms}{xms}{\listexamplename}
+\setlength{\cftaddcontentsxmsnumwidth}{2.8em}
+\setlength{\cftaddcontentsxmsindent}{1.5em}
+\newcommand{\addcontentsxms}[1]
+{%
+	\refstepcounter{addcontentsxms}
+	\addcontentsline{xms}{addcontentsxms}
+	{\protect\numberline{\theaddcontentsxms}#1}\par
+}
+
+\usepackage[final]{graphicx}
+\usepackage[dvipsnames,table]{xcolor}
+\graphicspath{{Imatges/}}
+\usepackage[pages=some]{background} %Gradient de color en la portada i pàgines de les parts
+\backgroundsetup{
+	scale=1,
+	angle=0,
+	opacity=1,
+	contents={\begin{tikzpicture}[remember picture,overlay]
+			\path [top color = Yellow!60, bottom color = Yellow!15] (current page.south west)rectangle (current page.north east);
+	\end{tikzpicture}}
+}
+
+
+\usepackage{transparent} % Necessari pels fitxers TeX generats per Inkscape
+
+\usepackage{tcolorbox}
+% HP Prime button
+\newtcbox{\hpbutton}{on line, arc=2pt,colback=black,colframe=black,
+   before upper={\rule[-2pt]{0pt}{10pt}},boxrule=1pt,
+   boxsep=0pt,left=4pt,right=4pt,top=0pt,bottom=1pt,
+   colupper=white,fontupper={\fontsize{8pt}{8pt}\selectfont\sffamily}}
+
+% defineix l'entorn "exemple"
+\usepackage[framemethod=TikZ]{mdframed}
+\mdfdefinestyle{styleEx}{%
+    theoremseparator={ },%
+    frametitlefont=\color{NavyBlue}\bfseries\sffamily,%
+    roundcorner=5,%
+    innerleftmargin=5pt,%
+    innerrightmargin=5pt,%
+    linecolor=NavyBlue,%
+    linewidth=1pt,%
+    frametitlerulewidth=1pt,%
+    frametitlerule=true,%
+    skipabove=5mm,%
+    innertopmargin=\topskip,
+}
+\mdtheorem[style=styleEx]{exemple}{Exemple}[chapter]
+
+\setlength{\parskip}{1.5ex plus0.5ex minus0.5ex}     % separació entre paràgrafs
+\setlength{\parindent}{0mm}                          % paràgrafs sense indentació
+\setlength{\columnsep}{1.5em}                        % separació entre columnes
+
+% format de les pàgines
+\setlength{\hoffset}{0mm}
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{-10.8mm}
+\setlength{\textwidth}{170mm}
+\setlength{\marginparsep}{2mm}
+\setlength{\marginparwidth}{12mm}
+\setlength{\voffset}{0mm}
+\setlength{\textheight}{230mm}
+\setlength{\topmargin}{0mm}
+
+%formats dels peus i capçaleres
+\usepackage{fancyhdr}
+\setlength{\headheight}{26pt}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.4pt}
+% redefinició de l'estil plain: pàgines on comença un capítol
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyfoot[R]{\color{NavyBlue}\sffamily\bfseries \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+% redefinició de l'estil de les pàgines parells en blanc
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}
+\vspace*{\fill}
+\begin{center}
+   %This page intentionally left blank
+\end{center}
+\vspace{\fill}
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+% format de les parts
+\makeatletter
+\def\@part[#1]#2{%
+    \ifnum \c@secnumdepth >\m@ne
+      \refstepcounter{part}%
+      \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+    \else
+      \addcontentsline{toc}{part}{#1}%
+    \fi
+    {\parindent \z@ \raggedright
+     \interlinepenalty \@M
+     \normalfont
+     \ifnum \c@secnumdepth >\m@ne
+       \color{NavyBlue}\fontsize{60}{60}\usefont{OT1}{phv}{b}{n}\selectfont\partname\nobreakspace\thepart
+       \newline
+       \par\nobreak
+     \fi
+     \color{black}\fontsize{40}{60}\usefont{OT1}{pplx}{b}{n}\selectfont #2%
+     \markboth{}{}\par}%
+    \nobreak
+    \vskip 3ex
+    \@afterheading}
+\makeatother
+
+% format dels capítols
+\usepackage{fncychap}
+\makeatletter%
+  \ChNameVar{\vspace{-7mm}\color{NavyBlue}\fontsize{40}{42}\usefont{OT1}{phv}{b}{n}\selectfont}
+  \ChNumVar{\color{NavyBlue}\fontsize{50}{52}\usefont{OT1}{phv}{b}{n}\selectfont}
+  \ChTitleVar{\color{black}\fontsize{25}{27}\usefont{OT1}{pplx}{b}{n}\selectfont}
+  \ChRuleWidth{1pt}
+  \renewcommand{\DOCH}{%
+    \raggedright
+    \CNV\FmN{\@chapapp}\space \CNoV\thechapter\nobreak
+    \vskip -15\p@}
+  \renewcommand{\DOTI}[1]{%
+    \CTV\raggedright\mghrulefill{\RW} \\ \nobreak
+    \vskip 0\p@
+    \CTV\FmTi{#1} \\ \nobreak
+    \vskip -15\p@
+    \mghrulefill{\RW} \\ \nobreak
+    \vskip 40\p@}
+  \renewcommand{\DOTIS}[1]{%
+    \CTV\raggedright\mghrulefill{\RW} \\ \nobreak
+    \vskip 0\p@
+    \CTV\FmTi{#1} \\ \nobreak
+    \vskip -15\p@
+    \mghrulefill{\RW} \\ \nobreak
+    \vskip 5\p@}
+\makeatother
+
+% format de les seccions, subseccions, ...
+\makeatletter
+\renewcommand{\section}{\@startsection {section}{1}{0pt}%
+   {-3.5ex plus -1ex minus -0.2ex}%
+   {2.3ex plus 0.2ex}%
+   {\Large  \sffamily  \bfseries \color{NavyBlue}}}
+\renewcommand{\subsection}{\@startsection {subsection}{2}{0pt}%
+   {-3.25ex plus -1ex minus -0.2ex}%
+   {1.5ex plus 0.2ex}%
+   {\large  \sffamily  \bfseries \color{NavyBlue}}}
+\renewcommand{\subsubsection}{\@startsection {subsubsection}{3}{0pt}%
+   {-3.25ex plus -1ex minus -0.2ex}%
+   {1.5ex plus 0.2ex}%
+   {\normalsize  \sffamily  \bfseries \color{NavyBlue}}}
+\makeatother
+
+% Referència més d'un cop, al mateix número de nota a peu de pàgina
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
+% Títols dels exemples del Capítol Fonaments
+\newcommand{\MillmanBateries}{Teorema de Millman --- Bateries en paraŀlel}
+\newcommand{\MillmanTrifNeutre}{Teorema de Millman --- Càrregues trifàsiques amb corrent de neutre}
+\newcommand{\MillmanTrifNoNeutre}{Teorema de Millman --- Càrregues trifàsiques sense corrent de neutre}
+\newcommand{\Superposicio}{Aplicació del teorema de la superposició}
+\newcommand{\FactorsCrestaFormaArr}{Càlcul de factors de cresta, de forma i d'arrissada}
+\newcommand{\ValorEfValorMitja}{Valor eficaç i valor rectificat mitjà}
+\newcommand{\PotSistTresFils}{Càlcul de la potència en un sistema de 3 fils}
+\newcommand{\CarDescRL}{Càrrega i descàrrega d'un circuit R-L}
+\newcommand{\CurtcircuitRL}{Curtcircuit en un circuit R-L}
+\newcommand{\CurtcircuitPicRL}{Corrent de pic asimètric}
+\newcommand{\Malles}{Aplicació del mètode de les malles}
+% Títols dels exemples del Capítol Càlculs Bàsics
+\newcommand{\MetodeCalculPU}{Aplicació del mètode de càlcul en per unitat}
+\newcommand{\TriangleEstrella}{Transformació d'impedàncies triangle a estrella}
+\newcommand{\ResCircPotAbs}{Resolució d'un circuit coneixent la potència que absorbeix}
+\newcommand{\CorrentCcSecTrafo}{Corrent de curtcircuit en el secundari d'un transformador}
+\newcommand{\ValorsEscalaLog}{Càlcul de valors en una escala logarítmica}
+\newcommand{\ConstantsEscalaLogLog}{Càlcul de les constants $n$ i \textit{k} en una escala logarítmica-logarítmica}
+% Títols dels exemples del Capítol Components Simètriques
+\newcommand{\ImpedEquil}{Aplicació de les components simètriques --- Impedàncies equilibrades}
+\newcommand{\ImpedDesequil}{Aplicació de les components simètriques --- Impedàncies desequilibrades}
+% Títols dels exemples del Capítol Sèries de Fourier
+\newcommand{\ValorMitjaEfTaxaFon}{Càlcul de valors mitjà i eficaç, i de taxa de fonamental}
+\newcommand{\SerieFouTaulaFormes}{Càlcul d'una sèrie de Fourier utilitzant la taula de formes d'ona}
+\newcommand{\CircuitFourier}{Resolució d'un circuit elèctric utilitzant les sèries de Fourier}
+% Títols dels exemples del Capítol Transformada de Laplace
+\newcommand{\CalcTransfLaplace}{Càlcul de transformades de Laplace}
+\newcommand{\ResCircRC}{Resolució d'un circuit R-C}
+\newcommand{\CircuitLaplace}{Resolució d'un circuit amb condicions inicial no nuŀles}
+\newcommand{\CircuitLaplaceNul}{Resolució d'un circuit amb condicions inicial nuŀles}
+% Títols dels exemples del Capítol Cables
+\newcommand{\CaigudaDeTensio}{Càlcul de la caiguda de tensió en un sistema trifàsic}
+\newcommand{\CapTermicaCable}{Càlcul de la capacitat tèrmica d'un cable}
+\newcommand{\AWGammSQ}{Secció en mm² corresponent a un número AWG}
+\newcommand{\mmSQaAWG}{Número AWG corresponent a una secció en mm²}
+% Títols dels exemples del Capítol Transformadors de Mesura i Protecció
+\newcommand{\CaractTrafoCorrent}{Determinació de les característiques d'un transformador de corrent}
+\newcommand{\TrafoIeeeEqCei}{Equivalència entre transformadors IEEE i CEI}
+\newcommand{\ConnexWatt}{Connexió d'un wattímetre a una instaŀlació existent}
+% Títols dels exemples del Capítol Transformadors de Potència
+\newcommand{\ParamTrafo}{Determinació dels paràmetres d'un transformador}
+\newcommand{\ImpCircEqTrafoTresDeb}{Impedàncies del circuit equivalent d'un transformador de tres debanats}
+\newcommand{\IndexHorari}{Determinació de l'índex horari d'un transformador}
+\newcommand{\CCasimSecTrafo}{Curtcircuits asimètrics en el secundari d'un transformador}
+\newcommand{\ConnexParalDifIndex}{Connexió en paraŀlel de transformadors amb diferent índex horari}
+% Títols dels exemples del Capítol Motors d'Inducció
+\newcommand{\MotorNombrePols}{Nombre de pols i lliscament d'un motor}
+\newcommand{\MotorParellNom}{Parell nominal  d'un motor}
+\newcommand{\MotTempsArr}{Temps d'arrencada d'un motor}
+\newcommand{\CaractMotor}{Característiques de funcionament d'un motor}
+\newcommand{\TensDeseqMotor}{Motor alimentat amb tensió desequilibrada}
+\newcommand{\MotCarregaReduida}{Motor connectat a una càrrega  reduïda}
+\newcommand{\MotTensRedSolAp}{Motor alimentat a tensió reduïda --- Solució aproximada}
+\newcommand{\MotTensRedSolEx}{Motor alimentat a tensió reduïda --- Solució exacta}
+\newcommand{\MotTensRedIarr}{Arrencada a tensió reduïda, deguda al   corrent d'arrencada del motor}
+\newcommand{\MotorArrencNEMA}{Corrent d'arrencada  d'un motor segons NEMA MG-1}
+\newcommand{\MotorTensDeseqNEMA}{Tensió d'alimentació desequilibrada en un motor segons NEMA MG-1}
+\newcommand{\MotorVarParamTensFreq}{Variació dels paràmetres d'un motor amb la tensió i la freqüència}
+% Titols dels exemples del Capítol Xarxes Elèctriques
+\newcommand{\XarxaAmbAcobl}{Aplicació del mètode dels nusos --- Xarxa amb acoblaments magnètics}
+\newcommand{\XarxaSenseAcobl}{Aplicació del mètode dels nusos --- Xarxa sense acoblaments magnètics}
+\newcommand{\XarxaThevenin}{Impedància Thévenin entre dos nusos d'una xarxa}
+% Títols dels exemples del Capítol Fulx de Càrregues
+\newcommand{\FluxCarrXarxa}{Flux de càrrega d’una xarxa}
+\newcommand{\ControlTensCond}{Control de tensió d’un nus amb condensadors}
+\newcommand{\ControlTensTrafo}{Control de tensió d’un nus amb un transformador}
+% Títols dels exemples del Capítol Normes Diverses
+\newcommand{\ProtInvIntVar}{Actuació de la funció 51 amb un corrent variable en el temps}
+% Títols dels exemples de l'Apèndix Càlcul Numèric
+\newcommand{\InterpLinCub}{Interpolació lineal i cúbica}
+\newcommand{\InterpDuesDim}{Interpolació en dues dimensions}
+\newcommand{\IntegracioNum}{Integració numèrica d'una funció}
+\newcommand{\SolFunNoLin}{Solució d'una funció no lineal}
+
+\usepackage[makeindex]{imakeidx}
+\makeindex[intoc, columnseprule, options=-s jmb]
+
+\usepackage[verbose, pdftex,
+bookmarks=true, bookmarksopenlevel=0, bookmarksopen=true,  bookmarksnumbered=true, 
+pdftitle={Qüestions Electrotècniques Diverses}, pdfauthor={Josep
+	Mollera}, pdfcreator={Josep Mollera}, pdfsubject={Electrotècnia}, pdfkeywords={Electrotècnia, Sistemes Elèctrics de Potència}, pdflang={Catalan}, pdfstartview={Fit}, pdfpagelabels=true,colorlinks=true, linkcolor=black, plainpages=false]{hyperref}
+
+%\includeonly{Capitols/Cap-Resistencies}
+\begin{document}
+   \frontmatter
+  	  % estil de les pàgines normals parells i senars
+      \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO,RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase\leftmark}
+      \include{Capitols/Pre-Titol}
+      \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{Índex General}\tableofcontents
+      \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{Índex de Taules}\listoftables
+      \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{Índex de Figures}\listoffigures
+      \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{Índex d'Exemples}\listofaddcontentsxms
+      \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{Índex de Llistats de Programes}\lstlistoflistings
+      \cleardoublepage
+   \mainmatter      
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO,RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase Prefaci}
+      \include{Capitols/Pre-Prefaci}
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO,RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase Historial}
+      \include{Capitols/Pre-Historial}
+     \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO,RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase Notació}
+      \include{Capitols/Pre-Notacio}
+
+      % estil de les pàgines normals parells i senars
+      \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}}
+      \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO]{\color{NavyBlue}\sffamily\bfseries\nouppercase\rightmark}
+      \fancyhead[RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase\leftmark}
+   \part{Electrotècnia}
+      \thispagestyle{empty} % Elimina el número de pàgina
+   	  \BgThispage
+      \include{Capitols/Cap-Fonaments}
+      \include{Capitols/Cap-Calculs-Basics}
+      \include{Capitols/Cap-Components-Simetriques}
+      \include{Capitols/Cap-Series-Fourier}
+      \include{Capitols/Cap-Transformada-Laplace}
+   \part{Equips i Components Elèctrics}
+      \thispagestyle{empty}
+      \BgThispage
+      \include{Capitols/Cap-Resistencies}
+      \include{Capitols/Cap-Cables}
+      \include{Capitols/Cap-Trafos-Mes-Prot}
+      \include{Capitols/Cap-Trafos-Potencia}
+      \include{Capitols/Cap-Motors-Induccio}
+   \part{Sistemes Elèctrics de Potència}
+      \thispagestyle{empty}
+      \BgThispage
+      \include{Capitols/Cap-Xarxes-Electriques}
+      \include{Capitols/Cap-Flux-Carregues}
+      \include{Capitols/Cap-Normatives-Diverses}
+   \part{Python}
+      \thispagestyle{empty}
+      \BgThispage
+      \include{Capitols/Cap-Python-Llenguatge}
+      \include{Capitols/Cap-Python-Programes}
+      \include{Capitols/Cap-Python-Exemples}
+   \part{Apèndixs}
+      \thispagestyle{empty}
+      \BgThispage
+      \appendix
+      \renewcommand*{\chaptername}{\appendixname}
+      \include{Capitols/Ape-Alfabet-Grec}
+      \include{Capitols/Ape-SI}
+      \include{Capitols/Ape-Constants-Fisiques}
+      \include{Capitols/Ape-Funcions-Trigonometriques}
+      \include{Capitols/Ape-Calcul-Numeric}
+      \include{Capitols/Ape-HP-Prime}
+   \part{Bibliografia i  Índex Alfabètic}
+      \thispagestyle{empty}
+      \BgThispage
+      \backmatter
+      \include{Capitols/Pos-Bibliografia}
+      \printindex
+ \end{document}
