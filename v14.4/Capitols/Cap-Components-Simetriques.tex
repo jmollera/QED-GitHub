@@ -1,0 +1,525 @@
+\addtocontents{xms}{\protect\addvspace{10pt}}
+\chapter{Components Simètriques} \index{components simètriques} \label{sec:ch-comp-sim}
+
+\section{Introducció}
+La teoria de les components simètriques és útil en l'estudi de
+tensions i corrents trifàsics
+ desequilibrats, com ara els que es produeixen en un curtcircuit on no intervenen les tres
+ fases alhora (curtcircuit fase-terra, fase-fase, etc.).
+
+\section{L'operador complex «a»}
+
+Definim, en primer lloc, l'operador complex «$a$», el qual té un mòdul
+igual a la unitat i un argument igual a \ang{120}: \index{a@$a$}\begin{equation}
+   a \equiv \numpd{1}{120} = e^{j\frac{2\piup}{3}} =
+   \cos \frac{2\piup}{3} + j \sin \frac{2\piup}{3} = - \frac{1}{2} + j \frac{\sqrt{3}}{2}
+\end{equation}
+
+A l'hora d'utilitzar aquest operador, resulten útils les relacions
+següents:
+\begin{subequations}
+\begin{align}
+    a^2 &= \numpd{1}{240}= - \frac{1}{2} - j \frac{\sqrt{3}}{2} \\
+    a^3 &= \numpd{1}{0} = 1 \\
+    0 &= 1+ a + a^2
+ \end{align}
+\end{subequations}
+
+\section{\texorpdfstring{Teorema de Fortescue-Stokvis}{Teorema de Fortescue-Stokvis}}\index{teorema!de Fortescue-Stokvis}
+
+Tal com es veu en la figura \vref{pic:Comp_sim}, aquest teorema
+estableix que qualsevol sistema trifàsic asimètric ---també anomenat
+desequilibrat---  es pot descompondre  en la suma de tres sistemes
+simètrics: un sistema directe o de seqüència positiva, un sistema
+invers o de seqüència negativa, i un sistema homopolar o de
+seqüència zero. Els fasors $\cmplx{\Upsilon}\ped{A}$,
+$\cmplx{\Upsilon}\ped{B}$ i $\cmplx{\Upsilon}\ped{C}$ de la figura \vref{pic:Comp_sim}, poden representar tant
+tensions com corrents.
+
+\begin{center}
+    \input{Imatges/Cap-CompSim-CompSim.pdf_tex}
+    \captionof{figure}{Components simètriques --- Teorema de Fortescue-Stokvis}
+    \label{pic:Comp_sim}
+\end{center}
+
+\index{sistema!directe} \index{sistema!invers}
+\index{sistema!homopolar} El sistema directe està format per tres
+fasors equilibrats que tenen la mateixa seqüència de fases que els fasors
+originals, per exemple: A-B-C; els fasors
+s'identifiquen mitjançant els subíndexs «1» o «d». El sistema
+invers està format per tres fasors equilibrats que tenen la seqüència de fases contrària
+ dels fasors originals, per exemple: A-C-B; els fasors s'identifiquen mitjançant els
+subíndexs «2» o «i». Finalment, el sistema homopolar està
+format per tres fasors idèntics que estan en fase entre si; els fasors 
+s'identifiquen mitjançant el subíndex «0» o «h».
+
+Les equacions següents expressen els fasors del sistema asimètric de la figura \vref{pic:Comp_sim}, en funció
+dels fasors dels tres sistemes simètrics de la mateixa figura:
+\begin{subequations}
+\begin{align}
+   \cmplx{\Upsilon}\ped{A} &= \cmplx{\Upsilon}\ped{A,0}  +
+   \cmplx{\Upsilon}\ped{A,1} + \cmplx{\Upsilon}\ped{A,2} \label{eq:c_sim_a}\\
+   \cmplx{\Upsilon}\ped{B} &= \cmplx{\Upsilon}\ped{B,0} + \cmplx{\Upsilon}\ped{B,1} +
+   \cmplx{\Upsilon}\ped{B,2}  =  \cmplx{\Upsilon}\ped{A,0} + a^2
+   \cmplx{\Upsilon}\ped{A,1} + a \cmplx{\Upsilon}\ped{A,2} \label{eq:c_sim_b}\\
+   \cmplx{\Upsilon}\ped{C} &= \cmplx{\Upsilon}\ped{C,0} + \cmplx{\Upsilon}\ped{C,1} +
+   \cmplx{\Upsilon}\ped{C,2}  = \cmplx{\Upsilon}\ped{A,0} + a
+   \cmplx{\Upsilon}\ped{A,1} + a^2 \cmplx{\Upsilon}\ped{A,2} \label{eq:c_sim_c}
+\end{align}
+\end{subequations}
+
+O en forma matricial:
+\begin{equation}\label{eq:c_sim_mat}
+   \begin{pmatrix}
+     \cmplx{\Upsilon}\ped{A} \\
+     \cmplx{\Upsilon}\ped{B} \\
+     \cmplx{\Upsilon}\ped{C}
+   \end{pmatrix} =
+   \begin{pmatrix}
+     1 & 1 & 1 \\
+     1 & a^2 & a\\
+     1 & a & a^2
+   \end{pmatrix} \cdot
+   \begin{pmatrix}
+     \cmplx{\Upsilon}\ped{A,0} \\
+     \cmplx{\Upsilon}\ped{A,1} \\
+     \cmplx{\Upsilon}\ped{A,2}
+   \end{pmatrix}
+\end{equation}
+
+A partir del sistema d'equacions anterior, podem trobar els fasors
+dels tres sistemes simètrics en funció dels fasors del sistema
+asimètric:
+\begin{subequations}
+\begin{align}
+   \cmplx{\Upsilon}\ped{A,0} &= \frac{1}{3} (\cmplx{\Upsilon}\ped{A} + \cmplx{\Upsilon}\ped{B} +
+   \cmplx{\Upsilon}\ped{C}) & \cmplx{\Upsilon}\ped{B,0} &= \cmplx{\Upsilon}\ped{A,0} &
+   \cmplx{\Upsilon}\ped{C,0} &= \cmplx{\Upsilon}\ped{A,0}
+   \label{eq:c_sim_c2}\\
+   \cmplx{\Upsilon}\ped{A,1} &= \frac{1}{3} (\cmplx{\Upsilon}\ped{A} + a \cmplx{\Upsilon}\ped{B} +
+   a^2 \cmplx{\Upsilon}\ped{C}) & \cmplx{\Upsilon}\ped{B,1} &= a^2 \cmplx{\Upsilon}\ped{A,1} &
+   \cmplx{\Upsilon}\ped{C,1} &= a \cmplx{\Upsilon}\ped{A,1} \label{eq:c_sim_a2} \\
+   \cmplx{\Upsilon}\ped{A,2} &= \frac{1}{3} (\cmplx{\Upsilon}\ped{A} + a^2 \cmplx{\Upsilon}\ped{B} +
+   a \cmplx{\Upsilon}\ped{C}) & \cmplx{\Upsilon}\ped{B,2} &= a \cmplx{\Upsilon}\ped{A,2} &
+   \cmplx{\Upsilon}\ped{C,2} &= a^2 \cmplx{\Upsilon}\ped{A,2} \label{eq:c_sim_b2}
+\end{align}
+\end{subequations}
+
+O en forma matricial:
+\begin{equation}\label{eq:c_sim_mat1}
+   \begin{pmatrix}
+     \cmplx{\Upsilon}\ped{A,0} \\
+     \cmplx{\Upsilon}\ped{A,1} \\
+     \cmplx{\Upsilon}\ped{A,2}
+   \end{pmatrix} =
+   \begin{pmatrix}
+     1 & 1 & 1 \\
+     1 & a^2 & a\\
+     1 & a & a^2
+   \end{pmatrix}^{-1} \hspace{-2mm}\cdot
+   \begin{pmatrix}
+     \cmplx{\Upsilon}\ped{A} \\
+     \cmplx{\Upsilon}\ped{B} \\
+     \cmplx{\Upsilon}\ped{C}
+   \end{pmatrix} =  \frac{1}{3} \cdot
+   \begin{pmatrix}
+     1 & 1 & 1 \\
+     1 & a & a^2 \\
+     1 & a^2 & a
+   \end{pmatrix} \cdot
+   \begin{pmatrix}
+     \cmplx{\Upsilon}\ped{A} \\
+     \cmplx{\Upsilon}\ped{B} \\
+     \cmplx{\Upsilon}\ped{C}
+   \end{pmatrix}
+\end{equation}
+
+\section{Corrent de neutre}\label{sec:corrent-neutre}\index{corrent de neutre}
+
+Suposem un sistema trifàsic amb neutre de retorn, que pot ser la
+terra, on qualsevol de les seves parts ---generador, línia o consum---
+poden ser desequilibrades; el corrent que circula pel neutre és
+sempre la suma dels tres corrents de fase: $\cmplx{I}\ped{A}+
+\cmplx{I}\ped{B}+\cmplx{I}\ped{C}$. A partir d'aquest fet, i
+observant l'equació \eqref{eq:c_sim_c2}, es veu que el corrent de
+retorn pel neutre és igual a tres vegades la component homopolar
+del sistema de corrents de fase:
+\begin{equation}
+    \cmplx{I}\ped{A}+\cmplx{I}\ped{B}+\cmplx{I}\ped{C} =3 \cmplx{I}\ped{A,0}
+\end{equation}
+
+D'altra banda, quan un sistema trifàsic no té conductor neutre de retorn, tenim
+$\cmplx{I}\ped{A}+ \cmplx{I}\ped{B}+\cmplx{I}\ped{C}=0$, i, per tant,
+observant la mateixa equació \eqref{eq:c_sim_c2}, es veu que el
+sistema format pels corrents de fase no té sistema homopolar, és a dir: $\cmplx{I}\ped{A,0}=\cmplx{I}\ped{B,0}=\cmplx{I}\ped{C,0}=0$.
+
+Finalment, també podem dir que el corrent total a terra en cas de
+curtcircuit a terra, és igual a tres vegades la component homopolar del
+corrent de curtcircuit.
+
+\section{Propietats de les tensions fase-fase i fase-neutre}\label{sec:comp-sim-neutre}
+\index{tensió!fase-fase} \index{tensió!fase-neutre}
+
+En la figura \vref{pic:Comp_sim_tens} s'ha representat un sistema de
+tensions fase-fase: $\cmplx{U}\ped{AB}$,
+$\cmplx{U}\ped{BC}$ i $\cmplx{U}\ped{CA}$, i dos
+sistemes de tensions fase-neutre, dels infinits que poden existir
+depenent de la posició del punt neutre: $\cmplx{U}\ped{AG}$,
+$\cmplx{U}\ped{BG}$ i $\cmplx{U}\ped{CG}$, i
+$\cmplx{U}\ped{AN}$, $\cmplx{U}\ped{BN}$ i
+$\cmplx{U}\ped{CN}$. El punt neutre G del primer sistema
+coincideix amb el baricentre (intersecció de les mitjanes) del
+triangle  format per les tres tensions fase-fase, mentre que el
+punt neutre N del segon sistema està desplaçat respecte
+d'aquest baricentre.\index{baricentre}
+
+\begin{center}
+    \input{Imatges/Cap-CompSim-Tensions.pdf_tex}
+    \captionof{figure}{Components simètriques --- Tensions fase-fase i fase-neutre}
+    \label{pic:Comp_sim_tens}
+\end{center}
+
+Tenint en compte l'equació \eqref{eq:c_sim_c2}, es veu que el sistema
+format per les tensions fase-fase no té component homopolar, ja que
+la seva suma  és sempre igual a zero: $\cmplx{U}\ped{AB} +
+\cmplx{U}\ped{BC} + \cmplx{U}\ped{CA} = 0$. Si a més
+d'aquesta consideració, tenim en compte el que s'ha dit en l'apartat
+anterior, resulta que un sistema trifàsic desequilibrat sense conductor
+neutre de retorn, es pot estudiar tenint en compte únicament un sistema directe
+i un sistema invers, perquè en aquest cas tant les tensions fase-fase com els
+corrents de fase, no tenen component homopolar.
+
+Pel que fa a les components directa i inversa del sistema format per
+les tensions fase-fase, es compleix el següent: les components
+directa i inversa del sistema de tensions fase-fase, són
+respectivament els fasors fase-fase de les components directa i
+inversa del sistema de tensions fase-neutre.
+
+Expressant-ho en forma matemàtica tenim:
+\begin{subequations}
+\begin{align}
+   \cmplx{U}\ped{AB,0} &= 0 &
+   \cmplx{U}\ped{BC,0} &= 0 &
+   \cmplx{U}\ped{CA,0} &= 0 \\
+   \cmplx{U}\ped{AB,1} &= (1-a^2) \cmplx{U}\ped{AN,1} =
+   \cmplx{U}\ped{AN,1} \sqrt{3}_{\angle\ang{30}} &
+   \cmplx{U}\ped{BC,1} &= a^2 \cmplx{U}\ped{AB,1} &
+   \cmplx{U}\ped{CA,1} &= a \cmplx{U}\ped{AB,1} \label{eq:c_sim_a3} \\
+   \cmplx{U}\ped{AB,2} &= (1-a) \cmplx{U}\ped{AN,2}  =
+   \cmplx{U}\ped{AN,2} \sqrt{3}_{\angle\ang{-30}}&
+   \cmplx{U}\ped{BC,2} &= a \cmplx{U}\ped{AB,2} &
+   \cmplx{U}\ped{CA,2} &= a^2 \cmplx{U}\ped{AB,2} \label{eq:c_sim_b3}
+\end{align}
+\end{subequations}
+
+En aquestes equacions s'han utilitzat les components directa i
+inversa del sistema de tensions
+$\cmplx{U}\ped{AN}$, $\cmplx{U}\ped{BN}$ i $\cmplx{U}\ped{CN}$,
+però també es podrien haver utilitzat les components directa i
+inversa del sistema de tensions
+$\cmplx{U}\ped{AG}$, $\cmplx{U}\ped{BG}$ i $\cmplx{U}\ped{CG}$,
+ja que es compleix el següent: tots els sistemes de tensió
+fase-neutre que tinguin els mateixos extrems $A, B,
+C$, tenen les mateixes components directa i inversa; en termes
+més electrotècnics, es pot dir que qualsevol joc d'impedàncies en
+estrella connectat a les mateixes fases $A, B, C$,
+origina unes tensions fase-neutre, les components directa i inversa
+de les quals, són independents de les característiques de les
+impedàncies.
+
+El sistema de tensions fase-neutre
+$\cmplx{U}\ped{AG}$, $\cmplx{U}\ped{BG}$ i $\cmplx{U}\ped{CG}$,
+el punt neutre $G$ del qual coincideix amb el baricentre del
+triangle $A, B,
+ C$, és l'únic que té un sistema homopolar nul; la resta de sistemes de tensions
+ fase-neutre, com ara el format per les tensions $\cmplx{U}\ped{AN}$, $\cmplx{U}\ped{BN}$ i $\cmplx{U}\ped{CN}$,
+ el punt neutre $N$ del qual està desplaçat respecte del punt $G$, tenen un sistema
+ homopolar de valor:
+\begin{equation}
+    \cmplx{U}\ped{AN,0} = \cmplx{U}\ped{BN,0} =
+    \cmplx{U}\ped{CN,0} = \cmplx{U}\ped{GN}\label{eq:tens-hom}
+\end{equation}
+
+Amb relació al paràgraf anterior, es pot afirmar que si es
+connecten tres impedàncies idèntiques en estrella a un sistema
+de tensions trifàsic, la tensió del punt neutre de l'estrella
+coincidirà amb el baricentre $G$ del triangle format per les tensions
+fase-fase d'aquest sistema de tensions, i, per tant, les tensions fase-neutre no tindran
+component homopolar; de fet, $G$ és el punt neutre de les tensions
+fase-fase del sistema de tensions trifàsic.
+
+El sistema de tensions fase-neutre
+$\cmplx{U}\ped{AG}$, $\cmplx{U}\ped{BG}$ i $\cmplx{U}\ped{CG}$, es pot determinar directament a partir del sistema de tensions fase-fase $\cmplx{U}\ped{AB}$, $\cmplx{U}\ped{BC}$ i $\cmplx{U}\ped{CA}$, utilitzant les equacions \eqref{eq:bari_x} i \eqref{eq:bari_y}, les quals ens donen les coordenades del punt $G$:
+\begin{subequations}
+\begin{align}
+    \cmplx{U}\ped{AG} &= \frac{\cmplx{U}\ped{AB}-\cmplx{U}\ped{CA}}{3}\label{eq:uag}\\[1ex]
+    \cmplx{U}\ped{BG} &= \frac{\cmplx{U}\ped{BC}-\cmplx{U}\ped{AB}}{3}\label{eq:ubg}\\[1ex]
+    \cmplx{U}\ped{CG} &= \frac{\cmplx{U}\ped{CA}-\cmplx{U}\ped{BC}}{3}\label{eq:ucg}
+\end{align}
+\end{subequations}
+
+\section{Potència} \index{potència complexa!trifàsica}
+
+Tal com es veu en l'equació \eqref{eq:s_3f}, la qual fa referència a
+la figura \vref{pic:pot_comp_trif}, la potència complexa trifàsica
+en un sistema desequilibrat $\cmplx{S}\ped{3F}$, es calcula a partir
+de les tres tensions fase-neutre $\cmplx{U}\ped{AN}$,
+$\cmplx{U}\ped{BN}$ i $\cmplx{U}\ped{CN}$, i dels tres
+corrents de fase $\cmplx{I}\ped{A}$, $\cmplx{I}\ped{B}$ i
+$\cmplx{I}\ped{C}$.
+
+
+Tanmateix, si calculem els sistemes directe, invers i homopolar,
+corresponents a les tensions i corrents anteriors,
+$\cmplx{U}\ped{AN,1}$, $\cmplx{U}\ped{AN,2}$ i
+$\cmplx{U}\ped{AN,0}$, i $\cmplx{I}\ped{A,1}$,
+$\cmplx{I}\ped{A,2}$ i $\cmplx{I}\ped{A,0}$, podem
+expressar la potència complexa trifàsica a partir d'aquests nous
+valors, utilitzant les equacions \eqref{eq:c_sim_a},
+\eqref{eq:c_sim_b} i \eqref{eq:c_sim_c}:
+\begin{equation}
+\begin{split}
+   \cmplx{S}\ped{3F} &= \cmplx{U}\ped{AN} \,\cmplx{I}\ped{A}^* +
+   \cmplx{U}\ped{BN} \,\cmplx{I}\ped{B}^* +  \cmplx{U}\ped{CN} \,\cmplx{I}\ped{C}^*  \\[1ex]
+   &= \big(\cmplx{U}\ped{AN,0} + \cmplx{U}\ped{AN,1} +
+   \cmplx{U}\ped{AN,2}\big) \big(\cmplx{I}\ped{A,0} + \cmplx{I}\ped{A,1} +
+   \cmplx{I}\ped{A,2}\big)^*   \\[1ex]
+   &+ \big(\cmplx{U}\ped{AN,0} + a^2 \cmplx{U}\ped{AN,1} +
+   a \cmplx{U}\ped{AN,2} \big) \big(\cmplx{I}\ped{A,0} + a^2 \cmplx{I}\ped{A,1}
+    + a \cmplx{I}\ped{A,2} \big)^*  \\[1ex]
+   &+ \big(\cmplx{U}\ped{AN,0} + a \cmplx{U}\ped{AN,1} + a^2
+   \cmplx{U}\ped{AN,2} \big) \big(\cmplx{I}\ped{A,0} + a
+   \cmplx{I}\ped{A,1} + a^2 \cmplx{I}\ped{A,2} \big)^*   \\[1ex]
+   &= 3\, \cmplx{U}\ped{AN,0} \, \cmplx{I}\ped{A,0}^* +
+      3\, \cmplx{U}\ped{AN,1} \, \cmplx{I}\ped{A,1}^* +
+      3\, \cmplx{U}\ped{AN,2}\,  \cmplx{I}\ped{A,2}^*
+    \label{eq:c_sim_s}
+\end{split}
+\end{equation}
+
+
+\begin{exemple}[\ImpedEquil{} \hyperlink{exemple:ImpedEquil}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:ImpedEquil}
+	\addcontentsxms{\ImpedEquil}
+    Es tracta de trobar la potència consumida per una càrrega trifàsica
+    formada per tres resistències idèntiques de valor: $R\ped{A}=R\ped{B}=R\ped{C}=\qty{10}{\ohm}$,
+    connectades en estrella a un sistema trifàsic sense neutre, i la
+    tensió a què està sotmesa cada resistència; els valors de les
+    tensions del sistema trifàsic són: $|\cmplx{U}\ped{AB}| =
+    \qty{2760}{V}$, $|\cmplx{U}\ped{BC}| = \qty{1840}{V}$ i
+    $|\cmplx{U}\ped{CA}| = \qty{2300}{V}$.
+
+    Tal com s'ha explicat en la secció \vref{sec:comp-sim-neutre}, en ser idèntiques les tres impedàncies, el punt neutre que es formarà coincidirà amb el baricentre del triangle de tensions A-B-C. Utilitzarem doncs la lletra «G» per designar aquest punt neutre, en lloc de la lletra «N».
+
+    Assignem de forma arbitrària, tal com s'ha fet en la figura
+    \vref{pic:Comp_sim_tens}, un angle de fase igual a zero a la tensió
+    $\cmplx{U}\ped{AB}$.
+
+    \begin{center}
+        \input{Imatges/Cap-CompSim-Tensions-Exemple1.pdf_tex}
+    \end{center}
+
+    A continuació trobem els angles $\phi\ped{A}$ i $\phi\ped{B}$,
+    corresponents als vèrtexs  $A$ i $B$ del triangle de
+    tensions, utilitzant la llei dels cosinus (vegeu la secció
+    \vref{sec:llei-s-c-t}): \index{llei!dels cosinus}
+    \begin{align*}
+        \phi\ped{A} &= \arccos \frac{|\cmplx{U}\ped{AB}|^2 + |\cmplx{U}\ped{CA}|^2 -
+        |\cmplx{U}\ped{BC}|^2}{2 |\cmplx{U}\ped{AB}| \,|\cmplx{U}\ped{CA}|} =
+        \arccos \frac{(\qty{2760}{V})^2 + (\qty{2300}{V})^2 - (\qty{1840}{V})^2}{2 \times \qty{2760}{V}
+        \times \qty{2300}{V}} = \ang{41,41} \\[1ex]
+        \phi\ped{B} &= \arccos \frac{|\cmplx{U}\ped{BC}|^2 + |\cmplx{U}\ped{AB}|^2 -
+        |\cmplx{U}\ped{CA}|^2}{2 |\cmplx{U}\ped{BC}| \,|\cmplx{U}\ped{AB}|} =
+        \arccos \frac{(\qty{1840}{V})^2 + (\qty{2760}{V})^2 - (\qty{2300}{V})^2}{2 \times \qty{1840}{V}
+        \times \qty{2760}{V}} = \ang{55,77}
+    \end{align*}
+
+    Els fasors corresponents a les tres tensions són doncs:
+    \begin{align*}
+    \cmplx{U}\ped{AB} &= \qtypd{2760}{0}{V} \\
+    \cmplx{U}\ped{BC} &= \num{1840}_{\angle\ang{180} + \ang{55,77}}\unit{\,V} =
+    \qtypd{1840}{-124,23}{V} \\
+    \cmplx{U}\ped{CA} &= \num{2300}_{\angle\ang{180} - \ang{41,41}}\unit{\,V} = \qtypd{2300}{138,59}{V}
+    \end{align*}
+
+    Tal com s'ha dit anteriorment, el sistema de tensions fase-fase   té una component homopolar nuŀla.     Trobem a continuació les components directa, inversa i homopolar de les
+    tensions $\cmplx{U}\ped{AB}$, $\cmplx{U}\ped{BC}$ i
+    $\cmplx{U}\ped{CA}$, utilitzant les equacions
+    \eqref{eq:c_sim_c2}, \eqref{eq:c_sim_a2} i \eqref{eq:c_sim_b2}:
+
+    \begin{align*}
+    \cmplx{U}\ped{AB,1} &= \frac{1}{3} \big(
+    \qtypd{2760}{0}{V} + \numpd{1}{120} \times \qtypd{1840}{-124,23}{V} +
+    \numpd{1}{240} \times \qtypd{2300}{138,59}{V}\big) = \qtypd{2267,09}{5,04}{V} \\[1ex]
+    \cmplx{U}\ped{AB,2} &= \frac{1}{3} \big(
+    \qtypd{2760}{0}{V} + \numpd{1}{240} \times \qtypd{1840}{-124,23}{V} +
+    \numpd{1}{120} \times \qtypd{2300}{138,59}{V} \big) = \qtypd{539,77}{-21,66}{V} \\[1ex]
+    \cmplx{U}\ped{AB,0} &= \frac{1}{3} \big(
+    \qtypd{2760}{0}{V} + \qtypd{1840}{-124,23}{V} + \qtypd{2300}{138,59}{V}\big) = \qty{0}{V}
+    \end{align*}
+
+    Trobem ara les components directa i inversa
+    de les tensions fase-neutre, utilitzant les equacions
+    \eqref{eq:c_sim_a3} i \eqref{eq:c_sim_b3}; a més sabem que aquestes tensions fase-neutre no
+    tenen component homopolar, ja que la càrrega trifàsica és equilibrada
+    (tres resistències idèntiques):
+    \begin{align*}
+        \cmplx{U}\ped{AG,1} &=
+        \frac{\cmplx{U}\ped{AB,1}}{\sqrt{3}_{\angle\ang{30}}} =
+        \frac{\qtypd{2267,09}{5,04}{V}}{\sqrt{3}_{\angle\ang{30}}} =
+        \qtypd{1308,91}{-24,96}{V} \\[1ex]
+        \cmplx{U}\ped{AG,2} &=
+        \frac{\cmplx{U}\ped{AB,2}}{\sqrt{3}_{\angle\ang{-30}}} =
+        \frac{\qtypd{539,77}{137,42}{V}}{\sqrt{3}_{\angle\ang{-30}}} =
+        \qtypd{311,64}{8,34}{V} \\[1ex]
+        \cmplx{U}\ped{AG,0} &= \qty{0}{V}
+    \end{align*}
+
+
+    A partir d'aquests valors, podem calcular ara les components
+    directa, inversa i homopolar del corrent que circula per les
+    resistències, aplicant les lleis de Kirchhoff; com que les tres resistències són idèntiques, les seves  components    directa, inversa i homopolar $R_1$,  $R_2$ i $R_0$ també ho són i tenen el mateix valor de $\qty{10}{\ohm}$.
+    \begin{align*}
+    \cmplx{I}\ped{A,1} &=
+    \frac{\cmplx{U}\ped{AG,1}}{R_1} =
+    \frac{\qtypd{1308,91}{-24,96}{V}}{\qty{10}{\ohm}} =
+    \qtypd{130,89}{-24,96}{A} \\[1ex]
+    \cmplx{I}\ped{A,2} &=
+    \frac{\cmplx{U}\ped{AG,2}}{R_2} =
+    \frac{\qtypd{311,64}{8,34}{V}}{\qty{10}{\ohm}} =
+    \qtypd{31,16}{8,34}{A} \\[1ex]
+    \cmplx{I}\ped{A,0} &=
+    \frac{\cmplx{U}\ped{AG,0}}{R_0} =
+    \frac{\qty{0}{V}}{\qty{10}{\ohm}} =
+    \qty{0}{A}
+    \end{align*}
+
+    Podem ara  calcular ja  la potència consumida per la càrrega
+    trifàsica, utilitzant l'equació \eqref{eq:c_sim_s}:
+    \[
+    \begin{split}
+    \cmplx{S}\ped{3F} &=  3\,
+    \cmplx{U}\ped{AG,0}\,  \cmplx{I}\ped{A,0}^* +
+    3\, \cmplx{U}\ped{AG,1}\,
+    \cmplx{I}\ped{A,1}^* + 3\, \cmplx{U}\ped{AG,2}\,
+    \cmplx{I}\ped{A,2}^*   \\
+    &= \qty{0}{kW} + 3 \times \qtypd{1308,91}{-24,96}{V} \times
+    \qtypd{130,89}{24,96}{A} + 3 \times
+    \qtypd{311,64}{8,34}{V} \times \qtypd{31,16}{-8,34}{A}  \\
+    &= \qty{543,11}{kW}
+    \end{split}
+    \]
+
+    Utilitzarem ara les equacions \eqref{eq:c_sim_a},
+    \eqref{eq:c_sim_b} i \eqref{eq:c_sim_c} per trobar les tensions $\cmplx{U}\ped{AG}$, $\cmplx{U}\ped{BG}$ i $\cmplx{U}\ped{CG}$, a què
+    estan sotmeses les tres resistències, a partir de les  tensions $\cmplx{U}\ped{AG,0}$, $\cmplx{U}\ped{AG,1}$ i $\cmplx{U}\ped{AG,2}$:
+    \begin{align*}
+        \cmplx{U}\ped{AG} &= \qty{0}{V} + \qtypd{1308,91}{-24,96}{V} +
+        \qtypd{311,64}{8,34}{V}  =
+        \qtypd{1578,66}{-18,74}{V} \\[1ex]
+        \cmplx{U}\ped{BG} &= \qty{0}{V} + \numpd{1}{240} \times
+        \qtypd{1308,91}{-24,96}{V} +
+        \numpd{1}{120} \times
+        \qtypd{311,64}{8,34}{V}  =
+        \qtypd{1362,86}{-158,16}{V}    \\[1ex]
+        \cmplx{U}\ped{CG} &= \qty{0}{V} + \numpd{1}{120} \times
+        \qtypd{1308,91}{-24,96}{V} +
+        \numpd{1}{240} \times \qtypd{311,64}{8,34}{V}  =
+        \qtypd{1039,96}{102,78}{V}
+    \end{align*}
+
+    Finalment, trobarem les mateixes tres tensions $\cmplx{U}\ped{AG}$, $\cmplx{U}\ped{BG}$ i $\cmplx{U}\ped{CG}$ a partir de les tensions $\cmplx{U}\ped{AB}$, $\cmplx{U}\ped{BC}$ i $\cmplx{U}\ped{CA}$, utilitzant les equacions \eqref{eq:uag}, \eqref{eq:ubg} i \eqref{eq:ucg}:
+    \begin{align*}
+        \cmplx{U}\ped{AG} &= \frac{\qtypd{2760}{0}{V}-\qtypd{2300}{138,59}{V}}{3}
+        = \qtypd{1578,66}{-18,74}{V} \\[1.5ex]
+        \cmplx{U}\ped{BG} &= \frac{\qtypd{1840}{-124,23}{V}-\qtypd{2760}{0}{V}}{3}  =
+        \qtypd{1362,86}{-158,16}{V}  \\[1.5ex]
+        \cmplx{U}\ped{CG} &= \frac{\qtypd{2300}{138,59}{V}-\qtypd{1840}{-124,23}{V}}{3}  = \qtypd{1039,96}{102,78}{V}
+    \end{align*}
+\end{exemple}
+
+
+\begin{exemple}[\ImpedDesequil{} \hyperlink{exemple:ImpedDesequil}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:ImpedDesequil}
+	\addcontentsxms{\ImpedDesequil}
+    Partim del mateix sistema de tensions trifàsic de l'exemple \vref{ex:ImpedEquil}, és a dir: $|\cmplx{U}\ped{AB}| =  \qty{2760}{V}$, $|\cmplx{U}\ped{BC}| = \qty{1840}{V}$ i
+    $|\cmplx{U}\ped{CA}| = \qty{2300}{V}$, però considerem ara que les tres resistències connectades en estrella tenen valors diferents:  $R\ped{A}=\qty{5}{\ohm}$, $R\ped{B}=\qty{10}{\ohm}$,  i $R\ped{C}=\qty{15}{\ohm}$.
+
+    \begin{center}
+        \input{Imatges/Cap-CompSim-Tensions-Exemple2.pdf_tex}
+    \end{center}
+
+    Es vol calcular en aquest cas  les components directa, inversa i homopolar de les tensions a què estan sotmeses les resistències.
+
+    Els tres fasors $\cmplx{U}\ped{AB} $, $\cmplx{U}\ped{BC} $ i $\cmplx{U}\ped{CA}$ són els que s'han trobat en l'exemple \ref{ex:ImpedEquil}:
+    \begin{align*}
+        \cmplx{U}\ped{AB} &= \qtypd{2760}{0}{V} \\
+        \cmplx{U}\ped{BC} &= \qtypd{1840}{-124,23}{V} \\
+        \cmplx{U}\ped{CA} &= \qtypd{2300}{138,59}{V}
+    \end{align*}
+
+    En aquest cas, el punt neutre «N» que es formarà no coincidirà amb el baricentre del triangle de tensions A-B-C, ja que les tres resistències tenen valors diferents ---càrrega  desequilibrada. Les tensions $\cmplx{U}\ped{AN} $, $\cmplx{U}\ped{BN} $ i $\cmplx{U}\ped{CN}$ poden calcular-se fàcilment utilitzant el teorema de Millman (vegeu la secció \vref{sec:millman}).
+
+    Si tenim en compte que el punt «N» és el punt neutre de les tres resistències connectades en estrella, podem calcular $\cmplx{U}\ped{NA} $, $\cmplx{U}\ped{NB} $ i $\cmplx{U}\ped{NC}$ a partir del teorema de Millman, prenent com a punt de referència respectivament, els punts «A»,  «B»  i «C»:
+    \begin{align*}
+          \cmplx{U}\ped{NA} &= \frac{\dfrac{\cmplx{U}\ped{AA}}{R\ped{A}} + \dfrac{\cmplx{U}\ped{BA}}{R\ped{B}} + \dfrac{\cmplx{U}\ped{CA}}{R\ped{C}}}{\dfrac{1}{R\ped{A}} + \dfrac{1}{R\ped{B}} + \dfrac{1}{R\ped{C}}} = \frac{0 + \dfrac{-(\qtypd{2760}{0}{V})}{\qty{10}{\ohm}} + \dfrac{\qtypd{2300}{138,59}{V}}{\qty{15}{\ohm}}}{\dfrac{1}{\qty{5}{\ohm}} + \dfrac{1}{\qty{10}{\ohm}} + \dfrac{1}{\qty{15}{\ohm}}} = \qtypd{1101,65}{165,46}{V} \\[1.5ex]
+          \cmplx{U}\ped{NB} &= \frac{\dfrac{\cmplx{U}\ped{AB}}{R\ped{A}} + \dfrac{\cmplx{U}\ped{BB}}{R\ped{B}} + \dfrac{\cmplx{U}\ped{CB}}{R\ped{C}}}{\dfrac{1}{R\ped{A}} + \dfrac{1}{R\ped{B}} + \dfrac{1}{R\ped{C}}} = \frac{\dfrac{\qtypd{2760}{0}{V}}{\qty{5}{\ohm}} + 0 + \dfrac{-(\qtypd{1840}{-124,23}{V})}{\qty{15}{\ohm}}}{\dfrac{1}{\qty{5}{\ohm}} + \dfrac{1}{\qty{10}{\ohm}} + \dfrac{1}{\qty{15}{\ohm}}} = \qtypd{1716,07}{9,28}{V} \\[1.5ex]
+          \cmplx{U}\ped{NC} &= \frac{\dfrac{\cmplx{U}\ped{AC}}{R\ped{A}} + \dfrac{\cmplx{U}\ped{BC}}{R\ped{B}} + \dfrac{\cmplx{U}\ped{CC}}{R\ped{C}}}{\dfrac{1}{R\ped{A}} + \dfrac{1}{R\ped{B}} + \dfrac{1}{R\ped{C}}} = \frac{\dfrac{-(\qtypd{2300}{138,59}{V})}{\qty{5}{\ohm}} + \dfrac{\qtypd{1840}{-124,23}{V}}{\qty{10}{\ohm}} + 0}{\dfrac{1}{\qty{5}{\ohm}} + \dfrac{1}{\qty{10}{\ohm}} + \dfrac{1}{\qty{15}{\ohm}}} = \qtypd{1408,22}{-62.11}{V}
+    \end{align*}
+
+    Així doncs, tenim:
+    \begin{align*}
+        \cmplx{U}\ped{AN} &= -\cmplx{U}\ped{NA} =  \qtypd{1101,65}{-14,54}{V} \\
+        \cmplx{U}\ped{BN} &= -\cmplx{U}\ped{NB} =  \qtypd{1716,07}{-170,72}{V} \\
+        \cmplx{U}\ped{CN} &= -\cmplx{U}\ped{NC} =  \qtypd{1408,22}{117,89}{V}
+    \end{align*}
+
+    Les components directa, inversa i homopolar $\cmplx{U}\ped{AN,1}$, $\cmplx{U}\ped{AN,2}$ i
+    $\cmplx{U}\ped{AN,0}$, les obtenim utilitzant les equacions
+    \eqref{eq:c_sim_c2}, \eqref{eq:c_sim_a2} i \eqref{eq:c_sim_b2}:
+    \begin{align*}
+        \cmplx{U}\ped{AN,1} &= \frac{1}{3} \big(
+        \qtypd{1101,65}{-14,54}{V} + \numpd{1}{120} \times \qtypd{1716,07}{-170,72}{V} +
+        \numpd{1}{240} \times \qtypd{1408,22}{117,89}{V} \big) \\[1ex]
+        &= \qtypd{1308,91}{-24,96}{V} \\[1.5ex]
+        \cmplx{U}\ped{AN,2} &= \frac{1}{3} \big(
+        \qtypd{1101,65}{-14,54}{V} + \numpd{1}{240} \times \qtypd{1716,07}{-170,72}{V} +
+        \numpd{1}{120} \times \qtypd{1408,22}{117,89}{V} \big) \\[1ex]
+        &= \qtypd{311,64}{8,34}{V} \\[1.5ex]
+        \cmplx{U}\ped{AN,0} &= \frac{1}{3} \big(
+        \qtypd{1101,65}{-14,54}{V} + \qtypd{1716,07}{-170,72}{V} + \qtypd{1408,22}{117,89}{V} \big)  \\[1ex]
+        &= \qtypd{486,68}{151,73}{V}
+    \end{align*}
+
+    Com es pot veure, els valors de $\cmplx{U}\ped{AN,1}$ i $\cmplx{U}\ped{AN,2}$ són iguals respectivament als valors de $\cmplx{U}\ped{AG,1}$ i $\cmplx{U}\ped{AG,2}$, calculats en l'exemple \ref{ex:ImpedEquil}.
+    Això és així, ja que tal com s'ha dit en la secció \vref{sec:comp-sim-neutre}, tots els sistemes de tensió fase-neutre que tenen els mateixos extrems A, B, C, tenen les mateixes components directa i inversa.
+
+    Pel que fa a la tensió homopolar $\cmplx{U}\ped{AN,0}$, ha de complir-se l'equació \eqref{eq:tens-hom}, la qual ens diu que $\cmplx{U}\ped{AN,0}$ és igual a $\cmplx{U}\ped{GN}$. Utilitzant el valor de  $\cmplx{U}\ped{AG}$ calculat en l'exemple \ref{ex:ImpedEquil}, tenim:
+    \[
+        \cmplx{U}\ped{GN} = \cmplx{U}\ped{GA} + \cmplx{U}\ped{AN} = -(\qtypd{1578,66}{-18,74}{V}) +
+        \qtypd{1101,65}{-14,54}{V} = \qtypd{486,68}{151,73}{V}
+    \]
+\end{exemple}
+
+\section{Programes de càlcul de components simètriques}\label{sec:calcul-comp-sim}
+
+En la secció \vref{sec:HP_ELC} es donen  una sèrie de programes escrits per a la calculadora \textsf{HP Prime},
+\index{HP Prime@\textsf{HP Prime}!exemples} alguns dels quals faciliten la resolució numèrica de les equacions que han aparegut en aquest capítol. En concret tenim:
+
+\begin{itemize}
+   \item \texttt{Triangle\_to\_Phasors} (llistat \vref{lst:TriFas}). A partir d'un triangle de tensions obté els fasors que el formen.
+       \index{HP Prime@\textsf{HP Prime}!funcions!TriangletoPhasors@\texttt{Triangle\_to\_Phasors}}
+   \item \texttt{LN\_to\_LL} (llistat \vref{lst:FNaFF}). Obté les tres tensions fase-fase corresponents a tres tensions fase-neutre.
+       \index{HP Prime@\textsf{HP Prime}!funcions!LNtoLL@\texttt{LN\_to\_LL}}
+   \item \texttt{LL\_to\_LN} (llistat \vref{lst:FFaFN}). Obté les tres tensions fase-neutre corresponents a tres tensions fase-fase, per a tres impedàncies qualssevol connectades en estrella.
+       \index{HP Prime@\textsf{HP Prime}!funcions!LLtoLN@\texttt{LL\_to\_LN}}
+   \item \texttt{LL\_to\_LG} (llistat \vref{lst:FFaFG}). Obté les tres tensions fase-G corresponents a tres tensions fase-fase, on G és el baricentre del triangle que formen les tres tensions fase-fase.
+       \index{HP Prime@\textsf{HP Prime}!funcions!LLtoLG@\texttt{LL\_to\_LG}}
+   \item \texttt{ABC\_to\_A012} (llistat \vref{lst:ABCaA012}). Obté els fasors de seqüència homopolar, directa i inversa, corresponents a tres fasors.
+       \index{HP Prime@\textsf{HP Prime}!funcions!ABCtoA012@\texttt{ABC\_to\_A012}}
+   \item \texttt{A012\_to\_ABC} (llistat \vref{lst:A012aABC}). Obté els  fasors corresponents a tres fasors de seqüència homopolar, directa i inversa.
+       \index{HP Prime@\textsf{HP Prime}!funcions!A012toABC@\texttt{A012\_to\_ABC}}
+   \item \texttt{AN12\_to\_AB12} (llistat \vref{lst:AN12aAB12}). Obté els fasors de seqüència directa i inversa de les tensions fase-fase, a partir dels fasors de seqüència directa i inversa de les tensions fase-neutre.
+       \index{HP Prime@\textsf{HP Prime}!funcions!AN12toAB12@\texttt{AN12\_to\_AB12}}
+   \item \texttt{AB12\_to\_AN12} (llistat \vref{lst:AB12aAN12}). Obté els fasors de seqüència directa i inversa de les tensions fase-neutre, a partir dels fasors de seqüència directa i inversa de les tensions fase-fase.
+       \index{HP Prime@\textsf{HP Prime}!funcions!AB12toAN12@\texttt{AB12\_to\_AN12}}
+\end{itemize}
+
