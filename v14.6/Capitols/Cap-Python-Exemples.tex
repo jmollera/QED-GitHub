@@ -612,7 +612,7 @@ Temps d'arrencada (simpson)   = 12.9 s
 
 
 \hypertarget{exemple:CaractMotor}{\subsection{Exemple \ref*{ex:CaractMotor} \CaractMotor}}
-En el llistat \vref{lst:CaractMotor} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:CaractMotor}. La resolució es fa usant funcions del mòdul numèric \texttt{numpy} i del mòdul gràfic \texttt{matplotlib}, i la classe \texttt{Motor3ph} del módul \texttt{qed.eng\_elc}. Es fa servir també la classe \texttt{ComplexD} del mòdul \texttt{qed.utils}.
+En el llistat \vref{lst:CaractMotor} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:CaractMotor}. La resolució es fa usant funcions del mòdul numèric \texttt{numpy} i del mòdul gràfic \texttt{matplotlib}, i la classe \texttt{Motor3ph} del módul \texttt{qed.eng\_elc}. 
 \lstset{
 	language=Python,
 	numbers=left,
@@ -732,7 +732,7 @@ I_1,n,C = 15.16∠73.48° A
 
 
 \hypertarget{exemple:MotCarregaReduida}{\subsection{Exemple \ref*{ex:MotCarregaReduida} \MotCarregaReduida}}
-En el llistat \vref{lst:MotCarregaReduida} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MotCarregaReduida}. La resolució es fa emprant funcions del mòdul numèric \texttt{numpy} i del mòdul gràfic \texttt{matplotlib}, la funció \texttt{root} del mòdul matemàtic \texttt{scipy.optimize}, i la classe \texttt{Motor3ph} del mòdul \texttt{qed.eng\_elec}. La funció \texttt{root} calcula el valor de $s$ resolent una equació no lineal; com a valor inicial per resoldre-la  s'utilitza el valor de $s\ped{n}$.
+En el llistat \vref{lst:MotCarregaReduida} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MotCarregaReduida}. La resolució es fa emprant funcions del mòdul numèric \texttt{numpy} i del mòdul gràfic \texttt{matplotlib}, la funció \texttt{root} del mòdul matemàtic \texttt{scipy.optimize}, i la classe \texttt{Motor3ph} del mòdul \texttt{qed.eng\_elec}. La funció \texttt{root} calcula el valor de $s$ per a diverses potències, resolent una equació no lineal; com a valor inicial per resoldre-la  s'utilitza un valor proporcional a $s\ped{n}$.
 \lstset{
 	language=Python,
 	numbers=left,
@@ -782,7 +782,7 @@ $ \includegraphics{Cap-PythonExemp-MotCarregaReduida-2.pdf} $
 
 
 \hypertarget{exemple:MotTensRedSolAp}{\subsection{Exemple \ref*{ex:MotTensRedSolAp} \MotTensRedSolAp}}
-En el llistat \vref{lst:MotTensRedSolAp} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MotTensRedSolAp}. La resolució es fa emprant funcions del mòdul numèric \texttt{numpy} i del mòdul gràfic \texttt{matplotlib}, i la funció \texttt{root} del mòdul matemàtic \texttt{scipy.optimize}. La funció \texttt{root} calcula el valor de $s$ resolent una equació no lineal; com a valor inicial per resoldre-la  s'utilitza el valor de $s\ped{n}$.
+En el llistat \vref{lst:MotTensRedSolAp} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MotTensRedSolAp}. La resolució es fa emprant funcions del mòdul numèric \texttt{numpy} i del mòdul gràfic \texttt{matplotlib}, i la funció \texttt{root} del mòdul matemàtic \texttt{scipy.optimize}. La funció \texttt{root} calcula el valor de $s$ per a diverses tensions, resolent una equació no lineal; com a valor inicial per resoldre-la  s'utilitza el valor de $s\ped{n}$.
 \lstset{
 	language=Python,
 	numbers=left,
@@ -818,7 +818,7 @@ $ \includegraphics{Cap-PythonExemp-MotTensRedSolAp-2.pdf} $
 
 
 \hypertarget{exemple:MotTensRedSolEx}{\subsection{Exemple \ref*{ex:MotTensRedSolEx} \MotTensRedSolEx}}
-En el llistat \vref{lst:MotTensRedSolEx} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MotTensRedSolEx}. La resolució es fa usant funcions del mòdul numèric \texttt{numpy} i del mòdul gràfic \texttt{matplotlib}, i la classe \texttt{Motor3ph} del mòdul \texttt{qed.eng\_elec}. La funció \texttt{root} calcula el valor de $s$ resolent una equació no lineal; com a valor inicial per resoldre-la  s'utilitza el valor de $s\ped{n}$.
+En el llistat \vref{lst:MotTensRedSolEx} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MotTensRedSolEx}. La resolució es fa usant funcions del mòdul numèric \texttt{numpy} i del mòdul gràfic \texttt{matplotlib},  i la classe \texttt{Motor3ph} del mòdul \texttt{qed.eng\_elec}.
 \lstset{
 	language=Python,
 	numbers=left,
@@ -864,7 +864,11 @@ cos 𝜑,80% = 0.8866
 η,80% = 0.8468
 t_arr,80% = 9.1 s
 
+
+
 $ \includegraphics{Cap-PythonExemp-MotTensRedSolEx-1-1.pdf} $
+
+
 
 
 
@@ -875,6 +879,7 @@ $ \includegraphics{Cap-PythonExemp-MotTensRedSolEx-1-2.pdf} $
 
 
 $ \includegraphics{Cap-PythonExemp-MotTensRedSolEx-2-1.pdf} $
+
 
 
 
@@ -890,7 +895,7 @@ $ \includegraphics{Cap-PythonExemp-MotTensRedSolEx-3.pdf} $
 
 
 \hypertarget{exemple:MotTensRedIarr}{\subsection{Exemple \ref*{ex:MotTensRedIarr} \MotTensRedIarr}}
-En el llistat \vref{lst:MotTensRedIarr} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MotTensRedIarr}. La resolució es fa emprant funcions del mòdul numèric \texttt{numpy} i del mòdul gràfic \texttt{matplotlib}, i la classe \texttt{Motor3ph} del mòdul \texttt{qed.eng\_elec}. La funció \texttt{root} calcula el valor de $s$ resolent una equació no lineal; com a valor inicial per resoldre-la  es fa servir el valor de $s\ped{n}$. Es fa servir també la classe \texttt{ComplexD} del mòdul \texttt{qed.utils}.
+En el llistat \vref{lst:MotTensRedIarr} es pot veure el programa utilitzat per resoldre l'exemple \vref{ex:MotTensRedIarr}. La resolució es fa emprant funcions del mòdul numèric \texttt{numpy} i del mòdul gràfic \texttt{matplotlib}, i la classe \texttt{Motor3ph} del mòdul \texttt{qed.eng\_elec}.  Es fa servir també la classe \texttt{ComplexD} del mòdul \texttt{qed.utils}.
 \lstset{
 	language=Python,
 	numbers=left,

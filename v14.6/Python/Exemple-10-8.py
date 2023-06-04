@@ -1,5 +1,4 @@
 import numpy as np
-from scipy import optimize
 import matplotlib.pyplot as plt
 from matplotlib import ticker
 from qed.eng_elec import Motor3ph
@@ -108,8 +107,7 @@ plt.show()
 U1_pu = np.linspace(0.75, 1, 500)  # (75 % a 100 %) U_1,n
 s = np.empty_like(U1_pu)
 for i, pu in enumerate(U1_pu):
-    sol = optimize.root(lambda s: mot.run(s, pu*U_1).T_m - T_load(s), x0=s_n)
-    s[i] = sol.x[0]
+    s[i] = mot.s_match(T_load, pu*U_1)
 mot_sol = mot.run(s, U1_pu * U_1)
 
 fig, ax1 = plt.subplots(figsize=(6, 4))
