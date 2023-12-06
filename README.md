@@ -1,47 +1,48 @@
-# QED-GitHub
-Qüestions Electrotècniques Diverses és un llibre dedicat a temes elèctrics:
+# Qüestions Electrotècniques Diverses
 
-Portada.
-Copyright.
-Citacions.
-Índex General.
-Índex de Taules.
-Índex de Figures.
-Índex d’Exemples.
-Índex de Llistats de Programes.
-Prefaci.
-Historial.
+**Qüestions Electrotècniques Diverses** és un llibre dedicat a temes elèctrics, tant teòrics com pràctics. Està composat per:
 
-I Electrotècnia. 
-	1 Fonaments.
-	2  Càlculs Bàsics.
-	3  Components Simètriques.
-	4  Sèries de Fourier.
-	5  Transformada de Laplace.
+- Portada.
+- Copyright.
+- Citacions.
+- Índex General.
+- Índex de Taules.
+- Índex de Figures.
+- Índex d’Exemples.
+- Índex de Llistats de Programes.
+- Prefaci.
+- Historial.
 
-II Equips i Components Elèctrics.
-	6  Resistències.
-	7  Cables.
-	8  Transformadors de Mesura i Protecció.
-	9  Transformadors de Potència.
-	10 Motors d’Inducció Trifàsics.
+- Electrotècnia. 
+	- 1 - Fonaments.
+	- 2 - Càlculs Bàsics.
+	- 3 - Components Simètriques.
+	- 4 - Sèries de Fourier.
+	- 5 - Transformada de Laplace.
 
-III Sistemes Elèctrics de Potència.
-	11 Resolució de Xarxes Elèctriques.
-	12 Flux de Càrregues.
-	13 Normatives Diverses.
+- II Equips i Components Elèctrics.
+	- 6 - Resistències.
+	- 7 - Cables.
+	- 8 - Transformadors de Mesura i Protecció.
+	- 9 - Transformadors de Potència.
+	- 10 - Motors d’Inducció Trifàsics.
 
-IV Python.
-	14 El Llenguatge de Programació Python.
-	15 Programes amb Aplicació a l’Electrotècnia.
-	16 Exemples Resolts amb Python.
+- III Sistemes Elèctrics de Potència.
+	- 11 - Resolució de Xarxes Elèctriques.
+	- 12 - Flux de Càrregues.
+	- 13 - Normatives Diverses.
 
-V Apèndixs.
-	A  Alfabet Grec.
-	B  Sistema Internacional d’Unitats (SI).
-	C  Constants Físiques.
-	D  Relacions Trigonomètriques.
-	E  Càlcul Numèric.
-	F  Programes per a la calculadora HP Prime.
+- IV Python.
+	- 14 - El Llenguatge de Programació Python.
+	- 15 - Programes amb Aplicació a l’Electrotècnia.
+	- 16 - Exemples Resolts amb Python.
 
-VI Bibliografia i Índex Alfabètic
+- V Apèndixs.
+	-  A - Alfabet Grec.
+	-  B - Sistema Internacional d’Unitats (SI).
+	-  C - Constants Físiques.
+	-  D - Relacions Trigonomètriques.
+	-  E - Càlcul Numèric.
+	-  F - Programes per a la calculadora HP Prime.
+
+- VI Bibliografia i Índex Alfabètic
