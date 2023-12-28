@@ -2,7 +2,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from jmb.utils import ComplexD
+from qed.utils import ComplexD
 
 # Impedàncies del motor en Ω/fase referits a l'estator
 R_1 = 0.5
