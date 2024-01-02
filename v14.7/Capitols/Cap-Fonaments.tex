@@ -1,0 +1,1788 @@
+\chapter{Fonaments}\label{ch:fonaments}
+
+\section{Introducció}
+Es tracten en aquest capítol qüestions bàsiques
+d'electrotècnia, com ara teoremes, definicions i relacions, components elementals, i circuits bàsics.
+
+\section{Components elementals d'un circuit elèctric}\label{sec:comp_elem}
+
+Es presenten a continuació les lleis temporals que lliguen tensions,
+corrents i potències, per a diversos components elementals d'un
+circuit elèctric. Es donen també les relacions entre tensions i
+corrents en el domini freqüencial ---corrent altern sinusoidal de freqüència $f$ i velocitat angular $\omega$, amb
+$\omega=2\piup f$--- i en el domini operacional ---transformada de
+Laplace\footnote{Vegeu el capítol \ref{sec:ch-laplace} per a un tractament extens de la transformada de Laplace.}).\index{transformada de Laplace}
+
+Cal tenir en compte que les relacions que es donen només són
+vàlides  quan es tenen en consideració els sentits assignats als
+corrents i a les tensions en les figures corresponents.
+
+\subsection{Resistència} \index{resistència}
+
+\index{resistència!llei temporal}Per a la resistència $R$ de la figura
+\vref{pic:resist}, la llei temporal entre la tensió $u(t)$ i el
+corrent $i(t)$, i la llei temporal de la potència $p(t)$ són:
+
+
+\hfill
+\begin{minipage}[b]{5cm}
+	\input{Imatges/Cap-Fonaments-Resistencia.pdf_tex}
+	\captionof{figure}{Resistència}
+	\label{pic:resist}
+\end{minipage}
+\hfill
+\begin{minipage}[b][3.25cm][t]{8cm}
+	\begin{align}
+		u(t) &= R i(t) \\  p(t) &= u(t) i(t) = R i^2(t) = \frac{u^2(t)}{R}
+	\end{align}
+\end{minipage}
+
+\index{resistència!domini freq\"{u}encial}En el domini freqüencial, la relació entre
+la tensió $\cmplx{U}$ i el corrent $\cmplx{I}$, i la relació entre els arguments de
+la tensió $\varphi_{\cmplx{U}}$ i del corrent $\varphi_{\cmplx{I}}$ són:
+\begin{align}
+	\cmplx{U} &= R \cmplx{I} \\ \varphi_{\cmplx{U}} &= \varphi_{\cmplx{I}}
+\end{align}
+
+\index{resistència!domini operacional} En el domini operacional, la relació entre la tensió $U(s)$ i el corrent $I(s)$ és:
+\begin{equation}
+	U(s) = R I(s)
+\end{equation}
+
+\subsection{Capacitat} \index{capacitat}
+
+\index{capacitat!llei temporal}Per a la capacitat $C$ de la figura
+\vref{pic:capacit}, les lleis temporals entre la tensió $u(t)$ i el
+corrent $i(t)$, i la llei temporal de la potència $p(t)$ són, a partir d'un instant inicial $t_0$:
+
+\hfill
+\begin{minipage}[b]{5cm}
+	\input{Imatges/Cap-Fonaments-Capacitat.pdf_tex}
+	\captionof{figure}{Capacitat}
+	\label{pic:capacit}
+\end{minipage}
+\hfill
+\begin{minipage}[b][3.8cm][t]{8cm}
+	\begin{align}
+		u(t) &= u(t_0) + \frac{1}{C} \int_{t_0}^t i(t) \diff t \\
+		i(t) &= C \deriv{u(t)}{t} \\
+		p(t) &= u(t) i(t) = C u(t) \deriv{u(t)}{t}
+	\end{align}
+\end{minipage}
+
+\index{capacitat!domini freq\"{u}encial}En el domini freqüencial, la relació entre la tensió $\cmplx{U}$ i el corrent $\cmplx{I}$, i la relació entre els arguments de la tensió $\varphi_{\cmplx{U}}$ i del corrent $\varphi_{\cmplx{I}}$ són:
+\begin{align}
+	\cmplx{U} &= -j \frac{1}{\omega C} \cmplx{I} \\
+	\varphi_{\cmplx{U}} &= \varphi_{\cmplx{I}} - \frac{\piup}{2}
+\end{align}
+
+\index{capacitat!domini operacional}En el domini operacional, la relació entre la tensió $U(s)$ i el corrent $I(s)$ és, a partir d'un instant inicial $t_0$:
+\begin{equation}
+	U(s) = \frac{1}{s C} I(s) + \frac{u(t_0)}{s}
+\end{equation}
+
+
+\subsection{Inductància} \index{inductància}
+
+\index{inductància!llei temporal}Per a la inductància $L$ de la figura \vref{pic:induct},
+les lleis temporals entre la tensió $u(t)$ i el corrent $i(t)$, i la llei temporal
+de la potència $p(t)$ són,  a partir d'un instant inicial $t_0$:
+
+\hfill
+\begin{minipage}[b]{5cm}
+	\input{Imatges/Cap-Fonaments-Inductancia.pdf_tex}
+	\captionof{figure}{Inductància}
+	\label{pic:induct}
+\end{minipage}
+\hfill
+\begin{minipage}[b][3.8cm][t]{8cm}
+	\begin{align}
+		i(t) &= i(t_0) + \frac{1}{L} \int_{t_0}^t u(t) \diff t \\
+		u(t) &= L \deriv{i(t)}{t} \\
+		p(t) &= u(t) i(t) = L i(t) \deriv{i(t)}{t}
+	\end{align}
+\end{minipage}
+
+\index{inductància!domini freq\"{u}encial}En el domini freqüencial, la relació entre la tensió $\cmplx{U}$ i el corrent $\cmplx{I}$, i la relació entre els arguments de la tensió $\varphi_{\cmplx{U}}$ i del corrent $\varphi_{\cmplx{I}}$ són:
+\begin{align}
+	\cmplx{U} &= j \omega L \cmplx{I} \\
+	\varphi_{\cmplx{U}} &= \varphi_{\cmplx{I}} + \frac{\piup}{2}
+\end{align}
+
+\index{inductància!domini operacional} En el domini operacional, la relació entre la tensió $U(s)$ i el corrent $I(s)$ és, a partir d'un instant inicial $t_0$:
+\begin{equation}
+	U(s) = s L I(s) - L i(t_0)
+\end{equation}
+
+
+\subsection{Acoblament magnètic}\label{sec:acobl-mag} \index{acoblament magnètic}
+
+\index{acoblament magnètic!llei temporal}Per a l'acoblament magnètic $M$ entre les dues
+inductàncies $L_1$ i $L_2$ de la figura \vref{pic:acobl}, les lleis temporals entre les
+tensions $u_1(t)$ i $u_2(t)$ i els corrents $i_1(t)$ i $i_2(t)$,  i la llei temporal
+de la potència $p(t)$ són:
+
+\hfill
+\begin{minipage}[b]{6.5cm}
+	\input{Imatges/Cap-Fonaments-Acobl-Magnetic.pdf_tex}
+	\captionof{figure}{Acoblament magnètic}
+	\label{pic:acobl}
+\end{minipage}
+\hfill
+\begin{minipage}[b][3.8cm][t]{10cm}
+	\begin{align}
+		u_1(t) &= L_1 \deriv{i_1(t)}{t} + M \deriv{i_2(t)}{t} \\
+		u_2(t) &= L_2 \deriv{i_2(t)}{t} + M \deriv{i_1(t)}{t} \\
+		p(t) &= \frac{\diff}{\diff t} \left[ \frac{1}{2} L_1 i_1^2(t) + \frac{1}{2} L_2 i_2^2(t) +
+		M i_1(t) i_2(t) \right]
+	\end{align}
+\end{minipage}
+
+
+\index{acoblament magnètic!domini freq\"{u}encial}En el domini freqüencial, les relacions entre les tensions $\cmplx{U}_1$ i $\cmplx{U}_2$ i els corrents $\cmplx{I}_1$ i $\cmplx{I}_2$ són:
+\begin{align}
+	\cmplx{U}_1 &= j \omega L_1 \cmplx{I}_1 + j \omega M \cmplx{I}_2 \\
+	\cmplx{U}_2 &= j \omega L_2 \cmplx{I}_2 + j \omega M \cmplx{I}_1
+\end{align}
+
+\index{acoblament magnètic!domini operacional}En el domini operacional, les relacions entre les tensions $U_1(s)$  i $U_2(s)$ i els corrents $I_1(s)$ i $I_2(s)$ són, a partir d'un instant inicial $t_0$:
+\begin{align}
+	U_1(s) &= s L_1 I_1(s) - L_1 i_1(t_0) + s M I_2(s) - M i_2(t_0) \\
+	U_2(s) &= s L_2 I_2(s) - L_2 i_2(t_0) + s M I_1(s) - M i_1(t_0)
+\end{align}
+
+En totes les equacions, el valor de $M$ és positiu quan els dos corrents $i_1(t)$ i $i_2(t)$ es dirigeixen cap als seus punts homòlegs, o quan tots dos  se n'allunyen; és negatiu quan un corrent es dirigeix cap al seu punt homòleg i l'altre se n'allunya.
+
+A partir de $L_1$, $L_2$ i $M$, es defineix el coeficient d'acoblament magnètic $k$, segons:
+\begin{equation}
+	k = \frac{|M|}{\sqrt{L_1 L_2}}
+\end{equation}
+\index{k@$k$}\index{coeficient d'acoblament magnètic}
+
+\subsection{Transformador ideal} \index{transformador ideal}
+
+\index{transformador ideal!llei temporal}Per al transformador
+ideal de relació $m\!:\!1$ de la figura \vref{pic:transf}, la llei temporal
+entre les tensions de primari $u_1(t)$ i de secundari $u_2(t)$, la
+llei temporal entre els corrents de primari $i_1(t)$ i de secundari
+$i_2(t)$, i la llei temporal de la potència $p(t)$ són:
+
+\hfill
+\begin{minipage}[b]{6.5cm}
+	\input{Imatges/Cap-Fonaments-Trafo-Ideal.pdf_tex}
+	\captionof{figure}{Transformador ideal}
+	\label{pic:transf}
+\end{minipage}
+\hfill
+\begin{minipage}[b][3.8cm][t]{10cm}
+	\begin{align}
+		\frac{u_1(t)}{u_2(t)} &= m  \\
+		\frac{i_2(t)}{i_1(t)} &= m \\
+		p(t) &= u_1(t) i_1(t) = u_2(t) i_2(t)
+	\end{align}
+\end{minipage}
+
+
+\index{transformador ideal!domini freq\"{u}encial} En el domini
+freqüencial, la relació entre les tensions de primari $\cmplx{U}_1$
+i de secundari $\cmplx{U}_2$, la relació entre els corrents de
+primari $\cmplx{I}_1$ i de secundari $\cmplx{I}_2$, la relació entre
+els arguments de les tensions de primari $\varphi_{\cmplx{U}_1}$ i
+de secundari $\varphi_{\cmplx{U}_2}$, i  la relació entre els
+arguments dels corrents de primari $\varphi_{\cmplx{I}_1}$ i de
+secundari $\varphi_{\cmplx{I}_2}$ són:
+\begin{align}
+	\frac{\cmplx{U}_1}{\cmplx{U}_2} &= m  \\
+	\frac{\cmplx{I}_2}{\cmplx{I}_1} &= m \\
+	\varphi_{\cmplx{U}_1} &= \varphi_{\cmplx{U}_2} \\
+	\varphi_{\cmplx{I}_1} &= \varphi_{\cmplx{I}_2}
+\end{align}
+
+\index{transformador ideal!domini operacional} En el domini operacional, la relació entre les tensions de primari $U_1(s)$ i de secundari $U_2(s)$,  i la relació entre els corrents de primari $I_1(s)$ i de secundari $I_2(s)$ són:
+\begin{align}
+	\frac{U_1(s)}{U_2(s)} &= m  \\
+	\frac{I_2(s)}{I_1(s)} &= m
+\end{align}
+
+\subsection{Bateria} \index{bateria}
+
+\index{bateria!llei temporal}Per a la bateria $U\ped{bat}$ de la figura
+\vref{pic:bat}, la llei temporal de la tensió $u(t)$, i la llei temporal de la
+potència $p(t)$ que subministra són:
+
+\hfill
+\begin{minipage}[b]{5cm}
+	\input{Imatges/Cap-Fonaments-Bateria.pdf_tex}
+	\captionof{figure}{Bateria}
+	\label{pic:bat}
+\end{minipage}
+\hfill
+\begin{minipage}[b][3cm][t]{8cm}
+	\begin{align}
+		u(t) &= U\ped{bat} \\  p(t) &= U\ped{bat} i(t)
+	\end{align}
+\end{minipage}
+
+
+El corrent $i(t)$ que circularà per la bateria vindrà determinat
+pels elements que s'hi connectin.
+
+\index{bateria!domini operacional} En el domini operacional, la
+tensió $U(s)$ és:
+\begin{equation}
+	U(s) = \frac{U\ped{bat}}{s}
+\end{equation}
+
+
+
+\section{Teoremes d'electrotècnia}\label{sec:teoremes}
+
+\subsection{\texorpdfstring{Teorema de Thévenin-Norton}{Teorema de
+            Thévenin-Norton}}\label{sec:T_N}
+
+\index{teorema!de Thévenin}El teorema de Thévenin ens permet
+substituir una xarxa complexa formada per elements lineals, per un
+circuit equivalent format per una font de tensió $\cmplx{E}\ped{Th}$
+en sèrie amb una impedància $\cmplx{Z}\ped{Th}$.
+
+
+Atesa la figura \vref{pic:Thevenin}, si coneixem la tensió en
+buit $\cmplx{U}\ped{o}$ entre dos nusos $\alphaup$ i $\betaup$ d'una
+xarxa, i la impedància $\cmplx{Z}_{\alphaup\betaup}$ d'aquesta xarxa
+vista des d'aquests dos nusos, podem obtenir-ne els valors del circuit
+Thévenin equivalent entre aquests dos nusos a partir de les
+relacions següents:\index{ETh@$\cmplx{E}\ped{Th}$}\index{ZTh@$\cmplx{Z}\ped{Th}$}
+\begin{equation}
+   \cmplx{E}\ped{Th} = \cmplx{U}\ped{o} \qquad\qquad  \cmplx{Z}\ped{Th} = \cmplx{Z}_{\alphaup\betaup}
+\end{equation}
+
+D'aquesta manera, la connexió d'una càrrega qualsevol $\cmplx{Z}$ als nusos $\alphaup$ i $\betaup$ d'aquesta xarxa, és
+equivalent pel que fa a aquesta càrrega, a connectar-la al circuit
+equivalent Thévenin.\footnote{\label{fn:Th-No}La càrrega no està restringida a una impedància, sinó que pot ser una xarxa qualsevol d'elements lineals.}
+\begin{center}
+    \input{Imatges/Cap-Fonaments-Thevenin.pdf_tex}
+    \captionof{figure}{Teorema de Thévenin}
+    \label{pic:Thevenin}
+\end{center}
+
+\index{teorema!de Norton}El teorema de Norton ens permet substituir
+una xarxa complexa formada per elements lineals, per un circuit
+equivalent format per una font de corrent $\cmplx{J}\ped{No}$ en
+paraŀlel amb una admitància $\cmplx{Y}\ped{No}$.
+
+Atesa la figura \vref{pic:Norton}, si coneixem el corrent de
+curtcircuit $\cmplx{I}\ped{cc}$ entre dos nusos $\alphaup$ i $\betaup$
+d'una xarxa, i l'admitància $\cmplx{Y}_{\alphaup\betaup}$ d'aquesta
+xarxa vista des d'aquests dos nusos, podem obtenir-ne els valors del
+circuit Norton equivalent entre aquests dos nusos a partir de les
+relacions següents:\index{JNo@$J\ped{No}$}\index{YNo@$Y\ped{No}$}
+\begin{equation}
+   \cmplx{J}\ped{No} = \cmplx{I}\ped{cc} \qquad\qquad \cmplx{Y}\ped{No} = \cmplx{Y}_{\alphaup\betaup}
+\end{equation}
+
+D'aquesta manera, la connexió d'una càrrega qualsevol $\cmplx{Z}$ als nusos $\alphaup$ i $\betaup$ d'aquesta xarxa, és
+equivalent pel que fa a aquesta càrrega, a connectar-la al circuit
+equivalent Norton.\footnoteref{fn:Th-No}
+\begin{center}
+    \input{Imatges/Cap-Fonaments-Norton.pdf_tex}
+    \captionof{figure}{Teorema de Norton}
+    \label{pic:Norton}
+\end{center}
+
+Els circuits Thévenin i Norton d'una xarxa són equivalents entre si.
+Els paràmetres que defineixen aquests dos circuits compleixen les relacions
+següents:
+\begin{equation}\label{eq:Thevenin-Norton}
+   \cmplx{E}\ped{Th} = \frac{\cmplx{J}\ped{No}}{\cmplx{Y}\ped{No}} \qquad\qquad
+   \cmplx{J}\ped{No} = \frac{\cmplx{E}\ped{Th}}{\cmplx{Z}\ped{Th}} \qquad\qquad
+    \cmplx{Z}\ped{Th} = \frac{1}{\cmplx{Y}\ped{No}}
+\end{equation}
+
+Els valors $\cmplx{Z}\ped{Th}$ i  $\cmplx{Y}\ped{No}$ es poden
+obtenir substituint en la xarxa  les fonts de tensió  per curtcircuits, i les fonts de corrent per circuits oberts, i calculant
+aleshores la impedància o admitància equivalent.\footnote{El càlcul sistemàtic de $\cmplx{Z}\ped{Th}$ i  $\cmplx{Y}\ped{No}$ en una xarxa qualsevol, s'explica en la secció \ref{sec:xarxes_Zth}}
+
+\subsection{Teorema de Millman}\label{sec:millman}
+
+\index{teorema!de Millman}Atesa la figura \vref{pic:Millman}, el teorema
+de Millman ens permet
+obtenir la tensió de l'extrem comú $\nuup$ de diverses impedàncies respecte d'un punt
+qualsevol $\alphaup$, a partir de les tensions dels altres extrems de les impedàncies respecte  del mateix punt $\alphaup$.
+
+\hfill
+\begin{minipage}[b]{7cm}
+    \input{Imatges/Cap-Fonaments-Millman.pdf_tex}
+    \captionsetup{margin={0mm,8mm},oneside}
+    \captionof{figure}{Teorema de Millman}
+    \label{pic:Millman}
+\end{minipage}
+\hfill
+\begin{minipage}[b][4.5cm][t]{6cm}
+    \begin{equation}
+        \cmplx{U}_{\nuup\alphaup} = \frac{\displaystyle\sum_{k=1}^n \dfrac{\cmplx{U}_{k\alphaup}}{\cmplx{Z}_k}} {\displaystyle\sum_{k=1}^n \dfrac{1}{\cmplx{Z}_k}}
+        \label{eq:millman}
+    \end{equation}
+\end{minipage}
+
+\vspace{5mm}
+
+\begin{exemple}[\MillmanBateries{} \hyperlink{exemple:MillmanBateries}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:MillmanBateries}
+	\addcontentsxms{\MillmanBateries}
+    A partir de la figura següent, es tracta de determinar els circuits
+    Thévenin i Norton equivalents del circuit format per les tres
+    bateries i les seves resistències, i calcular la tensió i el
+    corrent que existirien en una resistència de càrrega
+    $R=\qty{50}{\ohm}$ connectada entre els punts $\alphaup$
+    i $\nuup$.
+
+    \begin{center}
+        \input{Imatges/Cap-Fonaments-Millman-Exemple1.pdf_tex}
+    \end{center}
+
+    La impedància Thévenin equivalent es calcula, tal com s'ha dit en la secció \ref{sec:T_N},
+    substituint en el circuit totes les fonts de tensió per curtcircuits; així doncs, ens
+    queden tres resistències en paraŀlel entre $\alphaup$ i $\nuup$:
+    \[
+    Z\ped{Th} = \frac{1}{\dfrac{1}{\qty{34}{\milli\ohm}} +
+    \dfrac{1}{\qty{41}{\milli\ohm}} + \dfrac{1}{\qty{29}{\milli\ohm}}} =
+    \qty{11,3270}{\milli\ohm}
+    \]
+
+    Per calcular la font de tensió Thévenin equivalent, utilitzarem el
+    teorema de Millman. Si es compara aquest circuit amb el de la figura
+    \vref{pic:Millman}, veiem que els punts $\alphaup$ i $\nuup$ dels dos
+    circuits són equivalents, és a dir, $\nuup$ és el punt comú de les
+    impedàncies, i $\alphaup$ és el punt de referència respecte del qual les tensions  dels altres extrems de les impedàncies
+    són conegudes ---les tensions de les bateries. Així doncs, tenim:
+    \[
+    U_{\nuup\alphaup} = \frac{\dfrac{\qty{-125,1}{V}}{\qty{34}{m\ohm}} +
+    \dfrac{\qty{-124,8}{V}}{\qty{41}{m\ohm}} +
+    \dfrac{\qty{-125,2}{V}}{\qty{29}{m\ohm}}}{\dfrac{1}{\qty{34}{m\ohm}}
+    + \dfrac{1}{\qty{41}{m\ohm}} + \dfrac{1}{\qty{29}{m\ohm}}} =
+    \qty{-125,0562}{V}
+    \]
+
+    La font de tensió  Thévenin equivalent entre $\alphaup$ i $\nuup$ és doncs:
+    \[
+    E\ped{Th} = U_{\alphaup\nuup} = \qty{125,0562}{V}
+    \]
+
+    Calculem a continuació l'admitància i la font de corrent  Norton equivalents, utilitzant
+    les equacions \eqref{eq:Thevenin-Norton}:
+    \begin{align*}
+        Y\ped{No} &= \frac{1}{Z\ped{Th}} = \frac{1}{\qty{11,3270}{m\ohm}} = \qty{88,28}{S}
+        \\[2ex]
+        J\ped{No} &= \frac{E\ped{Th}}{Z\ped{Th}} =
+        \frac{\qty{125,0562}{V}}{\qty{11,3270}{m\ohm}}= \qty{11,04}{kA}
+    \end{align*}
+
+    Tal com s'ha dit en la secció \ref{sec:T_N}, J\ped{No} és igual al
+    corrent de curtcircuit entre els punts $\alphaup$ i $\nuup$.
+
+    Finalment, ja podem calcular el corrent $I$ i la tensió $U$ en la
+    resistència de càrrega, utilitzant el circuit Thévenin equivalent calculat anteriorment:
+    \begin{align*}
+        I &= \frac{E\ped{Th}}{Z\ped{Th} + R} = \frac{\qty{125,0562}{V}}
+        {\qty{11,3270}{m\ohm} + \qty{50}{\ohm}} = \qty{2,5006}{A} \\[2ex]
+        U &=  R \,I = \qty{50}{\ohm} \times \qty{2,5006}{A} =
+        \qty{125,03}{V}
+    \end{align*}
+\end{exemple}
+
+
+\begin{exemple}[\MillmanTrifNeutre{} \hyperlink{exemple:MillmanTrifNeutre}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:MillmanTrifNeutre}
+	\addcontentsxms{\MillmanTrifNeutre}	
+    Tenim un generador trifàsic connectat en estrella, amb una tensió fase-neutre de \qty{230}{V}; el punt neutre de l'estrella està connectat a terra a través d'una resistència de \qty{46}{\ohm}. El generador alimenta tres càrregues resistives connectades entre cadascuna de les fases i terra, de valors \qty{50}{m\ohm}, \qty{80}{m\ohm} i \qty{70}{m\ohm} respectivament. Es tracta de trobar el corrent que circula per la resistència de connexió a terra del generador, i els corrents que circulen per cadascuna de les tres càrregues; és clar que ha de complir-se: $\cmplx{I}\ped{A} + \cmplx{I}\ped{B} + \cmplx{I}\ped{C} = \cmplx{I}\ped{N}$.
+
+    En el dibuix  següent es pot veure el circuit elèctric que es vol resoldre.
+
+	 \begin{center}
+		\input{Imatges/Cap-Fonaments-Millman-Exemple2.pdf_tex}
+	\end{center}
+
+    La tensió $\cmplx{U}\ped{GN}$ es pot calcular directament aplicant el teorema de Millman. Per fer-ho, només cal tenir en compte que les quatre resistències del circuit tenen un punt comú que és G, i que les tensions dels altres extrems de les resistències respecte del punt N són conegudes: $\cmplx{U}\ped{AN}=\complexqty{230:0}{V}$, $\cmplx{U}\ped{BN}=\complexqty{230:240}{V}$, $\cmplx{U}\ped{CN}=\complexqty{230:120}{V}$ i  $\cmplx{U}\ped{NN}=\qty{0}{V}$.
+
+    Així doncs, tenim:
+    \begin{align*}
+    \cmplx{U}\ped{GN} &= \frac{ \dfrac{\cmplx{U}\ped{AN}}{R\ped{A}} + \dfrac{\cmplx{U}\ped{BN}}{R\ped{B}} + \dfrac{\cmplx{U}\ped{CN}}{R\ped{C}} + \dfrac{\cmplx{U}\ped{NN}}{R\ped{N}}} { \dfrac{1}{R\ped{A}} + \dfrac{1}{R\ped{B}} + \dfrac{1}{R\ped{C}} + \dfrac{1}{R\ped{N}} } =
+    \frac{\dfrac{\complexqty{230:0}{V}}{\qty{50}{m\ohm}}+\dfrac{\complexqty{230:240}{V}}{\qty{80}{m\ohm}}+
+    \dfrac{\complexqty{230:120}{V}}{\qty{70}{m\ohm}} + \dfrac{\qty{0}{V}}{\qty{46}{\ohm}} }{\dfrac{1}{\qty{50}{m\ohm}}+\dfrac{1}{\qty{80}{m\ohm}}+
+    \dfrac{1}{\qty{70}{m\ohm}}+\dfrac{1}{\qty{46}{\ohm}}} \\[1ex]
+    &=\complexqty{33,3433:13,17}{V}
+    \end{align*}
+
+    El corrent  que circula per la resistència de connexió a terra del generador val:
+    \[
+    \cmplx{I}\ped{N} = \frac{\cmplx{U}\ped{GN}}{R\ped{N}} = \frac{\complexqty{33,3433:13,17}{V}}{\qty{46}{\ohm}}
+    = \complexqty{0,7249:13,17}{A}
+    \]
+
+    Finalment, els corrents que circulen per cadascuna de les tres càrregues val:
+    \begin{align*}
+    \cmplx{I}\ped{A} &= \frac{\cmplx{U}\ped{AG}}{R\ped{A}} = \frac{\cmplx{U}\ped{AN} - \cmplx{U}\ped{GN}}{R\ped{A}} = \frac{\complexqty{230:0}{V}-\complexqty{33,3433:13,17}{V}}{\qty{50}{m\ohm}}
+    = \complexqty{3953,6056:-2,20}{A}\\[2ex]
+    \cmplx{I}\ped{B} &= \frac{\cmplx{U}\ped{BG}}{R\ped{B}} = \frac{\cmplx{U}\ped{BN} - \cmplx{U}\ped{GN}}{R\ped{B}} = \frac{\complexqty{230:240}{V}-\complexqty{33,3433:13,17}{V}}{\qty{80}{m\ohm}}
+    = \complexqty{3174,7573:-125,49}{A}\\[2ex]
+    \cmplx{I}\ped{C} &= \frac{\cmplx{U}\ped{CG}}{R\ped{C}} = \frac{\cmplx{U}\ped{CN} - \cmplx{U}\ped{GN}}{R\ped{C}} = \frac{\complexqty{230:120}{V}-\complexqty{33,3433:13,17}{V}}{\qty{70}{m\ohm}}
+    = \complexqty{3453,8265:127,59}{A}
+    \end{align*}
+\end{exemple}
+
+	
+\begin{exemple}[\MillmanTrifNoNeutre{}]
+	\addcontentsxms{\MillmanTrifNoNeutre}	
+    Tenim en aquest cas un circuit com el de l'exemple anterior, però aquí les càrregues no estan connectades a terra (punt G). En aquest cas no hi pot haver circulació de corrent per la resistència de connexió a terra del generador, ja que aquest corrent no tindria cap camí per tancar-se; ha de complir-se doncs: $\cmplx{I}\ped{A} + \cmplx{I}\ped{B} + \cmplx{I}\ped{C} = 0$. Es tracta de trobar en aquest cas els corrents que circulen per cadascuna de les tres càrregues.
+
+    En el dibuix  següent es pot veure el circuit elèctric que es vol resoldre.
+
+	\begin{center}
+		\input{Imatges/Cap-Fonaments-Millman-Exemple3.pdf_tex}
+	\end{center}
+   
+    La tensió $\cmplx{U}\ped{KN}$ es pot calcular directament aplicant el teorema de Millman. Per fer-ho, només cal tenir en compte que les tres resistències de càrrega del circuit tenen un punt comú que és K, i que les tensions dels altres extrems de les resistències respecte del punt N són conegudes: $\cmplx{U}\ped{AN}=\complexqty{230:0}{V}$, $\cmplx{U}\ped{BN}=\complexqty{230:240}{V}$ i $\cmplx{U}\ped{CN}=\complexqty{230:120}{V}$.
+
+    Així doncs, tenim:
+    \[
+    \cmplx{U}\ped{KN} = \frac{ \dfrac{\cmplx{U}\ped{AN}}{R\ped{A}} + \dfrac{\cmplx{U}\ped{BN}}{R\ped{B}} + \dfrac{\cmplx{U}\ped{CN}}{R\ped{C}}} { \dfrac{1}{R\ped{A}} + \dfrac{1}{R\ped{B}} + \dfrac{1}{R\ped{C}}} =
+    \frac{\dfrac{\complexqty{230:0}{V}}{\qty{50}{m\ohm}}+\dfrac{\complexqty{230:240}{V}}{\qty{80}{m\ohm}}+
+    \dfrac{\complexqty{230:120}{V}}{\qty{70}{m\ohm}}}{\dfrac{1}{\qty{50}{m\ohm}}+\dfrac{1}{\qty{80}{m\ohm}}+
+    \dfrac{1}{\qty{70}{m\ohm}}} =
+    \complexqty{33,3588:13,17}{V}
+    \]
+
+
+
+    Els corrents que circulen per cadascuna de les tres càrregues val:
+    
+    \begin{align*}
+    \cmplx{I}\ped{A} &= \frac{\cmplx{U}\ped{AK}}{R\ped{A}} = \frac{\cmplx{U}\ped{AN} - \cmplx{U}\ped{KN}}{R\ped{A}} = \frac{\complexqty{230:0}{V}-\complexqty{33,3588:13,17}{V}}{\qty{50}{m\ohm}}
+    = \complexqty{3953,3068:-2,20}{A}\\[2ex]
+    \cmplx{I}\ped{B} &= \frac{\cmplx{U}\ped{BK}}{R\ped{B}} = \frac{\cmplx{U}\ped{BN} - \cmplx{U}\ped{KN}}{R\ped{B}} = \frac{\complexqty{230:240}{V}-\complexqty{33,3588:13,17}{V}}{\qty{80}{m\ohm}}
+    = \complexqty{3174,9027:-125,50}{A}\\[2ex]
+    \cmplx{I}\ped{C} &= \frac{\cmplx{U}\ped{CK}}{R\ped{C}} = \frac{\cmplx{U}\ped{CN} - \cmplx{U}\ped{KN}}{R\ped{C}} = \frac{\complexqty{230:120}{V}-\complexqty{33,3588:13,17}{V}}{\qty{70}{m\ohm}}
+    = \complexqty{3453,9180:127,59}{A}
+    \end{align*}
+\end{exemple}
+
+
+\subsection{Teorema de la superposició}\index{teorema!de la
+superposició}
+
+Si tenim un circuit lineal on hi ha diverses fonts de tensió i  de
+corrent, les quals originen corrents i caigudes de tensió en els
+components del circuit, el teorema de la superposició ens diu que
+podem calcular aquests corrents i caigudes de tensió, resolent els
+circuits que resulten de tenir en compte  només una font de tensió o
+de corrent alhora, i sumant al final els valors parcials
+obtinguts.
+
+En cada pas on considerem només una font de tensió o de corrent, hem
+d'eliminar la resta de fonts del circuit; per tal de fer-ho hem de
+substituir la resta de fonts de tensió per un curtcircuit, i la
+resta de fonts de corrent per un circuit obert.
+
+Aquest teorema també és aplicable en el cas que tinguem només una
+font de tensió o de corrent que generi més d'una freqüència alhora. En aquest cas es pot estudiar el circuit de forma
+independent per a cadascuna de les freqüències presents, i sumar al final els valors parcials obtinguts.
+
+Per tal de poder aplicar aquest teorema, no podem tenir fonts de tensió o de corrent, el valor de les quals depengui del valor d'altres fonts.
+
+\begin{exemple}[\Superposicio{} \hyperlink{exemple:Superposicio}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:Superposicio}
+	\addcontentsxms{\Superposicio}
+    Es tracta de trobar en el circuit següent el corrent $\cmplx{I}$ que circula
+    pel condensador, utilitzant el teorema de la superposició.
+    \begin{center}
+        \input{Imatges/Cap-Fonaments-Superposicio-Exemple-1.pdf_tex}
+    \end{center}
+
+    Utilitzant el teorema de la superposició, representem els dos
+    circuits següents a partir del circuit original. 
+    
+    El circuit de
+    l'esquerra només té la font de tensió, amb la font de corrent substituïda per un circuit obert, i el circuit de
+    la dreta només té la font de corrent, amb la font de tensió
+    substituïda per un curtcircuit.
+    
+    \begin{center}
+        \input{Imatges/Cap-Fonaments-Superposicio-Exemple-2.pdf_tex}
+    \end{center}
+
+    Els corrents $\cmplx{I}_1$ i $\cmplx{I}_2$ que circulen pel condensador valen:
+    \[
+        \cmplx{I}_1 = \frac{\complexqty{5:0}{V}}{\complexqty{4-2j}{\ohm}} =
+        \complexqty{1,118:26,57}{A} \qquad\qquad
+        \cmplx{I}_2 = \frac{\qty{4}{\ohm}}{\complexqty{4-2j}{ \ohm}} \times \complexqty{2:0}{A} = \complexqty{1,789:26,57}{A}
+    \]
+
+    El corrent total $\cmplx{I}$ que circula pel condensador val:
+    \[
+        \cmplx{I}  = \cmplx{I}_1 + \cmplx{I}_2 = \complexqty{1,118:26,57}{A} +  \complexqty{1,789:26,57}{A} =
+        \complexqty{2,907:26,57}{A}
+    \]
+\end{exemple}
+
+
+
+\section{Valors mitjà i eficaç, i factors de cresta, de forma i d'arrissada}\label{sec:val_mitja_ef}
+
+S'explica a continuació com obtenir diversos paràmetres característics de funcions periòdiques  en el temps, de freqüència $f$, període $T$ i velocitat angular $\omega$; les relacions que compleixen aquests tres paràmetres són: $f = 1/T$, $\omega=2\piup f = 2\piup/T$.
+
+En la figura \vref{pic:val-mitja} es representa una funció periòdica qualsevol $v(t)$, indicant-hi el període $T$, els valors mitjà $\bar{V}$, de cresta $\hat{V}$ i de vall $\check{V}$, i la màxima amplitud  $\hat{V}-\check{V}$.
+\begin{center}
+    \input{Imatges/Cap-Fonaments-Valor-Mitja.pdf_tex}
+    \captionof{figure}{Paràmetres d'una funció periòdica}
+    \label{pic:val-mitja}
+\end{center}
+
+Les funcions periòdiques poden  definir-se en funció de l'angle $\alpha$, en lloc del temps $t$; es compleixen les relacions:
+$\alpha=\omega t$, $\alpha_0=\omega t_0$, i $\diff\alpha=\omega\diff t$ (on $\alpha$ ha d'expressar-se  en radian).
+
+\subsection{Valor mitjà}\index{valor mitjà}
+
+El valor mitjà $\bar{V}$ d'una funció
+periòdica en el temps $v(t)$ es
+defineix com:\footnote{En la secció \ref{sec:four_val_av} es defineix el valor mitjà d'una funció periòdica expressada en sèrie de Fourier.}
+\begin{equation}
+    \bar{V} = \frac{1}{T} \int_{t_0}^{t_0+T} v(t) \diff t =
+    \frac{\omega}{2\piup} \int_{t_0}^{t_0+\frac{2\piup}{\omega}} v(t) \diff t\label{eq:vm_t}
+\end{equation}
+
+Si la funció periòdica $v(\alpha)$ està definida en funció de
+l'angle $\alpha$, en lloc del temps $t$, tenim:
+\begin{equation}
+    \bar{V} = \frac{1}{2\piup} \int_{\alpha_0}^{\alpha_0+2\piup} v(\alpha) \diff \alpha
+    \label{eq:vm_alfa}
+\end{equation}
+
+\subsection{Valor eficaç}\index{valor eficaç}
+\index{root mean square@\textit{root mean square}}\index{rms}
+
+El valor eficaç  $V$ ---també anomenat valor rms, de l'anglès \textit{root mean square}--- d'una funció periòdica en el temps $v(t)$ es defineix com:\footnote{En la secció \ref{sec:four_val_ef} es defineix el valor eficaç d'una funció periòdica expressada en sèrie de Fourier.}
+\begin{equation}
+    V = \sqrt{\frac{1}{T} \int_{t_0}^{t_0+T} [v(t)]^2 \diff
+    t} = \sqrt{\frac{\omega}{2\piup} \int_{t_0}^{t_0+\frac{2\piup}{\omega}}
+     [v(t)]^2 \diff t}
+\end{equation}
+
+Si la funció periòdica $v(\alpha)$ està definida en funció de
+l'angle $\alpha$, en lloc del temps $t$, tenim:
+\begin{equation}
+    V = \sqrt{\frac{1}{2\piup} \int_{\alpha_0}^{\alpha_0+2\piup}
+     [v(\alpha)]^2 \diff \alpha}
+\end{equation}
+
+\subsection{Factor de cresta}
+\index{factor!de cresta}
+
+El factor de cresta relaciona els valors de cresta $\hat{V}$
+  i eficaç $V$ d'una funció periòdica. La norma CEI 60050 \textit{International electrotechnical vocabulary}, l'anomena \textit{peak factor} i el defineix com:\index{CEI!60050-00@60050}
+\begin{equation}
+     \text{factor de cresta} = \frac{\hat{V}}{V}
+\end{equation}
+
+\subsection{Factor de forma}\index{factor!de forma}\index{F@$F$}
+
+El factor de forma relaciona els valors eficaç $V$
+i mitjà $\bar{V}$ d'una funció periòdica. La norma CEI 60050 l'anomena \textit{form factor}, li assigna el símbol $F$ i el defineix com:\index{CEI!60050-00@60050}
+\begin{equation}
+    F = \frac{V}{|\bar{V}|}
+\end{equation}
+
+\subsection{Factor d'arrissada eficaç}\index{factor!d'arrissada eficaç}\index{r@$r$}
+
+El factor d'arrissada eficaç relaciona els
+valors mitjà $\bar{V}$ i eficaç $V$ d'una funció periòdica.
+La norma CEI 60050 l'anomena \textit{rms-ripple factor} o \textit{relative ripple content}, li assigna el símbol $r$ i el defineix com:\footnote{En la secció \ref{sec:four_fac_arr_ef} es defineix el factor d'arrissada eficaç d'una funció periòdica expressada en sèrie de Fourier.}\index{CEI!60050-00@60050}
+\begin{equation}
+    r = \sqrt{\frac{V^2}{\bar{V}^2}-1} = \sqrt{F^2-1}\label{eq:rms_rip}
+\end{equation}
+
+Aquest factor s'utilitza usualment per definir la qualitat d'una
+tensió contínua, obtinguda a partir  d'una tensió alterna rectificada; com més
+plana sigui aquesta tensió contínua més baix serà el seu factor
+d'arrissada eficaç.
+
+\subsection{Factor d'arrissada de cresta}\index{factor!d'arrissada de cresta}\index{q@$q$}
+
+El factor d'arrissada de cresta relaciona els valors de cresta $\hat{V}$, de vall $\check{V}$  i mitjà $\bar{V}$
+ d'una funció periòdica. La norma CEI 60050 l'anomena \textit{peak-ripple factor} o \textit{peak distortion}, li assigna el símbol $q$ i el defineix com:\index{CEI!60050-00@60050}
+\begin{equation}
+    q = \frac{\hat{V} - \check{V}}{|\bar{V}|}
+\end{equation}
+
+
+\begin{exemple}[\FactorsCrestaFormaArr{}]
+	\addcontentsxms{\FactorsCrestaFormaArr}
+    Es tracta de calcular els factors de cresta, de forma, i d'arrissada eficaç i de cresta,
+    de la tensió  que s'obté a partir d'una tensió sinusoidal
+    $u(t) = \hat{U} \sin\omega t$, amb un rectificador de mitja ona i
+    amb un rectificador d'ona completa.
+
+    En el cas del rectificador de mitja ona, la tensió que s'obté ve
+    definida per:
+    
+    \[
+    u(t) = \begin{cases} \hat{U} \sin\omega t, & 0 < \omega t < \piup\\
+           0, & \piup \leq \omega t \leq 2\piup \end{cases}
+    \]
+
+    Calculem, en primer lloc, el valor mitjà:
+    
+    \[
+    \bar{U} = \frac{\omega}{2\piup} \left( \int_0^\frac{\piup}{\omega}
+    \hat{U} \sin\omega t \diff t +
+    \int_\frac{\piup}{\omega}^\frac{2\piup}{\omega} 0 \diff t \right) = -
+    \left. \frac{\hat{U} \cos\omega t}{2\piup}
+    \right|_0^\frac{\piup}{\omega} = \frac{\hat{U}}{\piup}
+    \]
+
+    Calculem a continuació el valor eficaç:
+    
+    \[
+    U = \sqrt{\frac{\omega}{2\piup} \left( \int_0^\frac{\piup}{\omega}
+    \hat{U}^2 \sin^2\omega t \diff t +
+    \int_\frac{\piup}{\omega}^\frac{2\piup}{\omega} 0 \diff t \right)} =
+      \sqrt{\left.\frac{\omega \hat{U}^2}{2\piup}\left( \frac{t}{2} -
+    \frac{\sin (2\omega t)}{4\omega}
+    \right)\right|_0^\frac{\piup}{\omega}} = \frac{\hat{U}}{2}
+    \]
+
+    Els factors de cresta, de forma, i d'arrissada eficaç i de cresta, són:
+    
+    \begin{align*}
+        \text{factor de cresta} &= \frac{\hat{U}}{\hat{U}/2} = 2 \\[2ex]
+        F &= \frac{\hat{U}/2}{\hat{U}/\piup} =\frac{\piup}{2} \approx
+        \num{1,57} \\[2ex]
+        r &= \sqrt{\left(\frac{\hat{U}/2}{\hat{U}/\piup}\right)^2-1} =
+    \sqrt{\frac{\piup^2}{4}-1} \approx \num{1,21} \\[21ex]
+        q &= \frac{\hat{U} - 0}{\hat{U}/\piup} = \piup \approx \num{3,14}
+    \end{align*}
+
+
+    En el cas del rectificador d'ona completa, la tensió que s'obté ve
+    definida per:
+    
+    \[
+    u(t) = \begin{cases} \phantom{-}\hat{U} \sin\omega t, & 0 < \omega t < \piup\\
+           -\hat{U} \sin\omega t, & \piup \leq \omega t \leq 2\piup \end{cases}
+    \]
+
+    En aquest cas, l'ona de tensió entre $\piup$ i $2\piup$ és una repetició
+    exacta de l'ona de tensió entre 0 i $\piup$; per tant, únicament
+    caldrà considerar-ne la primera meitat (entre 0 i $\piup$), tenint en
+    compte que el període serà $\piup/\omega$.
+
+     Calculem, en primer lloc, el valor mitjà:
+     
+     \[
+    \bar{U} = \frac{\omega}{\piup} \int_0^\frac{\piup}{\omega} \hat{U}
+    \sin\omega t \diff t  = - \left. \frac{\hat{U} \cos\omega t}{\piup}
+    \right|_0^\frac{\piup}{\omega} = \frac{2 \hat{U}}{\piup}
+    \]
+
+    Calculem a continuació el valor eficaç:
+    
+    \[
+    U = \sqrt{\frac{\omega}{\piup} \int_0^\frac{\piup}{\omega} \hat{U}^2
+    \sin^2\omega t \diff t } =   \sqrt{\left.\frac{\omega
+    \hat{U}^2}{\piup}\left( \frac{t}{2} - \frac{\sin (2\omega t)}{4\omega}
+    \right)\right|_0^\frac{\piup}{\omega}}  = \frac{\hat{U}}{\sqrt{2}}
+    \]
+
+    Els factors de cresta, de forma, i d'arrissada eficaç i de cresta, són:
+    
+    \begin{align*}
+        \text{factor de cresta} &= \frac{\hat{U}}{\hat{U}/\sqrt{2}} = \sqrt{2} \approx\num{1,41} \\[2ex]
+        F &= \frac{\hat{U}/\sqrt{2}}{2 \hat{U}/\piup} =\frac{\piup}{2\sqrt{2}} \approx
+        \num{1,11} \\[2ex]
+    r &= \sqrt{\left(\frac{\hat{U}/\sqrt{2}}{2 \hat{U}/\piup}\right)^2-1}
+    = \sqrt{\frac{\piup^2}{8}-1} \approx \num{0,48}\\[2ex]
+    q &=  \frac{\hat{U} - 0}{2 \hat{U}/\piup} = \frac{\piup}{2} \approx \num{1,57}
+    \end{align*}
+\end{exemple}
+
+
+\subsection{Taula de valors mitjans i eficaços}\index{valor mitjà!taula}\index{valor eficaç!taula}
+
+En la taula \vref{taula:Valors-M-Ef}  es donen els valors mitjans $\bar{V}$ i eficaços $V$ d'una sèrie de formes d'ona usuals $v(t)$, per tal d'estalviar-se la resolució de les integrals indicades en les subseccions anteriors.
+
+\begin{longtable}{c<{\hspace{1em}}c<{\hspace{1.5em}}c}
+   \caption{\label{taula:Valors-M-Ef} Valors mitjans i eficaços de formes d'ona}\\
+   \toprule[1pt]
+   $v(t)$ & $\bar{V}$ & $V$\\
+   \midrule
+   \endfirsthead
+   \caption[]{Valors mitjans i eficaços de formes d'ona (\emph{ve de la pàgina anterior})} \\
+   \toprule[1pt]
+   $v(t)$ & $\bar{V}$ & $V$\\
+   \midrule
+   \endhead
+   \midrule
+   \multicolumn{3}{r}{\sffamily\bfseries\color{NavyBlue}(\emph{continua a la pàgina següent})}
+   \endfoot
+   \endlastfoot
+   \input{Imatges/Cap-Fonaments-Funcio-1.pdf_tex} & \raisebox{0.4cm}{$\displaystyle\frac{K}{2}$} & \raisebox{0.4cm}{$\displaystyle\frac{K}{\sqrt{2}}$}\\[1.5ex]
+   \input{Imatges/Cap-Fonaments-Funcio-2.pdf_tex} & \raisebox{1.0cm}{0} & \raisebox{1.0cm}{$K$}\\[1.0ex]
+   \input{Imatges/Cap-Fonaments-Funcio-3.pdf_tex} & \raisebox{0.4cm}{$\displaystyle{}K\frac{\tau}{T}$} & \raisebox{0.4cm}{$\displaystyle{}K\sqrt{\frac{\tau}{T}}$}\\[2.5ex]
+   \input{Imatges/Cap-Fonaments-Funcio-4.pdf_tex} & \raisebox{1.0cm}{0} & \raisebox{1.0cm}{$\displaystyle{}K\sqrt{\frac{2\tau}{T}}$}\\[1.5ex]
+   \input{Imatges/Cap-Fonaments-Funcio-5.pdf_tex} & \raisebox{1.0cm}{0} & \raisebox{1.0cm}{$\displaystyle{}K\sqrt{\frac{2\tau}{T}}$}\\[1.0ex]
+   \input{Imatges/Cap-Fonaments-Funcio-6.pdf_tex} & \raisebox{0.4cm}{$\displaystyle\frac{K}{4}$} & \raisebox{0.4cm}{$\displaystyle\frac{K}{\sqrt{6}}$}\\[1.0ex]
+   \input{Imatges/Cap-Fonaments-Funcio-7.pdf_tex} & \raisebox{0.4cm}{$\displaystyle\frac{K}{2}$} & \raisebox{0.4cm}{$\displaystyle\frac{K}{\sqrt{3}}$}\\[1.0ex]
+   \input{Imatges/Cap-Fonaments-Funcio-8.pdf_tex} & \raisebox{1.0cm}{0} & \raisebox{1.0cm}{$\displaystyle\frac{K}{\sqrt{3}}$}\\[1.0ex]
+   \input{Imatges/Cap-Fonaments-Funcio-9.pdf_tex} & \raisebox{0.4cm}{$\displaystyle\frac{K}{2}$} & \raisebox{0.4cm}{$\displaystyle\frac{K}{\sqrt{3}}$}\\[2.5ex]
+   \input{Imatges/Cap-Fonaments-Funcio-10.pdf_tex} & \raisebox{1.0cm}{0} & \raisebox{1.0cm}{$\displaystyle\frac{K}{\sqrt{3}}$}\\[2.5ex]
+   \input{Imatges/Cap-Fonaments-Funcio-11.pdf_tex} & \raisebox{0.4cm}{$\displaystyle\frac{K}{2}$} & \raisebox{0.4cm}{$\displaystyle{}K\sqrt{\frac{T+2\tau}{3 T}}$}\\[4ex]
+   \input{Imatges/Cap-Fonaments-Funcio-12.pdf_tex} & \raisebox{1.0cm}{0} & \raisebox{1.0cm}{$\displaystyle{}K\sqrt{\frac{T+2\tau}{3 T}}$}\\[2.5ex]
+   \input{Imatges/Cap-Fonaments-Funcio-13.pdf_tex} & \raisebox{0.4cm}{$\displaystyle\frac{2 K}{\piup}$} & \raisebox{0.4cm}{$\displaystyle\frac{K}{\sqrt{2}}$}\\[2.5ex]
+   \input{Imatges/Cap-Fonaments-Funcio-14.pdf_tex} & \raisebox{0.4cm}{$\displaystyle\frac{K}{\piup}$} & \raisebox{0.4cm}{$\displaystyle\frac{K}{2}$}\\[2.5ex]
+   \input{Imatges/Cap-Fonaments-Funcio-15.pdf_tex} & \raisebox{1.0cm}{0} & \raisebox{1.0cm}{$\displaystyle\frac{K}{\sqrt{2}}$}\\[0.5ex]
+    \bottomrule[1pt]
+\end{longtable}
+
+\break
+\begin{exemple}[\ValorEfValorMitja{}]\label{ex:ValEfMit}
+	\addcontentsxms{\ValorEfValorMitja}
+	Hi ha voltímetres que en lloc de mesurar directament el valor eficaç d'una ona sinusoidal,  fan una rectificació d'ona completa de l'ona sinusoidal i en mesuren el valor mitjà. Quin factor cal aplicar a aquest valor rectificat mitjà per obtenir el valor sinusoidal eficaç?
+	
+	L'última ona de la taula anterior és una ona sinusoidal. Per al valor eficaç tenim:
+	\[
+		V\ped{sin} = \frac{K}{\sqrt{2}} \quad \Rightarrow \quad 
+		K = \sqrt{2} V\ped{sin}
+	\]
+	
+	L'antepenúltima ona de la taula anterior és una rectificació d'ona completa d'una ona sinusoidal. Per al valor mitjà tenim:
+	\[
+		\bar{V}\ped{rec} = \frac{2 K}{\piup} \quad \Rightarrow \quad 
+		K = \frac{\piup}{2} \bar{V}\ped{rec} 
+	\]
+	
+	Donat que $K$ és el mateix valor en les dues ones, igualant les dues expressions anteriors, tenim:
+	
+	\[
+		\sqrt{2} V\ped{sin} = \frac{\piup}{2} \bar{V}\ped{rec} 
+		\quad \Rightarrow \quad 
+		V\ped{sin} =  \frac{\piup}{2 \sqrt{2}} \bar{V}\ped{rec} \approx \num{1,11} \bar{V}\ped{rec}
+	\]
+	
+	Per tant, només cal multiplicar per \num{1,11} el valor mesurat pel voltímetre (valor rectificat mitjà) per tal d'obtenir el valor desitjat (valor sinusoidal eficaç). De fet, en aquests voltímetres la caràtula ja està ajustada amb aquest factor de \num{1,11}, de manera que la lectura és directament el valor eficaç.
+\end{exemple}
+
+
+
+
+\section{Potències instantània, activa i reactiva}\label{sec:pot-inst-act-react}\index{potència!activa}
+\index{potència!reactiva}\index{potència!instantània}
+
+La potència instantània $p(t)$ que absorbeix una càrrega ve determinada per la tensió $u(t)$ a la qual està sotmesa i pel corrent $i(t)$ que hi circula, tenint en compte els sentits de $u(t)$ i $i(t)$ indicats en les figures de la secció \ref{sec:comp_elem}:
+\begin{equation}
+   p(t) = u(t) i(t)
+\end{equation}
+
+Quan les tensions i corrents són funcions sinusoidals i les expressem usant la funció cosinus, tal com s'ha descrit en l'apartat Notació, tenim:
+\begin{align}
+  u(t) &= \sqrt{2} U \cos(\omega t + \alpha) \\
+  i(t) &= \sqrt{2} I \cos(\omega t + \beta)
+\end{align}
+
+on $U$ i $I$ són respectivament els valors eficaços de $u(t)$ i $i(t)$. Utilitzant aquestes expressions tenim:
+\begin{equation}
+   p(t) = 2 U I \cos(\omega t + \alpha) \cos(\omega t + \beta)
+\end{equation}
+
+En general, els angles $\alpha$ i $\beta$ són diferents; en aquest cas, les funcions $u(t)$ i $i(t)$ estan desfasades entre si un angle $\varphi$ definit com:
+\begin{equation}
+  \varphi \equiv \alpha - \beta
+\end{equation}
+
+Utilitzant aquest angle $\varphi$ i les igualtats trigonomètriques \eqref{eq:D13b} i \eqref{eq:D15b}, podem transformar l'equació de la potència instantània en:
+\begin{equation}
+   p(t) = U I \cos\varphi \,(1 + \cos [2 (\omega t + \alpha)]) + U I \sin\varphi \sin[2 (\omega t + \alpha)]
+\end{equation}
+
+El primer terme de la dreta  s'anomena potència activa instantània $p\ped{R}(t)$, i correspon a la potència absorbida per la part resistiva de la càrrega. El segon terme  s'anomena potència reactiva instantània $p\ped{X}(t)$, i correspon a la potència absorbida per la part reactiva ---inductiva o capacitiva--- de la càrrega. Així doncs, tenim:
+\begin{subequations}
+\begin{align}
+  p\ped{R}(t) &=  U I \cos\varphi + U I \cos\varphi \cos [2 (\omega t + \alpha)] \\
+  p\ped{X}(t) &=  U I \sin\varphi \sin[2 (\omega t + \alpha)] \\
+    p(t) &= p\ped{R}(t) + p\ped{X}(t)
+\end{align}
+\end{subequations}
+	
+La potència $p\ped{R}(t)$ varia entre el valor mínim 0 i el valor màxim $2 U I \cos\varphi$, i té un valor mitjà igual a $U I \cos\varphi$; el fet que aquest valor sigui sempre positiu,  ens indica que $p\ped{R}(t)$  va sempre de la font d'energia cap a la càrrega. La potència $p\ped{X}(t)$ varia entre el valor mínim $-U I \sin\varphi$ i el valor  màxim $U I \sin\varphi$, i té un valor mitjà igual a 0; aquest valor igual a zero, ens indica que $p\ped{X}(t)$ és osciŀlant entre la font d'energia i la càrrega, amb un balanç total nul. El valor mitjà de $p\ped{R}(t)$ s'anomena potència activa $P$, i el valor màxim de $p\ped{X}(t)$ s'anomena potència reactiva $Q$; així doncs tenim:
+\begin{align}
+  P &= U I \cos\varphi \\
+  Q &= U I \sin\varphi
+\end{align}
+
+\section{Potència complexa}\label{sec:pot_complex} \index{potència complexa}
+
+\subsection{Potència monofàsica} \index{potència complexa!monofàsica}\label{sec:pot-monof}
+
+En la figura \vref{pic:pot_comp_mono} es representa una càrrega $\cmplx{Z}=R+j X$, la
+qual absorbeix una potència complexa $\cmplx{S} = P + j Q$. El concepte de $P$ i $Q$ és el mateix que s'ha explicat en la secció \ref{sec:pot-inst-act-react}.
+\begin{center}
+    \input{Imatges/Cap-Fonaments-Potencia-Monof.pdf_tex}
+    \captionof{figure}{Potència complexa monofàsica}
+    \label{pic:pot_comp_mono}
+\end{center}
+
+$R$ i $X$ són respectivament la part resistiva i la part reactiva ---inductiva o capacitiva--- de la càrrega, i $P$ i $Q$ són
+respectivament la potència activa i la potència reactiva ---inductiva
+o capacitiva--- absorbida per la càrrega.
+
+La potència activa absorbida per una càrrega sempre és positiva, en
+canvi, la potència reactiva absorbida per una càrrega pot ser
+positiva o negativa, segons que predomini la part inductiva o la
+part capacitiva de la càrrega respectivament.
+
+L'angle $\varphiup\in[-\frac{\piup}{2},\frac{\piup}{2}]$ entre els fasors $\cmplx{U}$ i $\cmplx{I}$ compleix la següent relació:
+\begin{equation}
+   \tan\varphiup = \frac{X}{R} = \frac{Q}{P}
+\end{equation}
+
+\index{factor!de potència}El concepte de l'angle $\varphiup$ és el mateix que s'ha explicat en la secció \ref{sec:pot-inst-act-react}; a partir d'aquest angle es
+defineix el factor de potència de la càrrega:
+\begin{equation}
+   \text{Factor de potència} \equiv \cos\varphiup = \cos (\arg \cmplx{Z}) = 
+   \frac{R}{|\cmplx{Z}|} =
+   \cos (\arg \cmplx{S}) =
+   \frac{P}{|\cmplx{S}|}
+\end{equation}
+
+Atès que per a un angle qualsevol $\alphaup$ es compleix la igualtat
+trigonomètrica: $\cos\alphaup = \cos(-\alphaup)$, quan es dona el factor
+de potència d'una càrrega, cal especificar si és inductiu ($Q>0$,
+$\tan\varphiup>0$, el fasor $\cmplx{U}$ avança al fasor $\cmplx{I}$) o
+capacitiu ($Q<0$, $\tan\varphiup<0$, el fasor $\cmplx{I}$ avança al fasor $\cmplx{U}$); la distinció es fa
+afegint «(i)» o «(c)» respectivament al valor numèric del factor
+de potència, com per exemple: $\cos\varphiup=\num{0,8}$(i),
+$\cos\varphiup=\num{0,9}$(c).
+
+Les relacions que lliguen la potència complexa amb la tensió i el corrent són:
+\begin{align}
+   \cmplx{S} &=  \cmplx{U} \,\cmplx{I}^* =
+   |\cmplx{I}|^2 \,\cmplx{Z} = \frac{|\cmplx{U}|^2}{\cmplx{Z}^*} =
+   P + j Q \label{eq:s_mono1}\\
+   |\cmplx{S}| &= |\cmplx{U}| \,|\cmplx{I}| =
+   |\cmplx{I}|^2 \,|\cmplx{Z}| = \frac{|\cmplx{U}|^2}{|\cmplx{Z}|} =
+   \sqrt{P^2+Q^2} \\
+   P &= \Re\cmplx{S} = \Re (\cmplx{U} \, \cmplx{I}^*) = |\cmplx{S}| \cos\varphiup =
+   |\cmplx{U}|\, |\cmplx{I}| \cos\varphiup = |\cmplx{I}|^2 R =
+   \frac{|\cmplx{U}|^2}{|\cmplx{Z}|^2}R\\
+   Q &= \Im\cmplx{S} = \Im (\cmplx{U} \, \cmplx{I}^*) = |\cmplx{S}| \sin\varphiup =
+   |\cmplx{U}| \,|\cmplx{I}|\sin\varphiup  = |\cmplx{I}|^2 X =
+   \frac{|\cmplx{U}|^2}{|\cmplx{Z}|^2}X
+\end{align}
+
+\subsection{Potència trifàsica} \index{potència complexa!trifàsica} \label{sec:pot-trif}
+
+En la figura \vref{pic:pot_comp_trif} es representen dos sistemes
+d'alimentació a càrregues trifàsiques; el de l'esquerra és un
+sistema de quatre fils (tres fases + neutre) i el de la dreta és un sistema
+de tres fils (tres fases). En ambdós casos es consideren tres càrregues
+$\cmplx{Z}\ped{A} = R\ped{A} + j X\ped{A}$, $\cmplx{Z}\ped{B}=
+R\ped{B} + j X\ped{B}$ i $\cmplx{Z}\ped{C}= R\ped{C} + j X\ped{C}$
+connectades en estrella, les quals absorbeixen respectivament unes
+potències complexes $\cmplx{S}\ped{A} = P\ped{A} + j Q\ped{A}$,
+$\cmplx{S}\ped{B}= P\ped{B} + j Q\ped{B}$ i $\cmplx{S}\ped{C}=
+P\ped{C} + j Q\ped{C}$.
+
+$R\ped{A}$, $R\ped{B}$ i $R\ped{C}$, i $X\ped{A}$, $X\ped{B}$ i
+$X\ped{C}$ són respectivament les parts resistives i les parts
+reactives ---inductives o capacitives--- de les càrregues, i $P\ped{A}$,
+$P\ped{B}$ i $P\ped{C}$, i $Q\ped{A}$, $Q\ped{B}$ i $Q\ped{C}$ són
+respectivament les potències actives i les potències reactives
+---inductives o capacitives--- absorbides per les càrregues.
+
+El sistema d'alimentació de tres fils admet també càrregues
+trifàsiques connectades en triangle; en aquest cas només cal dur a
+terme la transformació a una connexió en estrella (vegeu la secció
+\ref{secc:d_y}). Per tant, la descripció que segueix es pot
+considerar del tot general.
+
+\begin{center}
+    \input{Imatges/Cap-Fonaments-Potencia-Trif.pdf_tex}
+    \captionof{figure}{Potència complexa trifàsica --- Sistemes de quatre fils i tres fils}
+    \label{pic:pot_comp_trif}
+\end{center}
+
+En el cas més general, on la càrrega trifàsica és desequilibrada,
+cada impedància té el seu propi factor de potència; els angles
+$\varphiup\ped{A}\in[-\frac{\piup}{2},\frac{\piup}{2}]$ entre els fasors $\cmplx{U}\ped{AN}$ i $\cmplx{I}\ped{A}$, $\varphiup\ped{B}\in[-\frac{\piup}{2},\frac{\piup}{2}]$ entre els fasors $\cmplx{U}\ped{BN}$ i $\cmplx{I}\ped{B}$, i $\varphiup\ped{C}\in[-\frac{\piup}{2},\frac{\piup}{2}]$ entre els fasors $\cmplx{U}\ped{CN}$ i $\cmplx{I}\ped{C}$, compleixen:
+\begin{subequations}
+\begin{align}
+    \tan\varphiup\ped{A} &= \frac{X\ped{A}}{R\ped{A}} = \frac{Q\ped{A}}{P\ped{A}} &
+    \cos\varphiup\ped{A} &= \cos(\arg \cmplx{Z}\ped{A}) = \frac{R\ped{A}}{|\cmplx{Z}\ped{A}|} =  \cos(\arg \cmplx{S}\ped{A})  = \frac{P\ped{A}}{|\cmplx{S}\ped{A}|} \\[0.5ex]   
+    \tan\varphiup\ped{B} &= \frac{X\ped{B}}{R\ped{B}} = \frac{Q\ped{B}}{P\ped{B}} &
+    \cos\varphiup\ped{B} &= \cos(\arg \cmplx{Z}\ped{B}) = \frac{R\ped{B}}{|\cmplx{Z}\ped{B}|} = \cos(\arg \cmplx{S}\ped{B})  = \frac{P\ped{B}}{|\cmplx{S}\ped{B}|} \\[0.5ex]
+    \tan\varphiup\ped{C} &= \frac{X\ped{C}}{R\ped{C}} = \frac{Q\ped{C}}{P\ped{C}} &  
+    \cos\varphiup\ped{C} &= \cos(\arg \cmplx{Z}\ped{C}) = \frac{R\ped{C}}{|\cmplx{Z}\ped{C}|} = \cos(\arg \cmplx{S}\ped{C}) = \frac{P\ped{C}}{|\cmplx{S}\ped{C}|}
+\end{align}
+\end{subequations}
+
+\subsubsection{Sistema equilibrat o desequilibrat de tres fils o de quatre fils}
+
+Aquest és el cas més general, ja que les tensions, la càrrega o
+ambdues alhora  poden ser desequilibrades, i el sistema
+d'alimentació pot ser de tres fils o de quatre fils.
+
+En el cas del sistema d'alimentació de quatre fils tenim:
+$\cmplx{I}\ped{A}+\cmplx{I}\ped{B}+\cmplx{I}\ped{C}=\cmplx{I}\ped{N}$, i
+en el cas del de tres fils tenim:
+$\cmplx{I}\ped{A}+\cmplx{I}\ped{B}+\cmplx{I}\ped{C}=0$. Tanmateix,
+si prenem en ambdós casos el punt N com a referència de les
+tensions, el corrent $\cmplx{I}\ped{N}$ no intervindrà en el càlcul de
+la potència. Així doncs, les relacions que lliguen la potència
+complexa trifàsica $\cmplx{S}\ped{3F} = P\ped{3F} + j Q\ped{3F}$
+amb les tensions i corrents són:
+\begin{align}
+    \cmplx{S}\ped{3F} &= \cmplx{S}\ped{A} + \cmplx{S}\ped{B} + \cmplx{S}\ped{C} =
+     \cmplx{U}\ped{AN}\, \cmplx{I}\ped{A}^* +
+    \cmplx{U}\ped{BN} \,\cmplx{I}\ped{B}^* +  \cmplx{U}\ped{CN}\, \cmplx{I}\ped{C}^* =
+    (P\ped{A} + P\ped{B} + P\ped{C}) + j (Q\ped{A} + Q\ped{B} + Q\ped{C}) \label{eq:s_3f} \\
+    |\cmplx{S}\ped{3F}| &= |\cmplx{S}\ped{A} + \cmplx{S}\ped{B} + \cmplx{S}\ped{C}| =
+    |\cmplx{U}\ped{AN}\, \cmplx{I}\ped{A}^* +
+    \cmplx{U}\ped{BN} \,\cmplx{I}\ped{B}^* +  \cmplx{U}\ped{CN}\, \cmplx{I}\ped{C}^*| =
+    \sqrt{(P\ped{A} + P\ped{B} + P\ped{C})^2 + (Q\ped{A} + Q\ped{B} + Q\ped{C})^2} \label{eq:s_3f_mod} \\
+    P\ped{3F} &= \Re\cmplx{S}\ped{3F} = \Re(\cmplx{U}\ped{AN} \,\cmplx{I}\ped{A}^*) +
+    \Re(\cmplx{U}\ped{BN} \,\cmplx{I}\ped{B}^*) +  \Re(\cmplx{U}\ped{CN}\,
+    \cmplx{I}\ped{C}^*) = |\cmplx{S}\ped{A}| \cos \varphiup\ped{A} + |\cmplx{S}\ped{B}| \cos
+    \varphi\ped{B} + |\cmplx{S}\ped{C}| \cos \varphiup\ped{C} \\[2mm]
+    Q\ped{3F} &= \Im\cmplx{S}\ped{3F} = \Im(\cmplx{U}\ped{AN} \,\cmplx{I}\ped{A}^*) +
+    \Im(\cmplx{U}\ped{BN} \,\cmplx{I}\ped{B}^*) +  \Im(\cmplx{U}\ped{CN}\,
+    \cmplx{I}\ped{C}^*) = |\cmplx{S}\ped{A}| \sin \varphiup\ped{A} + |\cmplx{S}\ped{B}| \sin
+    \varphiup\ped{B} + |\cmplx{S}\ped{C}| \sin \varphiup\ped{C}
+\end{align}
+
+Cal anar amb compte amb l'equació \eqref{eq:s_3f_mod}, i utilitzar-la al
+peu de la lletra, ja
+que en general tenim: $|\cmplx{S}\ped{A} + \cmplx{S}\ped{B} + \cmplx{S}\ped{C}| \leq
+|\cmplx{S}\ped{A}| + |\cmplx{S}\ped{B}| + |\cmplx{S}\ped{C}|$.
+
+Cal tenir en compte a més en els sistemes de tres fils, que el punt
+N no coincidirà en general amb el neutre del sistema
+d'alimentació trifàsic.
+
+\subsubsection{Sistema equilibrat de tres fils o de quatre fils}
+
+Aquest és un cas particular de l'anterior, el qual es presenta quan
+tenim un sistema de tensions equilibrat que alimenta a tres
+impedàncies idèntiques; en aquest cas es compleix sempre:
+$\cmplx{I}\ped{N}=0$, i com a conseqüència tenim que els sistemes de tres
+fils i de quatre fils són equivalents.
+
+Les equacions de l'apartat anterior se simplifiquen, i en aquest
+cas les relacions que lliguen la  potència complexa trifàsica
+equilibrada $\cmplx{S}\ped{3F}\ap{EQ} = P\ped{3F}\ap{EQ} + j
+Q\ped{3F}\ap{EQ}$ amb les tensions i corrents són:
+
+\begin{align}
+    \cmplx{S}\ped{3F}\ap{EQ} &= 3\cmplx{S}\ped{A} = 3\cmplx{U}\ped{AN}\, \cmplx{I}\ped{A}^* =
+    3 (P\ped{A} + j Q\ped{A}) = P\ped{3F}\ap{EQ} +j Q\ped{3F}\ap{EQ} \label{eq:s_3f_eq}\\
+    \big|\cmplx{S}\ped{3F}\ap{EQ}\big| &= 3|\cmplx{S}\ped{A} | =   3 |\cmplx{U}\ped{AN}| \,|\cmplx{I}\ped{A}| =
+    \sqrt{3} |\cmplx{U}\ped{AC}|\, |\cmplx{I}\ped{A}| = 3\,\sqrt{P\ped{A}^2 + Q\ped{A}^2} =
+    \sqrt{\big(P\ped{3F}\ap{EQ}\big)^2 + \big(Q\ped{3F}\ap{EQ}\big)^2} \\
+    P\ped{3F}\ap{EQ} &= \Re\cmplx{S}\ped{3F}\ap{EQ} =3\Re(\cmplx{U}\ped{AN} \,\cmplx{I}\ped{A}^*) =
+    3\big|\cmplx{S}\ped{A}\big| \cos \varphiup\ped{A} = 3 |\cmplx{U}\ped{AN}|\,
+    |\cmplx{I}\ped{A}|\label{eq:p_3f_34}
+    \cos \varphiup\ped{A} = \sqrt{3} |\cmplx{U}\ped{AC}|\,|\cmplx{I}\ped{A}| \cos \varphiup\ped{A} \\[2mm]
+    Q\ped{3F}\ap{EQ} &= \Im\cmplx{S}\ped{3F}\ap{EQ}= 3\Im(\cmplx{U}\ped{AN}\, \cmplx{I}\ped{A}^*) =
+    3\big|\cmplx{S}\ped{A}\big|  \sin \varphiup\ped{A} = 3 |\cmplx{U}\ped{AN}| \, |\cmplx{I}\ped{A}|\label{eq:q_3f_34}
+    \sin\varphiup\ped{A}=\sqrt{3} |\cmplx{U}\ped{AC}|\,|\cmplx{I}\ped{A}|\sin \varphiup\ped{A}
+\end{align}
+
+En les equacions anteriors s'ha utilitzat la fase A, però es
+podria haver escollit també qualsevol de les altres dues. Cal tenir
+en compte a més, que l'angle $\varphiup\ped{A}$ és sempre el format
+pels fasors $\cmplx{U}\ped{AN}$ i $\cmplx{I}\ped{A}$, i no pas
+l'angle format pels fasors $\cmplx{U}\ped{AC}$ i
+$\cmplx{I}\ped{A}$.
+
+En aquest cas, pel que fa als sistemes de tres fils,  el punt N sí
+que coincideix amb el neutre del sistema d'alimentació trifàsic.
+
+\subsubsection{Sistema equilibrat o desequilibrat de tres fils}
+
+Aquest és un cas  general, on les tensions, la càrrega o ambdues alhora  poden ser desequilibrades, però amb l'única restricció que
+el sistema d'alimentació sigui de tres fils.
+
+ Únicament en aquest cas ---sistema de tres fils--- podem prescindir del punt N, a l'hora de
+calcular la potència, i utilitzar només les tensions entre fases.
+
+En aquest cas, les relacions que lliguen la potència complexa
+trifàsica $\cmplx{S}\ped{3F} = P\ped{3F} + j Q\ped{3F}$ amb les
+tensions i corrents són:
+\begin{align}
+    \cmplx{S}\ped{3F} &= \cmplx{U}\ped{AC} \,\cmplx{I}\ped{A}^*
+     +  \cmplx{U}\ped{BC} \,\cmplx{I}\ped{B}^*  \label{eq:s_3f_3fils}\\[2mm]
+    |\cmplx{S}\ped{3F}| &= |\cmplx{U}\ped{AC}\, \cmplx{I}\ped{A}^* +
+    \cmplx{U}\ped{BC}\, \cmplx{I}\ped{B}^*| \\[2mm]
+    P\ped{3F} &= \Re\cmplx{S}\ped{3F}= \Re(\cmplx{U}\ped{AC}\, \cmplx{I}\ped{A}^*) +
+    \Re(\cmplx{U}\ped{BC}\, \cmplx{I}\ped{B}^*) \\[2mm]
+    Q\ped{3F} &= \Im\cmplx{S}\ped{3F}=\Im(\cmplx{U}\ped{AC} \,\cmplx{I}\ped{A}^*) +
+    \Im(\cmplx{U}\ped{BC} \,\cmplx{I}\ped{B}^*)
+\end{align}
+
+En les equacions anteriors s'ha utilitzat la fase C com a
+fase de referència, però es podria haver escollit també qualsevol de
+les altres dues.
+
+En aquest cas, el punt N tampoc no coincidirà en general amb
+el neutre del sistema d'alimentació trifàsic.
+
+	
+\begin{exemple}[\PotSistTresFils{}]
+	\addcontentsxms{\PotSistTresFils}
+    Es tracta de trobar la potència $\cmplx{S}$ consumida per una càrrega
+    trifàsica equilibrada, connectada en estrella a un sistema de tensions
+    d'alimentació  de tres fils, també equilibrat.
+
+    La tensió fase-neutre
+    té un valor de \qty{220}{V} i cadascuna de les tres  impedàncies
+    que formen l'estrella té un valor de $\cmplx{Z}=\complexqty{22:45}{\ohm}$.
+     S'utilitzaran totes les equacions que
+    siguin possibles, d'entre les vistes en aquest darrer apartat.
+
+    Prenent com a referència d'angles la tensió
+    $\cmplx{U}\ped{BC}$, obtenim, en primer lloc, els fasors de
+    les diferents tensions necessàries per resoldre el nostre
+    problema:
+
+    \hfill
+    \begin{minipage}[b]{7.5cm}
+        \input{Imatges/Cap-Fonaments-Potencia-Exemple.pdf_tex}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b][5.7cm][t]{3.8cm}
+    \begin{align*}
+        \cmplx{U}\ped{AN} &= \complexqty{220:90}{V} \\[1ex]
+        \cmplx{U}\ped{BN} &= \complexqty{220:-30}{V} \\[1ex]
+        \cmplx{U}\ped{CN} &= \complexqty{220:210}{V} \\[1ex]
+        \cmplx{U}\ped{AC} &= \sqrt{3}\times \complexqty{220:60}{V} \\[1ex]
+        \cmplx{U}\ped{BC} &= \sqrt{3}\times \complexqty{220:0}{V}
+    \end{align*}
+    \end{minipage}
+    \hfill{}
+    
+	El circuit elèctric descrit en aquest exemple  correspon a
+	l'esquema de la dreta de la figura \vref{pic:pot_comp_trif}. En
+	aquest cas en particular, en ser equilibrada la càrrega i el
+	sistema de tensions d'alimentació, el punt N d'unió de  les tres impedàncies coincideix amb el punt neutre del sistema de tensions.
+
+    Els corrents $\cmplx{I}\ped{A}$, $\cmplx{I}\ped{B}$ i $\cmplx{I}\ped{C}$ que
+    circulen  per les tres fases són:
+    \begin{align*}
+        \cmplx{I}\ped{A} &=\frac{\cmplx{U}\ped{AN}}{\cmplx{Z}} =
+        \frac{\complexqty{220:90}{V}}{\complexqty{22:45}{\ohm}} =
+        \complexqty{10:45}{A}\\[1mm]
+        \cmplx{I}\ped{B} &=\frac{\cmplx{U}\ped{BN}}{\cmplx{Z}} =
+        \frac{\complexqty{220:-30}{V}}{\complexqty{22:45}{\ohm}} =
+        \complexqty{10:-75}{A}\\[1mm]
+        \cmplx{I}\ped{C} &=\frac{\cmplx{U}\ped{CN}}{\cmplx{Z}} =
+        \frac{\complexqty{220:210}{V}}{\complexqty{22:45}{\ohm}} =
+        \complexqty{10:165}{A}
+    \end{align*}
+
+
+    Per començar  utilitzarem l'equació \eqref{eq:s_3f_eq}, ja que tenim
+    un sistema equilibrat tant pel que fa a les tensions com pel que fa a la càrrega:
+    \[
+    \cmplx{S} = 3\,\cmplx{U}\ped{AN} \,\cmplx{I}\ped{A}^* =
+    3\times \complexqty{220:90}{V} \times
+    \complexqty{10:-45}{A} = \complexqty{6600:45}{VA}
+    \]
+
+    A continuació  utilitzarem l'equació \eqref{eq:s_3f_3fils}, ja que tenim
+    un sistema d'alimentació de tres fils:
+    \[
+    \cmplx{S} = \cmplx{U}\ped{AC} \,\cmplx{I}\ped{A}^*
+     +  \cmplx{U}\ped{BC} \,\cmplx{I}\ped{B}^* =
+    \sqrt{3}\times \complexqty{220:60}{V} \times
+    \complexqty{10:-45}{A} + \sqrt{3}\times \complexqty{220:0}{V}
+    \times \complexqty{10:75}{A}  = \complexqty{6600:45}{VA}
+    \]
+
+     Finalment,  utilitzarem l'equació \eqref{eq:s_3f}, ja que
+     sempre és aplicable:
+     \[\begin{split}
+     \cmplx{S} &=  \cmplx{U}\ped{AN} \,\cmplx{I}\ped{A}^* +
+     \cmplx{U}\ped{BN} \,\cmplx{I}\ped{B}^* +  \cmplx{U}\ped{CN}\,
+     \cmplx{I}\ped{C}^* \\
+     &= \complexqty{220:90}{V}
+     \times \complexqty{10:-45}{A} + \complexqty{220:-30}{V} \times \complexqty{10:75}{A}
+     + \complexqty{220:210}{V} \times \complexqty{10:-165}{A} = \complexqty{6600:45}{VA}
+     \end{split} \]
+
+    Per acabar, veurem que també es pot resoldre aquest exemple
+    sense calcular els corrents; si utilitzem alhora les
+    equacions \eqref{eq:s_3f_eq} i \eqref{eq:s_mono1}, tenim:
+    \[
+    \cmplx{S} = 3\,\cmplx{U}\ped{AN} \,\cmplx{I}\ped{A}^* =
+    3\,\cmplx{U}\ped{AN}\frac{\cmplx{U}\ped{AN}^*}{\cmplx{Z}^*} =
+    3\, \frac{|\cmplx{U}\ped{AN}|^2}{\cmplx{Z}^*} =
+    3 \times \frac{(\qty{220}{V})^2}{\complexqty{22:-45}{\ohm}} =
+    \complexqty{6600:45}{VA}
+    \]
+
+    Com era d'esperar, el resultat obtingut en tots els casos
+    és idèntic.
+
+    A partir del valor de la potència aparent $\cmplx{S}$, calculem per acabar les potències activa i reactiva:
+    \begin{align*}
+        P &= \Re\cmplx{S} = \Re(\complexqty{6600:45}{VA}) = \qty{4666,90}{W}\\[1mm]
+        Q &= \Im\cmplx{S} = \Im(\complexqty{6600:45}{VA}) = \qty{4666,90}{var}
+    \end{align*}
+
+\end{exemple}
+
+\subsection{Mesura de la potència}\index{potència complexa!mesura}
+
+La potència activa es mesura amb els aparells anomenats wattímetres,
+i la potència reactiva amb els aparells anomenats varímetres.
+
+Aquests aparells tenen dues bobines de mesura, una de voltimètrica,
+la qual es connecta tal com es faria amb un voltímetre, i una altra
+d'amperimètrica, la qual es connecta tal com es faria amb un
+amperímetre; així doncs, els wattímetres i els varímetres tenen
+quatre terminals de connexió.
+
+La connexió d'aquests aparells a un circuit ve determinada pels dos terminals
+anomenats homòlegs; un d'aquests terminals pertany a la bobina
+voltimètrica i l'altre a l'amperimètrica. Aquests dos terminals s'identifiquen mitjançant un punt. La connexió
+ha de fer-se de tal manera que el corrent que va des de
+l'alimentació cap a la càrrega entri al wattímetre pel terminal de
+la bobina amperimètrica marcat amb el punt, i la tensió corresponent
+a aquest corrent, vagi del terminal de la bobina voltimètrica marcat
+amb el punt, a l'altre; el mateix és aplicable al
+varímetre. En la figura \vref{pic:watt_var_mono} es pot veure la connexió d'un wattímetre i d'un varímetre en un circuit monofàsic.
+
+
+\begin{center}
+    \input{Imatges/Cap-Fonaments-Mesura-Potencia-Monof.pdf_tex}
+    \captionof{figure}{Mesura de la potència en un circuit  monofàsic}
+    \label{pic:watt_var_mono}
+\end{center}
+
+Les potències activa i reactiva s'obtenen de les mesures dels dos
+aparells:
+\begin{equation}
+    P = \textsf{W} \qquad\qquad Q = \textsf{var}
+\end{equation}
+
+En la figura \vref{pic:watt_var_4f} es pot veure la connexió d'uns
+wattímetres i d'uns varímetres en un circuit trifàsic de quatre fils,
+equilibrat o desequilibrat.
+
+\begin{center}
+    \input{Imatges/Cap-Fonaments-Mesura-Potencia-Trif-4f.pdf_tex}
+    \captionof{figure}{Mesura de la potència en un circuit  trifàsic de quatre fils}
+    \label{pic:watt_var_4f}
+\end{center}
+
+Les potències activa i reactiva trifàsiques s'obtenen de les mesures
+dels sis aparells:
+\begin{equation}
+    P\ped{3F} = \textsf{W1} +  \textsf{W2} + \textsf{W3}
+    \qquad\qquad Q\ped{3F} = \textsf{var1} +  \textsf{var2} + \textsf{var3}
+\end{equation}
+
+En la figura \vref{pic:watt_var_3f} es pot veure la connexió d'uns
+wattímetres i d'uns varímetres en un circuit trifàsic de tres fils,
+equilibrat o desequilibrat (connexió Aron).\index{connexió Aron}
+
+\begin{center}
+\centering
+    \input{Imatges/Cap-Fonaments-Mesura-Potencia-Trif-3f.pdf_tex}
+    \captionof{figure}{Mesura de la potència en un circuit  trifàsic de tres fils}
+    \label{pic:watt_var_3f}
+\end{center}
+
+Les potències activa i reactiva trifàsiques s'obtenen de les mesures
+dels quatre aparells:
+\begin{equation}
+    P\ped{3F} = \textsf{W1} +  \textsf{W2}
+    \qquad\qquad Q\ped{3F} = \textsf{var1} +  \textsf{var2}
+\end{equation}
+
+
+
+\section{Circuits R-L-C}
+
+
+\subsection{Circuit R-C --- Càrrega en corrent continu}\label{sec:RC-carrega}\index{circuit R-C!càrrega en corrent continu}
+
+En la figura \vref{pic:RC_serie_carrega} es representa un circuit R-C sèrie que comença a carregar-se a l'instant $t=0$, amb la condició inicial: $u\ped{C}(0) = 0$, i la constant de temps: $\tau = R C$.
+\begin{center}
+    \input{Imatges/Cap-Fonaments-RC-Serie-Carrega.pdf_tex}
+    \captionof{figure}{Circuit R-C --- Càrrega en corrent continu}
+    \label{pic:RC_serie_carrega}
+\end{center}
+
+Les tensions i corrents d'aquest circuit són:
+
+\hfill
+\begin{minipage}[b]{9cm}
+    \input{Imatges/Cap-Fonaments-RC-Serie-Carrega-G1.pdf_tex}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{6cm}
+    \begin{align}
+        i(t) &= \frac{E}{R}\,e^{-t/\tau}\label{eq:RC-carrega} \\[3mm]
+        u\ped{C}(t) &= E  - E\, e^{-t/\tau}  \\[3mm]
+        u\ped{R}(t) &= E\,e^{-t/\tau}
+    \end{align}
+\end{minipage}
+
+\vspace{5mm}
+En el cas que a l'instant $t=0$ el condensador  estigui carregat a una tensió inicial: $u\ped{C}(0) = U$, les tensions i corrents d'aquest circuit són:
+
+\hfill
+\begin{minipage}[b]{9cm}
+    \input{Imatges/Cap-Fonaments-RC-Serie-Carrega-G2.pdf_tex}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{6cm}
+    \begin{align}
+        i(t) &= \frac{E-U}{R}\,e^{-t/\tau} \\[3mm]
+        u\ped{C}(t) &= E  - (E-U) \,e^{-t/\tau}  \\[3mm]
+        u\ped{R}(t) &= (E-U)\,e^{-t/\tau}
+    \end{align}
+\end{minipage}
+
+
+\subsection{Circuit R-C --- Descàrrega en corrent continu}\label{sec:RC-descarrega}\index{circuit R-C!descàrrega en corrent continu}
+
+En la figura \vref{pic:RC_serie_descarrega} es representa un circuit R-C sèrie que comença a descarregar-se a l'instant $t=0$, amb la condició inicial: $u\ped{C}(0) = U$, i la constant de temps: $\tau = R C$.
+\begin{center}
+    \input{Imatges/Cap-Fonaments-RC-Serie-Descarrega.pdf_tex}
+    \captionof{figure}{Circuit R-C --- Descàrrega en corrent continu}
+    \label{pic:RC_serie_descarrega}
+\end{center}
+
+Les tensions i corrents d'aquest circuit són iguals a les tres últimes de l'apartat anterior, amb $E=0$:
+
+\hfill
+\begin{minipage}[b]{9cm}
+    \input{Imatges/Cap-Fonaments-RC-Serie-Descarrega-G.pdf_tex}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{6cm}
+    \begin{align}
+        i(t) &= - \frac{U}{R}\,e^{-t/\tau} \\[3mm]
+        u\ped{C}(t) &= U\,e^{-t/\tau} \\[3mm]
+        u\ped{R}(t) &= - U\,e^{-t/\tau}
+    \end{align}
+\end{minipage}
+
+
+\subsection{Circuit R-L --- Càrrega en corrent continu}\label{sec:RL-carrega}\index{circuit R-L!càrrega en corrent continu}
+
+En la figura \vref{pic:RL_serie_carrega} es representa un circuit R-L sèrie que comença a carregar-se a l'instant $t=0$, amb la condició inicial: $i(0) = 0$, i la constant de temps: $\tau = L/R$.
+\begin{center}
+    \input{Imatges/Cap-Fonaments-RL-Serie-Carrega.pdf_tex}
+    \captionof{figure}{Circuit R-L --- Càrrega en corrent continu}
+    \label{pic:RL_serie_carrega}
+\end{center}
+
+Les tensions i corrents d'aquest circuit són:
+
+\hfill
+\begin{minipage}[b]{9cm}
+    \input{Imatges/Cap-Fonaments-RL-Serie-Carrega-G1.pdf_tex}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{6cm}
+    \begin{align}
+        i(t) &= \frac{E}{R}  - \frac{E}{R} \,e^{-t/\tau}\label{eq:RL-i-carrega} \\[3mm]
+        u\ped{L}(t) &= E\,e^{-t/\tau}\label{eq:RL-ul-carrega} \\[3mm]
+        u\ped{R}(t) &= E - E\,e^{-t/\tau}
+    \end{align}
+\end{minipage}
+
+\vspace{5mm}
+En el cas que a l'instant $t=0$ circuli per la inductància un corrent inicial: $i(0) = I$, les tensions i corrents d'aquest circuit són:
+
+\hfill
+\begin{minipage}[b]{9cm}
+    \input{Imatges/Cap-Fonaments-RL-Serie-Carrega-G2.pdf_tex}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{6cm}
+    \begin{align}
+        i(t) &= \frac{E}{R}  - \left(\frac{E}{R}-I\right) \,e^{-t/\tau}\label{eq:RL-i-carrega-ini} \\[3mm]
+        u\ped{L}(t) &= (E- R I)\,e^{-t/\tau}\label{eq:RL-ul-carrega-ini} \\[3mm]
+        u\ped{R}(t) &= E - (E-R I)\,e^{-t/\tau}
+    \end{align}
+\end{minipage}
+
+
+\subsection{Circuit R-L --- Descàrrega en corrent continu}\label{sec:RL-descarrega}\index{circuit R-L!descàrrega en corrent continu}
+
+En la figura \vref{pic:RL_serie_descarrega} es representa un circuit R-L sèrie que comença a descarregar-se a l'instant $t=0$, amb la condició inicial: $i(0) = I$, i la constant de temps: $\tau = L/R$.
+\begin{center}
+    \input{Imatges/Cap-Fonaments-RL-Serie-Descarrega.pdf_tex}
+    \captionof{figure}{Circuit R-L --- Descàrrega en corrent continu}
+    \label{pic:RL_serie_descarrega}
+\end{center}
+
+
+Les tensions i corrents d'aquest circuit són iguals a les tres últimes de l'apartat anterior, amb $E=0$:
+
+\hfill
+\begin{minipage}[b]{9cm}
+    \input{Imatges/Cap-Fonaments-RL-Serie-Descarrega-G.pdf_tex}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{6cm}
+    \begin{align}
+        i(t) &= I\,e^{-t/\tau} \label{eq:RL-i-descarrega}\\[3mm]
+        u\ped{L}(t) &= - R I\,e^{-t/\tau}\label{eq:RL-ul-descarrega} \\[3mm]
+        u\ped{R}(t) &= R I\,e^{-t/\tau}
+    \end{align}
+\end{minipage}
+
+
+
+\begin{exemple}[\CarDescRL{} \hyperlink{exemple:CarDescRL}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:CarDescRL}
+	\addcontentsxms{\CarDescRL}	
+    El circuit  següent té un commutador $\mathscr{M}$ que a l'instant $t=0$ bascula cap a la posició A; a continuació, a l'instant $t=\qty{20}{ms}$ el commutador bascula cap a la posició B; finalment, a  l'instant $t=\qty{40}{ms}$ el commutador torna a  bascular cap a la posició A i s'hi queda.     Es tracta de trobar les equacions del corrent $i(t)$ i la tensió $u(t)$ en la inductància.
+    \vspace{-2mm}
+   	\begin{center}
+   	\input{Imatges/Cap-Fonaments-RL-Serie-Exemple.pdf_tex}
+   \end{center}
+	 \vspace{-2mm}
+    En l'instant $t=0$, amb el commutador $\mathscr{M}$ en la posició A, tenim un circuit R-L amb una constant de temps $\tau_1$ de valor:
+    \[
+        \tau_1 = \frac{\qty{60}{mH}}{\qty{2}{\ohm}+\qty{4}{\ohm}} = \qty{10}{ms}
+    \]
+
+    El corrent $i_1(t)$ i la tensió $u_1(t)$ en la inductància es calculen aplicant les equacions \eqref{eq:RL-i-carrega} i \eqref{eq:RL-ul-carrega}:
+    \[
+        i_1(t) = \frac{12}{6} - \frac{12}{6}\,e^{-t/0,01} \qquad
+        u_1(t) = 12\,e^{-t/0,01}
+    \]
+
+    En l'instant $t=\qty{20}{ms}$, el corrent $I_1$ que circula pel circuit val:
+    \[
+        I_1 = i_1(\num{0,02}) = \frac{12}{6} - \frac{12}{6}\,e^{-0,02/0,01} = \qty{1,7293}{A}
+    \]
+
+    En aquest mateix instant  el commutador $\mathscr{M}$ passa a la posició B, formant-se un circuit R-L amb una constant de temps $\tau_2$ de valor:
+    \[
+        \tau_2 = \frac{\qty{60}{mH}}{\qty{4}{\ohm}} = \qty{15}{ms}
+    \]
+
+    El corrent $i_2(t)$ i la tensió $u_2(t)$ en la inductància es calculen ara aplicant les equacions \eqref{eq:RL-i-descarrega} i \eqref{eq:RL-ul-descarrega}, tot  substituint «$t$» per «$t-\num{0,02}$»:
+    
+    \[
+        i_2(t) = \num{1,7293}\,e^{-(t-0,02)/0,015} \qquad
+        u_2(t) = -4\times\num{1,7293}\,e^{-(t-0,02)/0,015}
+    \]
+
+    En l'instant $t=\qty{40}{ms}$, el corrent $I_2$ que circula pel circuit val:
+    \[
+        I_2 = i_2(\num{0,04}) = \num{1,7293}\,e^{-(0,04-0,02)/0,015} = \qty{0,4558}{A}
+    \]
+
+    En aquest mateix instant  el commutador $\mathscr{M}$ torna a la posició A, formant-se de nou el circuit R-L original amb una constant de temps $\tau_3$ de valor: $\tau_3 = \tau_1 = \qty{10}{ms}$.     El corrent $i_3(t)$ i la tensió $u_3(t)$ en la inductància es calculen ara aplicant les equacions \eqref{eq:RL-i-carrega-ini} i \eqref{eq:RL-ul-carrega-ini}, tot substituint «$t$» per «$t-\num{0,04}$»:
+
+    \[
+        i_3(t) = \frac{12}{6} - \left(\frac{12}{6}-\num{0,4558}\right) \,e^{-(t-0,04)/0,01} \qquad
+        u_3(t) = (12-6\times\num{0,4558}) \,e^{-(t-0,04)/0,01}
+    \]
+
+    Finalment,  expressem el corrent $i(t)$  i la tensió $u(t)$ com:
+
+    \[
+        i(t) =
+        \begin{cases}
+            i_1(t), &  \phantom{0}\qty{0}{ms} \leq t < \qty{20}{ms} \\
+            i_2(t), &  \qty{20}{ms} \leq t < \qty{40}{ms} \\
+            i_3(t), &  \hspace{1.43cm}t \geq \qty{40}{ms}
+        \end{cases}
+        \qquad\qquad
+        u(t) =
+        \begin{cases}
+            u_1(t), &  \phantom{0}\qty{0}{ms} \leq t < \qty{20}{ms} \\
+            u_2(t), &  \qty{20}{ms} \leq t < \qty{40}{ms} \\
+            u_3(t), &  \hspace{1.43cm}t \geq \qty{40}{ms}
+        \end{cases}
+    \]
+
+    Dibuixem ara aquestes dues funcions  $i(t)$ i $u(t)$.
+
+    \begin{center}
+      \input{Imatges/Cap-Fonaments-RL-Carrega-Descarrega.tex}
+    \end{center}
+
+    Per acabar, dibuixarem la mateixa funció $i(t)$ utilitzant la calculadora \textsf{HP Prime}.
+    \index{HP Prime@\textsf{HP Prime}!exemples} Els passos a seguir són els següents:
+    \begin{dingautolist}{'312}
+        \item En primer lloc, premem la tecla \includegraphics{HPPrime-Apps.pdf} i seleccionem l'aplicació \textsfs{Function}.
+
+             \includegraphics{Cap-Fonaments-RL-Carrega-Descarrega-HPP1.png}
+
+        \item Tot seguit entrem en els camps \textsfs{F1(X)}, \textsfs{F2(X)} i \textsfs{F3(X)} les equacions de $i_1(t)$, $i_2(t)$ i $i_3(t)$; en lloc dels valors \num{1,7293} i  \num{0,4558}, utilitzarem \textsfs{F1(0.02)} i \textsfs{F2(0.04)} respectivament, per tal que la calculadora els calculi automàticament. Com a variable utilitzarem \textsfs{X} en lloc de \textsfs{t}.
+
+            En el camp \textsfs{F4(X)} entrem la funció $i(t)$, amb l'ajut de la funció  \textsfs{Heaviside(X)}. Escriurem:\break \textsfs{F1(X) * (Heaviside(X--0)--Heaviside(X--0.02)) + F2(X) * (Heaviside(X--0.02)--Heaviside(X--0.04))+\break F3(X) * \textsf{} Heaviside(X--0.04)}.
+
+            Finalment, deixem marcat el camp \textsfs{F4(X)} i desmarquem els camps \textsfs{F1(X)}, \textsfs{F2(X)} i \textsfs{F3(X)}.
+
+            \includegraphics{Cap-Fonaments-RL-Carrega-Descarrega-HPP2.png}
+
+            Una altra manera de crear el camp \textsfs{F4(X)}, és utilitzar la funció \textsfs{IFTE(Cond,ST,SF)}; aquesta funció avalua l'expressió \textsfs{Cond}, si el resultat   és cert, executa \textsfs{ST} i si és fals  executa \textsfs{SF}. Podem escriure, per tant: \textsfs{IFTE(X<0.02,F1(X),IFTE(X<0.04,F2(X),F3(X)))}.
+
+            \includegraphics{Cap-Fonaments-RL-Carrega-Descarrega-HPP3.png}
+
+        \item Ara ja podem dibuixar la funció $i(t)$.
+
+            Comencem ajustant els paràmetres de la gràfica prement les tecles \includegraphics{HPPrime-Shift.pdf} \includegraphics{HPPrime-Plot.pdf}; fixem els dos valors de \textsfs{X Rng} a \textsfs{0} i \textsfs{0.1} respectivament, els dos valors de \textsfs{Y Rng} a \textsfs{0} i \textsfs{2} respectivament, el valor de \textsfs{X Tick} a \textsfs{0.01}, i el valor de \textsfs{Y Tick} a \textsfs{0.25}.
+
+            \includegraphics{Cap-Fonaments-RL-Carrega-Descarrega-HPP4.png}
+
+        \item A continuació premem la tecla \includegraphics{HPPrime-Plot.pdf} i la calculadora dibuixa la gràfica.
+
+            \includegraphics{Cap-Fonaments-RL-Carrega-Descarrega-HPP5.png}
+    \end{dingautolist}
+\end{exemple}
+
+
+\subsection {Circuit R-L --- Curtcircuit en corrent altern}\index{circuit R-L!curtcircuit en corrent altern}\label{sec:ccRL}
+
+Comencem resolent analíticament el circuit R-L de la figura \vref{pic:RL_serie_curtcircuit}, el qual quedarà sotmès a un curtcircuit en tancar l'interruptor a l'instant $t=0$, amb la condició inicial: $i(0) = 0$; $u(t)$ és una tensió sinusoidal, on $U$ és el valor eficaç, $\phi$ és l'angle inicial, i $\omega = 2 \piup f$.
+
+Aquest circuit pot representar directament un circuit monofàsic on es produeix un curtcircuit, però també pot representar en el cas d'un curtcircuit trifàsic,  el circuit equivalent per fase d'una xarxa trifàsica, on $R$ i $L$ és la impedància equivalent de la xarxa, vista des del punt del curtcircuit, i $u(t)$ és la tensió en el punt del curtcircuit en l'instant previ a l'inici del curtcircuit; $u(t)$,  $R$ i $L$ representen en aquest cas, el circuit equivalent Thévenin de la xarxa en el punt del curtcircuit.
+
+\begin{center}
+    \input{Imatges/Cap-Fonaments-RL-Serie-Curtcircuit.pdf_tex}
+    \captionof{figure}{Circuit R-L --- Curtcircuit en corrent altern}
+    \label{pic:RL_serie_curtcircuit}
+\end{center}
+
+L'equació diferencial que lliga les variables d'aquest circuit és:
+\begin{equation}
+    u(t) = R i(t) + L \deriv{i(t)}{t}
+\end{equation}
+
+Resolent aquesta equació diferencial amb el valor inicial $i(0)=0$, trobem que el corrent de curtcircuit $i(t)$  que es produeix  és:
+\begin{equation}
+    i(t) = i\ped{ac}(t) + i\ped{dc}(t)
+    \label{eq:RL_serie_curtcircuit_icc}
+\end{equation}
+
+amb:
+\begin{subequations}
+\begin{align}
+    i\ped{ac}(t) &= \sqrt{2} I \sin\left(\omega t + \phi - \arctan\frac{\omega L}{R}\right) \label{eq:RL_serie_curtcircuit_iac}\\[3mm]
+    i\ped{dc}(t) &= -\,\sqrt{2} I\sin\left(\phi - \arctan\frac{\omega L}{R}\right) e^{-t R/L}\label{eq:RL_serie_curtcircuit_idc}
+\end{align}
+\end{subequations}
+
+on $I$ és el valor eficaç de $i\ped{ac}(t)$; aquest valor també s'anomena valor eficaç simètric $I\ped{sim}$, i val:
+\begin{equation}
+    I = I\ped{sim} =\frac{U}{\sqrt{R^2+(\omega L)^2}}
+    \label{eq:RL_serie_curtcircuit_I}
+\end{equation}
+
+La component $i\ped{dc}(t)$ decreix amb el pas del temps fins a fer-se zero, i finalment només queda la component $i\ped{ac}(t)$. El valor màxim de $i(t)$, anomenat valor de pic asimètric $\hat{I}\ped{asim}$, es dona a prop de l'inici ($t\approx 0$), i depèn del valor que pren $i\ped{dc}(0)$;  per tant, depèn del valor de $\sin\left(\phi - \arctan\frac{\omega L}{R}\right)$, que apareix en l'equació \eqref{eq:RL_serie_curtcircuit_idc}. En circuits força inductius ($\omega L\gg R$), $\hat{I}\ped{asim}$ és màxim per a $\phi \approx 0$, i pren el valor teòric:
+\begin{equation}
+    \hat{I}\ped{asim} = i\ped{dc}(0) + \sqrt{2} I\ped{sim} \approx \sqrt{2} I\ped{sim} +\sqrt{2} I\ped{sim} =2 \sqrt{2} I\ped{sim}    \label{eq:I_asim_pic}
+\end{equation}
+
+
+En aquest mateix cas, també és màxim el valor eficaç inicial de $i(t)$, anomenat valor eficaç asimètric $I\ped{asim}$,  i pren el valor teòric:
+\begin{equation}
+    I\ped{asim} = \sqrt{i\ped{dc}^2(0) + I\ped{sim}^2} \approx \sqrt{\left(\sqrt{2}I\ped{sim}\right)^2 + I\ped{sim}^2} = \sqrt{3} I\ped{sim} \label{eq:I_asim_eff}
+\end{equation}
+
+Finalment, en aquest mateix cas la relació entre $\hat{I}\ped{asim}$ i $I\ped{asim}$,   pren el valor teòric:
+\begin{equation}
+    \hat{I}\ped{asim} = \frac{2\sqrt{2}}{\sqrt{3}} I\ped{asim} \approx
+    \num{1,633} I\ped{asim}
+    %\aprox
+\end{equation}
+
+Pel mateix raonament anterior, el valor mínim de $i(t)$ en circuits força inductius, s'aconsegueix per a $\phi \approx \pm\frac{\pi}{2}$. En Aquest cas $i\ped{dc}(t)$ es fa zero des de l'inici, i només queda la component alterna $i\ped{ac}(t)$.
+
+
+\begin{exemple}[\CurtcircuitRL{} \hyperlink{exemple:CurtcircuitRL}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:CurtcircuitRL}
+	\addcontentsxms{\CurtcircuitRL}		
+    Es tracta de calcular el corrent de curtcircuit que circula pel circuit de la figura \vref{pic:RL_serie_curtcircuit}, amb els valors següents: $U=\qty{400}{V}, f=\qty{50}{Hz}, \phi=\qty{0}{rad}, R=\qty{9e-4}{\ohm}, L=\qty{5e-5}{H}$.
+
+    Primer calculem els valors:
+    \begin{align*}
+    	\frac{R}{L} &= \frac{\qty{9e-4}{\ohm}}{\qty{5e-5}{H}} = \qty{18}{s^{-1}} \\[3mm]
+        \omega &= 2\pi f = 2\times\pi\times\qty{50}{Hz} = \qty{314,1593}{rad/s} \\[3mm]
+        \arctan\frac{\omega L}{R} &= \arctan\frac{\qty{314,1593}{rad/s}\times\qty{5e-5}{H}}{\qty{9e-4}{\ohm}} =
+        \qty{1,5136}{rad}\\[3mm]
+        \sin\left(\phi - \arctan\frac{\omega L}{R}\right) &= \sin(\qty{0}{rad} - \qty{1,5136}{rad})= \num{-0,9984}
+    \end{align*}
+
+
+    A continuació, utilitzant l'equació \eqref{eq:RL_serie_curtcircuit_I}, tenim:
+    \[
+        I= I\ped{sim} =\frac{\qty{400}{V}}{\sqrt{\left(\qty{9e-4}{\ohm}\right)^2+\left(\qty{314,1593}{rad/s}\times \qty{5e-5}{H}\right)^2}} =
+        \qty{25423,0955}{A}
+    \]
+
+      A partir d'aquests valors i de les equacions \eqref{eq:RL_serie_curtcircuit_icc}, \eqref{eq:RL_serie_curtcircuit_iac} i \eqref{eq:RL_serie_curtcircuit_idc}, tenim:
+    \begin{align*}
+        i\ped{ac}(t) &= \num{35953,6865}\sin(\num{314,1593}\,t-\num{1,5136}) \\[0.3cm]
+        i\ped{dc}(t) &= \num{35894,8169}\,e^{-18 t}\\[0.3cm]
+        i(t) &= \num{35953,6865}\sin(\num{314,1593}\,t-\num{1,5136}) + \num{35894,8169}\,e^{-18 t}
+    \end{align*}
+
+    Finalment, com que es compleix $\phi=0$ i $\omega L \,(\qty{157,2e-4}{\ohm}) \gg R\, (\qty{9e-4}{\ohm}) $, podem utilitzar les equacions \eqref{eq:I_asim_pic} i \eqref{eq:I_asim_eff}:
+    \begin{align*}
+        \hat{I}\ped{asim} &= 2 \sqrt{2} I\ped{sim}= 2 \times \sqrt{2} \times \qty{25423,0955}{A} = \qty{71,9}{kA}\\[0.3cm]
+        I\ped{asim} &= \sqrt{3} I\ped{sim}= \sqrt{3} \times \qty{25423,0955}{A} = \qty{44,0}{kA}
+    \end{align*}
+
+    Per acabar, representem les funcions $i\ped{dc}(t)$, $i\ped{ac}(t)$ i $i(t)$:
+    \begin{center}
+        \input{Imatges/Cap-Fonaments-RL-Serie-Curtcircuit-Exemple.tex}
+    \end{center}
+\end{exemple}
+
+
+Tal com s'ha dit anteriorment, el valor de $\hat{I}\ped{asim}$ donat per l'equació \eqref{eq:I_asim_pic}, en el cas de $\phi \approx 0$ i $\omega L\gg R$, és teòric. La norma CEI 60909-1 \textit{Short-circuit currents in three-phase a.c. systems ---  Factors for the calculation of short-circuit currents according to IEC 60909-0}\index{CEI!60909-1}, dona valors més exactes per a $\hat{I}\ped{asim}$, en el cas de $\phi \approx 0$, segons l'expressió següent:\index{CEI!60909-1}
+
+\begin{equation}
+    \hat{I}\ped{asim} = \kappa \sqrt{2} I\ped{sim} \label{eq:I_asim_CEI}
+\end{equation}
+
+on el factor $\kappa$ és definit per l'expressió:
+
+\begin{equation}
+    \kappa = 1{,}02 + 0{,}98 \,e^{-3\frac{R}{\omega L}}\label{eq:kappa_CEI}
+\end{equation}
+
+Quan es compleix $\omega L\gg R$, tenim $\kappa \approx 2$, i l'equació \eqref{eq:I_asim_CEI} dona el mateix valor que l'equació \eqref{eq:I_asim_pic}.
+
+En el cas de la xarxa de l'apartat anterior, la relació $\frac{R}{\omega L}$ és fàcil de  calcular, en canvi, en xarxes grans on hi ha moltes branques, els valors de $\frac{R}{\omega L}$ de cadascuna de les branques no coincideix en general amb el valor calculat en el punt del curtcircuit, utilitzant els valors $R$ i $\omega L$ de la xarxa equivalent en aquest punt. La mateixa norma CEI 60909-1 explica com cal procedir en aquests casos.
+
+
+\begin{exemple}[\CurtcircuitPicRL{} \hyperlink{exemple:CurtcircuitPicRL}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:CurtcircuitPicRL}
+	\addcontentsxms{\CurtcircuitPicRL}	
+    Es tracta de calcular el corrent de pic asimètric del corrent de curtcircuit de l'exemple \ref{ex:CurtcircuitRL} segons la norma CEI 60909-1.
+
+    El valor de curtcircuit eficaç simètric calculat a l'exemple \vref{ex:CurtcircuitRL} és: $I\ped{sim}= \qty{25,4}{kA}$.
+
+    Primer calculem $\kappa$ utilitzant l'equació \eqref{eq:kappa_CEI}:
+
+    \[
+    \kappa = \num{1,02} + \num{0,98} \,e^{-3\frac{\qty{9e-4}{\ohm}}{\qty{314,1593}{rad/s}\, \times\, \qty{5e-5}{H}}} = \num{1,8452}
+    \]
+
+     A continuació calculem $\hat{I}\ped{asim}$ utilitzant l'equació \eqref{eq:I_asim_CEI}:
+
+    \[
+    \hat{I}\ped{asim} = \num{1,8452} \times \sqrt{2} \times \qty{25,4}{kA} = \qty{66,3}{kA}
+    \]
+
+    Aquest valor és més a prop del real, tal com es pot veure en la gràfica de l'exemple  \ref{ex:CurtcircuitRL}, que el valor de  \qty{71,9}{kA} obtingut en aquell exemple.
+
+    Trobarem a continuació el valor exacte  del corrent de pic utilitzant la calculadora  \textsf{HP Prime}.
+    \index{HP Prime@\textsf{HP Prime}!exemples} Els passos a seguir són els següents:
+
+     \begin{dingautolist}{'312}
+
+        \item En primer lloc, premem la tecla \includegraphics{HPPrime-Apps.pdf} i seleccionem l'aplicació \textsfs{Function}.
+
+             \includegraphics{Cap-Fonaments-RL-Serie-Curtcircuit-HPP1.png}
+
+        \item Tot seguit entrem en els camps \textsfs{F1(X)} i \textsfs{F2(X)} les equacions de $i\ped{ac}(t)$ i $i\ped{dc}(t)$ que hem calculat en l'exemple \vref{ex:CurtcircuitRL}; com a variable utilitzarem \textsfs{X} en lloc de \textsfs{t}.
+
+            En el camp \textsfs{F3(X)} entrem \textsfs{F1(X)+F2(X)}.
+
+            Finalment, deixem marcat el camp \textsfs{F3(X)} i desmarquem els camps \textsfs{F1(X)} i \textsfs{F2(X)}. D'aquesta manera la calculadora només dibuixarà la funció total $i(t)$, i no les parcials $i\ped{ac}(t)$ i $i\ped{dc}(t)$.
+
+
+            \includegraphics{Cap-Fonaments-RL-Serie-Curtcircuit-HPP2.png}
+
+        \item Ara ja podem dibuixar la funció del corrent total de curtcircuit.
+
+            Comencem ajustant els paràmetres de la gràfica prement les tecles \includegraphics{HPPrime-Shift.pdf} \includegraphics{HPPrime-Plot.pdf}; fixem els dos valors de \textsfs{X Rng} a \textsfs{0} i \textsfs{0.1} respectivament, els dos valors de \textsfs{Y Rng} a \textsfs{--40000} i \textsfs{80000} respectivament, el valor de \textsfs{X Tick} a \textsfs{0.01}, i el valor de \textsfs{Y Tick} a \textsfs{10000}.
+
+            \includegraphics{Cap-Fonaments-RL-Serie-Curtcircuit-HPP3.png}
+            \break
+
+        \item A continuació premem la tecla \includegraphics{HPPrime-Plot.pdf} i la calculadora dibuixa la gràfica; cal verificar prèviament que la calculadora estigui en el mode angular «Radians», ja que en cas contrari el dibuix que obtindríem no seria correcte. El cursor queda situat automàticament al centre de la pantalla.
+
+            \includegraphics{Cap-Fonaments-RL-Serie-Curtcircuit-HPP4.png}
+
+        \item Premem ara el botó \hpbutton{Menu} i a continuació situem el cursor  a la vora del primer màxim de la funció.
+
+            \includegraphics{Cap-Fonaments-RL-Serie-Curtcircuit-HPP5.png}
+
+        \item Premem a continuació el botó \hpbutton{\phantom{x}Fcn\phantom{x}} i seleccionem la funció \textsfs{Extremum} del menú que apareix.
+
+            \includegraphics{Cap-Fonaments-RL-Serie-Curtcircuit-HPP6.png}
+
+        \item La calculadora ens dona immediatament el valor del punt màxim de la funció, a la part inferior de la pantalla.
+
+            \includegraphics{Cap-Fonaments-RL-Serie-Curtcircuit-HPP7.png}
+
+            El pic es troba doncs a: $t=\qty{9,6649}{ms}$, i té el valor:  $\hat{I}\ped{asim}=\qty{66075,4}{A}$.
+    \end{dingautolist}
+
+\end{exemple}
+
+
+\section{Resolució de xarxes mitjançant el mètode de les malles}\label{sec:metode-malles}
+\index{metode@mètode de les malles}
+
+
+Es presenta a continuació el mètode de les malles, que és molt utilitzat a l'hora de resoldre manualment xarxes de pocs nusos; té l'avantatge respecte d'altres mètodes de reduir el nombre d'equacions a resoldre. Utilitzarem com a exemple la xarxa de la figura \vref{pic:metode_malles}:
+
+\begin{center}
+    \input{Imatges/Cap-Fonaments-Malles.pdf_tex}
+    \captionof{figure}{Mètode de les malles} \label{pic:metode_malles}
+\end{center}
+
+En aquesta xarxa, les dues fonts de tensió $\cmplx{E}_1$ i $\cmplx{E}_2$ i les sis impedàncies $\cmplx{Z}_1$, $\cmplx{Z}_2$, $\cmplx{Z}_3$, $\cmplx{Z}_4$, $\cmplx{Z}_5$ i $\cmplx{Z}_6$  són valors coneguts, i les incògnites són els sis corrents $\cmplx{I}_1$, $\cmplx{I}_2$, $\cmplx{I}_3$, $\cmplx{I}_4$, $\cmplx{I}_5$ i $\cmplx{I}_6$.
+
+El mètode tradicional utilitzat per  resoldre aquesta xarxa, consisteix a crear un sistema  de sis equacions lineals amb sis incògnites ---les intensitats--- utilitzant  la 1a i 2a lleis de Kirchhoff, i resoldre'l.
+
+El mètode de les malles utilitza els corrents ficticis de malla $\cmplx{I}\ped{M_1}$, $\cmplx{I}\ped{M_2}$ i $\cmplx{I}\ped{M_3}$, els quals ens permeten reduir el nombre d'equacions lineals del  sistema que haurem de resoldre.
+
+
+
+En primer lloc, cal definir què entenem per una malla: una malla és un camí tancat que no conté dins seu cap altre camí tancat. En aquest sentit, tenim en la xarxa de la figura \vref{pic:metode_malles} tres malles: $\cmplx{Z}_1$, $\cmplx{Z}_3$ i $\cmplx{E}_1$; $\cmplx{Z}_2$, $\cmplx{Z}_5$, $\cmplx{Z}_4$ i $\cmplx{Z}_3$; i $\cmplx{Z}_5$, $\cmplx{Z}_6$ i $\cmplx{E}_2$.
+
+Les relacions entre els corrents de cadascuna de les branques de la xarxa i els corrents de malla són:
+\begin{subequations}
+\begin{align}
+    \cmplx{I}_1 &= \cmplx{I}\ped{M_1} \label{eq:malles1} \\[0.5ex]
+    \cmplx{I}_2 &= -\cmplx{I}\ped{M_2} \\[0.5ex]
+    \cmplx{I}_3 &= \cmplx{I}\ped{M_1}-\cmplx{I}\ped{M_2} \\[0.5ex]
+    \cmplx{I}_4 &= \cmplx{I}\ped{M_2} \\[0.5ex]
+    \cmplx{I}_5 &= \cmplx{I}\ped{M_2}-\cmplx{I}\ped{M_3} \\[0.5ex]
+    \cmplx{I}_6 &= -\cmplx{I}\ped{M_3} \label{eq:malles2}
+\end{align}
+\end{subequations}
+
+Per resoldre la xarxa de la figura \vref{pic:metode_malles}, hem d'aplicar la 2a llei de Kirchhoff  a cadascuna de les tres malles; el resultat ens proporcionarà el següent sistema d'equacions lineals de tres equacions amb tres incògnites ($\cmplx{I}\ped{M_1}$, $\cmplx{I}\ped{M_2}$ i $\cmplx{I}\ped{M_3}$):
+\begin{subequations}
+\begin{align}
+    \cmplx{E}_1 &= \cmplx{Z}_1 \cmplx{I}\ped{M_1} + \cmplx{Z}_3 (\cmplx{I}\ped{M_1}-\cmplx{I}\ped{M_2}) \\[0.5ex]
+    0 &= \cmplx{Z}_2 \cmplx{I}\ped{M_2} + \cmplx{Z}_5(\cmplx{I}\ped{M_2}-\cmplx{I}\ped{M_3}) + \cmplx{Z}_4 \cmplx{I}\ped{M_2} + \cmplx{Z}_3(\cmplx{I}\ped{M_2}-\cmplx{I}\ped{M_1}) \\[0.5ex]
+    -\cmplx{E}_2 &=  \cmplx{Z}_5 (\cmplx{I}\ped{M_3}-\cmplx{I}\ped{M_2})+\cmplx{Z}_6 \cmplx{I}\ped{M_3}
+\end{align}
+\end{subequations}
+
+Agrupant termes ens queda:
+\begin{subequations}
+\begin{align}
+    (\cmplx{Z}_1 + \cmplx{Z}_3) \cmplx{I}\ped{M_1} - \cmplx{Z}_3 \cmplx{I}\ped{M_2} &= \cmplx{E}_1 \\[0.5ex]
+    -\cmplx{Z}_3 \cmplx{I}\ped{M_1} + (\cmplx{Z}_2 + \cmplx{Z}_3+ \cmplx{Z}_4+ \cmplx{Z}_5)\cmplx{I}\ped{M_2} - \cmplx{Z}_5 \cmplx{I}\ped{M_3} &= 0 \\[0.5ex]
+     -\cmplx{Z}_5 \cmplx{I}\ped{M_2} +  (\cmplx{Z}_5 + \cmplx{Z}_6) \cmplx{I}\ped{M_3} &= -\cmplx{E}_2
+\end{align}
+\end{subequations}
+
+o en forma matricial:
+\begin{equation}\label{eq:malles-mat}
+  \begin{bmatrix}\begin{array}{ccc} 
+      \cmplx{Z}_1 + \cmplx{Z}_3 & -\cmplx{Z}_3 & 0 \\
+      -\cmplx{Z}_3 & \cmplx{Z}_2 + \cmplx{Z}_3+ \cmplx{Z}_4+ \cmplx{Z}_5 & -\cmplx{Z}_5 \\
+      0 & -\cmplx{Z}_5 & \cmplx{Z}_5 + \cmplx{Z}_6 
+  \end{array}\end{bmatrix}
+  \cdot
+  \begin{bmatrix}\begin{array}{c} 
+        \cmplx{I}\ped{M_1} \\
+        \cmplx{I}\ped{M_2} \\
+        \cmplx{I}\ped{M_3} 
+  \end{array}\end{bmatrix}
+  =
+  \begin{bmatrix}\begin{array}{c} 
+        \cmplx{E}_1 \\
+        0 \\
+        -\cmplx{E}_2 
+   \end{array}\end{bmatrix}
+\end{equation}
+
+El que queda ara per fer és resoldre aquest sistema d'equacions lineals per tal de trobar $\cmplx{I}\ped{M_1}$, $\cmplx{I}\ped{M_2}$ i $\cmplx{I}\ped{M_3}$, i a continuació utilitzar les equacions \eqref{eq:malles1} a \eqref{eq:malles2} per trobar les intensitats de cadascuna de les branques.
+
+L'equació \eqref{eq:malles-mat} es pot escriure de forma matricial com:
+\begin{equation}
+  \mcmplx{Z} \cdot\mcmplx{I}\ped{M} = \mcmplx{E}
+\end{equation}
+
+on  $\mcmplx{Z}$ és la matriu d'impedàncies, $\mcmplx{E}$ és el vector de fonts de tensió, i $\mcmplx{I}\ped{M}$ és el vector de les intensitats de malla.
+
+ Quan no hi ha acoblaments magnètics entre branques, la matriu d'impedàncies $\mcmplx{Z}$ i el vector de fonts de tensió $\mcmplx{E}$ poden formar-se de manera directa seguint els passos següents:
+\begin{dingautolist}{202}
+   \item S'assigna a cada malla un número començant per l'1.
+
+          En el nostre exemple les malles s'han numerat 1, 2 i 3, d'esquerra a dreta.
+   \item Es dibuixa per a  cada malla el seu corrent de malla, tenint en compte que tots tinguin el mateix sentit de gir.
+
+       En el nostre exemple tots els corrents giren en sentit horari.
+   \item Cada element de la diagonal de la matriu d'impedàncies és igual a la suma de les impedàncies que formen cada malla.
+
+       En el nostre exemple tenim: $\mcmplx{Z}(1,1)=\cmplx{Z}_1 + \cmplx{Z}_3$, $\mcmplx{Z}(2,2)=\cmplx{Z}_2 + \cmplx{Z}_3+ \cmplx{Z}_4+ \cmplx{Z}_5$, i $\mcmplx{Z}(3,3)=\cmplx{Z}_5 + \cmplx{Z}_6$.
+   \item Cada element de fora de la diagonal de la matriu d'impedàncies és igual a la suma canviada de signe de les impedàncies en comú a les dues malles corresponents.
+
+        En el nostre exemple les malles 1 i 2 tenen $\cmplx{Z}_3$ com a impedància en comú; per tant, tenim: $\mcmplx{Z}(1,2)=\mcmplx{Z}(2,1)= -\cmplx{Z}_3$. Les malles 2 i 3 tenen $\cmplx{Z}_5$ com a impedància en comú; en conseqüència,  tenim: $\mcmplx{Z}(2,3)=\mcmplx{Z}(3,2)= -\cmplx{Z}_5$. Les malles 1 i 3 no tenen cap impedància en comú;  per tant,  tenim: $\mcmplx{Z}(1,3)=\mcmplx{Z}(3,1)= 0$.
+    \item Cada element del vector de fonts de tensió és igual a la suma de les fonts de tensió que formen part de cada malla; la contribució a la suma de cada font de tensió serà positiva o negativa, segons que la seva força electromotriu tingui el mateix sentit que el corrent de malla o que  tingui el sentit contrari.
+
+         En el nostre exemple $\cmplx{E}_1$ i $\cmplx{I}\ped{M1}$ tenen el mateix senti; per tant, tenim:   $\mcmplx{E}(1) = \cmplx{E}_1$. En canvi, $\cmplx{E}_2$ i $\cmplx{I}\ped{M3}$ tenen   sentits contraris; en conseqüència,   tenim:   $\mcmplx{E}(3) = -\cmplx{E}_2$. Com que la malla 2 no té cap font de tensió,  tenim:   $\mcmplx{E}(2) = 0$.
+\end{dingautolist}
+
+
+\begin{exemple}[\Malles{} \hyperlink{exemple:Malles}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:Malles}
+	\addcontentsxms{\Malles}	
+    Es tracta de trobar els sis corrents de la xarxa de la figura \vref{pic:metode_malles}, amb els valors numèrics: $\cmplx{E}_1=\qty{5}{V}$, $\cmplx{E}_2=\qty{2}{V}$, $\cmplx{Z}_1=\cmplx{Z}_2=\cmplx{Z}_3=\cmplx{Z}_4=\cmplx{Z}_5=\cmplx{Z}_6=\qty{1}{\ohm}$.
+
+    Atès que tots els valors són reals, prescindirem de la notació complexa. Posant valors numèrics a l'equació \eqref{eq:malles-mat}, tenim:
+
+    \[
+      \begin{bmatrix}\begin{array}{rrr} 
+          2 & -1 &  0 \\
+         -1 &  4 & -1 \\
+          0 &  -1 & 2 
+      \end{array}\end{bmatrix}\unit{\ohm}
+      \cdot
+      \begin{bmatrix}\begin{array}{c} 
+            I\ped{M_1} \\
+            I\ped{M_2} \\
+            I\ped{M_3} 
+      \end{array}\end{bmatrix}
+      =
+      \begin{bmatrix}\begin{array}{r} 
+            5 \\
+            0 \\
+            -2 
+      \end{array}\end{bmatrix}\unit{V}
+    \]
+
+    Resoldrem aquest sistema d'equacions lineals utilitzant la calculadora \textsf{HP Prime}.\index{HP Prime@\textsf{HP Prime}!exemples} Els passos a seguir són els següents:
+
+    \begin{dingautolist}{'312}
+     \item En primer lloc, premem la tecla \includegraphics{HPPrime-Apps.pdf} i seleccionem l'aplicació \textsfs{Linear Solver}.
+
+         \includegraphics{Cap-Fonaments-malles-HPP1.png}
+    \item A continuació només cal entrar els valors del sistema a resoldre, i la calculadora ens mostra directament la solució.
+
+         \includegraphics{Cap-Fonaments-malles-HPP2.png}
+    \end{dingautolist}
+
+    Així doncs, la solució és:
+    \begin{align*}
+        I\ped{M_1} &= \qty{2,75}{A} \\[0.5ex]
+        I\ped{M_2} &= \qty{0,5}{A} \\[0.5ex]
+        I\ped{M_3} &= \qty{-0,75}{A}
+    \end{align*}
+
+    Finalment, utilitzant les equacions \eqref{eq:malles1} a \eqref{eq:malles2} tenim:
+    \begin{align*}
+        I_1 &= \qty{2,75}{A} \\[0.5ex]
+        I_2 &= \qty{-0,5}{A} \\[0.5ex]
+        I_3 &= \qty{2,25}{A} \\[0.5ex]
+        I_4 &= \qty{0,5}{A} \\[0.5ex]
+        I_5 &=  \qty{1,25}{A} \\[0.5ex]
+        I_6 &= \qty{0,75}{A}
+    \end{align*}
+
+\end{exemple}
+
