@@ -1,0 +1,401 @@
+\documentclass[catalan,a4paper,twoside,11pt]{book}
+
+\pdfminorversion=7 % Crea un fitxer PDF v. 1.7
+\pdfsuppresswarningpagegroup=1 % Suprimeix els warnings PDF multiple page...
+
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage[final]{graphicx}
+\graphicspath{{Imatges/}}
+
+\usepackage{babel}
+\addto\captionscatalan{%
+	\renewcommand\contentsname{\sffamily Índex General}%
+	\renewcommand\listfigurename{\sffamily Índex de Figures}%
+	\renewcommand\listtablename{\sffamily Índex de Taules}%
+	\renewcommand\indexname{Índex Alfabètic}%
+}
+
+\usepackage{varioref}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\DeclareUnicodeCharacter{013F}{\L.}  % Ela geminada majúscula
+\DeclareUnicodeCharacter{0140}{\l.}  % Ela geminada minúscula
+\DeclareUnicodeCharacter{2114}{\rule[1.15ex]{1.5ex}{0.5pt}\hspace{-1.5ex}lb}  % lb amb una barra
+
+\usepackage{newpxtext}
+\usepackage[semibold ]{josefin}
+\usepackage{eulerpx}
+\DeclareMathSymbol{\hslash}{\mathord}{EulerRoman}{128} % Aquesta instrucció està comentada a eulerpx.sty
+\usepackage{pifont}       % Dingbats d'enumeracions
+\usepackage{fontawesome5} % Dingbats de correcte, incorrecte, interrogant, admiració, quadrat, items, carta, copyright i Python
+\renewcommand{\labelitemi}{\faCaretRight}  % Símbol pels items de 1r nivell
+\renewcommand{\labelitemii}{\faAngleRight} % Símbol pels items de 2n nivell
+
+\usepackage{listings} % Llistats de programes
+\makeatletter
+\AtBeginDocument{% Canvia l'amplada del camp numèric del l'index de llistats a 3em
+	\renewcommand\lstlistoflistings{\bgroup
+		\let\contentsname\lstlistlistingname
+		\def\l@lstlisting##1##2{\@dottedtocline{1}{1.5em}{3em}{##1}{##2}}
+		\let\lst@temp\@starttoc \def\@starttoc##1{\lst@temp{lol}}%
+		\tableofcontents \egroup}
+}
+\makeatother
+\renewcommand{\lstlistingname}{Llistat}
+\renewcommand{\lstlistlistingname}{\sffamily Índex de Llistats de  Programes}
+\lstset{
+	basicstyle=\footnotesize\ttfamily,
+	xleftmargin=4mm,
+	xrightmargin=0mm,
+	belowskip=5pt,
+	columns=fixed,
+	breaklines=true,
+	keywordstyle=\bfseries\textcolor[rgb]{0.0,0.0,0.75},
+	stringstyle=\ttfamily\textcolor[rgb]{0.0,0.5,0.0},
+	commentstyle=\textcolor[rgb]{0.55,0.31,0.04},
+	showspaces=false,
+	showstringspaces=false,	
+	numberstyle=\tiny,
+	numbersep=4pt,
+	framerule=1pt,
+    literate=
+	{à}{{\`{a}}}1
+	{è}{{\`{e}}}1
+	{é}{{\'{e}}}1
+	{í}{{\'{i}}}1
+	{ï}{{\"{i}}}1
+	{ò}{{\`{o}}}1
+	{ó}{{\'{o}}}1
+	{ú}{{\'{u}}}1
+	{ü}{{\"{u}}}1
+	{ç}{{\c{c}}}1
+	{ŀl}{{\lgem}}1
+	{À}{{\`{A}}}1
+	{È}{{\`{E}}}1
+	{É}{{\'{E}}}1
+	{Í}{{\'{I}}}1
+	{Ï}{{\"{I}}}1
+	{Ò}{{\`{O}}}1
+	{Ó}{{\'{O}}}1
+	{Ú}{{\'{U}}}1
+	{Ü}{{\"{U}}}1
+	{Ç}{{\c{C}}}1
+	{ĿL}{{\Lgem}}1
+	{}{{\textit{\textbf{i}}}}1
+	{·}{{\ensuremath{\cdot}}}1
+	{α}{{\ensuremath{\alphaup}}}1
+	{δ}{{\ensuremath{\deltaup}}}1
+	{Δ}{{\ensuremath{\Deltaup}}}1
+	{ε}{{\ensuremath{\varepsilonup}}}1
+	{η}{{\ensuremath{\etaup}}}1
+	{κ}{{\ensuremath{\kappaup}}}1
+	{ρ}{{\ensuremath{\rhoup}}}1
+	{π}{{\ensuremath{\piup}}}1
+	{Π}{{\ensuremath{\Pi}}}1
+	{Σ}{{\ensuremath{\Sigma}}}1
+	{𝜑}{{\ensuremath{\varphiup}}}1
+	{φ}{{\ensuremath{\phiup}}}1
+	{ω}{{\ensuremath{\omegaup}}}1
+	{Ω}{{\ensuremath{\Omega}}}1
+	{τ}{{\ensuremath{\tauup}}}1
+	{²}{{\texttwosuperior}}1
+	{∠}{{\ensuremath{\angle}}}1
+	{∡}{{\ensuremath{\measuredangle}}}1
+	{√}{{\ensuremath{\sqrt{\phantom{|}}}}}1
+	{°}{{\ensuremath{^\circ}}}1
+	{±}{{\ensuremath{\pm}}}1
+	{→}{{\ensuremath{\rightarrow} }}2
+}
+\lstdefinelanguage{HPPRIME}
+{   morekeywords={EXPORT,BEGIN,END,LOCAL,RETURN,IF,THEN,ELSE,FOR,FROM,TO,DO},
+	sensitive=true,
+	morecomment=[l]{//},
+	morestring=[b]"
+}
+
+\usepackage{amscd}   % Fletxes de definició dels sentits de corrent i tensió en la secció Notació
+\usepackage{beccari-v8}
+\allowdisplaybreaks[4] % Permet dividir múltiples equacions entre dues pàgines
+
+\usepackage{etoolbox}
+\robustify\dots
+\usepackage{siunitx}
+\DeclareSIUnit\noop{\relax} %Per permetre prefixes sols
+\sisetup{
+    input-digits = 0123456789\dots,
+    output-decimal-marker = {,},
+    output-complex-root = j,
+    complex-root-position = before-number,
+    arc-separator = {\,}
+}
+
+
+\usepackage{multicol}
+\usepackage{longtable, booktabs, array, multirow, threeparttablex}
+
+\usepackage{caption} % Capçaleres de taules i peus de figures
+\captionsetup{hypcap=false,labelsep=quad,skip=10pt,format=hang,font={sf,bf,color={NavyBlue}}}
+\captionsetup[table]{position=above}
+\captionsetup[figure]{position=below}
+
+\usepackage{tocloft} 
+\cftsetindents{section}{1.5em}{2.8em}
+\cftsetindents{subsection}{4.3em}{3.6em}
+\makeatletter % alineació a la dreta del números romans de pàgina a l'Índex
+\patchcmd{\cftsecfillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\patchcmd{\cftsubsecfillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\patchcmd{\cftsubsubsecfillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\patchcmd{\cftparafillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\patchcmd{\cftsubparafillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\makeatother
+\newcommand{\listexamplename}{\sffamily Índex d'Exemples} % Índex d'exemples
+\newlistof[chapter]{addcontentsxms}{xms}{\listexamplename}
+\setlength{\cftaddcontentsxmsnumwidth}{2.8em}
+\setlength{\cftaddcontentsxmsindent}{1.5em}
+\newcommand{\addcontentsxms}[1]
+{%
+	\refstepcounter{addcontentsxms}
+	\addcontentsline{xms}{addcontentsxms}
+	{\protect\numberline{\theaddcontentsxms}#1}\par
+}
+
+\usepackage[pages=some]{background} % Gradient de color en la portada i pàgines de les parts
+\backgroundsetup{
+	scale=1,
+	angle=0,
+	opacity=1,
+	contents={\begin{tikzpicture}[remember picture,overlay]
+			\path [top color = Yellow!60, bottom color = Yellow!10] (current page.south west)rectangle (current page.north east);
+	\end{tikzpicture}}
+}
+
+\usepackage{transparent} % Necessari pels fitxers TeX generats per Inkscape
+
+\usepackage{tcolorbox}
+% Butons tàctils de la HP Prime
+\newtcbox{\hpbutton}{on line, arc=2pt,colback=black,colframe=black,
+   before upper={\rule[-2pt]{0pt}{10pt}},boxrule=1pt,
+   boxsep=0pt,left=4pt,right=4pt,top=0pt,bottom=1pt,
+   colupper=white,fontupper={\fontsize{8pt}{8pt}\selectfont\sffamily}}
+
+% defineix l'entorn "exemple"
+\usepackage[framemethod=TikZ]{mdframed}
+\mdfdefinestyle{styleEx}{%
+    theoremseparator={ },%
+    frametitlefont=\color{NavyBlue}\bfseries\sffamily,%
+    roundcorner=5,%
+    innerleftmargin=5pt,%
+    innerrightmargin=5pt,%
+    linecolor=NavyBlue,%
+    linewidth=1pt,%
+    frametitlerulewidth=1pt,%
+    frametitlerule=true,%
+    skipabove=5mm,%
+    backgroundcolor = White,%
+    innertopmargin=\topskip,
+}
+\mdtheorem[style=styleEx]{exemple}{Exemple}[chapter]
+
+\setlength{\parskip}{1.5ex plus0.5ex minus0.5ex}     % separació entre paràgrafs
+\setlength{\parindent}{0mm}                          % paràgrafs sense indentació
+\setlength{\columnsep}{1.5em}                        % separació entre columnes
+
+% format de les pàgines
+\setlength{\hoffset}{0mm}
+\setlength{\oddsidemargin}{0mm}
+\setlength{\evensidemargin}{-10.8mm}
+\setlength{\textwidth}{170mm}
+\setlength{\marginparsep}{2mm}
+\setlength{\marginparwidth}{12mm}
+\setlength{\voffset}{0mm}
+\setlength{\textheight}{230mm}
+\setlength{\topmargin}{0mm}
+
+%formats dels peus i capçaleres
+\usepackage{fancyhdr}
+\setlength{\headheight}{26pt}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.4pt}
+% redefinició de l'estil plain: pàgines on comença un capítol
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyfoot[R]{\color{NavyBlue}\sffamily\bfseries \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
+% redefinició de l'estil de les pàgines parells en blanc
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}
+\vspace*{\fill}
+\begin{center}
+   %This page intentionally left blank
+\end{center}
+\vspace{\fill}
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+% format de les parts
+\makeatletter
+\def\@part[#1]#2{%
+    \ifnum \c@secnumdepth >\m@ne
+      \refstepcounter{part}%
+      \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+    \else
+      \addcontentsline{toc}{part}{#1}%
+    \fi
+    {\parindent \z@ \raggedright
+     \interlinepenalty \@M
+     \normalfont
+     \ifnum \c@secnumdepth >\m@ne
+       \color{NavyBlue}\fontsize{60}{60}\sffamily\bfseries\selectfont\partname\nobreakspace\thepart
+       \newline
+       \par\nobreak
+     \fi
+     \color{black}\fontsize{40}{60}\sffamily\bfseries\selectfont #2%
+     \markboth{}{}\par}%
+    \nobreak
+    \vskip 3ex
+    \@afterheading}
+\makeatother
+
+% format dels capítols
+\usepackage{fncychap}
+\makeatletter%
+  \ChNameVar{\vspace{-7mm}\color{NavyBlue}\fontsize{40}{42}\sffamily\bfseries\selectfont}
+  \ChNumVar{\color{NavyBlue}\fontsize{50}{52}\sffamily\bfseries\selectfont}
+  \ChTitleVar{\color{black}\fontsize{25}{27}\sffamily\bfseries\selectfont}
+  \ChRuleWidth{1pt}
+  \renewcommand{\DOCH}{%
+    \raggedright
+    \CNV\FmN{\@chapapp}\space \CNoV\thechapter\nobreak
+    \vskip -15\p@}
+  \renewcommand{\DOTI}[1]{%
+    \CTV\raggedright\mghrulefill{\RW} \\ \nobreak
+    \vskip 0\p@
+    \CTV\FmTi{#1} \\ \nobreak
+    \vskip -15\p@
+    \mghrulefill{\RW} \\ \nobreak
+    \vskip 40\p@}
+  \renewcommand{\DOTIS}[1]{%
+    \CTV\raggedright\mghrulefill{\RW} \\ \nobreak
+    \vskip 0\p@
+    \CTV\FmTi{#1} \\ \nobreak
+    \vskip -15\p@
+    \mghrulefill{\RW} \\ \nobreak
+    \vskip 5\p@}
+\makeatother
+
+% format de les seccions, subseccions, ...
+\makeatletter
+\renewcommand{\section}{\@startsection {section}{1}{0pt}%
+   {-3.5ex plus -1ex minus -0.2ex}%
+   {2.3ex plus 0.2ex}%
+   {\Large  \sffamily  \bfseries \color{NavyBlue}}}
+\renewcommand{\subsection}{\@startsection {subsection}{2}{0pt}%
+   {-3.25ex plus -1ex minus -0.2ex}%
+   {1.5ex plus 0.2ex}%
+   {\large  \sffamily  \bfseries \color{NavyBlue}}}
+\renewcommand{\subsubsection}{\@startsection {subsubsection}{3}{0pt}%
+   {-3.25ex plus -1ex minus -0.2ex}%
+   {1.5ex plus 0.2ex}%
+   {\normalsize  \sffamily  \bfseries \color{NavyBlue}}}
+\makeatother
+
+% Referència més d'un cop al mateix número de nota a peu de pàgina, i format del número de peu de pàgina.
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+\renewcommand{\thefootnote}{\color{blue}(\arabic{footnote})}
+
+\usepackage[makeindex]{imakeidx}
+\makeindex[intoc, columnseprule, options=-s jmb]
+
+\usepackage[verbose, pdftex,
+bookmarks=true, bookmarksopenlevel=0, bookmarksopen=true,  bookmarksnumbered=true, 
+pdftitle={Qüestions Electrotècniques Diverses}, pdfauthor={Josep
+	Mollera}, pdfcreator={Josep Mollera}, pdfsubject={Electrotècnia}, pdfkeywords={Electrotècnia, Sistemes Elèctrics de Potència}, pdflang={Catalan}, pdfstartview={Fit}, pdfpagelabels=true,colorlinks=true, linkcolor=black, plainpages=false]{hyperref}
+
+
+%\includeonly{Capitols/Cap-Resistencies}
+\input{Capitols/Titols-Exemples}
+\begin{document}
+   \frontmatter
+  	  % estil de les pàgines normals parells i senars
+      \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO,RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase\leftmark}
+      \include{Capitols/Pre-Titol}
+      \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{Índex General}\tableofcontents
+      \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{Índex de Taules}\listoftables
+      \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{Índex de Figures}\listoffigures
+      \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{Índex d'Exemples}\listofaddcontentsxms
+      \cleardoublepage\phantomsection\addcontentsline{toc}{chapter}{Índex de Llistats de Programes}\lstlistoflistings
+      \cleardoublepage
+   \mainmatter      
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO,RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase Prefaci}
+      \include{Capitols/Pre-Prefaci}
+     \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO,RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase Notació}
+      \include{Capitols/Pre-Notacio}
+
+      % estil de les pàgines normals parells i senars
+      \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}}
+      \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+      \fancyhf{} \fancyhead[LE,RO]{\color{NavyBlue}\sffamily\bfseries\thepage}
+      \fancyhead[LO]{\color{NavyBlue}\sffamily\bfseries\nouppercase\rightmark}
+      \fancyhead[RE]{\color{NavyBlue}\sffamily\bfseries\nouppercase\leftmark}
+   \part{Electrotècnia}
+      \thispagestyle{empty} % Elimina el número de pàgina
+   	  \BgThispage
+      \include{Capitols/Cap-Fonaments}
+      \include{Capitols/Cap-Calculs-Basics}
+      \include{Capitols/Cap-Components-Simetriques}
+      \include{Capitols/Cap-Series-Fourier}
+      \include{Capitols/Cap-Transformada-Laplace}
+   \part{Equips i Components Elèctrics}
+      \thispagestyle{empty}
+      \BgThispage
+      \include{Capitols/Cap-Resistencies}
+      \include{Capitols/Cap-Cables}
+      \include{Capitols/Cap-Trafos-Mes-Prot}
+      \include{Capitols/Cap-Trafos-Potencia}
+      \include{Capitols/Cap-Motors-Induccio}
+   \part{Sistemes Elèctrics de Potència}
+      \thispagestyle{empty}
+      \BgThispage
+      \include{Capitols/Cap-Xarxes-Electriques}
+      \include{Capitols/Cap-Flux-Carregues}
+      \include{Capitols/Cap-Normatives-Diverses}
+   \part{Python}
+      \thispagestyle{empty}
+      \BgThispage
+      \include{Capitols/Cap-Python-Llenguatge}
+      \include{Capitols/Cap-Python-Programes}
+      \include{Capitols/Cap-Python-Exemples}
+   \part{Apèndixs}
+      \thispagestyle{empty}
+      \BgThispage
+      \appendix
+      \renewcommand*{\chaptername}{\appendixname}
+      \include{Capitols/Ape-SI}
+      \include{Capitols/Ape-Constants-Fisiques}
+      \include{Capitols/Ape-Relacions-Trigonometriques}
+      \include{Capitols/Ape-Calcul-Numeric}
+      \include{Capitols/Ape-HP-Prime}
+   \part{Cloenda}
+      \thispagestyle{empty}
+      \BgThispage
+      \backmatter
+      \include{Capitols/Pos-Historial}
+      \include{Capitols/Pos-Bibliografia}
+      \printindex
+ \end{document}
