@@ -1,0 +1,45 @@
+#pragma mode( separator(.,;) integer(h32) )
+
+EXPORT Polynomial_Interpolation(data,x)
+// data:[[x1,y1], x:abscissa → interpolated ordinate y
+//       [x2,y2]
+//       .......
+//       [xn,yn]]  
+BEGIN
+  RETURN POLYEVAL(polynomial_regression(data,rowDim(data)-1),x);
+END;
+    
+EXPORT Polynomial_Interpolation_2D(data,x,y)
+// data:[[0,   x1,  x2, ...  xn], x, y → interpolated z
+//       [y1, z11, z12, ... z1n]
+//       [y2, z21, z22, ... z2n]
+//       .......................
+//       [ym, zm1, zm2, ... zmn]]  
+BEGIN
+  LOCAL c := colDim(data);
+  LOCAL r := rowDim(data);
+  LOCAL d := [[0,0],[0,0]];
+  LOCAL z := [[0,0],[0,0]];
+  LOCAL k;
+  d(-1) := data({{1,2},{1,c}});
+  FOR k FROM 2 TO r DO
+    d(-2) := data({{k,2},{k,c}});
+    z(k-1,2) := Polynomial_Interpolation(d,x);
+  END;
+  z(-1) := TRN(data({{2,1},{r,1}}));
+  RETURN Polynomial_Interpolation(z,y);
+END;
+    
+EXPORT Trapezoidal_Rule(data)
+// data:[[x1,y1] → Definite integral from x1 to xn
+//       [x2,y2]
+//       .......
+//       [xn,yn]]  
+BEGIN
+  LOCAL k;
+  LOCAL a := 0;
+  FOR k FROM 1 TO rowDim(data)-1 DO
+    a := a+(data(k+1,2)+data(k,2))*(data(k+1,1)-data(k,1));
+  END;
+  RETURN a/2;
+END;
