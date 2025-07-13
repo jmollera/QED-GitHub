@@ -78,7 +78,7 @@ El pas següent consisteix a representar el circuit equivalent en tant
 per u, i resoldre'l; en el cas de circuits trifàsics, i a causa del procés utilitzat, el circuit equivalent en tant per u esdevé un circuit monofàsic, i com a tal l'hem de resoldre, és a dir, sense la intervenció del factor $\sqrt{3}$.
 
 Un cop resolt el circuit, es multipliquen les magnituds obtingudes en tant per u, pels
-seus valors base respectius, per tal d'obtenir les magnituds reals:
+seus valors base respectius, per obtenir les magnituds reals:
 \begin{equation}
    \cmplx{S} = \cmplx{s} S\ped{B} \qquad \cmplx{U} = \cmplx{u} U\ped{B} \qquad \cmplx{I} = \cmplx{i} I\ped{B} \qquad \cmplx{Z} = \cmplx{z} Z\ped{B} \qquad \cmplx{Y} = \cmplx{y} Y\ped{B}
 \end{equation}
@@ -91,7 +91,7 @@ Normalment, les impedàncies dels transformadors ---impedància de curtcircuit--
 Si les magnituds base escollides coincideixen amb les nominals de la màquina,
 la impedància de la màquina en qüestió estarà expressada ja directament en tant per u, respecte d'aquesta base.
 
- En canvi, si les magnituds base són diferents de les nominals de la màquina, caldrà fer un canvi de base per tal de referir la impedància de la màquina a les magnituds base escollides.
+ En canvi, si les magnituds base són diferents de les nominals de la màquina, caldrà fer un canvi de base per referir la impedància de la màquina a les magnituds base escollides.
 
 De forma genèrica, si $\cmplx{z}$ és una impedància referida a la base $Z\ped{B}$, $U\ped{B}$ i $S\ped{B}$, podem obtenir la impedància $\cmplx{z}'$ referida a la base $Z_{\text{B}'}$, $U_{\text{B}'}$ i $S_{\text{B}'}$, mitjançant el canvi:
 \begin{equation}
@@ -233,7 +233,7 @@ Si volem convertir aquestes magnituds a valors en tant per u, hem d'escollir  un
 De la mateixa manera que s'ha dit en els apartats anteriors, en el cas de circuits trifàsics podem escollir com a tensions base les tensions fase-neutre $U\ped{FN}$ i com a potència base la potència  monofàsica $S\ped{1F}$, o bé podem escollir com a tensions base les tensions fase-fase $U\ped{FF}$ i com a potència base la potència trifàsica $S\ped{3F}$.
 
 
-Per tal de calcular la impedància base $Z_{\text{B}_\text{M}}$ i convertir $\cmplx{Z}\ped{M}$ en un valor en tant per u, no podem utilitzar les equacions \eqref{eq:bases_pu}, ja que cadascuna de les dues branques de l'acoblament magnètic està a una tensió diferent; en aquest cas cal utilitzar l'equació que podem trobar a \cite{TLE}:
+Per calcular la impedància base $Z_{\text{B}_\text{M}}$ i convertir $\cmplx{Z}\ped{M}$ en un valor en tant per u, no podem utilitzar les equacions \eqref{eq:bases_pu}, ja que cadascuna de les dues branques de l'acoblament magnètic està a una tensió diferent; en aquest cas cal utilitzar l'equació que podem trobar a \cite{TLE}:
 \begin{equation}
     Z_{\text{B}_\text{M}} = \frac{U_{\text{B}_1} U_{\text{B}_2}} {S\ped{B}}
 \end{equation}
@@ -267,7 +267,7 @@ Si volem convertir aquestes magnituds a valors en tant per u, hem d'escollir  un
 De la mateixa manera que s'ha dit en els apartats anteriors, en el cas de circuits trifàsics podem escollir com a tensions base les tensions fase-neutre $U\ped{FN}$ i com a potència base la potència  monofàsica $S\ped{1F}$, o bé podem escollir com a tensions base les tensions fase-fase $U\ped{FF}$ i com a potència base la potència trifàsica $S\ped{3F}$.
 
 
-Per tal de  calcular l'admitància base $Y_{\text{B}_\text{M}}$ i convertir $\cmplx{Y}\ped{M}$ en un valor en tant per u, no podem utilitzar les equacions \eqref{eq:bases_pu}, ja que cadascuna de les dues branques de l'acoblament capacitiu està a una tensió diferent; en aquest cas cal utilitzar l'equació que podem trobar a \cite{TLE}:
+Per  calcular l'admitància base $Y_{\text{B}_\text{M}}$ i convertir $\cmplx{Y}\ped{M}$ en un valor en tant per u, no podem utilitzar les equacions \eqref{eq:bases_pu}, ja que cadascuna de les dues branques de l'acoblament capacitiu està a una tensió diferent; en aquest cas cal utilitzar l'equació que podem trobar a \cite{TLE}:
 \begin{equation}
     Y_{\text{B}_\text{M}} = \frac{S\ped{B}}{U_{\text{B}_1} U_{\text{B}_2}}
 \end{equation}
@@ -430,7 +430,7 @@ que es vol trobar.
 
 \begin{center}
    \input{Imatges/Cap-CalcBas-EZS.pdf_tex}
-   \captionsetup{justification=raggedright,margin={3.5cm,3.5cm},oneside}
+   \captionsetup{justification=raggedright,margin={3.5cm,3.5cm}, oneside}
     \captionof{figure}{Resolució de circuits on es coneix la potència absorbida per la càrrega} \label{pic:EZS}
 \end{center}
 
@@ -630,7 +630,7 @@ $S\ped{cc}$ i $S\ped{T}$ en voltampere, i $x\ped{cc}$ en tant per u
 respecte dels valors nominals del transformador.
 
 
-Per tal de simplificar el problema, suposarem que tant la impedància
+Per simplificar el problema, suposarem que tant la impedància
 de curtcircuit del transformador com la impedància equivalent de
 la xarxa de potència són totalment inductives; d'aquesta manera
 podrem treballar amb les diverses variables implicades com si
@@ -826,4 +826,3 @@ Aquest tipus de relació es compleix, per exemple, en el cas dels cables elèctr
    \end{center}
 
 \end{exemple}
-

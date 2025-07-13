@@ -90,7 +90,7 @@ Un transformador pot funcionar en unes condicions diferents de les nominals, com
 Quan  volem fer càlculs en circuits elèctrics amb transformadors, l'esquema equivalent d'un transformador de la figura  \vref{pic:tr-pot-esquema-equiv}, presenta l'inconvenient d'incorporar un transformador ideal, i és per això que interessa més utilitzar esquemes reduïts on aquest transformador ideal desaparegui.
 El procés emprat és bàsicament el que ja s'ha descrit en la secció \vref{sec:seccio_pu}. S'escull una potència base $S\ped{B}$, una tensió base pel primari $U\ped{B1}$, i una tensió base pel secundari $U\ped{B2}$; els valors base de primari i secundari dels corrents $I\ped{B1}$ i $I\ped{B2}$, de les impedàncies $Z\ped{B1}$ i $Z\ped{B2}$, i de les admitàncies $Y\ped{B1}$ i $Y\ped{B2}$, es calculen a partir de $S\ped{B}$, $U\ped{B1}$ i $U\ped{B2}$.
 
-La condició que han de satisfer $U\ped{B1}$ i $U\ped{B2}$ per tal que el transformador ideal desaparegui de l'esquema reduït, és que donin lloc a una relació de transformació $m\ped{r}$ del transformador ideal reduït igual a  1:
+La condició que han de satisfer $U\ped{B1}$ i $U\ped{B2}$ perquè el transformador ideal desaparegui de l'esquema reduït, és que donin lloc a una relació de transformació $m\ped{r}$ del transformador ideal reduït igual a  1:
 \begin{equation}\label{eq:mr}
     m\ped{r} = 1 \quad \Rightarrow \quad \frac{U\ped{B1}}{U\ped{B2}} = \frac{U\ped{n1}}{U\ped{n2}} = m
 \end{equation}
@@ -290,7 +290,7 @@ La regulació de voltatge RV no és més que la relació entre la caiguda de ten
 \section{Determinació dels paràmetres elèctrics}\label{sec:determ-param-trafo}\index{transformadors de potència!determinació de paràmetres}
 
 Els transformadors se sotmeten bàsicament a dos assajos ---en
-buit i en curtcircuit--- per tal de determinar els paràmetres
+buit i en curtcircuit--- per determinar els paràmetres
 dels seus circuits elèctrics equivalents.
 
 Mitjançant l'assaig en buit es determinen els paràmetres
@@ -339,7 +339,7 @@ obert el costat de  tensió més baixa; altrament, tampoc no és necessari
 alimentar a tensió nominal, només cal fer-ho a un valor proper.
 
 En la figura \vref{pic:assaig_buit_mono} es pot veure com ha de
-connectar-se un transformador monofàsic, per tal de realitzar-ne
+connectar-se un transformador monofàsic, per  realitzar-ne
 l'assaig en buit.
 
 \begin{center}
@@ -358,7 +358,7 @@ $I\ped{o2}$ i de la potència consumida $W\ped{o}$, segons:
 \end{equation}
 
 En la figura \vref{pic:assaig_buit_trif} es pot veure com ha de
-connectar-se un transformador trifàsic, per tal de realitzar-ne l'assaig en buit.
+connectar-se un transformador trifàsic, per  realitzar-ne l'assaig en buit.
 
 \begin{center}
     \input{Imatges/Cap-TrafosPot-Assaig-Buit-Trifasic.pdf_tex}
@@ -387,7 +387,7 @@ alimentar pel costat de  tensió més baixa i curtcircuitar el costat de
 que circuli sigui el nominal, només cal que sigui un valor proper.
 
 En la figura \vref{pic:assaig_cc_mono} es pot veure com ha de
-connectar-se un transformador monofàsic, per tal de realitzar-ne l'assaig en curtcircuit.
+connectar-se un transformador monofàsic, per realitzar-ne l'assaig en curtcircuit.
 
 
 \begin{center}
@@ -406,7 +406,7 @@ $I\ped{cc1}$ i de la potència consumida $W\ped{cc}$, segons:
 \end{equation}
 
 En la figura \vref{pic:assaig_cc_trif} es pot veure com ha de
-connectar-se un transformador trifàsic, per tal de realitzar-ne l'assaig en curtcircuit.
+connectar-se un transformador trifàsic, per realitzar-ne l'assaig en curtcircuit.
 
 \begin{center}
     \input{Imatges/Cap-TrafosPot-Assaig-CC-Trifasic.pdf_tex}
@@ -636,7 +636,7 @@ En aquestes equacions  les tres impedàncies $\cmplx{z}\ped{PS}$, $\cmplx{z}\ped
 	\addcontentsxms{\ImpCircEqTrafoTresDeb}
     Tenim un transformador de tres debanats amb les següents característiques: primari de \qty{15}{MVA} i \qty{66}{kV}, secundari de \qty{10}{MVA} i \qty{13,2}{kV} i terciari de \qty{5}{MVA} i \qty{2,3}{kV}; les impedàncies entre debanats són: $\cmplx{z}\ped{PS} = \complexnum{j 0,07}$ (referida a \qty{15}{MVA} i \qty{66}{kV}/\qty{13,2}{kV}), $\cmplx{z}\ped{PT} = \complexnum{j 0,09}$ (referida a \qty{15}{MVA} i \qty{66}{kV}/\qty{2,3}{kV}) i $\cmplx{z}\ped{ST} = \complexnum{j 0,08}$ (referida a \qty{10}{MVA} i \qty{13,2}{kV}/\qty{2,3}{kV}).  Es tracta de calcular les impedàncies del circuit equivalent reduït expressades en ohm en el primari, i expressades en tant per u en una base de \qty{30}{MVA} i \qty{66}{kV}/\qty{13,2}{kV}/\qty{2,3}{kV}.
 
-    Comencem calculant les impedàncies en ohm referides al primari, convertint, en primer lloc, els tres valors $\cmplx{z}\ped{PS}$, $\cmplx{z}\ped{PT}$ i $\cmplx{z}\ped{ST}$ a valors òhmics $\cmplx{z}\ped{PS}'$, $\cmplx{z}\ped{PT}'$ i $\cmplx{z}\ped{ST}'$ referits a aquest debanat. Per obtenir $\cmplx{z}\ped{PS}'$ i $\cmplx{z}\ped{PT}'$ només cal multiplicar aquests valors per la impedància base del primari; en el cas de $\cmplx{z}\ped{ST}'$ són necessaris dos passos, primer multipliquem per la impedància base del secundari, amb la qual cosa tindrem una impedància $\cmplx{z}\ped{ST}''$ referida al secundari,  i després multipliquem per la relació de transformació entre primari i secundari al quadrat, per tal de referir-la al primari:
+    Comencem calculant les impedàncies en ohm referides al primari, convertint, en primer lloc, els tres valors $\cmplx{z}\ped{PS}$, $\cmplx{z}\ped{PT}$ i $\cmplx{z}\ped{ST}$ a valors òhmics $\cmplx{z}\ped{PS}'$, $\cmplx{z}\ped{PT}'$ i $\cmplx{z}\ped{ST}'$ referits a aquest debanat. Per obtenir $\cmplx{z}\ped{PS}'$ i $\cmplx{z}\ped{PT}'$ només cal multiplicar aquests valors per la impedància base del primari; en el cas de $\cmplx{z}\ped{ST}'$ són necessaris dos passos, primer multipliquem per la impedància base del secundari, amb la qual cosa tindrem una impedància $\cmplx{z}\ped{ST}''$ referida al secundari,  i després multipliquem per la relació de transformació entre primari i secundari al quadrat, per  referir-la al primari:
 
     \begin{align*}
         \cmplx{z}\ped{PS}' &=  \complexnum{j 0,07} \times \frac{(\qty{66}{kV})^2}{\qty{15}{MVA}} = \complexqty{j 20,328}{\ohm}\\
@@ -737,7 +737,7 @@ Una nomenclatura més completa afegeix la lletra «N» o «n» després de la ll
     \begin{center}
         \input{Imatges/Cap-TrafosPot-Exemple-Yz.pdf_tex}
     \end{center}
-     Per tal de deduir-ne l'índex horari, compararem les tensions
+     Per deduir-ne l'índex horari, compararem les tensions
     $\cmplx{U}\ped{AN}$ i $\cmplx{U}\ped{an}$. Comencem dibuixant les tres tensions fase-neutre $\cmplx{U}\ped{AN}$, $\cmplx{U}\ped{BN}$ i $\cmplx{U}\ped{CN}$. Atès que $\cmplx{U}\ped{an} = \cmplx{U}\ped{aa'} + \cmplx{U}\ped{a'n}$ dibuixem primer la tensió $\cmplx{U}\ped{aa'}$, que està en fase amb la tensió $\cmplx{U}\ped{AN}$, i a continuació la tensió $\cmplx{U}\ped{na'}$, que està en fase amb la tensió $\cmplx{U}\ped{BN}$; un cop tenim situats els punts a i n, ja podem dibuixar la tensió $\cmplx{U}\ped{an}$. Representant ara juntes $\cmplx{U}\ped{AN}$ i $\cmplx{U}\ped{an}$  veiem que l'índex horari és 11.
 
 
@@ -746,7 +746,7 @@ Una nomenclatura més completa afegeix la lletra «N» o «n» després de la ll
     \begin{center}
        \input{Imatges/Cap-TrafosPot-Exemple-Dy.pdf_tex}
     \end{center}
-      Per tal de deduir-ne l'índex horari, compararem com en el cas anterior, les tensions $\cmplx{U}\ped{AN}$ i $\cmplx{U}\ped{an}$. Comencem dibuixant les tres tensions fase-neutre $\cmplx{U}\ped{AN}$, $\cmplx{U}\ped{BN}$ i $\cmplx{U}\ped{CN}$ i la tensió fase-fase $\cmplx{U}\ped{AB}$.  A continuació dibuixem la tensió $\cmplx{U}\ped{na}$, que està en fase amb la tensió $\cmplx{U}\ped{AB}$. Representant ara juntes $\cmplx{U}\ped{AN}$ i $\cmplx{U}\ped{an}$ (mateixa orientació que $\cmplx{U}\ped{na}$, però sentit contrari),  veiem que l'índex horari és 5.
+      Per  deduir-ne l'índex horari, compararem com en el cas anterior, les tensions $\cmplx{U}\ped{AN}$ i $\cmplx{U}\ped{an}$. Comencem dibuixant les tres tensions fase-neutre $\cmplx{U}\ped{AN}$, $\cmplx{U}\ped{BN}$ i $\cmplx{U}\ped{CN}$ i la tensió fase-fase $\cmplx{U}\ped{AB}$.  A continuació dibuixem la tensió $\cmplx{U}\ped{na}$, que està en fase amb la tensió $\cmplx{U}\ped{AB}$. Representant ara juntes $\cmplx{U}\ped{AN}$ i $\cmplx{U}\ped{an}$ (mateixa orientació que $\cmplx{U}\ped{na}$, però sentit contrari),  veiem que l'índex horari és 5.
 \end{exemple}
 
 El desfasament introduït per l'índex horari es pot modelar utilitzant  un transformador ideal amb relació de transformació complexa. En el cas de l'esquema equivalent de la figura  \vref{pic:tr-pot-esquema-equiv}, el transformador  dibuixat allà
@@ -816,7 +816,7 @@ La connexió del circuit equivalent homopolar dels transformadors trifàsics de 
 
 \subsubsection{Transformadors de dos debanats}\label{sec:cir-hom-2-deb}
 
-Es presenten a continuació les diferents combinacions possibles de tipus de connexió de primari i secundari, amb el seu circuit homopolar equivalent.
+Es presenten a continuació les diferents combinacions possibles de tipus de connexió de primari i secundari, amb els seus circuits homopolars equivalents.
 
 Totes les impedàncies representades són valors en tant per u; $\cmplx{z}_0$ és la impedància homopolar del transformador, i $\cmplx{z}\ped{N1}$ i $\cmplx{z}\ped{N2}$ són les impedàncies de connexió a terra dels debanats primari i secundari respectivament. En el cas d'estrelles connectades sòlidament a terra, tindrem $\cmplx{z}\ped{N1}=0$ i $\cmplx{z}\ped{N2}=0$.
 
@@ -1245,7 +1245,7 @@ La condició addicional \eqref{eq:connex-optima} evita pèrdues innecessàries e
 
 El corrent d'irrupció s'origina quan es  connecta el primari d'un transformador a la línia de potència, amb el secundari en circuit obert. Aquest corrent és de molt curta durada, però d'un valor molt elevat; el valor depèn de l'instant de connexió (fase de la tensió) i del flux magnètic residual del transformador, producte d'una connexió prèvia.
 
-El corrent d'irrupció, que només circula pel primari del transformador, pot arribar a valors de fins a $(\numrange{25}{30}) I\ped{n}$ els primers \qty{10}{ms}, corrent que decreix a valors de fins  a $(\numrange{12}{15}) I\ped{n}$ als \qty{100}{ms}.
+El corrent d'irrupció, que només circula pel primari del transformador, pot arribar a valors de fins $(\numrange{25}{30}) I\ped{n}$ durant els primers \qty{10}{ms}, corrent que decreix a valors de fins   $(\numrange{12}{15}) I\ped{n}$ als \qty{100}{ms}.
 
 \section{Designació de les classes de refrigeració}\index{CEI!60076-02@60076-2}\label{sec:trafos-pot-refrig}
 \index{IEEE!C57.12.00} \index{transformadors de potència!designació de classes de refrigeració}

@@ -696,7 +696,8 @@ El factor d'arrissada de cresta relaciona els valors de cresta $\hat{V}$, de val
 
 \subsection{Taula de valors mitjans i eficaços}\index{valor mitjà!taula}\index{valor eficaç!taula}
 
-En la taula \vref{taula:Valors-M-Ef}  es donen els valors mitjans $\bar{V}$ i eficaços $V$ d'una sèrie de formes d'ona usuals $v(t)$, per tal d'estalviar-se la resolució de les integrals indicades en les subseccions anteriors.
+En la taula \vref{taula:Valors-M-Ef}  es donen els valors mitjans $\bar{V}$ i eficaços $V$ d'una
+sèrie de formes d'ona usuals $v(t)$, per estalviar-se la resolució de les integrals indicades en les subseccions anteriors.
 
 \begin{longtable}{c<{\hspace{1em}}c<{\hspace{1.5em}}c}
    \caption{\label{taula:Valors-M-Ef} Valors mitjans i eficaços de formes d'ona}\\
@@ -756,7 +757,7 @@ En la taula \vref{taula:Valors-M-Ef}  es donen els valors mitjans $\bar{V}$ i ef
 		V\ped{sin} =  \frac{\piup}{2 \sqrt{2}} \bar{V}\ped{rec} \approx \num{1,11} \bar{V}\ped{rec}
 	\]
 	
-	Per tant, només cal multiplicar per \num{1,11} el valor mesurat pel voltímetre (valor rectificat mitjà) per tal d'obtenir el valor desitjat (valor sinusoidal eficaç). De fet, en aquests voltímetres la caràtula ja està ajustada amb aquest factor de \num{1,11}, de manera que la lectura és directament el valor eficaç.
+	Per tant, només cal multiplicar per \num{1,11} el valor mesurat pel voltímetre (valor rectificat mitjà) per obtenir el valor desitjat (valor sinusoidal eficaç). De fet, en aquests voltímetres la caràtula ja està ajustada amb aquest factor de \num{1,11}, de manera que la lectura és directament el valor eficaç.
 \end{exemple}
 
 
@@ -800,7 +801,15 @@ El primer terme de la dreta  s'anomena potència activa instantània $p\ped{R}(t
 \end{align}
 \end{subequations}
 	
-La potència $p\ped{R}(t)$ varia entre el valor mínim 0 i el valor màxim $2 U I \cos\varphi$, i té un valor mitjà igual a $U I \cos\varphi$; el fet que aquest valor sigui sempre positiu,  ens indica que $p\ped{R}(t)$  va sempre de la font d'energia cap a la càrrega. La potència $p\ped{X}(t)$ varia entre el valor mínim $-U I \sin\varphi$ i el valor  màxim $U I \sin\varphi$, i té un valor mitjà igual a 0; aquest valor igual a zero, ens indica que $p\ped{X}(t)$ és osciŀlant entre la font d'energia i la càrrega, amb un balanç total nul. El valor mitjà de $p\ped{R}(t)$ s'anomena potència activa $P$, i el valor màxim de $p\ped{X}(t)$ s'anomena potència reactiva $Q$; finalment, el producte dels valors eficaços $U$ i $I$ s'anomena potència aparent $S$. Així doncs, tenim:
+La potència $p\ped{R}(t)$ varia entre el valor mínim 0 i el valor màxim $2 U I \cos\varphi$,
+i té un valor mitjà igual a $U I \cos\varphi$; el fet que aquest valor sigui sempre positiu,
+ens indica que $p\ped{R}(t)$  va sempre de la font d'energia cap a la càrrega.
+La potència $p\ped{X}(t)$ varia entre el valor mínim $-U I \sin\varphi$ i el valor
+màxim $U I \sin\varphi$, i té un valor mitjà igual a 0; aquest valor igual a zero,
+ens indica que $p\ped{X}(t)$ és osciŀlant entre la font d'energia i la càrrega,
+amb un balanç total nul. El valor mitjà de $p\ped{R}(t)$ s'anomena potència activa $P$, i el
+valor màxim de $p\ped{X}(t)$ s'anomena potència reactiva $Q$; finalment, el producte dels valors
+eficaços $U$ i $I$ s'anomena potència aparent $S$. Així doncs, tenim:
 \begin{align}
   S &= U I \\
   P &= U I \cos\varphi = S \cos\varphi\\
@@ -1421,7 +1430,7 @@ Les tensions i corrents d'aquest circuit són iguals a les tres últimes de l'ap
 
              \includegraphics{Cap-Fonaments-RL-Carrega-Descarrega-HPP1.png}
 
-        \item Tot seguit entrem en els camps \textsfs{F1(X)}, \textsfs{F2(X)} i \textsfs{F3(X)} les equacions de $i_1(t)$, $i_2(t)$ i $i_3(t)$; en lloc dels valors \num{1,7293} i  \num{0,4558}, utilitzarem \textsfs{F1(0.02)} i \textsfs{F2(0.04)} respectivament, per tal que la calculadora els calculi automàticament. Com a variable utilitzarem \textsfs{X} en lloc de \textsfs{t}.
+        \item Tot seguit entrem en els camps \textsfs{F1(X)}, \textsfs{F2(X)} i \textsfs{F3(X)} les equacions de $i_1(t)$, $i_2(t)$ i $i_3(t)$; en lloc dels valors \num{1,7293} i  \num{0,4558}, utilitzarem \textsfs{F1(0.02)} i \textsfs{F2(0.04)} respectivament, perquè la calculadora els calculi automàticament. Com a variable utilitzarem \textsfs{X} en lloc de \textsfs{t}.
 
             En el camp \textsfs{F4(X)} entrem la funció $i(t)$, amb l'ajut de la funció  \textsfs{Heaviside(X)}. Escriurem:\break \textsfs{F1(X) * (Heaviside(X--0)--Heaviside(X--0.02)) + F2(X) * (Heaviside(X--0.02)--Heaviside(X--0.04))+\break F3(X) * \textsf{} Heaviside(X--0.04)}.
 
@@ -1700,7 +1709,7 @@ o en forma matricial:
    \end{array}\end{bmatrix}
 \end{equation}
 
-El que queda ara per fer és resoldre aquest sistema d'equacions lineals per tal de trobar $\cmplx{I}\ped{M_1}$, $\cmplx{I}\ped{M_2}$ i $\cmplx{I}\ped{M_3}$, i a continuació utilitzar les equacions \eqref{eq:malles1} a \eqref{eq:malles2} per trobar les intensitats de cadascuna de les branques.
+El que queda ara per fer és resoldre aquest sistema d'equacions lineals per trobar $\cmplx{I}\ped{M_1}$, $\cmplx{I}\ped{M_2}$ i $\cmplx{I}\ped{M_3}$, i a continuació utilitzar les equacions \eqref{eq:malles1} a \eqref{eq:malles2} per trobar les intensitats de cadascuna de les branques.
 
 L'equació \eqref{eq:malles-mat} es pot escriure de forma matricial com:
 \begin{equation}
@@ -1784,4 +1793,3 @@ on  $\mcmplx{Z}$ és la matriu d'impedàncies, $\mcmplx{E}$ és el vector de fon
     \end{align*}
 
 \end{exemple}
-

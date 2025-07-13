@@ -108,7 +108,7 @@ En el cas de tenir dades bidimensionals, és a dir, una matriu de valors que dep
 
     
 
-    Com que tenim dades suficients, podríem utilitzar una interpolació cúbica, no obstant això, farem servir una interpolació lineal, per tal de simplificar els càlculs, utilitzant les dades corresponents  a les concentracions de glicol etilè del  \qtylist{50;60}{\percent}, i a les temperatures de  \qtylist{70;80}{\degree F}.
+    Com que tenim dades suficients, podríem utilitzar una interpolació cúbica, no obstant això, farem servir una interpolació lineal, per simplificar els càlculs, utilitzant les dades corresponents  a les concentracions de glicol etilè del  \qtylist{50;60}{\percent}, i a les temperatures de  \qtylist{70;80}{\degree F}.
 
     Interpolem primer el valor de la viscositat dinàmica $v_{70}$ corresponent a una concentració del \qty{56,3}{\percent}, utilitzant els valors de la fila de temperatura igual a  \qty{70}{\degree F}:
     \[
@@ -229,7 +229,7 @@ La integral $A$ entre el punt inicial $(x_1, y_1)$ i el punt final $(x_n, y_n)$,
 	\addcontentsxms{\IntegracioNum}
     Es tracta de calcular numèricament la integral $\int_1^2 \frac{1}{x} \diff x$, utilitzant les regles dels trapezis i de Simpson.
 
-    Calculem primer el valor exacte d'aquesta integral, per tal de poder-lo comparar amb els que obtindrem  numèricament:
+    Calculem primer el valor exacte d'aquesta integral, per  poder-lo comparar amb els que obtindrem  numèricament:
     \[
       \int_1^2 \frac{1}{x} \diff x = \ln x \Bigr|_{x=1}^{x=2} = \ln 2 - \ln 1 = \ln 2 = \num{0,6931}
     \]
@@ -362,12 +362,12 @@ El procés iteratiu és el següent:
 
 \begin{exemple}[\SolFunNoLin{} \hyperlink{exemple:SolFunNoLin}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:SolFunNoLin}
 	\addcontentsxms{\SolFunNoLin}	
-    Utilitzant la funció $i(t)$ obtinguda en exemple \vref{ex:CurtcircuitRL}, es tracta de calcular el punt proper a $t = \qty{20}{ms}$, on es compleix $i(t)=0$. Per tal d'adoptar la nomenclatura d'aquesta secció, substituïm $i(t)$ i $t$, per $f(x)$ i $x$ respectivament; l'equació que volem resoldre és doncs:
+    Utilitzant la funció $i(t)$ obtinguda en exemple \vref{ex:CurtcircuitRL}, es tracta de calcular el punt proper a $t = \qty{20}{ms}$, on es compleix $i(t)=0$. Per adoptar la nomenclatura d'aquesta secció, substituïm $i(t)$ i $t$, per $f(x)$ i $x$ respectivament; l'equació que volem resoldre és doncs:
     \[
         f(x) = \num{35953,6865}\sin(\num{314,1593}\,x-\num{1,5136}) + \num{35894,8169}\,e^{-18 x} = 0
     \]
 
-    Per tal de poder utilitzar el mètode de Newton, comencem calculant la funció derivada:
+    Per  poder utilitzar el mètode de Newton, comencem calculant la funció derivada:
     \begin{align*}
         f'(x) &= \num{314,1593}\times\num{35953,6865}\cos(\num{314,1593}\,x-\num{1,5136}) -18\times \num{35894,8169}\,e^{-18 x} \\
         {} &= \num{11295184,9833}\cos(\num{314,1593}\,x-\num{1,5136}) - \num{646106,7042}\,e^{-18 x}

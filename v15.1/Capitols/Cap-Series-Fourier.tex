@@ -64,7 +64,7 @@ funcions cosinus quan $v(t)$ o $v(\alpha)$  és una funció real ($A_n, B_n \in 
 \end{align}
 
 Els coeficients $C_0$, $C_n$ i $\phi_n$, amb $A_n,B_n\in\mathsfb{R}$, es calculen a partir de les
-expressions següents:\footnote{Cal tenir en compte que la funció \texttt{arctan} disponible en moltes calculadores i llenguatges de programació, torna de forma estandarditzada valors compresos entre $-\frac{\piup}{2}$ i $\frac{\piup}{2}$. En aquest cas, quan $A_n$ és negatiu cal sumar $\piup$ al valor que dona la funció \texttt{arctan} per tal d'obtenir l'angle en el quadrant correcte.}
+expressions següents:\footnote{Cal tenir en compte que la funció \texttt{arctan} disponible en moltes calculadores i llenguatges de programació, torna de forma estandarditzada valors compresos entre $-\frac{\piup}{2}$ i $\frac{\piup}{2}$. En aquest cas, quan $A_n$ és negatiu cal sumar $\piup$ al valor que dona la funció \texttt{arctan} per obtenir l'angle en el quadrant correcte.}
 \begin{subequations}
 \begin{alignat}{2}
     C_0 &= A_0 & \\[0.5ex]
@@ -151,7 +151,7 @@ contínua;  en els punts de discontinuïtat de la funció, la seva
 expansió en sèrie de Fourier convergeix al valor mitjà dels límits
 per la dreta i per l'esquerra de la funció en aquests punts. 
 
-Per tal que es compleixi el que s'ha dit en el paràgraf anterior, la funció $v(t)$ ha de satisfer les anomenades
+Perquè es compleixi el que s'ha dit en el paràgraf anterior, la funció $v(t)$ ha de satisfer les anomenades
 condicions de Dirichlet\footnote{Gustav Lejeune Dirichlet, matemàtic alemany: \href{https://en.wikipedia.org/wiki/Peter_Gustav_Lejeune_Dirichlet}{https:/\!\!/en.wikipedia.org/wiki/Peter\_Gustav\_Lejeune\_Dirichlet}.} dins del període $T$:
 \begin{itemize}
    \item Ha de ser contínua, o com a mínim ha de tenir un nombre finit de discontinuïtats.
@@ -821,7 +821,7 @@ fonamental de la tensió.
 
     Per acabar, trobarem el corrent $i(t)$ utilitzant les equacions del corrent que circula en un circuit R-L, desenvolupades en la secció \vref{sec:RL-carrega}. Cal tenir en compte que aquest mètode ens dona una evolució temporal precisa, la qual comença amb el règim transitori i va evolucionant cap al règim permanent; el mètode del desenvolupament en sèrie de Fourier, en canvi, ens proporciona només el règim permanent.
 
-    Per  poder comparar els dos mètodes haurem de veure  ara com evoluciona el corrent $i(t)$ en un període més llarg de temps, per tal d'arribar al règim permanent; suposarem que el corrent inicial és nul i, per tant, usarem l'equació \eqref{eq:RL-i-carrega} per a $\qty{0}{ms} \leq t < \qty{5}{ms}$, i l'equació \eqref{eq:RL-i-carrega-ini} per a $t \geq \qty{5}{ms}$.
+    Per  poder comparar els dos mètodes haurem de veure  ara com evoluciona el corrent $i(t)$ en un període més llarg de temps, fins a arribar al règim permanent; suposarem que el corrent inicial és nul i, per tant, usarem l'equació \eqref{eq:RL-i-carrega} per a $\qty{0}{ms} \leq t < \qty{5}{ms}$, i l'equació \eqref{eq:RL-i-carrega-ini} per a $t \geq \qty{5}{ms}$.
 
     La constant de temps d'aquest circuit és: $\tau = \dfrac{\qty{50}{mH}}{\qty{10}{\ohm}} = \qty{5}{ms}$.
 
