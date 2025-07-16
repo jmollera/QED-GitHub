@@ -8,7 +8,7 @@ Es tracten en aquest capítol els motors d'inducció trifàsics.
 
 Es farà primer una petita introducció a les unitats angleses de mesura  relacionades amb els motors, ja que és molt freqüent trobar-les en llibres, articles tècnics i catàlegs.
 
-Quan es tracta amb motors elèctrics cal anar amb compte de distingir  entre les magnituds elèctriques i les mecàniques; un motor, per exemple, absorbeix una potència elèctrica de la xarxa per funcionar, i proporciona una potència mecànica en el seu eix. Per tal de distingir aquests dos tipus de magnituds, s'utilitzarà en tot aquest capítol el subíndex «m» en les magnituds mecàniques.
+Quan es tracta amb motors elèctrics cal anar amb compte de distingir  entre les magnituds elèctriques i les mecàniques; un motor, per exemple, absorbeix una potència elèctrica de la xarxa per funcionar, i proporciona una potència mecànica en el seu eix. Per distingir aquests dos tipus de magnituds, s'utilitzarà en tot aquest capítol el subíndex «m» en les magnituds mecàniques.
 
 \section{Unitats de mesura angleses}\index{unitats!de mesura angleses}
 
@@ -345,7 +345,7 @@ El moment d'inèrcia total $J$ vist per un motor, és en general la suma del mom
     \left(\frac{n\ped{m,load}}{n\ped{m,motor}}\right)^2
 \end{equation}
 
-En alguns llibres, articles i catàlegs, sobretot en anglès, en lloc d'utilitzar el símbol $J$ per designar el moment d'inèrcia, s'utilitza el símbol equivalent $WR^2$ ---també $Wk^2$. El sentit de $WR^2$ és clar si pensem que un moment d'inèrcia, que s'expressa en \unit{kg.m^2},  és el producte d'una massa o «pes» (\textit{weight} en anglès) multiplicada per un radi de gir al quadrat. També es poden veure en la nostra llengua, els símbols $GD^2$ i $PD^2$, on $D$ representa un diàmetre; en aquest cas, si en un catàleg tenim el valor de $GD^2$ o $PD^2$ expressat en \unit{kg.m^2}, caldrà dividir-lo per 4 per tal d'obtenir $J$, atès que es compleix: $R^2 = D^2/4$.
+En alguns llibres, articles i catàlegs, sobretot en anglès, en lloc d'utilitzar el símbol $J$ per designar el moment d'inèrcia, s'utilitza el símbol equivalent $WR^2$ ---també $Wk^2$. El sentit de $WR^2$ és clar si pensem que un moment d'inèrcia, que s'expressa en \unit{kg.m^2},  és el producte d'una massa o «pes» (\textit{weight} en anglès) multiplicada per un radi de gir al quadrat. També es poden veure en la nostra llengua, els símbols $GD^2$ i $PD^2$, on $D$ representa un diàmetre; en aquest cas, si en un catàleg tenim el valor de $GD^2$ o $PD^2$ expressat en \unit{kg.m^2}, caldrà dividir-lo per 4 per obtenir $J$, atès que es compleix: $R^2 = D^2/4$.
 
 La constant d'inèrcia $H$ es defineix com la relació entre l'energia cinètica de rotació del motor  a la velocitat nominal: $\frac{1}{2} J \omega\ped{m,n}^2$, i la  potència elèctrica aparent nominal $S\ped{n}$:
 \begin{equation}\index{constants!d'inèrcia}\index{H@$H$}
@@ -491,7 +491,7 @@ Convertim primer el moment d'inèrcia a unitats SI:
     = \qty{21,37}{kg.m^2}
 \]
 
-Creem a continuació una nova taula de valors en unitats SI a partir de la taula dels valors donats. Multipliquem la primera columna per $\piup/30$ per obtenir la velocitat $\omega\ped{m}$ en \unit{rad/s}, i les dues columnes següents les multipliquem per \qty{1,355818}{N.m/(lbf.ft)} per obtenir els parells $T\ped{m}$ i $T\ped{load}$ en \unit{N.m}. Addicionalment, si ens fixem en l'equació \eqref{eq:tarr-mot}, veurem que la funció que hem d'integrar per tal d'obtenir el temps d'arrencada és $\frac{1}{T\ped{m}(\omega\ped{m})-T\ped{load}(\omega\ped{m})}$; creem, per tant, en la nova taula una quarta columna amb aquests valors.
+Creem a continuació una nova taula de valors en unitats SI a partir de la taula dels valors donats. Multipliquem la primera columna per $\piup/30$ per obtenir la velocitat $\omega\ped{m}$ en \unit{rad/s}, i les dues columnes següents les multipliquem per \qty{1,355818}{N.m/(lbf.ft)} per obtenir els parells $T\ped{m}$ i $T\ped{load}$ en \unit{N.m}. Addicionalment, si ens fixem en l'equació \eqref{eq:tarr-mot}, veurem que la funció que hem d'integrar per obtenir el temps d'arrencada és $\frac{1}{T\ped{m}(\omega\ped{m})-T\ped{load}(\omega\ped{m})}$; creem, per tant, en la nova taula una quarta columna amb aquests valors.
 
 \begin{center}
     \begin{tabular}{S[table-format=3.3]S[table-format=3.3]S[table-format=3.3]S[table-format=1.6]}
@@ -564,7 +564,7 @@ En molts llibres de màquines elèctriques, com ara els de les referències \cit
     \label{pic:mot-esq-equiv}
 \end{center}
 
-A continuació es dona el significat dels diversos paràmetres d'aquest esquema. Per tal de no fer l'escriptura tan enrevessada, a partir d'ara es representarà el mòdul d'una variable complexa  directament com una variable real, és a dir en lloc de, per exemple, escriure $|\cmplx{U}_1|$ escriurem $U_1$:
+A continuació es dona el significat dels diversos paràmetres d'aquest esquema. Per no fer l'escriptura tan enrevessada, a partir d'ara es representarà el mòdul d'una variable complexa  directament com una variable real, és a dir en lloc de, per exemple, escriure $|\cmplx{U}_1|$ escriurem $U_1$:
 
 \begin{list}{}
    {\setlength{\labelwidth}{10mm} \setlength{\leftmargin}{15mm} \setlength{\labelsep}{5mm}}
@@ -582,7 +582,7 @@ A continuació es dona el significat dels diversos paràmetres d'aquest esquema.
 
 Aquests valors es determinen a partir dels assaigs a què se sotmeten els motors ---assaig en buit i assaig de rotor bloquejat--- de forma similar a com es fa amb els transformadors de potència.
 
-En molts llibres de màquines elèctriques és usual simplificar el circuit de la figura  \vref{pic:mot-esq-equiv} per tal de fer més fàcils les equacions que se'n deriven; en general, se suprimeix la branca transversal, o com a mínim la resistència $R\ped{Fe}$, o es trasllada al principi de l'esquema la branca transversal, sigui sencera o eliminant-ne  $R\ped{Fe}$. Malgrat això, com que avui dia hi ha programes matemàtics prou potents per poder fer els càlculs necessaris, en les equacions que s'exposaran a continuació s'utilitzarà el circuit elèctric equivalent sense fer-hi cap simplificació.
+En molts llibres de màquines elèctriques és usual simplificar el circuit de la figura  \vref{pic:mot-esq-equiv} per fer més fàcils les equacions que se'n deriven; en general, se suprimeix la branca transversal, o com a mínim la resistència $R\ped{Fe}$, o es trasllada al principi de l'esquema la branca transversal, sigui sencera o eliminant-ne  $R\ped{Fe}$. Malgrat això, com que avui dia hi ha programes matemàtics prou potents per poder fer els càlculs necessaris, en les equacions que s'exposaran a continuació s'utilitzarà el circuit elèctric equivalent sense fer-hi cap simplificació.
 
 \subsection{Tensió, corrent, impedància i factor de potència}\label{sec:mot-u-c-i}
 
@@ -879,7 +879,7 @@ Per trobar el valor  $T\ped{m,\text{màx}}$ només cal substituir el valor de $s
 
 \subsection{Tensió desequilibrada}\label{sec:mot-tens-deseq}\index{motors d'inducció!tensió desequilibrada}
 
-Un motor consumeix el corrent nominal quan subministra la potència mecànica nominal girant a la velocitat nominal, i està alimentat a la tensió nominal. Tanmateix, per tal que aquesta afirmació es compleixi, la tensió d'alimentació trifàsica ha de ser equilibrada.
+Un motor consumeix el corrent nominal quan subministra la potència mecànica nominal girant a la velocitat nominal, i està alimentat a la tensió nominal. Tanmateix, perquè aquesta afirmació es compleixi, la tensió d'alimentació trifàsica ha de ser equilibrada.
 
 Quan la tensió trifàsica d'alimentació és desequilibrada, es creen tensions de seqüència directa i inversa, les quals  produeixen corrents de la seqüència corresponent. El corrent de seqüència inversa creix ràpidament inclús per a valors baixos de  la tensió de seqüència inversa; aquest corrent genera una calor addicional que el motor haurà d'evacuar, i una possible actuació de les proteccions elèctriques del motor.
 
@@ -1060,7 +1060,7 @@ Si en l'equació \eqref{eq:Pm-U1-Yeq} fixem $U_1$ al seu valor nominal i  $P\ped
        \cmplx{Z}\ped{Th} = \complexqty{0,470+j1,448}{\ohm} 
 	\]
 	
-	A continuació  substituïm aquests valors en l'equació \eqref{eq:Pm-U1-Yeq} i la resolem.  Aquesta equació és clarament no lineal, i per tal de resoldre-la cal utilitzar programes de càlcul o mètodes numèrics, com ara els explicats en l'apèndix \ref{sec:func-no-lin}. La solució és:
+	A continuació  substituïm aquests valors en l'equació \eqref{eq:Pm-U1-Yeq} i la resolem.  Aquesta equació és clarament no lineal, i per resoldre-la cal utilitzar programes de càlcul o mètodes numèrics, com ara els explicats en l'apèndix \ref{sec:func-no-lin}. La solució és:
 	\[
 		s = 0{,}0226
 	\]
@@ -1093,7 +1093,7 @@ Si en l'equació \eqref{eq:Pm-U1-Yeq} fixem $U_1$ al seu valor nominal i  $P\ped
 	
 \subsubsection{Tensió reduïda i càrrega nominal --- Solució aproximada}\index{motors d'inducció!tensió reduïda}
 
-La potència mecànica que subministra un motor ve determinada per la potència que li demana la càrrega que arrossega; per tant, si la tensió disminueix per sota del seu valor nominal, el corrent tendeix a augmentar per tal de mantenir la potència demandada, i el lliscament augmenta (és a dir, la velocitat es redueix).
+La potència mecànica que subministra un motor ve determinada per la potència que li demana la càrrega que arrossega; per tant, si la tensió disminueix per sota del seu valor nominal, el corrent tendeix a augmentar per  mantenir la potència demandada, i el lliscament augmenta (és a dir, la velocitat es redueix).
 
 Si en l'equació \eqref{eq:Pm-U1-Yeq} fixem $P\ped{m}$ al seu valor nominal, i $U_1$ al valor reduït existent, la podrem resoldre obtenint el valor de $s$ corresponent  a aquesta situació. Un cop tenim $s$, podem trobar la intensitat del motor $I_1$ utilitzant les equacions \eqref{eq:mot-Zmot} i \eqref{eq:mot-I1}. Evidentment, també podem trobar qualsevol altre valor del motor, com  ara el factor de potència o el rendiment, utilitzant les equacions pertinents.
 
@@ -1119,7 +1119,7 @@ Aquest mètode de càlcul només és aproximat, ja que no té en compte la corba
 	\cmplx{Z}\ped{Th} &= \complexqty{0,470+j1,448}{\ohm} 
 	\end{align*}
 	
-	A continuació cal substituir aquests valors en l'equació \eqref{eq:Pm-U1-Yeq} i resoldre-la. Aquesta equació és clarament no lineal, i per tal de resoldre-la cal utilitzar programes de càlcul o mètodes numèrics, com ara els explicats en l'apèndix \ref{sec:func-no-lin}. La solució és:
+	A continuació cal substituir aquests valors en l'equació \eqref{eq:Pm-U1-Yeq} i resoldre-la. Aquesta equació és clarament no lineal, i per  resoldre-la cal utilitzar programes de càlcul o mètodes numèrics, com ara els explicats en l'apèndix \ref{sec:func-no-lin}. La solució és:
 	\[
 	s = 0{,}0971
 	\]
@@ -1177,7 +1177,7 @@ No és  usual disposar per a una càrrega ---bomba, ventilador, etc.---   de l'e
 	T\ped{load}(v) = a_0 + a_1 v + a_2 v^2
 \end{equation}
 
-on $v$ pot ser directament la velocitat $n\ped{m}$ (en general expressada en r/min),  la relació entre la velocitat i la velocitat síncrona del motor $n\ped{m}/n\ped{m,sinc}$ o la relació entre la velocitat i la velocitat nominal de la càrrega $n\ped{m}/n\ped{m,n}$, la qual no serà en general igual a la velocitat síncrona del motor. Per tal de tenir l'expressió del parell respecte del lliscament,  continuant amb l'exemple de relació quadràtica, haurem d'utilitzar les transformacions següents:
+on $v$ pot ser directament la velocitat $n\ped{m}$ (en general expressada en r/min),  la relació entre la velocitat i la velocitat síncrona del motor $n\ped{m}/n\ped{m,sinc}$ o la relació entre la velocitat i la velocitat nominal de la càrrega $n\ped{m}/n\ped{m,n}$, la qual no serà en general igual a la velocitat síncrona del motor. Per  tenir l'expressió del parell en funció del lliscament,  continuant amb l'exemple de relació quadràtica, haurem d'utilitzar les transformacions següents:
 \begin{equation}\label{eq:Tload-v-s}
 	T\ped{load}(s) = \begin{cases}
 		 a_0 + a_1 n\ped{m,sinc}(1-s) + a_2 \big(n\ped{m,sinc}(1-s)\big)^2,  & \text{si: } v=n\ped{m}  \\[2ex]
@@ -1188,7 +1188,7 @@ on $v$ pot ser directament la velocitat $n\ped{m}$ (en general expressada en r/m
 \end{equation}
 
 
-Per tal de trobar el punt de tall, o de funcionament, de les corbes parell-velocitat del motor i de la càrrega per a una tensió d'alimentació donada, només cal establir la igualtat de l'expressió de $T\ped{load}(s)$ amb la de $T\ped{m}(s)$ segons l'equació \eqref{eq:Tm-U1-Yeq}, i resoldre-la per tal de trobar el lliscament $s\ped{fun}$ corresponent:
+Per trobar el punt de tall, o de funcionament, de les corbes parell-velocitat del motor i de la càrrega per a una tensió d'alimentació donada, només cal establir la igualtat de l'expressió de $T\ped{load}(s)$ amb la de $T\ped{m}(s)$ segons l'equació \eqref{eq:Tm-U1-Yeq}, i resoldre-la per  trobar el lliscament $s\ped{fun}$ corresponent:
 \begin{equation}\label{eq:Tload-U1-Yeq}
 	T\ped{load}(s) = \frac{3 R_2}{s\,\omega\ped{m,sinc}} Y\ped{eq}^2(s) U_1^2 \quad\Rightarrow \quad s=s\ped{fun}
 \end{equation}
@@ -1217,7 +1217,7 @@ Per tal de trobar el punt de tall, o de funcionament, de les corbes parell-veloc
 		T\ped{load}(s) = 3{,}2 (1-s) + 58{,}9 (1-s)^2
 	\]
 
-	A continuació cal substituir aquests valors en l'equació \eqref{eq:Tload-U1-Yeq} i resoldre-la. Aquesta equació és clarament no lineal, i per tal de resoldre-la cal utilitzar programes de càlcul o mètodes numèrics, com ara els explicats en l'apèndix \ref{sec:func-no-lin}. Les solucions, per a $U_1=U_{1,\qty{100}{\%}}$ i $U_1=U_{1,\qty{80}{\%}}$, són:
+	A continuació cal substituir aquests valors en l'equació \eqref{eq:Tload-U1-Yeq} i resoldre-la. Aquesta equació és clarament no lineal, i per  resoldre-la cal utilitzar programes de càlcul o mètodes numèrics, com ara els explicats en l'apèndix \ref{sec:func-no-lin}. Les solucions, per a $U_1=U_{1,\qty{100}{\%}}$ i $U_1=U_{1,\qty{80}{\%}}$, són:
 	\begin{align*}
 		s_{\qty{100}{\%}} = \num{0,0461} \\
 	 	s_{\qty{80}{\%}}= \num{0,0746}
@@ -1406,7 +1406,7 @@ La resta d'equacions que s'han desenvolupat en les seccions anteriors encara só
 		T\ped{load}(s) = 3{,}2 (1-s) + 58{,}9 (1-s)^2
 	\]
 	
-	Podem  substituir els  valors calculats fins ara en l'equació \eqref{eq:Tload-U1-Yeq} i resoldre-la; cal recordar que en lloc de $U_1$ hem de posar-hi l'equació de $U_1(s)$ que acabem de calcular, i fer servir l'equació \eqref{eq:mot-Yeq-redu} pel que fa a $Y\ped{eq}(s)$. Aquesta equació és clarament no lineal, i per tal de resoldre-la cal utilitzar programes de càlcul o mètodes numèrics, com ara els explicats en l'apèndix \ref{sec:func-no-lin}. La solució és:
+	Podem  substituir els  valors calculats fins ara en l'equació \eqref{eq:Tload-U1-Yeq} i resoldre-la; cal recordar que en lloc de $U_1$ hem de posar-hi l'equació de $U_1(s)$ que acabem de calcular, i fer servir l'equació \eqref{eq:mot-Yeq-redu} pel que fa a $Y\ped{eq}(s)$. Aquesta equació és clarament no lineal, i per  resoldre-la cal utilitzar programes de càlcul o mètodes numèrics, com ara els explicats en l'apèndix \ref{sec:func-no-lin}. La solució és:
 	\[
 		s\ped{fun} = 0{,}0485
 	\]
@@ -1689,7 +1689,7 @@ A partir de les dues equacions anteriors, podem obtenir el valor del corrent d'a
 
 Tal com s'ha dit anteriorment en la secció \ref{sec:mot-tens-deseq}, un desequilibri de tensions relativament petit produeix un increment del corrent proporcionalment molt gran, generant una  calor addicional que el motor haurà d'evacuar.
 
-En aquestes condicions de tensió desequilibrada, cal reduir el valor de la potència mecànica nominal del motor per tal que el corrent baixi al seu valor nominal.
+En aquestes condicions de tensió desequilibrada, cal reduir el valor de la potència mecànica nominal del motor, perquè el corrent baixi al seu valor nominal.
 
 La norma NEMA MG-1 tracta aquesta qüestió de forma simplificada i en lloc de calcular les components simètriques de tensions i corrents, proporciona una gràfica que dona un factor reductor de la potència mecànica nominal, que anomenarem $\kappa\ped{P}$, en funció de desequilibris de tensions de fins al \qty{5}{\%}. El desequilibri de tensions $\Deltaup u$ el defineix com:
 
@@ -1868,12 +1868,12 @@ Per a un motor dissenyat per a una freqüència de \qty{60}{Hz} i connectat a un
 \begin{itemize}
 	\item El motor girarà més lentament, perquè la freqüència ha disminuït.
 	\item Si el motor és autorefredat amb ventilador, la disminució de velocitat afectarà negativament  la refrigeració.
-	\item Si disminuïm la tensió  per tal de mantenir la relació $U/f$ constant, mantindrem els valors del parell i del corrent, i disminuirem el valor de la potència. Si necessitem més potència caldrà escollir un motor de potència nominal superior. 	
+	\item Si disminuïm la tensió  per mantenir la relació $U/f$ constant, mantindrem els valors del parell i del corrent, i disminuirem el valor de la potència. Si necessitem més potència caldrà escollir un motor de potència nominal superior.
 \end{itemize}
 
 Per a un motor dissenyat per a una freqüència de \qty{50}{Hz} i connectat a una xarxa de freqüència \qty{60}{Hz}, podem dir en general:
 \begin{itemize}
 	\item El motor girarà més ràpidament, perquè la freqüència ha augmentat.
 	\item L'augment de velocitat pot  afectar negativament els coixinets  del motor.
-	\item Si augmentem la tensió per tal de mantenir la relació $U/f$ constant, mantindrem els valors del parell i del corrent, i augmentarem el valor de la potència. Cal comprovar que aquest augment de tensió està dins dels marges de funcionament del motor.	
+	\item Si augmentem la tensió per  mantenir la relació $U/f$ constant, mantindrem els valors del parell i del corrent, i augmentarem el valor de la potència. Cal comprovar que aquest augment de tensió està dins dels marges de funcionament del motor.
 \end{itemize}

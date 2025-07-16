@@ -8,7 +8,6 @@ import sympy
 import matplotlib
 import pandas
 import pandapower
-import qed.utils
 import qed.eng_elec
 
 s = [['Llibreria', 'Versió'],

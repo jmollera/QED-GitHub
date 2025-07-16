@@ -1,0 +1,71 @@
+% Code from "Typesetting mathematics for science and technology
+% according to ISO 31/XI". Claudio Beccari. TUGboat, Volume 18 (1997), No. 1
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beccari-v8}[2023 (JMB)]
+
+% Subscripts and superscripts in upright type
+\providecommand*{\ped}[1]{\ensuremath{_\mathrm{#1}}}
+\providecommand*{\ap}[1]{\ensuremath{^\mathrm{#1}}}
+
+% Defines or redefines operators
+\providecommand{\newoperator}[3]{\newcommand*{#1}{\mathop{#2}#3}}
+\providecommand{\renewoperator}[3]{\renewcommand*{#1}{\mathop{#2}#3}}
+
+% Defines operator: integer part
+\newoperator{\ent}{\mathrm{ent}}{\nolimits}
+
+% Redefines operator: real and imaginary part
+\renewoperator{\Re}{\mathrm{Re}}{\nolimits}
+\renewoperator{\Im}{\mathrm{Im}}{\nolimits}
+
+% Defines operators csch and sech
+% by JMB
+\newoperator{\csch}{\mathrm{csch}}{\nolimits}
+\newoperator{\sech}{\mathrm{sech}}{\nolimits}
+
+% Differential operator
+\providecommand*{\diff}{\@ifnextchar^{\DIfF}{\DIfF^{}}}
+\def\DIfF^#1{\mathop{\mathrm{\mathstrut d}}\nolimits^{#1}\gobblespace}
+\def\gobblespace{\futurelet\diffarg\opspace}
+\def\opspace{\let\DiffSpace\!
+        \ifx\diffarg(
+                \let\DiffSpace\relax
+        \else
+                \ifx\diffarg[
+                        \let\DiffSpace\relax
+                \else
+                        \ifx\diffarg\{
+                                \let\DiffSpace\relax
+                        \fi
+                \fi
+        \fi
+\DiffSpace}
+
+% Total derivative: #1:order(optional), #2:function, #3:variable
+\providecommand*{\deriv}[3][]{\frac{\diff^{#1}#2}{\diff #3^{#1}}}
+
+% Partial derivative: #1:order(optional), #2:function, #3:variable
+\providecommand*{\pderiv}[3][]{\frac{\partial^{#1}#2}{\partial #3^{#1}}}
+
+% Partial cross derivative of 2nd order: #1:function, 2#:1st variable, #3:2nd variable
+% by JMB
+\providecommand*{\pderivx}[3]{\frac{\partial^2 #1}{\partial #2\,\partial #3}}
+
+% format d'un valor complex by JMB
+\providecommand*{\cmplx}[1]{\mkern1mu\underline{\mkern-1mu#1\mkern-1mu}\mkern1mu}
+
+% format d'una matriu complexa by JMB
+\providecommand*{\mcmplx}[1]{\mkern1mu\underline{\mkern-1mu\boldsymbol{#1}\mkern-1mu}\mkern1mu}
+
+% format de la transposta d'una matriu by JMB
+\providecommand*{\transpose}[1]{#1\ap{\textsf{T}}}
+
+% format de la conjugada transposta d'una matriu complexa by JMB
+\providecommand*{\hermit}[1]{\mcmplx{#1}\ap{\textsf{H}}}
+
+% format d'un text en lletra recta petita
+\providecommand*{\textsfs}[1]{{\sffamily\small{}#1}}
+
+% format d'una expressió matemàtica en lletra sans serif negreta
+\providecommand*{\mathsfb}[1]{{\ensuremath{\boldsymbol{\mathsf{#1}}}}}
