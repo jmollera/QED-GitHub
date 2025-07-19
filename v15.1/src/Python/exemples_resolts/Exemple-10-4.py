@@ -19,8 +19,8 @@ motor = Motor3ph(p, f, R_1, X_1, R_2, X_2, R_Fe, X_m)
 
 print(f'U_1 = {U_1:.3f} V')
 print(f'n_m,sinc = {motor.n_m_sync:.0f} r/min,  ω_m,sinc = {motor.ω_m_sync:.3f} rad/s')
-print(f'n_m,n = {motor.convert(s_n, Speed.S_TO_RPM):.1f} r/min,'
-      f'ω_m,n = {motor.convert(s_n, Speed.S_TO_RPS):.3f} rad/s\n')
+print(f'n_m,n = {motor.convert(s_n, Speed.SLIP_TO_RPM):.1f} r/min,'
+      f'ω_m,n = {motor.convert(s_n, Speed.SLIP_TO_RAD_PER_S):.3f} rad/s\n')
 
 mot_n = motor.run(s_n, U_1)
 mot_arr = motor.run(1, U_1)
@@ -48,14 +48,14 @@ print(f'cos 𝜑,arr = {mot_arr.PF:.4f}\n')
 print(f'η,n = {mot_n.Eff:.4f}\n')
 
 s_T_m_max = motor.s_T_m_max()
-n_T_m_max = motor.convert(s_T_m_max, Speed.S_TO_RPM)
-ω_T_m_max = motor.convert(s_T_m_max, Speed.S_TO_RPS)
+n_T_m_max = motor.convert(s_T_m_max, Speed.SLIP_TO_RPM)
+ω_T_m_max = motor.convert(s_T_m_max, Speed.SLIP_TO_RAD_PER_S)
 T_m_max = motor.run(s_T_m_max, U_1).T_m
 print(f's,T_m,max = {s_T_m_max:.4f},  n,T_m,max = {n_T_m_max:.1f} r/min,  ω,T_m,max = {ω_T_m_max:.3f} rad/s')
 print(f'T_m,max = {T_m_max:.1f} N·m,  T_m,max/T_m,n = {T_m_max/T_m_n:.2f}')
 
 n_m = np.linspace(0, motor.n_m_sync, 500)  # r/min
-mot_n_m = motor.run(motor.convert(n_m, Speed.RPM_TO_S), U_1)
+mot_n_m = motor.run(motor.convert(n_m, Speed.RPM_TO_SLIP), U_1)
 
 fig, ax1 = plt.subplots(figsize=(6, 4))
 ax1.tick_params(axis='x', which='major', labelsize=8)

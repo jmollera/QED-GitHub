@@ -280,19 +280,19 @@ class TestMotor3phClass(unittest.TestCase):
             # Invalid from_to
             self.motor.convert(1450, from_to=1)
         # Starting
-        self.assertAlmostEqual(1.0, self.motor.convert(0, ee.Speed.RPS_TO_S))
-        self.assertAlmostEqual(1.0, self.motor.convert(0, ee.Speed.RPM_TO_S))
-        self.assertAlmostEqual(0.0, self.motor.convert(1, ee.Speed.S_TO_RPS))
-        self.assertAlmostEqual(0.0, self.motor.convert(0, ee.Speed.RPM_TO_RPS))
-        self.assertAlmostEqual(0.0, self.motor.convert(1, ee.Speed.S_TO_RPM))
-        self.assertAlmostEqual(0.0, self.motor.convert(0, ee.Speed.RPS_TO_RPM))
+        self.assertAlmostEqual(1.0, self.motor.convert(0, ee.Speed.RAD_PER_S_TO_SLIP))
+        self.assertAlmostEqual(1.0, self.motor.convert(0, ee.Speed.RPM_TO_SLIP))
+        self.assertAlmostEqual(0.0, self.motor.convert(1, ee.Speed.SLIP_TO_RAD_PER_S))
+        self.assertAlmostEqual(0.0, self.motor.convert(0, ee.Speed.RPM_TO_RAD_PER_S))
+        self.assertAlmostEqual(0.0, self.motor.convert(1, ee.Speed.SLIP_TO_RPM))
+        self.assertAlmostEqual(0.0, self.motor.convert(0, ee.Speed.RAD_PER_S_TO_RPM))
         # Synchronous speed
-        self.assertAlmostEqual(0.0, self.motor.convert(self.motor.ω_m_sync, ee.Speed.RPS_TO_S))
-        self.assertAlmostEqual(0.0, self.motor.convert(self.motor.n_m_sync, ee.Speed.RPM_TO_S))
-        self.assertAlmostEqual(self.motor.ω_m_sync, self.motor.convert(0, ee.Speed.S_TO_RPS))
-        self.assertAlmostEqual(self.motor.ω_m_sync, self.motor.convert(self.motor.n_m_sync, ee.Speed.RPM_TO_RPS))
-        self.assertAlmostEqual(self.motor.n_m_sync, self.motor.convert(0, ee.Speed.S_TO_RPM))
-        self.assertAlmostEqual(self.motor.n_m_sync, self.motor.convert(self.motor.ω_m_sync, ee.Speed.RPS_TO_RPM))
+        self.assertAlmostEqual(0.0, self.motor.convert(self.motor.ω_m_sync, ee.Speed.RAD_PER_S_TO_SLIP))
+        self.assertAlmostEqual(0.0, self.motor.convert(self.motor.n_m_sync, ee.Speed.RPM_TO_SLIP))
+        self.assertAlmostEqual(self.motor.ω_m_sync, self.motor.convert(0, ee.Speed.SLIP_TO_RAD_PER_S))
+        self.assertAlmostEqual(self.motor.ω_m_sync, self.motor.convert(self.motor.n_m_sync, ee.Speed.RPM_TO_RAD_PER_S))
+        self.assertAlmostEqual(self.motor.n_m_sync, self.motor.convert(0, ee.Speed.SLIP_TO_RPM))
+        self.assertAlmostEqual(self.motor.n_m_sync, self.motor.convert(self.motor.ω_m_sync, ee.Speed.RAD_PER_S_TO_RPM))
 
 
 if __name__ == '__main__':

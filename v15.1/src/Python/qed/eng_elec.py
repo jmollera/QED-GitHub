@@ -75,12 +75,12 @@ class IEEEcurve(enum.Enum):
 
 class Speed(enum.Enum):
     """Constants to be used in method speed of class Motor3ph"""
-    S_TO_RPM = enum.auto()    # slip to r/min
-    S_TO_RPS = enum.auto()    # slip to rad/s
-    RPM_TO_S = enum.auto()    # r/min to slip
-    RPM_TO_RPS = enum.auto()  # r/min to rad/s
-    RPS_TO_S = enum.auto()    # rad/s to slip
-    RPS_TO_RPM = enum.auto()  # rad/s to r/min
+    SLIP_TO_RPM = enum.auto()        # slip to r/min
+    SLIP_TO_RAD_PER_S = enum.auto()  # slip to rad/s
+    RPM_TO_SLIP = enum.auto()        # r/min to slip
+    RPM_TO_RAD_PER_S = enum.auto()   # r/min to rad/s
+    RAD_PER_S_TO_SLIP = enum.auto()  # rad/s to slip
+    RAD_PER_S_TO_RPM = enum.auto()   # rad/s to r/min
 
 
 class EEException(Exception):
@@ -1514,17 +1514,17 @@ class Motor3ph:
         or mechanical speed in r/min (n_m)
         """
         match from_to:
-            case Speed.S_TO_RPM:
+            case Speed.SLIP_TO_RPM:
                 return (1 - vel) * self.n_m_sync
-            case Speed.S_TO_RPS:
+            case Speed.SLIP_TO_RAD_PER_S:
                 return (1 - vel) * self.ω_m_sync
-            case Speed.RPM_TO_S:
+            case Speed.RPM_TO_SLIP:
                 return 1 - vel / self.n_m_sync
-            case Speed.RPM_TO_RPS:
+            case Speed.RPM_TO_RAD_PER_S:
                 return vel * np.pi / 30
-            case Speed.RPS_TO_S:
+            case Speed.RAD_PER_S_TO_SLIP:
                 return 1 - vel / self.ω_m_sync
-            case Speed.RPS_TO_RPM:
+            case Speed.RAD_PER_S_TO_RPM:
                 return vel * 30 / np.pi
             case _:
                 raise EEInvalidArguments({'from_to': from_to})
@@ -1584,7 +1584,7 @@ class Motor3ph:
         U = np.where(z_ext == 0, e_ext, Z * I)
         S = 3 * U * I.conj()
         T_m = 3 * r_2_s * np.abs(e_th / (z_th + z_2_s)) ** 2 / self.ω_m_sync
-        P_m = T_m * self.convert(s, Speed.S_TO_RPS)
+        P_m = T_m * self.convert(s, Speed.SLIP_TO_RAD_PER_S)
         Eff = P_m / np.real(S)
         return Motor3phRun(Z, PF, I, U, S, T_m, P_m, Eff)
 

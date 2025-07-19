@@ -58,10 +58,10 @@ class Complex(complex):
         Parameters
         ----------
         args:   One value compatible with complex (int|float|complex|str),
-                or two values: module (positive) and argument, compatibles
+                or two values: module (positive) and argument compatible
                 with float (int|float|str).
         in_rad: True -> argument in radians, False -> argument in degrees.
-                Default value is False (i.e. argument in degrees).
+                The default value is False (i.e., argument in degrees).
         """
         try:
             match args:
@@ -85,14 +85,14 @@ class Complex(complex):
         self.__in_rad = in_rad
 
     def __format_polar(self, fmt: str = '') -> str:
-        """Format polar representation with given format string.
+        """Format polar representation with a given format string.
 
         Parameters
         ----------
         fmt: A string using Python's Format Specification Mini-Language,
              with the addition of "/" to separate the magnitude format and
              the argument format. If "/" is not present, the same format is
-             used for both the magnitude and the argument. Default value is ''.
+             used for both the magnitude and the argument. The default value is ''.
              """
         if '/' in fmt:
             fmt_mod, fmt_arg = fmt.split(sep='/', maxsplit=1)
