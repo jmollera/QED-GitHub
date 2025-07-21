@@ -95,7 +95,7 @@ de capítols, seccions,
 S'han afegit nous capítols i s'ha fet una reordenació que afecta 
 diversos capítols i apèndixs, segons es detalla a continuació:
 \begin{itemize}
-   \item Els capítols 1 i 2  de la versió 1.4 mantenen la seva posició.
+   \item Els capítols 1 i 2  de la versió 1.4 mantenen llur posició.
    \item S'afegeix un nou capítol 3 dedicat a les sèries de Fourier.
    \item S'afegeix un nou capítol 4 dedicat a la transformada de Laplace.
    \item El capítol 3 de la versió 1.4 es desplaça dos números cap
@@ -104,7 +104,7 @@ diversos capítols i apèndixs, segons es detalla a continuació:
    \item Els capítols 4, 5, 6 i 7  de la versió 1.4 es desplacen tres números cap
     avall i passen a ser els capítols 7, 8, 9 i 10 respectivament.
     \item L'apèndix G de la versió 1.4 es converteix en el capítol 11.
-    \item Els apèndixs A, B, C i D de la versió 1.4 mantenen la seva posició.
+    \item Els apèndixs A, B, C i D de la versió 1.4 mantenen llur posició.
     \item S'afegeix un nou apèndix E dedicat a les relacions trigonomètriques.
     \item L'apèndix F de la versió 1.4 manté la seva posició.
     \item Els apèndixs H i I de la versió 1.4 es desplacen una lletra cap
@@ -351,7 +351,7 @@ Es realitzen les modificacions següents en l'apèndix B:
      \item Es refà l'apartat dedicat a les normes d'escriptura.
 \end{itemize}
 
-Es refà la taula de l'apèndix C agrupant els valors numèrics i les seves unitats, i s'explica a continuació com obtenir els errors absoluts i relatius dels valors que hi apareixen.
+Es refà la taula de l'apèndix C agrupant els valors numèrics i llurs unitats, i s'explica a continuació com obtenir els errors absoluts i relatius dels valors que hi apareixen.
 
 \section*{Versió 6.1 (1 de febrer de 2013)}
 \addcontentsline{toc}{section}{Versió 6.1}
@@ -475,7 +475,7 @@ En l'apartat Bibliografia, s'afegeixen les referències \cite{AGVS}, \cite{JSch}
 
 Es modifiquen els estils dels textos de les capçaleres de les taules i dels peus de les figures, perquè siguin iguals que els estils dels títols dels capítols, seccions i subseccions.
 
-Es modifica en tot el llibre la manera de representar una variable acompanyada de les seves unitats. Les variables se separaran de les seves unitats mitjançant el símbol de divisió «/», en lloc de tancar les unitats entre «[» i  «]»; per exemple, en lloc de $S\unit{[mm^2]}$, a partir d'ara escriurem $S/\unit{mm^2}$.
+Es modifica en tot el llibre la manera de representar una variable acompanyada de les seves unitats. Les variables se separaran de llurs unitats mitjançant el símbol de divisió «/», en lloc de tancar les unitats entre «[» i  «]»; per exemple, en lloc de $S\unit{[mm^2]}$, a partir d'ara escriurem $S/\unit{mm^2}$.
 
 Es modifica en tot el llibre la posició de les notes que fan referència a elements d'una taula, coŀlocant-les immediatament a sota de la mateixa taula en lloc de fer-ho al peu de pàgina.
 
@@ -578,7 +578,7 @@ Es completa l'exemple 10.1, afegint-hi al final la resolució del sistema d'equa
 
 En l'apèndix A, es donen les adreces d'Internet dels diccionaris utilitzats per escriure els noms de les lletres gregues en anglès i francès. Addicionalment, es corregeix el nom en francès de la lletra $\varpiup$; el nom correcte és \textit{pi dorien}.
 
-En l'apèndix B, es té en compte el suplement de l'any 2014 publicat pel  \textit{Bureau International des Poids et Mesures} (BIPM), el qual posa al dia la 8a edició de les seves publicacions de l'any 2006. Els canvis introduïts que afecten aquest llibre, són els següents:
+En l'apèndix B, es té en compte el suplement de l'any 2014 publicat pel  \textit{Bureau International des Poids et Mesures} (BIPM), el qual posa al dia la 8a edició de  l'any 2006. Els canvis introduïts que afecten aquest llibre, són els següents:
 \begin{itemize}
   \item Es modifica l'ordre de les unitats base, en l'expressió de les unitats derivades. Aquest canvi afecta les taules B.3 i B.4.
   \item La unitat astronòmica de longitud va ser redefinida l'any 2012 en la 28a Assemblea General de la Unió Astronòmica Internacional, passant a ser un valor exacte. Aquest canvi ocasiona que la unitat astronòmica passi de la taula B.6  a la taula  B.5.
@@ -1123,13 +1123,15 @@ En l'apartat Bibliografia s'afegeixen les referències \cite{KRE}, \cite{SAL}  i
 \section*{Versió 15.1 (\today)}
 \addcontentsline{toc}{section}{Versió 15.1}
 
-S'ha millorat la representació de les figures de l'exemple \ref{ex:IccTrafos}, afegint explícitament la connexió a terra dels generadors.
+S'indica en la secció \ref{sec:connex-index-horari} que no són possibles tots els índexs horaris dels transformadors trifàsics.
 
-S'ha actualitzat la distribució de Python utilitzada per executar els programes d'aquest llibre; els canvis més significatius són l'ús de la versió 3.13 de Python, el pas de la versió 1.x a la 2.x de la llibreria \texttt{numpy}, i el pas de la versió 2.x a la 3.x de la llibreria \texttt{pandapower}.
-A causa del canvi de versió de la llibreria \texttt{pandapower}, ha calgut modificar el programa \texttt{Exemple-12-3.py} afegint el nou paràmetre \texttt{tap\_changer\_type='Ratio'} a la funció \texttt{create\_transformer\_from\_parameters}, perquè funcionés correctament.
+Es corregeix l'exemple \ref{ex:IccTrafos}, ja que en el cas del transformador YNyn s'havia fet servir un índex horari que no era possible. Addicionalment, es millora la representació de les figures de l'exemple, afegint explícitament la connexió a terra dels generadors.
 
-S'ha canviat la implementació  de la classe \texttt{Complex} sense modificar-ne cap característica externa.
+S'ha actualitzat la distribució de Python utilitzada per executar els programes d'aquest llibre; els canvis més significatius són l'ús de la versió 3.13 de Python, el pas de la versió 1.x a la 2.x de la llibreria \texttt{numpy}, i el pas de la versió 2.x a la 3.x de la llibreria \texttt{pandapower}. Els canvis i millores que s'han dut a terme són els següents:
+\begin{itemize}
+    \item En el mòdul \texttt{qed.utils}, s'ha canviat la implementació  de la classe \texttt{Complex}, sense modificar-ne cap característica externa.
+    \item En el mòdul \texttt{qed.eng\_elc}, s'ha canviat la implementació  de les classes \texttt{IECcurve}, \texttt{IEEEcurve} i \texttt{Speed}, canviant-ne els noms dels elements interns de minúscula a majúscula, per emfatitzar que són constants. Això afecta a l'ús extern d'aquestes classes.
+    \item Ha calgut modificar el programa \texttt{Exemple-12-3.py}, afegint el paràmetre \texttt{tap\_changer\_type} amb el valor \texttt{'Ratio'} a la funció \texttt{create\_transformer\_from\_parameters}. Això és degut al canvi de versió de la llibreria \texttt{pandapower}.
+\end{itemize}
 
-S'ha canviat la implementació  de les classes \texttt{IECcurve}, \texttt{IEEEcurve} i \texttt{Speed}, canviant-ne els noms del elements interns de minúscula a majúscula, per emfatitzar que són constants. Això afecta a l'ús extern d'aquestes classes.
-
-En l'apartat Bibliografia s'afegeix la referència \cite{SSMH}.
+En l'apartat Bibliografia, s'afegeix la referència \cite{SSMH}.

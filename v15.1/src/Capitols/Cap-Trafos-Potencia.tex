@@ -291,7 +291,7 @@ La regulació de voltatge RV no és més que la relació entre la caiguda de ten
 
 Els transformadors se sotmeten bàsicament a dos assajos ---en
 buit i en curtcircuit--- per determinar els paràmetres
-dels seus circuits elèctrics equivalents.
+de llur circuit elèctric equivalent.
 
 Mitjançant l'assaig en buit es determinen els paràmetres
 transversals del circuit equivalent, i mitjançant l'assaig en curtcircuit es determinen els seus paràmetres longitudinals.
@@ -686,7 +686,7 @@ Tant el primari com el secundari poden connectar-se de tres maneres diferents: e
 \begin{itemize}
    \item \textbf{Y}. La connexió en estrella permet tenir el neutre accessible. El corrent de línia és el que circula per cada debanat; cada debanat suporta la tensió fase-neutre. No té un bon comportament amb càrregues desequilibrades.
    \item \textbf{D}. La connexió en triangle no pot proporcionar un neutre. El corrent que circula per cada debanat és el de línia dividit per $\sqrt{3}$; cada debanat suporta la tensió fase-fase. Per a una mateixa tensió i potència, els debanats d'un transformador connectat en triangle han de tenir $\sqrt{3}$ vegades més espires que els d'un transformador connectat en estrella; la quantitat de coure, no obstant això, pot ser la mateixa perquè la secció pot ser menor, atès que el corrent que circula pels debanats és $\sqrt{3}$ vegades menor. Té un bon comportament amb càrregues desequilibrades perquè redistribueix parcialment el desequilibri entre les fases.
-   \item \textbf{Z}. La connexió en zig-zag permet tenir el neutre accessible, però requereix dues bobines iguals per fase. El corrent que circula per cada debanat és el de línia; cadascuna de les dues bobines d'un debanat suporta la tensió fase-fase dividida per 3; aquestes dues tensions no estan en fase i la seva suma és igual a la tensió fase-neutre. Per a una mateixa tensió i potència, els debanats d'un transformador connectat en zig-zag han de tenir $2/\sqrt{3}$ vegades més espires que els d'un transformador connectat en estrella; la quantitat de coure és més gran, ja que la secció ha de mantenir-se igual, atès que el corrent que circula pels debanats és el de línia. Té un bon comportament amb càrregues desequilibrades.
+   \item \textbf{Z}. La connexió en zig-zag permet tenir el neutre accessible, però requereix dues bobines iguals per fase. El corrent que circula per cada debanat és el de línia; cadascuna de les dues bobines d'un debanat suporta la tensió fase-fase dividida per 3; aquestes dues tensions no estan en fase i la  suma és igual a la tensió fase-neutre. Per a una mateixa tensió i potència, els debanats d'un transformador connectat en zig-zag han de tenir $2/\sqrt{3}$ vegades més espires que els d'un transformador connectat en estrella; la quantitat de coure és més gran, ja que la secció ha de mantenir-se igual, atès que el corrent que circula pels debanats és el de línia. Té un bon comportament amb càrregues desequilibrades.
 \end{itemize}
 
 Les combinacions possibles de connexions de primari i secundari són moltes. Les més usuals són les següents:
@@ -724,12 +724,13 @@ A partir del tipus de connexió del primari i del secundari en estrella (Y), tri
    \item Un número al final indica l'índex horari (entre 0 i 11).
 \end{dingautolist}
 
-Una nomenclatura més completa afegeix la lletra «N» o «n» després de la lletra del debanat corresponent, si el neutre és físicament accessible, per exemple Dyn11 o YNd6.
+Una nomenclatura més completa afegeix la lletra «N» o «n» després de la lletra del debanat corresponent, si el neutre és físicament accessible, per exemple Dyn11 o YNd5.
 
-	
+Cal tenir en compte que no tots els índexs horaris són físicament possibles. En el cas dels transformadors estrella--estrella només podem tenir els índexs 0 i 6, i en el cas dels transformadors estrella--triangle només podem tenir els índexs 1, 5, 7 i 11.
+
 \begin{exemple}[\IndexHorari{}]
 	\addcontentsxms{\IndexHorari}
-    Es tracta de deduir l'índex horari de dos transformadors a partir de les seves connexions.
+    Es tracta de deduir l'índex horari de dos transformadors a partir de llurs connexions.
 
 
     El primer transformador és del tipus Yz:
@@ -816,7 +817,7 @@ La connexió del circuit equivalent homopolar dels transformadors trifàsics de 
 
 \subsubsection{Transformadors de dos debanats}\label{sec:cir-hom-2-deb}
 
-Es presenten a continuació les diferents combinacions possibles de tipus de connexió de primari i secundari, amb els seus circuits homopolars equivalents.
+Es presenten a continuació les diferents combinacions possibles de tipus de connexió de primari i secundari, amb llurs circuits homopolars equivalents.
 
 Totes les impedàncies representades són valors en tant per u; $\cmplx{z}_0$ és la impedància homopolar del transformador, i $\cmplx{z}\ped{N1}$ i $\cmplx{z}\ped{N2}$ són les impedàncies de connexió a terra dels debanats primari i secundari respectivament. En el cas d'estrelles connectades sòlidament a terra, tindrem $\cmplx{z}\ped{N1}=0$ i $\cmplx{z}\ped{N2}=0$.
 
@@ -926,36 +927,40 @@ Les equacions \eqref{eq:UmU-reduit} i \eqref{eq:ImI-reduit} continuen sent vàli
 En el cas de tensions i corrents de seqüència homopolar, el transformador no  origina cap desfasament entre les magnituds  del costat de tensió més alta (AT) i les magnituds del costat de tensió més baixa (BT), independentment de quin sigui al seu índex horari. Les equacions \eqref{eq:fi-AT-BT}, \eqref{eq:rel-transf-cmplx} i \eqref{eq:rel-transf-cmplx-reduit} es converteixen en:
 \begin{alignat}{3}
   \varphi\ped{AT} &= \varphi\ped{BT}, &&\quad\text{seqüència homopolar} \\[1em]
-  m &= U\ped{n1}/U\ped{n2}, &&\quad\text{seqüència homopolar}\label{eq:rel-transf-cmplx-hom} \\[1em]
-  m\ped{r} &= 1, &&\quad\text{seqüència homopolar}
+  \cmplx{m} &= U\ped{n1}/U\ped{n2}, &&\quad\text{seqüència homopolar}\label{eq:rel-transf-cmplx-hom} \\[1em]
+  \cmplx{m}\ped{r} &= 1, &&\quad\text{seqüència homopolar}
 \end{alignat}
 
 Cal tenir en compte que aquestes tres últimes equacions  només són aplicables en el cas dels transformadors YNyn, ja que aquest tipus de connexió és l'única que té un circuit homopolar equivalent amb continuïtat entre el primari i el secundari; per tant, hi poden haver tensions i corrents homopolars tant en el primari com en el secundari.
 
-En el cas dels transformadors YNd, només hi poden haver tensions i corrents homopolars en el primari, ja que tal com es pot veure en el seu circuit homopolar equivalent, el secundari té el circuit obert; les tensions i corrents homopolars en el secundari són, per tant, nuŀles.
+En el cas dels transformadors YNd, només hi poden haver tensions i corrents homopolars en el primari, ja que tal com es pot veure en llur circuit homopolar equivalent, el secundari té el circuit obert; les tensions i corrents homopolars en el secundari són, per tant, nuŀles.
 
 
-En el cas dels transformadors Dyn, només hi poden haver tensions i corrents homopolars en el secundari, ja que tal com es pot veure en el seu circuit homopolar equivalent, el primari té el circuit obert; les tensions i corrents homopolars en el primari són, per tant, nuŀles.
+En el cas dels transformadors Dyn, només hi poden haver tensions i corrents homopolars en el secundari, ja que tal com es pot veure en llur circuit homopolar equivalent, el primari té el circuit obert; les tensions i corrents homopolars en el primari són, per tant, nuŀles.
 
-En la resta de casos: transformadors YNy, Yyn, Yy, Dd, Yd i Dy, les tensions i corrents homopolars en el primari i en el secundari són  nuŀles, ja que tal com es pot veure en els seus circuits homopolars equivalents, tant el primari com el secundari tenen el circuit obert.
+En la resta de casos: transformadors YNy, Yyn, Yy, Dd, Yd i Dy, les tensions i corrents homopolars en el primari i en el secundari són  nuŀles, ja que tal com es pot veure en llurs circuits homopolars equivalents, tant el primari com el secundari tenen el circuit obert.
 
 
 	
 \begin{exemple}[\CCasimSecTrafo{}]\label{ex:IccTrafos}
 	\addcontentsxms{\CCasimSecTrafo}
-    En aquest exemple s'estudien els curtcircuits fase-terra i fase-fase en el secundari de dos transformadors AT/BT alimentats des d'una font de tensió trifàsica, un amb la connexió Dyn11 i l'altre amb la connexió YNyn11. La relació de transformació és en ambdós casos: $\qty{6,25}{kV}\!:\!\qty{400}{V}$. El corrent de curtcircuit en el secundari és un valor conegut, i el que es vol trobar és el corrent que circula pel primari. Se suposa en tots dos casos que els transformadors són ideals; per tant, no es tenen en compte les impedàncies internes.
+    En aquest exemple s'estudien els curtcircuits fase-terra i fase-fase en el secundari de dos transformadors AT/BT alimentats des d'una font de tensió trifàsica, un amb la connexió Dyn11 i l'altre amb la connexió YNyn0. La relació de transformació és en ambdós casos: $\qty{6,25}{kV}\!:\!\qty{400}{V}$. El corrent de curtcircuit en el secundari és un valor conegut, i el que es vol trobar és el corrent que circula pel primari. Se suposa en tots dos casos que els transformadors són ideals i, per tant, no es tenen en compte les impedàncies internes.
 
 
-    Com que l'índex horari és 11 en els dos casos, utilitzant les equacions \eqref{eq:rel-transf-cmplx}, \eqref{eq:rel-transf-cmplx-inv} i \eqref{eq:rel-transf-cmplx-hom}, obtindrem els valors de $\cmplx{m}$ per a les seqüències directa, inversa i homopolar:
+    En el cas del transformador Dyn11, utilitzant les equacions \eqref{eq:rel-transf-cmplx}, \eqref{eq:rel-transf-cmplx-inv} i \eqref{eq:rel-transf-cmplx-hom}, obtindrem els valors de $\cmplx{m}$ per a les seqüències directa, inversa i homopolar:
     \begin{align*}
         \cmplx{m}_1 &= (\qty{6,25}{kV} / \qty{400}{V})\angle 11\times\tfrac{\piup}{6} =
         \num{15,625}\angle{-\tfrac{\piup}{6}} = \complexnum{15,625:-30} \\[1em]
         \cmplx{m}_2 &= (\qty{6,25}{kV} / \qty{400}{V})\angle {-11}\times\tfrac{\piup}{6} =
         \num{15,625}\angle \tfrac{\piup}{6} =\complexnum{15,625:30}  \\[1em]
-        m_0 &= \qty{6,25}{kV} / \qty{400}{V} = \num{15,625}
+        \cmplx{m}_0 &= \qty{6,25}{kV} / \qty{400}{V} = \num{15,625}
     \end{align*}
 
-	\break
+    En el cas del transformador YNyn0, l'index horari zero fa que el valor de $\cmplx{m}$ sigui el mateix per a les tres seqüències:
+    \[
+        \cmplx{m}_1 = \cmplx{m}_2 = \cmplx{m}_0 = \qty{6,25}{kV} / \qty{400}{V} = \num{15,625}
+    \]
+
    \textbf{ Transformador Dyn11. Curtcircuit fase-terra.}
 
     \begin{center}
@@ -1050,7 +1055,7 @@ En la resta de casos: transformadors YNy, Yyn, Yy, Dd, Yd i Dy, les tensions i c
     \end{align*}
 
 
-    \textbf{ Transformador YNyn11. Curtcircuit fase-terra.}
+    \textbf{ Transformador YNyn0. Curtcircuit fase-terra.}
 
     \begin{center}
        \input{Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf_tex}
@@ -1073,18 +1078,18 @@ En la resta de casos: transformadors YNy, Yyn, Yy, Dd, Yd i Dy, les tensions i c
          a \cmplx{I}\ped{c}) = \complexqty{10,6667:-74}{kA}
     \end{align*}
 
-    Obtenim ara les components simètriques de primari, a partir de $m_0$, $\cmplx{m}_1$ i $\cmplx{m}_2$, utilitzant l'equació \eqref{eq:ImI}:
+    Obtenim ara les components simètriques de primari, a partir de $\cmplx{m}_0$, $\cmplx{m}_1$ i $\cmplx{m}_2$, utilitzant l'equació \eqref{eq:ImI}:
     \begin{align*}
-        \cmplx{I}\ped{A,0} &= \frac{\cmplx{I}\ped{a,0}}{m_0} = \frac{\complexqty{10,6667:-74}{kA}}{\num{15,625}} =  \complexqty{0,6827:-74}{kA}\\
-        \cmplx{I}\ped{A,1} &= \frac{\cmplx{I}\ped{a,1}}{\cmplx{m}^*_1} = \frac{\complexqty{10,6667:-74}{kA}}{\complexnum{15,625:30}} =  \complexqty{0,6827:-104}{kA} \\
-        \cmplx{I}\ped{A,2} &= \frac{\cmplx{I}\ped{a,2}}{\cmplx{m}^*_2} = \frac{\complexqty{10,6667:-74}{kA}}{\complexnum{15,625:-30}} = \complexqty{0,6827:-44}{kA}
+        \cmplx{I}\ped{A,0} &= \frac{\cmplx{I}\ped{a,0}}{\cmplx{m}^*_0} = \frac{\complexqty{10,6667:-74}{kA}}{\num{15,625}} =  \complexqty{0,6827:-74}{kA}\\
+        \cmplx{I}\ped{A,1} &= \frac{\cmplx{I}\ped{a,1}}{\cmplx{m}^*_1} = \frac{\complexqty{10,6667:-74}{kA}}{\num{15,625}} =  \complexqty{0,6827:-74}{kA} \\
+        \cmplx{I}\ped{A,2} &= \frac{\cmplx{I}\ped{a,2}}{\cmplx{m}^*_2} = \frac{\complexqty{10,6667:-74}{kA}}{\num{15,625}} = \complexqty{0,6827:-74}{kA}
     \end{align*}
 
     Finalment, calculem el corrent de les tres fases del primari aplicant les equacions \eqref{eq:c_sim_a}, \eqref{eq:c_sim_b} i \eqref{eq:c_sim_c}:
      \begin{align*}
-        \cmplx{I}\ped{A} &= \cmplx{I}\ped{A,0} + \cmplx{I}\ped{A,1} + \cmplx{I}\ped{A,2} = \complexqty{1,8651:-74}{kA} \\
-        \cmplx{I}\ped{B} &= \cmplx{I}\ped{A,0} + a^2 \cmplx{I}\ped{A,1} + a \cmplx{I}\ped{A,2} = \complexqty{0,4997:106}{kA} \\
-        \cmplx{I}\ped{C} &= \cmplx{I}\ped{A,0} + a \cmplx{I}\ped{A,1} + a^2 \cmplx{I}\ped{A,2} = \complexqty{0,6827:-74}{kA}
+        \cmplx{I}\ped{A} &= \cmplx{I}\ped{A,0} + \cmplx{I}\ped{A,1} + \cmplx{I}\ped{A,2} = \complexqty{2,0480:-74}{kA} \\
+        \cmplx{I}\ped{B} &= \cmplx{I}\ped{A,0} + a^2 \cmplx{I}\ped{A,1} + a \cmplx{I}\ped{A,2} = 0 \\
+        \cmplx{I}\ped{C} &= \cmplx{I}\ped{A,0} + a \cmplx{I}\ped{A,1} + a^2 \cmplx{I}\ped{A,2} = 0
     \end{align*}
 
     El corrent primari de curtcircuit a terra és:
@@ -1097,19 +1102,17 @@ En la resta de casos: transformadors YNy, Yyn, Yy, Dd, Yd i Dy, les tensions i c
         \cmplx{I}\ped{SC} = 3 \cmplx{I}\ped{A,0} = 3 \times \complexqty{0,6827:-74}{kA} = \complexqty{2,0480:-74}{kA}
     \]
 
-    La distribució de corrents entre les tres fases del primari és típica dels transformadors YNyn amb un índex horari igual a \qty{+-30}{\degree}; els corrents que circulen per les tres fases tenen valors diferents entre si, dos estan en fase amb el corrent de curtcircuit secundari, i l'altre està desfasat \qty{180}{\degree}.
+    La distribució de corrents entre les tres fases del primari és típica dels transformadors YNyn0 i YNyn6; només circula corrent per una fase, que està en fase amb el corrent de curtcircuit secundari en el cas del YNyn0, i desfasat \qty{180}{\degree} en el cas de YNyn6.
 
-    En aquests casos, els valors dels corrents de primari poden obtenir-se directament, a partir del corrent de curtcircuit secundari, de la relació de transformació i dels factors $\frac{1}{\sqrt{3}} \pm \frac{1}{3}$ i $\frac{1}{3}$. El corrent de curtcircuit a terra primari està en fase amb el corrent de curtcircuit secundari, i pot obtenir-se directament a partir de la relació de transformació:
+    En aquests casos, els valors dels corrents de primari poden obtenir-se directament, a partir del corrent de curtcircuit secundari i de la relació de transformació. El corrent de curtcircuit a terra primari està en fase (o en oposició de fase) amb el corrent de curtcircuit secundari, i pot obtenir-se directament a partir de la relació de transformació:
     
     \begin{align*}
-        |\cmplx{I}\ped{A}| &= \left(\frac{1}{\sqrt{3}}+\frac{1}{3}\right) \times \frac{\qty{32}{kA}}{\num{15,625}} = \qty{1,8651}{kA} \\
-        |\cmplx{I}\ped{B}| &= \left(\frac{1}{\sqrt{3}}-\frac{1}{3}\right) \times \frac{\qty{32}{kA}}{\num{15,625}} = \qty{0,4997}{kA} \\
-        |\cmplx{I}\ped{C}| &= \frac{1}{3} \times \frac{\qty{32}{kA}}{\num{15,625}} = \qty{0,6827}{kA} \\
-        |\cmplx{I}\ped{SC}| &= \frac{\qty{32}{kA}}{\num{15,625}} = \qty{2,048}{kA}
+        |\cmplx{I}\ped{A}|  = |\cmplx{I}\ped{SC}| &= \frac{\qty{32}{kA}}{\num{15,625}} = \qty{2,048}{kA} \\
+        |\cmplx{I}\ped{B}| = |\cmplx{I}\ped{C}| &=  0
     \end{align*}
 
 
-    \textbf{ Transformador YNyn11. Curtcircuit fase-fase.}
+    \textbf{ Transformador YNyn0. Curtcircuit fase-fase.}
 
     \begin{center}
        \input{Imatges/Cap-TrafosPot-Exemple-IccFF-YNyn.pdf_tex}
@@ -1132,28 +1135,29 @@ En la resta de casos: transformadors YNy, Yyn, Yy, Dd, Yd i Dy, les tensions i c
          a \cmplx{I}\ped{c}) = \complexqty{16,1658:106}{kA}
     \end{align*}
 
-    Obtenim ara les components simètriques de primari, a partir de $m_0$, $\cmplx{m}_1$ i $\cmplx{m}_2$, utilitzant l'equació \eqref{eq:ImI}:
+    Obtenim ara les components simètriques de primari, a partir de $\cmplx{m}_0$, $\cmplx{m}_1$ i $\cmplx{m}_2$, utilitzant l'equació \eqref{eq:ImI}:
     \begin{align*}
-        \cmplx{I}\ped{A,0} &= \frac{\cmplx{I}\ped{a,0}}{m_0} = 0 \\
-        \cmplx{I}\ped{A,1} &= \frac{\cmplx{I}\ped{a,1}}{\cmplx{m}^*_1} = \frac{\complexqty{16,1658:-74}{kA}}{\complexnum{15,625:30}} =  \complexqty{1,0346:-104}{kA} \\
-        \cmplx{I}\ped{A,2} &= \frac{\cmplx{I}\ped{a,2}}{\cmplx{m}^*_2} = \frac{\complexqty{16,1658:106}{kA}}{\complexnum{15,625:-30}} = \complexqty{1,0346:136}{kA}
+        \cmplx{I}\ped{A,0} &= \frac{\cmplx{I}\ped{a,0}}{\cmplx{m}^*_0} = 0 \\
+        \cmplx{I}\ped{A,1} &= \frac{\cmplx{I}\ped{a,1}}{\cmplx{m}^*_1} = \frac{\complexqty{16,1658:-74}{kA}}{\num{15,625}} =  \complexqty{1,0346:-74}{kA} \\
+        \cmplx{I}\ped{A,2} &= \frac{\cmplx{I}\ped{a,2}}{\cmplx{m}^*_2} = \frac{\complexqty{16,1658:106}{kA}}{\num{15,625}} = \complexqty{1,0346:106}{kA}
     \end{align*}
 
     Finalment, calculem el corrent de les tres fases del primari aplicant les equacions \eqref{eq:c_sim_a}, \eqref{eq:c_sim_b} i \eqref{eq:c_sim_c}:
      \begin{align*}
-        \cmplx{I}\ped{A} &= \cmplx{I}\ped{A,0} + \cmplx{I}\ped{A,1} + \cmplx{I}\ped{A,2} = \complexqty{1,0346:-164}{kA} \\
-        \cmplx{I}\ped{B} &= \cmplx{I}\ped{A,0} + a^2 \cmplx{I}\ped{A,1} + a \cmplx{I}\ped{A,2} = \complexqty{1,0346:-164}{kA} \\
-        \cmplx{I}\ped{C} &= \cmplx{I}\ped{A,0} + a \cmplx{I}\ped{A,1} + a^2 \cmplx{I}\ped{A,2} = \complexqty{2,0692:16}{kA}
+        \cmplx{I}\ped{A} &= \cmplx{I}\ped{A,0} + \cmplx{I}\ped{A,1} + \cmplx{I}\ped{A,2} = 0 \\
+        \cmplx{I}\ped{B} &= \cmplx{I}\ped{A,0} + a^2 \cmplx{I}\ped{A,1} + a \cmplx{I}\ped{A,2} = \complexqty{1,7920:-164}{kA} \\
+        \cmplx{I}\ped{C} &= \cmplx{I}\ped{A,0} + a \cmplx{I}\ped{A,1} + a^2 \cmplx{I}\ped{A,2} = \complexqty{1.7920:16}{kA}
     \end{align*}
 
     Es pot comprovar que es compleix: $\cmplx{I}\ped{A} + \cmplx{I}\ped{B} + \cmplx{I}\ped{C} = 0$
 
-    La distribució de corrents entre les tres fases del primari és típica dels transformadors YNyn amb un índex horari igual a \qty{+-30}{\degree}; per dues de les fases circula un corrent del mateix valor  i en fase amb el corrent de curtcircuit secundari, i per la tercera fase circula un corrent de valor doble i desfasat \qty{180}{\degree}.
+    La distribució de corrents entre les tres fases del primari és típica dels transformadors YNyn0 i YNyn6; per una fase circula un corrent en fase amb el corrent de curtcircuit secundari, per una altra fase circula el mateix corrent però desfasat \qty{180}{\degree}, i per la tercera fase no hi circula corrent.
 
-     En aquests casos, els valors dels corrents de primari poden obtenir-se directament, a partir del corrent de curtcircuit secundari, de la relació de transformació i dels factors $\frac{1}{\sqrt{3}}$ i  $\frac{2}{\sqrt{3}}$:
+    En aquests casos, els valors dels corrents de primari poden obtenir-se directament, a partir del corrent de curtcircuit secundari i de la relació de transformació:
+
     \begin{align*}
-        |\cmplx{I}\ped{A}| = |\cmplx{I}\ped{B}| = \frac{1}{\sqrt{3}} \times \frac{\qty{28}{kA}}{\num{15,625}} = \qty{1,0346}{kA} \\
-        |\cmplx{I}\ped{C}|= \frac{2}{\sqrt{3}} \times \frac{\qty{28}{kA}}{\num{15,625}} = \qty{2,0692}{kA}
+        |\cmplx{I}\ped{A}| &= 0 \\
+        |\cmplx{I}\ped{B}| = |\cmplx{I}\ped{C} &|=  \frac{\qty{28}{kA}}{\num{15,625}} = \qty{1,7920}{kA}
     \end{align*}
 
 \end{exemple}
@@ -1228,7 +1232,7 @@ Quan la diferència és 4 o 8, es requereix un canvi en l'ordre de connexió del
     \frac{\varepsilon\ped{cc,B}}{\varepsilon\ped{cc,A}} = \frac{U\ped{n,A}}{U\ped{n,B}}\label{eq:connex-correcta}
 \end{equation}
 
-La condició addicional  \eqref{eq:connex-correcta} garanteix que no hi hagi sobrecàrregues en cap dels transformadors, ja que els corrents i les potències es reparteixen entre els dos transformadors de manera proporcional als seus corrents nominals; en el cas que les tensions nominals de A i B també siguin  iguals, es produeix un repartiment proporcional a les seves potències nominals.
+La condició addicional  \eqref{eq:connex-correcta} garanteix que no hi hagi sobrecàrregues en cap dels transformadors, ja que els corrents i les potències es reparteixen entre els dos transformadors de manera proporcional a llurs corrents nominals; en el cas que les tensions nominals d'A i B també siguin  iguals, es produeix un repartiment proporcional a llurs potències nominals.
 
 
 \subsection{Condicions per a una connexió òptima}\label{sec:connex-optima}\index{transformadors de potència!connexió en paraŀlel!connexió òptima}
