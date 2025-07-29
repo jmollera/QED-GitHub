@@ -679,7 +679,7 @@ En aquestes equacions  les tres impedàncies $\cmplx{z}\ped{PS}$, $\cmplx{z}\ped
 \subsection{Tipus de connexions}\index{transformadors de potència!trifàsics!tipus de connexions}
 
 
-Connectant tres transformadors monofàsics entre si podem crear-ne un de trifàsic ---banc trifàsic. Tanmateix, és més comú construir els transformadors trifàsics d'una sola peça, ja sigui amb un nucli de tres columnes ---transformador de columnes--- o amb un nucli de cinc columnes ---transformador cuirassat.\footnote{Per a una discussió més extensa, es pot veure la secció 2 de la norma CEI 60076-8 \emph{Power transformers --- Application guide}.}\index{CEI!60076-08@60076-8}
+Connectant tres transformadors monofàsics entre si podem crear-ne un de trifàsic ---banc trifàsic. Tanmateix, és més comú construir els transformadors trifàsics d'una sola peça, ja sigui amb un nucli de tres o cinc columnes ---transformadors de columnes--- o amb un nucli  cuirassat ---transformadors cuirassats.\footnote{Per a una discussió més extensa, es pot veure la secció 2 de la norma CEI 60076-8 \emph{Power transformers --- Application guide}.}\index{CEI!60076-08@60076-8}
 
 Tant el primari com el secundari poden connectar-se de tres maneres diferents: en estrella (Y) en triangle (D) o en zig-zag (Z); les característiques principals de cadascuna d'aquestes connexions són:
 
@@ -817,7 +817,7 @@ La connexió del circuit equivalent homopolar dels transformadors trifàsics de 
 
 \subsubsection{Transformadors de dos debanats}\label{sec:cir-hom-2-deb}
 
-Es presenten a continuació les diferents combinacions possibles de tipus de connexió de primari i secundari, amb llurs circuits homopolars equivalents.
+Es presenten a continuació les diferents combinacions possibles de tipus de connexió de primari i secundari, amb llur circuit homopolar equivalent.
 
 Totes les impedàncies representades són valors en tant per u; $\cmplx{z}_0$ és la impedància homopolar del transformador, i $\cmplx{z}\ped{N1}$ i $\cmplx{z}\ped{N2}$ són les impedàncies de connexió a terra dels debanats primari i secundari respectivament. En el cas d'estrelles connectades sòlidament a terra, tindrem $\cmplx{z}\ped{N1}=0$ i $\cmplx{z}\ped{N2}=0$.
 
@@ -876,8 +876,9 @@ Totes les impedàncies representades són valors en tant per u; $\cmplx{z}_0$ é
     \captionof{figure}{Esquema homopolar d'un transformador Dyn}
 \end{center}
 
-En el cas dels transformadors YNy (figura \vref{fig:Hom-YNy}) i Yyn (figura \vref{fig:Hom-Yyn}), el valor de $\cmplx{z}_0$ és molt elevat. Depenent del tipus de transformador ---banc trifàsic, de tres columnes o de cinc columnes--- el valor pot ser de l'ordre de la impedància transversal del transformador, o una mica menor; en qualsevol cas, és un valor molt més gran que el de la impedància longitudinal. Això fa que en molts llibres es faci servir l'aproximació $\cmplx{z}_0 = \infty$, i com a conseqüència, en els diagrames equivalents dels esquemes homopolars s'ometi la connexió de $\cmplx{z}_0$ a terra ---la línia de punts de les figures \ref{fig:Hom-YNy} i \ref{fig:Hom-Yyn}.
+En els  transformadors YNyn, YNd i Dyn, el valor de $\cmplx{z}_0$ és igual a la impedància longitudinal, en el cas d'un banc trifàsic: $\cmplx{z}_0=\cmplx{z}\ped{cc}$; en els altres tipus de transformadors ---de columnes o cuirassat--- el valor de $\cmplx{z}_0$ és menor: $\cmplx{z}_0\approx 0{,}8\, \cmplx{z}\ped{cc}$.
 
+En canvi, en els transformadors YNy i Yyn, el valor de $\cmplx{z}_0$ és molt elevat. Depenent del tipus de transformador ---banc trifàsic, de columnes o cuirassat--- el valor pot ser de l'ordre de la impedància transversal del transformador, o una mica menor; en qualsevol cas, és un valor molt més gran que el de la impedància longitudinal. Això fa que en molts llibres es faci servir l'aproximació $\cmplx{z}_0 = \infty$, i com a conseqüència, en els diagrames equivalents dels esquemes homopolars s'ometi la connexió de $\cmplx{z}_0$ a terra ---la línia de punts de les figures \ref{fig:Hom-YNy} i \ref{fig:Hom-Yyn}.
 
 \subsubsection{Transformadors de tres debanats}\label{sec:cir-hom-3-deb}
 
