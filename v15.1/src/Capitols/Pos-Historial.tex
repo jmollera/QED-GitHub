@@ -1129,8 +1129,8 @@ Es corregeix l'exemple \ref{ex:IccTrafos}, ja que en el cas del transformador YN
 
 S'ha actualitzat la distribució de Python utilitzada per executar els programes d'aquest llibre; els canvis més significatius són l'ús de la versió 3.13 de Python, el pas de la versió 1.x a la 2.x de la llibreria \texttt{numpy}, i el pas de la versió 2.x a la 3.x de la llibreria \texttt{pandapower}. Els canvis i millores que s'han dut a terme són els següents:
 \begin{itemize}
-    \item En el mòdul \texttt{qed.utils}, s'ha canviat la implementació  de la classe \texttt{Complex}, sense modificar-ne cap característica externa.
-    \item En el mòdul \texttt{qed.eng\_elc}, s'ha canviat la implementació  de les classes \texttt{IECcurve}, \texttt{IEEEcurve} i \texttt{Speed}, canviant-ne els noms dels elements interns de minúscula a majúscula, per emfatitzar que són constants. Això afecta a l'ús extern d'aquestes classes.
+    \item En el mòdul \texttt{qed.utils}, s'ha modificat la implementació  de la classe \texttt{Complex}, sense canviar-ne cap característica externa.
+    \item En el mòdul \texttt{qed.eng\_elc}, s'ha modificat la implementació  de les classes \texttt{IECcurve}, \texttt{IEEEcurve} i \texttt{Speed}, canviant-ne els noms dels elements interns de minúscula a majúscula, per emfatitzar que són constants. Això afecta a l'ús extern d'aquestes classes.
     \item Ha calgut modificar el programa \texttt{Exemple-12-3.py}, afegint el paràmetre \texttt{tap\_changer\_type} amb el valor \texttt{'Ratio'} a la funció \texttt{create\_transformer\_from\_parameters}. Això és degut al canvi de versió de la llibreria \texttt{pandapower}.
 \end{itemize}
 
