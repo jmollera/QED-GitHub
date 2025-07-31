@@ -594,12 +594,12 @@ $t_{51}=\frac{\qty{80}{s}}{(\qty{3000}{A} / \qty{1000}{A})^2 - 1} = \qty{10}{s}$
 L'equació \eqref{eq:corba-50-51} no es pot fer servir quan la intensitat $I$ varia amb el temps, com és el cas del corrent d'arrencada d'un motor, o d'un corrent de curtcircuit que s'esmorteeix a mesura que passa el temps. En aquests casos, les normes CEI 60255-151 i IEEE C37.112 ens donen l'equació dinàmica que cal aplicar:
 
 \begin{equation}\label{eq:50-51}
-	\int_0^\tauup \frac{1}{t_{51}(I(t))}  \diff t = 1
+	\int_0^\tau \frac{1}{t_{51}(I(t))}  \diff t = 1
 \end{equation}
 
-En aquesta equació, $I(t)$ és un corrent variable en el temps, i $\tauup$ és el temps que triga a actuar la protecció. Expressat en paraules, podem dir que la protecció actua quan l'àrea sota la corba $1/t_{51}(I(t))$ és igual a 1; d'altra banda, si aquesta àrea no arriba mai a fer-se igual a 1, la protecció no actuarà.
+En aquesta equació, $I(t)$ és un corrent variable en el temps, i $\tau$ és el temps que triga a actuar la protecció. Expressat en paraules, podem dir que la protecció actua quan l'àrea sota la corba $1/t_{51}(I(t))$ és igual a 1; d'altra banda, si aquesta àrea no arriba mai a fer-se igual a 1, la protecció no actuarà.
 
-Quan l'equació \eqref{eq:50-51} s'ha de resoldre manualment, usualment es fa servir la integració pel mètode dels trapezis (vegeu la secció \vref{sec:trapezis}). En aquest cas tenim, amb $t_1 = 0$ i $t_n = \tauup$:
+Quan l'equació \eqref{eq:50-51} s'ha de resoldre manualment, usualment es fa servir la integració pel mètode dels trapezis (vegeu la secció \vref{sec:trapezis}). En aquest cas tenim, amb $t_1 = 0$ i $t_n = \tau$:
 
 \begin{equation}\label{eq:50-51-aprox}
 	\sum_{i=2}^n \frac{1}{2} \left( \frac{1}{t_{51}(I(t_i))} + \frac{1}{t_{51}(I(t_{i-1}))} \right) (t_i - t_{i-1}) \approx 1

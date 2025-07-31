@@ -47,13 +47,13 @@ Les càrregues venen sempre definides per la potència que absorbeixen, és a di
 \subsection{Línies elèctriques} \index{linies@línies elèctriques}
 
 Les línies elèctriques es modelen mitjançant un circuit equivalent
-per fase en «$\piup$», format per una impedància longitudinal i dues
+per fase en «$\pi$», format per una impedància longitudinal i dues
 admitàncies transversals, tal com es pot veure en la figura
 \vref{pic:equiv_linia}. En aquesta figura s'ha suposat que la línia
 està connectada entre els nusos 1 i 2; les admitàncies transversals
 tenen sempre un extrem connectat a terra (nus 0 de referència).
 \index{linies@línies elèctriques!circuit equivalent en
-\guillemotleft$\piup$\guillemotright}
+\guillemotleft$\pi$\guillemotright}
 
 \begin{center}
     \input{Imatges/Cap-FluxCarregues-Linia.pdf_tex}
@@ -84,26 +84,26 @@ elèctriques!equacions hiperbòliques de transmissió}
 
 D'altra banda, en el circuit de la figura \vref{pic:equiv_linia} es compleix:
 \begin{equation}\label{eq:linia_eq}
-   \cmplx{I}_2 = \frac{\cmplx{U}_1 - \cmplx{U}_2}{\cmplx{Z}_\piup} - \cmplx{Y}_\piup\, \cmplx{U}_2
+   \cmplx{I}_2 = \frac{\cmplx{U}_1 - \cmplx{U}_2}{\cmplx{Z}_\pi} - \cmplx{Y}_\pi\, \cmplx{U}_2
    \quad \Rightarrow\quad
-   \cmplx{U}_1 = (1 + \cmplx{Z}_\piup\,\cmplx{Y}_\piup ) \cmplx{U}_2 + \cmplx{Z}_\piup\,\cmplx{I}_2
+   \cmplx{U}_1 = (1 + \cmplx{Z}_\pi\,\cmplx{Y}_\pi ) \cmplx{U}_2 + \cmplx{Z}_\pi\,\cmplx{I}_2
 \end{equation}
 
 Identificant entre si els termes de les equacions
 \eqref{eq:linia_eq_trans} i \eqref{eq:linia_eq}, obtenim els
 paràmetres del circuit equivalent de la línia.
 \begin{alignat}{2}
-   \cmplx{Z}_\piup &= \cmplx{Z}\ped{c} \sinh \cmplx{\theta}\ped{c} &&= \cmplx{Z}\ped{t} \,
+   \cmplx{Z}_\pi &= \cmplx{Z}\ped{c} \sinh \cmplx{\theta}\ped{c} &&= \cmplx{Z}\ped{t} \,
    \frac{\sinh \cmplx{\theta}\ped{c}}{\cmplx{\theta}\ped{c}} \\[1.5ex]
-   \cmplx{Y}_\piup &= \frac{\tanh (\cmplx{\theta}\ped{c} / 2) }{\cmplx{Z}\ped{c}} &&=
+   \cmplx{Y}_\pi &= \frac{\tanh (\cmplx{\theta}\ped{c} / 2) }{\cmplx{Z}\ped{c}} &&=
    \frac{\cmplx{Y}\ped{t}}{2} \, \frac{\tanh (\cmplx{\theta}\ped{c} / 2)}{\cmplx{\theta}\ped{c} / 2}
 \end{alignat}
 
 Ara bé, en la majoria dels casos es compleix: $|\cmplx{\theta}\ped{c}| \ll 1$, i utilitzant els desenvolupaments en sèrie de Taylor de les funcions $\sinh$ i $\tanh$, al voltant de 0, tenim:
 \begin{align}
-   \cmplx{Z}_\piup &= \cmplx{Z}\ped{t} \, \left( 1 + \frac{\cmplx{\theta}\ped{c}^2}{3!} +
+   \cmplx{Z}_\pi &= \cmplx{Z}\ped{t} \, \left( 1 + \frac{\cmplx{\theta}\ped{c}^2}{3!} +
    \frac{\cmplx{\theta}\ped{c}^4}{5!} + \cdots \right) \approx \cmplx{Z}\ped{t} \\[1.5ex]
-   \cmplx{Y}_\piup &= \frac{\cmplx{Y}\ped{t}}{2} \,\left( 1 - \frac{(\cmplx{\theta}\ped{c}/2)^2}{3} + \frac{2 (\cmplx{\theta}\ped{c}/2)^4}{15} - \cdots \right) \approx \frac{\cmplx{Y}\ped{t}}{2}
+   \cmplx{Y}_\pi &= \frac{\cmplx{Y}\ped{t}}{2} \,\left( 1 - \frac{(\cmplx{\theta}\ped{c}/2)^2}{3} + \frac{2 (\cmplx{\theta}\ped{c}/2)^4}{15} - \cdots \right) \approx \frac{\cmplx{Y}\ped{t}}{2}
 \end{align}
 
 Utilitzant aquests valors, la contribució d'una línia elèctrica a
@@ -200,7 +200,7 @@ desfasament!matriu d'admitàncies de nus $\mcmplx{Y}\ped{N}$}
 
 Com es pot veure, tenim: $\mcmplx{Y}\ped{N}[1,2] \neq
 \mcmplx{Y}\ped{N}[2,1]$; aquesta desigualtat ens indica que no existeix un esquema
-equivalent en «$\piup$» del transformador, format únicament per
+equivalent en «$\pi$» del transformador, format únicament per
 elements passius.
 
 Els fluxos de potència a través del transformador, $\cmplx{S}_{12}$
@@ -261,9 +261,9 @@ amb regulació variable sense desfasament!pèrdues de transmissió}
 
 El circuit equivalent d'aquest tipus de transformador també és el de la
  figura \vref{pic:equiv_trafo_reg_decal}, substituint $\cmplx{m}\!:\!1$ per $m\!:\!1$;  atès que en aquest cas es compleix $\mcmplx{Y}\ped{N}[1,2] = \mcmplx{Y}\ped{N}[2,1]$, sí que
- existeix un circuit equivalent en «$\piup$» format per una impedància longitudinal i dues admitàncies transversals, tal com es pot veure en la figura  \vref{pic:equiv_trafo_reg}.
+ existeix un circuit equivalent en «$\pi$» format per una impedància longitudinal i dues admitàncies transversals, tal com es pot veure en la figura  \vref{pic:equiv_trafo_reg}.
 \index{transformadors amb regulació variable sense desfasament!circuit
-equivalent en \guillemotleft$\piup$\guillemotright}
+equivalent en \guillemotleft$\pi$\guillemotright}
 
 \begin{center}
     \input{Imatges/Cap-FluxCarregues-Trafo-Pi.pdf_tex}
@@ -274,9 +274,9 @@ equivalent en \guillemotleft$\piup$\guillemotright}
 
 Els valors dels paràmetres d'aquest circuit equivalent són:
 \begin{align}
-   \cmplx{Z}_\piup &= m \, \cmplx{Z}\ped{cc} \\[1.5ex]
-   \cmplx{Y}_{\piup_1} &= \frac{1-m}{m^2 \,\cmplx{Z}\ped{cc}} \\[1.5ex]
-   \cmplx{Y}_{\piup_2} &= \frac{m-1}{m\, \cmplx{Z}\ped{cc}}
+   \cmplx{Z}_\pi &= m \, \cmplx{Z}\ped{cc} \\[1.5ex]
+   \cmplx{Y}_{\pi_1} &= \frac{1-m}{m^2 \,\cmplx{Z}\ped{cc}} \\[1.5ex]
+   \cmplx{Y}_{\pi_2} &= \frac{m-1}{m\, \cmplx{Z}\ped{cc}}
 \end{align}
 
 \section{Tipus de nusos} \index{flux de càrregues!tipus de nusos}

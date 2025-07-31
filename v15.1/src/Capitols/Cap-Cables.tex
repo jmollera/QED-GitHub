@@ -22,11 +22,11 @@ $S$  del conductor.
 temperatura major resistivitat. Coneixent la resistivitat $\rho_1$ a una
 temperatura $T_1$ es pot calcular la resistivitat $\rho_2$ a una altra
 temperatura $T_2$, a partir del coeficient de variació de la
-resistivitat amb la temperatura $\alphaup_1$ donat a la temperatura $T_1$.
+resistivitat amb la temperatura $\alpha_1$ donat a la temperatura $T_1$.
 \begin{equation}
-   \rho_2 = \rho_1 [1 + \alphaup_1 (T_2 - T_1)]\label{eq:resistivitat}
+   \rho_2 = \rho_1 [1 + \alpha_1 (T_2 - T_1)]\label{eq:resistivitat}
 \end{equation}
-\index{$\alphaup$}
+\index{$\alpha$}
 
 \index{resistivitat!valors}En la taula
 \vref{taula:param-elc} es donen valors de resistivitat i de
@@ -38,8 +38,8 @@ coeficients de variació de la resistivitat amb la temperatura a
    \label{taula:param-elc}
    \begin{tabular}{lccc}
    \toprule[1pt]
-   Material & $\rho_{\qty{20}{\degreeCelsius}} \,\big/\, \unit[per-mode = fraction]{\ohm\milli\metre\squared\per\metre}$ & $\alphaup_{\qty{20}{\degreeCelsius}} \,\big/\, \unit{\degreeCelsius^{-1}}$ &
-   $\alphaup_{\qty{0}{\degreeCelsius}} \,\big/\, \unit{\degreeCelsius^{-1}}$
+   Material & $\rho_{\qty{20}{\degreeCelsius}} \,\big/\, \unit[per-mode = fraction]{\ohm\milli\metre\squared\per\metre}$ & $\alpha_{\qty{20}{\degreeCelsius}} \,\big/\, \unit{\degreeCelsius^{-1}}$ &
+   $\alpha_{\qty{0}{\degreeCelsius}} \,\big/\, \unit{\degreeCelsius^{-1}}$
    \\
    \midrule
       Alumini & \num{0,02825} & \num{0,00391} & \num{0,00424} \\
@@ -290,9 +290,9 @@ En la taula \vref{taula:const_termica} es donen valors de $C$ per a diferents ma
 \begin{align}
    \qty{1}{mil} &= \qty{e-3}{in}  \\
   \qty{1}{mil} &= \qty{e-3}{in} \times \frac{\qty{25,4}{mm}}{\qty{1}{in}} = \qty{25,4e-3}{mm}  \\
-  \qty{1}{cmil} &= \qty[parse-numbers=false]{\frac{\piup}{4}}{mil^2} \approx \qty{0,785398}{mil^2}   \\
-   \qty{1}{cmil} &= \frac{\piup}{4}\times \qty{e-6}{in^2} \approx \qty{0,785398e-6}{in^2} \\
-   \qty{1}{cmil} &= \frac{\piup}{4} \times \qty{e-6}{in^2} \times \frac{\qty{645,16}{mm^2}}{\qty{1}{in^2}} \approx \qty{506,7075e-6}{mm^2}
+  \qty{1}{cmil} &= \qty[parse-numbers=false]{\frac{\pi}{4}}{mil^2} \approx \qty{0,785398}{mil^2}   \\
+   \qty{1}{cmil} &= \frac{\pi}{4}\times \qty{e-6}{in^2} \approx \qty{0,785398e-6}{in^2} \\
+   \qty{1}{cmil} &= \frac{\pi}{4} \times \qty{e-6}{in^2} \times \frac{\qty{645,16}{mm^2}}{\qty{1}{in^2}} \approx \qty{506,7075e-6}{mm^2}
    \\[1ex]
    \qty{1}{kcmil} &= \qty{785,398}{mil^2}  = \qty{0,785398e-3}{in^2} \approx \qty{0,5067075}{mm^2}\label{eq:kcmil_mm2}
 \end{align}
@@ -486,8 +486,8 @@ Per a alguns valors particulars de $k$ es compleixen de forma aproximada les seg
 
 \index{AWG (\textit{American Wire Gauge})!conversió a \unit{mm^2}} Es donen a continuació les equacions per passar directament d'un número AWG a la seva secció equivalent $S$  expressada en \unit{mm^2}, i al seu diàmetre equivalent $d$  expressat en \unit{mm}.
 \begin{align}
-   S/{\scriptstyle\unit{mm^2}}  &= \frac{ \piup \times \num{25,4}^2 \times 460^2}{4 \times 10^6 \times 92^{\frac{2(\text{AWG}+3)}{39}}} =
-   \frac{ \piup \times \num{25,4}^2 \times 460^2}{4 \times 10^6 \times 92^{6/39} \times 92^{\text{AWG}/\num{19,5}}} \approx
+   S/{\scriptstyle\unit{mm^2}}  &= \frac{ \pi \times \num{25,4}^2 \times 460^2}{4 \times 10^6 \times 92^{\frac{2(\text{AWG}+3)}{39}}} =
+   \frac{ \pi \times \num{25,4}^2 \times 460^2}{4 \times 10^6 \times 92^{6/39} \times 92^{\text{AWG}/\num{19,5}}} \approx
    \frac{\num{53,4751207321}}{92^{\text{AWG}/\num{19,5}}}\label{eq:awg_mm2}\\[2ex]
    d/{\scriptstyle\unit{mm}}  &= \sqrt{\frac{\num{25,4}^2 \times 460^2}{10^6 \times 92^{\frac{2(\text{AWG}+3)}{39}}}} =
    \frac{\num{25,4} \times 460}{10^3 \times 92^{3/39} \times 92^{\text{AWG}/39}} \approx
@@ -512,7 +512,7 @@ En aquestes dues equacions cal utilitzar els valors $-1, -2$ i $-3$  pels númer
 
 Es donen a continuació dues equacions que poden considerar-se les inverses de les equacions \eqref{eq:awg_mm2} i \eqref{eq:awg_mm}, ja que ens permeten trobar el número AWG aproximat, corresponent a una secció $S$ donada en \unit{mm^2} o a un diàmetre $d$ donat en \unit{mm}:
 \begin{align}
-   \text{AWG} &= \frac{\num{19,5}}{\ln 92} \times \ln \frac{\piup \times
+   \text{AWG} &= \frac{\num{19,5}}{\ln 92} \times \ln \frac{\pi \times
    \num{25,4}^2 \times 460^2}{4 \times 10^6 \times 92^{6/39} \times S/{\scriptstyle\unit{mm^2}}} \approx
    \num{4,31245284200} \times \ln \frac{\num{53,4751207321}}{S/{\scriptstyle\unit{mm^2}}}\label{eq:mm2_awg} \\[2ex]
    \text{AWG} &= \frac{39}{\ln 92} \times \ln \frac{\num{25,4} \times 460}{10^3 \times 92^{3/39} \times d/{\scriptstyle\unit{mm}}} \approx

@@ -4,7 +4,7 @@
 <svg
    sodipodi:docname="Not-Fasor.svg"
    viewBox="0 0 154.66666 64"
-   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   inkscape:version="1.4.2 (ebf0e94, 2025-05-08)"
    version="1.1"
    id="svg3347"
    height="60mm"
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.1035235"
-     inkscape:cx="314.23466"
-     inkscape:cy="133.82308"
+     inkscape:zoom="4.207047"
+     inkscape:cx="181.36237"
+     inkscape:cy="120.15554"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      showgrid="true"
@@ -975,13 +975,11 @@
          y="58.365654">{\color[RGB]{255,0,120}\scriptsize $y(t)=\sqrt{2}\, Z \cos(\omega t + \theta)$}</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
        x="96.632713"
        y="48.107895"
        id="text23345-1"><tspan
          sodipodi:role="line"
-         id="tspan23347-1"
-         x="96.632713"
-         y="48.107895">{\scriptsize $\theta=-2\piup +\omega \tau$}</tspan></text>
+         id="tspan1">{\scriptsize $\theta=-2\pi +\omega \tau$}</tspan></text>
   </g>
 </svg>

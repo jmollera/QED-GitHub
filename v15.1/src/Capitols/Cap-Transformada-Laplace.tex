@@ -38,7 +38,7 @@ obtenir la funció original $f(t)$ a partir de la funció
 transformada $F(s)$:
 \begin{equation}
 	F(s)\,\xrightarrow{\varmathscr{L}^{-1}}\,f(t), \qquad
-    \varmathscr{L}^{-1}\{F(s)\} = f(t) \equiv \frac{1}{2 \piup j }
+    \varmathscr{L}^{-1}\{F(s)\} = f(t) \equiv \frac{1}{2 \pi j }
     \int_{\gamma-j \infty}^{\gamma+j \infty} F(s)\, e^{s t} \diff s,
     \qquad t\geq 0 \label{eq:transf_inv_laplace}
 \end{equation}
@@ -51,34 +51,34 @@ seva esquerra.
 unitari} \index{funcions!impuls}\index{funcions!de
 Heaviside}\index{funcions!delta de Dirac}\index{Heaviside, funció
 de}\index{Dirac, funció delta
-de}\index{$\epsilonup$@$\varepsilonup_\tau(t)$}\index{$\deltaup_\tau(t)$}
+de}\index{$\epsilon$@$\varepsilon_\tau(t)$}\index{$\delta_\tau(t)$}
 
 Aquestes dues funcions són de gran importància en el càlcul
 operacional. La funció graó unitari o funció de Heaviside\footnote{Oliver Heaviside, matemàtic i físic britànic: \href{https://en.wikipedia.org/wiki/Oliver_Heaviside}{https:/\!\!/en.wikipedia.org/wiki/Oliver\_Heaviside}.}
-$\varepsilonup_\tau(t) \equiv \varepsilonup(t-\tau)$ en l'instant de temps
+$\varepsilon_\tau(t) \equiv \varepsilon(t-\tau)$ en l'instant de temps
 $t=\tau$ es defineix com:
 \begin{equation}
-    \varepsilonup_\tau(t) \equiv \varepsilonup(t-\tau) = \begin{cases} 1, & t \geq \tau \\ 0, & t < \tau \end{cases}
+    \varepsilon_\tau(t) \equiv \varepsilon(t-\tau) = \begin{cases} 1, & t \geq \tau \\ 0, & t < \tau \end{cases}
 \end{equation}
 
-La funció impuls o funció delta de Dirac\footnote{Paul Adrien Maurice Dirac, matemàtic i físic britànic: \href{https://en.wikipedia.org/wiki/Paul_Dirac}{https:/\!\!/en.wikipedia.org/wiki/Paul\_Dirac}.} $\deltaup_\tau(t) \equiv
-\deltaup(t-\tau)$ en l'instant de temps $t=\tau$, es pot definir
+La funció impuls o funció delta de Dirac\footnote{Paul Adrien Maurice Dirac, matemàtic i físic britànic: \href{https://en.wikipedia.org/wiki/Paul_Dirac}{https:/\!\!/en.wikipedia.org/wiki/Paul\_Dirac}.} $\delta_\tau(t) \equiv
+\delta(t-\tau)$ en l'instant de temps $t=\tau$, es pot definir
 mitjançant l'ús de límits o d'integrals de variable complexa, però
 resulta més intuïtiu definir-la a partir de les seves propietats: la
 funció és nuŀla a tot arreu excepte a $t=\tau$, i és d'àrea
 unitària:
 \begin{subequations}
 \begin{align}
-    \deltaup_\tau(t) \equiv \deltaup(t-\tau) &= 0, \quad \forall t \neq \tau \\
-    \int_0^\infty \deltaup_\tau(t) \diff t &= 1
+    \delta_\tau(t) \equiv \delta(t-\tau) &= 0, \quad \forall t \neq \tau \\
+    \int_0^\infty \delta_\tau(t) \diff t &= 1
 \end{align}
 \end{subequations}
 
-Algunes propietats i relacions de les funcions $\varepsilonup_\tau(t)$ i $\deltaup_\tau(t)$, on $f(t)$ és una funció qualsevol, són:
+Algunes propietats i relacions de les funcions $\varepsilon_\tau(t)$ i $\delta_\tau(t)$, on $f(t)$ és una funció qualsevol, són:
 \begin{align}
-   \frac{\diff}{\diff t} \varepsilonup_\tau (t) &= \deltaup_\tau(t) \\[0.5ex]
-   \int_0^\infty f(t) \deltaup_\tau (t) \diff t &= f(\tau) \\[0.5ex]
-    \int_a^b \varepsilonup_\tau (t) f(t) \diff t &= \varepsilonup_\tau(t)
+   \frac{\diff}{\diff t} \varepsilon_\tau (t) &= \delta_\tau(t) \\[0.5ex]
+   \int_0^\infty f(t) \delta_\tau (t) \diff t &= f(\tau) \\[0.5ex]
+    \int_a^b \varepsilon_\tau (t) f(t) \diff t &= \varepsilon_\tau(t)
     \int_\tau^b f(t) \diff t, \qquad \tau \in [a, b]
 \end{align}
 
@@ -121,9 +121,9 @@ Si tenim: $\varmathscr{L} \{f(t) \} = F(s)$, llavors:
 \begin{subequations}
 \begin{alignat}{2}
     \varmathscr{L} \{ f(t - \tau)
-    \varepsilonup_\tau(t) \} &= e^{-s \tau} F(s), &\qquad \tau \in \mathsfb{R}_{\geq 0} \\
+    \varepsilon_\tau(t) \} &= e^{-s \tau} F(s), &\qquad \tau \in \mathsfb{R}_{\geq 0} \\
     \varmathscr{L}^{-1} \{ e^{-s \tau} F(s) \} &=
-    f(t-\tau) \varepsilonup_\tau(t), &\qquad \tau \in \mathsfb{R}_{\geq 0}
+    f(t-\tau) \varepsilon_\tau(t), &\qquad \tau \in \mathsfb{R}_{\geq 0}
 \end{alignat}
 \end{subequations}
 
@@ -212,7 +212,7 @@ transformades de Laplace de les funcions més usuals. Totes les
 constants que hi apareixen són valors reals, que tant poden ser
 positius com negatius llevat que s'indiqui el contrari; la variable
 $\omega$ que apareix en les funcions trigonomètriques representa la
-velocitat angular, amb: $\omega=2\piup f=2\piup/T$.
+velocitat angular, amb: $\omega=2\pi f=2\pi/T$.
 
 \index{transformada de Laplace!taula de funcions}
 \begin{longtable}{r<{\hspace{3em}}l}
@@ -230,16 +230,16 @@ velocitat angular, amb: $\omega=2\piup f=2\piup/T$.
    \multicolumn{2}{r}{\sffamily\bfseries\color{NavyBlue}(\emph{continua a la pàgina següent})}
    \endfoot
    \endlastfoot
-   $\varepsilonup_\tau(t), \quad \tau \in\mathsfb{R}_{\geq 0}$  & $\dfrac{e^{-\tau s}}{s}$\\[2.2ex]
-   $\deltaup_\tau(t), \quad\tau \in \mathsfb{R}_{\geq 0}$ & $e^{-\tau s}$\\[2.2ex]
+   $\varepsilon_\tau(t), \quad \tau \in\mathsfb{R}_{\geq 0}$  & $\dfrac{e^{-\tau s}}{s}$\\[2.2ex]
+   $\delta_\tau(t), \quad\tau \in \mathsfb{R}_{\geq 0}$ & $e^{-\tau s}$\\[2.2ex]
    1 & $\dfrac{1}{s}$\\[2.2ex]
    $t$ &   $\dfrac{1}{s^2}$\\[2.2ex]
    $t^n, \quad n\in\mathsfb{N}$ &   $\dfrac{n!}{s^{n+1}}$\\[2.2ex]
    $\dfrac{t^{n-1}}{(n-1)!}, \quad n\in\mathsfb{N}^*$ & $\dfrac{1}{s^n}$\\[2.2ex]
    $t^a, \quad a \in\mathsfb{R}_{\geq 0}$ & $\dfrac{\Gamma(a+1)}{s^{a+1}}$\\[2.2ex]
-   $\dfrac{1}{\sqrt{t}}$ & $\dfrac{\sqrt{\piup}}{\sqrt{s}} $\\[2.2ex]
-   $\sqrt{t}$ & $\dfrac{\sqrt{\piup}}{2 s \sqrt{s}}$\\[2ex]
-   $\dfrac{e^{-a t}}{\sqrt{t}}$ & $\dfrac{\sqrt{\piup}}{\sqrt{s+a}}$\\[2.2ex]
+   $\dfrac{1}{\sqrt{t}}$ & $\dfrac{\sqrt{\pi}}{\sqrt{s}} $\\[2.2ex]
+   $\sqrt{t}$ & $\dfrac{\sqrt{\pi}}{2 s \sqrt{s}}$\\[2ex]
+   $\dfrac{e^{-a t}}{\sqrt{t}}$ & $\dfrac{\sqrt{\pi}}{\sqrt{s+a}}$\\[2.2ex]
    $e^{-a t}$ & $\dfrac{1}{s+a}$\\[2.2ex]
    $a^{-b t}, \quad a\neq 0$ & $\dfrac{1}{s+b\ln a}$\\[3.5ex]
    $1- e^{-a t}$ & $\dfrac{a}{s(s+a)}$\\[3.5ex]
@@ -264,8 +264,8 @@ velocitat angular, amb: $\omega=2\piup f=2\piup/T$.
    $e^{-a t} \cos (\omega t+\varphi)$ & $\dfrac{(s+a)\cos\varphi-\omega\sin\varphi}{(s+a)^2+\omega^2}$\\[3.5ex]
    $\sin^2 \omega t$ & $\dfrac{2\omega^2}{s^3+4s\omega^2}$\\[3.5ex]
    $\cos^2 \omega t$ &  $\dfrac{s^2+2\omega^2}{s^3+4s\omega^2}$\\[3.5ex]
-   $\dfrac{\sin(2\sqrt{\omega t})}{\sqrt{\omega}}$ & $\dfrac{\sqrt{\piup}e^{-\omega/s}}{s\sqrt{s}}$\\[3.5ex]
-   $\dfrac{\cos(2\sqrt{\omega t})}{\sqrt{t}}$ & $\dfrac{\sqrt{\piup}e^{-\omega/s}}{\sqrt{s}}$\\[3.5ex]
+   $\dfrac{\sin(2\sqrt{\omega t})}{\sqrt{\omega}}$ & $\dfrac{\sqrt{\pi}e^{-\omega/s}}{s\sqrt{s}}$\\[3.5ex]
+   $\dfrac{\cos(2\sqrt{\omega t})}{\sqrt{t}}$ & $\dfrac{\sqrt{\pi}e^{-\omega/s}}{\sqrt{s}}$\\[3.5ex]
    $\sinh a t$ & $\dfrac{a}{s^2-a^2}$\\[3.5ex]
    $\cosh a t$ & $\dfrac{s}{s^2-a^2}$\\[3.5ex]
    $\sinh^2 a t$ & $\dfrac{2a^2}{s^3-4sa^2}$\\[3.5ex]
@@ -315,8 +315,8 @@ transformades de Laplace de diverses formes d'ona usuals.
    \input{Imatges/Cap-Laplace-Funcio-11.pdf_tex} & \raisebox{0.8cm}{$\dfrac{K}{\tau s^2}-\dfrac{Ke^{-\tau s}}{s(1-e^{\tau s})}$}\\[3.5ex]
    \input{Imatges/Cap-Laplace-Funcio-12.pdf_tex} & \raisebox{0.8cm}{$K\dfrac{1-(1+\tau s)e^{-\tau s}}{\tau s^2(1-e^{-2\tau s})}$}\\[3.5ex]
    \input{Imatges/Cap-Laplace-Funcio-13.pdf_tex} & \raisebox{1.2cm}{$\dfrac{K}{\tau s^2}-2K \left(\dfrac{1}{e^{-\tau s}-1}-\dfrac{1}{e^{2\tau s}-1} \right)$}\\[3.5ex]
-   \input{Imatges/Cap-Laplace-Funcio-14.pdf_tex} & \raisebox{0.8cm}{$K\dfrac{\dfrac{\piup}{\tau}}{s^2+\dfrac{\piup^2}{\tau^2}}\dfrac{(1+e^{-\tau s})}{(1-e^{-\tau s})}$}\\[3.5ex]
-   \input{Imatges/Cap-Laplace-Funcio-15.pdf_tex} & \raisebox{0.8cm}{$K\dfrac{\dfrac{\piup}{\tau}}{s^2+\dfrac{\piup^2}{\tau^2}}\dfrac{1}{(1-e^{-\tau s})}$}\\[2.5ex]
+   \input{Imatges/Cap-Laplace-Funcio-14.pdf_tex} & \raisebox{0.8cm}{$K\dfrac{\dfrac{\pi}{\tau}}{s^2+\dfrac{\pi^2}{\tau^2}}\dfrac{(1+e^{-\tau s})}{(1-e^{-\tau s})}$}\\[3.5ex]
+   \input{Imatges/Cap-Laplace-Funcio-15.pdf_tex} & \raisebox{0.8cm}{$K\dfrac{\dfrac{\pi}{\tau}}{s^2+\dfrac{\pi^2}{\tau^2}}\dfrac{1}{(1-e^{-\tau s})}$}\\[2.5ex]
     \bottomrule[1pt]
 \end{longtable}
 
@@ -348,15 +348,15 @@ transformades de Laplace de diverses formes d'ona usuals.
     podem definir $f_1(t)$ com:
 
     \[\begin{split}
-        f_1(t) &= 3t (\varepsilonup_0(t) - \varepsilonup_1(t)) + \left(-\frac{3}{2}t
-        +\frac{9}{2}\right) (\varepsilonup_1(t) -
-        \varepsilonup_3(t))  \\
+        f_1(t) &= 3t (\varepsilon_0(t) - \varepsilon_1(t)) + \left(-\frac{3}{2}t
+        +\frac{9}{2}\right) (\varepsilon_1(t) -
+        \varepsilon_3(t))  \\
         &=
-        3t\varepsilonup_0(t)-3t\varepsilonup_1(t)-\frac{3}{2}t \varepsilonup_1(t)
-        +\frac{3}{2}t \varepsilonup_3(t) +\frac{9}{2} \varepsilonup_1(t)
-        -\frac{9}{2} \varepsilonup_3(t)  \\
-        &=3t\varepsilonup_0(t) -\frac{9}{2}(t-1)\varepsilonup_1(t) +
-        \frac{3}{2}(t-3)\varepsilonup_3(t)
+        3t\varepsilon_0(t)-3t\varepsilon_1(t)-\frac{3}{2}t \varepsilon_1(t)
+        +\frac{3}{2}t \varepsilon_3(t) +\frac{9}{2} \varepsilon_1(t)
+        -\frac{9}{2} \varepsilon_3(t)  \\
+        &=3t\varepsilon_0(t) -\frac{9}{2}(t-1)\varepsilon_1(t) +
+        \frac{3}{2}(t-3)\varepsilon_3(t)
     \end{split}\]
 
     Si ens fixem en el 1r terme, veiem en la taula
@@ -386,11 +386,11 @@ transformades de Laplace de diverses formes d'ona usuals.
     Continuem ara  amb l'ona sinusoidal estudiant la funció $u_1(t)$
     definida entre $t=0$ i $t=\tau$, i que per repetició genera la
     funció $u(t)$; la seva expressió matemàtica és (amb període $T=
-    2\tau$ i velocitat angular $\omega= 2\piup/T  = \piup/\tau$):
+    2\tau$ i velocitat angular $\omega= 2\pi/T  = \pi/\tau$):
 
     \[
         u_1(t) = \begin{cases} 0, & t < 0\\ \hat{U}\sin\omega t =
-        \hat{U}\sin\dfrac{\piup}{\tau}t,  & 0<t<\tau \\ 0, & t > \tau \end{cases}
+        \hat{U}\sin\dfrac{\pi}{\tau}t,  & 0<t<\tau \\ 0, & t > \tau \end{cases}
     \]
 
 
@@ -398,8 +398,8 @@ transformades de Laplace de diverses formes d'ona usuals.
     definir $u_1(t)$ com:
 
     \[
-        u_1(t)=\left(\hat{U}\sin\frac{\piup}{\tau}t\right)(\varepsilonup_0(t)-\varepsilonup_\tau(t))
-        =\left(\hat{U}\sin\frac{\piup}{\tau}t\right)\varepsilonup_0(t) - \left(\hat{U}\sin\frac{\piup}{\tau}t\right)\varepsilonup_\tau(t)
+        u_1(t)=\left(\hat{U}\sin\frac{\pi}{\tau}t\right)(\varepsilon_0(t)-\varepsilon_\tau(t))
+        =\left(\hat{U}\sin\frac{\pi}{\tau}t\right)\varepsilon_0(t) - \left(\hat{U}\sin\frac{\pi}{\tau}t\right)\varepsilon_\tau(t)
     \]
 
     Pel que fa al 2n  terme, si tenim en compte la igualtat
@@ -407,8 +407,8 @@ transformades de Laplace de diverses formes d'ona usuals.
     el període, tenim:
 
     \[
-        u_1(t) = \left(\hat{U}\sin\frac{\piup}{\tau}t\right)\varepsilonup_0(t) +
-        \left(\hat{U}\sin\left(\frac{\piup}{\tau}t-\tau\right)\right)\varepsilonup_\tau(t)
+        u_1(t) = \left(\hat{U}\sin\frac{\pi}{\tau}t\right)\varepsilon_0(t) +
+        \left(\hat{U}\sin\left(\frac{\pi}{\tau}t-\tau\right)\right)\varepsilon_\tau(t)
     \]
 
     El 2n terme s'ha convertit en una funció sinus, com el 1r terme,
@@ -418,9 +418,9 @@ transformades de Laplace de diverses formes d'ona usuals.
     translació, tenim:
 
     \[
-        F_1(s) = \frac{\hat{U} (\piup/\tau)}{s^2 + (\piup/\tau)^2} +
-        \frac{\hat{U} (\piup/\tau)}{s^2 + (\piup/\tau)^2} e^{-\tau s} =
-        \frac{\hat{U} (\piup/\tau)}{s^2 + (\piup/\tau)^2} (1+e^{-\tau s})
+        F_1(s) = \frac{\hat{U} (\pi/\tau)}{s^2 + (\pi/\tau)^2} +
+        \frac{\hat{U} (\pi/\tau)}{s^2 + (\pi/\tau)^2} e^{-\tau s} =
+        \frac{\hat{U} (\pi/\tau)}{s^2 + (\pi/\tau)^2} (1+e^{-\tau s})
     \]
 
     Per acabar, calculem la transformada de la funció $u(t)$ original a
@@ -429,7 +429,7 @@ transformades de Laplace de diverses formes d'ona usuals.
 
     \[
         F(s) = \frac{F_1(s)}{1-e^{-\tau s}} =
-        \frac{\hat{U} (\piup/\tau) }{s^2 + (\piup/\tau)^2}\,\frac{1+e^{-\tau s}}{1-e^{-\tau
+        \frac{\hat{U} (\pi/\tau) }{s^2 + (\pi/\tau)^2}\,\frac{1+e^{-\tau s}}{1-e^{-\tau
         s}}
     \]
 
@@ -762,7 +762,7 @@ partir de les equacions següents:
 
     La transformada de Laplace de la tensió $u(t)$ és, fent servir la taula \ref{taula:Trans-Laplace-Fun}:
     \[
-        U(s) = \sqrt{2}\times 220\times \frac{s}{s^2 + (100\piup)^2}
+        U(s) = \sqrt{2}\times 220\times \frac{s}{s^2 + (100\pi)^2}
     \]
 
     Un cop tancat l'interruptor $\mathscr{M}$, la relació entre $u\ped{c}(t)$ i
@@ -776,7 +776,7 @@ partir de les equacions següents:
     Substituint $U(s)$ per la seva expressió i donant valors numèrics a
     $R$, $L$ i $C$, tenim:
     \[
-        U\ped{C}(s) = \frac{\sqrt{2}\times 110\times 10^6 s}{(s^2 + 1000 s + 500000)(s^2 + (100\piup)^2)}
+        U\ped{C}(s) = \frac{\sqrt{2}\times 110\times 10^6 s}{(s^2 + 1000 s + 500000)(s^2 + (100\pi)^2)}
     \]
 
     Calculem a continuació les arrels dels dos polinomis  del
@@ -784,22 +784,22 @@ partir de les equacions següents:
     \begin{align*}
         s^2 + 1000 s + 500000 &= 0 \quad\Rightarrow\quad s = -500
         \pm j\,500 \\[0.5ex]
-        s^2 + (100\piup)^2 &= 0 \quad\Rightarrow\quad s = \pm j\,100\piup
+        s^2 + (100\pi)^2 &= 0 \quad\Rightarrow\quad s = \pm j\,100\pi
     \end{align*}
 
     Així doncs, l'esmentada funció racional es pot escriure com:
     \[\begin{split}
     U\ped{C}(s) &= \frac{\sqrt{2}\times 110\times 10^6 s}{(s^2 + 1000 s +
-    500000)(s^2 + (100\piup)^2)}   \\[2ex] &= \frac{C_1 (s+500) + D_1
-    500}{(s+500)^2+500^2} + \frac{C_2 s + D_2 100 \piup}{s^2 +(100\piup)^2}
+    500000)(s^2 + (100\pi)^2)}   \\[2ex] &= \frac{C_1 (s+500) + D_1
+    500}{(s+500)^2+500^2} + \frac{C_2 s + D_2 100 \pi}{s^2 +(100\pi)^2}
     \end{split}\]
 
     Les constants $C_1$, $D_1$,  $C_2$ i $D_2$ valen:
     \begin{alignat*}{2}
         D_1 + j\,C_1 &= \left.\frac{1}{500}\times \frac{\sqrt{2}\times 110\times 10^6 s}
-        {s^2 +(100\piup)^2}\right|_{s=\complexnum{-500+j500}} &&= \complexnum{-358,57 -j 240,35}\\[3.5ex]
-        D_2 + j\,C_2 &= \left.\frac{1}{100\piup}\times\frac{\sqrt{2}\times 110\times 10^6 s}
-        {s^2 + 1000 s + 500000}\right|_{s=j 100\piup} &&= \complexnum{188,16 + j240,35}
+        {s^2 +(100\pi)^2}\right|_{s=\complexnum{-500+j500}} &&= \complexnum{-358,57 -j 240,35}\\[3.5ex]
+        D_2 + j\,C_2 &= \left.\frac{1}{100\pi}\times\frac{\sqrt{2}\times 110\times 10^6 s}
+        {s^2 + 1000 s + 500000}\right|_{s=j 100\pi} &&= \complexnum{188,16 + j240,35}
     \end{alignat*}
 
     A partir d'aquests valors i utilitzant la taula
@@ -807,13 +807,13 @@ partir de les equacions següents:
     tensió en el condensador $u\ped{C}(t)$:
     \[
         u\ped{C}(t) = \left( e^{-500t} (\num{-240,35} \cos 500 t - \num{358,57} \sin 500
-        t) + \num{240,35} \cos (100\piup t) + \num{188,16} \sin( 100\piup
+        t) + \num{240,35} \cos (100\pi t) + \num{188,16} \sin( 100\pi
         t) \right) \unit{V}
     \]
 
     Utilitzant la igualtat trigonomètrica \eqref{eq:AcosBsin} obtenim finalment:
     \[
-        u\ped{C}(t)= \left(\num{431,67} e^{-500t} \cos(500 t +\num{2,1613}) + \num{305,24} \cos (100\piup t - \num{0,6642})\right) \unit{V}
+        u\ped{C}(t)= \left(\num{431,67} e^{-500t} \cos(500 t +\num{2,1613}) + \num{305,24} \cos (100\pi t - \num{0,6642})\right) \unit{V}
     \]
 
     Representem a continuació la gràfica d'aquesta

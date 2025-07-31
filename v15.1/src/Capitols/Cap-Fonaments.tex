@@ -10,7 +10,7 @@ Es presenten a continuació les lleis temporals que lliguen tensions,
 corrents i potències, per a diversos components elementals d'un
 circuit elèctric. Es donen també les relacions entre tensions i
 corrents en el domini freqüencial ---corrent altern sinusoidal de freqüència $f$ i velocitat angular $\omega$, amb
-$\omega=2\piup f$--- i en el domini operacional ---transformada de
+$\omega=2\pi f$--- i en el domini operacional ---transformada de
 Laplace\footnote{Vegeu el capítol \ref{sec:ch-laplace} per a un tractament extens de la transformada de Laplace.}.\index{transformada de Laplace}
 
 Cal tenir en compte que les relacions que es donen només són
@@ -72,7 +72,7 @@ corrent $i(t)$, i la llei temporal de la potència $p(t)$ són, a partir d'un in
 \index{capacitat!domini freq\"{u}encial}En el domini freqüencial, la relació entre la tensió $\cmplx{U}$ i el corrent $\cmplx{I}$, i la relació entre els arguments de $\cmplx{U}$ i de $\cmplx{I}$  són:
 \begin{align}
 	\cmplx{U} &= -j \frac{1}{\omega C} \cmplx{I} \\
-	\arg{\cmplx{U}} &= \arg{\cmplx{I}} - \frac{\piup}{2}
+	\arg{\cmplx{U}} &= \arg{\cmplx{I}} - \frac{\pi}{2}
 \end{align}
 
 \index{capacitat!domini operacional}En el domini operacional, la relació entre la tensió $U(s)$ i el corrent $I(s)$ és, a partir d'un instant inicial $t_0$:
@@ -105,7 +105,7 @@ de la potència $p(t)$ són,  a partir d'un instant inicial $t_0$:
 \index{inductància!domini freq\"{u}encial}En el domini freqüencial, la relació entre la tensió $\cmplx{U}$ i el corrent $\cmplx{I}$, i la relació entre els arguments de $\cmplx{U}$ i de $\cmplx{I}$  són:
 \begin{align}
 	\cmplx{U} &= j \omega L \cmplx{I} \\
-	\arg{\cmplx{U}} &= \arg{\cmplx{I}} + \frac{\piup}{2}
+	\arg{\cmplx{U}} &= \arg{\cmplx{I}} + \frac{\pi}{2}
 \end{align}
 
 \index{inductància!domini operacional} En el domini operacional, la relació entre la tensió $U(s)$ i el corrent $I(s)$ és, a partir d'un instant inicial $t_0$:
@@ -243,16 +243,16 @@ en sèrie amb una impedància $\cmplx{Z}\ped{Th}$.
 
 
 Atesa la figura \vref{pic:Thevenin}, si coneixem la tensió en
-buit $\cmplx{U}\ped{o}$ entre dos nusos $\alphaup$ i $\betaup$ d'una
-xarxa, i la impedància $\cmplx{Z}_{\alphaup\betaup}$ d'aquesta xarxa
+buit $\cmplx{U}\ped{o}$ entre dos nusos $\alpha$ i $\beta$ d'una
+xarxa, i la impedància $\cmplx{Z}_{\alpha\beta}$ d'aquesta xarxa
 vista des d'aquests dos nusos, podem obtenir-ne els valors del circuit
 Thévenin equivalent entre aquests dos nusos a partir de les
 relacions següents:\index{ETh@$\cmplx{E}\ped{Th}$}\index{ZTh@$\cmplx{Z}\ped{Th}$}
 \begin{equation}
-   \cmplx{E}\ped{Th} = \cmplx{U}\ped{o} \qquad\qquad  \cmplx{Z}\ped{Th} = \cmplx{Z}_{\alphaup\betaup}
+   \cmplx{E}\ped{Th} = \cmplx{U}\ped{o} \qquad\qquad  \cmplx{Z}\ped{Th} = \cmplx{Z}_{\alpha\beta}
 \end{equation}
 
-D'aquesta manera, la connexió d'una càrrega qualsevol $\cmplx{Z}$ als nusos $\alphaup$ i $\betaup$ d'aquesta xarxa, és
+D'aquesta manera, la connexió d'una càrrega qualsevol $\cmplx{Z}$ als nusos $\alpha$ i $\beta$ d'aquesta xarxa, és
 equivalent pel que fa a aquesta càrrega, a connectar-la al circuit
 equivalent Thévenin.\footnote{\label{fn:Th-No}La càrrega no està restringida a una impedància, sinó que pot ser una xarxa qualsevol d'elements lineals.}
 \begin{center}
@@ -267,16 +267,16 @@ equivalent format per una font de corrent $\cmplx{J}\ped{No}$ en
 paraŀlel amb una admitància $\cmplx{Y}\ped{No}$.
 
 Atesa la figura \vref{pic:Norton}, si coneixem el corrent de
-curtcircuit $\cmplx{I}\ped{F}$ entre dos nusos $\alphaup$ i $\betaup$
-d'una xarxa, i l'admitància $\cmplx{Y}_{\alphaup\betaup}$ d'aquesta
+curtcircuit $\cmplx{I}\ped{F}$ entre dos nusos $\alpha$ i $\beta$
+d'una xarxa, i l'admitància $\cmplx{Y}_{\alpha\beta}$ d'aquesta
 xarxa vista des d'aquests dos nusos, podem obtenir-ne els valors del
 circuit Norton equivalent entre aquests dos nusos a partir de les
 relacions següents:\index{JNo@$J\ped{No}$}\index{YNo@$Y\ped{No}$}
 \begin{equation}
-   \cmplx{J}\ped{No} = \cmplx{I}\ped{F} \qquad\qquad \cmplx{Y}\ped{No} = \cmplx{Y}_{\alphaup\betaup}
+   \cmplx{J}\ped{No} = \cmplx{I}\ped{F} \qquad\qquad \cmplx{Y}\ped{No} = \cmplx{Y}_{\alpha\beta}
 \end{equation}
 
-D'aquesta manera, la connexió d'una càrrega qualsevol $\cmplx{Z}$ als nusos $\alphaup$ i $\betaup$ d'aquesta xarxa, és
+D'aquesta manera, la connexió d'una càrrega qualsevol $\cmplx{Z}$ als nusos $\alpha$ i $\beta$ d'aquesta xarxa, és
 equivalent pel que fa a aquesta càrrega, a connectar-la al circuit
 equivalent Norton.\footnoteref{fn:Th-No}
 \begin{center}
@@ -301,8 +301,8 @@ aleshores la impedància o admitància equivalent.\footnote{El càlcul sistemàt
 
 \index{teorema!de Millman}Atesa la figura \vref{pic:Millman}, el teorema
 de Millman\footnote{Jacob Millman, enginyer nord-americà d'origen rus: \href{https://en.wikipedia.org/wiki/Jacob_Millman}{https:/\!\!/en.wikipedia.org/wiki/Jacob\_Millman}.} ens permet
-obtenir la tensió de l'extrem comú $\nuup$ de diverses impedàncies respecte d'un punt
-qualsevol $\alphaup$, a partir de les tensions dels altres extrems de les impedàncies respecte  del mateix punt $\alphaup$.
+obtenir la tensió de l'extrem comú $\nu$ de diverses impedàncies respecte d'un punt
+qualsevol $\alpha$, a partir de les tensions dels altres extrems de les impedàncies respecte  del mateix punt $\alpha$.
 
 \hfill
 \begin{minipage}[b]{7cm}
@@ -314,7 +314,7 @@ qualsevol $\alphaup$, a partir de les tensions dels altres extrems de les imped�
 \hfill
 \begin{minipage}[b][4.5cm][t]{6cm}
     \begin{equation}
-        \cmplx{U}_{\nuup\alphaup} = \frac{\displaystyle\sum_{k=1}^n \dfrac{\cmplx{U}_{k\alphaup}}{\cmplx{Z}_k}} {\displaystyle\sum_{k=1}^n \dfrac{1}{\cmplx{Z}_k}}
+        \cmplx{U}_{\nu\alpha} = \frac{\displaystyle\sum_{k=1}^n \dfrac{\cmplx{U}_{k\alpha}}{\cmplx{Z}_k}} {\displaystyle\sum_{k=1}^n \dfrac{1}{\cmplx{Z}_k}}
         \label{eq:millman}
     \end{equation}
 \end{minipage}
@@ -327,8 +327,8 @@ qualsevol $\alphaup$, a partir de les tensions dels altres extrems de les imped�
     Thévenin i Norton equivalents del circuit format per les tres
     bateries i llurs resistències internes, i calcular la tensió i el
     corrent que existirien en una resistència de càrrega:
-    $R=\qty{50}{\ohm}$, connectada entre els punts $\alphaup$
-    i $\nuup$.
+    $R=\qty{50}{\ohm}$, connectada entre els punts $\alpha$
+    i $\nu$.
 
     \begin{center}
         \input{Imatges/Cap-Fonaments-Millman-Exemple1.pdf_tex}
@@ -336,7 +336,7 @@ qualsevol $\alphaup$, a partir de les tensions dels altres extrems de les imped�
 
     La impedància Thévenin equivalent es calcula, tal com s'ha dit en la secció \ref{sec:T_N},
     substituint en el circuit totes les fonts de tensió per curtcircuits; així doncs, ens
-    queden tres resistències en paraŀlel entre $\alphaup$ i $\nuup$:
+    queden tres resistències en paraŀlel entre $\alpha$ i $\nu$:
     \[
     Z\ped{Th} = \frac{1}{\dfrac{1}{\qty{34}{\milli\ohm}} +
     \dfrac{1}{\qty{41}{\milli\ohm}} + \dfrac{1}{\qty{29}{\milli\ohm}}} =
@@ -345,21 +345,21 @@ qualsevol $\alphaup$, a partir de les tensions dels altres extrems de les imped�
 
     Per calcular la font de tensió Thévenin equivalent, utilitzarem el
     teorema de Millman. Si es compara aquest circuit amb el de la figura
-    \vref{pic:Millman}, veiem que els punts $\alphaup$ i $\nuup$ dels dos
-    circuits són equivalents, és a dir, $\nuup$ és el punt comú de les
-    impedàncies, i $\alphaup$ és el punt de referència respecte del qual les tensions  dels altres extrems de les impedàncies
+    \vref{pic:Millman}, veiem que els punts $\alpha$ i $\nu$ dels dos
+    circuits són equivalents, és a dir, $\nu$ és el punt comú de les
+    impedàncies, i $\alpha$ és el punt de referència respecte del qual les tensions  dels altres extrems de les impedàncies
     són conegudes ---les tensions de les bateries. Així doncs, tenim:
     \[
-    U_{\nuup\alphaup} = \frac{\dfrac{\qty{-125,1}{V}}{\qty{34}{m\ohm}} +
+    U_{\nu\alpha} = \frac{\dfrac{\qty{-125,1}{V}}{\qty{34}{m\ohm}} +
     \dfrac{\qty{-124,8}{V}}{\qty{41}{m\ohm}} +
     \dfrac{\qty{-125,2}{V}}{\qty{29}{m\ohm}}}{\dfrac{1}{\qty{34}{m\ohm}}
     + \dfrac{1}{\qty{41}{m\ohm}} + \dfrac{1}{\qty{29}{m\ohm}}} =
     \qty{-125,0562}{V}
     \]
 
-    La font de tensió  Thévenin equivalent entre $\alphaup$ i $\nuup$ és doncs:
+    La font de tensió  Thévenin equivalent entre $\alpha$ i $\nu$ és doncs:
     \[
-    E\ped{Th} = U_{\alphaup\nuup} = -U_{\nuup\alphaup} = \qty{125,0562}{V}
+    E\ped{Th} = U_{\alpha\nu} = -U_{\nu\alpha} = \qty{125,0562}{V}
     \]
 
     Calculem a continuació l'admitància i la font de corrent  Norton equivalents, utilitzant
@@ -372,7 +372,7 @@ qualsevol $\alphaup$, a partir de les tensions dels altres extrems de les imped�
     \end{align*}
 
     Tal com s'ha dit en la secció \ref{sec:T_N}, J\ped{No} és igual al
-    corrent de curtcircuit entre els punts $\alphaup$ i $\nuup$.
+    corrent de curtcircuit entre els punts $\alpha$ i $\nu$.
 
     Finalment, ja podem calcular el corrent $I$ i la tensió $U$ en la
     resistència de càrrega $R$, utilitzant el circuit Thévenin equivalent calculat anteriorment:
@@ -517,7 +517,7 @@ Per aplicar aquest teorema, no podem tenir fonts de tensió o de corrent, el val
 
 \section{Valors mitjà i eficaç, i factors de cresta, de forma i d'arrissada}\label{sec:val_mitja_ef}
 
-S'explica a continuació com obtenir diversos paràmetres característics de funcions periòdiques  en el temps, de freqüència $f$, període $T$ i velocitat angular $\omega$; les relacions que compleixen aquests tres paràmetres són: $f = 1/T$, $\omega=2\piup f = 2\piup/T$.
+S'explica a continuació com obtenir diversos paràmetres característics de funcions periòdiques  en el temps, de freqüència $f$, període $T$ i velocitat angular $\omega$; les relacions que compleixen aquests tres paràmetres són: $f = 1/T$, $\omega=2\pi f = 2\pi/T$.
 
 En la figura \vref{pic:val-mitja} es representa una funció periòdica qualsevol $v(t)$, indicant-hi el període $T$, els valors mitjà $\bar{V}$, de cresta $\hat{V}$ i de vall $\check{V}$, i la màxima amplitud  $\hat{V}-\check{V}$.
 \begin{center}
@@ -536,13 +536,13 @@ periòdica en el temps $v(t)$ es
 defineix com:\footnote{En la secció \ref{sec:four_val_av} es defineix el valor mitjà d'una funció periòdica expressada en sèrie de Fourier.}
 \begin{equation}
     \bar{V} = \frac{1}{T} \int_{t_0}^{t_0+T} v(t) \diff t =
-    \frac{\omega}{2\piup} \int_{t_0}^{t_0+\frac{2\piup}{\omega}} v(t) \diff t\label{eq:vm_t}
+    \frac{\omega}{2\pi} \int_{t_0}^{t_0+\frac{2\pi}{\omega}} v(t) \diff t\label{eq:vm_t}
 \end{equation}
 
 Si la funció periòdica $v(\alpha)$ està definida en funció de
 l'angle $\alpha$, en lloc del temps $t$, tenim:
 \begin{equation}
-    \bar{V} = \frac{1}{2\piup} \int_{\alpha_0}^{\alpha_0+2\piup} v(\alpha) \diff \alpha
+    \bar{V} = \frac{1}{2\pi} \int_{\alpha_0}^{\alpha_0+2\pi} v(\alpha) \diff \alpha
     \label{eq:vm_alfa}
 \end{equation}
 
@@ -552,14 +552,14 @@ l'angle $\alpha$, en lloc del temps $t$, tenim:
 El valor eficaç  $V$ ---també anomenat valor rms, de l'anglès \textit{root mean square}--- d'una funció periòdica en el temps $v(t)$ es defineix com:\footnote{En la secció \ref{sec:four_val_ef} es defineix el valor eficaç d'una funció periòdica expressada en sèrie de Fourier.}
 \begin{equation}
     V = \sqrt{\frac{1}{T} \int_{t_0}^{t_0+T} [v(t)]^2 \diff
-    t} = \sqrt{\frac{\omega}{2\piup} \int_{t_0}^{t_0+\frac{2\piup}{\omega}}
+    t} = \sqrt{\frac{\omega}{2\pi} \int_{t_0}^{t_0+\frac{2\pi}{\omega}}
      [v(t)]^2 \diff t}
 \end{equation}
 
 Si la funció periòdica $v(\alpha)$ està definida en funció de
 l'angle $\alpha$, en lloc del temps $t$, tenim:
 \begin{equation}
-    V = \sqrt{\frac{1}{2\piup} \int_{\alpha_0}^{\alpha_0+2\piup}
+    V = \sqrt{\frac{1}{2\pi} \int_{\alpha_0}^{\alpha_0+2\pi}
      [v(\alpha)]^2 \diff \alpha}
 \end{equation}
 
@@ -614,40 +614,40 @@ El factor d'arrissada de cresta relaciona els valors de cresta $\hat{V}$, de val
     definida per:
     
     \[
-    u(t) = \begin{cases} \hat{U} \sin\omega t, & 0 < \omega t < \piup\\
-           0, & \piup \leq \omega t \leq 2\piup \end{cases}
+    u(t) = \begin{cases} \hat{U} \sin\omega t, & 0 < \omega t < \pi\\
+           0, & \pi \leq \omega t \leq 2\pi \end{cases}
     \]
 
     Calculem, en primer lloc, el valor mitjà:
     
     \[
-    \bar{U} = \frac{\omega}{2\piup} \left( \int_0^\frac{\piup}{\omega}
+    \bar{U} = \frac{\omega}{2\pi} \left( \int_0^\frac{\pi}{\omega}
     \hat{U} \sin\omega t \diff t +
-    \int_\frac{\piup}{\omega}^\frac{2\piup}{\omega} 0 \diff t \right) = -
-    \left. \frac{\hat{U} \cos\omega t}{2\piup}
-    \right|_0^\frac{\piup}{\omega} = \frac{\hat{U}}{\piup}
+    \int_\frac{\pi}{\omega}^\frac{2\pi}{\omega} 0 \diff t \right) = -
+    \left. \frac{\hat{U} \cos\omega t}{2\pi}
+    \right|_0^\frac{\pi}{\omega} = \frac{\hat{U}}{\pi}
     \]
 
     Calculem a continuació el valor eficaç:
     
     \[
-    U = \sqrt{\frac{\omega}{2\piup} \left( \int_0^\frac{\piup}{\omega}
+    U = \sqrt{\frac{\omega}{2\pi} \left( \int_0^\frac{\pi}{\omega}
     \hat{U}^2 \sin^2\omega t \diff t +
-    \int_\frac{\piup}{\omega}^\frac{2\piup}{\omega} 0 \diff t \right)} =
-      \sqrt{\left.\frac{\omega \hat{U}^2}{2\piup}\left( \frac{t}{2} -
+    \int_\frac{\pi}{\omega}^\frac{2\pi}{\omega} 0 \diff t \right)} =
+      \sqrt{\left.\frac{\omega \hat{U}^2}{2\pi}\left( \frac{t}{2} -
     \frac{\sin (2\omega t)}{4\omega}
-    \right)\right|_0^\frac{\piup}{\omega}} = \frac{\hat{U}}{2}
+    \right)\right|_0^\frac{\pi}{\omega}} = \frac{\hat{U}}{2}
     \]
 
     Els factors de cresta, de forma, i d'arrissada eficaç i de cresta, són:
     
     \begin{align*}
         \text{factor de cresta} &= \frac{\hat{U}}{\hat{U}/2} = 2 \\[2ex]
-        F &= \frac{\hat{U}/2}{\hat{U}/\piup} =\frac{\piup}{2} \approx
+        F &= \frac{\hat{U}/2}{\hat{U}/\pi} =\frac{\pi}{2} \approx
         \num{1,57} \\[2ex]
-        r &= \sqrt{\left(\frac{\hat{U}/2}{\hat{U}/\piup}\right)^2-1} =
-    \sqrt{\frac{\piup^2}{4}-1} \approx \num{1,21} \\[21ex]
-        q &= \frac{\hat{U} - 0}{\hat{U}/\piup} = \piup \approx \num{3,14}
+        r &= \sqrt{\left(\frac{\hat{U}/2}{\hat{U}/\pi}\right)^2-1} =
+    \sqrt{\frac{\pi^2}{4}-1} \approx \num{1,21} \\[21ex]
+        q &= \frac{\hat{U} - 0}{\hat{U}/\pi} = \pi \approx \num{3,14}
     \end{align*}
 
 
@@ -655,41 +655,41 @@ El factor d'arrissada de cresta relaciona els valors de cresta $\hat{V}$, de val
     definida per:
     
     \[
-    u(t) = \begin{cases} \phantom{-}\hat{U} \sin\omega t, & 0 < \omega t < \piup\\
-           -\hat{U} \sin\omega t, & \piup \leq \omega t \leq 2\piup \end{cases}
+    u(t) = \begin{cases} \phantom{-}\hat{U} \sin\omega t, & 0 < \omega t < \pi\\
+           -\hat{U} \sin\omega t, & \pi \leq \omega t \leq 2\pi \end{cases}
     \]
 
-    En aquest cas, l'ona de tensió entre $\piup$ i $2\piup$ és una repetició
-    exacta de l'ona de tensió entre 0 i $\piup$; per tant, únicament
-    caldrà considerar-ne la primera meitat (entre 0 i $\piup$), tenint en
-    compte que el període serà $\piup/\omega$.
+    En aquest cas, l'ona de tensió entre $\pi$ i $2\pi$ és una repetició
+    exacta de l'ona de tensió entre 0 i $\pi$; per tant, únicament
+    caldrà considerar-ne la primera meitat (entre 0 i $\pi$), tenint en
+    compte que el període serà $\pi/\omega$.
 
      Calculem, en primer lloc, el valor mitjà:
      
      \[
-    \bar{U} = \frac{\omega}{\piup} \int_0^\frac{\piup}{\omega} \hat{U}
-    \sin\omega t \diff t  = - \left. \frac{\hat{U} \cos\omega t}{\piup}
-    \right|_0^\frac{\piup}{\omega} = \frac{2 \hat{U}}{\piup}
+    \bar{U} = \frac{\omega}{\pi} \int_0^\frac{\pi}{\omega} \hat{U}
+    \sin\omega t \diff t  = - \left. \frac{\hat{U} \cos\omega t}{\pi}
+    \right|_0^\frac{\pi}{\omega} = \frac{2 \hat{U}}{\pi}
     \]
 
     Calculem a continuació el valor eficaç:
     
     \[
-    U = \sqrt{\frac{\omega}{\piup} \int_0^\frac{\piup}{\omega} \hat{U}^2
+    U = \sqrt{\frac{\omega}{\pi} \int_0^\frac{\pi}{\omega} \hat{U}^2
     \sin^2\omega t \diff t } =   \sqrt{\left.\frac{\omega
-    \hat{U}^2}{\piup}\left( \frac{t}{2} - \frac{\sin (2\omega t)}{4\omega}
-    \right)\right|_0^\frac{\piup}{\omega}}  = \frac{\hat{U}}{\sqrt{2}}
+    \hat{U}^2}{\pi}\left( \frac{t}{2} - \frac{\sin (2\omega t)}{4\omega}
+    \right)\right|_0^\frac{\pi}{\omega}}  = \frac{\hat{U}}{\sqrt{2}}
     \]
 
     Els factors de cresta, de forma, i d'arrissada eficaç i de cresta, són:
     
     \begin{align*}
         \text{factor de cresta} &= \frac{\hat{U}}{\hat{U}/\sqrt{2}} = \sqrt{2} \approx\num{1,41} \\[2ex]
-        F &= \frac{\hat{U}/\sqrt{2}}{2 \hat{U}/\piup} =\frac{\piup}{2\sqrt{2}} \approx
+        F &= \frac{\hat{U}/\sqrt{2}}{2 \hat{U}/\pi} =\frac{\pi}{2\sqrt{2}} \approx
         \num{1,11} \\[2ex]
-    r &= \sqrt{\left(\frac{\hat{U}/\sqrt{2}}{2 \hat{U}/\piup}\right)^2-1}
-    = \sqrt{\frac{\piup^2}{8}-1} \approx \num{0,48}\\[2ex]
-    q &=  \frac{\hat{U} - 0}{2 \hat{U}/\piup} = \frac{\piup}{2} \approx \num{1,57}
+    r &= \sqrt{\left(\frac{\hat{U}/\sqrt{2}}{2 \hat{U}/\pi}\right)^2-1}
+    = \sqrt{\frac{\pi^2}{8}-1} \approx \num{0,48}\\[2ex]
+    q &=  \frac{\hat{U} - 0}{2 \hat{U}/\pi} = \frac{\pi}{2} \approx \num{1,57}
     \end{align*}
 \end{exemple}
 
@@ -726,8 +726,8 @@ sèrie de formes d'ona usuals $v(t)$, per estalviar-se la resolució de les inte
    \input{Imatges/Cap-Fonaments-Funcio-10.pdf_tex} & \raisebox{1.0cm}{0} & \raisebox{1.0cm}{$\displaystyle\frac{K}{\sqrt{3}}$}\\[2.5ex]
    \input{Imatges/Cap-Fonaments-Funcio-11.pdf_tex} & \raisebox{0.4cm}{$\displaystyle\frac{K}{2}$} & \raisebox{0.4cm}{$\displaystyle{}K\sqrt{\frac{T+2\tau}{3 T}}$}\\[4ex]
    \input{Imatges/Cap-Fonaments-Funcio-12.pdf_tex} & \raisebox{1.0cm}{0} & \raisebox{1.0cm}{$\displaystyle{}K\sqrt{\frac{T+2\tau}{3 T}}$}\\[2.5ex]
-   \input{Imatges/Cap-Fonaments-Funcio-13.pdf_tex} & \raisebox{0.4cm}{$\displaystyle\frac{2 K}{\piup}$} & \raisebox{0.4cm}{$\displaystyle\frac{K}{\sqrt{2}}$}\\[2.5ex]
-   \input{Imatges/Cap-Fonaments-Funcio-14.pdf_tex} & \raisebox{0.4cm}{$\displaystyle\frac{K}{\piup}$} & \raisebox{0.4cm}{$\displaystyle\frac{K}{2}$}\\[2.5ex]
+   \input{Imatges/Cap-Fonaments-Funcio-13.pdf_tex} & \raisebox{0.4cm}{$\displaystyle\frac{2 K}{\pi}$} & \raisebox{0.4cm}{$\displaystyle\frac{K}{\sqrt{2}}$}\\[2.5ex]
+   \input{Imatges/Cap-Fonaments-Funcio-14.pdf_tex} & \raisebox{0.4cm}{$\displaystyle\frac{K}{\pi}$} & \raisebox{0.4cm}{$\displaystyle\frac{K}{2}$}\\[2.5ex]
    \input{Imatges/Cap-Fonaments-Funcio-15.pdf_tex} & \raisebox{1.0cm}{0} & \raisebox{1.0cm}{$\displaystyle\frac{K}{\sqrt{2}}$}\\[0.5ex]
     \bottomrule[1pt]
 \end{longtable}
@@ -745,16 +745,16 @@ sèrie de formes d'ona usuals $v(t)$, per estalviar-se la resolució de les inte
 	
 	L'antepenúltima ona de la taula anterior és una rectificació d'ona completa d'una ona sinusoidal. Per al valor mitjà tenim:
 	\[
-		\bar{V}\ped{rec} = \frac{2 K}{\piup} \quad \Rightarrow \quad 
-		K = \frac{\piup}{2} \bar{V}\ped{rec}
+		\bar{V}\ped{rec} = \frac{2 K}{\pi} \quad \Rightarrow \quad
+		K = \frac{\pi}{2} \bar{V}\ped{rec}
 	\]
 	
 	Atès que $K$ és el mateix valor en les dues ones, igualant les dues expressions anteriors, tenim:
 	
 	\[
-		\sqrt{2} V\ped{sin} = \frac{\piup}{2} \bar{V}\ped{rec} 
+		\sqrt{2} V\ped{sin} = \frac{\pi}{2} \bar{V}\ped{rec}
 		\quad \Rightarrow \quad 
-		V\ped{sin} =  \frac{\piup}{2 \sqrt{2}} \bar{V}\ped{rec} \approx \num{1,11} \bar{V}\ped{rec}
+		V\ped{sin} =  \frac{\pi}{2 \sqrt{2}} \bar{V}\ped{rec} \approx \num{1,11} \bar{V}\ped{rec}
 	\]
 	
 	Per tant, només cal multiplicar per \num{1,11} el valor mesurat pel voltímetre (valor rectificat mitjà) per obtenir el valor desitjat (valor sinusoidal eficaç). De fet, en aquests voltímetres la caràtula ja està ajustada amb aquest factor de \num{1,11}, de manera que la lectura és directament el valor eficaç.
@@ -844,28 +844,28 @@ canvi, la potència reactiva absorbida per una càrrega pot ser
 positiva o negativa, segons que predomini la part inductiva o la
 part capacitiva de la càrrega respectivament.
 
-L'angle $\varphiup\in[-\frac{\piup}{2},\frac{\piup}{2}]$ entre els fasors $\cmplx{U}$ i $\cmplx{I}$ compleix la següent relació:
+L'angle $\varphi\in[-\frac{\pi}{2},\frac{\pi}{2}]$ entre els fasors $\cmplx{U}$ i $\cmplx{I}$ compleix la següent relació:
 \begin{equation}
-   \tan\varphiup = \frac{X}{R} = \frac{Q}{P}
+   \tan\varphi = \frac{X}{R} = \frac{Q}{P}
 \end{equation}
 
-\index{factor!de potència}El concepte de l'angle $\varphiup$ és el  que s'ha explicat en la secció \ref{sec:pot-inst-act-react}; a partir d'aquest angle es
+\index{factor!de potència}El concepte de l'angle $\varphi$ és el  que s'ha explicat en la secció \ref{sec:pot-inst-act-react}; a partir d'aquest angle es
 defineix el factor de potència de la càrrega:
 \begin{equation}
-   \text{Factor de potència} \equiv \cos\varphiup = \cos (\arg \cmplx{Z}) = 
+   \text{Factor de potència} \equiv \cos\varphi = \cos (\arg \cmplx{Z}) =
    \frac{R}{|\cmplx{Z}|} =
    \cos (\arg \cmplx{S}) =
    \frac{P}{|\cmplx{S}|}
 \end{equation}
 
-Atès que per a un angle qualsevol $\alphaup$ es compleix la igualtat
-trigonomètrica: $\cos\alphaup = \cos(-\alphaup)$, quan es dona el factor
+Atès que per a un angle qualsevol $\alpha$ es compleix la igualtat
+trigonomètrica: $\cos\alpha = \cos(-\alpha)$, quan es dona el factor
 de potència d'una càrrega, cal especificar si és inductiu ($Q>0$,
-$\tan\varphiup>0$, el fasor $\cmplx{U}$ avança al fasor $\cmplx{I}$) o
-capacitiu ($Q<0$, $\tan\varphiup<0$, el fasor $\cmplx{I}$ avança al fasor $\cmplx{U}$); la distinció es fa
+$\tan\varphi>0$, el fasor $\cmplx{U}$ avança al fasor $\cmplx{I}$) o
+capacitiu ($Q<0$, $\tan\varphi<0$, el fasor $\cmplx{I}$ avança al fasor $\cmplx{U}$); la distinció es fa
 afegint «(i)» o «(c)» respectivament al valor numèric del factor
-de potència, com per exemple: $\cos\varphiup=\num{0,8}$(i),
-$\cos\varphiup=\num{0,9}$(c).
+de potència, com per exemple: $\cos\varphi=\num{0,8}$(i),
+$\cos\varphi=\num{0,9}$(c).
 
 Les relacions que lliguen la potència complexa amb la tensió i el corrent són:
 \begin{align}
@@ -875,11 +875,11 @@ Les relacions que lliguen la potència complexa amb la tensió i el corrent són
    |\cmplx{S}| &= |\cmplx{U}| \,|\cmplx{I}| =
    |\cmplx{I}|^2 \,|\cmplx{Z}| = \frac{|\cmplx{U}|^2}{|\cmplx{Z}|} =
    \sqrt{P^2+Q^2} \\
-   P &= \Re\cmplx{S} = \Re (\cmplx{U} \, \cmplx{I}^*) = |\cmplx{S}| \cos\varphiup =
-   |\cmplx{U}|\, |\cmplx{I}| \cos\varphiup = |\cmplx{I}|^2 R =
+   P &= \Re\cmplx{S} = \Re (\cmplx{U} \, \cmplx{I}^*) = |\cmplx{S}| \cos\varphi =
+   |\cmplx{U}|\, |\cmplx{I}| \cos\varphi = |\cmplx{I}|^2 R =
    \frac{|\cmplx{U}|^2}{|\cmplx{Z}|^2}R\\
-   Q &= \Im\cmplx{S} = \Im (\cmplx{U} \, \cmplx{I}^*) = |\cmplx{S}| \sin\varphiup =
-   |\cmplx{U}| \,|\cmplx{I}|\sin\varphiup  = |\cmplx{I}|^2 X =
+   Q &= \Im\cmplx{S} = \Im (\cmplx{U} \, \cmplx{I}^*) = |\cmplx{S}| \sin\varphi =
+   |\cmplx{U}| \,|\cmplx{I}|\sin\varphi  = |\cmplx{I}|^2 X =
    \frac{|\cmplx{U}|^2}{|\cmplx{Z}|^2}X
 \end{align}
 
@@ -917,15 +917,15 @@ considerar del tot general.
 
 En el cas més general, on la càrrega trifàsica és desequilibrada,
 cada impedància té el seu propi factor de potència; els angles
-$\varphiup\ped{A}\in[-\frac{\piup}{2},\frac{\piup}{2}]$ entre els fasors $\cmplx{U}\ped{AN}$ i $\cmplx{I}\ped{A}$, $\varphiup\ped{B}\in[-\frac{\piup}{2},\frac{\piup}{2}]$ entre els fasors $\cmplx{U}\ped{BN}$ i $\cmplx{I}\ped{B}$, i $\varphiup\ped{C}\in[-\frac{\piup}{2},\frac{\piup}{2}]$ entre els fasors $\cmplx{U}\ped{CN}$ i $\cmplx{I}\ped{C}$, compleixen:
+$\varphi\ped{A}\in[-\frac{\pi}{2},\frac{\pi}{2}]$ entre els fasors $\cmplx{U}\ped{AN}$ i $\cmplx{I}\ped{A}$, $\varphi\ped{B}\in[-\frac{\pi}{2},\frac{\pi}{2}]$ entre els fasors $\cmplx{U}\ped{BN}$ i $\cmplx{I}\ped{B}$, i $\varphi\ped{C}\in[-\frac{\pi}{2},\frac{\pi}{2}]$ entre els fasors $\cmplx{U}\ped{CN}$ i $\cmplx{I}\ped{C}$, compleixen:
 \begin{subequations}
 \begin{alignat}{7}
-    \tan\varphiup\ped{A} &= \frac{X\ped{A}}{R\ped{A}} &&= \frac{Q\ped{A}}{P\ped{A}} 
-    &&\qquad\qquad\cos\varphiup\ped{A} &&= \cos(\arg \cmplx{Z}\ped{A}) &&= \frac{R\ped{A}}{|\cmplx{Z}\ped{A}|} &&=  \cos(\arg \cmplx{S}\ped{A})  &&= \frac{P\ped{A}}{|\cmplx{S}\ped{A}|} \\[0.5ex]   
-    \tan\varphiup\ped{B} &= \frac{X\ped{B}}{R\ped{B}} &&= \frac{Q\ped{B}}{P\ped{B}}
-    &&\qquad\qquad\cos\varphiup\ped{B} &&= \cos(\arg \cmplx{Z}\ped{B}) &&= \frac{R\ped{B}}{|\cmplx{Z}\ped{B}|} &&= \cos(\arg \cmplx{S}\ped{B})  &&= \frac{P\ped{B}}{|\cmplx{S}\ped{B}|} \\[0.5ex]
-    \tan\varphiup\ped{C} &= \frac{X\ped{C}}{R\ped{C}} &&= \frac{Q\ped{C}}{P\ped{C}}
-    &&\qquad\qquad\cos\varphiup\ped{C} &&= \cos(\arg \cmplx{Z}\ped{C}) &&= \frac{R\ped{C}}{|\cmplx{Z}\ped{C}|} &&= \cos(\arg \cmplx{S}\ped{C}) &&= \frac{P\ped{C}}{|\cmplx{S}\ped{C}|}
+    \tan\varphi\ped{A} &= \frac{X\ped{A}}{R\ped{A}} &&= \frac{Q\ped{A}}{P\ped{A}}
+    &&\qquad\qquad\cos\varphi\ped{A} &&= \cos(\arg \cmplx{Z}\ped{A}) &&= \frac{R\ped{A}}{|\cmplx{Z}\ped{A}|} &&=  \cos(\arg \cmplx{S}\ped{A})  &&= \frac{P\ped{A}}{|\cmplx{S}\ped{A}|} \\[0.5ex]
+    \tan\varphi\ped{B} &= \frac{X\ped{B}}{R\ped{B}} &&= \frac{Q\ped{B}}{P\ped{B}}
+    &&\qquad\qquad\cos\varphi\ped{B} &&= \cos(\arg \cmplx{Z}\ped{B}) &&= \frac{R\ped{B}}{|\cmplx{Z}\ped{B}|} &&= \cos(\arg \cmplx{S}\ped{B})  &&= \frac{P\ped{B}}{|\cmplx{S}\ped{B}|} \\[0.5ex]
+    \tan\varphi\ped{C} &= \frac{X\ped{C}}{R\ped{C}} &&= \frac{Q\ped{C}}{P\ped{C}}
+    &&\qquad\qquad\cos\varphi\ped{C} &&= \cos(\arg \cmplx{Z}\ped{C}) &&= \frac{R\ped{C}}{|\cmplx{Z}\ped{C}|} &&= \cos(\arg \cmplx{S}\ped{C}) &&= \frac{P\ped{C}}{|\cmplx{S}\ped{C}|}
 \end{alignat}
 \end{subequations}
 
@@ -955,12 +955,12 @@ amb les tensions i corrents són:
     \sqrt{(P\ped{A} + P\ped{B} + P\ped{C})^2 + (Q\ped{A} + Q\ped{B} + Q\ped{C})^2} \label{eq:s_3f_mod} \\
     P\ped{3F} &= \Re\cmplx{S}\ped{3F} = \Re(\cmplx{U}\ped{AN} \,\cmplx{I}\ped{A}^*) +
     \Re(\cmplx{U}\ped{BN} \,\cmplx{I}\ped{B}^*) +  \Re(\cmplx{U}\ped{CN}\,
-    \cmplx{I}\ped{C}^*) = |\cmplx{S}\ped{A}| \cos \varphiup\ped{A} + |\cmplx{S}\ped{B}| \cos
-    \varphi\ped{B} + |\cmplx{S}\ped{C}| \cos \varphiup\ped{C} \\[2mm]
+    \cmplx{I}\ped{C}^*) = |\cmplx{S}\ped{A}| \cos \varphi\ped{A} + |\cmplx{S}\ped{B}| \cos
+    \varphi\ped{B} + |\cmplx{S}\ped{C}| \cos \varphi\ped{C} \\[2mm]
     Q\ped{3F} &= \Im\cmplx{S}\ped{3F} = \Im(\cmplx{U}\ped{AN} \,\cmplx{I}\ped{A}^*) +
     \Im(\cmplx{U}\ped{BN} \,\cmplx{I}\ped{B}^*) +  \Im(\cmplx{U}\ped{CN}\,
-    \cmplx{I}\ped{C}^*) = |\cmplx{S}\ped{A}| \sin \varphiup\ped{A} + |\cmplx{S}\ped{B}| \sin
-    \varphiup\ped{B} + |\cmplx{S}\ped{C}| \sin \varphiup\ped{C}
+    \cmplx{I}\ped{C}^*) = |\cmplx{S}\ped{A}| \sin \varphi\ped{A} + |\cmplx{S}\ped{B}| \sin
+    \varphi\ped{B} + |\cmplx{S}\ped{C}| \sin \varphi\ped{C}
 \end{align}
 
 Cal anar amb compte amb l'equació \eqref{eq:s_3f_mod}, i utilitzar-la al
@@ -992,17 +992,17 @@ Q\ped{3F}\ap{EQ}$ amb les tensions i corrents són:
     \sqrt{3} |\cmplx{U}\ped{AC}|\, |\cmplx{I}\ped{A}| = 3\,\sqrt{P\ped{A}^2 + Q\ped{A}^2} =
     \sqrt{\big(P\ped{3F}\ap{EQ}\big)^2 + \big(Q\ped{3F}\ap{EQ}\big)^2} \\
     P\ped{3F}\ap{EQ} &= \Re\cmplx{S}\ped{3F}\ap{EQ} =3\Re(\cmplx{U}\ped{AN} \,\cmplx{I}\ped{A}^*) =
-    3\big|\cmplx{S}\ped{A}\big| \cos \varphiup\ped{A} = 3 |\cmplx{U}\ped{AN}|\,
+    3\big|\cmplx{S}\ped{A}\big| \cos \varphi\ped{A} = 3 |\cmplx{U}\ped{AN}|\,
     |\cmplx{I}\ped{A}|\label{eq:p_3f_34}
-    \cos \varphiup\ped{A} = \sqrt{3} |\cmplx{U}\ped{AC}|\,|\cmplx{I}\ped{A}| \cos \varphiup\ped{A} \\[2mm]
+    \cos \varphi\ped{A} = \sqrt{3} |\cmplx{U}\ped{AC}|\,|\cmplx{I}\ped{A}| \cos \varphi\ped{A} \\[2mm]
     Q\ped{3F}\ap{EQ} &= \Im\cmplx{S}\ped{3F}\ap{EQ}= 3\Im(\cmplx{U}\ped{AN}\, \cmplx{I}\ped{A}^*) =
-    3\big|\cmplx{S}\ped{A}\big|  \sin \varphiup\ped{A} = 3 |\cmplx{U}\ped{AN}| \, |\cmplx{I}\ped{A}|\label{eq:q_3f_34}
-    \sin\varphiup\ped{A}=\sqrt{3} |\cmplx{U}\ped{AC}|\,|\cmplx{I}\ped{A}|\sin \varphiup\ped{A}
+    3\big|\cmplx{S}\ped{A}\big|  \sin \varphi\ped{A} = 3 |\cmplx{U}\ped{AN}| \, |\cmplx{I}\ped{A}|\label{eq:q_3f_34}
+    \sin\varphi\ped{A}=\sqrt{3} |\cmplx{U}\ped{AC}|\,|\cmplx{I}\ped{A}|\sin \varphi\ped{A}
 \end{align}
 
 En les equacions anteriors s'ha utilitzat la fase A, però es
 podria haver escollit també qualsevol de les altres dues. Cal tenir
-en compte a més, que l'angle $\varphiup\ped{A}$ és sempre el format
+en compte a més, que l'angle $\varphi\ped{A}$ és sempre el format
 pels fasors $\cmplx{U}\ped{AN}$ i $\cmplx{I}\ped{A}$, i no pas
 l'angle format pels fasors $\cmplx{U}\ped{AC}$ i
 $\cmplx{I}\ped{A}$.
@@ -1457,7 +1457,7 @@ Les tensions i corrents d'aquest circuit són iguals a les tres últimes de l'ap
 
 \subsection {Circuit R-L --- Curtcircuit en corrent altern}\index{circuit R-L!curtcircuit en corrent altern}\label{sec:ccRL}
 
-Comencem resolent analíticament el circuit R-L de la figura \vref{pic:RL_serie_curtcircuit}, el qual quedarà sotmès a un curtcircuit en tancar l'interruptor a l'instant $t=0$, amb la condició inicial: $i(0) = 0$; $u(t)$ és una tensió sinusoidal, on $U$ és el valor eficaç, $\phi$ és l'angle inicial, i $\omega = 2 \piup f$.
+Comencem resolent analíticament el circuit R-L de la figura \vref{pic:RL_serie_curtcircuit}, el qual quedarà sotmès a un curtcircuit en tancar l'interruptor a l'instant $t=0$, amb la condició inicial: $i(0) = 0$; $u(t)$ és una tensió sinusoidal, on $U$ és el valor eficaç, $\phi$ és l'angle inicial, i $\omega = 2 \pi f$.
 
 Aquest circuit pot representar directament un circuit monofàsic on es produeix un curtcircuit. També pot representar en el cas d'un curtcircuit trifàsic,  el circuit equivalent per fase d'una xarxa trifàsica, on $R$ i $L$ és la impedància equivalent de la xarxa, vista des del punt del curtcircuit, i $u(t)$ és la tensió en el punt del curtcircuit en l'instant previ a l'inici del curtcircuit; $u(t)$,  $R$ i $L$ representen en aquest cas, el circuit equivalent Thévenin de la xarxa en el punt del curtcircuit (vegeu la secció \ref{sec:xarxes-curtcircuits}).
 

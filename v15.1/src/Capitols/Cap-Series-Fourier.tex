@@ -6,7 +6,7 @@ Fourier}
 \section{Definicions}\index{series de Fourier@sèries de Fourier!definicions}
 
 Una funció periòdica en el temps $v(t)$, de freqüència $f$, període
-$T$ i velocitat angular $\omega$, amb  $f = 1/T$ i $\omega=2\piup f = 2\piup/T$, es pot expressar com una suma infinita de funcions sinus i
+$T$ i velocitat angular $\omega$, amb  $f = 1/T$ i $\omega=2\pi f = 2\pi/T$, es pot expressar com una suma infinita de funcions sinus i
 cosinus; és el que s'anomena expansió d'una funció periòdica en
 sèrie de Fourier:\footnote{Jean-Baptiste Joseph Fourier, matemàtic francès: \href{https://en.wikipedia.org/wiki/Joseph_Fourier}{https:/\!\!/en.wikipedia.org/wiki/Joseph\_Fourier}.}
 \begin{equation}
@@ -19,15 +19,15 @@ expressions següents:
 \begin{subequations}
 \begin{alignat}{3}
     A_0 &= \frac{1}{T} \int_{t_0}^{t_0+T}\!  v(t) \diff t &&=
-    \frac{\omega}{2\piup} \int_{t_0}^{t_0+\frac{2\piup} {\omega}} \! v(t) \diff
+    \frac{\omega}{2\pi} \int_{t_0}^{t_0+\frac{2\pi} {\omega}} \! v(t) \diff
     t \label{eq:a0_t} & \\[0.5ex]
     A_n &= \frac{2}{T} \int_{t_0}^{t_0+T}\!  v(t) \cos(n \omega t) \diff
     t &&=
-    \frac{\omega}{\piup} \int_{t_0}^{t_0+\frac{2\piup}{\omega}} \! v(t)\cos(n \omega t) \diff
+    \frac{\omega}{\pi} \int_{t_0}^{t_0+\frac{2\pi}{\omega}} \! v(t)\cos(n \omega t) \diff
     t, &\qquad n \in \mathsfb{N}^*\\[0.5ex]
     B_n &= \frac{2}{T} \int_{t_0}^{t_0+T}\!  v(t) \sin(n \omega t) \diff t
     &&=
-    \frac{\omega}{\piup} \int_{t_0}^{t_0+\frac{2\piup}{\omega}}\!  v(t)\sin(n \omega t) \diff
+    \frac{\omega}{\pi} \int_{t_0}^{t_0+\frac{2\pi}{\omega}}\!  v(t)\sin(n \omega t) \diff
     t,  &\qquad n \in \mathsfb{N}^*
 \end{alignat}
 \end{subequations}
@@ -44,11 +44,11 @@ En aquest cas, els coeficients $A_0$, $A_n$ i $B_n$ es calculen a
 partir de les expressions següents:
 \begin{subequations}
 \begin{alignat}{2}
-    A_0 &= \frac{1}{2\piup} \int_{\alpha_0}^{\alpha_0+2\piup} \! v(\alpha) \diff \alpha
+    A_0 &= \frac{1}{2\pi} \int_{\alpha_0}^{\alpha_0+2\pi} \! v(\alpha) \diff \alpha
     \label{eq:a0_alfa} & \\[0.5ex]
-    A_n &= \frac{1}{\piup} \int_{\alpha_0}^{\alpha_0+2\piup} \! v(\alpha) \cos n \alpha \diff
+    A_n &= \frac{1}{\pi} \int_{\alpha_0}^{\alpha_0+2\pi} \! v(\alpha) \cos n \alpha \diff
     \alpha, &\qquad n \in \mathsfb{N}^*\\[0.5ex]
-    B_n &= \frac{1}{\piup} \int_{\alpha_0}^{\alpha_0+2\piup} \! v(\alpha) \sin n \alpha \diff \alpha,
+    B_n &= \frac{1}{\pi} \int_{\alpha_0}^{\alpha_0+2\pi} \! v(\alpha) \sin n \alpha \diff \alpha,
     &\qquad n \in \mathsfb{N}^*
 \end{alignat}
 \end{subequations}
@@ -64,7 +64,7 @@ funcions cosinus quan $v(t)$ o $v(\alpha)$  és una funció real ($A_n, B_n \in 
 \end{align}
 
 Els coeficients $C_0$, $C_n$ i $\phi_n$, amb $A_n,B_n\in\mathsfb{R}$, es calculen a partir de les
-expressions següents:\footnote{Cal tenir en compte que la funció \texttt{arctan} disponible en moltes calculadores i llenguatges de programació, torna de forma estandarditzada valors compresos entre $-\frac{\piup}{2}$ i $\frac{\piup}{2}$. En aquest cas, quan $A_n$ és negatiu cal sumar $\piup$ al valor que dona la funció \texttt{arctan} per obtenir l'angle en el quadrant correcte.}
+expressions següents:\footnote{Cal tenir en compte que la funció \texttt{arctan} disponible en moltes calculadores i llenguatges de programació, torna de forma estandarditzada valors compresos entre $-\frac{\pi}{2}$ i $\frac{\pi}{2}$. En aquest cas, quan $A_n$ és negatiu cal sumar $\pi$ al valor que dona la funció \texttt{arctan} per obtenir l'angle en el quadrant correcte.}
 \begin{subequations}
 \begin{alignat}{2}
     C_0 &= A_0 & \\[0.5ex]
@@ -120,13 +120,13 @@ en concret tenim:
     A_n &= 0,      &\qquad n \in \mathsfb{N}^*\\[0.5ex]
     C_0 &= 0    \\[0.5ex]
     C_n &= B_n ,    &\qquad n \in \mathsfb{N}^*\\[0.5ex]
-    \phi_n &= -\frac{\piup}{2}, &\qquad n \in \mathsfb{N}^*
+    \phi_n &= -\frac{\pi}{2}, &\qquad n \in \mathsfb{N}^*
 \end{alignat}
 \end{subequations}
 
 \subsection{Funcions amb simetria de semiona}\index{funcions!amb simetria de semiona}
 
-Són funcions que compleixen: $v(t) = -v(t+\frac{T}{2})$, o $v(\alpha) = -v(\alpha+\piup)$. En aquest
+Són funcions que compleixen: $v(t) = -v(t+\frac{T}{2})$, o $v(\alpha) = -v(\alpha+\pi)$. En aquest
 cas tots els coeficients $A_n$ i $B_n$ d'índex parell s'anuŀlen;
 en concret tenim:
 \begin{subequations}
@@ -283,34 +283,34 @@ valor eficaç total $V$. La norma CEI 60050 l'anomena \textit{pulsating factor},
     per:
 
     \[
-    u(t) = \begin{cases} \phantom{-}\hat{U} \sin\omega t, & 0 < \omega t < \piup\\
-           -\hat{U} \sin\omega t, & \piup \leq \omega t \leq 2\piup \end{cases}
+    u(t) = \begin{cases} \phantom{-}\hat{U} \sin\omega t, & 0 < \omega t < \pi\\
+           -\hat{U} \sin\omega t, & \pi \leq \omega t \leq 2\pi \end{cases}
     \]
 
-    En aquest cas, l'ona de tensió entre $\piup$ i $2\piup$ és una repetició
-    exacta de l'ona de tensió entre 0 i $\piup$; per tant, únicament
-    caldrà considerar-ne la primera meitat (entre 0 i $\piup$), tenint en
-    compte que el període serà $\piup/\omega$. A més, aquesta funció és
+    En aquest cas, l'ona de tensió entre $\pi$ i $2\pi$ és una repetició
+    exacta de l'ona de tensió entre 0 i $\pi$; per tant, únicament
+    caldrà considerar-ne la primera meitat (entre 0 i $\pi$), tenint en
+    compte que el període serà $\pi/\omega$. A més, aquesta funció és
     parell $u(t) = u(-t)$, i, en conseqüència, tots els termes
     $B_n, n \in \mathsfb{N}^*$, seran nuls.
 
     El terme $A_0$ val:
 
     \[
-    A_0 = \frac{\omega}{\piup} \int_0^{\frac{\piup}{\omega}} \hat{U} \sin
-    \omega t \diff t = \left. -\frac{\hat{U} \cos \omega t}{\piup}
-    \right|_0^{\frac{\piup}{\omega}} = \frac{2\hat{U}}{\piup}
+    A_0 = \frac{\omega}{\pi} \int_0^{\frac{\pi}{\omega}} \hat{U} \sin
+    \omega t \diff t = \left. -\frac{\hat{U} \cos \omega t}{\pi}
+    \right|_0^{\frac{\pi}{\omega}} = \frac{2\hat{U}}{\pi}
     \]
 
     Els termes $A_n$ valen:
 
     \[
     \begin{split}
-    A_n &= \frac{2 \omega}{\piup} \int_0^{\frac{\piup}{\omega}} \hat{U} \sin
+    A_n &= \frac{2 \omega}{\pi} \int_0^{\frac{\pi}{\omega}} \hat{U} \sin
     \omega t \cos(n \omega t)\diff t = \left. \frac{2 \hat{U}[ \cos
     \omega t \cos (n \omega t) + n \sin \omega t \sin(n \omega
-    t)]}{\piup(n^2-1)} \right|_0^{\frac{\piup}{\omega}}\\[0.5ex]
-    &= -\frac{2\hat{U}(1+\cos n \piup)}{\piup(n^2-1)},
+    t)]}{\pi(n^2-1)} \right|_0^{\frac{\pi}{\omega}}\\[0.5ex]
+    &= -\frac{2\hat{U}(1+\cos n \pi)}{\pi(n^2-1)},
     \qquad n \in \mathsfb{N}^*
     \end{split}
     \]
@@ -318,22 +318,22 @@ valor eficaç total $V$. La norma CEI 60050 l'anomena \textit{pulsating factor},
     Per tant, la funció periòdica $u(t)$ es pot expressar com:
 
     \[
-        u(t) = \frac{2\hat{U}}{\piup} + \sum_{n=1}^\infty
-         - \frac{2\hat{U}(1+\cos n \piup)}{\piup(n^2-1)} \cos(n \omega t)
+        u(t) = \frac{2\hat{U}}{\pi} + \sum_{n=1}^\infty
+         - \frac{2\hat{U}(1+\cos n \pi)}{\pi(n^2-1)} \cos(n \omega t)
     \]
 
-    Ara bé, si ens fixem en els termes $1+\cos n \piup$, veiem que valen 0
+    Ara bé, si ens fixem en els termes $1+\cos n \pi$, veiem que valen 0
     per a $n=1,3,5,\ldots$, i que valen 2 per a $n=2,4,6,\ldots$; per tant, dins
     del sumatori únicament ens quedaran termes d'índex parell. Si a
     continuació fem el canvi de variable $n=2k$, tenim:
 
     \[
-		u(t) = \frac{2\hat{U}}{\piup} + \sum_{k=1}^\infty - \frac{4\hat{U}}{\piup(4k^2-1)} \cos(2 k \omega t)
+		u(t) = \frac{2\hat{U}}{\pi} + \sum_{k=1}^\infty - \frac{4\hat{U}}{\pi(4k^2-1)} \cos(2 k \omega t)
     \]
 
     Aquesta simplificació és deguda al fet que s'ha utilitzat com a
-    període de la funció $u(t)$ la meitat $(\piup/\omega)$ del valor total
-    $(2\piup/\omega)$; en conseqüència, és com si n'haguéssim doblat la
+    període de la funció $u(t)$ la meitat $(\pi/\omega)$ del valor total
+    $(2\pi/\omega)$; en conseqüència, és com si n'haguéssim doblat la
     freqüència i la velocitat angular. Així doncs, la velocitat angular
     de la component fonamental és $2\omega$, i la velocitat angular de
     les components harmòniques és $2\omega k \;(k=2,3,4,5,\ldots,\infty)$.
@@ -341,21 +341,21 @@ valor eficaç total $V$. La norma CEI 60050 l'anomena \textit{pulsating factor},
     El valor mitjà $\bar{U}$ de $u(t)$ és directament $C_0$:
 
     \[
-        \bar{U} = \frac{2\hat{U}}{\piup}
+        \bar{U} = \frac{2\hat{U}}{\pi}
     \]
 
     El valor eficaç de cadascun dels termes del sumatori és $\frac{C\ped{k}}{\sqrt{2}}$:
     \[
-        U_k =  \frac{4\hat{U}}{\sqrt{2}\piup(4k^2-1)},
+        U_k =  \frac{4\hat{U}}{\sqrt{2}\pi(4k^2-1)},
         \qquad k \in \mathsfb{N}^*
     \]
 
     El valor eficaç total és, doncs:
 
     \[
-        U=\sqrt{\left(\frac{2\hat{U}}{\piup}\right)^2 + \sum_{k=1}^\infty
-        \left( \frac{4\hat{U}}{\sqrt{2}\piup(4k^2-1)}\right)^2} =
-        \sqrt{\frac{4\hat{U}^2}{\piup^2} + \frac{(\piup^2-8)\hat{U}^2}{2\piup^2}
+        U=\sqrt{\left(\frac{2\hat{U}}{\pi}\right)^2 + \sum_{k=1}^\infty
+        \left( \frac{4\hat{U}}{\sqrt{2}\pi(4k^2-1)}\right)^2} =
+        \sqrt{\frac{4\hat{U}^2}{\pi^2} + \frac{(\pi^2-8)\hat{U}^2}{2\pi^2}
         }= \frac{\hat{U}}{\sqrt{2}}
     \]
 
@@ -366,16 +366,16 @@ valor eficaç total $V$. La norma CEI 60050 l'anomena \textit{pulsating factor},
     El valor eficaç $U_1$ de la component fonamental val:
 
     \[
-        U_1 =\frac{4\hat{U}}{\sqrt{2}\piup(4\times 1^2-1)} =
-        \frac{4\hat{U}}{3\sqrt{2}\piup}
+        U_1 =\frac{4\hat{U}}{\sqrt{2}\pi(4\times 1^2-1)} =
+        \frac{4\hat{U}}{3\sqrt{2}\pi}
     \]
 
     La taxa de fonamental val, per tant:
 
     \[
         g =
-        \frac{\dfrac{4\hat{U}}{3\sqrt{2}\piup}}{\dfrac{\hat{U}}{\sqrt{2}}}
-        =\frac{4}{3\piup} = 0,{42}
+        \frac{\dfrac{4\hat{U}}{3\sqrt{2}\pi}}{\dfrac{\hat{U}}{\sqrt{2}}}
+        =\frac{4}{3\pi} = 0,{42}
     \]
 
     Com es pot veure, aquest valor no és gaire alt; això ens indica que
@@ -393,7 +393,7 @@ disposar de taules que recullen les sèries de Fourier d'un
 gran nombre de funcions.
 
 En la taula \vref{taula:Serie-Fourier-Graf} es pot veure una relació de
-sèries de Fourier de diverses formes d'ona usuals. Com és habitual tenim: $\omega=2\piup f = 2\piup / T$.
+sèries de Fourier de diverses formes d'ona usuals. Com és habitual tenim: $\omega=2\pi f = 2\pi / T$.
 
 \begin{longtable}{cc}
    \caption{\label{taula:Serie-Fourier-Graf} Sèries de Fourier de formes d'ona}\\
@@ -410,23 +410,23 @@ sèries de Fourier de diverses formes d'ona usuals. Com és habitual tenim: $\om
    \multicolumn{2}{r}{\sffamily\bfseries\color{NavyBlue}(\emph{continua a la pàgina següent})}
    \endfoot
    \endlastfoot
-   \input{Imatges/Cap-Fourier-Funcio-1.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{K}{2} + \frac{{2K}}{\piup }\sum\limits_{n = 1}^\infty  {\frac{{\sin \big((2n - 1)\omega t\big)}}{{2n - 1}}}$}\\[2.4ex]
-   \input{Imatges/Cap-Fourier-Funcio-2.pdf_tex} & \raisebox{1.2cm}{$\displaystyle\frac{{4K}}{\piup }\sum\limits_{n = 1}^\infty  {\frac{{\sin \big((2n - 1)\omega t\big)}}{{2n - 1}}}$}\\[2.4ex]
-   \input{Imatges/Cap-Fourier-Funcio-3.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{{K \tau }}{{T}} + \frac{{2K}}{\piup }\sum\limits_{n = 1}^\infty  {\frac{{( - 1)^n \sin \left(\dfrac{{n\omega \tau }}{2}\right)\cos (n\omega t)}}{n}}$} \\[2.4ex]
-   \input{Imatges/Cap-Fourier-Funcio-4.pdf_tex} & \raisebox{1.2cm}{$\displaystyle\frac{{2K}}{\piup }\sum\limits_{n = 1}^\infty  {\frac{{( - 1)^n (\cos (n\omega \tau )-1)\sin (n\omega t)}}{n}}$} \\[2.4ex]
-   \input{Imatges/Cap-Fourier-Funcio-5.pdf_tex} & \raisebox{1.2cm}{$\displaystyle\frac{{4K}}{{\piup }}\sum\limits_{n = 1}^\infty  {\frac{{ (-1)^{n+1}\sin \left(\dfrac{{(2n-1)\omega \tau }}{2}\right)\sin \big((2n-1)\omega t\big)}}{2n-1}}$} \\[2.4ex]
+   \input{Imatges/Cap-Fourier-Funcio-1.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{K}{2} + \frac{{2K}}{\pi }\sum\limits_{n = 1}^\infty  {\frac{{\sin \big((2n - 1)\omega t\big)}}{{2n - 1}}}$}\\[2.4ex]
+   \input{Imatges/Cap-Fourier-Funcio-2.pdf_tex} & \raisebox{1.2cm}{$\displaystyle\frac{{4K}}{\pi }\sum\limits_{n = 1}^\infty  {\frac{{\sin \big((2n - 1)\omega t\big)}}{{2n - 1}}}$}\\[2.4ex]
+   \input{Imatges/Cap-Fourier-Funcio-3.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{{K \tau }}{{T}} + \frac{{2K}}{\pi }\sum\limits_{n = 1}^\infty  {\frac{{( - 1)^n \sin \left(\dfrac{{n\omega \tau }}{2}\right)\cos (n\omega t)}}{n}}$} \\[2.4ex]
+   \input{Imatges/Cap-Fourier-Funcio-4.pdf_tex} & \raisebox{1.2cm}{$\displaystyle\frac{{2K}}{\pi }\sum\limits_{n = 1}^\infty  {\frac{{( - 1)^n (\cos (n\omega \tau )-1)\sin (n\omega t)}}{n}}$} \\[2.4ex]
+   \input{Imatges/Cap-Fourier-Funcio-5.pdf_tex} & \raisebox{1.2cm}{$\displaystyle\frac{{4K}}{{\pi }}\sum\limits_{n = 1}^\infty  {\frac{{ (-1)^{n+1}\sin \left(\dfrac{{(2n-1)\omega \tau }}{2}\right)\sin \big((2n-1)\omega t\big)}}{2n-1}}$} \\[2.4ex]
    \input{Imatges/Cap-Fourier-Funcio-6.pdf_tex} &\raisebox{1cm}{$\begin{array}{*{20}r}
-   {\displaystyle\frac{K}{4} - \frac{{2K}}{{\piup ^2 }}\sum\limits_{n = 1}^\infty  {\frac{{\cos \big((2n - 1)\omega t\big)}}{{(2n - 1)^2 }} } }\\[2.4ex]
-   {\displaystyle + \frac{K}{\piup }\sum\limits_{n = 1}^\infty  {\frac{{( - 1)^{n + 1} \sin (n\omega t)}}{n}} }  \\
+   {\displaystyle\frac{K}{4} - \frac{{2K}}{{\pi ^2 }}\sum\limits_{n = 1}^\infty  {\frac{{\cos \big((2n - 1)\omega t\big)}}{{(2n - 1)^2 }} } }\\[2.4ex]
+   {\displaystyle + \frac{K}{\pi }\sum\limits_{n = 1}^\infty  {\frac{{( - 1)^{n + 1} \sin (n\omega t)}}{n}} }  \\
     \end{array}$}\\[2.4ex]
-   \input{Imatges/Cap-Fourier-Funcio-7.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{K}{2} - \frac{K}{\piup }\sum\limits_{n = 1}^\infty  {\frac{{\sin (n\omega t)}}{n}}$}\\[2.4ex]
-   \input{Imatges/Cap-Fourier-Funcio-8.pdf_tex} & \raisebox{1.2cm}{$\displaystyle \frac{{2K}}{\piup }\sum\limits_{n = 1}^\infty  {\frac{{( - 1)^{n+1} \sin (n\omega t)}}{n}}$}\\[2.4ex]
-   \input{Imatges/Cap-Fourier-Funcio-9.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{K}{2} - \frac{{4K}}{{\piup ^2 }}\sum\limits_{n = 1}^\infty  {\frac{{\cos \big((2n - 1)\omega t\big)}}{{(2n - 1)^2 }}}$}\\[2.4ex]
-   \input{Imatges/Cap-Fourier-Funcio-10.pdf_tex} & \raisebox{1.2cm}{$\displaystyle\frac{{8K}}{{\piup ^2 }}\sum\limits_{n = 1}^\infty  {\frac{{( - 1)^{n-1} \sin \big((2n - 1)\omega t\big)}}{{(2n - 1)^2 }}}$}\\[2.4ex]
-   \input{Imatges/Cap-Fourier-Funcio-11.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{K}{2} - \frac{{4K}}{{\piup ^2  - 2\piup \omega \tau }}\sum\limits_{n = 1}^\infty  {\frac{{\cos \big((2n-1)\omega \tau \big)\cos \big((2n-1)\omega t\big)}}{{(2n - 1)^2 }}}$}\\[2.4ex]
-   \input{Imatges/Cap-Fourier-Funcio-12.pdf_tex} & \raisebox{1.2cm}{$\displaystyle\frac{{2K}}{\piup }\sum\limits_{n = 1}^\infty  {\left( {1 + \frac{{\big(1 + ( - 1)^n \big)\sin (n\omega \tau )}}{{n(\piup  - 2\omega \tau )}}} \right)\frac{{( - 1)^{n+1} \sin (n\omega t)}}{n}}$}\\[2.4ex]
-   \input{Imatges/Cap-Fourier-Funcio-13.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{{2K}}{\piup } - \frac{{4K}}{\piup }\sum\limits_{n = 1}^\infty  {\frac{{\cos(2n\omega t)}}{{4n^2  - 1}}}$}\\[2.4ex]
-   \input{Imatges/Cap-Fourier-Funcio-14.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{K}{\piup } + \frac{K}{2}\sin (\omega t) - \frac{{2K}}{\piup }\sum\limits_{n = 1}^\infty  {\frac{{\cos (2n\omega t)}}{{4n^2  - 1}}}$}\\[2.4ex]
+   \input{Imatges/Cap-Fourier-Funcio-7.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{K}{2} - \frac{K}{\pi }\sum\limits_{n = 1}^\infty  {\frac{{\sin (n\omega t)}}{n}}$}\\[2.4ex]
+   \input{Imatges/Cap-Fourier-Funcio-8.pdf_tex} & \raisebox{1.2cm}{$\displaystyle \frac{{2K}}{\pi }\sum\limits_{n = 1}^\infty  {\frac{{( - 1)^{n+1} \sin (n\omega t)}}{n}}$}\\[2.4ex]
+   \input{Imatges/Cap-Fourier-Funcio-9.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{K}{2} - \frac{{4K}}{{\pi ^2 }}\sum\limits_{n = 1}^\infty  {\frac{{\cos \big((2n - 1)\omega t\big)}}{{(2n - 1)^2 }}}$}\\[2.4ex]
+   \input{Imatges/Cap-Fourier-Funcio-10.pdf_tex} & \raisebox{1.2cm}{$\displaystyle\frac{{8K}}{{\pi ^2 }}\sum\limits_{n = 1}^\infty  {\frac{{( - 1)^{n-1} \sin \big((2n - 1)\omega t\big)}}{{(2n - 1)^2 }}}$}\\[2.4ex]
+   \input{Imatges/Cap-Fourier-Funcio-11.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{K}{2} - \frac{{4K}}{{\pi ^2  - 2\pi \omega \tau }}\sum\limits_{n = 1}^\infty  {\frac{{\cos \big((2n-1)\omega \tau \big)\cos \big((2n-1)\omega t\big)}}{{(2n - 1)^2 }}}$}\\[2.4ex]
+   \input{Imatges/Cap-Fourier-Funcio-12.pdf_tex} & \raisebox{1.2cm}{$\displaystyle\frac{{2K}}{\pi }\sum\limits_{n = 1}^\infty  {\left( {1 + \frac{{\big(1 + ( - 1)^n \big)\sin (n\omega \tau )}}{{n(\pi  - 2\omega \tau )}}} \right)\frac{{( - 1)^{n+1} \sin (n\omega t)}}{n}}$}\\[2.4ex]
+   \input{Imatges/Cap-Fourier-Funcio-13.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{{2K}}{\pi } - \frac{{4K}}{\pi }\sum\limits_{n = 1}^\infty  {\frac{{\cos(2n\omega t)}}{{4n^2  - 1}}}$}\\[2.4ex]
+   \input{Imatges/Cap-Fourier-Funcio-14.pdf_tex} & \raisebox{0.8cm}{$\displaystyle\frac{K}{\pi } + \frac{K}{2}\sin (\omega t) - \frac{{2K}}{\pi }\sum\limits_{n = 1}^\infty  {\frac{{\cos (2n\omega t)}}{{4n^2  - 1}}}$}\\[2.4ex]
     \bottomrule[1pt]
 \end{longtable}
 
@@ -450,17 +450,17 @@ El principi de desplaçament en el temps també és aplicable a les sèries de F
         \input{Imatges/Cap-Fourier-Exemple-Taula.pdf_tex}
     \end{center}
 
-    El període d'aquesta ona és $T=\qty{8}{ms}$ i la seva velocitat angular és $\omega = \dfrac{2\piup}{\qty{8}{ms}} = 250 \piup\unit{\,rad/s}$.
+    El període d'aquesta ona és $T=\qty{8}{ms}$ i la seva velocitat angular és $\omega = \dfrac{2\pi}{\qty{8}{ms}} = 250 \pi\unit{\,rad/s}$.
 
     Aquesta ona és igual a la segona ona de la taula \vref{taula:Serie-Fourier-Graf} amb $K=\qty{4}{V}$, però avançada un temps $\tau=\qty{2}{ms}$; aquest valor correspon a un angle $\theta$ d'avanç de:
 
     \[
-        \theta = \omega \tau = 250\piup\unit{\,rad/s} \times \qty{2e-3}{s} = \frac{\piup}{2}\unit{\,rad}
+        \theta = \omega \tau = 250\pi\unit{\,rad/s} \times \qty{2e-3}{s} = \frac{\pi}{2}\unit{\,rad}
     \]
     La sèrie de Fourier d'aquesta ona és doncs:
 
     \[
-    u(t) = \frac{{16}}{\piup }\sum\limits_{n = 1}^\infty  {\frac{{\sin \big((2n - 1)(250\piup t+ \frac{\piup}{2})\big)}}{{2n - 1}}} \,\text{V}
+    u(t) = \frac{{16}}{\pi }\sum\limits_{n = 1}^\infty  {\frac{{\sin \big((2n - 1)(250\pi t+ \frac{\pi}{2})\big)}}{{2n - 1}}} \,\text{V}
     \]
 \end{exemple}
 
@@ -561,7 +561,7 @@ fonamental de la tensió.
     \end{center}
 
      El període de la tensió $u(t)$ és: $T=\qty{10}{ms}$, la freqüència és: $f=1/T=\qty{100}{Hz}$, i la
-    seva velocitat angular: $\omega = 2\piup f = 200\piup\unit{\,rad/s}$;
+    seva velocitat angular: $\omega = 2\pi f = 200\pi\unit{\,rad/s}$;
     matemàticament, $u(t)$ s'expressa com:
 
     \[
@@ -579,29 +579,29 @@ fonamental de la tensió.
     \begin{split}
         B_n &= \frac{2}{T} \left( \int_0^{T/2} u(t) \sin(n \omega t) \diff t+
         \int_{T/2}^{T} u(t) \sin(n \omega t) \diff t\right) \unit{V} \\[0.5ex]
-        &= 200 \left( \int_{\qty{0}{s}}^{\qty{5e-3}{s}} 20 \sin(200 n \piup t) \diff t+
-        \int_{\qty{5e-3}{s}}^{\qty{e-2}{s}} -20 \sin(200 n \piup t) \diff t \right) \unit{V}\\[0.5ex]
-        &= 200 \left( \left. -\frac{\cos(200 n \piup t)}{10 n \piup}\right|_{\qty{0}{s}}^{\qty{5e-3}{s}}
-        +  \left.\frac{\cos(200 n \piup t)}{10 n \piup}\right|_{\qty{5e-3}{s}}^{\qty{e-2}{s}}\right) \unit{V}\\[0.5ex]
-        &= 200\left( \frac{1}{10 n \piup} - \frac{\cos n \piup}{5 n \piup} +
-        \frac{\cos (2 n \piup)}{10 n \piup}\right) \unit{V},
+        &= 200 \left( \int_{\qty{0}{s}}^{\qty{5e-3}{s}} 20 \sin(200 n \pi t) \diff t+
+        \int_{\qty{5e-3}{s}}^{\qty{e-2}{s}} -20 \sin(200 n \pi t) \diff t \right) \unit{V}\\[0.5ex]
+        &= 200 \left( \left. -\frac{\cos(200 n \pi t)}{10 n \pi}\right|_{\qty{0}{s}}^{\qty{5e-3}{s}}
+        +  \left.\frac{\cos(200 n \pi t)}{10 n \pi}\right|_{\qty{5e-3}{s}}^{\qty{e-2}{s}}\right) \unit{V}\\[0.5ex]
+        &= 200\left( \frac{1}{10 n \pi} - \frac{\cos n \pi}{5 n \pi} +
+        \frac{\cos (2 n \pi)}{10 n \pi}\right) \unit{V},
         \qquad n=1,3,5,\ldots,\infty
     \end{split}
     \]
 
     Si tenim en compte que per a valors senars de l'índex $n$, es
-    compleix: $\cos n \piup = -1$ i $\cos (2 n \piup) = 1$, tenim:
+    compleix: $\cos n \pi = -1$ i $\cos (2 n \pi) = 1$, tenim:
 
     \[
-        B_n = 200 \left( \frac{1}{10 n \piup} - \frac{-1}{5 n \piup} +
-        \frac{1}{10 n \piup} \right) \unit{V} = \frac{80}{n \piup} \unit{V},
+        B_n = 200 \left( \frac{1}{10 n \pi} - \frac{-1}{5 n \pi} +
+        \frac{1}{10 n \pi} \right) \unit{V} = \frac{80}{n \pi} \unit{V},
         \qquad n=1,3,5,\ldots,\infty
     \]
 
     Així doncs, l'expansió en sèrie de Fourier de la tensió $u(t)$ és:
 
     \[\begin{split}
-        u(t) &= \frac{80}{\piup} \left( \sin \omega t + \frac{\sin (3 \omega t)}{3} +
+        u(t) &= \frac{80}{\pi} \left( \sin \omega t + \frac{\sin (3 \omega t)}{3} +
         \frac{\sin (5 \omega t)}{5} + \frac{\sin (7 \omega t)}{7} +
         \frac{\sin (9 \omega t)}{9} + \frac{\sin (11 \omega t)}{11} +\cdots\right) \unit{V}\\
         &= \qty{25,4648}{V} \times \sin \omega t + \qty{8,4883}{V} \times \sin (3 \omega t) + \qty{5,0292}{V} \times \sin (5 \omega t) \\
@@ -614,9 +614,9 @@ fonamental de la tensió.
     En el punt de discontinuïtat $t=\qty{5}{ms}$, tenim:
 
     \[
-        u(\qty{5e-3}{s}) =\frac{80}{\piup} \left( \sin \piup + \frac{\sin 3 \piup}{3} +
-        \frac{\sin 5 \piup}{5} + \frac{\sin 7 \piup}{7} +
-        \frac{\sin 9 \piup}{9} +\frac{\sin 11 \piup}{11}+\cdots\right) \unit{V}= \qty{0}{V}
+        u(\qty{5e-3}{s}) =\frac{80}{\pi} \left( \sin \pi + \frac{\sin 3 \pi}{3} +
+        \frac{\sin 5 \pi}{5} + \frac{\sin 7 \pi}{7} +
+        \frac{\sin 9 \pi}{9} +\frac{\sin 11 \pi}{11}+\cdots\right) \unit{V}= \qty{0}{V}
     \]
 
     Es comprova que en complir-se la condició de Dirichlet, aquest valor
@@ -636,17 +636,17 @@ fonamental de la tensió.
     tensió $u(t)$; els valors de $\cmplx{Z}_n$ dels sis primers índexs són:
     
     \begin{alignat*}{3}
-        \cmplx{Z}_1 &= R + j\, \omega L &&= \qty{10}{\ohm} + j\, (200\times \piup\times 50\times 10^{-3})\unit{\,\ohm} &&=
+        \cmplx{Z}_1 &= R + j\, \omega L &&= \qty{10}{\ohm} + j\, (200\times \pi\times 50\times 10^{-3})\unit{\,\ohm} &&=
         \complexqty[complex-angle-unit = radians]{32,9691:1,2626}{\ohm}\\[1ex]
-        \cmplx{Z}_3 &= R + j\, 3 \omega L &&= \qty{10}{\ohm} + j\, (3\times 200\times \piup\times 50\times 10^{-3})\unit{\,\ohm} &&=
+        \cmplx{Z}_3 &= R + j\, 3 \omega L &&= \qty{10}{\ohm} + j\, (3\times 200\times \pi\times 50\times 10^{-3})\unit{\,\ohm} &&=
         \complexqty[complex-angle-unit = radians]{94,7768:1,4651}{\ohm}\\[1ex]
-        \cmplx{Z}_5 &= R + j\, 5 \omega L &&= \qty{10}{\ohm} + j\, (5\times 200\times \piup\times 50\times 10^{-3})\unit{\,\ohm} &&=
+        \cmplx{Z}_5 &= R + j\, 5 \omega L &&= \qty{10}{\ohm} + j\, (5\times 200\times \pi\times 50\times 10^{-3})\unit{\,\ohm} &&=
         \complexqty[complex-angle-unit = radians]{157,3976:1,5072}{\ohm}\\[1ex]
-        \cmplx{Z}_7 &= R + j\, 7 \omega L &&= \qty{10}{\ohm} + j\, (7\times 200\times \piup\times 50\times 10^{-3})\unit{\,\ohm} &&=
+        \cmplx{Z}_7 &= R + j\, 7 \omega L &&= \qty{10}{\ohm} + j\, (7\times 200\times \pi\times 50\times 10^{-3})\unit{\,\ohm} &&=
         \complexqty[complex-angle-unit = radians]{220,1387:1,5254}{\ohm}\\[1ex]
-        \cmplx{Z}_9 &= R + j\, 9 \omega L &&= \qty{10}{\ohm} + j\, (9\times 200\times \piup\times 50\times 10^{-3})\unit{\,\ohm} &&=
+        \cmplx{Z}_9 &= R + j\, 9 \omega L &&= \qty{10}{\ohm} + j\, (9\times 200\times \pi\times 50\times 10^{-3})\unit{\,\ohm} &&=
         \complexqty[complex-angle-unit = radians]{282,9201:1,5354}{\ohm}\\[1ex]
-        \cmplx{Z}_{11} &= R + j\, 11 \omega L &&= \qty{10}{\ohm} + j\, (11\times 200\times \piup\times 50\times 10^{-3})\unit{\,\ohm} &&=
+        \cmplx{Z}_{11} &= R + j\, 11 \omega L &&= \qty{10}{\ohm} + j\, (11\times 200\times \pi\times 50\times 10^{-3})\unit{\,\ohm} &&=
         \complexqty[complex-angle-unit = radians]{345,7198:1,5419}{\ohm}
     \end{alignat*}
 
@@ -751,9 +751,9 @@ fonamental de la tensió.
     calculem a continuació els cent primers termes  del corrent de pic (component fonamental més components harmòniques 3, 5, ..., 197 i 199), i
     per acabar calculem el valor eficaç del corrent i la potència:
 
-    \hspace{1cm}\texttt{In[1]:= Upic[n\_] = 80 / ($\mathtt{\piup}$ (2 n -- 1));}
+    \hspace{1cm}\texttt{In[1]:= Upic[n\_] = 80 / ($\mathtt{\pi}$ (2 n -- 1));}
 
-    \hspace{1cm}\texttt{In[2]:= Z[n\_] = Abs[10 + i (2 n -- 1) 200 $\mathtt{\piup}$ 50 $\mathtt{10^{-3}}$];}
+    \hspace{1cm}\texttt{In[2]:= Z[n\_] = Abs[10 + i (2 n -- 1) 200 $\mathtt{\pi}$ 50 $\mathtt{10^{-3}}$];}
 
     \hspace{1cm}\texttt{In[3]:= Ipic = Table[Upic[n] / Z[n], \{n, 1, 100\}];}
 

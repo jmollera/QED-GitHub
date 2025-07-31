@@ -189,7 +189,7 @@ Es presenten a continuació una sèrie de variables elèctriques i mecàniques u
    \item[$\eta$] Rendiment, adimensional.
    \item[$U$] Tensió fase-fase aplicada al motor, expressada en \unit{V}.
    \item[$I$] Corrent de fase absorbit pel motor, expressat en \unit{A}.
-   \item[$\cos\varphiup$] Factor de potència, on $\varphiup$ és l'angle entre el fasor de la tensió fase-neutre aplicada al motor i el fasor del corrent de fase absorbit pel motor.
+   \item[$\cos\varphi$] Factor de potència, on $\varphi$ és l'angle entre el fasor de la tensió fase-neutre aplicada al motor i el fasor del corrent de fase absorbit pel motor.
 \end{list}
 
 La relació entre les variables mecàniques i les elèctriques la fixa el nombre de pols $p$ del motor:
@@ -201,14 +201,14 @@ La relació entre les variables mecàniques i les elèctriques la fixa el nombre
 
 Per  convertir una velocitat de rotació expressada en \unit{rad/s} en una velocitat de rotació expressada en \unit{r/min}, cal fer la conversió:
 \begin{equation}
- 1\frac{\unit{rad}}{\unit{s}} \times \frac{\qty{60}{s}}{\qty{1}{min}} \times \frac{\qty{1}{r}}{2\piup\,\unit{rad}} = \frac{30}{\piup}\frac{\unit{r}}{\unit{min}}
+ 1\frac{\unit{rad}}{\unit{s}} \times \frac{\qty{60}{s}}{\qty{1}{min}} \times \frac{\qty{1}{r}}{2\pi\,\unit{rad}} = \frac{30}{\pi}\frac{\unit{r}}{\unit{min}}
  \end{equation}
 
  Per tant, per passar de $\omega$ a $n$, o de $\omega\ped{m}$ a $n\ped{m}$, podem usar les equacions següents:
 \begin{subequations}\index{motors d'inducció!velocitat}
 \begin{align}
-    n        &= \frac{30}{\piup} \,\omega \\[1ex]
-    n\ped{m} &= \frac{30}{\piup} \,\omega\ped{m}
+    n        &= \frac{30}{\pi} \,\omega \\[1ex]
+    n\ped{m} &= \frac{30}{\pi} \,\omega\ped{m}
 \end{align}
 \end{subequations}
 
@@ -217,8 +217,8 @@ La velocitat nominal d'un motor d'inducció és sempre propera a l'anomenada vel
 La velocitat síncrona elèctrica depèn de la freqüència elèctrica de la tensió que alimenta al motor; la velocitat síncrona mecànica s'obté a partir de la velocitat síncrona elèctrica i de  les equacions \eqref{eq:vel-ele-mec}:
 \begin{subequations}\index{motors d'inducció!velocitat síncrona}
 \begin{align}
-    \omega\ped{sinc} &= 2 \piup f & n\ped{sinc} &= 60 f \\[1ex]
-    \omega\ped{m,sinc} &= \frac{4 \piup f}{p} & n\ped{m,sinc} &= \frac{120 f}{p}\label{eq:vel-mec-sinc}
+    \omega\ped{sinc} &= 2 \pi f & n\ped{sinc} &= 60 f \\[1ex]
+    \omega\ped{m,sinc} &= \frac{4 \pi f}{p} & n\ped{m,sinc} &= \frac{120 f}{p}\label{eq:vel-mec-sinc}
 \end{align}
 \end{subequations}
 
@@ -261,9 +261,9 @@ El rendiment d'un motor és expressat pel quocient entre la potència mecànica 
     \eta = \frac{P\ped{m}}{P}
 \end{equation}
 
-A partir de la relació elèctrica: $P = S \cos\varphiup$, tenim la següent relació entre la potència mecànica subministrada per un motor i la potència aparent elèctrica absorbida:
+A partir de la relació elèctrica: $P = S \cos\varphi$, tenim la següent relació entre la potència mecànica subministrada per un motor i la potència aparent elèctrica absorbida:
 \begin{equation}
-    S = \sqrt{3} U I = \frac{P}{\cos\varphiup} = \frac{P\ped{m}}{\eta \cos\varphiup}\label{eq:mot-S-Pm}
+    S = \sqrt{3} U I = \frac{P}{\cos\varphi} = \frac{P\ped{m}}{\eta \cos\varphi}\label{eq:mot-S-Pm}
 \end{equation}
 
 Per  convertir una potència mecànica expressada en HP o en CV en una  potència mecànica expressada en kW, cal  fer les conversions:
@@ -276,11 +276,11 @@ Per  convertir una potència mecànica expressada en HP o en CV en una  potènci
 
  A partir d'aquestes relacions, si expressem $P\ped{m}$  en HP o en CV, i $S$  en kVA, l'equació \eqref{eq:mot-S-Pm} es transforma en:
 \begin{align}
-    S/{\scriptstyle\unit{kVA}} &= \frac{\num{0,7456999}}{\eta \cos\varphiup}\,   P\ped{m}/{\scriptstyle\unit{HP}} \\[1ex]
-    S/{\scriptstyle\unit{kVA}} &= \frac{\num{0,7354988}}{\eta \cos\varphiup}\,   P\ped{m}/{\scriptstyle\unit{CV}}
+    S/{\scriptstyle\unit{kVA}} &= \frac{\num{0,7456999}}{\eta \cos\varphi}\,   P\ped{m}/{\scriptstyle\unit{HP}} \\[1ex]
+    S/{\scriptstyle\unit{kVA}} &= \frac{\num{0,7354988}}{\eta \cos\varphi}\,   P\ped{m}/{\scriptstyle\unit{CV}}
 \end{align}
 
-En el punt nominal de funcionament d'un motor, els valors del rendiment solen ser en general de l'ordre de 0,9 o superiors ($\eta\ped{n} \approx \num{0,9}$) i els valors del factor de potència solen ser de l'ordre de 0,85 o superiors ($\cos\varphiup\ped{n} \approx \num{0,85}$), això fa que els quocients $\num{0,7456999}/(\num{0,9} \times \num{0,85})$ o $\num{0,7354988}/(\num{0,9} \times \num{0,85})$ tinguin un valor aproximat a 1. Per tant, de forma aproximada es compleix que el valor de la potència nominal aparent absorbida pel motor, expressada en kVA, és igual al valor de la potència mecànica nominal subministrada pel motor, expressada en HP o en CV:
+En el punt nominal de funcionament d'un motor, els valors del rendiment solen ser en general de l'ordre de 0,9 o superiors ($\eta\ped{n} \approx \num{0,9}$) i els valors del factor de potència solen ser de l'ordre de 0,85 o superiors ($\cos\varphi\ped{n} \approx \num{0,85}$), això fa que els quocients $\num{0,7456999}/(\num{0,9} \times \num{0,85})$ o $\num{0,7354988}/(\num{0,9} \times \num{0,85})$ tinguin un valor aproximat a 1. Per tant, de forma aproximada es compleix que el valor de la potència nominal aparent absorbida pel motor, expressada en kVA, és igual al valor de la potència mecànica nominal subministrada pel motor, expressada en HP o en CV:
 \begin{equation}\label{eq:kVA-CV-HP}
     S\ped{n}/{\scriptstyle \unit{kVA}} \approx  P\ped{m,n}/{\scriptstyle \unit{HP}} \approx  P\ped{m,n}/{\scriptstyle \unit{CV}}
 \end{equation}
@@ -295,11 +295,11 @@ Per  obtenir un  parell mecànic expressat en \unit{N.m}, a partir d'una potènc
 \begin{subequations}
 \begin{align}
 	\frac{\qty{1}{kW}}{1\frac{\unit{r}}{\unit{min}}} \times
-    \frac{\frac{\qty{1000}{W}}{\qty{1}{kW}}}{ \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\piup\,\unit{rad}}{\qty{1}{r}}} &=  \num{9549,2966}\, \frac{\unit{W}}{\unit{rad/s}} = \qty{9549,2966}{N.m} \\[1ex]
+    \frac{\frac{\qty{1000}{W}}{\qty{1}{kW}}}{ \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\pi\,\unit{rad}}{\qty{1}{r}}} &=  \num{9549,2966}\, \frac{\unit{W}}{\unit{rad/s}} = \qty{9549,2966}{N.m} \\[1ex]
     \frac{\qty{1}{HP}}{1\frac{\unit{r}}{\unit{min}}} \times
-    \frac{\frac{\qty{745,6999}{W}}{\qty{1}{HP}}}{ \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\piup\,\unit{rad}}{\qty{1}{r}}} &=  \num{7120,9095}\, \frac{\unit{W}}{\unit{rad/s}} = \qty{7120,9095}{N.m} \\[1ex]
+    \frac{\frac{\qty{745,6999}{W}}{\qty{1}{HP}}}{ \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\pi\,\unit{rad}}{\qty{1}{r}}} &=  \num{7120,9095}\, \frac{\unit{W}}{\unit{rad/s}} = \qty{7120,9095}{N.m} \\[1ex]
     \frac{\qty{1}{CV}}{1\frac{\unit{r}}{\unit{min}}} \times
-    \frac{\frac{\qty{735,4988}{W}}{\qty{1}{CV}}}{ \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\piup\,\unit{rad}}{\qty{1}{r}}} &=  \num{7023,4962}\, \frac{\unit{W}}{\unit{rad/s}} = \qty{7023,4962}{N.m}
+    \frac{\frac{\qty{735,4988}{W}}{\qty{1}{CV}}}{ \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\pi\,\unit{rad}}{\qty{1}{r}}} &=  \num{7023,4962}\, \frac{\unit{W}}{\unit{rad/s}} = \qty{7023,4962}{N.m}
 \end{align}
 \end{subequations}
 
@@ -355,8 +355,8 @@ La constant d'inèrcia $H$ es defineix com la relació entre l'energia cinètica
 Per  obtenir una constant d'inèrcia  expressada en \unit{s} (o de forma més explícita en \unit{s.rad^2.W/VA}), a partir d'un moment d'inèrcia expressat en \unit{kg.m^2} o en \unit{lb.ft^2}, d'una velocitat de rotació expressada en \unit{r/min}, i d'una potència aparent elèctrica expressada en \unit{kVA}, cal  fer les conversions:
 \begin{subequations}
 \begin{align}
-    \frac{\qty{1}{kg.m^2} \times \left(1\frac{\unit{r}}{\unit{min}} \times \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\piup\,\unit{rad}}{\qty{1}{r}}\right)^2}{2\times \qty{1}{kVA} \times \frac{\qty{1000}{VA}}{\qty{1}{kVA}}}  &= \qty{5,4831e-6}{s.rad^2.W/VA} \\[1ex]
-   \frac{\qty{1}{lb.ft^2} \times \frac{\qty{4,214011e-2}{kg.m^2}}{\qty{1}{lb.ft^2}} \times \left(1\frac{\unit{r}}{\unit{min}} \times \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\piup\,\unit{rad}}{\qty{1}{r}}\right)^2}{2\times \qty{1}{kVA}  \times
+    \frac{\qty{1}{kg.m^2} \times \left(1\frac{\unit{r}}{\unit{min}} \times \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\pi\,\unit{rad}}{\qty{1}{r}}\right)^2}{2\times \qty{1}{kVA} \times \frac{\qty{1000}{VA}}{\qty{1}{kVA}}}  &= \qty{5,4831e-6}{s.rad^2.W/VA} \\[1ex]
+   \frac{\qty{1}{lb.ft^2} \times \frac{\qty{4,214011e-2}{kg.m^2}}{\qty{1}{lb.ft^2}} \times \left(1\frac{\unit{r}}{\unit{min}} \times \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\pi\,\unit{rad}}{\qty{1}{r}}\right)^2}{2\times \qty{1}{kVA}  \times
    \frac{\qty{1000}{VA}}{\qty{1}{kVA}}} &= \qty{2,3106e-7}{s.rad^2.W/VA}
 \end{align}
 \end{subequations}
@@ -377,8 +377,8 @@ La relació inversa entre $H$ i $J$ és:
 Per  obtenir un moment d'inèrcia expressat en \unit{kg.m^2} o en \unit{lb.ft^2}, a partir d'una constant d'inèrcia  expressada en \unit{s} (o de forma més explícita en \unit{s.rad^2.W/VA}), d'una velocitat de rotació expressada en \unit{r/min}, i d'una potència aparent elèctrica expressada en \unit{kVA}, cal  fer les conversions:
 \begin{subequations}
 \begin{align}
-    \frac{2\times \qty{1}{kVA} \times \frac{\qty{1000}{VA}}{\qty{1}{kVA}} \times 1 \frac{\unit{s.rad^2.W}}{\unit{VA}}}{\left(1\frac{\unit{r}}{\unit{min}} \times \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\piup\,\unit{rad}}{\qty{1}{r}}\right)^2}  &= \qty{1,8238e5}{kg.m^2} \\[1ex]
-    \frac{2\times \qty{1}{kVA} \times \frac{\qty{1000}{VA}}{\qty{1}{kVA}} \times 1 \frac{\unit{s.rad^2.W}}{\unit{VA}}}{\left(1\frac{\unit{r}}{\unit{min}} \times \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\piup\,\unit{rad}}{\qty{1}{r}}\right)^2}  \times \frac{\qty{1}{lb.ft^2}}{\qty{4,214011e-2}{kg.m^2}} &= \qty{4,3279e6}{lb.ft^2}
+    \frac{2\times \qty{1}{kVA} \times \frac{\qty{1000}{VA}}{\qty{1}{kVA}} \times 1 \frac{\unit{s.rad^2.W}}{\unit{VA}}}{\left(1\frac{\unit{r}}{\unit{min}} \times \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\pi\,\unit{rad}}{\qty{1}{r}}\right)^2}  &= \qty{1,8238e5}{kg.m^2} \\[1ex]
+    \frac{2\times \qty{1}{kVA} \times \frac{\qty{1000}{VA}}{\qty{1}{kVA}} \times 1 \frac{\unit{s.rad^2.W}}{\unit{VA}}}{\left(1\frac{\unit{r}}{\unit{min}} \times \frac{\qty{1}{min}}{\qty{60}{s}} \times \frac{2\pi\,\unit{rad}}{\qty{1}{r}}\right)^2}  \times \frac{\qty{1}{lb.ft^2}}{\qty{4,214011e-2}{kg.m^2}} &= \qty{4,3279e6}{lb.ft^2}
 \end{align}
 \end{subequations}
 
@@ -491,7 +491,7 @@ Convertim primer el moment d'inèrcia a unitats SI:
     = \qty{21,37}{kg.m^2}
 \]
 
-Creem a continuació una nova taula de valors en unitats SI a partir de la taula dels valors donats. Multipliquem la primera columna per $\piup/30$ per obtenir la velocitat $\omega\ped{m}$ en \unit{rad/s}, i les dues columnes següents les multipliquem per \qty{1,355818}{N.m/(lbf.ft)} per obtenir els parells $T\ped{m}$ i $T\ped{load}$ en \unit{N.m}. Addicionalment, si ens fixem en l'equació \eqref{eq:tarr-mot}, veurem que la funció que hem d'integrar per obtenir el temps d'arrencada és $\frac{1}{T\ped{m}(\omega\ped{m})-T\ped{load}(\omega\ped{m})}$; creem, per tant, en la nova taula una quarta columna amb aquests valors.
+Creem a continuació una nova taula de valors en unitats SI a partir de la taula dels valors donats. Multipliquem la primera columna per $\pi/30$ per obtenir la velocitat $\omega\ped{m}$ en \unit{rad/s}, i les dues columnes següents les multipliquem per \qty{1,355818}{N.m/(lbf.ft)} per obtenir els parells $T\ped{m}$ i $T\ped{load}$ en \unit{N.m}. Addicionalment, si ens fixem en l'equació \eqref{eq:tarr-mot}, veurem que la funció que hem d'integrar per obtenir el temps d'arrencada és $\frac{1}{T\ped{m}(\omega\ped{m})-T\ped{load}(\omega\ped{m})}$; creem, per tant, en la nova taula una quarta columna amb aquests valors.
 
 \begin{center}
     \begin{tabular}{S[table-format=3.3]S[table-format=3.3]S[table-format=3.3]S[table-format=1.6]}
@@ -778,7 +778,7 @@ Per trobar el valor  $T\ped{m,\text{màx}}$ només cal substituir el valor de $s
     Calculem a continuació les velocitats síncrones $n\ped{m,sinc}$ i $\omega\ped{m,sinc}$, i les velocitats nominals $n\ped{m,n}$ i $\omega\ped{m,n}$, utilitzant les equacions \eqref{eq:vel-mec-sinc} i \eqref{eq:wm-wsinc}:
     \begin{align*}
         n\ped{m,sinc} &= \frac{120\times 50}{4} \, \unit{r/min} = \qty{1500}{r/min} \\[1ex]
-        \omega\ped{m,sinc} &= \frac{4 \times\piup \times\qty{50}{Hz}}{4} =  \qty{157,080}{rad/s} \\[1ex]
+        \omega\ped{m,sinc} &= \frac{4 \times\pi \times\qty{50}{Hz}}{4} =  \qty{157,080}{rad/s} \\[1ex]
         n\ped{m,n} &= (1-\num{0,05})\times \qty{1500}{r/min} = \qty{1425}{r/min} \\[1ex]
         \omega\ped{m,n} &= (1-\num{0,05}) \times\qty{157,080}{rad/s} = \qty{149,226}{rad/s}
     \end{align*}
@@ -1691,13 +1691,13 @@ Tal com s'ha dit anteriorment en la secció \ref{sec:mot-tens-deseq}, un desequi
 
 En aquestes condicions de tensió desequilibrada, cal reduir el valor de la potència mecànica nominal del motor, perquè el corrent baixi al seu valor nominal.
 
-La norma NEMA MG-1 tracta aquesta qüestió de forma simplificada i en lloc de calcular les components simètriques de tensions i corrents, proporciona una gràfica que dona un factor reductor de la potència mecànica nominal, que anomenarem $\kappa\ped{P}$, en funció de desequilibris de tensions de fins al \qty{5}{\%}. El desequilibri de tensions $\Deltaup u$ el defineix com:
+La norma NEMA MG-1 tracta aquesta qüestió de forma simplificada i en lloc de calcular les components simètriques de tensions i corrents, proporciona una gràfica que dona un factor reductor de la potència mecànica nominal, que anomenarem $\kappa\ped{P}$, en funció de desequilibris de tensions de fins al \qty{5}{\%}. El desequilibri de tensions $\Delta u$ el defineix com:
 
 \begin{equation}
-    \Deltaup u = \frac{\text{màxima desviació de la tensió respecte del valor mitjà de la tensió}}{\text{valor mitjà de la tensió}}
+    \Delta u = \frac{\text{màxima desviació de la tensió respecte del valor mitjà de la tensió}}{\text{valor mitjà de la tensió}}
 \end{equation}
 
-En la figura \vref{pic:Du-kp-ki} es representa aquest factor reductor $\kappa\ped{P}$ en funció de $\Deltaup u$.
+En la figura \vref{pic:Du-kp-ki} es representa aquest factor reductor $\kappa\ped{P}$ en funció de $\Delta u$.
 
 \begin{center}
     \input{Imatges/Cap-Motors-Induccio-U-Deseq.tex}
@@ -1726,7 +1726,7 @@ Es tracta de trobar el factor $\kappa\ped{P}$  i el valor de la potència nomina
     La màxima desviació de les tres tensions respecte d'aquest valor és: $\qty{459}{V}-\qty{450}{V} = \qty{9}{V}$. Per tant, tenim:
     
     \[
-        \Deltaup u = \frac{\qty{9}{V}}{\qty{459}{V}} = \num{0,02} = \qty{2}{\%}
+        \Delta u = \frac{\qty{9}{V}}{\qty{459}{V}} = \num{0,02} = \qty{2}{\%}
     \]
 
      A partir d'aquest valor, trobem a la figura \vref{pic:Du-kp-ki} el valor:  $\kappa\ped{P} = \num{0,95}$.
@@ -1746,7 +1746,7 @@ Es tracta de trobar el factor $\kappa\ped{P}$  i el valor de la potència nomina
 	 La màxima desviació de les tres tensions respecte d'aquest valor és: $\qty{399}{V}-\qty{379,7}{V} = \qty{19,3}{V}$. Per tant, tenim:
 	 
 	 \[
-	 \Deltaup u = \frac{\qty{19,3}{V}}{\qty{379,7}{V}} = \num{0,05} = \qty{5}{\%}
+	 \Delta u = \frac{\qty{19,3}{V}}{\qty{379,7}{V}} = \num{0,05} = \qty{5}{\%}
 	 \]
 	 
 	 A partir d'aquest valor, trobem a la figura \ref{pic:Du-kp-ki} el valor:  $\kappa\ped{P} = \num{0,76}$.    
