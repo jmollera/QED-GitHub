@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.14)  30 AUG 2025 09:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.20)  21 SEP 2025 16:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **"./Qüestions Electrotècniques Diverses.tex"
 (Qüestions Electrotècniques Diverses.tex
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-07-20>
+L3 programming layer <2025-08-13>
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/base\bk11.clo
@@ -166,7 +166,7 @@ Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2025-07-20 L3 programming layer (loader) 
+Package: expl3 2025-08-13 L3 programming layer (loader) 
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
@@ -588,18 +588,66 @@ tawesome5
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawesom
 e5-mapping.def)))
+(C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip57
+\cftbeforetoctitleskip=\skip58
+\cftaftertoctitleskip=\skip59
+\cftbeforepartskip=\skip60
+\cftpartnumwidth=\skip61
+\cftpartindent=\skip62
+\cftbeforechapskip=\skip63
+\cftchapindent=\skip64
+\cftchapnumwidth=\skip65
+\cftbeforesecskip=\skip66
+\cftsecindent=\skip67
+\cftsecnumwidth=\skip68
+\cftbeforesubsecskip=\skip69
+\cftsubsecindent=\skip70
+\cftsubsecnumwidth=\skip71
+\cftbeforesubsubsecskip=\skip72
+\cftsubsubsecindent=\skip73
+\cftsubsubsecnumwidth=\skip74
+\cftbeforeparaskip=\skip75
+\cftparaindent=\skip76
+\cftparanumwidth=\skip77
+\cftbeforesubparaskip=\skip78
+\cftsubparaindent=\skip79
+\cftsubparanumwidth=\skip80
+\cftbeforeloftitleskip=\skip81
+\cftafterloftitleskip=\skip82
+\cftbeforefigskip=\skip83
+\cftfigindent=\skip84
+\cftfignumwidth=\skip85
+\c@lofdepth=\count309
+\c@lotdepth=\count310
+\cftbeforelottitleskip=\skip86
+\cftafterlottitleskip=\skip87
+\cftbeforetabskip=\skip88
+\cfttabindent=\skip89
+\cfttabnumwidth=\skip90
+)
+\c@addcontentsxms=\count311
+\cftbeforeaddcontentsxmsskip=\skip91
+\cftaddcontentsxmsindent=\skip92
+\cftaddcontentsxmsnumwidth=\skip93
+\c@xmsdepth=\count312
+\cftbeforexmstitleskip=\skip94
+\cftafterxmstitleskip=\skip95
+
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count309
+\lst@mode=\count313
 \lst@gtempboxa=\box57
 \lst@token=\toks32
-\lst@length=\count310
+\lst@length=\count314
 \lst@currlwidth=\dimen182
-\lst@column=\count311
-\lst@pos=\count312
+\lst@column=\count315
+\lst@pos=\count316
 \lst@lostspace=\dimen183
 \lst@width=\dimen184
-\lst@newlines=\count313
-\lst@lineno=\count314
+\lst@newlines=\count317
+\lst@lineno=\count318
 \lst@maxwidth=\dimen185
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
@@ -607,8 +655,8 @@ File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count315
-\lst@skipnumbers=\count316
+\c@lstnumber=\count319
+\lst@skipnumbers=\count320
 \lst@framebox=\box58
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
@@ -627,20 +675,20 @@ Package: beccari-v8 2023 (JMB)
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count317
-\l__siunitx_number_exponent_fixed_int=\count318
-\l__siunitx_number_min_decimal_int=\count319
-\l__siunitx_number_min_integer_int=\count320
-\l__siunitx_number_round_precision_int=\count321
-\l__siunitx_number_lower_threshold_int=\count322
-\l__siunitx_number_upper_threshold_int=\count323
-\l__siunitx_number_group_first_int=\count324
-\l__siunitx_number_group_size_int=\count325
-\l__siunitx_number_group_minimum_int=\count326
+\l__siunitx_number_uncert_offset_int=\count321
+\l__siunitx_number_exponent_fixed_int=\count322
+\l__siunitx_number_min_decimal_int=\count323
+\l__siunitx_number_min_integer_int=\count324
+\l__siunitx_number_round_precision_int=\count325
+\l__siunitx_number_lower_threshold_int=\count326
+\l__siunitx_number_upper_threshold_int=\count327
+\l__siunitx_number_group_first_int=\count328
+\l__siunitx_number_group_size_int=\count329
+\l__siunitx_number_group_minimum_int=\count330
 \l__siunitx_angle_tmp_dim=\dimen189
 \l__siunitx_angle_marker_box=\box59
 \l__siunitx_angle_unit_box=\box60
-\l__siunitx_compound_count_int=\count327
+\l__siunitx_compound_count_int=\count331
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/translations\translatio
 ns.sty
@@ -673,9 +721,9 @@ Package pdftexcmds Info: \pdfdraftmode found.
 \l__siunitx_table_after_box=\box66
 \l__siunitx_table_before_dim=\dimen192
 \l__siunitx_table_carry_dim=\dimen193
-\l__siunitx_unit_tmp_int=\count328
-\l__siunitx_unit_position_int=\count329
-\l__siunitx_unit_total_int=\count330
+\l__siunitx_unit_tmp_int=\count332
+\l__siunitx_unit_position_int=\count333
+\l__siunitx_unit_total_int=\count334
 )
 
 Package siunitx Info: Option "arc-separator" has been deprecated in this
@@ -695,10 +743,10 @@ Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
 \DT@rulewidth=\dimen198
 \DT@dotwidth=\dimen199
 \DTbaselineskip=\dimen256
-\DT@counti=\count331
-\DT@countii=\count332
-\DT@countiii=\count333
-\DT@countiv=\count334
+\DT@counti=\count335
+\DT@countii=\count336
+\DT@countiii=\count337
+\DT@countiv=\count338
 \DT@indent=\dimen257
 \DT@parskip=\dimen258
 \DT@baselineskip=\dimen259
@@ -707,20 +755,20 @@ File: dirtree.tex 2012/12/11 v0.32 `dirtree' (jcc)
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
-\c@tracingmulticols=\count335
+\c@tracingmulticols=\count339
 \mult@box=\box67
 \multicol@leftmargin=\dimen260
-\c@unbalance=\count336
-\c@collectmore=\count337
-\doublecol@number=\count338
-\multicoltolerance=\count339
-\multicolpretolerance=\count340
+\c@unbalance=\count340
+\c@collectmore=\count341
+\doublecol@number=\count342
+\multicoltolerance=\count343
+\multicolpretolerance=\count344
 \full@width=\dimen261
 \page@free=\dimen262
 \premulticols=\dimen263
 \postmulticols=\dimen264
-\multicolsep=\skip57
-\multicolbaselineskip=\skip58
+\multicolsep=\skip96
+\multicolbaselineskip=\skip97
 \partial@page=\box68
 \last@line=\box69
 \mc@boxedresult=\box70
@@ -765,34 +813,34 @@ Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 \@tempa=\box108
 \@tempa=\box109
 \@tempa=\box110
-\c@minrows=\count341
-\c@columnbadness=\count342
-\c@finalcolumnbadness=\count343
+\c@minrows=\count345
+\c@columnbadness=\count346
+\c@finalcolumnbadness=\count347
 \last@try=\dimen266
 \multicolovershoot=\dimen267
 \multicolundershoot=\dimen268
 \mult@nat@firstbox=\box111
 \colbreak@box=\box112
-\mc@col@check@num=\count344
-\g__mc_curr_col_int=\count345
+\mc@col@check@num=\count348
+\g__mc_curr_col_int=\count349
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
-\LTleft=\skip59
-\LTright=\skip60
-\LTpre=\skip61
-\LTpost=\skip62
-\LTchunksize=\count346
+\LTleft=\skip98
+\LTright=\skip99
+\LTpre=\skip100
+\LTpost=\skip101
+\LTchunksize=\count350
 \LTcapwidth=\dimen269
 \LT@head=\box113
 \LT@firsthead=\box114
 \LT@foot=\box115
 \LT@lastfoot=\box116
 \LT@gbox=\box117
-\LT@cols=\count347
-\LT@rows=\count348
-\c@LT@tables=\count349
-\c@LT@chunks=\count350
+\LT@cols=\count351
+\LT@rows=\count352
+\c@LT@tables=\count353
+\c@LT@chunks=\count354
 \LT@p@ftn=\toks34
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
@@ -807,19 +855,19 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen277
 \cmidrulekern=\dimen278
 \defaultaddspace=\dimen279
-\@cmidla=\count351
-\@cmidlb=\count352
+\@cmidla=\count355
+\@cmidlb=\count356
 \@aboverulesep=\dimen280
 \@belowrulesep=\dimen281
-\@thisruleclass=\count353
-\@lastruleclass=\count354
+\@thisruleclass=\count357
+\@lastruleclass=\count358
 \@thisrulewidth=\dimen282
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
-\multirow@colwidth=\skip63
-\multirow@cntb=\count355
-\multirow@dima=\skip64
+\multirow@colwidth=\skip102
+\multirow@cntb=\count359
+\multirow@dima=\skip103
 \bigstrutjot=\dimen283
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/threeparttablex\threepa
@@ -838,7 +886,7 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 ty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip65
+\TPTL@width=\skip104
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
@@ -855,8 +903,8 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen291
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count356
-\c@continuedfloat=\count357
+\c@caption@flags=\count360
+\c@continuedfloat=\count361
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -864,54 +912,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: threeparttable package is loaded.
-) (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
-Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
-Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip66
-\cftbeforetoctitleskip=\skip67
-\cftaftertoctitleskip=\skip68
-\cftbeforepartskip=\skip69
-\cftpartnumwidth=\skip70
-\cftpartindent=\skip71
-\cftbeforechapskip=\skip72
-\cftchapindent=\skip73
-\cftchapnumwidth=\skip74
-\cftbeforesecskip=\skip75
-\cftsecindent=\skip76
-\cftsecnumwidth=\skip77
-\cftbeforesubsecskip=\skip78
-\cftsubsecindent=\skip79
-\cftsubsecnumwidth=\skip80
-\cftbeforesubsubsecskip=\skip81
-\cftsubsubsecindent=\skip82
-\cftsubsubsecnumwidth=\skip83
-\cftbeforeparaskip=\skip84
-\cftparaindent=\skip85
-\cftparanumwidth=\skip86
-\cftbeforesubparaskip=\skip87
-\cftsubparaindent=\skip88
-\cftsubparanumwidth=\skip89
-\cftbeforeloftitleskip=\skip90
-\cftafterloftitleskip=\skip91
-\cftbeforefigskip=\skip92
-\cftfigindent=\skip93
-\cftfignumwidth=\skip94
-\c@lofdepth=\count358
-\c@lotdepth=\count359
-\cftbeforelottitleskip=\skip95
-\cftafterlottitleskip=\skip96
-\cftbeforetabskip=\skip97
-\cfttabindent=\skip98
-\cfttabnumwidth=\skip99
 )
-\c@addcontentsxms=\count360
-\cftbeforeaddcontentsxmsskip=\skip100
-\cftaddcontentsxmsindent=\skip101
-\cftaddcontentsxmsnumwidth=\skip102
-\c@xmsdepth=\count361
-\cftbeforexmstitleskip=\skip103
-\cftafterxmstitleskip=\skip104
-
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent
 .sty
 Package: transparent 2025-06-23 v1.6 Transparency with color stacks
@@ -925,7 +926,7 @@ Package: transparent-nometadata 2025-06-23 v1.6 Transparency via pdfTeX's color
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )))
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
-Package: tcolorbox 2025/07/08 version 6.7.1 text color boxes
+Package: tcolorbox 2025/09/09 version 6.8.0 text color boxes
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
 sty
@@ -945,9 +946,9 @@ y
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
 code.tex
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
-Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
-Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
 sty
@@ -955,7 +956,7 @@ sty
 sty
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s.code.tex
-Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex
@@ -989,31 +990,31 @@ libraryfiltered.code.tex
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
-File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 s-common-pdf.def
-File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 )))
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfsyssoftpath@smallbuffer@items=\count367
 \pgfsyssoftpath@bigbuffer@items=\count368
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
-File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 e.code.tex
-Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex
@@ -1056,7 +1057,7 @@ code.tex)
 tex)
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epoints.code.tex
-File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen305
 \pgf@picmaxx=\dimen306
 \pgf@picminy=\dimen307
@@ -1074,19 +1075,19 @@ File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@path@lastx=\dimen319
 \pgf@path@lasty=\dimen320
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathusage.code.tex
-File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@shorten@end@additional=\dimen321
 \pgf@shorten@start@additional=\dimen322
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
-File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box121
 \pgf@hbox=\box122
 \pgf@layerbox@main=\box123
@@ -1094,83 +1095,83 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen323
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransformations.code.tex
-File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@pt@x=\dimen324
 \pgf@pt@y=\dimen325
 \pgf@pt@temp=\dimen326
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 equick.code.tex
-File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eobjects.code.tex
-File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 earrows.code.tex
-File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfarrowsep=\dimen327
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eshade.code.tex
-File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen328
 \pgf@sys@shading@range@num=\count372
 \pgf@shadingcount=\count373
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
-File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eexternal.code.tex
-File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box124
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 elayers.code.tex
-File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransparency.code.tex
-File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epatterns.code.tex
-File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 erdf.code.tex
-File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 shapes.code.tex
-File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box125
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 plot.code.tex
-File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-0-65.sty
-Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@nodesepstart=\dimen329
 \pgf@nodesepend=\dimen330
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-1-18.sty
-Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 ))
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
 y
@@ -1183,7 +1184,7 @@ ty
 .tex))
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
 code.tex
-Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen331
 \pgffor@skip=\dimen332
 \pgffor@stack=\toks45
@@ -1191,11 +1192,11 @@ Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 ))
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z\tikz.code.tex
-Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@plot@mark@count=\count374
 \pgfplotmarksize=\dimen333
 )
@@ -1218,7 +1219,7 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfmatrixcurrentrow=\count379
 \pgfmatrixcurrentcolumn=\count380
 \pgf@matrix@numberofcolumns=\count381
@@ -1227,7 +1228,7 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )))
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
@@ -1519,7 +1520,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip193
 ) (Capitols/Titols-Exemples.tex)
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 325.
+(Font)              scaled to size 10.95pt on input line 328.
 
 (C:/Users\josep\OneDrive\Documents\TeX Files\Qüestions Electrotècniques Diver
 ses\QED-GitHub\v16.0\auxil\Qüestions Electrotècniques Diverses.aux
@@ -1580,52 +1581,52 @@ ses\QED-GitHub\v16.0\auxil\Capitols/Pos-Historial.aux)
 ses\QED-GitHub\v16.0\auxil\Capitols/Pos-Bibliografia.aux))
 \openout1 = `"Qüestions Electrotècniques Diverses.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 325.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 328.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
- 325.
+ 328.
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/newpx\omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 325.
+LaTeX Font Info:    ... okay on input line 328.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 328.
+LaTeX Font Info:    ... okay on input line 328.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 328.
+LaTeX Font Info:    ... okay on input line 328.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 328.
+LaTeX Font Info:    ... okay on input line 328.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 328.
+LaTeX Font Info:    ... okay on input line 328.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 328.
+LaTeX Font Info:    ... okay on input line 328.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 328.
 LaTeX Font Info:    Trying to load font information for U+npxexa on input line 
-325.
+328.
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/newpx\unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 325.
+LaTeX Font Info:    ... okay on input line 328.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 328.
 LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line
- 325.
+ 328.
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/newpx\lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 325.
+LaTeX Font Info:    ... okay on input line 328.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 328.
 LaTeX Font Info:    Trying to load font information for LMX+npxexx on input lin
-e 325.
+e 328.
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/newpx\lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
+LaTeX Font Info:    ... okay on input line 328.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 328.
+LaTeX Font Info:    ... okay on input line 328.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 328.
+LaTeX Font Info:    ... okay on input line 328.
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1652,12 +1653,12 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \l on input line 325.
-LaTeX Info: Redefining \L on input line 325.
+LaTeX Info: Redefining \l on input line 328.
+LaTeX Info: Redefining \L on input line 328.
 \c@mv@tabular=\count412
 \c@mv@boldtabular=\count413
-LaTeX Info: Command `\dddot' is already robust on input line 325.
-LaTeX Info: Command `\ddddot' is already robust on input line 325.
+LaTeX Info: Command `\dddot' is already robust on input line 328.
+LaTeX Info: Command `\ddddot' is already robust on input line 328.
 \c@lstlisting=\count414
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
@@ -1667,12 +1668,12 @@ nslations-basic-dictionary')
 )
 
 Package translations Warning: file `translations-basic-dictionary-catalan.trsl'
- does not appear to be a dictionary on input line 325.
+ does not appear to be a dictionary on input line 328.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 325.
+Package hyperref Info: Link coloring ON on input line 328.
 
 (C:/Users\josep\OneDrive\Documents\TeX Files\Qüestions Electrotècniques Diver
 ses\QED-GitHub\v16.0\auxil\Qüestions Electrotècniques Diverses.out)
@@ -1851,7 +1852,7 @@ LaTeX Font Info:    Font shape `T1/JosefinSans-LF/m/n' will be
 LaTeX Font Info:    Font shape `T1/JosefinSans-LF/sb/n' will be
 (Font)              scaled to size 14.4pt on input line 46.
 )
-Overfull \hbox (1.64243pt too wide) in paragraph at lines 33--331
+Overfull \hbox (1.64243pt too wide) in paragraph at lines 33--334
 []  $[]$ 
  []
 
@@ -1865,9 +1866,9 @@ Overfull \hbox (1.64243pt too wide) in paragraph at lines 33--331
 
 ]
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 24.88pt on input line 332.
+(Font)              scaled to size 24.88pt on input line 335.
 LaTeX Font Info:    Font shape `T1/JosefinSans-LF/sb/n' will be
-(Font)              scaled to size 24.88pt on input line 332.
+(Font)              scaled to size 24.88pt on input line 335.
 
 (C:/Users\josep\OneDrive\Documents\TeX Files\Qüestions Electrotècniques Diver
 ses\QED-GitHub\v16.0\auxil\Qüestions Electrotècniques Diverses.toc
@@ -2191,59 +2192,59 @@ File: t1npxtt.fd 2000/12/14 v1.0
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 (Font)              scaled to size 9.0pt on input line 44.
 LaTeX Font Info:    Font shape `OT1/minzpl/b/n' will be
-(Font)              scaled to size 10.95pt on input line 51.
+(Font)              scaled to size 10.95pt on input line 50.
 LaTeX Font Info:    Font shape `OT1/minzpl/b/n' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `OT1/minzpl/b/n' will be
-(Font)              scaled to size 6.1pt on input line 51.
+(Font)              scaled to size 6.1pt on input line 50.
 LaTeX Font Info:    Font shape `OML/npxmi/b/it' will be
-(Font)              scaled to size 10.95pt on input line 51.
+(Font)              scaled to size 10.95pt on input line 50.
 LaTeX Font Info:    Font shape `OML/npxmi/b/it' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `OML/npxmi/b/it' will be
-(Font)              scaled to size 6.1pt on input line 51.
+(Font)              scaled to size 6.1pt on input line 50.
 LaTeX Font Info:    Font shape `LMS/npxsy/b/n' will be
-(Font)              scaled to size 10.95pt on input line 51.
+(Font)              scaled to size 10.95pt on input line 50.
 LaTeX Font Info:    Font shape `LMS/npxsy/b/n' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `LMS/npxsy/b/n' will be
-(Font)              scaled to size 6.1pt on input line 51.
+(Font)              scaled to size 6.1pt on input line 50.
 LaTeX Font Info:    Font shape `LMX/npxexx/b/n' will be
-(Font)              scaled to size 10.95pt on input line 51.
+(Font)              scaled to size 10.95pt on input line 50.
 LaTeX Font Info:    Font shape `LMX/npxexx/b/n' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `LMX/npxexx/b/n' will be
-(Font)              scaled to size 6.1pt on input line 51.
+(Font)              scaled to size 6.1pt on input line 50.
 LaTeX Font Info:    Font shape `U/npxmia/b/it' will be
-(Font)              scaled to size 10.95pt on input line 51.
+(Font)              scaled to size 10.95pt on input line 50.
 LaTeX Font Info:    Font shape `U/npxmia/b/it' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `U/npxmia/b/it' will be
-(Font)              scaled to size 6.1pt on input line 51.
+(Font)              scaled to size 6.1pt on input line 50.
 LaTeX Font Info:    Font shape `U/npxsym/b/n' will be
-(Font)              scaled to size 10.95pt on input line 51.
+(Font)              scaled to size 10.95pt on input line 50.
 LaTeX Font Info:    Font shape `U/npxsym/b/n' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `U/npxsym/b/n' will be
-(Font)              scaled to size 6.1pt on input line 51.
+(Font)              scaled to size 6.1pt on input line 50.
 LaTeX Font Info:    Font shape `U/npxsyc/b/n' will be
-(Font)              scaled to size 10.95pt on input line 51.
+(Font)              scaled to size 10.95pt on input line 50.
 LaTeX Font Info:    Font shape `U/npxsyc/b/n' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `U/npxsyc/b/n' will be
-(Font)              scaled to size 6.1pt on input line 51.
+(Font)              scaled to size 6.1pt on input line 50.
 LaTeX Font Info:    Font shape `U/npxexa/b/n' will be
-(Font)              scaled to size 10.95pt on input line 51.
+(Font)              scaled to size 10.95pt on input line 50.
 LaTeX Font Info:    Font shape `U/npxexa/b/n' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `U/npxexa/b/n' will be
-(Font)              scaled to size 6.1pt on input line 51.
+(Font)              scaled to size 6.1pt on input line 50.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 10.95pt on input line 51.
+(Font)              scaled to size 10.95pt on input line 50.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 50.
 LaTeX Font Info:    Font shape `U/zeur/b/n' will be
-(Font)              scaled to size 6.1pt on input line 51.
+(Font)              scaled to size 6.1pt on input line 50.
 
 
 [8] (Imatges/Not-Fasor.pdf_tex
@@ -2274,22 +2275,22 @@ LaTeX Font Info:    Font shape `U/zeur/m/n' will be
 
 [9 <./Imatges/Not-Fasor.pdf>]
 LaTeX Font Info:    Font shape `T1/JosefinSans-LF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 120.
+(Font)              scaled to size 10.95pt on input line 119.
 LaTeX Font Info:    Font shape `T1/JosefinSans-LF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 120.
+(Font)              scaled to size 8.0pt on input line 119.
 LaTeX Font Info:    Font shape `T1/JosefinSans-LF/b/n' will be
-(Font)              scaled to size 6.1pt on input line 120.
+(Font)              scaled to size 6.1pt on input line 119.
 
 
 [10]
-Overfull \vbox (3.28378pt too high) detected at line 211
+Overfull \vbox (3.28378pt too high) detected at line 210
  []
 
 
 
 [11]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 9.0pt on input line 267.
+(Font)              scaled to size 9.0pt on input line 266.
 
 
 
@@ -2299,7 +2300,7 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 
 
 LaTeX Font Info:    Font shape `TS1/zpltlf/m/it' will be
-(Font)              scaled to size 10.95pt on input line 272.
+(Font)              scaled to size 10.95pt on input line 271.
 
 
 
@@ -2312,17 +2313,17 @@ LaTeX Font Info:    Font shape `TS1/zpltlf/m/it' will be
 
 [12]
 LaTeX Font Info:    Font shape `T1/JosefinSans-LF/m/n' will be
-(Font)              scaled to size 60.0pt on input line 352.
+(Font)              scaled to size 60.0pt on input line 355.
 LaTeX Font Info:    Font shape `T1/JosefinSans-LF/sb/n' will be
-(Font)              scaled to size 60.0pt on input line 352.
+(Font)              scaled to size 60.0pt on input line 355.
 LaTeX Font Info:    Font shape `T1/JosefinSans-LF/sb/n' will be
-(Font)              scaled to size 40.0pt on input line 352.
+(Font)              scaled to size 40.0pt on input line 355.
 
 
 <Imatges/Fons-de-pagina.pdf, id=2860, 597.50786pt x 845.04686pt>
 File: Imatges/Fons-de-pagina.pdf Graphic file (type pdf)
 <use Imatges/Fons-de-pagina.pdf>
-Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 355.
+Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 358.
 (pdftex.def)             Requested size: 597.5064pt x 845.08348pt.
 [13
 
@@ -4059,7 +4060,7 @@ g (PNG copy)> <./Imatges/Cap-Laplace-HPP9.png (PNG copy)>])
 
 File: Imatges/Fons-de-pagina.pdf Graphic file (type pdf)
 <use Imatges/Fons-de-pagina.pdf>
-Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 363.
+Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 366.
 (pdftex.def)             Requested size: 597.5064pt x 845.08348pt.
 [127]
 \openout2 = `Capitols/Cap-Resistencies.aux'.
@@ -4913,10 +4914,6 @@ Package pdftex.def Info: Imatges/Cap-Motors-Induccio-CaractMotor-3.pdf  used on
 )
 
 [213]
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 878.
-
 
 [214]
 
@@ -5098,9 +5095,6 @@ Package pdftex.def Info: Imatges/Cap-Motors-Induccio-MotTensRedIarr-2.pdf  used
 
 [231 <./Imatges/Cap-Motors-Induccio-Esq-Equiv-U-Sist.pdf>]
 Package mdframed Info: Not enough space on this page on input line 1458.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 1458.
 
 
 [232]
@@ -5180,7 +5174,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 1843.
 
 File: Imatges/Fons-de-pagina.pdf Graphic file (type pdf)
 <use Imatges/Fons-de-pagina.pdf>
-Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 371.
+Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 374.
 (pdftex.def)             Requested size: 597.5064pt x 845.08348pt.
 [247]
 \openout2 = `Capitols/Cap-Xarxes-Electriques.aux'.
@@ -5836,7 +5830,7 @@ Package siunitx Info: Option "list-units = brackets" has been deprecated in
 
 File: Imatges/Fons-de-pagina.pdf Graphic file (type pdf)
 <use Imatges/Fons-de-pagina.pdf>
-Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 377.
+Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 380.
 (pdftex.def)             Requested size: 597.5064pt x 845.08348pt.
 [317
 
@@ -5899,7 +5893,7 @@ zpltlf/m/n/10.95 .
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 292.
-(Python/Versions.py)
+(Python/versions.py)
 
 [328])
 
@@ -6129,10 +6123,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [362]
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family npxtt in TS1 encoding.
-            Default family used instead on input line 1609.
+            Default family used instead on input line 1611.
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family npxtt in TS1 encoding.
-            Default family used instead on input line 1637.
+            Default family used instead on input line 1640.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -6166,41 +6160,42 @@ LaTeX Info: Symbol \texttwosuperior not provided by
 
 
 [365]
-<Imatges/Cap-PythonProgs-corba51.pdf, id=9353, 454.91048pt x 338.33276pt>
+<Imatges/Cap-PythonProgs-corba51.pdf, id=9354, 454.91048pt x 338.33276pt>
 File: Imatges/Cap-PythonProgs-corba51.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonProgs-corba51.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonProgs-corba51.pdf  used on input lin
-e 185.
+e 157.
 (pdftex.def)             Requested size: 454.90935pt x 338.33192pt.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+[366 <./Imatges/Cap-PythonProgs-corba51.pdf>])
 
-[366 <./Imatges/Cap-PythonProgs-corba51.pdf>]
+[367]
 \openout2 = `Capitols/Cap-Python-Exemples.aux'.
 
  (Capitols/Cap-Python-Exemples.tex
+
+[368
+
+
+
+
+]
 Cap\'{\i }tol 16.
 (Python/exemples_resolts/Exemple-1-1.py
 
-[367
+[369]) (Python/exemples_resolts/Exemple-1-2.py
 
-
-
-
-]) (Python/exemples_resolts/Exemple-1-2.py
-
-[368])
+[370])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[369] (Python/exemples_resolts/Exemple-1-4.py)
+[371] (Python/exemples_resolts/Exemple-1-4.py)
 (Python/exemples_resolts/Exemple-1-8.py
 
-[370])
-<Imatges/Cap-PythonExemp-CarDescRL.pdf, id=9605, 431.17024pt x 271.31425pt>
+[372])
+<Imatges/Cap-PythonExemp-CarDescRL.pdf, id=9619, 431.17024pt x 271.31425pt>
 File: Imatges/Cap-PythonExemp-CarDescRL.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CarDescRL.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-CarDescRL.pdf  used on input l
@@ -6208,9 +6203,9 @@ ine 121.
 (pdftex.def)             Requested size: 431.16919pt x 271.31358pt.
 
 
-[371 <./Imatges/Cap-PythonExemp-CarDescRL.pdf>]
+[373 <./Imatges/Cap-PythonExemp-CarDescRL.pdf>]
 (Python/exemples_resolts/Exemple-1-9.py)
-<Imatges/Cap-PythonExemp-CurtcircuitRL.pdf, id=9670, 397.3172pt x 282.68486pt>
+<Imatges/Cap-PythonExemp-CurtcircuitRL.pdf, id=9683, 397.3172pt x 282.68486pt>
 File: Imatges/Cap-PythonExemp-CurtcircuitRL.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CurtcircuitRL.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-CurtcircuitRL.pdf  used on inp
@@ -6218,43 +6213,43 @@ ut line 156.
 (pdftex.def)             Requested size: 397.31622pt x 282.68416pt.
 
 
-[372] (Python/exemples_resolts/Exemple-1-10.py
+[374] (Python/exemples_resolts/Exemple-1-10.py
 
-[373 <./Imatges/Cap-PythonExemp-CurtcircuitRL.pdf>])
+[375 <./Imatges/Cap-PythonExemp-CurtcircuitRL.pdf>])
 (Python/exemples_resolts/Exemple-1-11.py)
 
-[374] (Python/exemples_resolts/Exemple-2-2.py)
+[376] (Python/exemples_resolts/Exemple-2-2.py)
 (Python/exemples_resolts/Exemple-2-3.py)
 
-[375] (Python/exemples_resolts/Exemple-3-1.py
+[377] (Python/exemples_resolts/Exemple-3-1.py
 
-[376]) (Python/exemples_resolts/Exemple-3-2.py
+[378]) (Python/exemples_resolts/Exemple-3-2.py
 
-[377]) (Python/exemples_resolts/Exemple-4-3.py
+[379]) (Python/exemples_resolts/Exemple-4-3.py
 
-[378]
+[380]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[379])
+[381])
 
-[380]
-<Imatges/Cap-PythonExemp-CircuitFourier-1.pdf, id=10148, 434.55789pt x 271.3142
+[382]
+<Imatges/Cap-PythonExemp-CircuitFourier-1.pdf, id=10161, 434.55789pt x 271.3142
 5pt>
 File: Imatges/Cap-PythonExemp-CircuitFourier-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CircuitFourier-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-CircuitFourier-1.pdf  used on 
 input line 378.
 (pdftex.def)             Requested size: 434.55682pt x 271.31358pt.
-<Imatges/Cap-PythonExemp-CircuitFourier-2.pdf, id=10149, 434.55789pt x 271.3142
+<Imatges/Cap-PythonExemp-CircuitFourier-2.pdf, id=10162, 434.55789pt x 271.3142
 5pt>
 File: Imatges/Cap-PythonExemp-CircuitFourier-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CircuitFourier-2.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-CircuitFourier-2.pdf  used on 
 input line 381.
 (pdftex.def)             Requested size: 434.55682pt x 271.31358pt.
-<Imatges/Cap-PythonExemp-CircuitFourier-3.pdf, id=10150, 396.81061pt x 271.7212
+<Imatges/Cap-PythonExemp-CircuitFourier-3.pdf, id=10163, 396.81061pt x 271.7212
 4pt>
 File: Imatges/Cap-PythonExemp-CircuitFourier-3.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CircuitFourier-3.pdf>
@@ -6266,17 +6261,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[381 <./Imatges/Cap-PythonExemp-CircuitFourier-1.pdf> <./Imatges/Cap-PythonExem
+[383 <./Imatges/Cap-PythonExemp-CircuitFourier-1.pdf> <./Imatges/Cap-PythonExem
 p-CircuitFourier-2.pdf>]
 Underfull \vbox (badness 2478) has occurred while \output is active []
 
 
 
-[382 <./Imatges/Cap-PythonExemp-CircuitFourier-3.pdf>]
+[384 <./Imatges/Cap-PythonExemp-CircuitFourier-3.pdf>]
 (Python/exemples_resolts/Exemple-5-3.py)
 
-[383]
-<Imatges/Cap-PythonExemp-CircuitLaplace.pdf, id=10396, 387.74237pt x 271.31425p
+[385]
+<Imatges/Cap-PythonExemp-CircuitLaplace.pdf, id=10409, 387.74237pt x 271.31425p
 t>
 File: Imatges/Cap-PythonExemp-CircuitLaplace.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CircuitLaplace.pdf>
@@ -6285,8 +6280,8 @@ put line 421.
 (pdftex.def)             Requested size: 387.74142pt x 271.31358pt.
  (Python/exemples_resolts/Exemple-5-4.py
 
-[384 <./Imatges/Cap-PythonExemp-CircuitLaplace.pdf>])
-<Imatges/Cap-PythonExemp-CircuitLaplaceNul.pdf, id=10451, 400.5088pt x 271.3142
+[386 <./Imatges/Cap-PythonExemp-CircuitLaplace.pdf>])
+<Imatges/Cap-PythonExemp-CircuitLaplaceNul.pdf, id=10464, 400.5088pt x 271.3142
 5pt>
 File: Imatges/Cap-PythonExemp-CircuitLaplaceNul.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CircuitLaplaceNul.pdf>
@@ -6295,7 +6290,7 @@ Package pdftex.def Info: Imatges/Cap-PythonExemp-CircuitLaplaceNul.pdf  used on
 (pdftex.def)             Requested size: 400.50783pt x 271.31358pt.
 
 
-[385 <./Imatges/Cap-PythonExemp-CircuitLaplaceNul.pdf>]
+[387 <./Imatges/Cap-PythonExemp-CircuitLaplaceNul.pdf>]
 (Python/exemples_resolts/Exemple-7-1.py)
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family JosefinSans-LF in TS1 encoding.
@@ -6338,36 +6333,36 @@ LaTeX Info: Symbol \texttwosuperior not provided by
             Default family used instead on input line 518.
 
 
-[386] (Python/exemples_resolts/Exemple-9-1.py
+[388] (Python/exemples_resolts/Exemple-9-1.py
 
-[387]) (Python/exemples_resolts/Exemple-10-3.py
+[389]) (Python/exemples_resolts/Exemple-10-3.py
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family npxtt in TS1 encoding.
             Default family used instead on input line 5.
 
 
-[388]
+[390]
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family npxtt in TS1 encoding.
             Default family used instead on input line 19.
 ) (Python/exemples_resolts/Exemple-10-4.py
 
-[389]
+[391]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[390])
+[392])
 
-[391]
-<Imatges/Cap-PythonExemp-CaractMotor-1.pdf, id=10802, 423.95262pt x 269.38628pt
+[393]
+<Imatges/Cap-PythonExemp-CaractMotor-1.pdf, id=10815, 423.95262pt x 269.38628pt
 >
 File: Imatges/Cap-PythonExemp-CaractMotor-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CaractMotor-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-CaractMotor-1.pdf  used on inp
 ut line 648.
 (pdftex.def)             Requested size: 423.95158pt x 269.3856pt.
-<Imatges/Cap-PythonExemp-CaractMotor-2.pdf, id=10803, 394.25604pt x 269.38628pt
+<Imatges/Cap-PythonExemp-CaractMotor-2.pdf, id=10816, 394.25604pt x 269.38628pt
 >
 File: Imatges/Cap-PythonExemp-CaractMotor-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CaractMotor-2.pdf>
@@ -6379,9 +6374,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[392 <./Imatges/Cap-PythonExemp-CaractMotor-1.pdf> <./Imatges/Cap-PythonExemp-C
+[394 <./Imatges/Cap-PythonExemp-CaractMotor-1.pdf> <./Imatges/Cap-PythonExemp-C
 aractMotor-2.pdf>]
-<Imatges/Cap-PythonExemp-CaractMotor-3.pdf, id=11023, 397.45052pt x 269.71452pt
+<Imatges/Cap-PythonExemp-CaractMotor-3.pdf, id=11036, 397.45052pt x 269.71452pt
 >
 File: Imatges/Cap-PythonExemp-CaractMotor-3.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CaractMotor-3.pdf>
@@ -6390,21 +6385,21 @@ ut line 654.
 (pdftex.def)             Requested size: 397.44954pt x 269.71385pt.
  (Python/exemples_resolts/Exemple-10-5.py
 
-[393 <./Imatges/Cap-PythonExemp-CaractMotor-3.pdf>])
+[395 <./Imatges/Cap-PythonExemp-CaractMotor-3.pdf>])
 
-[394] (Python/exemples_resolts/Exemple-10-6.py
+[396] (Python/exemples_resolts/Exemple-10-6.py
 
-[395])
+[397])
 
-[396]
-<Imatges/Cap-PythonExemp-MotCarregaReduida-1.pdf, id=11260, 433.83644pt x 272.6
+[398]
+<Imatges/Cap-PythonExemp-MotCarregaReduida-1.pdf, id=11273, 433.83644pt x 272.6
 4735pt>
 File: Imatges/Cap-PythonExemp-MotCarregaReduida-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotCarregaReduida-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotCarregaReduida-1.pdf  used 
 on input line 744.
 (pdftex.def)             Requested size: 433.83539pt x 272.64668pt.
-<Imatges/Cap-PythonExemp-MotCarregaReduida-2.pdf, id=11261, 395.20775pt x 272.6
+<Imatges/Cap-PythonExemp-MotCarregaReduida-2.pdf, id=11274, 395.20775pt x 272.6
 4735pt>
 File: Imatges/Cap-PythonExemp-MotCarregaReduida-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotCarregaReduida-2.pdf>
@@ -6416,20 +6411,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[397 <./Imatges/Cap-PythonExemp-MotCarregaReduida-1.pdf> <./Imatges/Cap-PythonE
+[399 <./Imatges/Cap-PythonExemp-MotCarregaReduida-1.pdf> <./Imatges/Cap-PythonE
 xemp-MotCarregaReduida-2.pdf>] (Python/exemples_resolts/Exemple-10-7.py
 
-[398])
+[400])
 
-[399]
-<Imatges/Cap-PythonExemp-MotTensRedSolAp-1.pdf, id=11449, 427.45322pt x 271.643
+[401]
+<Imatges/Cap-PythonExemp-MotTensRedSolAp-1.pdf, id=11463, 427.45322pt x 271.643
 62pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolAp-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolAp-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedSolAp-1.pdf  used on
  input line 798.
 (pdftex.def)             Requested size: 427.45216pt x 271.64294pt.
-<Imatges/Cap-PythonExemp-MotTensRedSolAp-2.pdf, id=11450, 404.7826pt x 271.6436
+<Imatges/Cap-PythonExemp-MotTensRedSolAp-2.pdf, id=11464, 404.7826pt x 271.6436
 2pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolAp-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolAp-2.pdf>
@@ -6441,37 +6436,37 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[400 <./Imatges/Cap-PythonExemp-MotTensRedSolAp-1.pdf> <./Imatges/Cap-PythonExe
+[402 <./Imatges/Cap-PythonExemp-MotTensRedSolAp-1.pdf> <./Imatges/Cap-PythonExe
 mp-MotTensRedSolAp-2.pdf>] (Python/exemples_resolts/Exemple-10-8.py
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family npxtt in TS1 encoding.
             Default family used instead on input line 16.
 
 
-[401]
+[403]
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[402]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[403])
-Underfull \vbox (badness 6332) has occurred while \output is active []
 
 
 
 [404]
-<Imatges/Cap-PythonExemp-MotTensRedSolEx-1-1.pdf, id=11758, 424.58313pt x 269.7
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[405])
+Underfull \vbox (badness 6332) has occurred while \output is active []
+
+
+
+[406]
+<Imatges/Cap-PythonExemp-MotTensRedSolEx-1-1.pdf, id=11771, 424.58313pt x 269.7
 1452pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolEx-1-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolEx-1-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedSolEx-1-1.pdf  used 
 on input line 860.
 (pdftex.def)             Requested size: 424.58209pt x 269.71385pt.
-<Imatges/Cap-PythonExemp-MotTensRedSolEx-1-2.pdf, id=11759, 418.1999pt x 271.64
+<Imatges/Cap-PythonExemp-MotTensRedSolEx-1-2.pdf, id=11772, 418.1999pt x 271.64
 362pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolEx-1-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolEx-1-2.pdf>
@@ -6483,16 +6478,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[405 <./Imatges/Cap-PythonExemp-MotTensRedSolEx-1-1.pdf> <./Imatges/Cap-PythonE
+[407 <./Imatges/Cap-PythonExemp-MotTensRedSolEx-1-1.pdf> <./Imatges/Cap-PythonE
 xemp-MotTensRedSolEx-1-2.pdf>]
-<Imatges/Cap-PythonExemp-MotTensRedSolEx-2-1.pdf, id=11847, 427.45322pt x 271.6
+<Imatges/Cap-PythonExemp-MotTensRedSolEx-2-1.pdf, id=11861, 427.45322pt x 271.6
 4362pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolEx-2-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolEx-2-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedSolEx-2-1.pdf  used 
 on input line 872.
 (pdftex.def)             Requested size: 427.45216pt x 271.64294pt.
-<Imatges/Cap-PythonExemp-MotTensRedSolEx-2-2.pdf, id=11848, 404.7826pt x 271.64
+<Imatges/Cap-PythonExemp-MotTensRedSolEx-2-2.pdf, id=11862, 404.7826pt x 271.64
 362pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolEx-2-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolEx-2-2.pdf>
@@ -6504,16 +6499,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[406 <./Imatges/Cap-PythonExemp-MotTensRedSolEx-2-1.pdf> <./Imatges/Cap-PythonE
+[408 <./Imatges/Cap-PythonExemp-MotTensRedSolEx-2-1.pdf> <./Imatges/Cap-PythonE
 xemp-MotTensRedSolEx-2-2.pdf>]
-<Imatges/Cap-PythonExemp-MotTensRedSolEx-3.pdf, id=11918, 399.99126pt x 271.643
+<Imatges/Cap-PythonExemp-MotTensRedSolEx-3.pdf, id=11932, 399.99126pt x 271.643
 62pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolEx-3.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolEx-3.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedSolEx-3.pdf  used on
  input line 883.
 (pdftex.def)             Requested size: 399.99028pt x 271.64294pt.
-<Imatges/Cap-PythonExemp-MotTensRedSolEx-4.pdf, id=11919, 397.12115pt x 271.314
+<Imatges/Cap-PythonExemp-MotTensRedSolEx-4.pdf, id=11933, 397.12115pt x 271.314
 25pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolEx-4.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolEx-4.pdf>
@@ -6525,29 +6520,29 @@ Underfull \vbox (badness 1231) has occurred while \output is active []
 
 
 
-[407 <./Imatges/Cap-PythonExemp-MotTensRedSolEx-3.pdf> <./Imatges/Cap-PythonExe
+[409 <./Imatges/Cap-PythonExemp-MotTensRedSolEx-3.pdf> <./Imatges/Cap-PythonExe
 mp-MotTensRedSolEx-4.pdf>] (Python/exemples_resolts/Exemple-10-9.py
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family npxtt in TS1 encoding.
             Default family used instead on input line 22.
 
 
-[408]
+[410]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[409])
+[411])
 
-[410]
-<Imatges/Cap-PythonExemp-MotTensRedIarr-1.pdf, id=12164, 423.95262pt x 269.3862
+[412]
+<Imatges/Cap-PythonExemp-MotTensRedIarr-1.pdf, id=12177, 423.95262pt x 269.3862
 8pt>
 File: Imatges/Cap-PythonExemp-MotTensRedIarr-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedIarr-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedIarr-1.pdf  used on 
 input line 931.
 (pdftex.def)             Requested size: 423.95158pt x 269.3856pt.
-<Imatges/Cap-PythonExemp-MotTensRedIarr-2.pdf, id=12165, 400.86513pt x 269.3862
+<Imatges/Cap-PythonExemp-MotTensRedIarr-2.pdf, id=12178, 400.86513pt x 269.3862
 8pt>
 File: Imatges/Cap-PythonExemp-MotTensRedIarr-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedIarr-2.pdf>
@@ -6559,23 +6554,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[411 <./Imatges/Cap-PythonExemp-MotTensRedIarr-1.pdf> <./Imatges/Cap-PythonExem
+[413 <./Imatges/Cap-PythonExemp-MotTensRedIarr-1.pdf> <./Imatges/Cap-PythonExem
 p-MotTensRedIarr-2.pdf>]
-<Imatges/Cap-PythonExemp-MotTensRedIarr-3.pdf, id=12397, 399.99126pt x 271.6436
+<Imatges/Cap-PythonExemp-MotTensRedIarr-3.pdf, id=12411, 399.99126pt x 271.6436
 2pt>
 File: Imatges/Cap-PythonExemp-MotTensRedIarr-3.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedIarr-3.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedIarr-3.pdf  used on 
 input line 939.
 (pdftex.def)             Requested size: 399.99028pt x 271.64294pt.
-<Imatges/Cap-PythonExemp-MotTensRedIarr-4.pdf, id=12398, 398.72089pt x 271.3142
+<Imatges/Cap-PythonExemp-MotTensRedIarr-4.pdf, id=12412, 398.72089pt x 271.3142
 5pt>
 File: Imatges/Cap-PythonExemp-MotTensRedIarr-4.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedIarr-4.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedIarr-4.pdf  used on 
 input line 943.
 (pdftex.def)             Requested size: 398.71991pt x 271.31358pt.
-<Imatges/Cap-PythonExemp-MotTensRedIarr-5.pdf, id=12399, 398.72089pt x 271.3142
+<Imatges/Cap-PythonExemp-MotTensRedIarr-5.pdf, id=12413, 398.72089pt x 271.3142
 5pt>
 File: Imatges/Cap-PythonExemp-MotTensRedIarr-5.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedIarr-5.pdf>
@@ -6587,45 +6582,45 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[412 <./Imatges/Cap-PythonExemp-MotTensRedIarr-3.pdf> <./Imatges/Cap-PythonExem
+[414 <./Imatges/Cap-PythonExemp-MotTensRedIarr-3.pdf> <./Imatges/Cap-PythonExem
 p-MotTensRedIarr-4.pdf>] (Python/exemples_resolts/Exemple-10-10.py
 
-[413 <./Imatges/Cap-PythonExemp-MotTensRedIarr-5.pdf>])
+[415 <./Imatges/Cap-PythonExemp-MotTensRedIarr-5.pdf>])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[414] (Python/exemples_resolts/Exemple-11-1.py)
+[416] (Python/exemples_resolts/Exemple-11-1.py)
 
-[415] (Python/exemples_resolts/Exemple-11-2.py)
+[417] (Python/exemples_resolts/Exemple-11-2.py)
 (Python/exemples_resolts/Exemple-11-3.py)
 
-[416] (Python/exemples_resolts/Exemple-11-4.py)
+[418] (Python/exemples_resolts/Exemple-11-4.py)
 Underfull \vbox (badness 1082) has occurred while \output is active []
 
 
 
-[417] (Python/exemples_resolts/Exemple-11-5.py)
+[419] (Python/exemples_resolts/Exemple-11-5.py)
 
-[418] (Python/exemples_resolts/Exemple-12-1.py
+[420] (Python/exemples_resolts/Exemple-12-1.py
 Underfull \vbox (badness 1694) has occurred while \output is active []
 
 
 
-[419])
-
-[420] (Python/exemples_resolts/Exemple-12-2.py
-
 [421])
 
-[422]
+[422] (Python/exemples_resolts/Exemple-12-2.py
 
-[423] (Python/exemples_resolts/Exemple-12-3.py)
+[423])
 
-[424] (Python/exemples_resolts/Exemple-13-1.py
+[424]
 
-[425])
-<Imatges/Cap-PythonExemp-ProtInvIntVar.pdf, id=13048, 412.75769pt x 271.31425pt
+[425] (Python/exemples_resolts/Exemple-12-3.py)
+
+[426] (Python/exemples_resolts/Exemple-13-1.py
+
+[427])
+<Imatges/Cap-PythonExemp-ProtInvIntVar.pdf, id=13061, 412.75769pt x 271.31425pt
 >
 File: Imatges/Cap-PythonExemp-ProtInvIntVar.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-ProtInvIntVar.pdf>
@@ -6634,11 +6629,11 @@ ut line 1315.
 (pdftex.def)             Requested size: 412.75668pt x 271.31358pt.
 
 
-[426 <./Imatges/Cap-PythonExemp-ProtInvIntVar.pdf>]
+[428 <./Imatges/Cap-PythonExemp-ProtInvIntVar.pdf>]
 (Python/exemples_resolts/Exemple-D-1.py
 
-[427])
-<Imatges/Cap-PythonExemp-Interpol.pdf, id=13149, 401.59097pt x 271.31425pt>
+[429])
+<Imatges/Cap-PythonExemp-Interpol.pdf, id=13162, 401.59097pt x 271.31425pt>
 File: Imatges/Cap-PythonExemp-Interpol.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-Interpol.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-Interpol.pdf  used on input li
@@ -6649,9 +6644,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[428 <./Imatges/Cap-PythonExemp-Interpol.pdf>]
+[430 <./Imatges/Cap-PythonExemp-Interpol.pdf>]
 (Python/exemples_resolts/Exemple-D-2.py)
-<Imatges/Cap-PythonExemp-InterpolDuesDim.pdf, id=13231, 430.29024pt x 384.00652
+<Imatges/Cap-PythonExemp-InterpolDuesDim.pdf, id=13244, 430.29024pt x 384.00652
 pt>
 File: Imatges/Cap-PythonExemp-InterpolDuesDim.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-InterpolDuesDim.pdf>
@@ -6663,20 +6658,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[429] (Python/exemples_resolts/Exemple-D-3.py
+[431] (Python/exemples_resolts/Exemple-D-3.py
 
-[430 <./Imatges/Cap-PythonExemp-InterpolDuesDim.pdf>])
+[432 <./Imatges/Cap-PythonExemp-InterpolDuesDim.pdf>])
 (Python/exemples_resolts/Exemple-D-4.py
 
-[431]))
+[433]))
 
-[432]
+[434]
 
 File: Imatges/Fons-de-pagina.pdf Graphic file (type pdf)
 <use Imatges/Fons-de-pagina.pdf>
-Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 385.
+Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 388.
 (pdftex.def)             Requested size: 597.5064pt x 845.08348pt.
-[433
+[435
 
 
 
@@ -6685,18 +6680,18 @@ Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 385.
 
  (Capitols/Ape-SI.tex
 
-[434
+[436
 
 
 ]
 Ap\`endix A.
 
 
-[435]
-
-[436]
-
 [437]
+
+[438]
+
+[439]
 LaTeX Info: Symbol \textmu not provided by
             font family zpltlf in TS1 encoding.
             Default family used instead on input line 205.
@@ -6712,10 +6707,6 @@ Overfull \hbox (5.66505pt too wide) in paragraph at lines 246--246
 
 
 
-[438]
-
-[439]
-
 [440]
 
 [441]
@@ -6726,40 +6717,45 @@ Overfull \hbox (5.66505pt too wide) in paragraph at lines 246--246
 
 [444]
 
-Package siunitx Info: Option "number-angle-product" has been deprecated in
-(siunitx)             this release.
-(siunitx)             
-(siunitx)             Set the "quantity-product" option for the units
-(siunitx)             \arcminute, \arcsecond  and \degree  instead.
-
-
-Package siunitx Info: Option "number-angle-product" has been deprecated in
-(siunitx)             this release.
-(siunitx)             
-(siunitx)             Set the "quantity-product" option for the units
-(siunitx)             \arcminute, \arcsecond  and \degree  instead.
-
-
-
 [445]
 
 [446]
-LaTeX Info: Symbol \textmu not provided by
-            font family zpltlf in TS1 encoding.
-            Default family used instead on input line 857.
-LaTeX Info: Symbol \textmu not provided by
-            font family zpltlf in TS1 encoding.
-            Default family used instead on input line 866.
+
+Package siunitx Info: Option "number-angle-product" has been deprecated in
+(siunitx)             this release.
+(siunitx)             
+(siunitx)             Set the "quantity-product" option for the units
+(siunitx)             \arcminute, \arcsecond  and \degree  instead.
+
+
+Package siunitx Info: Option "number-angle-product" has been deprecated in
+(siunitx)             this release.
+(siunitx)             
+(siunitx)             Set the "quantity-product" option for the units
+(siunitx)             \arcminute, \arcsecond  and \degree  instead.
+
 
 
 [447]
 
 [448]
+LaTeX Info: Symbol \textmu not provided by
+            font family zpltlf in TS1 encoding.
+            Default family used instead on input line 854.
+
 
 [449]
 LaTeX Info: Symbol \textmu not provided by
             font family zpltlf in TS1 encoding.
-            Default family used instead on input line 1019.
+            Default family used instead on input line 863.
+
+
+[450]
+
+[451]
+LaTeX Info: Symbol \textmu not provided by
+            font family zpltlf in TS1 encoding.
+            Default family used instead on input line 1016.
 
 Package siunitx Info: Option "separate-uncertainty" has been deprecated in
 (siunitx)             this release.
@@ -6768,44 +6764,44 @@ Package siunitx Info: Option "separate-uncertainty" has been deprecated in
 
 
 
-[450])
+[452])
 
-[451]
+[453]
 \openout2 = `Capitols/Ape-Constants-Fisiques.aux'.
 
  (Capitols/Ape-Constants-Fisiques.tex
 
-[452
+[454
 
 
 
 
 ]
 Ap\`endix B.
-[453] [454]
+[455] [456]
 
-[455])
+[457])
 
-[456]
+[458]
 \openout2 = `Capitols/Ape-Relacions-Trigonometriques.aux'.
 
  (Capitols/Ape-Relacions-Trigonometriques.tex
 Ap\`endix C.
 
 
-[457
+[459
 
 
 
 
 ]
 
-[458]
+[460]
 
-[459]
+[461]
 
-[460] (Imatges/Ape-Trigonometria-Triangle.pdf_tex
-<Imatges/Ape-Trigonometria-Triangle.pdf, id=13656, page=1, 240.07013pt x 229.40
+[462] (Imatges/Ape-Trigonometria-Triangle.pdf_tex
+<Imatges/Ape-Trigonometria-Triangle.pdf, id=13670, page=1, 240.07013pt x 229.40
 034pt>
 File: Imatges/Ape-Trigonometria-Triangle.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-Triangle.pdf, page 1>
@@ -6821,12 +6817,12 @@ f�r-mu-la d'-He-r�\T1/zpltlf/m/n/9 , pel ma-te-m�-tic gre-co-ro-m� He-r� d'A-le
 
 
 
-[461 <./Imatges/Ape-Trigonometria-Triangle.pdf>]
+[463 <./Imatges/Ape-Trigonometria-Triangle.pdf>]
 
-[462]
+[464]
 
-[463] (Imatges/Ape-Trigonometria-sin.tex
-<Imatges/Ape-Trigonometria-sin.pdf, id=13721, 426.59375pt x 270.00874pt>
+[465] (Imatges/Ape-Trigonometria-sin.tex
+<Imatges/Ape-Trigonometria-sin.pdf, id=13734, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-sin.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-sin.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-sin.pdf  used on input line 
@@ -6834,108 +6830,93 @@ Package pdftex.def Info: Imatges/Ape-Trigonometria-sin.pdf  used on input line
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 )
 
-[464] (Imatges/Ape-Trigonometria-csc.tex
-<Imatges/Ape-Trigonometria-csc.pdf, id=13746, 426.59375pt x 270.00874pt>
+[466] (Imatges/Ape-Trigonometria-csc.tex
+<Imatges/Ape-Trigonometria-csc.pdf, id=13759, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-csc.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-csc.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-csc.pdf  used on input line 
 139.
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 ) (Imatges/Ape-Trigonometria-cos.tex
-<Imatges/Ape-Trigonometria-cos.pdf, id=13747, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-cos.pdf, id=13760, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-cos.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-cos.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-cos.pdf  used on input line 
 135.
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 )
-Underfull \vbox (badness 1783) has occurred while \output is active []
 
-
-
-[465 <./Imatges/Ape-Trigonometria-sin.pdf> <./Imatges/Ape-Trigonometria-csc.pdf
+[467 <./Imatges/Ape-Trigonometria-sin.pdf> <./Imatges/Ape-Trigonometria-csc.pdf
 >] (Imatges/Ape-Trigonometria-sec.tex
-<Imatges/Ape-Trigonometria-sec.pdf, id=13755, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-sec.pdf, id=13769, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-sec.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-sec.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-sec.pdf  used on input line 
 139.
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 ) (Imatges/Ape-Trigonometria-tan.tex
-<Imatges/Ape-Trigonometria-tan.pdf, id=13756, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-tan.pdf, id=13770, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-tan.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-tan.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-tan.pdf  used on input line 
 139.
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 )
-Underfull \vbox (badness 1783) has occurred while \output is active []
 
-
-
-[466 <./Imatges/Ape-Trigonometria-cos.pdf> <./Imatges/Ape-Trigonometria-sec.pdf
+[468 <./Imatges/Ape-Trigonometria-cos.pdf> <./Imatges/Ape-Trigonometria-sec.pdf
 >] (Imatges/Ape-Trigonometria-cot.tex
-<Imatges/Ape-Trigonometria-cot.pdf, id=13764, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-cot.pdf, id=13778, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-cot.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-cot.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-cot.pdf  used on input line 
 139.
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 ) (Imatges/Ape-Trigonometria-sinh.tex
-<Imatges/Ape-Trigonometria-sinh.pdf, id=13765, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-sinh.pdf, id=13779, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-sinh.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-sinh.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-sinh.pdf  used on input line
  139.
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 )
-Underfull \vbox (badness 1783) has occurred while \output is active []
 
-
-
-[467 <./Imatges/Ape-Trigonometria-tan.pdf> <./Imatges/Ape-Trigonometria-cot.pdf
+[469 <./Imatges/Ape-Trigonometria-tan.pdf> <./Imatges/Ape-Trigonometria-cot.pdf
 >] (Imatges/Ape-Trigonometria-csch.tex
-<Imatges/Ape-Trigonometria-csch.pdf, id=13774, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-csch.pdf, id=13787, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-csch.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-csch.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-csch.pdf  used on input line
  143.
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 ) (Imatges/Ape-Trigonometria-cosh.tex
-<Imatges/Ape-Trigonometria-cosh.pdf, id=13775, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-cosh.pdf, id=13788, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-cosh.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-cosh.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-cosh.pdf  used on input line
  139.
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 )
-Underfull \vbox (badness 1783) has occurred while \output is active []
 
-
-
-[468 <./Imatges/Ape-Trigonometria-sinh.pdf> <./Imatges/Ape-Trigonometria-csch.p
+[470 <./Imatges/Ape-Trigonometria-sinh.pdf> <./Imatges/Ape-Trigonometria-csch.p
 df>] (Imatges/Ape-Trigonometria-sech.tex
-<Imatges/Ape-Trigonometria-sech.pdf, id=13783, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-sech.pdf, id=13796, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-sech.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-sech.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-sech.pdf  used on input line
  143.
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 ) (Imatges/Ape-Trigonometria-tanh.tex
-<Imatges/Ape-Trigonometria-tanh.pdf, id=13784, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-tanh.pdf, id=13797, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-tanh.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-tanh.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-tanh.pdf  used on input line
  139.
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 )
-Underfull \vbox (badness 1783) has occurred while \output is active []
 
-
-
-[469 <./Imatges/Ape-Trigonometria-cosh.pdf> <./Imatges/Ape-Trigonometria-sech.p
+[471 <./Imatges/Ape-Trigonometria-cosh.pdf> <./Imatges/Ape-Trigonometria-sech.p
 df>] (Imatges/Ape-Trigonometria-coth.tex
-<Imatges/Ape-Trigonometria-coth.pdf, id=13792, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-coth.pdf, id=13805, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-coth.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-coth.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-coth.pdf  used on input line
@@ -6943,7 +6924,7 @@ Package pdftex.def Info: Imatges/Ape-Trigonometria-coth.pdf  used on input line
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 ))
 
-[470 <./Imatges/Ape-Trigonometria-tanh.pdf> <./Imatges/Ape-Trigonometria-coth.p
+[472 <./Imatges/Ape-Trigonometria-tanh.pdf> <./Imatges/Ape-Trigonometria-coth.p
 df>]
 \openout2 = `Capitols/Ape-Calcul-Numeric.aux'.
 
@@ -6951,7 +6932,7 @@ df>]
 Ap\`endix D.
 
 
-[471
+[473
 
 
 
@@ -6961,21 +6942,21 @@ Package mdframed Info: mdframed works in twoside mode on input line 48.
 Package mdframed Info: mdframed works in twoside mode on input line 85.
 
 
-[472]
-
-[473]
-
 [474]
+
+[475]
+
+[476]
 Package mdframed Info: mdframed works in twoside mode on input line 228.
 
 
-[475]
+[477]
 Underfull \vbox (badness 3407) has occurred while \output is active []
 
 
 
-[476] (Imatges/Ape-Calcul-Numeric-Newton.pdf_tex
-<Imatges/Ape-Calcul-Numeric-Newton.pdf, id=13866, page=1, 256.0748pt x 213.3956
+[478] (Imatges/Ape-Calcul-Numeric-Newton.pdf_tex
+<Imatges/Ape-Calcul-Numeric-Newton.pdf, id=13879, page=1, 256.0748pt x 213.3956
 6pt>
 File: Imatges/Ape-Calcul-Numeric-Newton.pdf Graphic file (type pdf)
 <use Imatges/Ape-Calcul-Numeric-Newton.pdf, page 1>
@@ -6984,9 +6965,9 @@ input line 56.
 (pdftex.def)             Requested size: 256.07478pt x 213.4049pt.
 )
 
-[477 <./Imatges/Ape-Calcul-Numeric-Newton.pdf>]
+[479 <./Imatges/Ape-Calcul-Numeric-Newton.pdf>]
 (Imatges/Ape-Calcul-Numeric-secant.pdf_tex
-<Imatges/Ape-Calcul-Numeric-secant.pdf, id=13878, page=1, 256.0748pt x 213.3956
+<Imatges/Ape-Calcul-Numeric-secant.pdf, id=13892, page=1, 256.0748pt x 213.3956
 6pt>
 File: Imatges/Ape-Calcul-Numeric-secant.pdf Graphic file (type pdf)
 <use Imatges/Ape-Calcul-Numeric-secant.pdf, page 1>
@@ -6995,37 +6976,37 @@ input line 56.
 (pdftex.def)             Requested size: 256.07478pt x 213.4049pt.
 )
 
-[478 <./Imatges/Ape-Calcul-Numeric-secant.pdf>]
+[480 <./Imatges/Ape-Calcul-Numeric-secant.pdf>]
 Package mdframed Info: mdframed works in twoside mode on input line 365.
 
 
-[479]
-
-[480])
-
 [481]
+
+[482])
+
+[483]
 \openout2 = `Capitols/Ape-HP-Prime.aux'.
 
  (Capitols/Ape-HP-Prime.tex
 
-[482
+[484
 
 
 
 
 ]
 Ap\`endix E.
-<Imatges/Ape-HP-Prime.jpg, id=13941, 361.35pt x 576.65437pt>
+<Imatges/Ape-HP-Prime.jpg, id=13954, 361.35pt x 576.65437pt>
 File: Imatges/Ape-HP-Prime.jpg Graphic file (type jpg)
 <use Imatges/Ape-HP-Prime.jpg>
 Package pdftex.def Info: Imatges/Ape-HP-Prime.jpg  used on input line 15.
 (pdftex.def)             Requested size: 162.60599pt x 259.49207pt.
 
 
-[483 <./Imatges/Ape-HP-Prime.jpg>] (HPPrime/EE_QED.hpprgm)
+[485 <./Imatges/Ape-HP-Prime.jpg>] (HPPrime/EE_QED.hpprgm)
 (HPPrime/EE_QED.hpprgm) (HPPrime/EE_QED.hpprgm)
 
-[484] (HPPrime/EE_QED.hpprgm) (HPPrime/EE_QED.hpprgm) (HPPrime/EE_QED.hpprgm)
+[486] (HPPrime/EE_QED.hpprgm) (HPPrime/EE_QED.hpprgm) (HPPrime/EE_QED.hpprgm)
 (HPPrime/EE_QED.hpprgm
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family npxtt in TS1 encoding.
@@ -7036,7 +7017,7 @@ LaTeX Info: Symbol \texttwosuperior not provided by
             Default family used instead on input line 56.
 
 
-[485]) (HPPrime/EE_QED.hpprgm
+[487]) (HPPrime/EE_QED.hpprgm
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family npxtt in TS1 encoding.
             Default family used instead on input line 62.
@@ -7047,7 +7028,7 @@ LaTeX Info: Symbol \texttwosuperior not provided by
 ) (HPPrime/EE_QED.hpprgm)
 (HPPrime/EE_QED.hpprgm)
 
-[486] (HPPrime/EE_QED.hpprgm) (HPPrime/EE_QED.hpprgm) (HPPrime/EE_QED.hpprgm)
+[488] (HPPrime/EE_QED.hpprgm) (HPPrime/EE_QED.hpprgm) (HPPrime/EE_QED.hpprgm)
 (HPPrime/EE_QED.hpprgm) (HPPrime/EE_QED.hpprgm
 LaTeX Font Info:    Font shape `T1/npxtt/m/it' in size <9> not available
 (Font)              Font shape `T1/npxtt/m/sl' tried instead on input line 119.
@@ -7064,14 +7045,14 @@ LaTeX Font Info:    Font shape `T1/npxtt/bx/sl' will be
 (Font)              scaled to size 9.0pt on input line 119.
 )
 
-[487] (HPPrime/EE_QED.hpprgm) (HPPrime/Math_QED.hpprgm)
+[489] (HPPrime/EE_QED.hpprgm) (HPPrime/Math_QED.hpprgm)
 (HPPrime/Math_QED.hpprgm
 
-[488]) (HPPrime/Math_QED.hpprgm))
+[490]) (HPPrime/Math_QED.hpprgm))
 
-[489]
+[491]
 
-[490
+[492
 
 
 
@@ -7079,25 +7060,21 @@ LaTeX Font Info:    Font shape `T1/npxtt/bx/sl' will be
 
 File: Imatges/Fons-de-pagina.pdf Graphic file (type pdf)
 <use Imatges/Fons-de-pagina.pdf>
-Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 393.
+Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 396.
 (pdftex.def)             Requested size: 597.5064pt x 845.08348pt.
-[491]
+[493]
 
-[492
+[494
 
 ]
 \openout2 = `Capitols/Pos-Historial.aux'.
 
  (Capitols/Pos-Historial.tex
 
-[493
+[495
 
 
 ]
-
-[494]
-
-[495]
 
 [496]
 
@@ -7114,33 +7091,33 @@ Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 393.
 [502]
 
 [503]
+
+[504]
+
+[505]
 LaTeX Info: Symbol \textrightarrow not provided by
             font family npxtt in TS1 encoding.
             Default family used instead on input line 542.
 
 
-[504]
+[506]
 
-[505]
+[507]
 LaTeX Info: Symbol \textmu not provided by
             font family zpltlf in TS1 encoding.
             Default family used instead on input line 634.
 
 
-[506]
-
-[507]
-
 [508]
 
 [509]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [510]
 
 [511]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [512]
 
@@ -7152,12 +7129,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [516]
 
-[517])
+[517]
 
 [518]
+
+[519]
+
+[520])
+
+[521]
 \openout2 = `Capitols/Pos-Bibliografia.aux'.
 
  (Capitols/Pos-Bibliografia.tex
+
+[522
+
+
+
+
+]
 LaTeX Font Info:    Font shape `T1/zpltlf/b/it' will be
 (Font)              scaled to size 8.0pt on input line 5.
 LaTeX Font Info:    Font shape `TS1/zpltlf/b/it' will be
@@ -7171,24 +7161,19 @@ me-ri-cal Met-hods\T1/zpltlf/m/n/10.95 . Wiley-
 
 
 
-[519
+[523]
 
+[524])
 
+[525]
 
-
-]
-
-[520])
-
-[521]
-
-[522
+[526
 
 
 
 ]
-runsystem(makeindex -s jmb "Qüestions Electrotècniques Diverses".idx)...quota
-tion error in system command.
+runsystem(makeindex -s jmb_v1 "Qüestions Electrotècniques Diverses".idx)...qu
+otation error in system command.
 
 
 (C:/Users\josep\OneDrive\Documents\TeX Files\Qüestions Electrotècniques Diver
@@ -7206,33 +7191,9 @@ LaTeX Info: Symbol \textmu not provided by
 
 
 
-[523
+[527
 
 ]
-
-
-
-
-
-[524]
-
-
-
-
-
-[525]
-
-
-
-
-
-[526]
-
-
-
-
-
-[527]
 
 
 
@@ -7292,16 +7253,40 @@ LaTeX Info: Symbol \textmu not provided by
 
 
 
-)
-
 [537]
 
-<Imatges/Fons-de-final.pdf, id=15834, 597.432pt x 845.07718pt>
+
+
+
+
+[538]
+
+
+
+
+
+[539]
+
+
+
+
+
+[540]
+
+
+
+
+
+)
+
+[541]
+
+<Imatges/Fons-de-final.pdf, id=15872, 597.432pt x 845.07718pt>
 File: Imatges/Fons-de-final.pdf Graphic file (type pdf)
 <use Imatges/Fons-de-final.pdf>
-Package pdftex.def Info: Imatges/Fons-de-final.pdf  used on input line 401.
+Package pdftex.def Info: Imatges/Fons-de-final.pdf  used on input line 404.
 (pdftex.def)             Requested size: 597.55817pt x 845.04932pt.
-[538 <./Imatges/Fons-de-final.pdf>]
+[542 <./Imatges/Fons-de-final.pdf>]
 (C:/Users\josep\OneDrive\Documents\TeX Files\Qüestions Electrotècniques Diver
 ses\QED-GitHub\v16.0\auxil\Qüestions Electrotècniques Diverses.aux
 (C:/Users\josep\OneDrive\Documents\TeX Files\Qüestions Electrotècniques Diver
@@ -7369,10 +7354,10 @@ Package rerunfilecheck Info: File `"Qüestions Electrotècniques Diverses".out'
 (rerunfilecheck)             Checksum: 2902D6C2B666AB261C88B237D23CB022;94624.
  ) 
 Here is how much of TeX's memory you used:
- 56378 strings out of 468096
- 1234402 string characters out of 5429039
- 1876909 words of memory out of 5000000
- 76160 multiletter control sequences out of 15000+600000
+ 56399 strings out of 468095
+ 1234985 string characters out of 5429011
+ 1918230 words of memory out of 5000000
+ 76172 multiletter control sequences out of 15000+600000
  923617 words of font info for 428 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,23n,117p,1600b,2877s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -7439,9 +7424,9 @@ ic/newpx/zplr.pfb><C:/Users/josep/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/newpx/zplri.pfb>
 Output written on "C:/Users\josep\OneDrive\Documents\TeX Files\Qüestions Elect
 rotècniques Diverses\QED-GitHub\v16.0\out\Qüestions Electrotècniques Diverse
-s.pdf" (564 pages, 6832853 bytes).
+s.pdf" (568 pages, 6832477 bytes).
 PDF statistics:
- 17461 PDF objects out of 18468 (max. 8388607)
- 7054 named destinations out of 7423 (max. 500000)
+ 17502 PDF objects out of 18468 (max. 8388607)
+ 7064 named destinations out of 7423 (max. 500000)
  4763 words of extra memory for PDF output out of 10000 (max. 10000000)
 

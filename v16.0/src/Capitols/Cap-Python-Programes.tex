@@ -125,34 +125,6 @@ Material: Ag, Resistència: 0.0417 Ω/m
 Material: Au, Resistència: 0.0604 Ω/m        
 \end{lstlisting}
 
-\begin{lstlisting}
->>> # Valors eficaç i mitjà d'una ona senoidal semirectificada
->>> T = 20e-3  # 20 ms
->>> def f(t):
-. . .   if t < T/2:
-. . .       return 10*np.sin(2*np.pi/T*t)
-. . .   else:
-. . .       return 0
->>> ee.rms(f, 0, T)  # 10/2
-5.0
->>> ee.average(f, 0, T)  # 10/π
-3.1830988618379064
-\end{lstlisting}
-
-\begin{lstlisting}
->>> # Valors eficaç i mitjà d'una ona senoidal rectificada
->>> T = 20e-3  # 20 ms
->>> def f(t):
-. . .   if t < T/2:
-. . .       return 10*np.sin(2*np.pi/T*t)
-. . .   else:
-. . .       return -10*np.sin(2*np.pi/T*t)
->>> ee.rms(f, 0, T)  # 10/√2
-7.0710678118654755
->>> ee.average(f, 0, T)  # 2*10/π
-6.366197723675812
-\end{lstlisting}
-
 \begin{lstlisting}[mathescape=true]
 >>> # Comparació de les corbes 51 'very inverse' CEI i IEEE
 >>> I_p = 100  # A
@@ -183,4 +155,32 @@ Material: Au, Resistència: 0.0604 Ω/m
 >>> ax.legend(loc="best")
 >>> plt.show()
 $ \includegraphics{Cap-PythonProgs-corba51.pdf} $
+\end{lstlisting}
+
+\begin{lstlisting}
+>>> # Valors eficaç i mitjà d'una ona senoidal semirectificada
+>>> T = 20e-3  # 20 ms
+>>> def f(t):
+. . .   if t < T/2:
+. . .       return 10*np.sin(2*np.pi/T*t)
+. . .   else:
+. . .       return 0
+>>> ee.rms(f, 0, T)  # 10/2
+5.0
+>>> ee.average(f, 0, T)  # 10/π
+3.1830988618379064
+\end{lstlisting}
+
+\begin{lstlisting}
+>>> # Valors eficaç i mitjà d'una ona senoidal rectificada
+>>> T = 20e-3  # 20 ms
+>>> def f(t):
+. . .   if t < T/2:
+. . .       return 10*np.sin(2*np.pi/T*t)
+. . .   else:
+. . .       return -10*np.sin(2*np.pi/T*t)
+>>> ee.rms(f, 0, T)  # 10/√2
+7.0710678118654755
+>>> ee.average(f, 0, T)  # 2*10/π
+6.366197723675812
 \end{lstlisting}

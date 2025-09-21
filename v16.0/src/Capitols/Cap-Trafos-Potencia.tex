@@ -711,7 +711,7 @@ L'índex horari es refereix a un transformador alimentat pel costat de tensió m
 
 L'índex horari ens indica de fet, l'angle de retard de la tensió del costat de tensió més baixa respecte del costat de tensió més alta, quan el transformador es troba en buit.
 
-Normalment, no és necessari tenir en compte l'índex horari en els càlculs, ja que no cal conèixer el desfasament real entre magnituds primàries i secundàries; en cas contrari, es poden fer els càlculs de la manera usual sense tenir en compte l'índex horari, i afegir el desfasament posteriorment. Si $h$ és l'índex horari (entre 0 i 11), la relació entre l'angle d'una magnitud del costat de tensió més alta $\varphi\ped{AT}$ i l'angle de la magnitud corresponent del costat de tensió més baixa $\varphi\ped{BT}$ és, expressat en radian:
+Normalment, no és necessari tenir en compte l'índex horari en els càlculs, ja que no cal conèixer el desfasament real entre magnituds primàries i secundàries; en cas contrari, es poden fer els càlculs de la manera usual sense tenir en compte l'índex horari, i afegir el desfasament posteriorment. Si $h$ és l'índex horari (entre 0 i 11), la relació entre l'angle d'una magnitud del costat de tensió més alta $\varphi\ped{AT}$ i l'angle de la magnitud corresponent del costat de tensió més baixa $\varphi\ped{BT}$ és, expressat en radians:
 \begin{equation}
     \varphi\ped{AT} = \varphi\ped{BT} + h\tfrac{\piup}{6}\label{eq:fi-AT-BT}
 \end{equation}
@@ -1173,7 +1173,7 @@ monofàsics i trifàsics; com és habitual, en el cas dels
 transformadors trifàsics, les tensions nominals són les tensions
 fase-fase, i la potència nominal és la potència trifàsica.\footnote{Per a una discussió més extensa,  podeu veure la secció 6 de la norma CEI 60076-8 \emph{Power transformers --- Application guide}.}\index{CEI!60076-08@60076-8}
 
-\subsection{Condicions mínimes de connexió}\index{transformadors de potència!connexió en paraŀlel!condicions mínimes}
+\subsection{Condicions mínimes de connexió}\index{transformadors de potència!connexió en paraŀlel!condicions mínimes}\label{sec:trafo-cond-min-connex}
 
 Les condicions mínimes que han de complir dos transformadors A i B per poder ser connectats en paraŀlel, és tenir la mateixa relació de transformació (no cal que les tensions nominals siguin iguals, encara que sí que han de ser properes), i en el cas de transformadors trifàsics, tenir a més el mateix índex horari:
 \begin{align}
@@ -1187,7 +1187,7 @@ La condició $m\ped{A} = m\ped{B}$ és necessària per evitar circulació de cor
     \cmplx{Z}\ped{Th,B}^{''}}
 \end{equation}
 
-Pel que fa als índexs horaris, no cal de fet que siguin estrictament iguals, n'hi ha prou  que els índexs siguin compatibles, és a dir que variant les connexions externes es puguin obtenir dos desfasaments iguals.
+Pel que fa als índexs horaris, no cal de fet que siguin estrictament iguals, n'hi ha prou  que els índexs siguin compatibles, és a dir, que variant les connexions externes es puguin obtenir dos desfasaments iguals.
 Donat que, com s'ha dit anteriorment, no tots els índexs horaris són possibles, podem formar els següents grups:
 \begin{align*}
     \text{Grup 1:} & \; h=0, 4, 8 \\
@@ -1201,7 +1201,7 @@ Dos transformadors amb indexs horaris que pertanyin al mateix grup sempre poden 
 Un transformador amb un índex horari del grup 3, també es pot connectar en paraŀlel amb un transformador amb un índex horari del grup 4. En aquest cas, és necessari el canvi en la seqüència de fases en el primari i en el secundari.
 
 Altres connexions en paraŀlel no són factibles.
-Per exemple, no és possible connectar en paraŀlel un transformador amb $h=0$, amb un transformador amb $h=6$.
+Per exemple, no és possible connectar en paraŀlel un transformador amb $h=4$, amb un transformador amb $h=6$, $h=5$ o $h=11$.
 
 	
 \begin{exemple}[\ConnexParalDifIndex{}]

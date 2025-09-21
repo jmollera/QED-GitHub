@@ -52,8 +52,8 @@ l'intèrpret es posa en funcionament mostrant l'indicador \texttt{>{}>{}>}. A pa
 \begin{lstlisting}
 >>> 35/6 + 884/33
 32.621212121212125
->>> 2**80
-1208925819614629174706176
+>>> 2**100
+1267650600228229401496703205376
 >>> abs(3+4j)
 5.0
 >>>
@@ -77,8 +77,8 @@ Una utilitat afegida que es pot fer servir és IPython (\textit{Interactive Pyth
 In [1]: 35/6 + 884/33
 Out[1]: 32.621212121212125
 
-In [2]: 2**80
-Out[2]: 1208925819614629174706176
+In [2]: 2**100
+Out[2]: 1267650600228229401496703205376
 
 In [3]: abs(3+4j)
 Out[3]: 5.0
@@ -86,7 +86,7 @@ Out[3]: 5.0
 In[4]: quit
 \end{lstlisting}
 
-Per resoldre problemes tècnics necessitarem en general llibreries científiques addicionals a les estàndard,  i n'hi ha disponible una gran quantitat de distribució lliure  per al llenguatge Python; aquesta abundància és la que fa que s'estigui usant molt Python en l'àmbit tècnic i científic.
+Per resoldre problemes tècnics necessitarem en general llibreries científiques addicionals a les llibreries  estàndard,  i n'hi ha disponible una gran quantitat de distribució lliure  per al llenguatge Python; aquesta abundància és la que fa que s'estigui usant molt Python en l'àmbit tècnic i científic.
 
 Una qüestió a tenir en compte és que hi ha llibreries que depenen d'altres per funcionar, i a vegades  depenen d'una versió en particular. Una llibreria pot dependre de dues altres, i cadascuna d'aquestes pot dependre d'altres que depenen d'unes altres, etc. Per a un usuari tècnic, però no versat en sistemes informàtics, pot ser difícil instaŀlar bé totes les llibreries necessàries per resoldre una tasca en concret. Per resoldre aquest problema, existeixen distribucions lliures que a més de l'intèrpret de Python inclouen una gran quantitat de llibreries tècniques i científiques que ja són compatibles entre si, i que tenen totes les dependències resoltes. Dues de les més conegudes són WinPython\index{WinPython} (\href{https://winpython.github.io/}{https:/\!\!/winpython.github.io}), disponible  per a Windows, i
 Anaconda\index{Anaconda} (\href{https://www.anaconda.com/products/individual}{https:/\!\!/www.anaconda.com/products/individual}), disponible per a Windows, MacOS i Linux.
@@ -289,7 +289,7 @@ En el llistat \vref{lst:Versions} es pot veure un senzill programa per obtenir l
 	frame=lines,
 	morekeywords=[1]{as,None,match,case,with}
 }
-\lstinputlisting[caption={Python --- Versions} ,label=lst:Versions]{Python/Versions.py}
+\lstinputlisting[caption={Python --- Versions} ,label=lst:Versions]{Python/versions.py}
 
 Quan s'executa aquest programa, el resultat que s'obté és:
 \lstset{
@@ -307,8 +307,8 @@ numba             0.61.2
 mkl               2.4.0
 numpy             2.2.5
 scipy             1.16.0
-sympy             1.13.3
-matplotlib        3.10.5
+sympy             1.14.0
+matplotlib        3.10.6
 pandas            2.3.2
 pandapower        3.1.2
 qed.utils         16.0

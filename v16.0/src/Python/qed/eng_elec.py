@@ -1376,8 +1376,8 @@ class Network:
         try:
             with open(filename, 'wb') as fh:
                 pickle.dump(self.name, fh, pickle.HIGHEST_PROTOCOL)
-                pickle.dump(self.ideal_Z, pickle.HIGHEST_PROTOCOL)
-                pickle.dump(self.ideal_Y, pickle.HIGHEST_PROTOCOL)
+                pickle.dump(self.ideal_Z, fh, pickle.HIGHEST_PROTOCOL)
+                pickle.dump(self.ideal_Y, fh, pickle.HIGHEST_PROTOCOL)
                 pickle.dump(self._net_branches, fh, pickle.HIGHEST_PROTOCOL)
                 pickle.dump(self._net_couplings, fh, pickle.HIGHEST_PROTOCOL)
                 pickle.dump(self._is_solved, fh, pickle.HIGHEST_PROTOCOL)
@@ -1546,7 +1546,7 @@ class Motor3ph:
         Parameters
         ----------
         z_ext: Impedance of the external power system feeding the motor, Ω/phase.
-               The default is 0.
+               The default is 0
         """
         z_th = z_parallel([z_ext + self._z_1, self._z_0])
         return self._z_2.real / abs(z_th + 1j * self._z_2.imag)
@@ -1562,8 +1562,8 @@ class Motor3ph:
         e_ext:   Voltage (phase-neutral) of the external power system feeding
                  the motor, V
         z_ext:   Impedance of the external power system feeding the motor, Ω/phase.
-                 The default is 0.
-        s_guess: Matching slip initial guess. The default is 0.04.
+                 The default is 0
+        s_guess: Matching slip initial guess. The default is 0.04
         """
         sol = optimize.root_scalar(lambda s: self.run(s, e_ext, z_ext).T_m - T_load(s), x0=s_guess)
         return sol.root
@@ -1578,15 +1578,17 @@ class Motor3ph:
         s:     Slip at which the motor quantities are to be computed
         e_ext: Voltage (line-neutral) of the external power system feeding the motor, V
         z_ext: Impedance of the external power system feeding the motor, Ω/phase.
-               The default is 0.
+               The default is 0
 
         Returns
         -------
         A Motor3phRun class.
         """
+        S_MIN = 1e-12  # Smallest allowed value for slip to avoid division by zero
+
         z_th = z_parallel([z_ext + self._z_1, self._z_0])
         e_th = e_ext * self._z_0 / (self._z_0 + self._z_1 + z_ext)
-        r_2_s = self._z_2.real / np.where(np.isclose(s, 0.0, atol=1e-12), 1e-12, s)
+        r_2_s = self._z_2.real / np.where(np.isclose(s, 0.0, atol=S_MIN), S_MIN, s)
         z_2_s = r_2_s + 1j * self._z_2.imag
         Z = self._z_1 + self._z_0 * z_2_s / (self._z_0 + z_2_s)
         PF = np.cos(np.angle(Z))
@@ -1609,19 +1611,20 @@ class Motor3ph:
         J:      Total moment of inertia of the motor plus the load, kg·m²
         e_ext:  Voltage (line-neutral) of the external power system feeding
                 the motor, V
-        z_ext:  Impedance of the external power system feeding the motor, Ω/phase.
-                The default is 0.
+        z_ext:  Impedance of the external power system feeding the motor, Ω/phase
+                The default is 0
 
         Returns
         -------
         The starting time of the motor, s.
         """
-        n_p1, n_p2, factor = 200, 800, 1.25
+        N_P1, N_P2, S_FACTOR = 200, 800, 1.25
+
         s_match = self.s_match(T_load, e_ext, z_ext)
         # The function to integrate is very smooth up to slightly before s_match
-        s_lin = min(1.0, factor * s_match)
-        s = np.concatenate([np.linspace(start=1, stop=s_lin, num=n_p1, endpoint=False),
-                            np.linspace(start=s_lin, stop=s_match, num=n_p2, endpoint=False)])
+        s_lin = min(1.0, S_FACTOR * s_match)
+        s = np.concatenate([np.linspace(start=1, stop=s_lin, num=N_P1, endpoint=False),
+                            np.linspace(start=s_lin, stop=s_match, num=N_P2, endpoint=False)])
         y_fun = 1 / (self.run(s, e_ext, z_ext).T_m - T_load(s))
         return -J * self.ω_m_sync * integrate.simpson(y=y_fun, x=s)
 
@@ -1637,22 +1640,23 @@ class Motor3ph:
         J:      Total moment of inertia of the motor plus the load, kg·m²
         e_ext:  Voltage (line-neutral) of the external power system feeding
                 the motor, V
-        z_ext:  Impedance of the external power system feeding the motor, Ω/phase.
-                The default is 0.
+        z_ext:  Impedance of the external power system feeding the motor, Ω/phase
+                The default is 0
 
         Returns
         -------
         An interpolating function (scipy.interpolate.interp1d) that returns the slip
-        at a given time in seconds, during the start-up process.
-        If time < 0, slip=1 (motor stopped) is returned.
-        If time > starting time, the slip at the starting time is returned.
+        at a given time in seconds, during the start-up process
+        If time < 0, slip=1 (motor stopped) is returned
+        If time > starting time, the slip at the starting time is returned
         """
-        n_p1, n_p2, factor = 200, 800, 1.25
+        N_P1, N_P2, S_FACTOR = 200, 800, 1.25
+
         s_match = self.s_match(T_load, e_ext, z_ext)
         # The function to integrate is very smooth up to slightly before s_match
-        s_lin = min(1.0, factor * s_match)
-        s = np.concatenate([np.linspace(start=1, stop=s_lin, num=n_p1, endpoint=False),
-                            np.linspace(start=s_lin, stop=s_match, num=n_p2, endpoint=False)])
+        s_lin = min(1.0, S_FACTOR * s_match)
+        s = np.concatenate([np.linspace(start=1, stop=s_lin, num=N_P1, endpoint=False),
+                            np.linspace(start=s_lin, stop=s_match, num=N_P2, endpoint=False)])
         y_fun = 1 / (self.run(s, e_ext, z_ext).T_m - T_load(s))
         # The variable x in cumulative_simpson must be strictly increasing,
         # so we need to change the sign of s, and then the sign of the integral

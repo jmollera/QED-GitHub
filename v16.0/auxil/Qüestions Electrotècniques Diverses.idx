@@ -452,8 +452,8 @@
 \indexentry{matriu!d'incidència de nusos $\boldsymbol{A}$|hyperpage}{251}
 \indexentry{matriu!d'impedàncies de branca $\mcmplx{Z}\ped{B}$|hyperpage}{252}
 \indexentry{acoblament magnètic|hyperpage}{252}
-\indexentry{vector!de forces electromotrius $\mcmplx{E}\ped{B}^\bullet$|hyperpage}{252}
-\indexentry{vector!d'intensivitats de branca $\mcmplx{J}\ped{B}^\bullet$|hyperpage}{252}
+\indexentry{vector!de forces electromotrius $\mcmplx{E}\ped{B}^\circ$|hyperpage}{252}
+\indexentry{vector!d'intensivitats de branca $\mcmplx{J}\ped{B}^\circ$|hyperpage}{252}
 \indexentry{matriu!d'admitàncies de branca $\mcmplx{Y}\ped{B}$|hyperpage}{252}
 \indexentry{vector!d'intensivitats equivalents de branca $\mcmplx{J}\ped{B}$|hyperpage}{253}
 \indexentry{matriu!d'admitàncies de nus $\mcmplx{Y}\ped{N}$|hyperpage}{253}
@@ -984,426 +984,438 @@
 \indexentry{matplotlib|hyperpage}{326}
 \indexentry{pandas|hyperpage}{326}
 \indexentry{pandapower|hyperpage}{327}
-\indexentry{sistema internacional d'unitats|hyperpage}{435}
-\indexentry{SI|hyperpage}{435}
-\indexentry{BIPM|hyperpage}{435}
-\indexentry{NIST|hyperpage}{435}
-\indexentry{sistema internacional d'unitats!unitats fonamentals|hyperpage}{435}
-\indexentry{metre|hyperpage}{435}
-\indexentry{kilogram|hyperpage}{435}
-\indexentry{quilogram|hyperpage}{435}
-\indexentry{segon|hyperpage}{435}
-\indexentry{amper|hyperpage}{435}
-\indexentry{kelvin|hyperpage}{435}
-\indexentry{mol|hyperpage}{435}
-\indexentry{candela|hyperpage}{435}
-\indexentry{longitud|hyperpage}{435}
-\indexentry{massa|hyperpage}{435}
-\indexentry{temps|hyperpage}{435}
-\indexentry{intensitat!de corrent elèctric|hyperpage}{435}
-\indexentry{temperatura!termodinàmica|hyperpage}{435}
-\indexentry{quantitat de matèria|hyperpage}{435}
-\indexentry{intensitat!lluminosa|hyperpage}{435}
-\indexentry{m|hyperpage}{435}
-\indexentry{kg|hyperpage}{435}
-\indexentry{s|hyperpage}{435}
-\indexentry{A|hyperpage}{435}
-\indexentry{K|hyperpage}{435}
-\indexentry{cd|hyperpage}{435}
-\indexentry{sistema internacional d'unitats!definicions històriques|hyperpage}{436}
-\indexentry{sistema internacional d'unitats!definicions actuals|hyperpage}{436}
-\indexentry{$\Delta\nu\ped{Cs}$|hyperpage}{436}
-\indexentry{velocitat!de la llum en el buit|hyperpage}{436}
-\indexentry{c@$c$|hyperpage}{436}
-\indexentry{constants!de Planck|hyperpage}{436}
-\indexentry{h@$h$|hyperpage}{436}
-\indexentry{carrega@càrrega!elemental|hyperpage}{436}
-\indexentry{e@$e$|hyperpage}{436}
-\indexentry{constants!de Boltzmann|hyperpage}{436}
-\indexentry{k@$k$|hyperpage}{436}
-\indexentry{constants!d'Avogadro|hyperpage}{436}
-\indexentry{NA@$N\ped{A}$|hyperpage}{436}
-\indexentry{eficàcia lluminosa|hyperpage}{436}
-\indexentry{Kcd@$K\ped{cd}$|hyperpage}{436}
-\indexentry{sistema internacional d'unitats!prefixos|hyperpage}{438}
-\indexentry{quetta|hyperpage}{438}
-\indexentry{ronna|hyperpage}{438}
-\indexentry{yotta|hyperpage}{438}
-\indexentry{zetta|hyperpage}{438}
-\indexentry{exa|hyperpage}{438}
-\indexentry{peta|hyperpage}{438}
-\indexentry{tera|hyperpage}{438}
-\indexentry{giga|hyperpage}{438}
-\indexentry{mega|hyperpage}{438}
-\indexentry{kilo|hyperpage}{438}
-\indexentry{quilo|hyperpage}{438}
-\indexentry{hecto|hyperpage}{438}
-\indexentry{deca|hyperpage}{438}
-\indexentry{deci|hyperpage}{438}
-\indexentry{centi|hyperpage}{438}
-\indexentry{mili|hyperpage}{438}
-\indexentry{micro|hyperpage}{438}
-\indexentry{nano|hyperpage}{438}
-\indexentry{pico|hyperpage}{438}
-\indexentry{femto|hyperpage}{438}
-\indexentry{atto|hyperpage}{438}
-\indexentry{zepto|hyperpage}{438}
-\indexentry{yocto|hyperpage}{438}
-\indexentry{ronto|hyperpage}{438}
-\indexentry{quecto|hyperpage}{438}
-\indexentry{Q|hyperpage}{438}
-\indexentry{R|hyperpage}{438}
-\indexentry{Y|hyperpage}{438}
-\indexentry{Z|hyperpage}{438}
-\indexentry{E|hyperpage}{438}
-\indexentry{P|hyperpage}{438}
-\indexentry{T|hyperpage}{438}
-\indexentry{G|hyperpage}{438}
-\indexentry{M|hyperpage}{438}
-\indexentry{k|hyperpage}{438}
-\indexentry{h|hyperpage}{438}
-\indexentry{da|hyperpage}{438}
-\indexentry{q|hyperpage}{438}
-\indexentry{r|hyperpage}{438}
-\indexentry{y|hyperpage}{438}
-\indexentry{z|hyperpage}{438}
-\indexentry{a|hyperpage}{438}
-\indexentry{f|hyperpage}{438}
-\indexentry{p|hyperpage}{438}
-\indexentry{n|hyperpage}{438}
-\indexentry{\unit{\micro\noop}|hyperpage}{438}
-\indexentry{m|hyperpage}{438}
-\indexentry{c|hyperpage}{438}
-\indexentry{d|hyperpage}{438}
-\indexentry{sistema internacional d'unitats!unitats derivades amb noms i símbols propis|hyperpage}{439}
-\indexentry{radiant|hyperpage}{439}
-\indexentry{radian|hyperpage}{439}
-\indexentry{estereoradiant|hyperpage}{439}
-\indexentry{estereoradian|hyperpage}{439}
-\indexentry{hertz|hyperpage}{439}
-\indexentry{newton|hyperpage}{439}
-\indexentry{pascal|hyperpage}{439}
-\indexentry{joule|hyperpage}{439}
-\indexentry{watt|hyperpage}{439}
-\indexentry{coulomb|hyperpage}{439}
-\indexentry{volt|hyperpage}{439}
-\indexentry{farad|hyperpage}{439}
-\indexentry{ohm|hyperpage}{439}
-\indexentry{siemens|hyperpage}{439}
-\indexentry{weber|hyperpage}{439}
-\indexentry{tesla|hyperpage}{439}
-\indexentry{henry|hyperpage}{439}
-\indexentry{lumen|hyperpage}{439}
-\indexentry{lux|hyperpage}{439}
-\indexentry{becquerel|hyperpage}{439}
-\indexentry{gray|hyperpage}{439}
-\indexentry{sievert|hyperpage}{439}
-\indexentry{grau Celsius|hyperpage}{439}
-\indexentry{katal|hyperpage}{439}
-\indexentry{angle!pla|hyperpage}{439}
-\indexentry{angle!sòlid|hyperpage}{439}
-\indexentry{freq\"{u}ència|hyperpage}{439}
-\indexentry{força|hyperpage}{439}
-\indexentry{pressió|hyperpage}{439}
-\indexentry{energia|hyperpage}{439}
-\indexentry{potència|hyperpage}{439}
-\indexentry{carrega@càrrega!elèctrica|hyperpage}{439}
-\indexentry{potencial elèctric|hyperpage}{439}
-\indexentry{capacitat|hyperpage}{439}
-\indexentry{resistència|hyperpage}{439}
-\indexentry{conductància|hyperpage}{439}
-\indexentry{flux!magnètic|hyperpage}{439}
-\indexentry{densitat!de flux magnètic|hyperpage}{439}
-\indexentry{inductància|hyperpage}{439}
-\indexentry{temperatura!Celsius|hyperpage}{439}
-\indexentry{flux!lluminós|hyperpage}{439}
-\indexentry{iluminacio@iŀluminació|hyperpage}{439}
-\indexentry{activitat!d'un radionúclid|hyperpage}{439}
-\indexentry{dosi!absorbida|hyperpage}{439}
-\indexentry{dosi!equivalent|hyperpage}{439}
-\indexentry{activitat!catalítica|hyperpage}{439}
-\indexentry{rad|hyperpage}{439}
-\indexentry{sr|hyperpage}{439}
-\indexentry{Hz|hyperpage}{439}
-\indexentry{N|hyperpage}{439}
-\indexentry{Pa|hyperpage}{439}
-\indexentry{J|hyperpage}{439}
-\indexentry{W|hyperpage}{439}
-\indexentry{C|hyperpage}{439}
-\indexentry{V|hyperpage}{439}
-\indexentry{F|hyperpage}{439}
-\indexentry{\unit{\ohm}|hyperpage}{439}
-\indexentry{S|hyperpage}{439}
-\indexentry{Wb|hyperpage}{439}
-\indexentry{T|hyperpage}{439}
-\indexentry{H|hyperpage}{439}
-\indexentry{\unit{\degreeCelsius}|hyperpage}{439}
-\indexentry{lm|hyperpage}{439}
-\indexentry{lx|hyperpage}{439}
-\indexentry{Bq|hyperpage}{439}
-\indexentry{Gy|hyperpage}{439}
-\indexentry{Sv|hyperpage}{439}
-\indexentry{kat|hyperpage}{439}
-\indexentry{sistema internacional d'unitats!altres unitats derivades|hyperpage}{440}
-\indexentry{viscositat dinàmica|hyperpage}{440}
-\indexentry{moment!d'una força|hyperpage}{440}
-\indexentry{tensió superficial|hyperpage}{440}
-\indexentry{velocitat!angular|hyperpage}{440}
-\indexentry{acceleració!angular|hyperpage}{440}
-\indexentry{densitat!de flux de calor|hyperpage}{440}
-\indexentry{entropia|hyperpage}{440}
-\indexentry{entropia!específica|hyperpage}{440}
-\indexentry{conductivitat termica@conductivitat tèrmica|hyperpage}{440}
-\indexentry{densitat!d'energia|hyperpage}{440}
-\indexentry{intensitat!de camp electric@intensitat de camp elèctric|hyperpage}{440}
-\indexentry{densitat!de càrrega elèctrica|hyperpage}{440}
-\indexentry{densitat!de flux elèctric|hyperpage}{440}
-\indexentry{permitivitat|hyperpage}{440}
-\indexentry{permeabilitat|hyperpage}{440}
-\indexentry{energia!molar|hyperpage}{440}
-\indexentry{entropia!molar|hyperpage}{440}
-\indexentry{exposició|hyperpage}{440}
-\indexentry{tassa de dosi absorbida|hyperpage}{440}
-\indexentry{intensitat!radiant|hyperpage}{440}
-\indexentry{radiancia@radiància|hyperpage}{440}
-\indexentry{concentracio d'activitat catalitica@concentració d'activitat catalítica|hyperpage}{440}
-\indexentry{sistema internacional d'unitats!unitats fora de l'SI|hyperpage}{441}
-\indexentry{minut|hyperpage}{441}
-\indexentry{hora|hyperpage}{441}
-\indexentry{dia|hyperpage}{441}
-\indexentry{grau|hyperpage}{441}
-\indexentry{segon|hyperpage}{441}
-\indexentry{litre|hyperpage}{441}
-\indexentry{tona|hyperpage}{441}
-\indexentry{hectarea@hectàrea|hyperpage}{441}
-\indexentry{min|hyperpage}{441}
-\indexentry{h|hyperpage}{441}
-\indexentry{d|hyperpage}{441}
-\indexentry{\unit{\degree}|hyperpage}{441}
-\indexentry{$'$|hyperpage}{441}
-\indexentry{$''$|hyperpage}{441}
-\indexentry{l|hyperpage}{441}
-\indexentry{L|hyperpage}{441}
-\indexentry{ha|hyperpage}{441}
-\indexentry{t|hyperpage}{441}
-\indexentry{unitats!astronomica@astronòmica|hyperpage}{441}
-\indexentry{au|hyperpage}{441}
-\indexentry{temps|hyperpage}{441}
+\indexentry{sistema internacional d'unitats|hyperpage}{437}
+\indexentry{SI|hyperpage}{437}
+\indexentry{BIPM|hyperpage}{437}
+\indexentry{NIST|hyperpage}{437}
+\indexentry{sistema internacional d'unitats!unitats fonamentals|hyperpage}{437}
+\indexentry{metre|hyperpage}{437}
+\indexentry{kilogram|hyperpage}{437}
+\indexentry{quilogram|hyperpage}{437}
+\indexentry{segon|hyperpage}{437}
+\indexentry{amper|hyperpage}{437}
+\indexentry{kelvin|hyperpage}{437}
+\indexentry{mol|hyperpage}{437}
+\indexentry{candela|hyperpage}{437}
+\indexentry{longitud|hyperpage}{437}
+\indexentry{massa|hyperpage}{437}
+\indexentry{temps|hyperpage}{437}
+\indexentry{intensitat!de corrent elèctric|hyperpage}{437}
+\indexentry{temperatura!termodinàmica|hyperpage}{437}
+\indexentry{quantitat de matèria|hyperpage}{437}
+\indexentry{intensitat!lluminosa|hyperpage}{437}
+\indexentry{m|hyperpage}{437}
+\indexentry{kg|hyperpage}{437}
+\indexentry{s|hyperpage}{437}
+\indexentry{A|hyperpage}{437}
+\indexentry{K|hyperpage}{437}
+\indexentry{cd|hyperpage}{437}
+\indexentry{sistema internacional d'unitats!definicions històriques|hyperpage}{438}
+\indexentry{sistema internacional d'unitats!definicions actuals|hyperpage}{438}
+\indexentry{$\Delta\nu\ped{Cs}$|hyperpage}{438}
+\indexentry{velocitat!de la llum en el buit|hyperpage}{438}
+\indexentry{c@$c$|hyperpage}{438}
+\indexentry{constants!de Planck|hyperpage}{438}
+\indexentry{h@$h$|hyperpage}{438}
+\indexentry{carrega@càrrega!elemental|hyperpage}{438}
+\indexentry{e@$e$|hyperpage}{438}
+\indexentry{constants!de Boltzmann|hyperpage}{438}
+\indexentry{k@$k$|hyperpage}{438}
+\indexentry{constants!d'Avogadro|hyperpage}{438}
+\indexentry{NA@$N\ped{A}$|hyperpage}{438}
+\indexentry{eficàcia lluminosa|hyperpage}{438}
+\indexentry{Kcd@$K\ped{cd}$|hyperpage}{438}
+\indexentry{sistema internacional d'unitats!prefixos|hyperpage}{440}
+\indexentry{quetta|hyperpage}{440}
+\indexentry{ronna|hyperpage}{440}
+\indexentry{yotta|hyperpage}{440}
+\indexentry{zetta|hyperpage}{440}
+\indexentry{exa|hyperpage}{440}
+\indexentry{peta|hyperpage}{440}
+\indexentry{tera|hyperpage}{440}
+\indexentry{giga|hyperpage}{440}
+\indexentry{mega|hyperpage}{440}
+\indexentry{kilo|hyperpage}{440}
+\indexentry{quilo|hyperpage}{440}
+\indexentry{hecto|hyperpage}{440}
+\indexentry{deca|hyperpage}{440}
+\indexentry{deci|hyperpage}{440}
+\indexentry{centi|hyperpage}{440}
+\indexentry{mili|hyperpage}{440}
+\indexentry{micro|hyperpage}{440}
+\indexentry{nano|hyperpage}{440}
+\indexentry{pico|hyperpage}{440}
+\indexentry{femto|hyperpage}{440}
+\indexentry{atto|hyperpage}{440}
+\indexentry{zepto|hyperpage}{440}
+\indexentry{yocto|hyperpage}{440}
+\indexentry{ronto|hyperpage}{440}
+\indexentry{quecto|hyperpage}{440}
+\indexentry{Q|hyperpage}{440}
+\indexentry{R|hyperpage}{440}
+\indexentry{Y|hyperpage}{440}
+\indexentry{Z|hyperpage}{440}
+\indexentry{E|hyperpage}{440}
+\indexentry{P|hyperpage}{440}
+\indexentry{T|hyperpage}{440}
+\indexentry{G|hyperpage}{440}
+\indexentry{M|hyperpage}{440}
+\indexentry{k|hyperpage}{440}
+\indexentry{h|hyperpage}{440}
+\indexentry{da|hyperpage}{440}
+\indexentry{q|hyperpage}{440}
+\indexentry{r|hyperpage}{440}
+\indexentry{y|hyperpage}{440}
+\indexentry{z|hyperpage}{440}
+\indexentry{a|hyperpage}{440}
+\indexentry{f|hyperpage}{440}
+\indexentry{p|hyperpage}{440}
+\indexentry{n|hyperpage}{440}
+\indexentry{\unit{\micro\noop}|hyperpage}{440}
+\indexentry{m|hyperpage}{440}
+\indexentry{c|hyperpage}{440}
+\indexentry{d|hyperpage}{440}
+\indexentry{sistema internacional d'unitats!unitats derivades amb noms i símbols propis|hyperpage}{441}
+\indexentry{radiant|hyperpage}{441}
+\indexentry{radian|hyperpage}{441}
+\indexentry{estereoradiant|hyperpage}{441}
+\indexentry{estereoradian|hyperpage}{441}
+\indexentry{hertz|hyperpage}{441}
+\indexentry{newton|hyperpage}{441}
+\indexentry{pascal|hyperpage}{441}
+\indexentry{joule|hyperpage}{441}
+\indexentry{watt|hyperpage}{441}
+\indexentry{coulomb|hyperpage}{441}
+\indexentry{volt|hyperpage}{441}
+\indexentry{farad|hyperpage}{441}
+\indexentry{ohm|hyperpage}{441}
+\indexentry{siemens|hyperpage}{441}
+\indexentry{weber|hyperpage}{441}
+\indexentry{tesla|hyperpage}{441}
+\indexentry{henry|hyperpage}{441}
+\indexentry{lumen|hyperpage}{441}
+\indexentry{lux|hyperpage}{441}
+\indexentry{becquerel|hyperpage}{441}
+\indexentry{gray|hyperpage}{441}
+\indexentry{sievert|hyperpage}{441}
+\indexentry{grau Celsius|hyperpage}{441}
+\indexentry{katal|hyperpage}{441}
 \indexentry{angle!pla|hyperpage}{441}
-\indexentry{area@àrea|hyperpage}{441}
-\indexentry{volum|hyperpage}{441}
-\indexentry{massa|hyperpage}{441}
-\indexentry{longitud|hyperpage}{441}
-\indexentry{electró-volt|hyperpage}{441}
-\indexentry{unitats!de massa atomica unificada@de massa atòmica unificada|hyperpage}{441}
-\indexentry{dalton|hyperpage}{441}
-\indexentry{eV|hyperpage}{441}
-\indexentry{u|hyperpage}{441}
-\indexentry{Da|hyperpage}{441}
+\indexentry{angle!sòlid|hyperpage}{441}
+\indexentry{freq\"{u}ència|hyperpage}{441}
+\indexentry{força|hyperpage}{441}
+\indexentry{pressió|hyperpage}{441}
 \indexentry{energia|hyperpage}{441}
-\indexentry{massa|hyperpage}{441}
-\indexentry{Np|hyperpage}{441}
-\indexentry{B|hyperpage}{441}
-\indexentry{dB|hyperpage}{441}
-\indexentry{neper|hyperpage}{441}
-\indexentry{bel|hyperpage}{441}
-\indexentry{decibel|hyperpage}{441}
-\indexentry{NIST|hyperpage}{442}
-\indexentry{curie|hyperpage}{442}
-\indexentry{roentgen|hyperpage}{442}
-\indexentry{rad|hyperpage}{442}
-\indexentry{rem|hyperpage}{442}
-\indexentry{Ci|hyperpage}{442}
-\indexentry{R|hyperpage}{442}
-\indexentry{activitat!d'un radionúclid|hyperpage}{442}
-\indexentry{dosi!absorbida|hyperpage}{442}
-\indexentry{dosi!equivalent|hyperpage}{442}
+\indexentry{potència|hyperpage}{441}
+\indexentry{carrega@càrrega!elèctrica|hyperpage}{441}
+\indexentry{potencial elèctric|hyperpage}{441}
+\indexentry{capacitat|hyperpage}{441}
+\indexentry{resistència|hyperpage}{441}
+\indexentry{conductància|hyperpage}{441}
+\indexentry{flux!magnètic|hyperpage}{441}
+\indexentry{densitat!de flux magnètic|hyperpage}{441}
+\indexentry{inductància|hyperpage}{441}
+\indexentry{temperatura!Celsius|hyperpage}{441}
+\indexentry{flux!lluminós|hyperpage}{441}
+\indexentry{iluminacio@iŀluminació|hyperpage}{441}
+\indexentry{activitat!d'un radionúclid|hyperpage}{441}
+\indexentry{dosi!absorbida|hyperpage}{441}
+\indexentry{dosi!equivalent|hyperpage}{441}
+\indexentry{activitat!catalítica|hyperpage}{441}
+\indexentry{rad|hyperpage}{441}
+\indexentry{sr|hyperpage}{441}
+\indexentry{Hz|hyperpage}{441}
+\indexentry{N|hyperpage}{441}
+\indexentry{Pa|hyperpage}{441}
+\indexentry{J|hyperpage}{441}
+\indexentry{W|hyperpage}{441}
+\indexentry{C|hyperpage}{441}
+\indexentry{V|hyperpage}{441}
+\indexentry{F|hyperpage}{441}
+\indexentry{\unit{\ohm}|hyperpage}{441}
+\indexentry{S|hyperpage}{441}
+\indexentry{Wb|hyperpage}{441}
+\indexentry{T|hyperpage}{441}
+\indexentry{H|hyperpage}{441}
+\indexentry{\unit{\degreeCelsius}|hyperpage}{441}
+\indexentry{lm|hyperpage}{441}
+\indexentry{lx|hyperpage}{441}
+\indexentry{Bq|hyperpage}{441}
+\indexentry{Gy|hyperpage}{441}
+\indexentry{Sv|hyperpage}{441}
+\indexentry{kat|hyperpage}{441}
+\indexentry{sistema internacional d'unitats!altres unitats derivades|hyperpage}{442}
+\indexentry{viscositat dinàmica|hyperpage}{442}
+\indexentry{moment!d'una força|hyperpage}{442}
+\indexentry{tensió superficial|hyperpage}{442}
+\indexentry{velocitat!angular|hyperpage}{442}
+\indexentry{acceleració!angular|hyperpage}{442}
+\indexentry{densitat!de flux de calor|hyperpage}{442}
+\indexentry{entropia|hyperpage}{442}
+\indexentry{entropia!específica|hyperpage}{442}
+\indexentry{conductivitat termica@conductivitat tèrmica|hyperpage}{442}
+\indexentry{densitat!d'energia|hyperpage}{442}
+\indexentry{intensitat!de camp electric@intensitat de camp elèctric|hyperpage}{442}
+\indexentry{densitat!de càrrega elèctrica|hyperpage}{442}
+\indexentry{densitat!de flux elèctric|hyperpage}{442}
+\indexentry{permitivitat|hyperpage}{442}
+\indexentry{permeabilitat|hyperpage}{442}
+\indexentry{energia!molar|hyperpage}{442}
+\indexentry{entropia!molar|hyperpage}{442}
 \indexentry{exposició|hyperpage}{442}
-\indexentry{sistema internacional d'unitats!unitats definides en la norma CEI 80000|hyperpage}{442}
-\indexentry{CEI!80000-00@80000|hyperpage}{442}
-\indexentry{ISO!80000-00@80000|hyperpage}{442}
-\indexentry{CEI!80000-13|hyperpage}{442}
-\indexentry{bit|hyperpage}{442}
-\indexentry{byte|hyperpage}{442}
-\indexentry{B|hyperpage}{442}
-\indexentry{octet|hyperpage}{442}
-\indexentry{IEEE!1541|hyperpage}{442}
-\indexentry{kibi|hyperpage}{443}
-\indexentry{Ki|hyperpage}{443}
-\indexentry{mebi|hyperpage}{443}
-\indexentry{Mi|hyperpage}{443}
-\indexentry{gibi|hyperpage}{443}
-\indexentry{Gi|hyperpage}{443}
-\indexentry{tebi|hyperpage}{443}
-\indexentry{Ti|hyperpage}{443}
-\indexentry{pebi|hyperpage}{443}
-\indexentry{Pi|hyperpage}{443}
-\indexentry{exbi|hyperpage}{443}
-\indexentry{Ei|hyperpage}{443}
-\indexentry{zebi|hyperpage}{443}
-\indexentry{Zi|hyperpage}{443}
-\indexentry{yobi|hyperpage}{443}
-\indexentry{Yi|hyperpage}{443}
-\indexentry{robi|hyperpage}{443}
-\indexentry{Ri|hyperpage}{443}
-\indexentry{quebi|hyperpage}{443}
-\indexentry{Qi|hyperpage}{443}
-\indexentry{CEI!80000-06@80000-6|hyperpage}{443}
-\indexentry{potència!activa|hyperpage}{443}
-\indexentry{potència!reactiva|hyperpage}{443}
-\indexentry{potència!aparent|hyperpage}{443}
-\indexentry{W|hyperpage}{443}
-\indexentry{VA|hyperpage}{443}
-\indexentry{var|hyperpage}{443}
-\indexentry{voltampere|hyperpage}{443}
-\indexentry{watt|hyperpage}{443}
-\indexentry{CEI!80000-03@80000-3|hyperpage}{444}
-\indexentry{revolució|hyperpage}{444}
-\indexentry{revolució per segon|hyperpage}{444}
-\indexentry{revolució per minut|hyperpage}{444}
-\indexentry{r|hyperpage}{444}
-\indexentry{angle!pla|hyperpage}{444}
-\indexentry{velocitat!angular|hyperpage}{444}
-\indexentry{sistema internacional d'unitats!normes d'escriptura|hyperpage}{444}
-\indexentry{sistema internacional d'unitats!factors de conversió|hyperpage}{451}
-\indexentry{constants!físiques|hyperpage}{453}
-\indexentry{$\Delta\nu\ped{Cs}$|hyperpage}{453}
-\indexentry{c@$c$|hyperpage}{453}
-\indexentry{constants!de Planck|hyperpage}{453}
-\indexentry{h@$h$|hyperpage}{453}
-\indexentry{carrega@càrrega!elemental|hyperpage}{453}
-\indexentry{e@$e$|hyperpage}{453}
-\indexentry{constants!de Boltzmann|hyperpage}{453}
-\indexentry{k@$k$|hyperpage}{453}
-\indexentry{constants!d'Avogadro|hyperpage}{453}
-\indexentry{NA@$N\ped{A}$|hyperpage}{453}
-\indexentry{eficàcia lluminosa|hyperpage}{453}
-\indexentry{Kcd@$K\ped{cd}$|hyperpage}{453}
-\indexentry{massa!atòmica relativa del carboni-12|hyperpage}{453}
-\indexentry{Ar@$A\ped{r}({}^{12}\mathrm{C})$|hyperpage}{453}
-\indexentry{constants!de Planck redu\"{i}da|hyperpage}{453}
-\indexentry{h@$\hslash$|hyperpage}{453}
-\indexentry{constants!d'Stefan-Boltzmann|hyperpage}{454}
-\indexentry{$\sigma$|hyperpage}{454}
-\indexentry{constants!de Josephson|hyperpage}{454}
-\indexentry{KJ@$K\ped{J}$|hyperpage}{454}
-\indexentry{electró-volt|hyperpage}{454}
-\indexentry{eV|hyperpage}{454}
-\indexentry{atmosfera estàndard|hyperpage}{454}
-\indexentry{acceleració!de la gravetat estàndard|hyperpage}{454}
-\indexentry{gn@$g\ped{n}$|hyperpage}{454}
-\indexentry{constants!molar dels gasos|hyperpage}{454}
-\indexentry{R@$R$|hyperpage}{454}
-\indexentry{constants!de Faraday|hyperpage}{454}
-\indexentry{F@$F$|hyperpage}{454}
-\indexentry{volum molar d'un gas ideal|hyperpage}{454}
-\indexentry{Vm@$V\ped{m}$|hyperpage}{454}
-\indexentry{constants!de Loschmidt|hyperpage}{454}
-\indexentry{n0@$n_0$|hyperpage}{454}
-\indexentry{constants!de massa atòmica|hyperpage}{454}
-\indexentry{mu@$m\ped{u}$|hyperpage}{454}
-\indexentry{constants!de massa molar|hyperpage}{454}
-\indexentry{Mu@$M\ped{u}$|hyperpage}{454}
-\indexentry{massa!molar del carboni-12|hyperpage}{454}
-\indexentry{M@$M({}^{12}\mathrm{C})$|hyperpage}{454}
-\indexentry{constants!gravitacional de Newton|hyperpage}{454}
-\indexentry{G@$G$|hyperpage}{454}
-\indexentry{constants!de l'estructura fina|hyperpage}{454}
-\indexentry{$\alpha$|hyperpage}{454}
-\indexentry{permeabilitat!del buit|hyperpage}{454}
-\indexentry{$\mu_0$|hyperpage}{454}
-\indexentry{permitivitat!del buit|hyperpage}{454}
-\indexentry{$\epsilon_0$|hyperpage}{454}
-\indexentry{impedància característica del buit|hyperpage}{455}
-\indexentry{Z0@$Z_0$|hyperpage}{455}
-\indexentry{massa!de l'electró|hyperpage}{455}
-\indexentry{me@$m\ped{e}$|hyperpage}{455}
-\indexentry{massa!del protó|hyperpage}{455}
-\indexentry{mp@$m\ped{p}$|hyperpage}{455}
-\indexentry{massa!del neutró|hyperpage}{455}
-\indexentry{mn@$m\ped{n}$|hyperpage}{455}
-\indexentry{massa!del deuteri|hyperpage}{455}
-\indexentry{md@$m\ped{d}$|hyperpage}{455}
-\indexentry{massa!del triti|hyperpage}{455}
-\indexentry{md@$m\ped{t}$|hyperpage}{455}
-\indexentry{massa!de la partícula $\alpha$|hyperpage}{455}
-\indexentry{ma@$m_\alpha$|hyperpage}{455}
-\indexentry{radi de Bohr|hyperpage}{455}
-\indexentry{a0@$a_0$|hyperpage}{455}
-\indexentry{radi clàssic de l'electró|hyperpage}{455}
-\indexentry{re@$r\ped{e}$|hyperpage}{455}
-\indexentry{longitud!d'ona Compton reduïda|hyperpage}{455}
-\indexentry{$\lambdabar\ped{C}$|hyperpage}{455}
-\indexentry{massa!de Planck|hyperpage}{455}
-\indexentry{mp/P@$m\ped{P}$|hyperpage}{455}
-\indexentry{temperatura de Planck|hyperpage}{455}
-\indexentry{TP@$T\ped{P}$|hyperpage}{455}
-\indexentry{longitud!de Planck|hyperpage}{455}
-\indexentry{lP@$l\ped{P}$|hyperpage}{455}
-\indexentry{temps de Planck|hyperpage}{455}
-\indexentry{tP@$t\ped{P}$|hyperpage}{455}
-\indexentry{CODATA|hyperpage}{456}
-\indexentry{NIST|hyperpage}{456}
-\indexentry{error!absolut|hyperpage}{456}
-\indexentry{error!relatiu|hyperpage}{456}
-\indexentry{trigonometria|hyperpage}{457}
-\indexentry{funcions!trigonomètriques|hyperpage}{457}
-\indexentry{sin|hyperpage}{457}
-\indexentry{cos|hyperpage}{457}
-\indexentry{tan|hyperpage}{457}
-\indexentry{csc|hyperpage}{457}
-\indexentry{sec|hyperpage}{457}
-\indexentry{cot|hyperpage}{457}
-\indexentry{formula@fórmula!d'Heró|hyperpage}{461}
-\indexentry{area@àrea|hyperpage}{461}
-\indexentry{A@$\mathscr{A}$|hyperpage}{461}
-\indexentry{llei!dels sinus|hyperpage}{462}
-\indexentry{llei!dels cosinus|hyperpage}{462}
-\indexentry{llei!de les tangents|hyperpage}{462}
-\indexentry{llei!de les cotangents|hyperpage}{462}
-\indexentry{formula@fórmula!de Mollweide|hyperpage}{462}
-\indexentry{baricentre|hyperpage}{463}
-\indexentry{funcions!hiperbòliques|hyperpage}{463}
-\indexentry{sinh|hyperpage}{463}
-\indexentry{cosh|hyperpage}{463}
-\indexentry{tanh|hyperpage}{463}
-\indexentry{csch|hyperpage}{463}
-\indexentry{sech|hyperpage}{463}
-\indexentry{coth|hyperpage}{463}
-\indexentry{calcul numèric@càlcul numèric|hyperpage}{471}
-\indexentry{interpolació|hyperpage}{471}
-\indexentry{polinomis de Lagrange|hyperpage}{471}
-\indexentry{interpolació!lineal|hyperpage}{471}
-\indexentry{interpolació!quadràtica|hyperpage}{471}
-\indexentry{interpolació!cúbica|hyperpage}{471}
-\indexentry{integració|hyperpage}{473}
-\indexentry{integració!regla dels trapezis|hyperpage}{474}
-\indexentry{integració!regla de Simpson 1/3|hyperpage}{474}
-\indexentry{integració!regla de Simpson 3/8|hyperpage}{475}
-\indexentry{equacions!no lineals|hyperpage}{476}
-\indexentry{equacions!no lineals!mètode de Newton|hyperpage}{477}
-\indexentry{equacions!no lineals!mètode la recta secant|hyperpage}{478}
-\indexentry{equacions!sistemes no lineals|hyperpage}{480}
-\indexentry{HP Prime@\textsf{HP Prime}|hyperpage}{483}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions|hyperpage}{483}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!ZSeries@\texttt{Z\_Series}|hyperpage}{484}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!ZParallel@\texttt{Z\_Parallel}|hyperpage}{484}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!Millman@\texttt{Millman}|hyperpage}{484}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!DtoY@\texttt{D\_to\_Y}|hyperpage}{484}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!YtoD@\texttt{Y\_to\_D}|hyperpage}{485}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!EZSU@\texttt{EZS\_U}|hyperpage}{485}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!kcmiltomm@\texttt{kcmil\_to\_mm2}|hyperpage}{485}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!mmtokcmil@\texttt{mm2\_to\_kcmil}|hyperpage}{485}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!awgtomm@\texttt{AWG\_to\_mm2}|hyperpage}{486}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!mmtoawg@\texttt{mm2\_to\_AWG}|hyperpage}{486}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!TriangletoPhasors@\texttt{Triangle\_to\_Phasors}|hyperpage}{486}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!LNtoLL@\texttt{LN\_to\_LL}|hyperpage}{486}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!LLtoLN@\texttt{LL\_to\_LN}|hyperpage}{487}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!LLtoLG@\texttt{LL\_to\_LG}|hyperpage}{487}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!ABCtoA012@\texttt{ABC\_to\_A012}|hyperpage}{487}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!A012toABC@\texttt{A012\_to\_ABC}|hyperpage}{487}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!AN12toAB12@\texttt{AN12\_to\_AB12}|hyperpage}{487}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!AB12toAN12@\texttt{AB12\_to\_AN12}|hyperpage}{488}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!PolynomialInterpolation@\texttt{Polynomial\_Interpolation}|hyperpage}{488}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!PolynomialInterpolation2D@\texttt{Polynomial\_Interpolation\_2D}|hyperpage}{488}
-\indexentry{HP Prime@\textsf{HP Prime}!funcions!TrapezoidalRule@\texttt{Trapezoidal\_Rule}|hyperpage}{489}
+\indexentry{tassa de dosi absorbida|hyperpage}{442}
+\indexentry{intensitat!radiant|hyperpage}{442}
+\indexentry{radiancia@radiància|hyperpage}{442}
+\indexentry{concentracio d'activitat catalitica@concentració d'activitat catalítica|hyperpage}{442}
+\indexentry{sistema internacional d'unitats!unitats fora de l'SI|hyperpage}{443}
+\indexentry{minut|hyperpage}{443}
+\indexentry{hora|hyperpage}{443}
+\indexentry{dia|hyperpage}{443}
+\indexentry{grau|hyperpage}{443}
+\indexentry{segon|hyperpage}{443}
+\indexentry{litre|hyperpage}{443}
+\indexentry{tona|hyperpage}{443}
+\indexentry{hectarea@hectàrea|hyperpage}{443}
+\indexentry{min|hyperpage}{443}
+\indexentry{h|hyperpage}{443}
+\indexentry{d|hyperpage}{443}
+\indexentry{\unit{\degree}|hyperpage}{443}
+\indexentry{$'$|hyperpage}{443}
+\indexentry{$''$|hyperpage}{443}
+\indexentry{l|hyperpage}{443}
+\indexentry{L|hyperpage}{443}
+\indexentry{ha|hyperpage}{443}
+\indexentry{t|hyperpage}{443}
+\indexentry{unitats!astronomica@astronòmica|hyperpage}{443}
+\indexentry{au|hyperpage}{443}
+\indexentry{temps|hyperpage}{443}
+\indexentry{angle!pla|hyperpage}{443}
+\indexentry{area@àrea|hyperpage}{443}
+\indexentry{volum|hyperpage}{443}
+\indexentry{massa|hyperpage}{443}
+\indexentry{longitud|hyperpage}{443}
+\indexentry{electró-volt|hyperpage}{443}
+\indexentry{unitats!de massa atomica unificada@de massa atòmica unificada|hyperpage}{443}
+\indexentry{dalton|hyperpage}{443}
+\indexentry{eV|hyperpage}{443}
+\indexentry{u|hyperpage}{443}
+\indexentry{Da|hyperpage}{443}
+\indexentry{energia|hyperpage}{443}
+\indexentry{massa|hyperpage}{443}
+\indexentry{Np|hyperpage}{443}
+\indexentry{B|hyperpage}{443}
+\indexentry{dB|hyperpage}{443}
+\indexentry{neper|hyperpage}{443}
+\indexentry{bel|hyperpage}{443}
+\indexentry{decibel|hyperpage}{443}
+\indexentry{NIST|hyperpage}{444}
+\indexentry{curie|hyperpage}{444}
+\indexentry{roentgen|hyperpage}{444}
+\indexentry{rad|hyperpage}{444}
+\indexentry{rem|hyperpage}{444}
+\indexentry{Ci|hyperpage}{444}
+\indexentry{R|hyperpage}{444}
+\indexentry{activitat!d'un radionúclid|hyperpage}{444}
+\indexentry{dosi!absorbida|hyperpage}{444}
+\indexentry{dosi!equivalent|hyperpage}{444}
+\indexentry{exposició|hyperpage}{444}
+\indexentry{sistema internacional d'unitats!unitats definides en la norma CEI 80000|hyperpage}{444}
+\indexentry{CEI!80000-00@80000|hyperpage}{444}
+\indexentry{ISO!80000-00@80000|hyperpage}{444}
+\indexentry{CEI!80000-13|hyperpage}{444}
+\indexentry{bit|hyperpage}{444}
+\indexentry{byte|hyperpage}{444}
+\indexentry{B|hyperpage}{444}
+\indexentry{octet|hyperpage}{444}
+\indexentry{IEEE!1541|hyperpage}{444}
+\indexentry{kibi|hyperpage}{445}
+\indexentry{Ki|hyperpage}{445}
+\indexentry{mebi|hyperpage}{445}
+\indexentry{Mi|hyperpage}{445}
+\indexentry{gibi|hyperpage}{445}
+\indexentry{Gi|hyperpage}{445}
+\indexentry{tebi|hyperpage}{445}
+\indexentry{Ti|hyperpage}{445}
+\indexentry{pebi|hyperpage}{445}
+\indexentry{Pi|hyperpage}{445}
+\indexentry{exbi|hyperpage}{445}
+\indexentry{Ei|hyperpage}{445}
+\indexentry{zebi|hyperpage}{445}
+\indexentry{Zi|hyperpage}{445}
+\indexentry{yobi|hyperpage}{445}
+\indexentry{Yi|hyperpage}{445}
+\indexentry{robi|hyperpage}{445}
+\indexentry{Ri|hyperpage}{445}
+\indexentry{quebi|hyperpage}{445}
+\indexentry{Qi|hyperpage}{445}
+\indexentry{CEI!80000-06@80000-6|hyperpage}{445}
+\indexentry{potència!activa|hyperpage}{445}
+\indexentry{potència!reactiva|hyperpage}{445}
+\indexentry{potència!aparent|hyperpage}{445}
+\indexentry{W|hyperpage}{445}
+\indexentry{VA|hyperpage}{445}
+\indexentry{var|hyperpage}{445}
+\indexentry{voltampere|hyperpage}{445}
+\indexentry{watt|hyperpage}{445}
+\indexentry{CEI!80000-03@80000-3|hyperpage}{446}
+\indexentry{revolució|hyperpage}{446}
+\indexentry{revolució per segon|hyperpage}{446}
+\indexentry{revolució per minut|hyperpage}{446}
+\indexentry{r|hyperpage}{446}
+\indexentry{angle!pla|hyperpage}{446}
+\indexentry{velocitat!angular|hyperpage}{446}
+\indexentry{sistema internacional d'unitats!normes d'escriptura|hyperpage}{446}
+\indexentry{sistema internacional d'unitats!factors de conversió|hyperpage}{453}
+\indexentry{constants!físiques|hyperpage}{455}
+\indexentry{$\Delta\nu\ped{Cs}$|hyperpage}{455}
+\indexentry{c@$c$|hyperpage}{455}
+\indexentry{constants!de Planck|hyperpage}{455}
+\indexentry{h@$h$|hyperpage}{455}
+\indexentry{carrega@càrrega!elemental|hyperpage}{455}
+\indexentry{e@$e$|hyperpage}{455}
+\indexentry{constants!de Boltzmann|hyperpage}{455}
+\indexentry{k@$k$|hyperpage}{455}
+\indexentry{constants!d'Avogadro|hyperpage}{455}
+\indexentry{NA@$N\ped{A}$|hyperpage}{455}
+\indexentry{eficàcia lluminosa|hyperpage}{455}
+\indexentry{Kcd@$K\ped{cd}$|hyperpage}{455}
+\indexentry{massa!atòmica relativa del carboni-12|hyperpage}{455}
+\indexentry{Ar@$A\ped{r}({}^{12}\mathrm{C})$|hyperpage}{455}
+\indexentry{constants!de Planck redu\"{i}da|hyperpage}{455}
+\indexentry{h@$\hslash$|hyperpage}{455}
+\indexentry{constants!d'Stefan-Boltzmann|hyperpage}{456}
+\indexentry{$\sigma$|hyperpage}{456}
+\indexentry{constants!de Josephson|hyperpage}{456}
+\indexentry{KJ@$K\ped{J}$|hyperpage}{456}
+\indexentry{electró-volt|hyperpage}{456}
+\indexentry{eV|hyperpage}{456}
+\indexentry{atmosfera estàndard|hyperpage}{456}
+\indexentry{acceleració!de la gravetat estàndard|hyperpage}{456}
+\indexentry{gn@$g\ped{n}$|hyperpage}{456}
+\indexentry{constants!molar dels gasos|hyperpage}{456}
+\indexentry{R@$R$|hyperpage}{456}
+\indexentry{constants!de Faraday|hyperpage}{456}
+\indexentry{F@$F$|hyperpage}{456}
+\indexentry{volum molar d'un gas ideal|hyperpage}{456}
+\indexentry{Vm@$V\ped{m}$|hyperpage}{456}
+\indexentry{constants!de Loschmidt|hyperpage}{456}
+\indexentry{n0@$n_0$|hyperpage}{456}
+\indexentry{constants!de massa atòmica|hyperpage}{456}
+\indexentry{mu@$m\ped{u}$|hyperpage}{456}
+\indexentry{constants!de massa molar|hyperpage}{456}
+\indexentry{Mu@$M\ped{u}$|hyperpage}{456}
+\indexentry{massa!molar del carboni-12|hyperpage}{456}
+\indexentry{M@$M({}^{12}\mathrm{C})$|hyperpage}{456}
+\indexentry{constants!gravitacional de Newton|hyperpage}{456}
+\indexentry{G@$G$|hyperpage}{456}
+\indexentry{constants!de l'estructura fina|hyperpage}{456}
+\indexentry{$\alpha$|hyperpage}{456}
+\indexentry{permeabilitat!del buit|hyperpage}{456}
+\indexentry{$\mu_0$|hyperpage}{456}
+\indexentry{permitivitat!del buit|hyperpage}{456}
+\indexentry{$\epsilon_0$|hyperpage}{456}
+\indexentry{impedància característica del buit|hyperpage}{457}
+\indexentry{Z0@$Z_0$|hyperpage}{457}
+\indexentry{massa!de l'electró|hyperpage}{457}
+\indexentry{me@$m\ped{e}$|hyperpage}{457}
+\indexentry{massa!del protó|hyperpage}{457}
+\indexentry{mp@$m\ped{p}$|hyperpage}{457}
+\indexentry{massa!del neutró|hyperpage}{457}
+\indexentry{mn@$m\ped{n}$|hyperpage}{457}
+\indexentry{massa!del deuteri|hyperpage}{457}
+\indexentry{md@$m\ped{d}$|hyperpage}{457}
+\indexentry{massa!del triti|hyperpage}{457}
+\indexentry{md@$m\ped{t}$|hyperpage}{457}
+\indexentry{massa!de la partícula $\alpha$|hyperpage}{457}
+\indexentry{ma@$m_\alpha$|hyperpage}{457}
+\indexentry{radi de Bohr|hyperpage}{457}
+\indexentry{a0@$a_0$|hyperpage}{457}
+\indexentry{radi clàssic de l'electró|hyperpage}{457}
+\indexentry{re@$r\ped{e}$|hyperpage}{457}
+\indexentry{longitud!d'ona Compton reduïda|hyperpage}{457}
+\indexentry{$\lambdabar\ped{C}$|hyperpage}{457}
+\indexentry{massa!de Planck|hyperpage}{457}
+\indexentry{mp/P@$m\ped{P}$|hyperpage}{457}
+\indexentry{temperatura de Planck|hyperpage}{457}
+\indexentry{TP@$T\ped{P}$|hyperpage}{457}
+\indexentry{longitud!de Planck|hyperpage}{457}
+\indexentry{lP@$l\ped{P}$|hyperpage}{457}
+\indexentry{temps de Planck|hyperpage}{457}
+\indexentry{tP@$t\ped{P}$|hyperpage}{457}
+\indexentry{CODATA|hyperpage}{458}
+\indexentry{NIST|hyperpage}{458}
+\indexentry{error!absolut|hyperpage}{458}
+\indexentry{error!relatiu|hyperpage}{458}
+\indexentry{trigonometria|hyperpage}{459}
+\indexentry{funcions!trigonomètriques|hyperpage}{459}
+\indexentry{sin|hyperpage}{459}
+\indexentry{cos|hyperpage}{459}
+\indexentry{tan|hyperpage}{459}
+\indexentry{csc|hyperpage}{459}
+\indexentry{sec|hyperpage}{459}
+\indexentry{cot|hyperpage}{459}
+\indexentry{formula@fórmula!d'Heró|hyperpage}{463}
+\indexentry{area@àrea|hyperpage}{463}
+\indexentry{A@$\mathscr{A}$|hyperpage}{463}
+\indexentry{llei!dels sinus|hyperpage}{464}
+\indexentry{llei!dels cosinus|hyperpage}{464}
+\indexentry{llei!de les tangents|hyperpage}{464}
+\indexentry{llei!de les cotangents|hyperpage}{464}
+\indexentry{formula@fórmula!de Mollweide|hyperpage}{464}
+\indexentry{baricentre|hyperpage}{465}
+\indexentry{funcions!hiperbòliques|hyperpage}{465}
+\indexentry{sinh|hyperpage}{465}
+\indexentry{cosh|hyperpage}{465}
+\indexentry{tanh|hyperpage}{465}
+\indexentry{csch|hyperpage}{465}
+\indexentry{sech|hyperpage}{465}
+\indexentry{coth|hyperpage}{465}
+\indexentry{sin|hyperpage}{467}
+\indexentry{csc|hyperpage}{467}
+\indexentry{cos|hyperpage}{468}
+\indexentry{sec|hyperpage}{468}
+\indexentry{tan|hyperpage}{469}
+\indexentry{cot|hyperpage}{469}
+\indexentry{sinh|hyperpage}{470}
+\indexentry{csch|hyperpage}{470}
+\indexentry{cosh|hyperpage}{471}
+\indexentry{sech|hyperpage}{471}
+\indexentry{tanh|hyperpage}{472}
+\indexentry{coth|hyperpage}{472}
+\indexentry{calcul numèric@càlcul numèric|hyperpage}{473}
+\indexentry{interpolació|hyperpage}{473}
+\indexentry{polinomis de Lagrange|hyperpage}{473}
+\indexentry{interpolació!lineal|hyperpage}{473}
+\indexentry{interpolació!quadràtica|hyperpage}{473}
+\indexentry{interpolació!cúbica|hyperpage}{473}
+\indexentry{integració|hyperpage}{475}
+\indexentry{integració!regla dels trapezis|hyperpage}{476}
+\indexentry{integració!regla de Simpson 1/3|hyperpage}{476}
+\indexentry{integració!regla de Simpson 3/8|hyperpage}{477}
+\indexentry{equacions!no lineals|hyperpage}{478}
+\indexentry{equacions!no lineals!mètode de Newton|hyperpage}{479}
+\indexentry{equacions!no lineals!mètode la recta secant|hyperpage}{480}
+\indexentry{equacions!sistemes no lineals|hyperpage}{482}
+\indexentry{HP Prime@\textsf{HP Prime}|hyperpage}{485}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions|hyperpage}{485}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!ZSeries@\texttt{Z\_Series}|hyperpage}{486}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!ZParallel@\texttt{Z\_Parallel}|hyperpage}{486}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!Millman@\texttt{Millman}|hyperpage}{486}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!DtoY@\texttt{D\_to\_Y}|hyperpage}{486}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!YtoD@\texttt{Y\_to\_D}|hyperpage}{487}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!EZSU@\texttt{EZS\_U}|hyperpage}{487}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!kcmiltomm@\texttt{kcmil\_to\_mm2}|hyperpage}{487}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!mmtokcmil@\texttt{mm2\_to\_kcmil}|hyperpage}{487}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!awgtomm@\texttt{AWG\_to\_mm2}|hyperpage}{488}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!mmtoawg@\texttt{mm2\_to\_AWG}|hyperpage}{488}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!TriangletoPhasors@\texttt{Triangle\_to\_Phasors}|hyperpage}{488}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!LNtoLL@\texttt{LN\_to\_LL}|hyperpage}{488}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!LLtoLN@\texttt{LL\_to\_LN}|hyperpage}{489}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!LLtoLG@\texttt{LL\_to\_LG}|hyperpage}{489}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!ABCtoA012@\texttt{ABC\_to\_A012}|hyperpage}{489}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!A012toABC@\texttt{A012\_to\_ABC}|hyperpage}{489}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!AN12toAB12@\texttt{AN12\_to\_AB12}|hyperpage}{489}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!AB12toAN12@\texttt{AB12\_to\_AN12}|hyperpage}{490}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!PolynomialInterpolation@\texttt{Polynomial\_Interpolation}|hyperpage}{490}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!PolynomialInterpolation2D@\texttt{Polynomial\_Interpolation\_2D}|hyperpage}{490}
+\indexentry{HP Prime@\textsf{HP Prime}!funcions!TrapezoidalRule@\texttt{Trapezoidal\_Rule}|hyperpage}{491}

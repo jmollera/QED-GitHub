@@ -34,14 +34,43 @@
 \renewcommand{\labelitemi}{\faCaretRight}  % Símbol pels items de 1r nivell
 \renewcommand{\labelitemii}{\faAngleRight} % Símbol pels items de 2n nivell
 
+\usepackage{tocloft}
+\renewcommand{\cftdot}{}  % Elimina els punts .....
+\cftsetindents{section}{1.5em}{2.8em}
+\cftsetindents{subsection}{4.3em}{3.6em}
+\makeatletter % alineació a la dreta del números romans de pàgina a l'Índex
+\patchcmd{\cftsecfillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\patchcmd{\cftsubsecfillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\patchcmd{\cftsubsubsecfillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\patchcmd{\cftparafillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\patchcmd{\cftsubparafillnum}
+{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
+\makeatother
+\newcommand{\listexamplename}{\sffamily Índex d'Exemples} % Índex d'exemples
+\newlistof[chapter]{addcontentsxms}{xms}{\listexamplename}
+\setlength{\cftaddcontentsxmsnumwidth}{2.8em}
+\setlength{\cftaddcontentsxmsindent}{1.5em}
+\newcommand{\addcontentsxms}[1]
+{%
+	\refstepcounter{addcontentsxms}
+	\addcontentsline{xms}{addcontentsxms}
+	{\protect\numberline{\theaddcontentsxms}#1}\par
+}
+
 \usepackage{listings} % Llistats de programes
 \makeatletter
-\AtBeginDocument{% Canvia l'amplada del camp numèric del l'index de llistats a 3em
-	\renewcommand\lstlistoflistings{\bgroup
-		\let\contentsname\lstlistlistingname
-		\def\l@lstlisting##1##2{\@dottedtocline{1}{1.5em}{3em}{##1}{##2}}
-		\let\lst@temp\@starttoc \def\@starttoc##1{\lst@temp{lol}}%
-		\tableofcontents \egroup}
+% Canvia l'amplada del camp numèric del l'index de llistats a 3em
+\AtBeginDocument{
+\renewcommand\lstlistoflistings{\bgroup
+\let\contentsname\lstlistlistingname
+\def\l@lstlisting##1##2{\@dottedtocline{1}{1.5em}{3em}{##1}{##2}}
+\let\lst@temp\@starttoc \def\@starttoc##1{\lst@temp{lol}}%
+\tableofcontents \egroup}
+\renewcommand{\@dotsep}{10000} % Elimina els punts .....
 }
 \makeatother
 \renewcommand{\lstlistingname}{Llistat}
@@ -145,32 +174,6 @@
 \captionsetup{hypcap=false,labelsep=quad,skip=10pt,format=hang,font={sf,bf,color={NavyBlue}}}
 \captionsetup[table]{position=above}
 \captionsetup[figure]{position=below}
-
-\usepackage{tocloft} 
-\cftsetindents{section}{1.5em}{2.8em}
-\cftsetindents{subsection}{4.3em}{3.6em}
-\makeatletter % alineació a la dreta del números romans de pàgina a l'Índex
-\patchcmd{\cftsecfillnum}
-{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
-\patchcmd{\cftsubsecfillnum}
-{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
-\patchcmd{\cftsubsubsecfillnum}
-{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
-\patchcmd{\cftparafillnum}
-{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
-\patchcmd{\cftsubparafillnum}
-{\makebox[\@pnumwidth][\cftpnumalign]}{}{}{}
-\makeatother
-\newcommand{\listexamplename}{\sffamily Índex d'Exemples} % Índex d'exemples
-\newlistof[chapter]{addcontentsxms}{xms}{\listexamplename}
-\setlength{\cftaddcontentsxmsnumwidth}{2.8em}
-\setlength{\cftaddcontentsxmsindent}{1.5em}
-\newcommand{\addcontentsxms}[1]
-{%
-	\refstepcounter{addcontentsxms}
-	\addcontentsline{xms}{addcontentsxms}
-	{\protect\numberline{\theaddcontentsxms}#1}\par
-}
 
 \usepackage{transparent} % Necessari pels fitxers TeX generats per Inkscape
 
@@ -313,7 +316,7 @@
 \renewcommand{\thefootnote}{\color{blue}(\arabic{footnote})}
 
 \usepackage[makeindex]{imakeidx}
-\makeindex[intoc, columnseprule, options=-s jmb]
+\makeindex[intoc, options=-s jmb_v1]
 
 \usepackage[final, pdftex,
 bookmarks=true, bookmarksopenlevel=0, bookmarksopen=true,  bookmarksnumbered=true, 

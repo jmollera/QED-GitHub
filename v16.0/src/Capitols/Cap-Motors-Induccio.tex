@@ -627,7 +627,7 @@ Com la resta de corrents, aquest valor correspon al valor eficaç simètric del 
 \end{align}
 \end{subequations}
 
-on $R\ped{mot,arr}$ i $X\ped{mot,arr}$ són la part real i imaginària respectivament de $\cmplx{Z}\ped{mot,arr}$. El valor màxim que pot tenir  $\kappa$ és 2;  per tant, el màxim valor possible que pot assolir del corrent asimètric de pic val:
+On $R\ped{mot,arr}$ i $X\ped{mot,arr}$ són la part real i imaginària respectivament de $\cmplx{Z}\ped{mot,arr}$. El valor màxim que pot tenir  $\kappa$ és 2;  per tant, el màxim valor possible que pot assolir del corrent asimètric de pic val:
 \begin{equation}
 	\hat{I}\ped{1,arr,asim,\text{màx}} =  2\sqrt{2} I\ped{1,arr} \approx 2{,}83 I\ped{1,arr} 
 \end{equation}
@@ -795,8 +795,8 @@ Per trobar el valor  $T\ped{m,\text{màx}}$ només cal substituir el valor de $s
  Trobem a continuació les equacions de $\cmplx{Z}\ped{mot}$ i $I_1$ en funció de $s$, utilitzant les equacions \eqref{eq:mot-Zmot} i \eqref{eq:mot-I1} respectivament:
     \begin{align*}
 		\cmplx{Z}\ped{mot}(s) &= \complexqty{0,5+j1,5}{\ohm} + \frac{\complexqty{4,390+j39,512}{\ohm}\,\times\,
-	      \left(\tfrac{\qty{0,625}{\ohm}}{s}\, + \, \complexqty{j1,25}{\ohm}\right)}{\complexqty{4,390+j39,512}{\ohm}\,+\,
-	   \tfrac{\qty{0,625}{\ohm}}{s}\, + \,\complexqty{j1,25}{\ohm}} \\[0.5ex]
+	      \left(\dfrac{\qty{0,625}{\ohm}}{s}\, + \, \complexqty{j1,25}{\ohm}\right)}{\complexqty{4,390+j39,512}{\ohm}\,+\,
+	   \dfrac{\qty{0,625}{\ohm}}{s}\, + \,\complexqty{j1,25}{\ohm}} \\[0.5ex]
    		I_1(s)  &= \frac{\qty{219,393}{V}}{|\cmplx{Z}\ped{mot}(s)|}  
 	\end{align*} 
  
@@ -808,7 +808,7 @@ Per trobar el valor  $T\ped{m,\text{màx}}$ només cal substituir el valor de $s
     
     Trobem a continuació l'expressió de $I_2$ en funció de $s$, utilitzant l'equació \eqref{eq-mot-I2}:
     \[
-        I_2(s) = \frac{\qty{211,174}{V}}{\left| \complexqty{0,470+j1,448}{\ohm} + \frac{\qty{0,625}{\ohm}}{s} + \complexqty{j1,25}{\ohm} \right|}
+        I_2(s) = \frac{\qty{211,174}{V}}{\left| \complexqty{0,470+j1,448}{\ohm} + \dfrac{\qty{0,625}{\ohm}}{s} + \complexqty{j1,25}{\ohm} \right|}
     \]
 
     Utilitzant aquesta expressió de $I_2(s)$ trobem a continuació les expressions de $P\ped{m}$ i $T\ped{m}$ en funció de $s$, utilitzant les equacions \eqref{eq:Pm-I2-U1} i \eqref{eq:Tm-Prot-ws}:
@@ -1177,7 +1177,7 @@ No és  usual disposar per a una càrrega ---bomba, ventilador, etc.---   de l'e
 	T\ped{load}(v) = a_0 + a_1 v + a_2 v^2
 \end{equation}
 
-on $v$ pot ser directament la velocitat $n\ped{m}$ (en general expressada en r/min),  la relació entre la velocitat i la velocitat síncrona del motor $n\ped{m}/n\ped{m,sinc}$ o la relació entre la velocitat i la velocitat nominal de la càrrega $n\ped{m}/n\ped{m,n}$, la qual no serà en general igual a la velocitat síncrona del motor. Per  tenir l'expressió del parell en funció del lliscament,  continuant amb l'exemple de relació quadràtica, haurem d'utilitzar les transformacions següents:
+On $v$ pot ser directament la velocitat $n\ped{m}$ (en general expressada en r/min),  la relació entre la velocitat i la velocitat síncrona del motor $n\ped{m}/n\ped{m,sinc}$ o la relació entre la velocitat i la velocitat nominal de la càrrega $n\ped{m}/n\ped{m,n}$, la qual no serà en general igual a la velocitat síncrona del motor. Per  tenir l'expressió del parell en funció del lliscament,  continuant amb l'exemple de relació quadràtica, haurem d'utilitzar les transformacions següents:
 \begin{equation}\label{eq:Tload-v-s}
 	T\ped{load}(s) = \begin{cases}
 		 a_0 + a_1 n\ped{m,sinc}(1-s) + a_2 \big(n\ped{m,sinc}(1-s)\big)^2,  & \text{si: } v=n\ped{m}  \\[2ex]
@@ -1379,8 +1379,8 @@ La resta d'equacions que s'han desenvolupat en les seccions anteriors encara só
 	L'equació de $\cmplx{Z}\ped{mot}(s)$ també és la mateixa que s'ha calculat en l'exemple  \ref{ex:CaractMotor}, ja que només depèn dels paràmetres del motor:
 	\[
 		\cmplx{Z}\ped{mot}(s) = \complexqty{0,5+j1,5}{\ohm} + \frac{\complexqty{4,390+j39,512}{\ohm}\,\times\,
-		\left(\tfrac{\qty{0,625}{\ohm}}{s}\, + \, \complexqty{j1,25}{\ohm}\right)}{\complexqty{4,390+j39,512}{\ohm}\,+\,
-		\tfrac{\qty{0,625}{\ohm}}{s}\, + \,\complexqty{j1,25}{\ohm}}  
+		\left(\dfrac{\qty{0,625}{\ohm}}{s}\, + \, \complexqty{j1,25}{\ohm}\right)}{\complexqty{4,390+j39,512}{\ohm}\,+\,
+		\dfrac{\qty{0,625}{\ohm}}{s}\, + \,\complexqty{j1,25}{\ohm}}
 	\] 
 	
 	En canvi, la tensió aplicada al motor $\cmplx{U}_1$ passa a dependre del lliscament segons l'equació \eqref{eq:mot-U-redu}:
@@ -1517,7 +1517,7 @@ Un motor aturat no podrà arrencar amb només dues fases, ja que tal com es pot 
 
 	Calculem els corrents de seqüència, utilitzant les equacions \eqref{eq:I-op-1}, \eqref{eq:I-op-2} i \eqref{eq:I-op-0}, amb $s = s\ped{n}$:
 	\begin{align*}
-		\cmplx{I}_{1,1} &= \frac{\complexqty{219,393:0}{V}}{2\times \left(\qty{0,5}{\ohm} + \frac{\qty{0,625}{\ohm}}{\num{0,05}\times(2-\num{0,05})} + j (\qty{1,5}{\ohm}+\qty{1,25}{\ohm}) \right)} = \complexqty{14,7:-21,70}{A} \\[1.5ex]
+		\cmplx{I}_{1,1} &= \frac{\complexqty{219,393:0}{V}}{2\times \left(\qty{0,5}{\ohm} + \dfrac{\qty{0,625}{\ohm}}{\num{0,05}\times(2-\num{0,05})} + j (\qty{1,5}{\ohm}+\qty{1,25}{\ohm}) \right)} = \complexqty{14,7:-21,70}{A} \\[1.5ex]
 		\cmplx{I}_{1,2}  &=  \complexqty{14,7:158,30}{A} \\[1.5ex]
 		\cmplx{I}_{1,0}  &= \qty{0}{A}
 	\end{align*}

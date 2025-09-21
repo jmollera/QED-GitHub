@@ -9,7 +9,7 @@ import cmath
 
 class Complex(complex):
     """
-    Handles polar complex numbers in degrees or radians.
+    Handle polar complex numbers in degrees or radians.
 
     >>> z = Complex(4, 45)  # same as Complex(4, 45, in_rad=False)
     >>> z.mod
@@ -54,11 +54,11 @@ class Complex(complex):
 
         Parameters
         ----------
-        args:          One value compatible with complex (int|float|complex|str),
-                       or two values: module (positive) and argument compatible
-                       with float (int|float|str).
-        in_rad:        True -> argument in radians, False -> argument in degrees.
-                       The default value is False (i.e., argument in degrees).
+        args:   One value compatible with complex (int|float|complex|str),
+                or two values: module (positive) and argument compatible
+                with float (int|float|str).
+        in_rad: True -> argument in radians, False -> argument in degrees.
+                The default value is False (i.e., argument in degrees).
         """
         try:
             match args:
@@ -124,7 +124,7 @@ class Complex(complex):
 
 class ComplexR(Complex):
     """
-    Handles polar complex numbers in radians.
+    Handle polar complex numbers in radians.
     Subclass of Complex where in_rad is always True.
 
     >>> z = ComplexR(4, 1.5)
@@ -153,13 +153,13 @@ class ComplexR(Complex):
         super().__init__(*args, in_rad=True)
 
     def __repr__(self) -> str:
-        """Overwrite the parent function."""
+        """Overwrite the parent function so that not to include in_rad=True."""
         return f'{type(self).__name__}({self.mod!r}, {self.arg!r})'
 
 
 class ComplexD(Complex):
     """
-    Handles polar complex numbers in degrees.
+    Handle polar complex numbers in degrees.
     Subclass of Complex where in_rad is always False.
 
     >>> z = ComplexD(4, 45)
@@ -188,7 +188,7 @@ class ComplexD(Complex):
         super().__init__(*args, in_rad=False)
 
     def __repr__(self) -> str:
-        """Overwrite the parent function"""
+        """Overwrite the parent function so that not to include in_rad=False."""
         return f'{type(self).__name__}({self.mod!r}, {self.arg!r})'
 
 

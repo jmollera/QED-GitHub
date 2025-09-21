@@ -527,7 +527,7 @@ En la figura \vref{pic:val-mitja} es representa una funció periòdica qualsevol
 \end{center}
 
 Les funcions periòdiques poden  definir-se en funció de l'angle $\alpha$, en lloc del temps $t$; es compleixen les relacions:
-$\alpha=\omega t$, $\alpha_0=\omega t_0$, i $\diff\alpha=\omega\diff t$, on $\alpha$ està expressat  en radian.
+$\alpha=\omega t$, $\alpha_0=\omega t_0$, i $\diff\alpha=\omega\diff t$, on $\alpha$ està expressat  en radians.
 
 \subsection{Valor mitjà}\index{valor mitjà}
 
@@ -777,7 +777,7 @@ Quan les tensions i corrents són funcions sinusoidals i les expressem usant la 
   i(t) &= \sqrt{2} I \cos(\omega t + \beta)
 \end{align}
 
-on $U$ i $I$ són respectivament els valors eficaços de $u(t)$ i $i(t)$. Utilitzant aquestes expressions tenim:
+On $U$ i $I$ són respectivament els valors eficaços de $u(t)$ i $i(t)$. Utilitzant aquestes expressions tenim:
 \begin{equation}
    p(t) = 2 U I \cos(\omega t + \alpha) \cos(\omega t + \beta) \label{eq:p-instantania}
 \end{equation}
@@ -820,7 +820,7 @@ eficaços $U$ i $I$ s'anomena potència aparent $S$. Així doncs, tenim:
   Q &= U I \sin\varphi = S \sin\varphi
 \end{align}
 
-Finalment, insertant $P$ i $S$ en l'equació \eqref{eq:p-instantania-1},  tenim:
+Finalment, inserint $P$ i $S$ en l'equació \eqref{eq:p-instantania-1},  tenim:
 \begin{equation}
 	p(t) = P + S \,\cos(2 \omega t + \alpha +  \beta)
 \end{equation}
@@ -1475,7 +1475,7 @@ Resolent aquesta equació diferencial amb el valor inicial $i(0)=0$, trobem que 
     \label{eq:RL_serie_curtcircuit_icc}
 \end{equation}
 
-amb:
+Amb:
 \begin{subequations}
 \begin{align}
     i\ped{ac}(t) &= \sqrt{2} I \sin\left(\omega t + \phi - \arctan\frac{\omega L}{R}\right) \label{eq:RL_serie_curtcircuit_iac}\\[3mm]
@@ -1483,7 +1483,7 @@ amb:
 \end{align}
 \end{subequations}
 
-on $I$ és el valor eficaç de $i\ped{ac}(t)$; aquest valor també s'anomena valor eficaç simètric $I\ped{sim}$, i val:
+On $I$ és el valor eficaç de $i\ped{ac}(t)$; aquest valor també s'anomena valor eficaç simètric $I\ped{sim}$, i val:
 \begin{equation}
     I = I\ped{sim} =\frac{U}{\sqrt{R^2+(\omega L)^2}}
     \label{eq:RL_serie_curtcircuit_I}
@@ -1556,7 +1556,7 @@ Tal com s'ha dit anteriorment, el valor de $\hat{I}\ped{asim}$ donat per l'equac
     \hat{I}\ped{asim} = \kappa \sqrt{2} I\ped{sim} \label{eq:I_asim_CEI}
 \end{equation}
 
-on el factor $\kappa$ és definit per l'expressió:
+On el factor $\kappa$ és definit per l'expressió:
 
 \begin{equation}
     \kappa = 1{,}02 + 0{,}98 \,e^{-3\frac{R}{\omega L}}\label{eq:kappa_CEI}
@@ -1685,7 +1685,7 @@ Agrupant termes ens queda:
 \end{align}
 \end{subequations}
 
-o en forma matricial:
+O en forma matricial:
 \begin{equation}\label{eq:malles-mat}
   \begin{bmatrix}\begin{array}{ccc} 
       \cmplx{Z}_1 + \cmplx{Z}_3 & -\cmplx{Z}_3 & 0 \\
@@ -1713,7 +1713,7 @@ L'equació \eqref{eq:malles-mat} es pot escriure de forma matricial com:
   \mcmplx{Z} \cdot\mcmplx{I}\ped{M} = \mcmplx{E}
 \end{equation}
 
-on  $\mcmplx{Z}$ és la matriu d'impedàncies, $\mcmplx{E}$ és el vector de fonts de tensió, i $\mcmplx{I}\ped{M}$ és el vector de les intensitats de malla.
+On  $\mcmplx{Z}$ és la matriu d'impedàncies, $\mcmplx{E}$ és el vector de fonts de tensió, i $\mcmplx{I}\ped{M}$ és el vector de les intensitats de malla.
 
  Quan no hi ha acoblaments magnètics entre branques, la matriu d'impedàncies $\mcmplx{Z}$ i el vector de fonts de tensió $\mcmplx{E}$ poden formar-se de manera directa seguint els passos següents:
 \begin{dingautolist}{202}

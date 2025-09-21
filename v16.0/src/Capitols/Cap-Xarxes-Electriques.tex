@@ -145,25 +145,25 @@ En primer lloc, a partir dels valors dels components de la xarxa, formem les mat
       \end{array}\end{bmatrix}\unit{\ohm}
    \]
 
-   \item[$\mcmplx{E}\ped{B}^\bullet\{b\}$] \index{vector!de forces electromotrius $\mcmplx{E}\ped{B}^\bullet$} Vector columna de forces electromotrius de branca. Els elements d'aquest vector estan formats per les forces electromotrius de les fonts de tensió de les respectives branques.
+   \item[$\mcmplx{E}\ped{B}^\circ\{b\}$] \index{vector!de forces electromotrius $\mcmplx{E}\ped{B}^\circ$} Vector columna de forces electromotrius de branca. Els elements d'aquest vector estan formats per les forces electromotrius de les fonts de tensió de les respectives branques.
 
 El signe de cada força electromotriu és positiu si el seu sentit coincideix amb el sentit de la fletxa de la branca corresponent del graf orientat, i negatiu en cas contrari.
 
    En el nostre exemple tenim:
    \[
-      \mcmplx{E}\ped{B}^\bullet = 
+      \mcmplx{E}\ped{B}^\circ = 
       \begin{bmatrix}\begin{array}{c}  
       	\complexnum{200:0} \\ -(\complexnum{50:0}) \\ 0 \\ 0 \\ 0 
       \end{array}\end{bmatrix}\unit{V}
    \]
 
-\item[$\mcmplx{J}\ped{B}^\bullet\{b\}$] \index{vector!d'intensivitats de branca $\mcmplx{J}\ped{B}^\bullet$}Vector columna d'intensivitats de branca. Els elements d'aquest vector estan formats per les intensivitats de les fonts de corrent de les respectives branques.
+\item[$\mcmplx{J}\ped{B}^\circ\{b\}$] \index{vector!d'intensivitats de branca $\mcmplx{J}\ped{B}^\circ$}Vector columna d'intensivitats de branca. Els elements d'aquest vector estan formats per les intensivitats de les fonts de corrent de les respectives branques.
 
 El signe de cada intensivitat és positiu si el seu sentit coincideix amb el sentit de la fletxa de la branca corresponent del graf orientat, i negatiu en cas contrari.
 
    En el nostre exemple tenim:
    \[
-      \mcmplx{J}\ped{B}^\bullet = 
+      \mcmplx{J}\ped{B}^\circ = 
       \begin{bmatrix}\begin{array}{c}  
       	0 \\ 0 \\ 0 \\ 0 \\ \complexnum{4:0} 
       \end{array}\end{bmatrix}\unit{A}
@@ -204,7 +204,7 @@ matrius i vectors són (se'n donen les dimensions entre claus):
 
    \item[$\mcmplx{J}\ped{B}\{b\}$] \index{vector!d'intensivitats equivalents de branca $\mcmplx{J}\ped{B}$}Vector columna d'intensivitats  equivalents de branca. És definit per la relació següent:
    \begin{equation}
-      \mcmplx{J}\ped{B} = \mcmplx{J}\ped{B}^\bullet  + \mcmplx{Y}\ped{B} \cdot\mcmplx{E}\ped{B}^\bullet
+      \mcmplx{J}\ped{B} = \mcmplx{J}\ped{B}^\circ  + \mcmplx{Y}\ped{B} \cdot\mcmplx{E}\ped{B}^\circ
    \end{equation}
 
    En el nostre exemple tenim:
@@ -389,7 +389,7 @@ Es fa un resum, per acabar, dels passos a seguir per resoldre una
 xarxa elèctrica mitjançant el mètode dels nusos:
 \begin{dingautolist}{202}
    \item Es representa el graf orientat associat a la xarxa, i es numeren tots els seus nusos i totes les seves branques.
-   \item A partir del graf orientat i dels elements de la xarxa, es formen les matrius $\boldsymbol{A}$ i $\mcmplx{Z}\ped{B}$, i els vectors $\mcmplx{E}\ped{B}^\bullet$ i $\mcmplx{J}\ped{B}^\bullet$.
+   \item A partir del graf orientat i dels elements de la xarxa, es formen les matrius $\boldsymbol{A}$ i $\mcmplx{Z}\ped{B}$, i els vectors $\mcmplx{E}\ped{B}^\circ$ i $\mcmplx{J}\ped{B}^\circ$.
    \item Es calculen les matrius $\mcmplx{Y}\ped{B}$ i $\mcmplx{Y}\ped{N}$, i els vectors $\mcmplx{J}\ped{B}$,  $\mcmplx{J}\ped{N}$ i $\mcmplx{V}\ped{N}$.
    \item Finalment s'obtenen els vectors  $\mcmplx{U}\ped{B}$ i $\mcmplx{I}\ped{B}$.
 \end{dingautolist}
@@ -432,7 +432,7 @@ xarxa elèctrica mitjançant el mètode dels nusos:
        \end{array}\end{bmatrix}
     \]
 
-    Formem a continuació la matriu $\mcmplx{Z}\ped{B}$ i els vectors $\mcmplx{J}\ped{B}^\bullet$ i $\mcmplx{E}\ped{B}^\bullet$ (tots els valors en tant per u):
+    Formem a continuació la matriu $\mcmplx{Z}\ped{B}$ i els vectors $\mcmplx{J}\ped{B}^\circ$ i $\mcmplx{E}\ped{B}^\circ$ (tots els valors en tant per u):
 
     \[
        \mcmplx{Z}\ped{B} =
@@ -449,7 +449,7 @@ xarxa elèctrica mitjançant el mètode dels nusos:
     \]
 
     \[
-       \mcmplx{J}\ped{B}^\bullet =
+       \mcmplx{J}\ped{B}^\circ =
        \begin{bmatrix}\begin{array}{c}
         0 \\
         0 \\
@@ -461,7 +461,7 @@ xarxa elèctrica mitjançant el mètode dels nusos:
         \complexnum{2 - j 0,9}
        \end{array}\end{bmatrix}
        \qquad \qquad
-       \mcmplx{E}\ped{B}^\bullet =
+       \mcmplx{E}\ped{B}^\circ =
        \begin{bmatrix}\begin{array}{c}
         \num{1,1} \\
         \complexnum{1,05 + j 0,10} \\
@@ -474,7 +474,7 @@ xarxa elèctrica mitjançant el mètode dels nusos:
       \end{array}\end{bmatrix}
     \]
 
-    Calculem ara la matriu $\mcmplx{Y}\ped{B}=\mcmplx{Z}\ped{B}^{-1}$ i el vector $\mcmplx{J}\ped{B} = \mcmplx{J}\ped{B}^\bullet + \mcmplx{Y}\ped{B} \cdot\mcmplx{E}\ped{B}^\bullet$  (tots els valors en tant per u):
+    Calculem ara la matriu $\mcmplx{Y}\ped{B}=\mcmplx{Z}\ped{B}^{-1}$ i el vector $\mcmplx{J}\ped{B} = \mcmplx{J}\ped{B}^\circ + \mcmplx{Y}\ped{B} \cdot\mcmplx{E}\ped{B}^\circ$  (tots els valors en tant per u):
 
     \[
        \mcmplx{Y}\ped{B} =
