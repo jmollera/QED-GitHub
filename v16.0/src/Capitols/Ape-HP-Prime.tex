@@ -30,19 +30,19 @@ Tal com s'ha dit en el prefaci, totes les versions d'aquest llibre es troben a:
 	
 \section{Electrotècnia}\label{sec:HP_ELC}
 
-La funció \texttt{Z\_Series} utilitza l'equació \eqref{eq:z_serie} per obtenir la impedància sèrie d'una llista d'impedàncies $\cmplx{Z}_1, \cmplx{Z}_2, ...$; les impedàncies poden ser indistintament reals o complexes.
+La funció \texttt{Z\_Series} utilitza l'equació \eqref{eq:z_serie} per obtenir la impedància sèrie d'una llista d'impedàncies $\cmplx{Z}_1, \cmplx{Z}_2, \ldots$; les impedàncies poden ser indistintament reals o complexes.
 
 \index{HP Prime@\textsf{HP Prime}!funcions!ZSeries@\texttt{Z\_Series}}
 \lstinputlisting[caption={HP Prime --- Funció Z\_Series},linerange={3-7}]{HPPrime/EE_QED.hpprgm}
 
 
-La funció \texttt{Z\_Parallel} obté la impedància paraŀlel  d'una llista d'impedàncies $\cmplx{Z}_1, \cmplx{Z}_2, ...$; les impedàncies poden ser indistintament reals o complexes. S'utilitza una variant de l'equació \eqref{eq:z_parallel}, la qual dona una millor precisió numèrica.
+La funció \texttt{Z\_Parallel} obté la impedància paraŀlel  d'una llista d'impedàncies $\cmplx{Z}_1, \cmplx{Z}_2, \ldots$; les impedàncies poden ser indistintament reals o complexes. S'utilitza una variant de l'equació \eqref{eq:z_parallel}, la qual dona una millor precisió numèrica.
 
 \index{HP Prime@\textsf{HP Prime}!funcions!ZParallel@\texttt{Z\_Parallel}}
 \lstinputlisting[caption={HP Prime --- Funció Z\_Parallel},linerange={9-13}]{HPPrime/EE_QED.hpprgm}
 
 
-La funció \texttt{Millman} utilitza l'equació \eqref{eq:millman} per obtenir la tensió $\cmplx{U}\ped{NX}$ del punt neutre N d'una llista d'impedàncies connectades en estrella $\cmplx{Z}\ped{AN}, \cmplx{Z}\ped{BN}, \cmplx{Z}\ped{CN}, ...$, respecte d'un punt qualsevol X, a partir de la llista de tensions $\cmplx{U}\ped{AX}, \cmplx{U}\ped{BX}, \cmplx{U}\ped{CX}, ...$ dels extrems d'aquestes impedàncies respecte del mateix punt X; les impedàncies i les tensions poden ser indistintament reals o complexes. És necessària la funció \texttt{Z\_Parallel}, definida anteriorment.
+La funció \texttt{Millman} utilitza l'equació \eqref{eq:millman} per obtenir la tensió $\cmplx{U}\ped{NX}$ del punt neutre N d'una llista d'impedàncies connectades en estrella $\cmplx{Z}\ped{AN}, \cmplx{Z}\ped{BN}, \cmplx{Z}\ped{CN}, \ldots$, respecte d'un punt qualsevol X, a partir de la llista de tensions $\cmplx{U}\ped{AX}, \cmplx{U}\ped{BX}, \cmplx{U}\ped{CX}, \ldots$ dels extrems d'aquestes impedàncies respecte del mateix punt X; les impedàncies i les tensions poden ser indistintament reals o complexes. És necessària la funció \texttt{Z\_Parallel}, definida anteriorment.
 
 \index{HP Prime@\textsf{HP Prime}!funcions!Millman@\texttt{Millman}}
 \lstinputlisting[caption={HP Prime --- Funció Millman},linerange={15-20}]{HPPrime/EE_QED.hpprgm}
@@ -146,21 +146,21 @@ La funció \texttt{AB12\_to\_AN12} fa el càlcul invers de la funció anterior, 
 
 \section{Matemàtiques}\label{sec:HP_MATH}
 
-La funció \texttt{Polynomial\_Interpolation} obté l'ordenada interpolada $y$ corresponent a una abscissa $x$, a partir d'un conjunt  de punts $(x_1,y_1)$, $(x_2,y_2)$, ..., $(x\ped{n},y\ped{n})$. S'utilitza una interpolació polinòmica, obtenint els mateixos resultats que amb el mètode descrit en la secció \vref{sec:poli_lagr}; el grau del polinomi és igual a $n-1$.
+La funció \texttt{Polynomial\_Interpolation} obté l'ordenada interpolada $y$ corresponent a una abscissa $x$, a partir d'un conjunt  de punts $(x_1,y_1)$, $(x_2,y_2)$, \ldots, $(x\ped{n},y\ped{n})$. S'utilitza una interpolació polinòmica, obtenint els mateixos resultats que amb el mètode descrit en la secció \vref{sec:poli_lagr}; el grau del polinomi és igual a $n-1$.
 
 \index{HP Prime@\textsf{HP Prime}!funcions!PolynomialInterpolation@\texttt{Polynomial\_Interpolation}}
 \lstinputlisting[caption={HP Prime --- Funció Polynomial\_Interpolation},linerange={3-10}]{HPPrime/Math_QED.hpprgm}
 
 
-La funció \texttt{Polynomial\_Interpolation\_2D} obté el valor interpolat $z$ corresponent a un punt $(x, y)$, a partir d'un conjunt de punts $(x\ped{1}, x\ped{2}, ... x\ped{n})$, d'un conjunt de punts $(y\ped{1}, y\ped{2}, ... y\ped{m})$, i d'una matriu de valors $(z\ped{11}, z\ped{12}, ..., z\ped{1n})$,
-$(z\ped{21}, z\ped{22}, ..., z\ped{2n})$, ..., $(z\ped{m1}, z\ped{m2}, ..., z\ped{mn})$. S'utilitzen  interpolacions polinòmiques, aconseguint els mateixos resultats que amb el mètode descrit en la secció \vref{sec:poli_lagr}; el grau dels polinomis és igual a $n-1$ i $m-1$.
+La funció \texttt{Polynomial\_Interpolation\_2D} obté el valor interpolat $z$ corresponent a un punt $(x, y)$, a partir d'un conjunt de punts $(x\ped{1}, x\ped{2}, \ldots, x\ped{n})$, d'un conjunt de punts $(y\ped{1}, y\ped{2}, \ldots, y\ped{m})$, i d'una matriu de valors $(z\ped{11}, z\ped{12}, \ldots, z\ped{1n})$,
+$(z\ped{21}, z\ped{22}, \ldots, z\ped{2n})$, \ldots, $(z\ped{m1}, z\ped{m2}, \ldots, z\ped{mn})$. S'utilitzen  interpolacions polinòmiques, aconseguint els mateixos resultats que amb el mètode descrit en la secció \vref{sec:poli_lagr}; el grau dels polinomis és igual a $n-1$ i $m-1$.
 És necessària la funció \texttt{Polynomial\_Interpolation}, definida anteriorment.
 
 \index{HP Prime@\textsf{HP Prime}!funcions!PolynomialInterpolation2D@\texttt{Polynomial\_Interpolation\_2D}}
 \lstinputlisting[caption={HP Prime --- Funció Polynomial\_Interpolation\_2D},linerange={12-31}]{HPPrime/Math_QED.hpprgm}
 
 
-La funció \texttt{Trapezoidal\_Rule} utilitza l'equació  \eqref{eq:trap-uneven} per obtenir la integral entre $x_1$ i $x_n$ d'un conjunt  de punts $(x_1,y_1)$, $(x_2,y_2)$, ..., $(x\ped{n},y\ped{n})$, utilitzant la regla dels trapezis.
+La funció \texttt{Trapezoidal\_Rule} utilitza l'equació  \eqref{eq:trap-uneven} per obtenir la integral entre $x_1$ i $x_n$ d'un conjunt  de punts $(x_1,y_1)$, $(x_2,y_2)$, \ldots, $(x\ped{n},y\ped{n})$, utilitzant la regla dels trapezis.
 
 \index{HP Prime@\textsf{HP Prime}!funcions!TrapezoidalRule@\texttt{Trapezoidal\_Rule}}
 \lstinputlisting[caption={HP Prime --- Funció Trapezoidal\_Rule},linerange={33-45}]{HPPrime/Math_QED.hpprgm}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.20)  21 SEP 2025 16:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  29 SEP 2025 19:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **"./Qüestions Electrotècniques Diverses.tex"
 (Qüestions Electrotècniques Diverses.tex
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-08-13>
+L3 programming layer <2025-09-02>
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
 Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/base\bk11.clo
@@ -166,7 +166,7 @@ Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
 )
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2025-08-13 L3 programming layer (loader) 
+Package: expl3 2025-09-02 L3 programming layer (loader) 
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
@@ -3458,8 +3458,21 @@ Package mdframed Info: mdframed works in twoside mode on input line 275.
 
 [88]
 
-[89] (Imatges/Cap-Fourier-Funcio-1.pdf_tex
-<Imatges/Cap-Fourier-Funcio-1.pdf, id=4142, page=1, 173.38399pt x 53.34892pt>
+[89]
+
+LaTeX Warning: Hyper reference `:Serie-Fourier-Graf' on page 90 undefined on in
+put line 395.
+
+
+LaTeX Warning: Reference `:Serie-Fourier-Graf' on page 90 undefined on input li
+ne 395.
+
+
+LaTeX Warning: Reference `:Serie-Fourier-Graf' on page 90 undefined on input li
+ne 395.
+
+(Imatges/Cap-Fourier-Funcio-1.pdf_tex
+<Imatges/Cap-Fourier-Funcio-1.pdf, id=4141, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Fourier-Funcio-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-1.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-1.pdf , page1 used on input
@@ -3467,111 +3480,111 @@ Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-1.pdf , page1 used on input
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
 LaTeX Font Info:    Font shape `U/zeus/m/n' will be
 (Font)              scaled to size 6.2pt on input line 57.
-)
-(Imatges/Cap-Fourier-Funcio-2.pdf_tex
-<Imatges/Cap-Fourier-Funcio-2.pdf, id=4143, page=1, 173.38399pt x 72.02104pt>
+) (Imatges/Cap-Fourier-Funcio-2.pdf_tex
+<Imatges/Cap-Fourier-Funcio-2.pdf, id=4142, page=1, 173.38399pt x 72.02104pt>
 File: Imatges/Cap-Fourier-Funcio-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-2.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-2.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 173.38397pt x 72.02414pt.
-) (Imatges/Cap-Fourier-Funcio-3.pdf_tex
-<Imatges/Cap-Fourier-Funcio-3.pdf, id=4144, page=1, 173.38399pt x 53.34892pt>
+)
+(Imatges/Cap-Fourier-Funcio-3.pdf_tex
+<Imatges/Cap-Fourier-Funcio-3.pdf, id=4143, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Fourier-Funcio-3.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-3.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-3.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
-)
-(Imatges/Cap-Fourier-Funcio-4.pdf_tex
-<Imatges/Cap-Fourier-Funcio-4.pdf, id=4145, page=1, 173.38399pt x 72.02104pt>
+) (Imatges/Cap-Fourier-Funcio-4.pdf_tex
+<Imatges/Cap-Fourier-Funcio-4.pdf, id=4144, page=1, 173.38399pt x 72.02104pt>
 File: Imatges/Cap-Fourier-Funcio-4.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-4.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-4.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 173.38397pt x 72.02414pt.
-) (Imatges/Cap-Fourier-Funcio-5.pdf_tex
-<Imatges/Cap-Fourier-Funcio-5.pdf, id=4146, page=1, 173.38399pt x 72.02104pt>
+)
+(Imatges/Cap-Fourier-Funcio-5.pdf_tex
+<Imatges/Cap-Fourier-Funcio-5.pdf, id=4145, page=1, 173.38399pt x 72.02104pt>
 File: Imatges/Cap-Fourier-Funcio-5.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-5.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-5.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 173.38397pt x 72.02414pt.
-)
-(Imatges/Cap-Fourier-Funcio-6.pdf_tex
-<Imatges/Cap-Fourier-Funcio-6.pdf, id=4147, page=1, 173.38399pt x 53.34892pt>
+) (Imatges/Cap-Fourier-Funcio-6.pdf_tex
+<Imatges/Cap-Fourier-Funcio-6.pdf, id=4146, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Fourier-Funcio-6.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-6.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-6.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
-) (Imatges/Cap-Fourier-Funcio-7.pdf_tex
-<Imatges/Cap-Fourier-Funcio-7.pdf, id=4148, page=1, 173.38399pt x 53.34892pt>
+)
+(Imatges/Cap-Fourier-Funcio-7.pdf_tex
+<Imatges/Cap-Fourier-Funcio-7.pdf, id=4147, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Fourier-Funcio-7.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-7.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-7.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
-)
-(Imatges/Cap-Fourier-Funcio-8.pdf_tex
-<Imatges/Cap-Fourier-Funcio-8.pdf, id=4149, page=1, 173.38399pt x 72.02104pt>
+) (Imatges/Cap-Fourier-Funcio-8.pdf_tex
+<Imatges/Cap-Fourier-Funcio-8.pdf, id=4148, page=1, 173.38399pt x 72.02104pt>
 File: Imatges/Cap-Fourier-Funcio-8.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-8.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-8.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 173.38397pt x 72.02414pt.
-) (Imatges/Cap-Fourier-Funcio-9.pdf_tex
-<Imatges/Cap-Fourier-Funcio-9.pdf, id=4150, page=1, 173.38399pt x 53.34892pt>
+)
+(Imatges/Cap-Fourier-Funcio-9.pdf_tex
+<Imatges/Cap-Fourier-Funcio-9.pdf, id=4149, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Fourier-Funcio-9.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-9.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-9.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
-)
-(Imatges/Cap-Fourier-Funcio-10.pdf_tex
-<Imatges/Cap-Fourier-Funcio-10.pdf, id=4151, page=1, 173.38399pt x 72.02104pt>
+) (Imatges/Cap-Fourier-Funcio-10.pdf_tex
+<Imatges/Cap-Fourier-Funcio-10.pdf, id=4150, page=1, 173.38399pt x 72.02104pt>
 File: Imatges/Cap-Fourier-Funcio-10.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-10.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-10.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 173.38397pt x 72.02414pt.
-) (Imatges/Cap-Fourier-Funcio-11.pdf_tex
-<Imatges/Cap-Fourier-Funcio-11.pdf, id=4152, page=1, 173.38399pt x 53.34892pt>
+)
+(Imatges/Cap-Fourier-Funcio-11.pdf_tex
+<Imatges/Cap-Fourier-Funcio-11.pdf, id=4151, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Fourier-Funcio-11.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-11.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-11.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
 ) (Imatges/Cap-Fourier-Funcio-12.pdf_tex
-<Imatges/Cap-Fourier-Funcio-12.pdf, id=4153, page=1, 173.38399pt x 72.02104pt>
+<Imatges/Cap-Fourier-Funcio-12.pdf, id=4152, page=1, 173.38399pt x 72.02104pt>
 File: Imatges/Cap-Fourier-Funcio-12.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-12.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-12.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 173.38397pt x 72.02414pt.
 ) (Imatges/Cap-Fourier-Funcio-13.pdf_tex
-<Imatges/Cap-Fourier-Funcio-13.pdf, id=4154, page=1, 173.38399pt x 53.34892pt>
+<Imatges/Cap-Fourier-Funcio-13.pdf, id=4153, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Fourier-Funcio-13.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-13.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-13.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
 ) (Imatges/Cap-Fourier-Funcio-14.pdf_tex
-<Imatges/Cap-Fourier-Funcio-14.pdf, id=4155, page=1, 173.38399pt x 53.34892pt>
+<Imatges/Cap-Fourier-Funcio-14.pdf, id=4154, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Fourier-Funcio-14.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Funcio-14.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Fourier-Funcio-14.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
 ) [90 <./Imatges/Cap-Fourier-Funcio-1.pdf> <./Imatges/Cap-Fourier-Funcio-2.pdf>
- <./Imatges/Cap-Fourier-Funcio-3.pdf>]
-[91 <./Imatges/Cap-Fourier-Funcio-4.pdf> <./Imatges/Cap-Fourier-Funcio-5.pdf> <
-./Imatges/Cap-Fourier-Funcio-6.pdf> <./Imatges/Cap-Fourier-Funcio-7.pdf> <./Ima
-tges/Cap-Fourier-Funcio-8.pdf> <./Imatges/Cap-Fourier-Funcio-9.pdf> <./Imatges/
-Cap-Fourier-Funcio-10.pdf>]
+ <./Imatges/Cap-Fourier-Funcio-3.pdf>] [91 <./Imatges/Cap-Fourier-Funcio-4.pdf>
+ <./Imatges/Cap-Fourier-Funcio-5.pdf> <./Imatges/Cap-Fourier-Funcio-6.pdf> <./I
+matges/Cap-Fourier-Funcio-7.pdf> <./Imatges/Cap-Fourier-Funcio-8.pdf> <./Imatge
+s/Cap-Fourier-Funcio-9.pdf> <./Imatges/Cap-Fourier-Funcio-10.pdf>]
 Package mdframed Info: mdframed works in twoside mode on input line 446.
- (Imatges/Cap-Fourier-Exemple-Taula.pdf_tex
-<Imatges/Cap-Fourier-Exemple-Taula.pdf, id=4179, page=1, 146.70952pt x 80.02338
+
+(Imatges/Cap-Fourier-Exemple-Taula.pdf_tex
+<Imatges/Cap-Fourier-Exemple-Taula.pdf, id=4178, page=1, 146.70952pt x 80.02338
 pt>
 File: Imatges/Cap-Fourier-Exemple-Taula.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Exemple-Taula.pdf, page 1>
@@ -3590,7 +3603,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package mdframed Info: mdframed works in twoside mode on input line 554.
 
 (Imatges/Cap-Fourier-Exemple-Circuit.pdf_tex
-<Imatges/Cap-Fourier-Exemple-Circuit.pdf, id=4212, page=1, 373.44241pt x 104.03
+<Imatges/Cap-Fourier-Exemple-Circuit.pdf, id=4211, page=1, 373.44241pt x 104.03
 04pt>
 File: Imatges/Cap-Fourier-Exemple-Circuit.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Exemple-Circuit.pdf, page 1>
@@ -3599,7 +3612,7 @@ n input line 56.
 (pdftex.def)             Requested size: 373.44241pt x 104.03012pt.
 )
 (Imatges/Cap-Fourier-Exemple-Tensio.tex
-<Imatges/Cap-Fourier-Exemple-Tensio.pdf, id=4214, 454.69875pt x 255.95625pt>
+<Imatges/Cap-Fourier-Exemple-Tensio.pdf, id=4213, 454.69875pt x 255.95625pt>
 File: Imatges/Cap-Fourier-Exemple-Tensio.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Exemple-Tensio.pdf>
 Package pdftex.def Info: Imatges/Cap-Fourier-Exemple-Tensio.pdf  used on input 
@@ -3607,7 +3620,7 @@ line 155.
 (pdftex.def)             Requested size: 454.70456pt x 255.95561pt.
 )
 (Imatges/Cap-Fourier-Exemple-Corrent.tex
-<Imatges/Cap-Fourier-Exemple-Corrent.pdf, id=4215, 454.69875pt x 255.95625pt>
+<Imatges/Cap-Fourier-Exemple-Corrent.pdf, id=4214, 454.69875pt x 255.95625pt>
 File: Imatges/Cap-Fourier-Exemple-Corrent.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Exemple-Corrent.pdf>
 Package pdftex.def Info: Imatges/Cap-Fourier-Exemple-Corrent.pdf  used on input
@@ -3632,12 +3645,12 @@ File: Imatges/HPPrime-Apps.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Apps.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Apps.pdf  used on input line 798.
 (pdftex.def)             Requested size: 21.18163pt x 13.62018pt.
-<Imatges/Cap-Fourier-HPP1.png, id=4217, 195.129pt x 146.949pt>
+<Imatges/Cap-Fourier-HPP1.png, id=4216, 195.129pt x 146.949pt>
 File: Imatges/Cap-Fourier-HPP1.png Graphic file (type png)
 <use Imatges/Cap-Fourier-HPP1.png>
 Package pdftex.def Info: Imatges/Cap-Fourier-HPP1.png  used on input line 800.
 (pdftex.def)             Requested size: 195.12851pt x 146.94864pt.
-<Imatges/Cap-Fourier-HPP2.png, id=4218, 195.129pt x 146.949pt>
+<Imatges/Cap-Fourier-HPP2.png, id=4217, 195.129pt x 146.949pt>
 File: Imatges/Cap-Fourier-HPP2.png Graphic file (type png)
 <use Imatges/Cap-Fourier-HPP2.png>
 Package pdftex.def Info: Imatges/Cap-Fourier-HPP2.png  used on input line 804.
@@ -3646,12 +3659,12 @@ File: Imatges/HPPrime-Shift.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Shift.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Shift.pdf  used on input line 806.
 (pdftex.def)             Requested size: 21.18163pt x 13.62018pt.
-<Imatges/HPPrime-Num.pdf, id=4219, 21.18169pt x 13.62022pt>
+<Imatges/HPPrime-Num.pdf, id=4218, 21.18169pt x 13.62022pt>
 File: Imatges/HPPrime-Num.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Num.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Num.pdf  used on input line 806.
 (pdftex.def)             Requested size: 21.18163pt x 13.62018pt.
-<Imatges/Cap-Fourier-HPP3.png, id=4220, 195.129pt x 146.949pt>
+<Imatges/Cap-Fourier-HPP3.png, id=4219, 195.129pt x 146.949pt>
 File: Imatges/Cap-Fourier-HPP3.png Graphic file (type png)
 <use Imatges/Cap-Fourier-HPP3.png>
 Package pdftex.def Info: Imatges/Cap-Fourier-HPP3.png  used on input line 808.
@@ -3660,13 +3673,13 @@ File: Imatges/HPPrime-Num.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Num.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Num.pdf  used on input line 810.
 (pdftex.def)             Requested size: 21.18163pt x 13.62018pt.
-<Imatges/Cap-Fourier-HPP4.png, id=4221, 195.129pt x 146.949pt>
+<Imatges/Cap-Fourier-HPP4.png, id=4220, 195.129pt x 146.949pt>
 File: Imatges/Cap-Fourier-HPP4.png Graphic file (type png)
 <use Imatges/Cap-Fourier-HPP4.png>
 Package pdftex.def Info: Imatges/Cap-Fourier-HPP4.png  used on input line 812.
 (pdftex.def)             Requested size: 195.12851pt x 146.94864pt.
 (Imatges/Cap-Fourier-Exemple-Tensio-Corrent.tex
-<Imatges/Cap-Fourier-Exemple-Tensio-Corrent.pdf, id=4222, 454.69875pt x 226.847
+<Imatges/Cap-Fourier-Exemple-Tensio-Corrent.pdf, id=4221, 454.69875pt x 226.847
 5pt>
 File: Imatges/Cap-Fourier-Exemple-Tensio-Corrent.pdf Graphic file (type pdf)
 <use Imatges/Cap-Fourier-Exemple-Tensio-Corrent.pdf>
@@ -3675,7 +3688,7 @@ n input line 183.
 (pdftex.def)             Requested size: 454.70456pt x 226.85039pt.
 )
 (Imatges/Cap-Fourier-Exemple-Tensio-Corrent-RL.tex
-<Imatges/Cap-Fourier-Exemple-Tensio-Corrent-RL.pdf, id=4227, 454.69875pt x 226.
+<Imatges/Cap-Fourier-Exemple-Tensio-Corrent-RL.pdf, id=4226, 454.69875pt x 226.
 8475pt>
 File: Imatges/Cap-Fourier-Exemple-Tensio-Corrent-RL.pdf Graphic file (type pdf)
 
@@ -3735,7 +3748,7 @@ LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 [104]
 
 [105] [106] [107] [108] (Imatges/Cap-Laplace-Funcio-1.pdf_tex
-<Imatges/Cap-Laplace-Funcio-1.pdf, id=4367, page=1, 173.38399pt x 53.34892pt>
+<Imatges/Cap-Laplace-Funcio-1.pdf, id=4366, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Laplace-Funcio-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-1.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-1.pdf , page1 used on input
@@ -3745,14 +3758,14 @@ LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 (Font)              scaled to size 6.2pt on input line 57.
 )
 (Imatges/Cap-Laplace-Funcio-2.pdf_tex
-<Imatges/Cap-Laplace-Funcio-2.pdf, id=4368, page=1, 173.38399pt x 53.34892pt>
+<Imatges/Cap-Laplace-Funcio-2.pdf, id=4367, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Laplace-Funcio-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-2.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-2.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
 ) (Imatges/Cap-Laplace-Funcio-3.pdf_tex
-<Imatges/Cap-Laplace-Funcio-3.pdf, id=4369, page=1, 173.38399pt x 72.02104pt>
+<Imatges/Cap-Laplace-Funcio-3.pdf, id=4368, page=1, 173.38399pt x 72.02104pt>
 File: Imatges/Cap-Laplace-Funcio-3.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-3.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-3.pdf , page1 used on input
@@ -3760,14 +3773,14 @@ Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-3.pdf , page1 used on input
 (pdftex.def)             Requested size: 173.38397pt x 72.02414pt.
 )
 (Imatges/Cap-Laplace-Funcio-4.pdf_tex
-<Imatges/Cap-Laplace-Funcio-4.pdf, id=4370, page=1, 173.38399pt x 72.02104pt>
+<Imatges/Cap-Laplace-Funcio-4.pdf, id=4369, page=1, 173.38399pt x 72.02104pt>
 File: Imatges/Cap-Laplace-Funcio-4.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-4.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-4.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 173.38397pt x 72.02414pt.
 ) (Imatges/Cap-Laplace-Funcio-5.pdf_tex
-<Imatges/Cap-Laplace-Funcio-5.pdf, id=4371, page=1, 173.38399pt x 128.0374pt>
+<Imatges/Cap-Laplace-Funcio-5.pdf, id=4370, page=1, 173.38399pt x 128.0374pt>
 File: Imatges/Cap-Laplace-Funcio-5.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-5.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-5.pdf , page1 used on input
@@ -3775,14 +3788,14 @@ Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-5.pdf , page1 used on input
 (pdftex.def)             Requested size: 173.38397pt x 128.04292pt.
 )
 (Imatges/Cap-Laplace-Funcio-6.pdf_tex
-<Imatges/Cap-Laplace-Funcio-6.pdf, id=4372, page=1, 173.38399pt x 53.34892pt>
+<Imatges/Cap-Laplace-Funcio-6.pdf, id=4371, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Laplace-Funcio-6.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-6.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-6.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
 ) (Imatges/Cap-Laplace-Funcio-7.pdf_tex
-<Imatges/Cap-Laplace-Funcio-7.pdf, id=4373, page=1, 173.38399pt x 53.34892pt>
+<Imatges/Cap-Laplace-Funcio-7.pdf, id=4372, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Laplace-Funcio-7.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-7.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-7.pdf , page1 used on input
@@ -3790,14 +3803,14 @@ Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-7.pdf , page1 used on input
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
 )
 (Imatges/Cap-Laplace-Funcio-8.pdf_tex
-<Imatges/Cap-Laplace-Funcio-8.pdf, id=4374, page=1, 173.38399pt x 53.34892pt>
+<Imatges/Cap-Laplace-Funcio-8.pdf, id=4373, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Laplace-Funcio-8.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-8.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-8.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
 ) (Imatges/Cap-Laplace-Funcio-9.pdf_tex
-<Imatges/Cap-Laplace-Funcio-9.pdf, id=4375, page=1, 173.38399pt x 53.34892pt>
+<Imatges/Cap-Laplace-Funcio-9.pdf, id=4374, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Laplace-Funcio-9.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-9.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-9.pdf , page1 used on input
@@ -3805,35 +3818,35 @@ Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-9.pdf , page1 used on input
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
 )
 (Imatges/Cap-Laplace-Funcio-10.pdf_tex
-<Imatges/Cap-Laplace-Funcio-10.pdf, id=4376, page=1, 173.38399pt x 72.02104pt>
+<Imatges/Cap-Laplace-Funcio-10.pdf, id=4375, page=1, 173.38399pt x 72.02104pt>
 File: Imatges/Cap-Laplace-Funcio-10.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-10.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-10.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 173.38397pt x 72.02414pt.
 ) (Imatges/Cap-Laplace-Funcio-11.pdf_tex
-<Imatges/Cap-Laplace-Funcio-11.pdf, id=4377, page=1, 173.38399pt x 53.34892pt>
+<Imatges/Cap-Laplace-Funcio-11.pdf, id=4376, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Laplace-Funcio-11.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-11.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-11.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
 ) (Imatges/Cap-Laplace-Funcio-12.pdf_tex
-<Imatges/Cap-Laplace-Funcio-12.pdf, id=4378, page=1, 173.38399pt x 53.34892pt>
+<Imatges/Cap-Laplace-Funcio-12.pdf, id=4377, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Laplace-Funcio-12.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-12.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-12.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
 ) (Imatges/Cap-Laplace-Funcio-13.pdf_tex
-<Imatges/Cap-Laplace-Funcio-13.pdf, id=4379, page=1, 173.38399pt x 72.02104pt>
+<Imatges/Cap-Laplace-Funcio-13.pdf, id=4378, page=1, 173.38399pt x 72.02104pt>
 File: Imatges/Cap-Laplace-Funcio-13.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-13.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-13.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 173.38397pt x 72.02414pt.
 ) (Imatges/Cap-Laplace-Funcio-14.pdf_tex
-<Imatges/Cap-Laplace-Funcio-14.pdf, id=4380, page=1, 173.38399pt x 53.34892pt>
+<Imatges/Cap-Laplace-Funcio-14.pdf, id=4379, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Laplace-Funcio-14.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-14.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-14.pdf , page1 used on inpu
@@ -3841,7 +3854,7 @@ t line 56.
 (pdftex.def)             Requested size: 173.38397pt x 53.35123pt.
 )
 (Imatges/Cap-Laplace-Funcio-15.pdf_tex
-<Imatges/Cap-Laplace-Funcio-15.pdf, id=4381, page=1, 173.38399pt x 53.34892pt>
+<Imatges/Cap-Laplace-Funcio-15.pdf, id=4380, page=1, 173.38399pt x 53.34892pt>
 File: Imatges/Cap-Laplace-Funcio-15.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Funcio-15.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Funcio-15.pdf , page1 used on inpu
@@ -3853,7 +3866,7 @@ f> <./Imatges/Cap-Laplace-Funcio-5.pdf> <./Imatges/Cap-Laplace-Funcio-6.pdf> <.
 /Imatges/Cap-Laplace-Funcio-7.pdf> <./Imatges/Cap-Laplace-Funcio-8.pdf>]
 Package mdframed Info: mdframed works in twoside mode on input line 324.
  (Imatges/Cap-Laplace-Exemple1.pdf_tex
-<Imatges/Cap-Laplace-Exemple1.pdf, id=4400, page=1, 400.11687pt x 96.02805pt>
+<Imatges/Cap-Laplace-Exemple1.pdf, id=4399, page=1, 400.11687pt x 96.02805pt>
 File: Imatges/Cap-Laplace-Exemple1.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Exemple1.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Exemple1.pdf , page1 used on input
@@ -3871,7 +3884,7 @@ Package mdframed Info: Not enough space on this page on input line 436.
 [112 <./Imatges/Cap-Laplace-Exemple1.pdf>]
 
 [113] (Imatges/Cap-Laplace-Circuit-RLC.pdf_tex
-<Imatges/Cap-Laplace-Circuit-RLC.pdf, id=4441, page=1, 221.398pt x 85.35828pt>
+<Imatges/Cap-Laplace-Circuit-RLC.pdf, id=4440, page=1, 221.398pt x 85.35828pt>
 File: Imatges/Cap-Laplace-Circuit-RLC.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Circuit-RLC.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-Laplace-Circuit-RLC.pdf , page1 used on in
@@ -3889,7 +3902,7 @@ Package mdframed Info: Not enough space on this page on input line 530.
 [115]
 Package mdframed Info: mdframed works in twoside mode on input line 597.
  (Imatges/Cap-Laplace-Exemple3-Circuit.pdf_tex
-<Imatges/Cap-Laplace-Exemple3-Circuit.pdf, id=4467, page=1, 312.09117pt x 122.7
+<Imatges/Cap-Laplace-Exemple3-Circuit.pdf, id=4466, page=1, 312.09117pt x 122.7
 0251pt>
 File: Imatges/Cap-Laplace-Exemple3-Circuit.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Exemple3-Circuit.pdf, page 1>
@@ -3901,7 +3914,7 @@ LaTeX Info: Symbol \textmu not provided by
             Default family used instead on input line 63.
 )
 (Imatges/Cap-Laplace-Exemple3-Corrent.tex
-<Imatges/Cap-Laplace-Exemple3-Corrent.pdf, id=4470, 412.54124pt x 240.9pt>
+<Imatges/Cap-Laplace-Exemple3-Corrent.pdf, id=4469, 412.54124pt x 240.9pt>
 File: Imatges/Cap-Laplace-Exemple3-Corrent.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Exemple3-Corrent.pdf>
 Package pdftex.def Info: Imatges/Cap-Laplace-Exemple3-Corrent.pdf  used on inpu
@@ -3926,7 +3939,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package mdframed Info: mdframed works in twoside mode on input line 752.
 
 (Imatges/Cap-Laplace-Exemple4-Circuit.pdf_tex
-<Imatges/Cap-Laplace-Exemple4-Circuit.pdf, id=4502, page=1, 242.73756pt x 93.36
+<Imatges/Cap-Laplace-Exemple4-Circuit.pdf, id=4501, page=1, 242.73756pt x 93.36
 061pt>
 File: Imatges/Cap-Laplace-Exemple4-Circuit.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Exemple4-Circuit.pdf, page 1>
@@ -3938,29 +3951,29 @@ LaTeX Info: Symbol \textmu not provided by
             Default family used instead on input line 57.
 )
 (Imatges/Cap-Laplace-Exemple4-Tensio.tex
-<Imatges/Cap-Laplace-Exemple4-Tensio.pdf, id=4506, 426.59375pt x 270.00874pt>
+<Imatges/Cap-Laplace-Exemple4-Tensio.pdf, id=4505, 426.59375pt x 270.00874pt>
 File: Imatges/Cap-Laplace-Exemple4-Tensio.pdf Graphic file (type pdf)
 <use Imatges/Cap-Laplace-Exemple4-Tensio.pdf>
 Package pdftex.def Info: Imatges/Cap-Laplace-Exemple4-Tensio.pdf  used on input
  line 139.
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 )
-<Imatges/HPPrime-CAS.pdf, id=4508, 21.18169pt x 13.62022pt>
+<Imatges/HPPrime-CAS.pdf, id=4507, 21.18169pt x 13.62022pt>
 File: Imatges/HPPrime-CAS.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-CAS.pdf>
 Package pdftex.def Info: Imatges/HPPrime-CAS.pdf  used on input line 830.
 (pdftex.def)             Requested size: 21.18163pt x 13.62018pt.
-<Imatges/HPPrime-Tool.pdf, id=4509, 21.18169pt x 13.62022pt>
+<Imatges/HPPrime-Tool.pdf, id=4508, 21.18169pt x 13.62022pt>
 File: Imatges/HPPrime-Tool.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Tool.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Tool.pdf  used on input line 830.
 (pdftex.def)             Requested size: 21.18163pt x 13.62018pt.
-<Imatges/Cap-Laplace-HPP1.png, id=4510, 195.129pt x 146.949pt>
+<Imatges/Cap-Laplace-HPP1.png, id=4509, 195.129pt x 146.949pt>
 File: Imatges/Cap-Laplace-HPP1.png Graphic file (type png)
 <use Imatges/Cap-Laplace-HPP1.png>
 Package pdftex.def Info: Imatges/Cap-Laplace-HPP1.png  used on input line 832.
 (pdftex.def)             Requested size: 195.12851pt x 146.94864pt.
-<Imatges/Cap-Laplace-HPP2.png, id=4511, 195.129pt x 146.949pt>
+<Imatges/Cap-Laplace-HPP2.png, id=4510, 195.129pt x 146.949pt>
 File: Imatges/Cap-Laplace-HPP2.png Graphic file (type png)
 <use Imatges/Cap-Laplace-HPP2.png>
 Package pdftex.def Info: Imatges/Cap-Laplace-HPP2.png  used on input line 836.
@@ -3969,17 +3982,17 @@ File: Imatges/HPPrime-Enter.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Enter.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Enter.pdf  used on input line 838.
 (pdftex.def)             Requested size: 32.49632pt x 13.58588pt.
-<Imatges/Cap-Laplace-HPP3.png, id=4512, 195.129pt x 146.949pt>
+<Imatges/Cap-Laplace-HPP3.png, id=4511, 195.129pt x 146.949pt>
 File: Imatges/Cap-Laplace-HPP3.png Graphic file (type png)
 <use Imatges/Cap-Laplace-HPP3.png>
 Package pdftex.def Info: Imatges/Cap-Laplace-HPP3.png  used on input line 840.
 (pdftex.def)             Requested size: 195.12851pt x 146.94864pt.
-<Imatges/Cap-Laplace-HPP4.png, id=4513, 195.129pt x 146.949pt>
+<Imatges/Cap-Laplace-HPP4.png, id=4512, 195.129pt x 146.949pt>
 File: Imatges/Cap-Laplace-HPP4.png Graphic file (type png)
 <use Imatges/Cap-Laplace-HPP4.png>
 Package pdftex.def Info: Imatges/Cap-Laplace-HPP4.png  used on input line 844.
 (pdftex.def)             Requested size: 195.12851pt x 146.94864pt.
-<Imatges/Cap-Laplace-HPP5.png, id=4514, 195.129pt x 146.949pt>
+<Imatges/Cap-Laplace-HPP5.png, id=4513, 195.129pt x 146.949pt>
 File: Imatges/Cap-Laplace-HPP5.png Graphic file (type png)
 <use Imatges/Cap-Laplace-HPP5.png>
 Package pdftex.def Info: Imatges/Cap-Laplace-HPP5.png  used on input line 848.
@@ -3988,7 +4001,7 @@ File: Imatges/HPPrime-Enter.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Enter.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Enter.pdf  used on input line 850.
 (pdftex.def)             Requested size: 32.49632pt x 13.58588pt.
-<Imatges/Cap-Laplace-HPP6.png, id=4515, 195.129pt x 146.949pt>
+<Imatges/Cap-Laplace-HPP6.png, id=4514, 195.129pt x 146.949pt>
 File: Imatges/Cap-Laplace-HPP6.png Graphic file (type png)
 <use Imatges/Cap-Laplace-HPP6.png>
 Package pdftex.def Info: Imatges/Cap-Laplace-HPP6.png  used on input line 852.
@@ -3997,12 +4010,12 @@ File: Imatges/HPPrime-Apps.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Apps.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Apps.pdf  used on input line 855.
 (pdftex.def)             Requested size: 21.18163pt x 13.62018pt.
-<Imatges/Cap-Laplace-HPP7.png, id=4516, 195.129pt x 146.949pt>
+<Imatges/Cap-Laplace-HPP7.png, id=4515, 195.129pt x 146.949pt>
 File: Imatges/Cap-Laplace-HPP7.png Graphic file (type png)
 <use Imatges/Cap-Laplace-HPP7.png>
 Package pdftex.def Info: Imatges/Cap-Laplace-HPP7.png  used on input line 857.
 (pdftex.def)             Requested size: 195.12851pt x 146.94864pt.
-<Imatges/Cap-Laplace-HPP8.png, id=4517, 195.129pt x 146.949pt>
+<Imatges/Cap-Laplace-HPP8.png, id=4516, 195.129pt x 146.949pt>
 File: Imatges/Cap-Laplace-HPP8.png Graphic file (type png)
 <use Imatges/Cap-Laplace-HPP8.png>
 Package pdftex.def Info: Imatges/Cap-Laplace-HPP8.png  used on input line 861.
@@ -4015,7 +4028,7 @@ File: Imatges/HPPrime-Plot.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Plot.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Plot.pdf  used on input line 863.
 (pdftex.def)             Requested size: 21.18163pt x 13.62018pt.
-<Imatges/Cap-Laplace-HPP9.png, id=4518, 195.129pt x 146.949pt>
+<Imatges/Cap-Laplace-HPP9.png, id=4517, 195.129pt x 146.949pt>
 File: Imatges/Cap-Laplace-HPP9.png Graphic file (type png)
 <use Imatges/Cap-Laplace-HPP9.png>
 Package pdftex.def Info: Imatges/Cap-Laplace-HPP9.png  used on input line 865.
@@ -4024,7 +4037,7 @@ File: Imatges/HPPrime-Plot.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Plot.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Plot.pdf  used on input line 867.
 (pdftex.def)             Requested size: 21.18163pt x 13.62018pt.
-<Imatges/Cap-Laplace-HPP10.png, id=4519, 193.9245pt x 145.7445pt>
+<Imatges/Cap-Laplace-HPP10.png, id=4518, 193.9245pt x 145.7445pt>
 File: Imatges/Cap-Laplace-HPP10.png Graphic file (type png)
 <use Imatges/Cap-Laplace-HPP10.png>
 Package pdftex.def Info: Imatges/Cap-Laplace-HPP10.png  used on input line 869.
@@ -4081,19 +4094,19 @@ mefree3.fd)
 [129{C:/Users/josep/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/
 fa5free3.enc}]
 Package mdframed Info: mdframed works in twoside mode on input line 64.
-<Imatges/Cap-Resistencies-R1.pdf, id=4596, 45.34657pt x 13.33723pt>
+<Imatges/Cap-Resistencies-R1.pdf, id=4595, 45.34657pt x 13.33723pt>
 File: Imatges/Cap-Resistencies-R1.pdf Graphic file (type pdf)
 <use Imatges/Cap-Resistencies-R1.pdf>
 Package pdftex.def Info: Imatges/Cap-Resistencies-R1.pdf  used on input line 71
 .
 (pdftex.def)             Requested size: 45.34645pt x 13.33719pt.
-<Imatges/Cap-Resistencies-R2.pdf, id=4597, 45.34657pt x 13.33723pt>
+<Imatges/Cap-Resistencies-R2.pdf, id=4596, 45.34657pt x 13.33723pt>
 File: Imatges/Cap-Resistencies-R2.pdf Graphic file (type pdf)
 <use Imatges/Cap-Resistencies-R2.pdf>
 Package pdftex.def Info: Imatges/Cap-Resistencies-R2.pdf  used on input line 74
 .
 (pdftex.def)             Requested size: 45.34645pt x 13.33719pt.
-<Imatges/Cap-Resistencies-R3.pdf, id=4598, 45.34657pt x 13.33723pt>
+<Imatges/Cap-Resistencies-R3.pdf, id=4597, 45.34657pt x 13.33723pt>
 File: Imatges/Cap-Resistencies-R3.pdf Graphic file (type pdf)
 <use Imatges/Cap-Resistencies-R3.pdf>
 Package pdftex.def Info: Imatges/Cap-Resistencies-R3.pdf  used on input line 77
@@ -4151,7 +4164,7 @@ Cap\'{\i }tol 7.
 ]
 
 [134] (Imatges/Cap-Cables-Caiguda-Tensio.pdf_tex
-<Imatges/Cap-Cables-Caiguda-Tensio.pdf, id=4694, page=1, 293.41902pt x 88.02571
+<Imatges/Cap-Cables-Caiguda-Tensio.pdf, id=4693, page=1, 293.41902pt x 88.02571
 pt>
 File: Imatges/Cap-Cables-Caiguda-Tensio.pdf Graphic file (type pdf)
 <use Imatges/Cap-Cables-Caiguda-Tensio.pdf, page 1>
@@ -4162,21 +4175,18 @@ input line 57.
 
 [135 <./Imatges/Cap-Cables-Caiguda-Tensio.pdf>]
 Package mdframed Info: mdframed works in twoside mode on input line 177.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 220.
 
 
 [136]
-Overfull \vbox (1.86115pt too high) detected at line 255
+Overfull \vbox (1.86115pt too high) detected at line 253
  []
 
 
 
 [137]
-Package mdframed Info: mdframed works in twoside mode on input line 265.
+Package mdframed Info: mdframed works in twoside mode on input line 263.
 LaTeX Font Info:    Font shape `T1/JosefinSans-LF/sb/it' will be
-(Font)              scaled to size 12.0pt on input line 278.
+(Font)              scaled to size 12.0pt on input line 276.
 
 
 [138]
@@ -4185,9 +4195,9 @@ LaTeX Font Info:    Font shape `T1/JosefinSans-LF/sb/it' will be
 
 [140{C:/Users/josep/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newpx/pxb-lms
 .enc}] [141]
-Package mdframed Info: mdframed works in twoside mode on input line 501.
+Package mdframed Info: mdframed works in twoside mode on input line 499.
 LaTeX Font Info:    Trying to load font information for TS1+JosefinSans-LF on i
-nput line 510.
+nput line 508.
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/josefin\ts1josefinsans-
 lf.fd
@@ -4196,25 +4206,25 @@ inSans-LF.
 )
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family JosefinSans-LF in TS1 encoding.
-            Default family used instead on input line 510.
+            Default family used instead on input line 508.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/sb/n' undefined
-(Font)              using `T1/cmss/m/n' instead on input line 510.
+(Font)              using `T1/cmss/m/n' instead on input line 508.
 
 
 LaTeX Font Warning: Font shape `TS1/cmss/sb/n' undefined
 (Font)              using `TS1/cmss/m/n' instead
-(Font)              for symbol `texttwosuperior' on input line 510.
+(Font)              for symbol `texttwosuperior' on input line 508.
 
-Package mdframed Info: mdframed works in twoside mode on input line 529.
+Package mdframed Info: mdframed works in twoside mode on input line 527.
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family JosefinSans-LF in TS1 encoding.
-            Default family used instead on input line 538.
+            Default family used instead on input line 536.
 
 
 [142]
-Package mdframed Info: Not enough space on this page on input line 538.
+Package mdframed Info: Not enough space on this page on input line 536.
 )
 
 [143]
@@ -4230,7 +4240,7 @@ Package mdframed Info: Not enough space on this page on input line 538.
 ]
 Cap\'{\i }tol 8.
 (Imatges/Cap-TrafosMesProt-TI-TT.pdf_tex
-<Imatges/Cap-TrafosMesProt-TI-TT.pdf, id=4802, page=1, 160.04675pt x 186.7212pt
+<Imatges/Cap-TrafosMesProt-TI-TT.pdf, id=4801, page=1, 160.04675pt x 186.7212pt
 >
 File: Imatges/Cap-TrafosMesProt-TI-TT.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosMesProt-TI-TT.pdf, page 1>
@@ -4332,7 +4342,7 @@ Missing character: There is no � in font zpl-Regular-tlf-ot1!
 Package mdframed Info: mdframed works in twoside mode on input line 900.
 Package mdframed Info: mdframed works in twoside mode on input line 959.
  (Imatges/Cap-TrafosMesProt-Watt.pdf_tex
-<Imatges/Cap-TrafosMesProt-Watt.pdf, id=4925, page=1, 354.77031pt x 162.71419pt
+<Imatges/Cap-TrafosMesProt-Watt.pdf, id=4924, page=1, 354.77031pt x 162.71419pt
 >
 File: Imatges/Cap-TrafosMesProt-Watt.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosMesProt-Watt.pdf, page 1>
@@ -4341,7 +4351,7 @@ ut line 56.
 (pdftex.def)             Requested size: 354.77028pt x 162.72124pt.
 )
 (Imatges/Cap-TrafosMesProt-Instal.pdf_tex
-<Imatges/Cap-TrafosMesProt-Instal.pdf, id=4926, page=1, 315.82558pt x 176.40709
+<Imatges/Cap-TrafosMesProt-Instal.pdf, id=4925, page=1, 315.82558pt x 176.40709
 pt>
 File: Imatges/Cap-TrafosMesProt-Instal.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosMesProt-Instal.pdf, page 1>
@@ -4350,7 +4360,7 @@ nput line 56.
 (pdftex.def)             Requested size: 315.82559pt x 176.41202pt.
 )
 (Imatges/Cap-TrafosMesProt-Instal-Watt.pdf_tex
-<Imatges/Cap-TrafosMesProt-Instal-Watt.pdf, id=4927, page=1, 314.7586pt x 221.3
+<Imatges/Cap-TrafosMesProt-Instal-Watt.pdf, id=4926, page=1, 314.7586pt x 221.3
 98pt>
 File: Imatges/Cap-TrafosMesProt-Instal-Watt.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosMesProt-Instal-Watt.pdf, page 1>
@@ -4374,7 +4384,7 @@ Package mdframed Info: Not enough space on this page on input line 1046.
  (Capitols/Cap-Trafos-Potencia.tex
 Cap\'{\i }tol 9.
 (Imatges/Cap-TrafosPot-Esq-Equiv.pdf_tex
-<Imatges/Cap-TrafosPot-Esq-Equiv.pdf, id=4985, page=1, 386.77966pt x 106.69783p
+<Imatges/Cap-TrafosPot-Esq-Equiv.pdf, id=4984, page=1, 386.77966pt x 106.69783p
 t>
 File: Imatges/Cap-TrafosPot-Esq-Equiv.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Esq-Equiv.pdf, page 1>
@@ -4393,7 +4403,7 @@ put line 56.
 [164]
 
 [165] (Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T.pdf_tex
-<Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T.pdf, id=5024, page=1, 309.4237pt x 96
+<Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T.pdf, id=5023, page=1, 309.4237pt x 96
 .02805pt>
 File: Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T.pdf, page 1>
@@ -4404,7 +4414,7 @@ sed on input line 56.
 
 [166 <./Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T.pdf>]
 (Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-L.pdf_tex
-<Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-L.pdf, id=5039, page=1, 442.796pt x 101
+<Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-L.pdf, id=5038, page=1, 442.796pt x 101
 .36293pt>
 File: Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-L.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-L.pdf, page 1>
@@ -4421,7 +4431,7 @@ Overfull \vbox (1.86115pt too high) detected at line 152
 
 [167 <./Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-L.pdf>]
 (Imatges/Cap-TrafosPot-Esq-Equiv-Thevenin.pdf_tex
-<Imatges/Cap-TrafosPot-Esq-Equiv-Thevenin.pdf, id=5052, page=1, 448.13087pt x 9
+<Imatges/Cap-TrafosPot-Esq-Equiv-Thevenin.pdf, id=5051, page=1, 448.13087pt x 9
 8.6955pt>
 File: Imatges/Cap-TrafosPot-Esq-Equiv-Thevenin.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Esq-Equiv-Thevenin.pdf, page 1>
@@ -4435,7 +4445,7 @@ sed on input line 56.
 [169]
 
 [170] (Imatges/Cap-TrafosPot-Assaig-Buit-Monofasic.pdf_tex
-<Imatges/Cap-TrafosPot-Assaig-Buit-Monofasic.pdf, id=5088, page=1, 266.74457pt 
+<Imatges/Cap-TrafosPot-Assaig-Buit-Monofasic.pdf, id=5087, page=1, 266.74457pt 
 x 80.02338pt>
 File: Imatges/Cap-TrafosPot-Assaig-Buit-Monofasic.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Assaig-Buit-Monofasic.pdf, page 1>
@@ -4444,7 +4454,7 @@ Package pdftex.def Info: Imatges/Cap-TrafosPot-Assaig-Buit-Monofasic.pdf , page
 (pdftex.def)             Requested size: 266.74457pt x 80.0305pt.
 )
 (Imatges/Cap-TrafosPot-Assaig-Buit-Trifasic.pdf_tex
-<Imatges/Cap-TrafosPot-Assaig-Buit-Trifasic.pdf, id=5090, page=1, 301.42137pt x
+<Imatges/Cap-TrafosPot-Assaig-Buit-Trifasic.pdf, id=5089, page=1, 301.42137pt x
  90.69315pt>
 File: Imatges/Cap-TrafosPot-Assaig-Buit-Trifasic.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Assaig-Buit-Trifasic.pdf, page 1>
@@ -4453,7 +4463,7 @@ Package pdftex.def Info: Imatges/Cap-TrafosPot-Assaig-Buit-Trifasic.pdf , page1
 (pdftex.def)             Requested size: 301.42136pt x 90.69707pt.
 )
 (Imatges/Cap-TrafosPot-Assaig-CC-Monofasic.pdf_tex
-<Imatges/Cap-TrafosPot-Assaig-CC-Monofasic.pdf, id=5092, page=1, 280.08182pt x 
+<Imatges/Cap-TrafosPot-Assaig-CC-Monofasic.pdf, id=5091, page=1, 280.08182pt x 
 80.02338pt>
 File: Imatges/Cap-TrafosPot-Assaig-CC-Monofasic.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Assaig-CC-Monofasic.pdf, page 1>
@@ -4464,7 +4474,7 @@ used on input line 56.
 
 [171 <./Imatges/Cap-TrafosPot-Assaig-Buit-Monofasic.pdf> <./Imatges/Cap-TrafosP
 ot-Assaig-Buit-Trifasic.pdf>] (Imatges/Cap-TrafosPot-Assaig-CC-Trifasic.pdf_tex
-<Imatges/Cap-TrafosPot-Assaig-CC-Trifasic.pdf, id=5121, page=1, 320.0935pt x 90
+<Imatges/Cap-TrafosPot-Assaig-CC-Trifasic.pdf, id=5120, page=1, 320.0935pt x 90
 .69315pt>
 File: Imatges/Cap-TrafosPot-Assaig-CC-Trifasic.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Assaig-CC-Trifasic.pdf, page 1>
@@ -4472,7 +4482,7 @@ Package pdftex.def Info: Imatges/Cap-TrafosPot-Assaig-CC-Trifasic.pdf , page1 u
 sed on input line 56.
 (pdftex.def)             Requested size: 320.09349pt x 90.70122pt.
 ) (Imatges/Cap-TrafosPot-Assaig-Buit-CC-Esq-Equiv.pdf_tex
-<Imatges/Cap-TrafosPot-Assaig-Buit-CC-Esq-Equiv.pdf, id=5123, page=1, 442.796pt
+<Imatges/Cap-TrafosPot-Assaig-Buit-CC-Esq-Equiv.pdf, id=5122, page=1, 442.796pt
  x 101.36293pt>
 File: Imatges/Cap-TrafosPot-Assaig-Buit-CC-Esq-Equiv.pdf Graphic file (type pdf
 )
@@ -4489,7 +4499,7 @@ age1 used on input line 56.
 Package mdframed Info: mdframed works in twoside mode on input line 534.
 
 (Imatges/Cap-TrafosPot-Exemple-TR.pdf_tex
-<Imatges/Cap-TrafosPot-Exemple-TR.pdf, id=5168, page=1, 293.41902pt x 101.36293
+<Imatges/Cap-TrafosPot-Exemple-TR.pdf, id=5167, page=1, 293.41902pt x 101.36293
 pt>
 File: Imatges/Cap-TrafosPot-Exemple-TR.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-TR.pdf, page 1>
@@ -4502,7 +4512,7 @@ nput line 56.
 
 [175 <./Imatges/Cap-TrafosPot-Exemple-TR.pdf>]
 (Imatges/Cap-TrafosPot-3-debanats.pdf_tex
-<Imatges/Cap-TrafosPot-3-debanats.pdf, id=5185, page=1, 354.77031pt x 106.69783
+<Imatges/Cap-TrafosPot-3-debanats.pdf, id=5184, page=1, 354.77031pt x 106.69783
 pt>
 File: Imatges/Cap-TrafosPot-3-debanats.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-3-debanats.pdf, page 1>
@@ -4525,7 +4535,7 @@ Package mdframed Info: Box was splittet wrong
 [179]
 Package mdframed Info: mdframed works in twoside mode on input line 731.
  (Imatges/Cap-TrafosPot-Exemple-Yz.pdf_tex
-<Imatges/Cap-TrafosPot-Exemple-Yz.pdf, id=5212, page=1, 280.08182pt x 152.04442
+<Imatges/Cap-TrafosPot-Exemple-Yz.pdf, id=5211, page=1, 280.08182pt x 152.04442
 pt>
 File: Imatges/Cap-TrafosPot-Exemple-Yz.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-Yz.pdf, page 1>
@@ -4534,7 +4544,7 @@ nput line 56.
 (pdftex.def)             Requested size: 280.0818pt x 152.05331pt.
 )
 (Imatges/Cap-TrafosPot-Exemple-Dy.pdf_tex
-<Imatges/Cap-TrafosPot-Exemple-Dy.pdf, id=5213, page=1, 226.7329pt x 162.71419p
+<Imatges/Cap-TrafosPot-Exemple-Dy.pdf, id=5212, page=1, 226.7329pt x 162.71419p
 t>
 File: Imatges/Cap-TrafosPot-Exemple-Dy.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-Dy.pdf, page 1>
@@ -4549,7 +4559,7 @@ Package mdframed Info: Box was splittet wrong
 
 [180 <./Imatges/Cap-TrafosPot-Exemple-Yz.pdf>]
 (Imatges/Cap-TrafosPot-Esq-Equiv-Complex.pdf_tex
-<Imatges/Cap-TrafosPot-Esq-Equiv-Complex.pdf, id=5254, page=1, 386.77966pt x 10
+<Imatges/Cap-TrafosPot-Esq-Equiv-Complex.pdf, id=5253, page=1, 386.77966pt x 10
 6.69783pt>
 File: Imatges/Cap-TrafosPot-Esq-Equiv-Complex.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Esq-Equiv-Complex.pdf, page 1>
@@ -4560,7 +4570,7 @@ ed on input line 56.
 
 [181 <./Imatges/Cap-TrafosPot-Exemple-Dy.pdf> <./Imatges/Cap-TrafosPot-Esq-Equi
 v-Complex.pdf>] (Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T-Complex.pdf_tex
-<Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T-Complex.pdf, id=5292, page=1, 416.121
+<Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T-Complex.pdf, id=5291, page=1, 416.121
 55pt x 104.03038pt>
 File: Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T-Complex.pdf Graphic file (type p
 df)
@@ -4572,47 +4582,47 @@ Package pdftex.def Info: Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T-Complex.pdf ,
 
 [182 <./Imatges/Cap-TrafosPot-Esq-Equiv-Reduit-T-Complex.pdf>]
 (Imatges/Cap-TrafosPot-Hom-YNyn.pdf_tex
-<Imatges/Cap-TrafosPot-Hom-YNyn.pdf, id=5313, page=1, 320.0935pt x 98.6955pt>
+<Imatges/Cap-TrafosPot-Hom-YNyn.pdf, id=5312, page=1, 320.0935pt x 98.6955pt>
 File: Imatges/Cap-TrafosPot-Hom-YNyn.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Hom-YNyn.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Hom-YNyn.pdf , page1 used on inp
 ut line 56.
 (pdftex.def)             Requested size: 320.09349pt x 98.70427pt.
 ) (Imatges/Cap-TrafosPot-Hom-YNy.pdf_tex
-<Imatges/Cap-TrafosPot-Hom-YNy.pdf, id=5314, page=1, 320.0935pt x 98.6955pt>
+<Imatges/Cap-TrafosPot-Hom-YNy.pdf, id=5313, page=1, 320.0935pt x 98.6955pt>
 File: Imatges/Cap-TrafosPot-Hom-YNy.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Hom-YNy.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Hom-YNy.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 320.09349pt x 98.70427pt.
-<Imatges/Cap-TrafosPot-Hom-YNy.pdf, id=5315, page=2, 320.0935pt x 98.6955pt>
+<Imatges/Cap-TrafosPot-Hom-YNy.pdf, id=5314, page=2, 320.0935pt x 98.6955pt>
 File: Imatges/Cap-TrafosPot-Hom-YNy.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Hom-YNy.pdf, page 2>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Hom-YNy.pdf , page2 used on inpu
 t line 67.
 (pdftex.def)             Requested size: 320.09349pt x 98.70427pt.
 ) (Imatges/Cap-TrafosPot-Hom-Yyn.pdf_tex
-<Imatges/Cap-TrafosPot-Hom-Yyn.pdf, id=5316, page=1, 320.0935pt x 98.6955pt>
+<Imatges/Cap-TrafosPot-Hom-Yyn.pdf, id=5315, page=1, 320.0935pt x 98.6955pt>
 File: Imatges/Cap-TrafosPot-Hom-Yyn.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Hom-Yyn.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Hom-Yyn.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 320.09349pt x 98.70427pt.
-<Imatges/Cap-TrafosPot-Hom-Yyn.pdf, id=5317, page=2, 320.0935pt x 98.6955pt>
+<Imatges/Cap-TrafosPot-Hom-Yyn.pdf, id=5316, page=2, 320.0935pt x 98.6955pt>
 File: Imatges/Cap-TrafosPot-Hom-Yyn.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Hom-Yyn.pdf, page 2>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Hom-Yyn.pdf , page2 used on inpu
 t line 77.
 (pdftex.def)             Requested size: 320.09349pt x 98.70427pt.
 ) (Imatges/Cap-TrafosPot-Hom-Yy.pdf_tex
-<Imatges/Cap-TrafosPot-Hom-Yy.pdf, id=5318, page=1, 320.0935pt x 56.01636pt>
+<Imatges/Cap-TrafosPot-Hom-Yy.pdf, id=5317, page=1, 320.0935pt x 56.01636pt>
 File: Imatges/Cap-TrafosPot-Hom-Yy.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Hom-Yy.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Hom-Yy.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 320.09349pt x 56.02133pt.
 ) (Imatges/Cap-TrafosPot-Hom-Dd.pdf_tex
-<Imatges/Cap-TrafosPot-Hom-Dd.pdf, id=5319, page=1, 320.0935pt x 56.01636pt>
+<Imatges/Cap-TrafosPot-Hom-Dd.pdf, id=5318, page=1, 320.0935pt x 56.01636pt>
 File: Imatges/Cap-TrafosPot-Hom-Dd.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Hom-Dd.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Hom-Dd.pdf , page1 used on input
@@ -4624,14 +4634,14 @@ Package pdftex.def Info: Imatges/Cap-TrafosPot-Hom-Dd.pdf , page1 used on input
 f> <./Imatges/Cap-TrafosPot-Hom-YNy.pdf> <./Imatges/Cap-TrafosPot-Hom-Yyn.pdf> 
 <./Imatges/Cap-TrafosPot-Hom-Yyn.pdf> <./Imatges/Cap-TrafosPot-Hom-Yy.pdf>]
 (Imatges/Cap-TrafosPot-Hom-Yd.pdf_tex
-<Imatges/Cap-TrafosPot-Hom-Yd.pdf, id=5330, page=1, 320.0935pt x 56.01636pt>
+<Imatges/Cap-TrafosPot-Hom-Yd.pdf, id=5329, page=1, 320.0935pt x 56.01636pt>
 File: Imatges/Cap-TrafosPot-Hom-Yd.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Hom-Yd.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Hom-Yd.pdf , page1 used on input
  line 56.
 (pdftex.def)             Requested size: 320.09349pt x 56.02133pt.
 ) (Imatges/Cap-TrafosPot-Hom-Dy.pdf_tex
-<Imatges/Cap-TrafosPot-Hom-Dy.pdf, id=5331, page=1, 320.0935pt x 56.01636pt>
+<Imatges/Cap-TrafosPot-Hom-Dy.pdf, id=5330, page=1, 320.0935pt x 56.01636pt>
 File: Imatges/Cap-TrafosPot-Hom-Dy.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Hom-Dy.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Hom-Dy.pdf , page1 used on input
@@ -4639,14 +4649,14 @@ Package pdftex.def Info: Imatges/Cap-TrafosPot-Hom-Dy.pdf , page1 used on input
 (pdftex.def)             Requested size: 320.09349pt x 56.02133pt.
 )
 (Imatges/Cap-TrafosPot-Hom-YNd.pdf_tex
-<Imatges/Cap-TrafosPot-Hom-YNd.pdf, id=5332, page=1, 320.0935pt x 98.6955pt>
+<Imatges/Cap-TrafosPot-Hom-YNd.pdf, id=5331, page=1, 320.0935pt x 98.6955pt>
 File: Imatges/Cap-TrafosPot-Hom-YNd.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Hom-YNd.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Hom-YNd.pdf , page1 used on inpu
 t line 56.
 (pdftex.def)             Requested size: 320.09349pt x 98.70427pt.
 ) (Imatges/Cap-TrafosPot-Hom-Dyn.pdf_tex
-<Imatges/Cap-TrafosPot-Hom-Dyn.pdf, id=5333, page=1, 320.0935pt x 98.6955pt>
+<Imatges/Cap-TrafosPot-Hom-Dyn.pdf, id=5332, page=1, 320.0935pt x 98.6955pt>
 File: Imatges/Cap-TrafosPot-Hom-Dyn.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Hom-Dyn.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Hom-Dyn.pdf , page1 used on inpu
@@ -4657,7 +4667,7 @@ t line 56.
 [184 <./Imatges/Cap-TrafosPot-Hom-Dd.pdf> <./Imatges/Cap-TrafosPot-Hom-Yd.pdf> 
 <./Imatges/Cap-TrafosPot-Hom-Dy.pdf> <./Imatges/Cap-TrafosPot-Hom-YNd.pdf> <./I
 matges/Cap-TrafosPot-Hom-Dyn.pdf>] (Imatges/Cap-TrafosPot-Hom-Dyny.pdf_tex
-<Imatges/Cap-TrafosPot-Hom-Dyny.pdf, id=5347, page=1, 373.44241pt x 138.70718pt
+<Imatges/Cap-TrafosPot-Hom-Dyny.pdf, id=5346, page=1, 373.44241pt x 138.70718pt
 >
 File: Imatges/Cap-TrafosPot-Hom-Dyny.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Hom-Dyny.pdf, page 1>
@@ -4670,14 +4680,14 @@ ut line 56.
 Package mdframed Info: mdframed works in twoside mode on input line 944.
 
 (Imatges/Cap-TrafosPot-Exemple-IccFN-Dyn.pdf_tex
-<Imatges/Cap-TrafosPot-Exemple-IccFN-Dyn.pdf, id=5376, page=1, 256.0748pt x 85.
+<Imatges/Cap-TrafosPot-Exemple-IccFN-Dyn.pdf, id=5375, page=1, 256.0748pt x 85.
 35826pt>
 File: Imatges/Cap-TrafosPot-Exemple-IccFN-Dyn.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-IccFN-Dyn.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Exemple-IccFN-Dyn.pdf , page1 us
 ed on input line 56.
 (pdftex.def)             Requested size: 256.07478pt x 85.36195pt.
-<Imatges/Cap-TrafosPot-Exemple-IccFN-Dyn.pdf, id=5377, page=2, 256.0748pt x 85.
+<Imatges/Cap-TrafosPot-Exemple-IccFN-Dyn.pdf, id=5376, page=2, 256.0748pt x 85.
 35826pt>
 File: Imatges/Cap-TrafosPot-Exemple-IccFN-Dyn.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-IccFN-Dyn.pdf, page 2>
@@ -4686,14 +4696,14 @@ ed on input line 65.
 (pdftex.def)             Requested size: 256.07478pt x 85.36195pt.
 )
 (Imatges/Cap-TrafosPot-Exemple-IccFF-Dyn.pdf_tex
-<Imatges/Cap-TrafosPot-Exemple-IccFF-Dyn.pdf, id=5385, page=1, 256.0748pt x 85.
+<Imatges/Cap-TrafosPot-Exemple-IccFF-Dyn.pdf, id=5384, page=1, 256.0748pt x 85.
 35826pt>
 File: Imatges/Cap-TrafosPot-Exemple-IccFF-Dyn.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-IccFF-Dyn.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Exemple-IccFF-Dyn.pdf , page1 us
 ed on input line 56.
 (pdftex.def)             Requested size: 256.07478pt x 85.36195pt.
-<Imatges/Cap-TrafosPot-Exemple-IccFF-Dyn.pdf, id=5386, page=2, 256.0748pt x 85.
+<Imatges/Cap-TrafosPot-Exemple-IccFF-Dyn.pdf, id=5385, page=2, 256.0748pt x 85.
 35826pt>
 File: Imatges/Cap-TrafosPot-Exemple-IccFF-Dyn.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-IccFF-Dyn.pdf, page 2>
@@ -4702,21 +4712,21 @@ ed on input line 64.
 (pdftex.def)             Requested size: 256.07478pt x 85.36195pt.
 )
 (Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf_tex
-<Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf, id=5394, page=1, 256.0748pt x 85
+<Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf, id=5393, page=1, 256.0748pt x 85
 .35826pt>
 File: Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf , page1 u
 sed on input line 56.
 (pdftex.def)             Requested size: 256.07478pt x 85.36195pt.
-<Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf, id=5395, page=2, 256.0748pt x 85
+<Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf, id=5394, page=2, 256.0748pt x 85
 .35826pt>
 File: Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf, page 2>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf , page2 u
 sed on input line 63.
 (pdftex.def)             Requested size: 256.07478pt x 85.36195pt.
-<Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf, id=5396, page=3, 256.0748pt x 85
+<Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf, id=5395, page=3, 256.0748pt x 85
 .35826pt>
 File: Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-IccFN-YNyn.pdf, page 3>
@@ -4725,14 +4735,14 @@ sed on input line 65.
 (pdftex.def)             Requested size: 256.07478pt x 85.36195pt.
 )
 (Imatges/Cap-TrafosPot-Exemple-IccFF-YNyn.pdf_tex
-<Imatges/Cap-TrafosPot-Exemple-IccFF-YNyn.pdf, id=5405, page=1, 256.0748pt x 85
+<Imatges/Cap-TrafosPot-Exemple-IccFF-YNyn.pdf, id=5404, page=1, 256.0748pt x 85
 .35826pt>
 File: Imatges/Cap-TrafosPot-Exemple-IccFF-YNyn.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-IccFF-YNyn.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Exemple-IccFF-YNyn.pdf , page1 u
 sed on input line 56.
 (pdftex.def)             Requested size: 256.07478pt x 85.36195pt.
-<Imatges/Cap-TrafosPot-Exemple-IccFF-YNyn.pdf, id=5406, page=2, 256.0748pt x 85
+<Imatges/Cap-TrafosPot-Exemple-IccFF-YNyn.pdf, id=5405, page=2, 256.0748pt x 85
 .35826pt>
 File: Imatges/Cap-TrafosPot-Exemple-IccFF-YNyn.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-IccFF-YNyn.pdf, page 2>
@@ -4768,14 +4778,14 @@ Exemple-IccFF-YNyn.pdf>]
 [192]
 Package mdframed Info: mdframed works in twoside mode on input line 1207.
  (Imatges/Cap-TrafosPot-Exemple-TR-parallel.pdf_tex
-<Imatges/Cap-TrafosPot-Exemple-TR-parallel.pdf, id=5462, page=1, 386.77966pt x 
+<Imatges/Cap-TrafosPot-Exemple-TR-parallel.pdf, id=5461, page=1, 386.77966pt x 
 232.06778pt>
 File: Imatges/Cap-TrafosPot-Exemple-TR-parallel.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-TR-parallel.pdf, page 1>
 Package pdftex.def Info: Imatges/Cap-TrafosPot-Exemple-TR-parallel.pdf , page1 
 used on input line 56.
 (pdftex.def)             Requested size: 386.77965pt x 232.0849pt.
-<Imatges/Cap-TrafosPot-Exemple-TR-parallel.pdf, id=5463, page=2, 386.77966pt x 
+<Imatges/Cap-TrafosPot-Exemple-TR-parallel.pdf, id=5462, page=2, 386.77966pt x 
 232.06778pt>
 File: Imatges/Cap-TrafosPot-Exemple-TR-parallel.pdf Graphic file (type pdf)
 <use Imatges/Cap-TrafosPot-Exemple-TR-parallel.pdf, page 2>
@@ -4825,7 +4835,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 328.
 [203]
 
 [204] (Imatges/Cap-Motors-Induccio-T-vel-Mot-Load.pdf_tex
-<Imatges/Cap-Motors-Induccio-T-vel-Mot-Load.pdf, id=5636, page=1, 335.74252pt x
+<Imatges/Cap-Motors-Induccio-T-vel-Mot-Load.pdf, id=5635, page=1, 335.74252pt x
  184.94292pt>
 File: Imatges/Cap-Motors-Induccio-T-vel-Mot-Load.pdf Graphic file (type pdf)
 <use Imatges/Cap-Motors-Induccio-T-vel-Mot-Load.pdf, page 1>
@@ -4844,7 +4854,7 @@ Package mdframed Info: Box was splittet wrong
 [206]
 
 [207] (Imatges/Cap-Motors-Induccio-Esq-Equiv.pdf_tex
-<Imatges/Cap-Motors-Induccio-Esq-Equiv.pdf, id=5687, page=1, 304.4445pt x 106.6
+<Imatges/Cap-Motors-Induccio-Esq-Equiv.pdf, id=5686, page=1, 304.4445pt x 106.6
 9783pt>
 File: Imatges/Cap-Motors-Induccio-Esq-Equiv.pdf Graphic file (type pdf)
 <use Imatges/Cap-Motors-Induccio-Esq-Equiv.pdf, page 1>
@@ -4864,7 +4874,7 @@ Package pdftex.def Info: Imatges/Cap-Motors-Induccio-Esq-Equiv.pdf , page1 used
 [212]
 Package mdframed Info: mdframed works in twoside mode on input line 769.
  (Imatges/Cap-Motors-Induccio-CaractMotor-1.tex
-<Imatges/Cap-Motors-Induccio-CaractMotor-1.pdf, id=5782, 468.75125pt x 284.0612
+<Imatges/Cap-Motors-Induccio-CaractMotor-1.pdf, id=5781, 468.75125pt x 284.0612
 5pt>
 File: Imatges/Cap-Motors-Induccio-CaractMotor-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-Motors-Induccio-CaractMotor-1.pdf>
@@ -4895,7 +4905,7 @@ LaTeX Font Info:    Font shape `U/zeus/m/n' will be
 (Font)              scaled to size 10.0pt on input line 211.
 )
 (Imatges/Cap-Motors-Induccio-CaractMotor-2.tex
-<Imatges/Cap-Motors-Induccio-CaractMotor-2.pdf, id=5788, 468.75125pt x 284.0612
+<Imatges/Cap-Motors-Induccio-CaractMotor-2.pdf, id=5787, 468.75125pt x 284.0612
 5pt>
 File: Imatges/Cap-Motors-Induccio-CaractMotor-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-Motors-Induccio-CaractMotor-2.pdf>
@@ -4904,7 +4914,7 @@ Package pdftex.def Info: Imatges/Cap-Motors-Induccio-CaractMotor-2.pdf  used on
 (pdftex.def)             Requested size: 468.75009pt x 284.06053pt.
 )
 (Imatges/Cap-Motors-Induccio-CaractMotor-3.tex
-<Imatges/Cap-Motors-Induccio-CaractMotor-3.pdf, id=5789, 468.75125pt x 284.0612
+<Imatges/Cap-Motors-Induccio-CaractMotor-3.pdf, id=5788, 468.75125pt x 284.0612
 5pt>
 File: Imatges/Cap-Motors-Induccio-CaractMotor-3.pdf Graphic file (type pdf)
 <use Imatges/Cap-Motors-Induccio-CaractMotor-3.pdf>
@@ -4922,7 +4932,7 @@ Package pdftex.def Info: Imatges/Cap-Motors-Induccio-CaractMotor-3.pdf  used on
 [216 <./Imatges/Cap-Motors-Induccio-CaractMotor-1.pdf> <./Imatges/Cap-Motors-In
 duccio-CaractMotor-2.pdf>]
 (Imatges/Cap-Motors-Induccio-Esq-Equiv-Seq-Neg.pdf_tex
-<Imatges/Cap-Motors-Induccio-Esq-Equiv-Seq-Neg.pdf, id=5819, page=1, 304.4445pt
+<Imatges/Cap-Motors-Induccio-Esq-Equiv-Seq-Neg.pdf, id=5818, page=1, 304.4445pt
  x 106.69783pt>
 File: Imatges/Cap-Motors-Induccio-Esq-Equiv-Seq-Neg.pdf Graphic file (type pdf)
 
@@ -4949,7 +4959,7 @@ Package mdframed Info: Box was splittet wrong
 [220]
 Package mdframed Info: mdframed works in twoside mode on input line 1042.
  (Imatges/Cap-Motors-Induccio-MotCarregaReduida-1.tex
-<Imatges/Cap-Motors-Induccio-MotCarregaReduida-1.pdf, id=5891, 468.75125pt x 28
+<Imatges/Cap-Motors-Induccio-MotCarregaReduida-1.pdf, id=5890, 468.75125pt x 28
 4.06125pt>
 File: Imatges/Cap-Motors-Induccio-MotCarregaReduida-1.pdf Graphic file (type pd
 f)
@@ -4959,7 +4969,7 @@ sed on input line 176.
 (pdftex.def)             Requested size: 468.75009pt x 284.06053pt.
 )
 (Imatges/Cap-Motors-Induccio-MotCarregaReduida-2.tex
-<Imatges/Cap-Motors-Induccio-MotCarregaReduida-2.pdf, id=5892, 468.75125pt x 28
+<Imatges/Cap-Motors-Induccio-MotCarregaReduida-2.pdf, id=5891, 468.75125pt x 28
 4.06125pt>
 File: Imatges/Cap-Motors-Induccio-MotCarregaReduida-2.pdf Graphic file (type pd
 f)
@@ -4979,7 +4989,7 @@ Package mdframed Info: Box was splittet wrong
 Package mdframed Info: mdframed works in twoside mode on input line 1103.
 
 (Imatges/Cap-Motors-Induccio-MotTensRedSolAp-1.tex
-<Imatges/Cap-Motors-Induccio-MotTensRedSolAp-1.pdf, id=5926, 468.75125pt x 284.
+<Imatges/Cap-Motors-Induccio-MotTensRedSolAp-1.pdf, id=5925, 468.75125pt x 284.
 06125pt>
 File: Imatges/Cap-Motors-Induccio-MotTensRedSolAp-1.pdf Graphic file (type pdf)
 
@@ -4989,7 +4999,7 @@ d on input line 154.
 (pdftex.def)             Requested size: 468.75009pt x 284.06053pt.
 )
 (Imatges/Cap-Motors-Induccio-MotTensRedSolAp-2.tex
-<Imatges/Cap-Motors-Induccio-MotTensRedSolAp-2.pdf, id=5927, 468.75125pt x 284.
+<Imatges/Cap-Motors-Induccio-MotTensRedSolAp-2.pdf, id=5926, 468.75125pt x 284.
 06125pt>
 File: Imatges/Cap-Motors-Induccio-MotTensRedSolAp-2.pdf Graphic file (type pdf)
 
@@ -5011,7 +5021,7 @@ s-Induccio-MotTensRedSolAp-2.pdf>]
 Package mdframed Info: mdframed works in twoside mode on input line 1197.
 
 (Imatges/Cap-Motors-Induccio-MotTensRedSolEx-1-1.tex
-<Imatges/Cap-Motors-Induccio-MotTensRedSolEx-1-1.pdf, id=5965, 468.75125pt x 28
+<Imatges/Cap-Motors-Induccio-MotTensRedSolEx-1-1.pdf, id=5964, 468.75125pt x 28
 4.06125pt>
 File: Imatges/Cap-Motors-Induccio-MotTensRedSolEx-1-1.pdf Graphic file (type pd
 f)
@@ -5021,7 +5031,7 @@ sed on input line 206.
 (pdftex.def)             Requested size: 468.75009pt x 284.06053pt.
 )
 (Imatges/Cap-Motors-Induccio-MotTensRedSolEx-1-2.tex
-<Imatges/Cap-Motors-Induccio-MotTensRedSolEx-1-2.pdf, id=5966, 468.75125pt x 28
+<Imatges/Cap-Motors-Induccio-MotTensRedSolEx-1-2.pdf, id=5965, 468.75125pt x 28
 4.06125pt>
 File: Imatges/Cap-Motors-Induccio-MotTensRedSolEx-1-2.pdf Graphic file (type pd
 f)
@@ -5031,7 +5041,7 @@ sed on input line 176.
 (pdftex.def)             Requested size: 468.75009pt x 284.06053pt.
 )
 (Imatges/Cap-Motors-Induccio-MotTensRedSolEx-2-1.tex
-<Imatges/Cap-Motors-Induccio-MotTensRedSolEx-2-1.pdf, id=5967, 468.75125pt x 28
+<Imatges/Cap-Motors-Induccio-MotTensRedSolEx-2-1.pdf, id=5966, 468.75125pt x 28
 4.06125pt>
 File: Imatges/Cap-Motors-Induccio-MotTensRedSolEx-2-1.pdf Graphic file (type pd
 f)
@@ -5041,7 +5051,7 @@ sed on input line 140.
 (pdftex.def)             Requested size: 468.75009pt x 284.06053pt.
 )
 (Imatges/Cap-Motors-Induccio-MotTensRedSolEx-2-2.tex
-<Imatges/Cap-Motors-Induccio-MotTensRedSolEx-2-2.pdf, id=5968, 468.75125pt x 28
+<Imatges/Cap-Motors-Induccio-MotTensRedSolEx-2-2.pdf, id=5967, 468.75125pt x 28
 4.06125pt>
 File: Imatges/Cap-Motors-Induccio-MotTensRedSolEx-2-2.pdf Graphic file (type pd
 f)
@@ -5064,7 +5074,7 @@ ors-Induccio-MotTensRedSolEx-2-1.pdf>]
 
 [230 <./Imatges/Cap-Motors-Induccio-MotTensRedSolEx-2-2.pdf>]
 (Imatges/Cap-Motors-Induccio-Esq-Equiv-U-Sist.pdf_tex
-<Imatges/Cap-Motors-Induccio-Esq-Equiv-U-Sist.pdf, id=6010, page=1, 221.93149pt
+<Imatges/Cap-Motors-Induccio-Esq-Equiv-U-Sist.pdf, id=6009, page=1, 221.93149pt
  x 71.1319pt>
 File: Imatges/Cap-Motors-Induccio-Esq-Equiv-U-Sist.pdf Graphic file (type pdf)
 <use Imatges/Cap-Motors-Induccio-Esq-Equiv-U-Sist.pdf, page 1>
@@ -5075,7 +5085,7 @@ e1 used on input line 56.
 Package mdframed Info: mdframed works in twoside mode on input line 1354.
 
 (Imatges/Cap-Motors-Induccio-MotTensRedIarr-1.tex
-<Imatges/Cap-Motors-Induccio-MotTensRedIarr-1.pdf, id=6031, 468.75125pt x 284.0
+<Imatges/Cap-Motors-Induccio-MotTensRedIarr-1.pdf, id=6030, 468.75125pt x 284.0
 6125pt>
 File: Imatges/Cap-Motors-Induccio-MotTensRedIarr-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-Motors-Induccio-MotTensRedIarr-1.pdf>
@@ -5084,7 +5094,7 @@ Package pdftex.def Info: Imatges/Cap-Motors-Induccio-MotTensRedIarr-1.pdf  used
 (pdftex.def)             Requested size: 468.75009pt x 284.06053pt.
 )
 (Imatges/Cap-Motors-Induccio-MotTensRedIarr-2.tex
-<Imatges/Cap-Motors-Induccio-MotTensRedIarr-2.pdf, id=6032, 468.75125pt x 284.0
+<Imatges/Cap-Motors-Induccio-MotTensRedIarr-2.pdf, id=6031, 468.75125pt x 284.0
 6125pt>
 File: Imatges/Cap-Motors-Induccio-MotTensRedIarr-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-Motors-Induccio-MotTensRedIarr-2.pdf>
@@ -5104,7 +5114,7 @@ Package mdframed Info: Not enough space on this page on input line 1458.
 [234 <./Imatges/Cap-Motors-Induccio-MotTensRedIarr-1.pdf> <./Imatges/Cap-Motors
 -Induccio-MotTensRedIarr-2.pdf>]
 (Imatges/Cap-Motors-Induccio-Esq-Equiv-Fase-Oberta.pdf_tex
-<Imatges/Cap-Motors-Induccio-Esq-Equiv-Fase-Oberta.pdf, id=6068, page=1, 304.44
+<Imatges/Cap-Motors-Induccio-Esq-Equiv-Fase-Oberta.pdf, id=6067, page=1, 304.44
 45pt x 213.39566pt>
 File: Imatges/Cap-Motors-Induccio-Esq-Equiv-Fase-Oberta.pdf Graphic file (type 
 pdf)
@@ -5119,7 +5129,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 1507.
 
 
 [236] (Imatges/Cap-Motors-Induccio-Punts-T-vel.pdf_tex
-<Imatges/Cap-Motors-Induccio-Punts-T-vel.pdf, id=6118, page=1, 335.74252pt x 19
+<Imatges/Cap-Motors-Induccio-Punts-T-vel.pdf, id=6117, page=1, 335.74252pt x 19
 0.63347pt>
 File: Imatges/Cap-Motors-Induccio-Punts-T-vel.pdf Graphic file (type pdf)
 <use Imatges/Cap-Motors-Induccio-Punts-T-vel.pdf, page 1>
@@ -5136,7 +5146,7 @@ Package mdframed Info: Box was splittet wrong
 
 
 [239] (Imatges/Cap-Motors-Induccio-U-Deseq.tex
-<Imatges/Cap-Motors-Induccio-U-Deseq.pdf, id=6166, 468.75125pt x 255.95625pt>
+<Imatges/Cap-Motors-Induccio-U-Deseq.pdf, id=6165, 468.75125pt x 255.95625pt>
 File: Imatges/Cap-Motors-Induccio-U-Deseq.pdf Graphic file (type pdf)
 <use Imatges/Cap-Motors-Induccio-U-Deseq.pdf>
 Package pdftex.def Info: Imatges/Cap-Motors-Induccio-U-Deseq.pdf  used on input
@@ -5187,7 +5197,7 @@ Package pdftex.def Info: Imatges/Fons-de-pagina.pdf  used on input line 374.
 ]
 Cap\'{\i }tol 11.
 (Imatges/Cap-ResXarxElec-Branques-Z0.pdf_tex
-<Imatges/Cap-ResXarxElec-Branques-Z0.pdf, id=6233, page=1, 360.10518pt x 80.023
+<Imatges/Cap-ResXarxElec-Branques-Z0.pdf, id=6232, page=1, 360.10518pt x 80.023
 38pt>
 File: Imatges/Cap-ResXarxElec-Branques-Z0.pdf Graphic file (type pdf)
 <use Imatges/Cap-ResXarxElec-Branques-Z0.pdf, page 1>
@@ -5197,7 +5207,7 @@ n input line 56.
 )
 
 [249] (Imatges/Cap-ResXarxElec-Branques-Y0.pdf_tex
-<Imatges/Cap-ResXarxElec-Branques-Y0.pdf, id=6240, page=1, 188.20313pt x 97.865
+<Imatges/Cap-ResXarxElec-Branques-Y0.pdf, id=6239, page=1, 188.20313pt x 97.865
 63pt>
 File: Imatges/Cap-ResXarxElec-Branques-Y0.pdf Graphic file (type pdf)
 <use Imatges/Cap-ResXarxElec-Branques-Y0.pdf, page 1>
@@ -5206,7 +5216,7 @@ n input line 56.
 (pdftex.def)             Requested size: 188.20313pt x 97.87283pt.
 )
 (Imatges/Cap-ResXarxElec-Circuit-Graf.pdf_tex
-<Imatges/Cap-ResXarxElec-Circuit-Graf.pdf, id=6242, page=1, 429.45876pt x 146.7
+<Imatges/Cap-ResXarxElec-Circuit-Graf.pdf, id=6241, page=1, 429.45876pt x 146.7
 0952pt>
 File: Imatges/Cap-ResXarxElec-Circuit-Graf.pdf Graphic file (type pdf)
 <use Imatges/Cap-ResXarxElec-Circuit-Graf.pdf, page 1>
@@ -5294,7 +5304,7 @@ npxsy/m/n/10 ^^A [] \U/npxmia/m/it/10 = [] \OT1/minzpl/m/n/10 S[]
 [254]
 Package mdframed Info: mdframed works in twoside mode on input line 398.
  (Imatges/Cap-ResXarxElec-Exemple-Circuit.pdf_tex
-<Imatges/Cap-ResXarxElec-Exemple-Circuit.pdf, id=6287, page=1, 381.44476pt x 88
+<Imatges/Cap-ResXarxElec-Exemple-Circuit.pdf, id=6286, page=1, 381.44476pt x 88
 .02571pt>
 File: Imatges/Cap-ResXarxElec-Exemple-Circuit.pdf Graphic file (type pdf)
 <use Imatges/Cap-ResXarxElec-Exemple-Circuit.pdf, page 1>
@@ -5303,7 +5313,7 @@ ed on input line 56.
 (pdftex.def)             Requested size: 381.44475pt x 88.02682pt.
 )
 (Imatges/Cap-ResXarxElec-Exemple-Graf.pdf_tex
-<Imatges/Cap-ResXarxElec-Exemple-Graf.pdf, id=6288, page=1, 181.3863pt x 117.36
+<Imatges/Cap-ResXarxElec-Exemple-Graf.pdf, id=6287, page=1, 181.3863pt x 117.36
 761pt>
 File: Imatges/Cap-ResXarxElec-Exemple-Graf.pdf Graphic file (type pdf)
 <use Imatges/Cap-ResXarxElec-Exemple-Graf.pdf, page 1>
@@ -5315,7 +5325,7 @@ File: Imatges/HPPrime-Tool.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Tool.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Tool.pdf  used on input line 597.
 (pdftex.def)             Requested size: 21.18163pt x 13.62018pt.
-<Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP1.png, id=6290, 195.129pt x 146.949
+<Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP1.png, id=6289, 195.129pt x 146.949
 pt>
 File: Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP1.png Graphic file (type png)
 <use Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP1.png>
@@ -5326,12 +5336,12 @@ File: Imatges/HPPrime-Shift.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Shift.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Shift.pdf  used on input line 600.
 (pdftex.def)             Requested size: 21.18163pt x 13.62018pt.
-<Imatges/HPPrime-5.pdf, id=6291, 26.89737pt x 13.58592pt>
+<Imatges/HPPrime-5.pdf, id=6290, 26.89737pt x 13.58592pt>
 File: Imatges/HPPrime-5.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-5.pdf>
 Package pdftex.def Info: Imatges/HPPrime-5.pdf  used on input line 600.
 (pdftex.def)             Requested size: 26.8973pt x 13.58588pt.
-<Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP2.png, id=6292, 195.129pt x 146.949
+<Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP2.png, id=6291, 195.129pt x 146.949
 pt>
 File: Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP2.png Graphic file (type png)
 <use Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP2.png>
@@ -5342,14 +5352,14 @@ File: Imatges/HPPrime-Enter.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Enter.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Enter.pdf  used on input line 604.
 (pdftex.def)             Requested size: 32.49632pt x 13.58588pt.
-<Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP3.png, id=6293, 195.129pt x 146.949
+<Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP3.png, id=6292, 195.129pt x 146.949
 pt>
 File: Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP3.png Graphic file (type png)
 <use Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP3.png>
 Package pdftex.def Info: Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP3.png  used
  on input line 606.
 (pdftex.def)             Requested size: 195.12851pt x 146.94864pt.
-<Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP4.png, id=6294, 195.129pt x 146.949
+<Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP4.png, id=6293, 195.129pt x 146.949
 pt>
 File: Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP4.png Graphic file (type png)
 <use Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP4.png>
@@ -5360,7 +5370,7 @@ File: Imatges/HPPrime-Enter.pdf Graphic file (type pdf)
 <use Imatges/HPPrime-Enter.pdf>
 Package pdftex.def Info: Imatges/HPPrime-Enter.pdf  used on input line 616.
 (pdftex.def)             Requested size: 32.49632pt x 13.58588pt.
-<Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP5.png, id=6295, 195.129pt x 146.949
+<Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP5.png, id=6294, 195.129pt x 146.949
 pt>
 File: Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP5.png Graphic file (type png)
 <use Imatges/Cap-ResXarxElec-Exemple-Circuit-HPP5.png>
@@ -5401,7 +5411,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 713.
 
 
 [260] (Imatges/Cap-ResXarxElec-Acoblament.pdf_tex
-<Imatges/Cap-ResXarxElec-Acoblament.pdf, id=6357, page=1, 408.11922pt x 120.035
+<Imatges/Cap-ResXarxElec-Acoblament.pdf, id=6356, page=1, 408.11922pt x 120.035
 06pt>
 File: Imatges/Cap-ResXarxElec-Acoblament.pdf Graphic file (type pdf)
 <use Imatges/Cap-ResXarxElec-Acoblament.pdf, page 1>
@@ -5415,7 +5425,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 853.
 
 
 [262] (Imatges/Cap-ResXarxElec-Curt-Superpos-1.pdf_tex
-<Imatges/Cap-ResXarxElec-Curt-Superpos-1.pdf, id=6399, page=1, 293.06339pt x 12
+<Imatges/Cap-ResXarxElec-Curt-Superpos-1.pdf, id=6398, page=1, 293.06339pt x 12
 2.34685pt>
 File: Imatges/Cap-ResXarxElec-Curt-Superpos-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-ResXarxElec-Curt-Superpos-1.pdf, page 1>
@@ -5428,7 +5438,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [263] (Imatges/Cap-ResXarxElec-Curt-Superpos-2.pdf_tex
-<Imatges/Cap-ResXarxElec-Curt-Superpos-2.pdf, id=6407, page=1, 293.06339pt x 11
+<Imatges/Cap-ResXarxElec-Curt-Superpos-2.pdf, id=6406, page=1, 293.06339pt x 11
 9.50157pt>
 File: Imatges/Cap-ResXarxElec-Curt-Superpos-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-ResXarxElec-Curt-Superpos-2.pdf, page 1>
@@ -5437,7 +5447,7 @@ ed on input line 56.
 (pdftex.def)             Requested size: 293.06339pt x 119.50127pt.
 )
 (Imatges/Cap-ResXarxElec-Curt-Superpos-3.pdf_tex
-<Imatges/Cap-ResXarxElec-Curt-Superpos-3.pdf, id=6410, page=1, 293.06339pt x 11
+<Imatges/Cap-ResXarxElec-Curt-Superpos-3.pdf, id=6409, page=1, 293.06339pt x 11
 9.50157pt>
 File: Imatges/Cap-ResXarxElec-Curt-Superpos-3.pdf Graphic file (type pdf)
 <use Imatges/Cap-ResXarxElec-Curt-Superpos-3.pdf, page 1>
@@ -5478,7 +5488,7 @@ Underfull \vbox (badness 8170) has occurred while \output is active []
 
 
 [265 <./Imatges/Cap-ResXarxElec-Curt-Superpos-4.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 979.
+Package mdframed Info: mdframed works in twoside mode on input line 981.
 
 (Imatges/Cap-ResXarxElec-Curt-Mono.pdf_tex
 <Imatges/Cap-ResXarxElec-Curt-Mono.pdf, id=6579, page=1, 355.65945pt x 128.0374
@@ -5494,13 +5504,13 @@ input line 56.
 -Curt-Superpos-5.pdf>]
 
 [267 <./Imatges/Cap-ResXarxElec-Curt-Mono.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 1018.
+Package mdframed Info: mdframed works in twoside mode on input line 1020.
 
 
 [268]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 1245.
+(mdframed)              on input line 1247.
 
 
 [269])
@@ -7349,15 +7359,18 @@ L3 programming layer <2020/03/25>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `"Qüestions Electrotècniques Diverses".out'
  has not changed.
-(rerunfilecheck)             Checksum: 2902D6C2B666AB261C88B237D23CB022;94624.
+(rerunfilecheck)             Checksum: F521B6240BCA8FB78019D3BE247DC45F;94616.
  ) 
 Here is how much of TeX's memory you used:
- 56399 strings out of 468095
- 1234985 string characters out of 5429011
- 1918230 words of memory out of 5000000
- 76172 multiletter control sequences out of 15000+600000
+ 56403 strings out of 468092
+ 1235038 string characters out of 5428932
+ 1918322 words of memory out of 5000000
+ 76179 multiletter control sequences out of 15000+600000
  923617 words of font info for 428 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,23n,117p,1600b,2877s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -7424,7 +7437,7 @@ ic/newpx/zplr.pfb><C:/Users/josep/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/newpx/zplri.pfb>
 Output written on "C:/Users\josep\OneDrive\Documents\TeX Files\Qüestions Elect
 rotècniques Diverses\QED-GitHub\v16.0\out\Qüestions Electrotècniques Diverse
-s.pdf" (568 pages, 6832477 bytes).
+s.pdf" (568 pages, 6832930 bytes).
 PDF statistics:
  17502 PDF objects out of 18468 (max. 8388607)
  7064 named destinations out of 7423 (max. 500000)

@@ -928,7 +928,7 @@ class VoltageSource(Element):
 class CurrentSource(Element):
     """Create a current source to be used with class Network."""
 
-    J: complex                # Intensivity in an oriented graph
+    J: complex                # Current intensity in an oriented graph
     Y: complex | None = None  # Parallel admittance. Use None (default) for an ideal source (Y=0)
 
     def __repr__(self):

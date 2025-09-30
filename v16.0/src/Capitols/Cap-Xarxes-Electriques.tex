@@ -157,9 +157,9 @@ El signe de cada força electromotriu és positiu si el seu sentit coincideix am
       \end{array}\end{bmatrix}\unit{V}
    \]
 
-\item[$\mcmplx{J}\ped{B}^\circ\{b\}$] \index{vector!d'intensivitats de branca $\mcmplx{J}\ped{B}^\circ$}Vector columna d'intensivitats de branca. Els elements d'aquest vector estan formats per les intensivitats de les fonts de corrent de les respectives branques.
+\item[$\mcmplx{J}\ped{B}^\circ\{b\}$] \index{vector!d'intensitats de corrents de branca $\mcmplx{J}\ped{B}^\circ$}Vector columna d'intensitats de corrents de branca. Els elements d'aquest vector estan formats per les intensitats de les fonts de corrent de les respectives branques.
 
-El signe de cada intensivitat és positiu si el seu sentit coincideix amb el sentit de la fletxa de la branca corresponent del graf orientat, i negatiu en cas contrari.
+El signe de cada intensitat de corrent és positiu si el seu sentit coincideix amb el sentit de la fletxa de la branca corresponent del graf orientat, i negatiu en cas contrari.
 
    En el nostre exemple tenim:
    \[
@@ -202,7 +202,7 @@ matrius i vectors són (se'n donen les dimensions entre claus):
       \end{array}\end{bmatrix}\unit{S}
    \]
 
-   \item[$\mcmplx{J}\ped{B}\{b\}$] \index{vector!d'intensivitats equivalents de branca $\mcmplx{J}\ped{B}$}Vector columna d'intensivitats  equivalents de branca. És definit per la relació següent:
+   \item[$\mcmplx{J}\ped{B}\{b\}$] \index{vector!d'intensitats de corrents equivalents de branca $\mcmplx{J}\ped{B}$}Vector columna d'intensitats de corrents  equivalents de branca. És definit per la relació següent:
    \begin{equation}
       \mcmplx{J}\ped{B} = \mcmplx{J}\ped{B}^\circ  + \mcmplx{Y}\ped{B} \cdot\mcmplx{E}\ped{B}^\circ
    \end{equation}
@@ -263,7 +263,7 @@ matrius i vectors són (se'n donen les dimensions entre claus):
       \label{eq:yn}
    \]}
 
-   \item[$\mcmplx{J}\ped{N}\{n\}$] \index{vector!d'intensivitats de nus $\mcmplx{J}\ped{N}$}Vector columna d'intensivitats de nus. És definit per la relació següent:
+   \item[$\mcmplx{J}\ped{N}\{n\}$] \index{vector!d'intensitats de corrents de nus $\mcmplx{J}\ped{N}$}Vector columna d'intensitats de corrents de nus. És definit per la relació següent:
    \begin{equation}
       \mcmplx{J}\ped{N} = - \boldsymbol{A} \cdot\mcmplx{J}\ped{B}
    \end{equation}
@@ -655,10 +655,10 @@ La matriu $\mcmplx{Y}\ped{N}\{n \times n\}$ i el vector $\mcmplx{J}\ped{N}\{n\}$
       \end{array}\end{bmatrix}\unit{S}
    \]
 
-   \item[$\mcmplx{J}\ped{N}\{n\}$] \index{vector!d'intensivitats de nus $\mcmplx{J}\ped{N}$}Vector
-d'intensivitats de nus. Cada element d'aquest vector és format per la suma de
-les intensivitats, degudes a les fonts de corrent i a les fonts de tensió, de les
-branques que incideixen en cada nus; el signe de cada intensivitat és positiu si el
+   \item[$\mcmplx{J}\ped{N}\{n\}$] \index{vector!d'intensitats de corrents de nus $\mcmplx{J}\ped{N}$}Vector
+d'intensitats de corrents de nus. Cada element d'aquest vector és format per la suma de
+les intensitats de corrents, degudes a les fonts de corrent i a les fonts de tensió, de les
+branques que incideixen en cada nus; el signe de cada intensitat de corrent és positiu si el
 corrent va cap al nus, i negatiu si se n'allunya. Les fonts de tensió han de
 transformar-se en fonts de corrent utilitzant l'equació \eqref{eq:Thevenin-Norton} de
 la pàgina \pageref{eq:Thevenin-Norton}.
@@ -903,7 +903,9 @@ A partir d'aquests valors podem calcular els valors del circuit Norton equivalen
 
 \section{Curtcircuits}\label{sec:xarxes-curtcircuits}\index{curtcircuits}
 
-S'explica en aquesta secció  com calcular els corrents que circulen en una xarxa quan hi ha un curtcircuit, fent servir el teorema de la superposició.\footnote{Vegeu la secció \ref{secc:teorema-superpos}} Amb aquest mètode es pot calcular de forma exacta el corrent que circula per cadascuna de les branques de la xarxa en cas de curtcircuit, tenint en compte el corrent que circulava prèviament.
+S'explica en aquesta secció  com calcular els corrents que circulen en una xarxa quan hi ha un curtcircuit, fent servir el teorema de la superposició.\footnote{Vegeu la secció \ref{secc:teorema-superpos}}
+
+Amb aquest mètode es pot calcular de forma exacta el corrent que circula per cadascuna de les branques de la xarxa en cas de curtcircuit, tenint en compte el corrent que circulava prèviament.
 
 En la figura \vref{pic:circuit-base-1} es pot veure una xarxa qualsevol, a la qual s'han destacat dos nodes: $\alpha$ i $\beta$. Aquesta xarxa només és un exemple, ja que les dues subxarxes a banda i banda d'aquests dos nodes poden ser tan complexes com es vulgui. Els corrents que circulen per aquesta xarxa són $\cmplx{I}_1$, $\cmplx{I}_2$, $\cmplx{I}_3$ i $\cmplx{I}_4$, i la tensió entre els nodes $\alpha$ i $\beta$ és $\cmplx{U}_{\alpha\beta}$
 
@@ -935,7 +937,7 @@ Apliquem ara el teorema de la superposició a la figura \vref{pic:circuit-base-3
 \begin{dingautolist}{202}
 	\item La xarxa superior està formada per tots els  components de la xarxa original de la figura \vref{pic:circuit-base-1} (en general, per totes les impedàncies, admitàncies, acoblaments magnètics, fonts de tensió i fonts de corrent que tingués la xarxa), més la font de tensió superior de la figura \vref{pic:circuit-base-3}. Aquesta xarxa és totalment equivalent a la xarxa original, ja que la font de tensió entre els nodes $\alpha$ i $\beta$ és igual  a  la tensió $\cmplx{U}_{\alpha\beta}$. Així doncs, el corrent que circula per aquesta font de tensió ha de ser nul, i els corrents que circulen per les branques han de ser els mateixos que els que circulen per la xarxa original: $\cmplx{I}_1$, $\cmplx{I}_2$, $\cmplx{I}_3$ i $\cmplx{I}_4$.
 	
-	\item  La xarxa inferior està formada per tots els  components de la xarxa original de la figura \vref{pic:circuit-base-1} sense les fonts de tensió (i en general, també sense les fonts de corrent),  més la font de tensió inferior de la figura \vref{pic:circuit-base-3}. El corrent que circularà per aquesta font de tensió serà $\cmplx{I}\ped{F}$, ja que la suma dels corrents entre els nodes $\alpha$ i $\beta$ d'aquesta xarxa i l'anterior, ha de ser igual al corrent entre els mateixos nodes  de la xarxa de la  figura \vref{pic:circuit-base-3} ---teorema de la superposició---; els corrents de les altres branques tindran valors diferents: $\cmplx{I}_1'$, $\cmplx{I}_2'$, $\cmplx{I}_3'$ i $\cmplx{I}_4'$.
+	\item  La xarxa inferior està formada per tots els  components de la xarxa original de la figura \vref{pic:circuit-base-1} sense les fonts de tensió (i en general, també sense les fonts de corrent),  més la font de tensió inferior de la figura \vref{pic:circuit-base-3}. El corrent que circularà per aquesta font de tensió serà $\cmplx{I}\ped{F}$, ja que la suma dels corrents entre els nodes $\alpha$ i $\beta$ de les dues xarxes de la figura \vref{pic:circuit-base-4}, ha de ser igual al corrent entre els mateixos nodes  de la xarxa de la  figura \vref{pic:circuit-base-3} ---teorema de la superposició---; els corrents de les altres branques tindran valors diferents: $\cmplx{I}_1'$, $\cmplx{I}_2'$, $\cmplx{I}_3'$ i $\cmplx{I}_4'$.
 \end{dingautolist}
 
 \begin{center}
@@ -1035,7 +1037,7 @@ El mètode de càlcul explicat en aquesta secció, serveix per calcular curtcirc
 		\end{array}\end{bmatrix}
 	\]	
 	
-	Formem a continuació la matriu d'admitàncies de branca $\mcmplx{Y}'\ped{B}$ i el vector d'intensivitats de branca $\mcmplx{J}'\ped{B}$. La matriu $\mcmplx{Y}'\ped{B}$ és igual que l'original $\mcmplx{Y}\ped{B}$, ja que la font de corrent que simula el corrent de curtcircuit, no aporta cap admitància nova; això sí, cal augmentar aquesta matriu en una fila i una columna, per tenir en compte la nova branca ---la sisena--- creada per aquesta font de corrent. El vector $\mcmplx{J}'\ped{B}$ només tindrà un valor no nul en la sisena fila, amb el valor del corrent de curtcircuit:
+	Formem a continuació la matriu d'admitàncies de branca $\mcmplx{Y}'\ped{B}$ i el vector d'intensitats de corrents de branca $\mcmplx{J}'\ped{B}$. La matriu $\mcmplx{Y}'\ped{B}$ és igual que l'original $\mcmplx{Y}\ped{B}$, ja que la font de corrent que simula el corrent de curtcircuit, no aporta cap admitància nova; això sí, cal augmentar aquesta matriu en una fila i una columna, per tenir en compte la nova branca ---la sisena--- creada per aquesta font de corrent. El vector $\mcmplx{J}'\ped{B}$ només tindrà un valor no nul en la sisena fila, amb el valor del corrent de curtcircuit:
 	
 	\[
 		\mcmplx{Y}'\ped{B} = 
