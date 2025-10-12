@@ -23,11 +23,11 @@ print(f'δ_3 = {δ_3:.6f} rad = {np.degrees(δ_3):.6f}°\n')
 
 s_1 = (1.05*((12.8-39.6j)*1.05 + (-2.8+9.6j)*1.03*np.exp(δ_2*1j) + (-10+30j)*v_3*np.exp(δ_3*1j))).conjugate()
 s_2 = (1.03*np.exp(-δ_2*1j)*((-2.8+9.6j)*1.05 + (7.8-24.6j)*1.03*np.exp(δ_2*1j) + (-5+15j)*v_3*np.exp(δ_3*1j))).conjugate()
-s_G1 = s_1
+s_X1 = s_1
 s_G2 = 0.5+0.25j + s_2
 print(f's_1 = {s_1:.5f}')
 print(f's_2 = {s_2:.5f}')
-print(f's_G1 = {s_G1:.5f}')
+print(f's_X1 = {s_X1:.5f}')
 print(f's_G2 = {s_G2:.5f}')
 
 net = pp.create_empty_network(sn_mva=1)

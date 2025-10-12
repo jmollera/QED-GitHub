@@ -1144,6 +1144,7 @@ S'ha actualitzat la distribució de Python utilitzada per executar els programes
      S'han creat les subclasses \texttt{ComplexR} i \texttt{ComplexD} per manipular nombres complexos polars en radians i en graus respectivament,  sense la necessitat d'especificar el paràmetre \texttt{in\_rad} de la classe pare \texttt{Complex}.
     \item En el mòdul \texttt{qed.eng\_elc} s'ha modificat la implementació  de les classes \texttt{IECcurve}, \texttt{IEEEcurve} i \texttt{Speed}, canviant-ne els noms dels elements interns de minúscula a majúscula, per emfatitzar que són constants. Això afecta a l'ús extern d'aquestes classes.
     \item En el mòdul \texttt{qed.eng\_elc} s'ha modificat la implementació  de la classe \texttt{Network}, afegint a la funció \texttt{\_\_init\_\_} els membres  \texttt{ideal\_Z} i \texttt{ideal\_Y}, amb el valor 1 per defecte. El motiu d'aquest canvi és donar la flexibilitat a l'usuari d'escollir altres valors per a \texttt{ideal\_Z} i \texttt{ideal\_Y}, si considera que poden ser més adequats en relació a les magnituds de la resta de valors  dels components de la xarxa. Donat que la representació interna de la classe \texttt{Network} ha canviat, els mètodes \texttt{load} i  \texttt{save} no són compatibles amb les versions anteriors.
+    \item En el mòdul \texttt{qed.eng\_elc} s'ha modificat la implementació  de la classes \texttt{Motor3ph}, eliminat els mètodes \texttt{t\_start} i \texttt{s\_start\_up}, i creant en el nou mètode \texttt{start\_up}, que torna alhora els resultats que tornaven per separat els dos mètodes eliminats. Això afecta a l'ús extern d'aquesta classe.
     \item Ha calgut modificar el programa \texttt{Exemple-12-3.py}, afegint el paràmetre \texttt{tap\_changer\_type ='Ratio'} a la funció \texttt{create\_transformer\_from\_parameters}. Això és degut al canvi de versió de la llibreria \texttt{pandapower}.
 \end{itemize}
 
@@ -1152,5 +1153,9 @@ A la secció \ref{sec:SI-intro}, s'indica que la publicació més recent del \te
 A la secció \ref{sec:bit-octet-byte} s'indica que els prefixes binaris «robi» i «quebi»  s'han inclòs en la revisió de la norma CEI 80000-13:2025.
 
 A la secció \ref{sec:normes-escript} s'afegeixen algunes normes d'escriptura, se n'elimina alguna, i se'n modifiquen d'altres, per mirar de  fer-ho tot plegat més entenedor.
+
+S'amplia l'equació \eqref{eq:trap-uneven} amb una expressió alternativa que requereix menys càlculs.
+
+Es modifica el llistat \ref{lst:trap-rule} de la funció \texttt{Trapezoidal\_Rule}, utilitzant l'expressió alternativa de l'equació \eqref{eq:trap-uneven}.
 
 En l'apartat Bibliografia, s'afegeix la referència \cite{SSMH}.

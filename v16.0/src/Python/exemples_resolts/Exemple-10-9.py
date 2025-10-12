@@ -40,7 +40,7 @@ def T_load(s):
 s_fun = motor.s_match(T_load, *font_ext)
 mot_fun = motor.run(s_fun, *font_ext)
 mot_arr = motor.run(1, *font_ext)
-print(f's,fun = {s_fun:.4f},   n_m_fun = {motor.convert(s_fun, Speed.SLIP_TO_RPM):.1f} r/min')
+print(f's,fun = {s_fun:.4f}, n_m_fun = {motor.convert(s_fun, Speed.SLIP_TO_RPM):.1f} r/min')
 print(f'U_1,fun = {ComplexD(mot_fun.U):.3f} V')
 print(f'I_1,fun = {abs(mot_fun.I):.1f} A')
 print(f'T_m,fun = {mot_fun.T_m:.1f} N·m\n')
@@ -56,7 +56,7 @@ print(f's_T_m,max = {s_T_m_max:.4f}')
 print(f'n_T_m,max = {n_T_m_max:.1f} r/min')
 print(f'T_m,max = {T_m_max:.1f} N·m\n')
 
-mot_t_start = motor.t_start(T_load, J, *font_ext)
+mot_t_start, mot_s_start_up = motor.start_up(T_load, J, *font_ext)
 print(f't_arr = {mot_t_start:.1f} s')
 
 n_m = np.linspace(0, motor.n_m_sync, 500)  # r/min
@@ -101,7 +101,7 @@ def log_format(x, pos):
     return f'{x:.{decimal_places:1d}f}'.replace('.', ',')
 
 t_arr = np.linspace(0, 10, 500)  # temps: de 0 s a 10 s
-s_t_arr = motor.s_start_up(T_load, J, *font_ext)(t_arr)
+s_t_arr = mot_s_start_up(t_arr)
 mot_t_arr = motor.run(s_t_arr, *font_ext)
 T_load_t_arr = T_load(s_t_arr)
 

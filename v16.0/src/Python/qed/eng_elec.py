@@ -1600,10 +1600,11 @@ class Motor3ph:
         Eff = P_m / np.real(S)
         return Motor3phRun(Z, PF, I, U, S, T_m, P_m, Eff)
 
-    def t_start(self, T_load: Callable[[float], float], J: float,
-                e_ext: complex, z_ext: complex = 0) -> float:
+    def start_up(self, T_load: Callable[[float], float], J: float,
+                 e_ext: complex, z_ext: complex = 0) -> tuple[float, interpolate.interp1d]:
         """
-        Return the starting time of the motor.
+        Return the starting time and an interpolating function of the slip evolution with
+        time during the start-up process.
 
         Parameters
         ----------
@@ -1616,37 +1617,10 @@ class Motor3ph:
 
         Returns
         -------
-        The starting time of the motor, s.
-        """
-        N_P1, N_P2, S_FACTOR = 200, 800, 1.25
+        The starting time
 
-        s_match = self.s_match(T_load, e_ext, z_ext)
-        # The function to integrate is very smooth up to slightly before s_match
-        s_lin = min(1.0, S_FACTOR * s_match)
-        s = np.concatenate([np.linspace(start=1, stop=s_lin, num=N_P1, endpoint=False),
-                            np.linspace(start=s_lin, stop=s_match, num=N_P2, endpoint=False)])
-        y_fun = 1 / (self.run(s, e_ext, z_ext).T_m - T_load(s))
-        return -J * self.ω_m_sync * integrate.simpson(y=y_fun, x=s)
-
-    def s_start_up(self, T_load: Callable[[float], float], J: float,
-                   e_ext: complex, z_ext: complex = 0) -> interpolate.interp1d:
-        """
-        Return an interpolating function of the slip evolution with time
-        during the start-up process.
-
-        Parameters
-        ----------
-        T_load: A function that returns the load torque for a given slip, N·m
-        J:      Total moment of inertia of the motor plus the load, kg·m²
-        e_ext:  Voltage (line-neutral) of the external power system feeding
-                the motor, V
-        z_ext:  Impedance of the external power system feeding the motor, Ω/phase
-                The default is 0
-
-        Returns
-        -------
         An interpolating function (scipy.interpolate.interp1d) that returns the slip
-        at a given time in seconds, during the start-up process
+        at a given time in seconds, during the start-up process.
         If time < 0, slip=1 (motor stopped) is returned
         If time > starting time, the slip at the starting time is returned
         """
@@ -1661,9 +1635,9 @@ class Motor3ph:
         # The variable x in cumulative_simpson must be strictly increasing,
         # so we need to change the sign of s, and then the sign of the integral
         t = J * self.ω_m_sync * integrate.cumulative_simpson(y=y_fun, x=-s, initial=0)
-        return interpolate.interp1d(t, s, kind='cubic', copy=False,
-                                    assume_sorted=True, bounds_error=False,
-                                    fill_value=(s[0], s[-1]))
+        return t[-1], interpolate.interp1d(t, s, kind='cubic', copy=False,
+                                           assume_sorted=True, bounds_error=False,
+                                           fill_value=(s[0], s[-1]))
 
 
 if __name__ == '__main__':

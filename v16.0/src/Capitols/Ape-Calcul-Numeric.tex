@@ -150,7 +150,9 @@ n = N+1, \qquad N = 1, 2, 3, 4, \dots
 La integral $A$ entre el punt inicial $(x_1, y_1)$ i el punt final $(x_n, y_n)$, és definida per l'equació:
 
  \begin{equation}\label{eq:trap-uneven}
-    A = \sum_{i=1}^{n-1} \frac{y_i + y_{i+1}}{2} (x_{i+1}-x_i)
+    A = \sum_{i=1}^{n-1} \frac{y_{i+1} + y_i}{2} (x_{i+1}-x_i) =
+     \frac{1}{2} \left( y_1(x_2-x_1) + y_n(x_n-x_{n-1}) +
+       \sum_{i=2}^{n-1} y_i(x_{i+1}-x_{i-1})\right)
  \end{equation}
 
 En el cas que les $N$ divisions tinguin la mateixa amplada, els  $n$ punts estaran separats uniformement una distància $h \equiv x_2-x_1 = x_3-x_2 = \dots = x_n-x_{n-1}$, i la regla dels trapezis esdevé:

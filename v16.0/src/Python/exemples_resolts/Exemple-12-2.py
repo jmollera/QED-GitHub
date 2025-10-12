@@ -23,9 +23,9 @@ print(f'v_2 = {v_2:.6f}')
 print(f'δ_2 = {δ_2:.6f} rad = {np.degrees(δ_2):.6f}°\n')
 
 s_12 = 1.05*(0.1j / 2 * 1.05 + (1.05 - v_2 * np.exp(δ_2 * 1j)) / (0.028 + 0.096j)).conjugate()
-s_G1 = 1.2+0.3j + s_12
+s_X1 = 1.2 + 0.3j + s_12
 print(f's_12 = {s_12:.5f}')
-print(f's_G1 = {s_G1:.5f}')
+print(f's_X1 = {s_X1:.5f}')
 
 net = pp.create_empty_network(sn_mva=1)
 
@@ -60,11 +60,11 @@ print(f'δ_2 = {δ_2:.6f} rad = {np.degrees(δ_2):.6f}°\n')
 
 s_12 = 1.05*(0.1j / 2 * 1.05 + (1.05 - 1.03 * np.exp(δ_2 * 1j)) / (0.028 + 0.096j)).conjugate()
 s_21 = 1.03*np.exp(δ_2*1j)*(0.1j / 2 * 1.03 * np.exp(δ_2 * 1j) + (1.03 * np.exp(δ_2 * 1j) - 1.05) / (0.028 + 0.096j)).conjugate()
-s_G1 = 1.2+0.3j + s_12
+s_X1 = 1.2 + 0.3j + s_12
 s_C2 = 0.8+0.6j + s_21
 print(f's_12 = {s_12:.5f}')
 print(f's_21 = {s_21:.5f}')
-print(f's_G1 = {s_G1:.5f}')
+print(f's_X1 = {s_X1:.5f}')
 print(f's_C2 = {s_C2:.5f}')
 
 pp.create_gen(net, b2, p_mw=0, vm_pu=1.03, name='Condens 2')
