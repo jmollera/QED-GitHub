@@ -40,7 +40,7 @@ def T_load(s):
 s_fun = motor.s_match(T_load, *font_ext)
 mot_fun = motor.run(s_fun, *font_ext)
 mot_arr = motor.run(1, *font_ext)
-print(f's,fun = {s_fun:.4f}, n_m_fun = {motor.convert(s_fun, Speed.SLIP_TO_RPM):.1f} r/min')
+print(f's,fun = {s_fun:.4f}, n_m_fun = {motor.convert(s_fun, Speed.slip_to_n) :.1f} r/min')
 print(f'U_1,fun = {ComplexD(mot_fun.U):.3f} V')
 print(f'I_1,fun = {abs(mot_fun.I):.1f} A')
 print(f'T_m,fun = {mot_fun.T_m:.1f} N·m\n')
@@ -49,8 +49,8 @@ print(f'I_1,arr = {abs(mot_arr.I):.1f} A')
 print(f'T_m,arr = {mot_arr.T_m:.1f} N·m\n')
 
 s_T_m_max = motor.s_T_m_max(Z_sist + Z_cable)
-n_T_m_max = motor.convert(s_T_m_max, Speed.SLIP_TO_RPM)
-ω_T_m_max = motor.convert(s_T_m_max, Speed.SLIP_TO_RAD_PER_S)
+n_T_m_max = motor.convert(s_T_m_max, Speed.slip_to_n)
+ω_T_m_max = motor.convert(s_T_m_max, Speed.slip_to_ω)
 T_m_max = motor.run(s_T_m_max, *font_ext).T_m
 print(f's_T_m,max = {s_T_m_max:.4f}')
 print(f'n_T_m,max = {n_T_m_max:.1f} r/min')
@@ -60,7 +60,7 @@ mot_t_start, mot_s_start_up = motor.start_up(T_load, J, *font_ext)
 print(f't_arr = {mot_t_start:.1f} s')
 
 n_m = np.linspace(0, motor.n_m_sync, 500)  # r/min
-s = motor.convert(n_m, Speed.RPM_TO_SLIP)
+s = motor.convert(n_m, Speed.n_to_slip)
 mot = motor.run(s, *font_ext)
 
 fig, ax1 = plt.subplots(figsize=(6, 4))

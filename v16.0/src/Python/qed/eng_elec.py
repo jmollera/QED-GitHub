@@ -61,26 +61,26 @@ class CableType(enum.Enum):
 
 class IECcurve(enum.Enum):
     """Constants to be used in function curve_51"""
-    INVERSE = enum.auto()
-    VERY_INVERSE = enum.auto()
-    EXTREMELY_INVERSE = enum.auto()
+    Inverse = enum.auto()
+    Very_Inverse = enum.auto()
+    Extremely_Inverse = enum.auto()
 
 
 class IEEEcurve(enum.Enum):
     """Constants to be used in function curve_51"""
-    MODERATELY_INVERSE = enum.auto()
-    VERY_INVERSE = enum.auto()
-    EXTREMELY_INVERSE = enum.auto()
+    Moderately_Inverse = enum.auto()
+    Very_Inverse = enum.auto()
+    Extremely_Inverse = enum.auto()
 
 
 class Speed(enum.Enum):
     """Constants to be used in method speed of class Motor3ph"""
-    SLIP_TO_RPM = enum.auto()        # slip to r/min
-    SLIP_TO_RAD_PER_S = enum.auto()  # slip to rad/s
-    RPM_TO_SLIP = enum.auto()        # r/min to slip
-    RPM_TO_RAD_PER_S = enum.auto()   # r/min to rad/s
-    RAD_PER_S_TO_SLIP = enum.auto()  # rad/s to slip
-    RAD_PER_S_TO_RPM = enum.auto()   # rad/s to r/min
+    slip_to_n = enum.auto()  # slip to n (r/min)
+    slip_to_ω = enum.auto()  # slip to ω (rad/s)
+    n_to_slip = enum.auto()  # n (r/min) to slip
+    n_to_ω = enum.auto()     # n (r/min) to ω (rad/s)
+    ω_to_slip = enum.auto()  # ω (rad/s) to slip
+    ω_to_n = enum.auto()     # ω (rad/s) to n (r/min)
 
 
 class EEException(Exception):
@@ -834,12 +834,12 @@ def curve_51(I: ArrayLike | float, curve: IECcurve | IEEEcurve, I_p: float,
     ----------
     I:     Current, A.
     curve: The 51 curve to use. Allowed values:
-              IECcurve.INVERSE
-              IECcurve.VERY_INVERSE
-              IECcurve.EXTREMELY_INVERSE
-              IEEEcurve.MODERATELY_INVERSE
-              IEEEcurve.VERY_INVERSE
-              IEEEcurve.EXTREMELY_INVERSE
+              IECcurve.Inverse
+              IECcurve.Very_Inverse
+              IECcurve.Extremely_Inverse
+              IEEEcurve.Moderately_Inverse
+              IEEEcurve.Very_Inverse
+              IEEEcurve.Extremely_Inverse
     I_p:   Pick up current, A.
     T:     Multiplicative parameter. The default is 1.
     D:     Additive parameter, s. The default is 0 s.
@@ -851,33 +851,33 @@ def curve_51(I: ArrayLike | float, curve: IECcurve | IEEEcurve, I_p: float,
 
     Example
     -------
-    >>> print(f'{curve_51(200, IECcurve.VERY_INVERSE, 100):.4f}')
+    >>> print(f'{curve_51(200, IECcurve.Very_Inverse, 100):.4f}')
     13.5000
-    >>> print(f'{curve_51(200, IEEEcurve.VERY_INVERSE, 100):.4f}')
+    >>> print(f'{curve_51(200, IEEEcurve.Very_Inverse, 100):.4f}')
     7.0277
     """
     match curve:
-        case IECcurve.INVERSE:
+        case IECcurve.Inverse:
             A = 0.14
             P = 0.02
             B = 0.0
-        case IECcurve.VERY_INVERSE:
+        case IECcurve.Very_Inverse:
             A = 13.5
             P = 1.0
             B = 0.0
-        case IECcurve.EXTREMELY_INVERSE:
+        case IECcurve.Extremely_Inverse:
             A = 80.0
             P = 2.0
             B = 0.0
-        case IEEEcurve.MODERATELY_INVERSE:
+        case IEEEcurve.Moderately_Inverse:
             A = 0.0515
             P = 0.02
             B = 0.114
-        case IEEEcurve.VERY_INVERSE:
+        case IEEEcurve.Very_Inverse:
             A = 19.61
             P = 2.0
             B = 0.491
-        case IEEEcurve.EXTREMELY_INVERSE:
+        case IEEEcurve.Extremely_Inverse:
             A = 28.2
             P = 2.0
             B = 0.1217
@@ -1518,24 +1518,23 @@ class Motor3ph:
         """Return the motor synchronous mechanical speed in r/min."""
         return 120 * self._f / self._p
 
-    def convert(self, vel: ArrayLike | float, from_to: Speed) -> ArrayLike | float:
+    def convert(self, v: ArrayLike | float, from_to: Speed) -> ArrayLike | float:
         """
-        Convert vel from/to: slip (s), mechanical speed in rad/s (ω_m),
-        or mechanical speed in r/min (n_m)
+        Convert from/to: slip, ω (rad/s), and n (r/min)
         """
         match from_to:
-            case Speed.SLIP_TO_RPM:
-                return (1 - vel) * self.n_m_sync
-            case Speed.SLIP_TO_RAD_PER_S:
-                return (1 - vel) * self.ω_m_sync
-            case Speed.RPM_TO_SLIP:
-                return 1 - vel / self.n_m_sync
-            case Speed.RPM_TO_RAD_PER_S:
-                return vel * np.pi / 30
-            case Speed.RAD_PER_S_TO_SLIP:
-                return 1 - vel / self.ω_m_sync
-            case Speed.RAD_PER_S_TO_RPM:
-                return vel * 30 / np.pi
+            case Speed.slip_to_n:
+                return (1 - v) * self.n_m_sync
+            case Speed.slip_to_ω:
+                return (1 - v) * self.ω_m_sync
+            case Speed.n_to_slip:
+                return 1 - v / self.n_m_sync
+            case Speed.n_to_slip:
+                return v * np.pi / 30
+            case Speed.ω_to_slip:
+                return 1 - v / self.ω_m_sync
+            case Speed.ω_to_n:
+                return v * 30 / np.pi
             case _:
                 raise EEInvalidArguments({'from_to': from_to})
 
@@ -1596,7 +1595,7 @@ class Motor3ph:
         U = np.where(z_ext == 0, e_ext, Z * I)
         S = 3 * U * I.conj()
         T_m = 3 * r_2_s * np.abs(e_th / (z_th + z_2_s)) ** 2 / self.ω_m_sync
-        P_m = T_m * self.convert(s, Speed.SLIP_TO_RAD_PER_S)
+        P_m = T_m * self.convert(s, Speed.slip_to_ω)
         Eff = P_m / np.real(S)
         return Motor3phRun(Z, PF, I, U, S, T_m, P_m, Eff)
 

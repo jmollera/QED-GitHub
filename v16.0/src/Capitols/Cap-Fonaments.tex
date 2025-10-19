@@ -1717,21 +1717,39 @@ On  $\mcmplx{Z}$ és la matriu d'impedàncies, $\mcmplx{E}$ és el vector de fon
 
  Quan no hi ha acoblaments magnètics entre branques, la matriu d'impedàncies $\mcmplx{Z}$ i el vector de fonts de tensió $\mcmplx{E}$ poden formar-se de manera directa seguint els passos següents:
 \begin{dingautolist}{202}
-   \item S'assigna a cada malla un número començant per l'1.
+   \item S'assigna a cada malla un número consecutiu, començant per l'1.
 
-          En el nostre exemple les malles s'han numerat 1, 2 i 3, d'esquerra a dreta.
+          En el nostre exemple, les malles s'han numerat 1, 2 i 3, d'esquerra a dreta.
    \item Es dibuixa per a  cada malla el seu corrent de malla, tenint en compte que tots tinguin el mateix sentit de gir.
 
-       En el nostre exemple tots els corrents de malla giren en sentit horari.
+       En el nostre exemple, tots els corrents de malla giren en sentit horari.
+
    \item Cada element de la diagonal de la matriu d'impedàncies és igual a la suma de les impedàncies que formen cada malla.
 
-       En el nostre exemple tenim: $\mcmplx{Z}[1,1]=\cmplx{Z}_1 + \cmplx{Z}_3$, $\mcmplx{Z}[2,2]=\cmplx{Z}_2 + \cmplx{Z}_3+ \cmplx{Z}_4+ \cmplx{Z}_5$, i $\mcmplx{Z}[3,3]=\cmplx{Z}_5 + \cmplx{Z}_6$.
+       En el nostre exemple, la malla 1 té les impedàncies $\cmplx{Z}_1$ i $\cmplx{Z}_3$, la malla 2 té les impedàncies $\cmplx{Z}_2$, $\cmplx{Z}_3$, $\cmplx{Z}_4$ i $\cmplx{Z}_5$, i la malla 3 té les impedàncies $\cmplx{Z}_5$ i $\cmplx{Z}_6$; en conseqüència,  tenim:
+        \begin{align*}
+          \mcmplx{Z}[1,1] &=\cmplx{Z}_1 + \cmplx{Z}_3 \\[0.5ex]
+          \mcmplx{Z}[2,2] &=\cmplx{Z}_2 + \cmplx{Z}_3+ \cmplx{Z}_4+ \cmplx{Z}_5 \\[0.5ex]
+          \mcmplx{Z}[3,3] &=\cmplx{Z}_5 + \cmplx{Z}_6
+        \end{align*}
+
    \item Cada element de fora de la diagonal de la matriu d'impedàncies és igual a la suma canviada de signe de les impedàncies en comú a les dues malles corresponents.
 
-        En el nostre exemple les malles 1 i 2 tenen $\cmplx{Z}_3$ com a impedància en comú; per tant, tenim: $\mcmplx{Z}[1,2]=\mcmplx{Z}[2,1]= -\cmplx{Z}_3$. Les malles 2 i 3 tenen $\cmplx{Z}_5$ com a impedància en comú; en conseqüència,  tenim: $\mcmplx{Z}[2,3]=\mcmplx{Z}[3,2]= -\cmplx{Z}_5$. Les malles 1 i 3 no tenen cap impedància en comú;  per tant,  tenim: $\mcmplx{Z}[1,3]=\mcmplx{Z}[3,1]= 0$.
+        En el nostre exemple, les malles 1 i 2 tenen $\cmplx{Z}_3$ com a impedància en comú, les malles 2 i 3 tenen $\cmplx{Z}_5$ com a impedància en comú, i les malles 1 i 3 no tenen cap impedància en comú; per tant,  tenim:
+        \begin{align*}
+            \mcmplx{Z}[1,2]=\mcmplx{Z}[2,1] &= -\cmplx{Z}_3 \\[0.5ex]
+            \mcmplx{Z}[2,3]=\mcmplx{Z}[3,2] &= -\cmplx{Z}_5 \\[0.5ex]
+            \mcmplx{Z}[1,3]=\mcmplx{Z}[3,1] &= 0
+        \end{align*}
+
     \item Cada element del vector de fonts de tensió és igual a la suma de les fonts de tensió que formen part de cada malla; la contribució a la suma de cada font de tensió serà positiva o negativa, segons que la seva força electromotriu tingui el mateix sentit que el corrent de malla o que  tingui el sentit contrari.
 
-         En el nostre exemple $\cmplx{E}_1$ i $\cmplx{I}\ped{M1}$ tenen el mateix senti; per tant, tenim:   $\mcmplx{E}[1] = \cmplx{E}_1$. En canvi, $\cmplx{E}_2$ i $\cmplx{I}\ped{M3}$ tenen   sentits contraris; en conseqüència,   tenim:   $\mcmplx{E}[3] = -\cmplx{E}_2$. Com que la malla 2 no té cap font de tensió,  tenim:   $\mcmplx{E}[2] = 0$.
+         En el nostre exemple,  la font de tensió $\cmplx{E}_1$ i el corrent $\cmplx{I}\ped{M1}$ tenen el mateix sentit en la malla 1, la malla 2 no té cap font de tensió, i  la font de tensió  $\cmplx{E}_2$ i el corrent $\cmplx{I}\ped{M3}$ tenen   sentits contraris en la malla 3; en conseqüència, tenim:
+        \begin{align*}
+            \mcmplx{E}[1] &= \cmplx{E}_1 \\[0.5ex]
+            \mcmplx{E}[2] &= 0 \\[0.5ex]
+            \mcmplx{E}[3] &= -\cmplx{E}_2
+        \end{align*}
 \end{dingautolist}
 
 

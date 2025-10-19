@@ -71,12 +71,12 @@ I_p = 100  # A
 I_min = 1.05*I_p  # A
 I_max = 5*I_p  # A
 I = np.linspace(I_min, I_max, 200)  # A
-t_IEC_I = ee.curve_51(I, ee.IECcurve.INVERSE, I_p)  # s
-t_IEEE_MI = ee.curve_51(I, ee.IEEEcurve.MODERATELY_INVERSE, I_p)  # s
-t_IEC_VI = ee.curve_51(I, ee.IECcurve.VERY_INVERSE, I_p)  # s
-t_IEEE_VI = ee.curve_51(I, ee.IEEEcurve.VERY_INVERSE, I_p)  # s
-t_IEC_EI = ee.curve_51(I, ee.IECcurve.EXTREMELY_INVERSE, I_p)  # s
-t_IEEE_EI = ee.curve_51(I, ee.IEEEcurve.EXTREMELY_INVERSE, I_p)  # s
+t_IEC_I = ee.curve_51(I, ee.IECcurve.Inverse, I_p)  # s
+t_IEEE_MI = ee.curve_51(I, ee.IEEEcurve.Moderately_Inverse, I_p)  # s
+t_IEC_VI = ee.curve_51(I, ee.IECcurve.Very_Inverse, I_p)  # s
+t_IEEE_VI = ee.curve_51(I, ee.IEEEcurve.Very_Inverse, I_p)  # s
+t_IEC_EI = ee.curve_51(I, ee.IECcurve.Extremely_Inverse, I_p)  # s
+t_IEEE_EI = ee.curve_51(I, ee.IEEEcurve.Extremely_Inverse, I_p)  # s
 fig, ax = plt.subplots(figsize=(7, 5))
 ax.grid(which='minor', alpha=0.2)
 ax.grid(which='major', alpha=0.9)

@@ -4,7 +4,7 @@
       <program>MAKEINDEX</program>
       <main-file>$PROJECT_DIR$/src/Qüestions Electrotècniques Diverses.tex</main-file>
       <command-line-args>-s jmb_v1.ist</command-line-args>
-      <work-dir>$PROJECT_DIR$/out</work-dir>
+      <work-dir>$PROJECT_DIR$/auxil</work-dir>
     </texify-makeindex>
     <method v="2" />
   </configuration>

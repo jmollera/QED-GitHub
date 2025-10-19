@@ -196,7 +196,7 @@ class TestNetworkClass(unittest.TestCase):
         net = ee.Network('Test network')
         net.add(ee.Impedance(Z=10), from_to=(1, 0), branch=1)
         with self.assertRaises(ee.EENetNotSolved):
-            # Net not solved yet
+            # Net isn't solved yet
             net.thevenin(1, 0)
         net.solve()
         with self.assertRaises(ee.EENetMissingNode):
@@ -208,7 +208,7 @@ class TestNetworkClass(unittest.TestCase):
         net = ee.Network('Test network')
         net.add(ee.Impedance(Z=10), from_to=(1, 0), branch=1)
         with self.assertRaises(ee.EENetNotSolved):
-            # Net not solved yet
+            # Net isn't solved yet
             net.norton(1, 0)
         net.solve()
         with self.assertRaises(ee.EENetMissingNode):
@@ -220,10 +220,10 @@ class TestNetworkClass(unittest.TestCase):
         net = ee.Network('Test network')
         net.add(ee.Impedance(Z=10), from_to=(1, 0), branch=1)
         with self.assertRaises(ee.EENetNotSolved):
-            # Net not solved yet
+            # Net isn't solved yet
             net.voltage(node=1)
         with self.assertRaises(ee.EENetNotSolved):
-            # Net not solved yet
+            # Net isn't solved yet
             net.voltage(branch=1)
         net.solve()
         with self.assertRaises(ee.EENetMissingBranch):
@@ -255,7 +255,7 @@ class TestNetworkClass(unittest.TestCase):
         net = ee.Network('Test network')
         net.add(ee.Impedance(Z=10), from_to=(1, 0), branch=1)
         with self.assertRaises(ee.EENetNotSolved):
-            # Net not solved yet
+            # Net isn't solved yet
             net.voltage(branch=1)
         net.solve()
         with self.assertRaises(ee.EENetMissingBranch):
@@ -281,17 +281,17 @@ class TestMotor3phClass(unittest.TestCase):
             self.motor.convert(1450, from_to=1)
         # Starting
         self.assertAlmostEqual(1.0, self.motor.convert(0, ee.Speed.RAD_PER_S_TO_SLIP))
-        self.assertAlmostEqual(1.0, self.motor.convert(0, ee.Speed.RPM_TO_SLIP))
-        self.assertAlmostEqual(0.0, self.motor.convert(1, ee.Speed.SLIP_TO_RAD_PER_S))
+        self.assertAlmostEqual(1.0, self.motor.convert(0, ee.Speed.n_to_slip))
+        self.assertAlmostEqual(0.0, self.motor.convert(1, ee.Speed.slip_to_ω))
         self.assertAlmostEqual(0.0, self.motor.convert(0, ee.Speed.RPM_TO_RAD_PER_S))
-        self.assertAlmostEqual(0.0, self.motor.convert(1, ee.Speed.SLIP_TO_RPM))
+        self.assertAlmostEqual(0.0, self.motor.convert(1, ee.Speed.slip_to_n))
         self.assertAlmostEqual(0.0, self.motor.convert(0, ee.Speed.RAD_PER_S_TO_RPM))
         # Synchronous speed
         self.assertAlmostEqual(0.0, self.motor.convert(self.motor.ω_m_sync, ee.Speed.RAD_PER_S_TO_SLIP))
-        self.assertAlmostEqual(0.0, self.motor.convert(self.motor.n_m_sync, ee.Speed.RPM_TO_SLIP))
-        self.assertAlmostEqual(self.motor.ω_m_sync, self.motor.convert(0, ee.Speed.SLIP_TO_RAD_PER_S))
+        self.assertAlmostEqual(0.0, self.motor.convert(self.motor.n_m_sync, ee.Speed.n_to_slip))
+        self.assertAlmostEqual(self.motor.ω_m_sync, self.motor.convert(0, ee.Speed.slip_to_ω))
         self.assertAlmostEqual(self.motor.ω_m_sync, self.motor.convert(self.motor.n_m_sync, ee.Speed.RPM_TO_RAD_PER_S))
-        self.assertAlmostEqual(self.motor.n_m_sync, self.motor.convert(0, ee.Speed.SLIP_TO_RPM))
+        self.assertAlmostEqual(self.motor.n_m_sync, self.motor.convert(0, ee.Speed.slip_to_n))
         self.assertAlmostEqual(self.motor.n_m_sync, self.motor.convert(self.motor.ω_m_sync, ee.Speed.RAD_PER_S_TO_RPM))
 
 
