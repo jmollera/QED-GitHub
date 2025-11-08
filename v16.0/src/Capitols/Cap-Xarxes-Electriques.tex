@@ -969,14 +969,14 @@ Un cop tenim aquest corrents, els corrents de curtcircuit que circulen per cadas
 
 \begin{subequations}
 \begin{align}
-	\cmplx{I}\ped{1F} &= \cmplx{I}_1 + \cmplx{I}_1' \\
-	\cmplx{I}\ped{2F} &= \cmplx{I}_2 + \cmplx{I}_2' \\
-	\cmplx{I}\ped{3F} &= \cmplx{I}_3 + \cmplx{I}_3' \\
+	\cmplx{I}\ped{1F} &= \cmplx{I}_1 + \cmplx{I}_1' \\[0.5em]
+	\cmplx{I}\ped{2F} &= \cmplx{I}_2 + \cmplx{I}_2' \\[0.5em]
+	\cmplx{I}\ped{3F} &= \cmplx{I}_3 + \cmplx{I}_3' \\[0.5em]
 	\cmplx{I}\ped{4F} &= \cmplx{I}_4 + \cmplx{I}_4' 
 \end{align}
 \end{subequations}
 	
-El mètode de càlcul explicat en aquesta secció, serveix per calcular curtcircuits en xarxes de corrent continu i monofàsiques. També serveix per calcular curtcircuits trifàsics si la xarxa en qüestió representa el circuit equivalent per fase de la xarxa trifàsica. També cal tenir en compte que els corrents de curtcircuit calculats amb aquest mètode, són corrents simètrics de règim permanent. Per calcular corrents inicials asimètrics i de pic, cal fer servir mètodes com el descrit en la secció \vref{sec:ccRL}.
+El mètode  explicat en aquesta secció, serveix per calcular curtcircuits en xarxes de corrent continu i monofàsiques. També serveix per calcular curtcircuits trifàsics si la xarxa en qüestió representa el circuit equivalent per fase de la xarxa trifàsica. També cal tenir en compte que els corrents de curtcircuit calculats amb aquest mètode, són corrents simètrics de règim permanent. Per calcular corrents inicials asimètrics i de pic, cal fer servir mètodes com el descrit en la secció \vref{sec:ccRL}.
 
 \begin{exemple}[\CurtcircuitXarxaSenzilla{} \hyperlink{exemple:CurtcircuitXarxaSenzilla}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:CurtcircuitXarxaSenzilla}
 	\addcontentsxms{\CurtcircuitXarxaSenzilla}	
@@ -1017,6 +1017,63 @@ El mètode de càlcul explicat en aquesta secció, serveix per calcular curtcirc
 	\end{alignat*}
 \end{exemple}
 
+S'explica a continuació el càlcul sistemàtic de les tensions i corrents de totes les branques d'una xarxa durant un curtcircuit, utilitzant el mètode genèric descrit en les seccions anteriors d'aquest capítol.
+
+Fixant-nos en la xarxa inferior de la figura \vref{pic:circuit-base-4}, veiem que la branca del curtcircuit entre $\alpha$ i $\beta$ no introdueix cap impedància, admitància o acoblament magnètic nou, respecte de la xarxa original sense el curtcircuit.
+A més, sense tenir en compte el curtcircuit, no hi ha cap canvi en la connexió de les branques, respecte de la xarxa original, i no hi ha cap font de corrent ni de tensió. Per tant, tenim:
+\begin{subequations}
+\begin{align}
+   \boldsymbol{A}' &= \boldsymbol{A} \\[0.5em]
+   \mcmplx{J}\ped{B}' &= \boldsymbol{0} \\[0.5em]
+   \mcmplx{Y}\ped{B}' &= \mcmplx{Y}\ped{B} \\[0.5em]
+   \mcmplx{Z}\ped{B}' &= \mcmplx{Z}\ped{B} \\[0.5em]
+   \mcmplx{Y}\ped{N}' &= \mcmplx{Y}\ped{N} \\[0.5em]
+   \mcmplx{Z}\ped{N}' &= \mcmplx{Z}\ped{N}
+\end{align}
+\end{subequations}
+
+El cutcircuit d'aquesta xarxa inferior, el podem introduir formant directamte el vector $\mcmplx{J}\ped{N}'$ a partir del valor calculat de $\cmplx{I}\ped{F}$. Aquest vector tindrà el valor $-\cmplx{I}\ped{F}$ a la columna $\alpha$, el valor $\cmplx{I}\ped{F}$ a la columna $\beta$, i zeros a la resta de columnes:
+\begin{equation}
+	\mcmplx{J}\ped{N}' =
+	\begin{bmatrix}\begin{array}{c}
+			0 \\
+			\vdots{} \\
+            0 \\
+            -\cmplx{I}\ped{F} \\[0.5em]
+            0 \\
+            \vdots{} \\
+            0 \\
+            \cmplx{I}\ped{F} \\[0.5em]
+            0 \\
+            \vdots{} \\
+			0
+	\end{array}\end{bmatrix}
+\end{equation}
+
+Si $\beta$ és el nus 0, l'únic valor no nul de $\mcmplx{J}\ped{N}'$ serà el valor $-\cmplx{I}\ped{F}$ a la columna $\alpha$; i si $\alpha$ és el nus 0, l'únic valor no nul de $\mcmplx{J}\ped{N}'$ serà el valor $\cmplx{I}\ped{F}$ a la columna $\beta$.
+
+Amb aquestes consideracions podem calcular les tensions i corrents de les branques de la xarxa inferior:
+\begin{subequations}
+\begin{align}
+   \mcmplx{V}\ped{N}' &= \mcmplx{Z}\ped{N} \cdot \mcmplx{J}\ped{N}' \\[0.5em]
+   \mcmplx{U}\ped{B}' &=  \transpose{\boldsymbol{A}} \cdot \mcmplx{V}\ped{N}' \\[0.5em]
+   \mcmplx{I}\ped{B}' &= \mcmplx{Y}\ped{B} \cdot \mcmplx{U}\ped{B}'
+\end{align}
+\end{subequations}
+
+Finalment, les  tensions $\mcmplx{U}\ped{B}^{\text{F}}$ i els corrents $\mcmplx{I}\ped{B}^{\text{F}}$ de les branques durant el cutcircuit, els calculem aplicant el teorema de la superposició:
+\begin{align}
+   \mcmplx{U}\ped{B}^{\text{F}} &=  \mcmplx{U}\ped{B} + \mcmplx{U}\ped{B}' \\[0.5em]
+   \mcmplx{I}\ped{B}^{\text{F}} &=  \mcmplx{I}\ped{B} + \mcmplx{I}\ped{B}'
+\end{align}
+
+Aquest càlcul es pot fer directament, aplicant la superposició en primer lloc:
+\begin{alignat}{3}
+    \mcmplx{V}\ped{N}^{\text{F}} &=  \mcmplx{V}\ped{N} +  \mcmplx{V}\ped{N}' &&= \mcmplx{Z}\ped{N} \cdot \mcmplx{J}\ped{N} + \mcmplx{Z}\ped{N} \cdot \mcmplx{J}\ped{N}' &&= \mcmplx{Z}\ped{N} \cdot (\mcmplx{J}\ped{N} + \mcmplx{J}\ped{N}') \label{eq:VN-F} \\[0.5em]
+   \mcmplx{U}\ped{B}^{\text{F}} &=  \mcmplx{U}\ped{B} + \mcmplx{U}\ped{B}'  &&= \transpose{\boldsymbol{A}} \cdot \mcmplx{V}\ped{N} +  \transpose{\boldsymbol{A}} \cdot  \mcmplx{V}\ped{N}' &&= \transpose{\boldsymbol{A}} \cdot \mcmplx{V}\ped{N}^{\text{F}}\label{eq:UB-F} \\[0.5em]
+   \mcmplx{I}\ped{B}^{\text{F}} &=  \mcmplx{I}\ped{B} + \mcmplx{I}\ped{B}' &&= \mcmplx{Y}\ped{B} \cdot \mcmplx{U}\ped{B} + \mcmplx{J}\ped{B} + \mcmplx{Y}\ped{B} \cdot \mcmplx{U}\ped{B}' &&= \mcmplx{Y}\ped{B} \cdot \mcmplx{U}\ped{B}^{\text{F}} + \mcmplx{J}\ped{B}\label{eq:IB-F}
+\end{alignat}
+
 \begin{exemple}[\CurtcircuitXarxaComplexa{} \hyperlink{exemple:CurtcircuitXarxaComplexa}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:CurtcircuitXarxaComplexa}
 	\addcontentsxms{\CurtcircuitXarxaComplexa}	
 	Continuant amb el circuit de la figura \vref{pic:metode_nusos}, es
@@ -1027,221 +1084,105 @@ El mètode de càlcul explicat en aquesta secció, serveix per calcular curtcirc
 	\[
 		\cmplx{I}\ped{F} = \cmplx{J}\ped{No}^{(1,2)} =  \frac{\complexnum{518-j301}}{25}\,\unit{A} = \complexqty{20.72-j12.04}{A}
 	\]
-	
-	Apliquem ara el teorema de la superposició per trobar els corrents que circulen per les branques durant el curtcircuit. Ens cal trobar primer els corrents que circulen per la xarxa sense les fonts de tensió ---fonts curtcircuitades--- i sense les fonts de corrent ---fonts  obertes---, i amb una única font de corrent entre els nusos 1 i 2 de valor  $I\ped{F}$. En aquest cas, on la xarxa no és simple i a més hi ha un acoblament magnètic, hem d'aplicar pas a pas el mètode dels nusos per resoldre-la; formem primer la matriu d'incidència  de nusos $\boldsymbol{A}'$, la qual serà igual que l'original $\boldsymbol{A}$, afegint-hi al final la branca corresponent a la font de corrent que representa el curtcircuit:
+
+    Formem ara el vector $\mcmplx{J}\ped{N}'$:
 
 	\[
-		\boldsymbol{A}' = 
-		\begin{bmatrix}\begin{array}{rrrrrr} 
-				-1 & 1  & 0 &  1 & 0 & 1\\  0 & -1 & 1 & -1 & -1 & -1
-		\end{array}\end{bmatrix}
-	\]	
-	
-	Formem a continuació la matriu d'admitàncies de branca $\mcmplx{Y}'\ped{B}$ i el vector d'intensitats de corrents de branca $\mcmplx{J}'\ped{B}$. La matriu $\mcmplx{Y}'\ped{B}$ és igual que l'original $\mcmplx{Y}\ped{B}$, ja que la font de corrent que simula el corrent de curtcircuit, no aporta cap admitància nova; això sí, cal augmentar aquesta matriu en una fila i una columna, per tenir en compte la nova branca ---la sisena--- creada per aquesta font de corrent. El vector $\mcmplx{J}'\ped{B}$ només tindrà un valor no nul en la sisena fila, amb el valor del corrent de curtcircuit:
-	
-	\[
-		\mcmplx{Y}'\ped{B} = 
-		\begin{bmatrix}\begin{array}{cccccc} 
-				\frac{1}{10} & 0 & 0 & 0 & 0  & 0\\
-				0 & -j\frac{1}{15} & j\frac{1}{15} & 0 & 0  & 0\\[2mm]
-				0 & j\frac{1}{15} & -j\frac{4}{15} & 0 & 0  & 0\\[2mm]
-				0 & 0 & 0 & \frac{1}{20} & 0  & 0\\[2mm]
-				0 & 0 & 0 & 0 & \frac{1}{10} & 0\\[2mm]
-				0 & 0 & 0 & 0 & 0 & 0
-		\end{array}\end{bmatrix}\unit{S} 
-		\qquad\qquad
-		\mcmplx{J}'\ped{B} = 
-		\begin{bmatrix}\begin{array}{c}  
-				0 \\ 0 \\ 0 \\ 0 \\ 0 \\ \frac{\complexnum{518-j301}}{25}
-		\end{array}\end{bmatrix}\unit{A}
-	\]	
-	
-	Calculem a continuació la matriu $\mcmplx{Y}'\ped{N} = \boldsymbol{A}' \cdot \mcmplx{Y}'\ped{B} \cdot \transpose{{\boldsymbol{A}'}}$, el vector $\mcmplx{J}'\ped{N} = - \boldsymbol{A}' \cdot\mcmplx{J}'\ped{B}$, i el vector 	$\mcmplx{V}'\ped{N} = {\mcmplx{Y}'}\ped{N}^{-1} \cdot \mcmplx{J}'\ped{N}$:
-	
-	{\fontsize{10pt}{10pt}\selectfont
-		\[
-		\mcmplx{Y}'\ped{N} =
-		\begin{bmatrix}\begin{array}{rrrrrr}
-				-1 & 1  & 0 &  1 & 0 & 1\\  0 & -1 & 1 & -1 & -1 & -1
-		\end{array}\end{bmatrix} \cdot
-		\begin{bmatrix}\begin{array}{cccccc}
-				\frac{1}{10} & 0 & 0 & 0 & 0  & 0\\
-				0 & -j\frac{1}{15} & j\frac{1}{15} & 0 & 0  & 0\\[2mm]
-				0 & j\frac{1}{15} & -j\frac{4}{15} & 0 & 0  & 0\\[2mm]
-				0 & 0 & 0 & \frac{1}{20} & 0  & 0\\[2mm]
-				0 & 0 & 0 & 0 & \frac{1}{10} & 0\\[2mm]
-				0 & 0 & 0 & 0 & 0 & 0
-		\end{array}\end{bmatrix}\unit{S} \cdot
-		\begin{bmatrix}\begin{array}{rr} 
-				-1 & 0 \\ 1  & -1 \\  0 & 1 \\ 1 & -1 \\ 0 & -1 \\ 1 & -1
-		\end{array}\end{bmatrix}
-		=
-		\begin{bmatrix}\begin{array}{cc}
-				\frac{\complexnum{9 - j 4}}{60} & \frac{\complexnum{-3 + j 8}}{60} \\[2mm]
-				\frac{\complexnum{-3 + j 8}}{60} & \frac{\complexnum{9 - j 28}}{60}
-		\end{array}\end{bmatrix}\unit{S}
-		\]}
-	
-	\[
-	\mcmplx{J}'\ped{N} = -
-	\begin{bmatrix}\begin{array}{rrrrrr} 
-			-1 & 1  & 0 &  1 & 0 & 1\\  0 & -1 & 1 & -1 & -1 & -1
-	\end{array}\end{bmatrix} \cdot
+	\mcmplx{J}'\ped{N} =
 	\begin{bmatrix}\begin{array}{c}
-				0 \\ 0 \\ 0 \\ 0 \\ 0 \\ \frac{\complexnum{518-j301}}{25}
-	\end{array}\end{bmatrix}\unit{A}
-	=
-	\begin{bmatrix}\begin{array}{c}
-			\frac{\complexnum{-518+j301}}{25} \\[2mm]
-			\frac{\complexnum{518-j301}}{25}
+        \frac{\complexnum{-518+j301}}{25} \\[2mm]
+        \frac{\complexnum{518-j301}}{25}
 	\end{array}\end{bmatrix}\unit{A}
 	\]
 
-	\[
-	\mcmplx{V}'\ped{N} =
+    A partir de $\mcmplx{J}\ped{N}'$ i dels valors ja coneguts de $\mcmplx{J}\ped{N}$, $\mcmplx{Z}\ped{N}$, $\mcmplx{Y}\ped{B}$, $\mcmplx{J}\ped{B}$ i $\boldsymbol{A}$, farem servir les equacions \eqref{eq:VN-F}, \eqref{eq:UB-F} i \eqref{eq:IB-F} per calcular $\mcmplx{V}\ped{N}^{\text{F}}$, $\mcmplx{U}\ped{B}^{\text{F}}$ i $\mcmplx{I}\ped{B}^{\text{F}}$:
+
+    \[
+	\mcmplx{V}\ped{N}^{\text{F}} =
 	\begin{bmatrix}\begin{array}{cc}
-			\frac{\complexnum{ 9 - j 4}}{60} & \frac{\complexnum{-3 + j 8}}{60} \\[2mm]
-			\frac{\complexnum{-3 + j 8}}{60} & \frac{\complexnum{9 - j 28}}{60}
-	\end{array}\end{bmatrix}^{-1}\unit{\ohm} \cdot
-	\begin{bmatrix}\begin{array}{c}
-			\frac{\complexnum{-518+j301}}{25} \\[2mm]
-			\frac{\complexnum{518-j301}}{25}
+         \frac{1445 + j 310}{202} & \frac{415 + j 110}{202} \\[2mm]
+         \frac{415 + j 110}{202} & \frac{245 + j 430}{202}
+    \end{array}\end{bmatrix}\unit{\ohm} \cdot
+    \left(
+    \begin{bmatrix}\begin{array}{c}
+        20 - j \frac{10}{3} \\[2mm]
+        4 + j \frac{20}{3}
+    \end{array}\end{bmatrix}\unit{A} +
+    \begin{bmatrix}\begin{array}{c}
+        \frac{\complexnum{-518+j301}}{25} \\[2mm]
+        \frac{\complexnum{518-j301}}{25}
 	\end{array}\end{bmatrix}\unit{A}
-	=
-	\begin{bmatrix}\begin{array}{c}
-		\frac{\complexnum{-59374+j20643}}{505} \\[2mm]
-		\frac{\complexnum{826+j21693}}{505}
-	\end{array}\end{bmatrix}\unit{V}
+    \right) =
+    \begin{bmatrix}\begin{array}{c}
+        \frac{176 + j 318}{5} \\[2mm]
+        \frac{176 + j 318}{5}
+    \end{array}\end{bmatrix}\unit{V}
 	\]
-	
-	Calculem finalment, el vector de tensions de branca $\mcmplx{U}'\ped{B} = \transpose{{\boldsymbol{A}'}} \cdot \mcmplx{V}'\ped{N}$, i el vector de corrents de branca 	$\mcmplx{I}'\ped{B} = \mcmplx{Y}'\ped{B} \cdot\mcmplx{U}'\ped{B} + \mcmplx{J}'\ped{B}$:
-	
-	\[
-	\mcmplx{U}'\ped{B} =
-	\begin{bmatrix}\begin{array}{rr} 
-			-1 & 0 \\ 1  & -1 \\  0 & 1 \\ 1 & -1 \\ 0 & -1 \\ 1 & -1
-	\end{array}\end{bmatrix} \cdot
-	\begin{bmatrix}\begin{array}{c}
-			\frac{\complexnum{-59374+j20643}}{505} \\[2mm]
-			\frac{\complexnum{826+j21693}}{505}
+
+    \[
+     \mcmplx{U}\ped{B}^{\text{F}} =
+     \begin{bmatrix}\begin{array}{rr}
+        -1 & 0 \\ 1  & -1 \\  0 & 1 \\ 1 & -1 \\ 0 & -1
+	 \end{array}\end{bmatrix}  \cdot
+     \begin{bmatrix}\begin{array}{c}
+        \frac{176 + j 318}{5} \\[2mm]
+        \frac{176 + j 318}{5}
+    \end{array}\end{bmatrix}\unit{V} =
+    \begin{bmatrix}\begin{array}{c}
+        \frac{\complexnum{-176 - j 318}}{5} \\[2mm]
+        0  \\[2mm]
+        \frac{\complexnum{176 + j 318}}{5} \\[2mm]
+        0  \\[2mm]
+        \frac{\complexnum{ -176 - j 318}}{5}
 	\end{array}\end{bmatrix}\unit{V} =
 	\begin{bmatrix}\begin{array}{c}
-			\frac{\complexnum{ 59374 - j 20643}}{505} \\[2mm]
-			\frac{\complexnum{-12040 - j 210}}{101}  \\[2mm]
-			\frac{\complexnum{826 + j 21693}}{505} \\[2mm]
-			\frac{\complexnum{ -12040 - j 210}}{101}  \\[2mm]
-			\frac{\complexnum{ -826 - j 21693}}{505} \\[2mm]
-			\frac{\complexnum{ -12040 - j 210}}{101}
+        \complexnum{-35,2 - j 63,6} \\[2mm]
+        0  \\[2mm]
+        \complexnum{35,2 + j 63,6} \\[2mm]
+        0  \\[2mm]
+        \complexnum{-35,2 - j 63,6}
 	\end{array}\end{bmatrix}\unit{V}
-	\]
-		
-	\[
-	\mcmplx{I}'\ped{B} =
-	\begin{bmatrix}\begin{array}{cccccc}
-			\frac{1}{10} & 0 & 0 & 0 & 0  & 0\\
-			0 & -j\frac{1}{15} & j\frac{1}{15} & 0 & 0  & 0\\[2mm]
-			0 & j\frac{1}{15} & -j\frac{4}{15} & 0 & 0  & 0\\[2mm]
-			0 & 0 & 0 & \frac{1}{20} & 0  & 0\\[2mm]
-			0 & 0 & 0 & 0 & \frac{1}{10} & 0\\[2mm]
-			0 & 0 & 0 & 0 & 0 & 0
-	\end{array}\end{bmatrix}\unit{S} \cdot
-	\begin{bmatrix}\begin{array}{c}
-			\frac{\complexnum{ 59374 - j 20643}}{505} \\[2mm]
-			\frac{\complexnum{-12040 - j 210}}{101}  \\[2mm]
-			\frac{\complexnum{826 + j 21693}}{505} \\[2mm]
-			\frac{\complexnum{ -12040 - j 210}}{101}  \\[2mm]
-			\frac{\complexnum{ -826 - j 21693}}{505} \\[2mm]
-			\frac{\complexnum{ -12040 - j 210}}{101}
-	\end{array}\end{bmatrix}\unit{V}
-	+ \begin{bmatrix}\begin{array}{c}
-				0 \\ 0 \\ 0 \\ 0 \\ 0 \\ \frac{\complexnum{518-j301}}{25}
-	\end{array}\end{bmatrix}\unit{A} =
-	\begin{bmatrix}\begin{array}{c}
-			\frac{\complexnum{ 59374 - j 20643}}{5050} \\[2mm]
-			\frac{\complexnum{-7581 + j 20342}}{2525}  \\[2mm]
-			\frac{\complexnum{29274 - j 21168}}{2525} \\[2mm]
-			\frac{\complexnum{-1204 - j 21}}{202}  \\[2mm]
-			\frac{\complexnum{-826 - j 21693}}{5050} \\[2mm]
-			\frac{\complexnum{518 - j 301}}{25}
-	\end{array}\end{bmatrix}\unit{A}
-	\]
-	
-	Ara ja podem determinar el corrent que circula per cada branca durant el curtcircuit: $\mcmplx{I}\ped{F} = \mcmplx{I}\ped{B} + \mcmplx{I}'\ped{B}$, on $\mcmplx{I}\ped{B}$ és el vector de corrents de branca de la xarxa original sense el curtcircuit, que s'ha calculat a la pàgina \pageref{eq:ib-exemp}; cal afegir a aquest vector una sisena fila amb el valor zero, per tenir en compte que en la xarxa original no hi havia cap curtcircuit:
-	
-	\[
-	\mcmplx{I}\ped{F} =
-	\begin{bmatrix}\begin{array}{c}
-		\frac{\complexnum{ 954 - j 459}}{202} \\[2mm]
-		\frac{\complexnum{-250 - j 480}}{202}  \\[2mm]
-		\frac{\complexnum{1084 - j 876}}{202} \\[2mm]
-		\frac{\complexnum{1204 + j 21}}{202}  \\[2mm]
-		\frac{\complexnum{130 - j 417}}{202} \\[2mm]
-		0
-	\end{array}\end{bmatrix}\unit{A} +	
-	\begin{bmatrix}\begin{array}{c}
-			\frac{\complexnum{ 59374 - j 20643}}{5050} \\[2mm]
-			\frac{\complexnum{-7581 + j 20342}}{2525}  \\[2mm]
-			\frac{\complexnum{29274 - j 21168}}{2525} \\[2mm]
-			\frac{\complexnum{-1204 - j 21}}{202}  \\[2mm]
-			\frac{\complexnum{-826 - j 21693}}{5050} \\[2mm]
-			\frac{\complexnum{518 - j 301}}{25}
-	\end{array}\end{bmatrix}\unit{A} = 
-	\begin{bmatrix}\begin{array}{c}
-			\frac{\complexnum{ 412 - j 159}}{25} \\[2mm]
-			\frac{\complexnum{-106 + j 142}}{25}  \\[2mm]
-			\frac{\complexnum{424 - j 318}}{25} \\[2mm]
-			0  \\[2mm]
-			\frac{\complexnum{12 - j 159}}{25} \\[2mm]
-			\frac{\complexnum{518 - j 301}}{25}
+    \]
+
+
+    {\fontsize{10pt}{10pt}\selectfont
+    \[
+    \mcmplx{I}\ped{B}^{\text{F}} =
+     \begin{bmatrix}\begin{array}{ccccc}
+        \frac{1}{10} & 0 & 0 & 0 & 0 \\
+        0 & -j\frac{1}{15} & j\frac{1}{15} & 0 & 0 \\[2mm]
+        0 & j\frac{1}{15} & -j\frac{4}{15} & 0 & 0 \\[2mm]
+        0 & 0 & 0 & \frac{1}{20} & 0 \\[2mm]
+        0 & 0 & 0 & 0 & \frac{1}{10}
+     \end{array}\end{bmatrix}\unit{S} \cdot
+     \begin{bmatrix}\begin{array}{c}
+        \frac{\complexnum{-176 - j 318}}{5} \\[2mm]
+        0  \\[2mm]
+        \frac{\complexnum{176 + j 318}}{5} \\[2mm]
+        0  \\[2mm]
+        \frac{\complexnum{ -176 - j 318}}{5}
+	\end{array}\end{bmatrix}\unit{V}  +
+     \begin{bmatrix}\begin{array}{c}
+        20 \\[2mm]
+         j \frac{10}{3} \\[2mm]
+         -j \frac{10}{3} \\[2mm]
+         0 \\[2mm]
+        4
+     \end{array}\end{bmatrix}\unit{A} =
+     \begin{bmatrix}\begin{array}{c}
+        \frac{\complexnum{ 412 - j 159}}{25} \\[2mm]
+        \frac{\complexnum{-106 + j 142}}{25}  \\[2mm]
+        \frac{\complexnum{424 - j 318}}{25} \\[2mm]
+        0  \\[2mm]
+        \frac{\complexnum{12 - j 159}}{25}
 	\end{array}\end{bmatrix}\unit{A} =
 	\begin{bmatrix}\begin{array}{c}
 		\complexnum{ 16,48 - j 6,36} \\[2mm]
 		\complexnum{-4,24 + j 5,68}  \\[2mm]
 		\complexnum{16,96 - j 12,72} \\[2mm]
 			0  \\[2mm]
-		\complexnum{0,48 - j 6,36} \\[2mm]
-		\complexnum{20,72 - j 12,04}
+		\complexnum{0,48 - j 6,36}
 	\end{array}\end{bmatrix}\unit{A}
-	\]
-	
-	Es pot veure que el valor de $\mcmplx{I}\ped{F}[6]$ correspon, evidentment, al valor del corrent de curtcircuit $\cmplx{I}\ped{F}$ calculat a l'inici de l'exemple.
-	
-	Podem calcular el vector de les tensions de branca durant el curtcircuit $\mcmplx{U}\ped{F}$, aplicant també el teorema de la superposició: $\mcmplx{U}\ped{F} = \mcmplx{U}\ped{B} + \mcmplx{U}'\ped{B}$, on $\mcmplx{U}\ped{B}$ és el vector de tensions de branca de la xarxa original sense el curtcircuit, que s'ha calculat en la pàgina \pageref{eq:ub-exemp}; cal afegir a aquest vector una sisena fila amb el valor $\cmplx{E}\ped{Th}^{(1,2)}$, ja calculat en l'exemple \ref{ex:XarxaThevenin}, per tenir en compte que en la xarxa original no hi havia cap curtcircuit:
-	
-	\[
-	\mcmplx{U}\ped{F} =
-	\begin{bmatrix}\begin{array}{c}
-			\frac{\complexnum{ -15430 - j 2295}}{101} \\[2mm]
-			\frac{\complexnum{12040 + j 210}}{101}  \\[2mm]
-			\frac{\complexnum{3390 + j 2085}}{101} \\[2mm]
-			\frac{\complexnum{ 12040 + j 210}}{101}  \\[2mm]
-			\frac{\complexnum{ -3390 - j 2085}}{101} \\[2mm]
-			\frac{\complexnum{ 12040 + j 210}}{101} 
-	\end{array}\end{bmatrix}\unit{V} +
-	\begin{bmatrix}\begin{array}{c}
-		\frac{\complexnum{ 59374 - j 20643}}{505} \\[2mm]
-		\frac{\complexnum{-12040 - j 210}}{101}  \\[2mm]
-		\frac{\complexnum{826 + j 21693}}{505} \\[2mm]
-		\frac{\complexnum{ -12040 - j 210}}{101}  \\[2mm]
-		\frac{\complexnum{ -826 - j 21693}}{505} \\[2mm]
-		\frac{\complexnum{ -12040 - j 210}}{101}
-	\end{array}\end{bmatrix}\unit{V} =
-	\begin{bmatrix}\begin{array}{c}
-			\frac{\complexnum{ -17776 - j 32118}}{505} \\[2mm]
-			0  \\[2mm]
-			\frac{\complexnum{17776 + j 32118}}{505} \\[2mm]
-			0  \\[2mm]
-			\frac{\complexnum{ -17776 - j 32118}}{505} \\[2mm]
-			0
-	\end{array}\end{bmatrix}\unit{V} =
-	\begin{bmatrix}\begin{array}{c}
-			\complexnum{-35,2 - j 63,6} \\[2mm]
-			0  \\[2mm]
-			\complexnum{35,2 + j 63,6} \\[2mm]
-			0  \\[2mm]
-			\complexnum{-35,2 - j 63,6} \\[2mm]
-			0
-	\end{array}\end{bmatrix}\unit{V}
-	\]
-	
+	\] }
+
 \end{exemple}

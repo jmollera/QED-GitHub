@@ -1138,6 +1138,9 @@ Es fan els següents canvis, relacionats amb l'index horari dels transformadors 
     \item En la secció \ref{sec:trafo-cond-min-connex}, es millora l'explicació  dels índexs horaris que són compatibles entre si a l'hora de connectar en paraŀlel dos transformadors.
 \end{itemize}
 
+S'amplia la secció \ref{sec:xarxes-curtcircuits} per explicar el mètode de càlcul sistemàtic de les tensions i corrents que apareixen en totes les branques d'una xarxa, quan hi ha un curtcircuit entre dos nusos.
+Es modifica l'exemple \ref{ex:CurtcircuitXarxaComplexa}, per adaptar-lo a aquest mètode de càlcul.
+
 S'ha actualitzat la distribució de Python utilitzada per executar els programes d'aquest llibre; els canvis més significatius són l'ús de la versió 3.13 de Python, el pas de la versió 1.x a la 2.x de la llibreria \texttt{numpy}, i el pas de la versió 2.x a la 3.x de la llibreria \texttt{pandapower}. Els canvis i millores que s'han dut a terme són els següents:
 \begin{itemize}
     \item En el mòdul \texttt{qed.utils} s'ha modificat la implementació  de la classe \texttt{Complex}, sense canviar-ne cap característica externa; s'ha inclòs la possibilitat de definir els símbols del separador del módul i l'argument,  del grau sexagesimal, i  del radian, afegint a la classe les variables \texttt{angle\_symbol}, \texttt{degree\_symbol} i \texttt{rad\_symbol}.
