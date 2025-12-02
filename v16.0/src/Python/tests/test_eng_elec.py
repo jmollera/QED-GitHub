@@ -82,12 +82,6 @@ class TestNetworkClass(unittest.TestCase):
             # Wrong element
             net.add(ee.Impedance(1), from_to=(1, 2, 3), branch=1)
         with self.assertRaises(ee.EEInvalidArguments):
-            # Impedance is not pure imaginary
-            net.add(ee.MutualCoupling(1 + 1j), coupled_branches=(1, 2))
-        with self.assertRaises(ee.EEInvalidArguments):
-            # Impedance is not pure imaginary
-            net.add(ee.MutualCoupling(1), coupled_branches=(1, 2))
-        with self.assertRaises(ee.EEInvalidArguments):
             # Branch < 1
             net.add(ee.MutualCoupling(1j), coupled_branches=(1, 0))
         with self.assertRaises(ee.EEInvalidArguments):
@@ -106,7 +100,7 @@ class TestNetworkClass(unittest.TestCase):
     def test_remove(self):
         net = ee.Network('Test network')
         net.add(ee.Impedance(Z=10), from_to=(1, 2), branch=1)
-        net.add(ee.MutualCoupling(X=3j), coupled_branches=(1, 2))
+        net.add(ee.MutualCoupling(ZM=3j), coupled_branches=(1, 2))
         with self.assertRaises(ee.EEInvalidArguments):
             # Two None arguments not allowed
             net.remove()
@@ -148,12 +142,12 @@ class TestNetworkClass(unittest.TestCase):
         net = ee.Network('Test network')
         net.add(ee.Impedance(Z=10), from_to=(1, 0), branch=1)
         net.add(ee.Impedance(Z=10), from_to=(1, 2), branch=2)
-        net.add(ee.MutualCoupling(X=10j), coupled_branches=(1, 3))
+        net.add(ee.MutualCoupling(ZM=10j), coupled_branches=(1, 3))
         with self.assertRaises(ee.EENetMissingBranch):
             # Missing coupled branches
             net.solve()
         net = ee.Network('Test network')
-        net.add(ee.MutualCoupling(X=10j), coupled_branches=(1, 2))
+        net.add(ee.MutualCoupling(ZM=10j), coupled_branches=(1, 2))
         with self.assertRaises(ee.EENetMissingBranch):
             # No branches
             net.solve()
@@ -280,19 +274,19 @@ class TestMotor3phClass(unittest.TestCase):
             # Invalid from_to
             self.motor.convert(1450, from_to=1)
         # Starting
-        self.assertAlmostEqual(1.0, self.motor.convert(0, ee.Speed.RAD_PER_S_TO_SLIP))
+        self.assertAlmostEqual(1.0, self.motor.convert(0, ee.Speed.ω_to_slip))
         self.assertAlmostEqual(1.0, self.motor.convert(0, ee.Speed.n_to_slip))
         self.assertAlmostEqual(0.0, self.motor.convert(1, ee.Speed.slip_to_ω))
-        self.assertAlmostEqual(0.0, self.motor.convert(0, ee.Speed.RPM_TO_RAD_PER_S))
+        self.assertAlmostEqual(0.0, self.motor.convert(0, ee.Speed.n_to_ω))
         self.assertAlmostEqual(0.0, self.motor.convert(1, ee.Speed.slip_to_n))
-        self.assertAlmostEqual(0.0, self.motor.convert(0, ee.Speed.RAD_PER_S_TO_RPM))
+        self.assertAlmostEqual(0.0, self.motor.convert(0, ee.Speed.ω_to_n))
         # Synchronous speed
-        self.assertAlmostEqual(0.0, self.motor.convert(self.motor.ω_m_sync, ee.Speed.RAD_PER_S_TO_SLIP))
+        self.assertAlmostEqual(0.0, self.motor.convert(self.motor.ω_m_sync, ee.Speed.ω_to_slip))
         self.assertAlmostEqual(0.0, self.motor.convert(self.motor.n_m_sync, ee.Speed.n_to_slip))
         self.assertAlmostEqual(self.motor.ω_m_sync, self.motor.convert(0, ee.Speed.slip_to_ω))
-        self.assertAlmostEqual(self.motor.ω_m_sync, self.motor.convert(self.motor.n_m_sync, ee.Speed.RPM_TO_RAD_PER_S))
+        self.assertAlmostEqual(self.motor.ω_m_sync, self.motor.convert(self.motor.n_m_sync, ee.Speed.n_to_ω))
         self.assertAlmostEqual(self.motor.n_m_sync, self.motor.convert(0, ee.Speed.slip_to_n))
-        self.assertAlmostEqual(self.motor.n_m_sync, self.motor.convert(self.motor.ω_m_sync, ee.Speed.RAD_PER_S_TO_RPM))
+        self.assertAlmostEqual(self.motor.n_m_sync, self.motor.convert(self.motor.ω_m_sync, ee.Speed.ω_to_n))
 
 
 if __name__ == '__main__':

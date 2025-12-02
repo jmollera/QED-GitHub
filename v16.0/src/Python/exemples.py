@@ -42,7 +42,7 @@ print(ee.z_series([1+1j, 1+1j, 1+1j]))
 print(ee.z_parallel([3+3j, 3+3j, 3+3j]))
 
 # Resistència unitària d'un fil de 0,5 mm² de secció, a 90
-for material in ["Al", "Cu", "Ag", "Au"]:
+for material in ['Al', 'Cu', 'Ag', 'Au']:
     res = ee.r_cable(0.5, 1, 90, material)
     print(f'Material: {material}, Resistència: {res:.4f} Ω/m')
 

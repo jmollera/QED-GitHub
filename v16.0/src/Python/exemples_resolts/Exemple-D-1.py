@@ -5,8 +5,8 @@ from scipy import interpolate
 x = [1.2, 1.4, 1.6, 1.8]
 y = [0.9329, 0.9854, 0.9996, 0.9738]
 
-f_lin = interpolate.interp1d(x, y, kind='linear')
-f_cub = interpolate.interp1d(x, y, kind='cubic')
+f_lin = interpolate.make_interp_spline(x, y, k=1)
+f_cub = interpolate.make_interp_spline(x, y, k=3)
 print(f'Interpolació lineal: {f_lin(np.pi/2):.4f}. Interpolació cúbica: {f_cub(np.pi/2):.4f}')
 
 X = np.linspace(1.2, 1.8, 100)

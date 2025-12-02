@@ -1068,11 +1068,11 @@ Finalment, les  tensions $\mcmplx{U}\ped{B}^{\text{F}}$ i els corrents $\mcmplx{
 \end{align}
 
 Aquest càlcul es pot fer directament, aplicant la superposició en primer lloc:
-\begin{alignat}{3}
-    \mcmplx{V}\ped{N}^{\text{F}} &=  \mcmplx{V}\ped{N} +  \mcmplx{V}\ped{N}' &&= \mcmplx{Z}\ped{N} \cdot \mcmplx{J}\ped{N} + \mcmplx{Z}\ped{N} \cdot \mcmplx{J}\ped{N}' &&= \mcmplx{Z}\ped{N} \cdot (\mcmplx{J}\ped{N} + \mcmplx{J}\ped{N}') \label{eq:VN-F} \\[0.5em]
-   \mcmplx{U}\ped{B}^{\text{F}} &=  \mcmplx{U}\ped{B} + \mcmplx{U}\ped{B}'  &&= \transpose{\boldsymbol{A}} \cdot \mcmplx{V}\ped{N} +  \transpose{\boldsymbol{A}} \cdot  \mcmplx{V}\ped{N}' &&= \transpose{\boldsymbol{A}} \cdot \mcmplx{V}\ped{N}^{\text{F}}\label{eq:UB-F} \\[0.5em]
-   \mcmplx{I}\ped{B}^{\text{F}} &=  \mcmplx{I}\ped{B} + \mcmplx{I}\ped{B}' &&= \mcmplx{Y}\ped{B} \cdot \mcmplx{U}\ped{B} + \mcmplx{J}\ped{B} + \mcmplx{Y}\ped{B} \cdot \mcmplx{U}\ped{B}' &&= \mcmplx{Y}\ped{B} \cdot \mcmplx{U}\ped{B}^{\text{F}} + \mcmplx{J}\ped{B}\label{eq:IB-F}
-\end{alignat}
+\begin{align}
+    \mcmplx{V}\ped{N}^{\text{F}} &=  \mcmplx{V}\ped{N} +  \mcmplx{V}\ped{N}' = \mcmplx{V}\ped{N} + \mcmplx{Z}\ped{N} \cdot \mcmplx{J}\ped{N}' \label{eq:VN-F} \\[0.5em]
+   \mcmplx{U}\ped{B}^{\text{F}} &=  \mcmplx{U}\ped{B} + \mcmplx{U}\ped{B}'  = \transpose{\boldsymbol{A}} \cdot \mcmplx{V}\ped{N} +  \transpose{\boldsymbol{A}} \cdot  \mcmplx{V}\ped{N}' = \transpose{\boldsymbol{A}} \cdot \mcmplx{V}\ped{N}^{\text{F}}\label{eq:UB-F} \\[0.5em]
+   \mcmplx{I}\ped{B}^{\text{F}} &=  \mcmplx{I}\ped{B} + \mcmplx{I}\ped{B}' = \mcmplx{Y}\ped{B} \cdot \mcmplx{U}\ped{B} + \mcmplx{J}\ped{B} + \mcmplx{Y}\ped{B} \cdot \mcmplx{U}\ped{B}' = \mcmplx{Y}\ped{B} \cdot \mcmplx{U}\ped{B}^{\text{F}} + \mcmplx{J}\ped{B}\label{eq:IB-F}
+\end{align}
 
 \begin{exemple}[\CurtcircuitXarxaComplexa{} \hyperlink{exemple:CurtcircuitXarxaComplexa}{\large\textcolor{NavyBlue}{(\faPython)}}]\label{ex:CurtcircuitXarxaComplexa}
 	\addcontentsxms{\CurtcircuitXarxaComplexa}	
@@ -1095,29 +1095,30 @@ Aquest càlcul es pot fer directament, aplicant la superposició en primer lloc:
 	\end{array}\end{bmatrix}\unit{A}
 	\]
 
-    A partir de $\mcmplx{J}\ped{N}'$ i dels valors ja coneguts de $\mcmplx{J}\ped{N}$, $\mcmplx{Z}\ped{N}$, $\mcmplx{Y}\ped{B}$, $\mcmplx{J}\ped{B}$ i $\boldsymbol{A}$, farem servir les equacions \eqref{eq:VN-F}, \eqref{eq:UB-F} i \eqref{eq:IB-F} per calcular $\mcmplx{V}\ped{N}^{\text{F}}$, $\mcmplx{U}\ped{B}^{\text{F}}$ i $\mcmplx{I}\ped{B}^{\text{F}}$:
+    A partir de $\mcmplx{J}\ped{N}'$ i dels valors ja coneguts de $\mcmplx{V}\ped{N}$, $\mcmplx{Z}\ped{N}$, $\mcmplx{Y}\ped{B}$, $\mcmplx{J}\ped{B}$ i $\boldsymbol{A}$, farem servir les equacions \eqref{eq:VN-F}, \eqref{eq:UB-F} i \eqref{eq:IB-F} per calcular $\mcmplx{V}\ped{N}^{\text{F}}$, $\mcmplx{U}\ped{B}^{\text{F}}$ i $\mcmplx{I}\ped{B}^{\text{F}}$:
 
     \[
-	\mcmplx{V}\ped{N}^{\text{F}} =
+    \mcmplx{V}\ped{N}^{\text{F}} =
+    \begin{bmatrix}\begin{array}{c}
+    \frac{\complexnum{15430+j2295}}{101} \\[2mm]
+    \frac{\complexnum{3390+j2085}}{101}
+	\end{array}\end{bmatrix}\unit{V} +
 	\begin{bmatrix}\begin{array}{cc}
          \frac{1445 + j 310}{202} & \frac{415 + j 110}{202} \\[2mm]
          \frac{415 + j 110}{202} & \frac{245 + j 430}{202}
     \end{array}\end{bmatrix}\unit{\ohm} \cdot
-    \left(
-    \begin{bmatrix}\begin{array}{c}
-        20 - j \frac{10}{3} \\[2mm]
-        4 + j \frac{20}{3}
-    \end{array}\end{bmatrix}\unit{A} +
     \begin{bmatrix}\begin{array}{c}
         \frac{\complexnum{-518+j301}}{25} \\[2mm]
         \frac{\complexnum{518-j301}}{25}
 	\end{array}\end{bmatrix}\unit{A}
-    \right) =
+ =
     \begin{bmatrix}\begin{array}{c}
         \frac{176 + j 318}{5} \\[2mm]
         \frac{176 + j 318}{5}
     \end{array}\end{bmatrix}\unit{V}
 	\]
+
+Es pot veure que donat que el curtcircuit és entre els nusos 1 i 2, llur potencial és idèntic.
 
     \[
      \mcmplx{U}\ped{B}^{\text{F}} =
@@ -1144,6 +1145,7 @@ Aquest càlcul es pot fer directament, aplicant la superposició en primer lloc:
 	\end{array}\end{bmatrix}\unit{V}
     \]
 
+    La tensió de les branques 2 i 4 és igual a zero, donat que també estan connectades entre els nusos 1 i 2.
 
     {\fontsize{10pt}{10pt}\selectfont
     \[

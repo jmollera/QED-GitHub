@@ -220,7 +220,7 @@ submúltiples.
 \label{sec:unitats-derv-SI}
 \index{sistema internacional d'unitats!unitats derivades amb noms i símbols propis}
 
-De forma convenient, s'ha donat noms i símbols propis a algunes unitats derivades de les fonamentals; en la taula \vref{taula:SI-derivades} es mostren aquestes unitats derivades de l'SI.
+De forma convenient, s'ha donat noms i símbols propis a vint-i-dues unitats derivades de les fonamentals; en la taula \vref{taula:SI-derivades} es mostren aquestes unitats derivades de l'SI.
 
 \begin{ThreePartTable}
 \begin{TableNotes}
@@ -311,7 +311,7 @@ En canvi, pel que fa a una temperatura en particular, la relació entre els valo
 \section{Altres unitats derivades de l'SI}
 \index{sistema internacional d'unitats!altres unitats derivades}
 
-Les 7 unitats fonamentals (vegeu la taula \vref{taula:SI-fonamentals}) i les 22 unitats derivades amb noms i símbols propis (vegeu la taula \vref{taula:SI-derivades}) poden combinar-se entre si per crear noves unitats derivades.
+Les set unitats fonamentals (vegeu la taula \vref{taula:SI-fonamentals}) i les vint-i-dues unitats derivades amb noms i símbols propis (vegeu la taula \vref{taula:SI-derivades}) poden combinar-se entre si per crear noves unitats derivades.
 
  En la taula \vref{taula:SI-derivades-exemples} es mostren alguns exemples d'aquestes combinacions.
 
@@ -428,7 +428,7 @@ En la taula \vref{taula:SI-altres-acceptades} es mostren les unitats fora de l'S
 
 Encara que hi ha moltes més unitats que no formen part de l'SI, i que o bé són d'interès històric, o bé s'utilitzen en aplicacions específiques, se'n desaconsella totalment l'ús en textos científics i tècnics moderns. 
 
-Es dona, no obstant això, en la taula \vref{taula:SI-altres-NIST} quatre unitats fora de l'SI acceptades addicionalment pel NIST (\textit{Special Publication 811: Guide for the Use of the International System of Units (SI)}), ja que s'han utilitzat tradicionalment als Estats Units d'Amèrica; aquest organisme desaconsella però continuar usant-les, i recomana l'ús de les unitats equivalents de l'SI.\index{NIST}
+Es dona, no obstant això, en la taula \vref{taula:SI-altres-NIST} quatre unitats fora de l'SI acceptades addicionalment pel NIST en el document \textit{Special Publication 811: Guide for the Use of the International System of Units (SI)}, ja que s'han utilitzat tradicionalment als Estats Units d'Amèrica; aquest organisme desaconsella però continuar usant-les, i recomana l'ús de les unitats equivalents de l'SI.\index{NIST}
 
 \begin{ThreePartTable}
 \begin{TableNotes}
@@ -632,10 +632,11 @@ Després de cadascuna de les explicacions es donen exemples d'escriptures correc
 
 \item Un estil comú d'escriptura de textos tècnics i científics representa amb lletra inclinada els noms de les variables.
 Els noms i els símbols de les unitats, això no obstant, s'escriuen sempre amb lletra recta.
+També s'escriuen amb lletra recta els valors numèrics.
 
-\textcolor{Green}\faCheckSquare{} \textit{l} = \qty{1}{m}
+\textcolor{Green}\faCheckSquare{} \textit{P} = \textit{U} \textit{I} = \qty{220}{V} $\times$ \qty{5}{A} = \qty{1100}{W}
 
-\textcolor{Red}\faTimesCircle{} \textit{l} = 1 \textit{m}
+\textcolor{Red}\faTimesCircle{} \textit{P} = \textit{U} \textit{I} = 220 \textit{V} $\times$ 5 \textit{A} = 1100 \textit{W}
 
 \textcolor{Green}\faCheckSquare{} \textit{l} = 1 metre
 
@@ -783,7 +784,7 @@ un espai en blanc.
 
 \textcolor{Green}\faCheckSquare{} \qty{2000}{kW.h}
 
-\textcolor{Red}\faTimesCircle{} \qty[inter-unit-product=-]{2000}{kW.h}
+\textcolor{Red}\faTimesCircle{} 2000 kW-h
 
 \textcolor{Red}\faTimesCircle{} \qty{2000}{kWh}
 
@@ -842,9 +843,9 @@ combinat amb altres símbols.
 
 \textcolor{Red}\faTimesCircle{} \qty{20}{(km)^2}
 
-\textcolor{Green}\faCheckSquare{}  \qty{12}{kg/mm^2}
+\textcolor{Green}\faCheckSquare{}  \qty{12}{W/mm^2}
 
-\textcolor{Red}\faTimesCircle{}  \qty{12}{kg/(mm)^2}
+\textcolor{Red}\faTimesCircle{}  \qty{12}{W/(mm)^2}
 
 
 \item Només es permet un prefix davant d'una unitat.
@@ -858,11 +859,7 @@ combinat amb altres símbols.
 
 \textcolor{Green}\faCheckSquare{} \qty{3e-6}{kg} = \qty{3}{mg}
 
-\textcolor{Green}\faCheckSquare{} \qty{3e-6}{quilograms} = 3 miŀligrams
-
 \textcolor{Red}\faTimesCircle{} \qty{3e-6}{kg} = \qty{3}{\micro kg}
-
-\textcolor{Red}\faTimesCircle{} \qty{3e-6}{quilograms} = 3 microquilograms
 
 
 \item No es permeten prefixos aïllats.
@@ -889,9 +886,9 @@ forma simultània pot causar confusió, i és preferible, per tant,
 utilitzar una alta combinació d'unitats on només el numerador o el
 denominador tinguin prefix.
 
-\textcolor{Green}\faCheckSquare{} \qty{10}{MV/m}
+\textcolor{Green}\faCheckSquare{} \qty{1}{MV/m}
 
-\textcolor{Blue}\faExclamationTriangle{}  \qty{10}{kV/mm}
+\textcolor{Blue}\faExclamationTriangle{}  \qty{1}{kV/mm}
 
 
 \item De forma anàloga, el mateix és aplicable als símbols d'unitats
@@ -920,13 +917,13 @@ conté un prefix, ambdues parts s'han d'escriure juntes sense cap espai o elemen
 
 \item Els noms dels prefixos s'escriuen sempre amb minúscula, llevat que es trobin al principi d'una oració.
 
-\textcolor{Green}\faCheckSquare{} \qty{1200}{MW} són 1200 megawatts
+\textcolor{Green}\faCheckSquare{} 1200 megawatts
 
-\textcolor{Red}\faTimesCircle{} \qty{1200}{MW} són 1200 Megawatts
+\textcolor{Red}\faTimesCircle{} 1200 Megawatts
 
-\textcolor{Green}\faCheckSquare{} \qty{12}{GHz} són 12 gigahertzs
+\textcolor{Green}\faCheckSquare{} 12 gigahertzs
 
-\textcolor{Red}\faTimesCircle{} \qty{12}{GHz}  són 12 Gigahertzs
+\textcolor{Red}\faTimesCircle{} 12 Gigahertzs
 
 
 \item En el cas  d'unitats derivades que s'expressen amb divisions o
@@ -947,7 +944,7 @@ producte.
 \textcolor{Red}\faTimesCircle{}   \qty{20}{\ohm.m} són 20 ohms multiplicats per metre
 
 
-\item El valor d'una quantitat ha d'expressar-se  utilitzant únicament una unitat. En són una excepció les magnituds de temps i d'angle pla de la taula \vref{taula:SI-altres-acceptades}; tot i això, pel que fa a l'angle pla és preferible seguir la regla general excepte en disciplines on s'utilitzen angles molt petits, com ara la navegació, la cartografia o l'astronomia.
+\item El valor d'una quantitat ha d'expressar-se  utilitzant únicament una unitat.
 
 \textcolor{Green}\faCheckSquare{} \qty{10,234}{m}
 
@@ -957,17 +954,17 @@ producte.
 
 \textcolor{Red}\faTimesCircle{}  10 m 23 cm 4 mm
 
-\textcolor{Green}\faCheckSquare{} \qty{50,5}{kg}
 
-\textcolor{Red}\faTimesCircle{}  50 kg 500 mg
+
+\item Són una excepció a la regla anterior les magnituds de temps i d'angle pla de la taula \vref{taula:SI-altres-acceptades}; tot i això, pel que fa a l'angle pla és preferible seguir la regla general excepte en disciplines on s'utilitzen angles molt petits, com ara la navegació, la cartografia o l'astronomia.
 
 \textcolor{Green}\faCheckSquare{} 2 d 13 h 12 min
 
 \textcolor{Red}\faTimesCircle{}   \qty{2,55}{d}
 
-\textcolor{Green}\faCheckSquare{} \ang{22,20}
+\textcolor{Green}\faCheckSquare{} \ang{22,04}
 
-\textcolor{Blue}\faExclamationTriangle{} \ang{22;12}
+\textcolor{Blue}\faExclamationTriangle{} \ang{22;2;24}
 
 
 \item Quan s'expressa el valor d'una quantitat, és incorrecte afegir
@@ -1020,7 +1017,8 @@ addicional necessària ha d'afegir-se a la quantitat.
 \end{itemize}
 
 
-El document  \textit{Guide for the Use of the International System of Units (SI)}, publicat pel NIST,  fa a més les recomanacions següents:
+El NIST, en el document \textit{Special Publication 811:
+Guide for the Use of the International System of Units (SI)},  fa a més les recomanacions següents:
 
 \begin{itemize}
 
@@ -1036,14 +1034,6 @@ parèntesis si es vol posar les unitats només al final.
 \textcolor{Blue}\faExclamationTriangle{} \qty[separate-uncertainty, separate-uncertainty-units = single]{63,2(1)}{m}
 
 \textcolor{Blue}\faExclamationTriangle{}  $\qty{63,2}{m} \pm \num{0,1}$
-
-
-\textcolor{Green}\faCheckSquare{} \qtyrange{4}{20}{mA}
-
-\textcolor{Green}\faCheckSquare{} \qtyrange[range-units = bracket]{4}{20}{mA}
-
-\textcolor{Blue}\faExclamationTriangle{} \qtyrange[range-units = single]{4}{20}{mA}
-
 
 \textcolor{Green}\faCheckSquare{} \qtyproduct{800 x 600 x 300}{mm}
 
@@ -1077,6 +1067,8 @@ parèntesis si es vol posar les unitats només al final.
 
 \textcolor{Green}\faCheckSquare{} La tensió pot variar en el rang \qtyrange[range-units = bracket]{-24}{24}{V}
 
+\textcolor{Blue}\faExclamationTriangle{}  La tensió pot variar en el rang \num{-24} a 24 V
+
 \textcolor{Blue}\faExclamationTriangle{}  La tensió pot variar en el rang \qty{-24}{V} - \qty{24}{V}
 
 \textcolor{Blue}\faExclamationTriangle{} La tensió pot variar en el rang \num{-24} - 24 V 
@@ -1089,8 +1081,7 @@ parèntesis si es vol posar les unitats només al final.
 \section{Factors de conversió d'unitats}\label{sec:SI-fact-conv}
 \index{sistema internacional d'unitats!factors de conversió}
 Com que la quantitat d'unitats existents és enorme, tenint en compte tant les que pertanyen a l'SI com les que no, es dona en aquest apartat l'adreça de la pàgina web del NIST on hi ha recollits un bon nombre de factors de conversió d'unitats que són rellevants en el món de la ciència i l'enginyeria.
-
-La pàgina web en  qüestió, \href{https://www.nist.gov/pml/pubs/sp811/appenb.cfm}{https:/\!\!/www.nist.gov/pml/pubs/sp811/appenb.cfm}, correspon a l'apèndix B de la publicació \textit{Guide for the Use of the International System of Units (SI)}.
+La pàgina web en  qüestió, \href{https://www.nist.gov/pml/pubs/sp811/appenb.cfm}{https:/\!\!/www.nist.gov/pml/pubs/sp811/appenb.cfm}, correspon a l'apèndix B del document \textit{Special Publication 811: Guide for the Use of the International System of Units (SI)}.
 Dins d'aquesta pàgina web, l'enllaç \href{https://www.nist.gov/pml/pubs/sp811/appenb8.cfm}{B.8} ens porta a una llista de factors de conversió ordenada alfabèticament, i l'enllaç  \href{https://www.nist.gov/pml/pubs/sp811/appenb9.cfm}{B.9} ens porta a la mateixa llista de factors de conversió, però ordenada per categories.
 
 També es pot descarregar a l'enllaç: \href{https://dx.doi.org/10.6028/NIST.SP.1038}{https:/\!\!/dx.doi.org/10.6028/NIST.SP.1038}, de la pàgina web del NIST, el document \textit{The International System of Units (SI) --- Conversion Factors

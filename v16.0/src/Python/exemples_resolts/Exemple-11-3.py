@@ -7,7 +7,7 @@ circuit.add(VoltageSource(E=-50, Z=20j), from_to=(1, 2), branch=2)
 circuit.add(Impedance(Z=5j), from_to=(2, 0), branch=3)
 circuit.add(Impedance(Z=20), from_to=(1, 2), branch=4)
 circuit.add(CurrentSource(J=4, Y=1 / 10), from_to=(0, 2), branch=5)
-circuit.add(MutualCoupling(X=5j), coupled_branches=(2, 3))
+circuit.add(MutualCoupling(ZM=5j), coupled_branches=(2, 3))
 
 circuit.solve()
 

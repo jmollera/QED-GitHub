@@ -1145,10 +1145,23 @@ S'ha actualitzat la distribució de Python utilitzada per executar els programes
 \begin{itemize}
     \item En el mòdul \texttt{qed.utils} s'ha modificat la implementació  de la classe \texttt{Complex}, sense canviar-ne cap característica externa; s'ha inclòs la possibilitat de definir els símbols del separador del módul i l'argument,  del grau sexagesimal, i  del radian, afegint a la classe les variables \texttt{angle\_symbol}, \texttt{degree\_symbol} i \texttt{rad\_symbol}.
      S'han creat les subclasses \texttt{ComplexR} i \texttt{ComplexD} per manipular nombres complexos polars en radians i en graus respectivament,  sense la necessitat d'especificar el paràmetre \texttt{in\_rad} de la classe pare \texttt{Complex}.
-    \item En el mòdul \texttt{qed.eng\_elc} s'ha modificat la implementació  de la classe \texttt{Speed}, canviant-ne els noms dels elements interns. Això afecta a l'ús extern d'aquesta classe.
+
     \item En el mòdul \texttt{qed.eng\_elc} s'ha modificat la implementació  de la classe \texttt{Network}, afegint a la funció \texttt{\_\_init\_\_} els membres  \texttt{ideal\_Z} i \texttt{ideal\_Y}, amb el valor 1 per defecte. El motiu d'aquest canvi és donar la flexibilitat a l'usuari d'escollir altres valors per a \texttt{ideal\_Z} i \texttt{ideal\_Y}, si considera que poden ser més adequats en relació a les magnituds de la resta de valors  dels components de la xarxa. Donat que la representació interna de la classe \texttt{Network} ha canviat, els mètodes \texttt{load} i  \texttt{save} no són compatibles amb les versions anteriors.
-    \item En el mòdul \texttt{qed.eng\_elc} s'ha modificat la implementació  de la classes \texttt{Motor3ph}, eliminat els mètodes \texttt{t\_start} i \texttt{s\_start\_up}, i creant  el nou mètode \texttt{start\_up}, que torna alhora els resultats que tornaven per separat els dos mètodes eliminats. Això afecta a l'ús extern d'aquesta classe.
-    \item Ha calgut modificar el programa \texttt{Exemple-12-3.py}, afegint el paràmetre \texttt{tap\_changer\_type ='Ratio'} a la funció \texttt{create\_transformer\_from\_parameters}. Això és degut al canvi de versió de la llibreria \texttt{pandapower}.
+
+    \item En el mòdul \texttt{qed.eng\_elc} s'ha modificat la implementació  de la classe \texttt{MutualCoupling}, eliminat la restricció de que el valor de l'acoblament fos un nombre complex sense part real.
+     Per fer evident aquesta circumstància, s'ha canviat el nom de la variable de la classe de \texttt{X} a  \texttt{ZM}; això afecta a l'ús extern d'aquesta classe.
+
+    \item En el mòdul \texttt{qed.eng\_elc} s'ha modificat la implementació  de la classes \texttt{Motor3ph}, eliminat els mètodes \texttt{t\_start} i \texttt{s\_start\_up}, i creant  el nou mètode \texttt{start\_up}, que torna alhora els resultats que proporcionaven per separat els dos mètodes eliminats;
+     aquest dos resultats es tornen en una nova \texttt{dataclass}, que els agrupa, anomenada \texttt{Motor3phStartUp}.
+     Aquest canvi afecta a l'ús extern de la classe \texttt{Motor3ph}.
+
+    \item En el mòdul \texttt{qed.eng\_elc} s'ha modificat la implementació  de la classe \texttt{Speed}, canviant-ne els noms dels elements interns; això afecta a l'ús extern d'aquesta classe.
+
+    \item Ha calgut modificar el programa \texttt{Exemple-12-3.py}, afegint el paràmetre \texttt{tap\_changer\_type ='Ratio'} a la funció \texttt{create\_transformer\_from\_parameters}.
+     Aquesta modificació és deguda al canvi de versió de la llibreria \texttt{pandapower}.
+
+    \item Es deixa de fer servir la funció \texttt{interp1d} de la llibreria \texttt{SciPy} per fer interpolacions, en favor de  la funció \texttt{make\_interp\_spline} de la mateixa llibreria.
+    La documentació de la llibreria \texttt{SciPy} indica que la  funció \texttt{interp1d} ja no es posarà més al dia, i en desaconsella el seu ús.
 \end{itemize}
 
 A la secció \ref{sec:SI-intro}, s'indica que la publicació més recent del \textit{Bureau 	International des Poids et Mesures} del Sistema Internacional d'unitats, és la  9a edició de març de 2019, revisada l'agost de 2025 per incloure els prefixes binaris «robi» i «quebi», i per actualitzar el valor del dalton.

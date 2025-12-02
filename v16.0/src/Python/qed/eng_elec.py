@@ -947,11 +947,7 @@ class ShortCircuit(Element):
 class MutualCoupling(Element):
     """Create a mutual coupling between two branches to be used with class Network."""
 
-    X: complex  # Inductive reactance of the coupling (must be a pure imaginary number)
-
-    def __post_init__(self):
-        if self.X.real != 0:
-            raise EEInvalidArguments({'X': self.X})
+    ZM: complex  # Mutual coupling impedance
 
 
 class Network:
@@ -964,11 +960,11 @@ class Network:
     >>> net.add(Impedance(Z=5j), from_to=(2, 0), branch=3)
     >>> net.add(Impedance(Z=20), from_to=(1, 2), branch=4)
     >>> net.add(CurrentSource(J=4, Y=0.1), from_to=(0, 2), branch=5)
-    >>> net.add(MutualCoupling(X=5j), coupled_branches=(2, 3))
+    >>> net.add(MutualCoupling(ZM=5j), coupled_branches=(2, 3))
     >>> net.remove(branch=2)
     >>> net.remove(coupled_branches=(3, 2))
     >>> net.add(VoltageSource(E=-50, Z=20j), from_to=(1, 2), branch=2)
-    >>> net.add(MutualCoupling(X=5j), coupled_branches=(2, 3))
+    >>> net.add(MutualCoupling(ZM=5j), coupled_branches=(2, 3))
     >>> net.solve()
     >>> net.num_branches
     5
@@ -984,7 +980,7 @@ class Network:
     Impedance(Z=5j)              Branch: 3, Nodes: 2 ► 0
     Impedance(Z=20)              Branch: 4, Nodes: 1 ► 2
     CurrentSource(J=4, Y=0.1)    Branch: 5, Nodes: 0 ► 2
-    MutualCoupling(X=5j)         Coupled branches: 2 & 3
+    MutualCoupling(ZM=5j)        Coupled branches: 2 & 3
     >>> print(f'{net.voltage(node=2):.4f}')
     33.5644+20.6436j
     >>> print(f'{net.voltage(branch=4):.4f}')
@@ -1234,8 +1230,8 @@ class Network:
                     num_branches_plus_extra -= 1
                     num_nodes_plus_extra -= 1
         for (branch_1, branch_2), element in self._net_couplings.items():
-            ZB[branch_1 - 1, branch_2 - 1] = element.X
-            ZB[branch_2 - 1, branch_1 - 1] = element.X
+            ZB[branch_1 - 1, branch_2 - 1] = element.ZM
+            ZB[branch_2 - 1, branch_1 - 1] = element.ZM
 
         # Solve the network
         try:
@@ -1424,14 +1420,25 @@ class Network:
 class Motor3phRun:
     """Class used to store the result of the method 'run' from class Motor3ph."""
 
-    Z: np.ndarray  # Total motor impedance (Line-Neutral), Ω
-    PF: np.ndarray  # Motor Power factor, between 0 and 1
-    I: np.ndarray  # Current drawn by the motor, A
-    U: np.ndarray  # Voltage at the motor terminals (Line-Neutral), V
-    S: np.ndarray  # Apparent power drawn by the motor, VA
-    T_m: np.ndarray  # Mechanical torque delivered by the motor, N·m
-    P_m: np.ndarray  # Mechanical power delivered by the motor, W
-    Eff: np.ndarray  # Motor Efficiency, between 0 and 1
+    Z: ArrayLike  # Total motor impedance (Line-Neutral), Ω
+    PF: ArrayLike  # Motor Power factor, between 0 and 1
+    I: ArrayLike  # Current drawn by the motor, A
+    U: ArrayLike  # Voltage at the motor terminals (Line-Neutral), V
+    S: ArrayLike  # Apparent power drawn by the motor, VA
+    T_m: ArrayLike  # Mechanical torque delivered by the motor, N·m
+    P_m: ArrayLike  # Mechanical power delivered by the motor, W
+    Eff: ArrayLike  # Motor Efficiency, between 0 and 1
+
+
+@dataclass(frozen=True)
+class Motor3phStartUp:
+    """Class used to store the result of the method 'start_up' from class Motor3ph."""
+
+    t_start: float  # The starting time of the motor, s
+    s_at_time: Callable[[ArrayLike], ArrayLike]  # An interpolating cubic B-spline function
+    # that returns the slip for a given time in seconds, during the start-up process.
+    # If time < 0, 1 is returned (stopped motor)
+    # If time > t_start, the slip at t_start is returned
 
 
 class Motor3ph:
@@ -1518,7 +1525,7 @@ class Motor3ph:
         """Return the motor synchronous mechanical speed in r/min."""
         return 120 * self._f / self._p
 
-    def convert(self, v: ArrayLike | float, from_to: Speed) -> ArrayLike | float:
+    def convert(self, v: ArrayLike, from_to: Speed) -> ArrayLike:
         """
         Convert from/to: slip, ω (rad/s), and n (r/min)
         """
@@ -1529,7 +1536,7 @@ class Motor3ph:
                 return (1 - v) * self.ω_m_sync
             case Speed.n_to_slip:
                 return 1 - v / self.n_m_sync
-            case Speed.n_to_slip:
+            case Speed.n_to_ω:
                 return v * np.pi / 30
             case Speed.ω_to_slip:
                 return 1 - v / self.ω_m_sync
@@ -1550,8 +1557,8 @@ class Motor3ph:
         z_th = z_parallel([z_ext + self._z_1, self._z_0])
         return self._z_2.real / abs(z_th + 1j * self._z_2.imag)
 
-    def s_match(self, T_load: Callable[[float], float], e_ext: complex,
-                z_ext: complex = 0, s_guess: float = 0.04) -> float:
+    def s_match(self, T_load: Callable[[ArrayLike], ArrayLike],
+                e_ext: complex, z_ext: complex = 0, s_guess: float = 0.04) -> float:
         """
         Return the slip at which the motor torque matches the load torque.
 
@@ -1567,7 +1574,7 @@ class Motor3ph:
         sol = optimize.root_scalar(lambda s: self.run(s, e_ext, z_ext).T_m - T_load(s), x0=s_guess)
         return sol.root
 
-    def run(self, s: ArrayLike | float, e_ext: complex, z_ext: complex = 0) -> Motor3phRun:
+    def run(self, s: ArrayLike, e_ext: complex, z_ext: complex = 0) -> Motor3phRun:
         """
         Return several motor quantities when running at a given slip,
         in a Motor3phRun class.
@@ -1599,11 +1606,11 @@ class Motor3ph:
         Eff = P_m / np.real(S)
         return Motor3phRun(Z, PF, I, U, S, T_m, P_m, Eff)
 
-    def start_up(self, T_load: Callable[[float], float], J: float,
-                 e_ext: complex, z_ext: complex = 0) -> tuple[float, interpolate.interp1d]:
+    def start_up(self, T_load: Callable[[ArrayLike], ArrayLike], J: float,
+                 e_ext: complex, z_ext: complex = 0) -> Motor3phStartUp:
         """
-        Return the starting time and an interpolating function of the slip evolution with
-        time during the start-up process.
+        Return the starting time and an interpolating cubic B-spline function of the
+        slip evolution with time, during the start-up process.
 
         Parameters
         ----------
@@ -1616,13 +1623,14 @@ class Motor3ph:
 
         Returns
         -------
-        The starting time
-
-        An interpolating function (scipy.interpolate.interp1d) that returns the slip
-        at a given time in seconds, during the start-up process.
-        If time < 0, slip=1 (motor stopped) is returned
-        If time > starting time, the slip at the starting time is returned
+        A Motor3phStartUp class.
         """
+        def slip_at_time(t: ArrayLike ) -> ArrayLike:
+            slip = cubic_Bspline(t, extrapolate=False)
+            slip[t < 0] = 1.0
+            slip[t > t_start] = s[-1]
+            return slip
+
         N_P1, N_P2, S_FACTOR = 200, 800, 1.25
 
         s_match = self.s_match(T_load, e_ext, z_ext)
@@ -1633,10 +1641,10 @@ class Motor3ph:
         y_fun = 1 / (self.run(s, e_ext, z_ext).T_m - T_load(s))
         # The variable x in cumulative_simpson must be strictly increasing,
         # so we need to change the sign of s, and then the sign of the integral
-        t = J * self.ω_m_sync * integrate.cumulative_simpson(y=y_fun, x=-s, initial=0)
-        return t[-1], interpolate.interp1d(t, s, kind='cubic', copy=False,
-                                           assume_sorted=True, bounds_error=False,
-                                           fill_value=(s[0], s[-1]))
+        time = J * self.ω_m_sync * integrate.cumulative_simpson(y=y_fun, x=-s, initial=0)
+        t_start = time[-1]
+        cubic_Bspline = interpolate.make_interp_spline(time, s, k=3, check_finite=False)
+        return Motor3phStartUp(t_start, slip_at_time)
 
 
 if __name__ == '__main__':

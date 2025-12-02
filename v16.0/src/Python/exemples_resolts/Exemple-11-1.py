@@ -10,7 +10,7 @@ circuit.add(Impedance(Z=0.405j), from_to=(2, 4), branch=5)
 circuit.add(Impedance(Z=0.50j), from_to=(2, 3), branch=6)
 circuit.add(Impedance(Z=0.16j), from_to=(1, 2), branch=7)
 circuit.add(CurrentSource(J=2 - 0.9j, Y=1 / (-25j)), from_to=(4, 0), branch=8)
-circuit.add(MutualCoupling(X=0.05j), coupled_branches=(5, 6))
+circuit.add(MutualCoupling(ZM=0.05j), coupled_branches=(5, 6))
 
 circuit.solve()
 
