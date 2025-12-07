@@ -62,15 +62,21 @@ class CableType(enum.Enum):
 class IECcurve(enum.Enum):
     """Constants to be used in function curve_51"""
     Inverse = enum.auto()
+    NI = Inverse
     Very_Inverse = enum.auto()
+    VI = Very_Inverse
     Extremely_Inverse = enum.auto()
+    EI = Extremely_Inverse
 
 
 class IEEEcurve(enum.Enum):
     """Constants to be used in function curve_51"""
     Moderately_Inverse = enum.auto()
+    MI = Moderately_Inverse
     Very_Inverse = enum.auto()
+    VI = Very_Inverse
     Extremely_Inverse = enum.auto()
+    EI = Extremely_Inverse
 
 
 class Speed(enum.Enum):
@@ -423,8 +429,8 @@ def millman(u: ArrayLike, z: ArrayLike) -> complex:
 
     Returns
     -------
-    The voltage with respect to the same reference point, of the
-    common point of the start-connected impedances.
+    The voltage with respect to the same reference point, of
+    the start-connected impedances common point.
 
     Examples
     --------
@@ -822,8 +828,8 @@ def icc_tr(up_tr: float, us_tr: float, s_tr: float, xcc_tr: float,
     return icc_tr_pu * s_tr / (SQRT3 * us_tr)
 
 
-def curve_51(I: ArrayLike | float, curve: IECcurve | IEEEcurve, I_p: float,
-             T: float = 1.0, D: float = 0.0) -> ArrayLike | float:
+def curve_51(I: ArrayLike, curve: IECcurve | IEEEcurve, I_p: float,
+             T: float = 1.0, D: float = 0.0) -> ArrayLike:
     """
     Compute the actuation time t of an IEC or IEEE 51 curve.
     According to IEC 60255-151 and IEEE C37.112, for a given current I:
@@ -834,12 +840,12 @@ def curve_51(I: ArrayLike | float, curve: IECcurve | IEEEcurve, I_p: float,
     ----------
     I:     Current, A.
     curve: The 51 curve to use. Allowed values:
-              IECcurve.Inverse
-              IECcurve.Very_Inverse
-              IECcurve.Extremely_Inverse
-              IEEEcurve.Moderately_Inverse
-              IEEEcurve.Very_Inverse
-              IEEEcurve.Extremely_Inverse
+              IECcurve.Inverse (same as IECcurve.NI)
+              IECcurve.Very_Inverse (same as IECcurve.VI)
+              IECcurve.Extremely_Inverse (same as IECcurve.EI)
+              IEEEcurve.Moderately_Inverse (same as IEEEcurve.MI)
+              IEEEcurve.Very_Inverse (same as IEEEcurve.VI)
+              IEEEcurve.Extremely_Inverse (same as IEEEcurve.EI)
     I_p:   Pick up current, A.
     T:     Multiplicative parameter. The default is 1.
     D:     Additive parameter, s. The default is 0 s.
@@ -851,33 +857,33 @@ def curve_51(I: ArrayLike | float, curve: IECcurve | IEEEcurve, I_p: float,
 
     Example
     -------
-    >>> print(f'{curve_51(200, IECcurve.Very_Inverse, 100):.4f}')
-    13.5000
-    >>> print(f'{curve_51(200, IEEEcurve.Very_Inverse, 100):.4f}')
-    7.0277
+    >>> print(f'{curve_51(200, IECcurve.EI, 100):.4f}')
+    26.6667
+    >>> print(f'{curve_51(200, IEEEcurve.EI, 100):.4f}')
+    9.5217
     """
     match curve:
-        case IECcurve.Inverse:
+        case IECcurve.Inverse | IECcurve.NI:
             A = 0.14
             P = 0.02
             B = 0.0
-        case IECcurve.Very_Inverse:
+        case IECcurve.Very_Inverse | IECcurve.VI:
             A = 13.5
             P = 1.0
             B = 0.0
-        case IECcurve.Extremely_Inverse:
+        case IECcurve.Extremely_Inverse | IECcurve.EI:
             A = 80.0
             P = 2.0
             B = 0.0
-        case IEEEcurve.Moderately_Inverse:
+        case IEEEcurve.Moderately_Inverse | IEEEcurve.MI:
             A = 0.0515
             P = 0.02
             B = 0.114
-        case IEEEcurve.Very_Inverse:
+        case IEEEcurve.Very_Inverse | IEEEcurve.VI:
             A = 19.61
             P = 2.0
             B = 0.491
-        case IEEEcurve.Extremely_Inverse:
+        case IEEEcurve.Extremely_Inverse | IEEEcurve.EI:
             A = 28.2
             P = 2.0
             B = 0.1217
@@ -1529,19 +1535,20 @@ class Motor3ph:
         """
         Convert from/to: slip, ω (rad/s), and n (r/min)
         """
+        vel = np.asarray(v)
         match from_to:
             case Speed.slip_to_n:
-                return (1 - v) * self.n_m_sync
+                return (1 - vel) * self.n_m_sync
             case Speed.slip_to_ω:
-                return (1 - v) * self.ω_m_sync
+                return (1 - vel) * self.ω_m_sync
             case Speed.n_to_slip:
-                return 1 - v / self.n_m_sync
+                return 1 - vel / self.n_m_sync
             case Speed.n_to_ω:
-                return v * np.pi / 30
+                return vel * np.pi / 30
             case Speed.ω_to_slip:
-                return 1 - v / self.ω_m_sync
+                return 1 - vel / self.ω_m_sync
             case Speed.ω_to_n:
-                return v * 30 / np.pi
+                return vel * 30 / np.pi
             case _:
                 raise EEInvalidArguments({'from_to': from_to})
 
@@ -1591,10 +1598,11 @@ class Motor3ph:
         A Motor3phRun class.
         """
         S_MIN = 1e-12  # Smallest allowed value for slip to avoid division by zero
+        slip = np.asarray(s)
 
         z_th = z_parallel([z_ext + self._z_1, self._z_0])
         e_th = e_ext * self._z_0 / (self._z_0 + self._z_1 + z_ext)
-        r_2_s = self._z_2.real / np.where(np.isclose(s, 0.0, atol=S_MIN), S_MIN, s)
+        r_2_s = self._z_2.real / np.where(np.isclose(slip, 0.0, atol=S_MIN), S_MIN, slip)
         z_2_s = r_2_s + 1j * self._z_2.imag
         Z = self._z_1 + self._z_0 * z_2_s / (self._z_0 + z_2_s)
         PF = np.cos(np.angle(Z))
@@ -1625,7 +1633,7 @@ class Motor3ph:
         -------
         A Motor3phStartUp class.
         """
-        def slip_at_time(t: ArrayLike ) -> ArrayLike:
+        def slip_at_time(t: ArrayLike) -> ArrayLike:
             slip = cubic_Bspline(t, extrapolate=False)
             slip[t < 0] = 1.0
             slip[t > t_start] = s[-1]

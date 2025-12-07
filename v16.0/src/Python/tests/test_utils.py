@@ -12,11 +12,6 @@ class TestComplexClass(unittest.TestCase):
         Complex.rad_symbol = ''
 
     def test_new(self):
-        self.assertIsNone(Complex('1x'))
-        self.assertIsNone(Complex('1x', 45))
-        self.assertIsNone(Complex(1, '45x'))
-        self.assertIsNone(Complex(1, 2, 3, 4))
-        self.assertIsNone(Complex(-1, 45))
         self.assertIsNone(Complex('1x', in_rad=True))
         self.assertIsNone(Complex('1x', 45, in_rad=True))
         self.assertIsNone(Complex(1, '45x', in_rad=True))
@@ -32,18 +27,15 @@ class TestComplexClass(unittest.TestCase):
             m = abs(z)
             a_rad = cmath.phase(z)
             a_deg = math.degrees(a_rad)
-            self.assertAlmostEqual(z, Complex(m, a_deg))
             self.assertAlmostEqual(z, Complex(m, a_deg, in_rad=False))
             self.assertAlmostEqual(z, Complex(m, a_rad, in_rad=True))
 
     def test_str(self):
-        self.assertEqual(str(Complex(1.0, 45)), '1.0∠45.0°')
         self.assertEqual(str(Complex(1.0, 45, in_rad=False)), '1.0∠45.0°')
         self.assertEqual(str(Complex(1.0, 0.5, in_rad=True)), '1.0∠0.5')
         Complex.rad_symbol = ' rad'
         Complex.degree_symbol = ' deg'
         Complex.angle_symbol = ' @ '
-        self.assertEqual(str(Complex(1.0, 45)), '1.0 @ 45.0 deg')
         self.assertEqual(str(Complex(1.0, 45, in_rad=False)), '1.0 @ 45.0 deg')
         self.assertEqual(str(Complex(1.0, 0.5, in_rad=True)), '1.0 @ 0.5 rad')
 

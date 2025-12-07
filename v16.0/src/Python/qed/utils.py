@@ -11,7 +11,7 @@ class Complex(complex):
     """
     Handle polar complex numbers in degrees or radians.
 
-    >>> z = Complex(4, 45)  # same as Complex(4, 45, in_rad=False)
+    >>> z = Complex(4, 45, in_rad=False)
     >>> z.mod
     4.0
     >>> z.arg
@@ -48,7 +48,7 @@ class Complex(complex):
     rad_symbol:    str = ''   # Symbol to be used for radians.
 
     def __new__(cls, *args: int | float | complex | str,
-                in_rad: bool = False) -> complex | None:
+                in_rad: bool) -> complex | None:
         """
         Create a polar complex number in degrees or radians.
 
@@ -58,7 +58,6 @@ class Complex(complex):
                 or two values: module (positive) and argument compatible
                 with float (int|float|str).
         in_rad: True -> argument in radians, False -> argument in degrees.
-                The default value is False (i.e., argument in degrees).
         """
         try:
             match args:
@@ -81,6 +80,18 @@ class Complex(complex):
         """ __init__ is automatically called by __new__."""
         self.__in_rad = in_rad
 
+    def __repr__(self) -> str:
+        """Class representation function"""
+        return f'{type(self).__name__}({self.mod!r}, {self.arg!r}, in_rad={self.__in_rad!r})'
+
+    def __str__(self) -> str:
+        """Class printing function"""
+        return self.__format_polar(fmt='')
+
+    def __format__(self, fmt: str = '') -> str:
+        """ Class format function."""
+        return self.__format_polar(fmt=fmt)
+
     def __format_polar(self, fmt: str) -> str:
         """Format polar representation with a given format string.
 
@@ -97,18 +108,6 @@ class Complex(complex):
             fmt_mod = fmt_arg = fmt
         unit = self.rad_symbol if self.__in_rad else self.degree_symbol
         return f'{self.mod:{fmt_mod}}{self.angle_symbol}{self.arg:{fmt_arg}}{unit}'
-
-    def __repr__(self) -> str:
-        """Class representation function"""
-        return f'{type(self).__name__}({self.mod!r}, {self.arg!r}, in_rad={self.__in_rad!r})'
-
-    def __str__(self) -> str:
-        """Class printing function"""
-        return self.__format_polar(fmt='')
-
-    def __format__(self, fmt: str = '') -> str:
-        """ Class format function."""
-        return self.__format_polar(fmt=fmt)
 
     @property
     def mod(self) -> float:

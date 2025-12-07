@@ -67,14 +67,14 @@ c = 3.5355+3.5355j
 \begin{lstlisting}
 >>> # Cable trifàsic de 25 mm² de secció i 100 m de longitud
 >>> z=ee.z_cable(25, 100)
->>> print(f'Zcable = {z:.4f} Ω/fase = {Complex(z):.4f} Ω/fase')
+>>> print(f'Zcable = {z:.4f} Ω/fase = {ComplexD(z):.4f} Ω/fase')
 Zcable = 0.0936+0.0107j Ω/fase = 0.0942∠6.5215° Ω/fase	
 \end{lstlisting} 
 
 \begin{lstlisting}
 >>> # Cable monofàsic de 25 mm² de secció i 100 m de longitud
 >>> z=ee.z_cable(25, 2*100)
->>> print(f'Zcable = {z:.4f} Ω  = {Complex(z):.4f} Ω')
+>>> print(f'Zcable = {z:.4f} Ω  = {ComplexD(z):.4f} Ω')
 Zcable = 0.1872+0.0214j Ω  = 0.1884∠6.5215° Ω	
 \end{lstlisting}
 
