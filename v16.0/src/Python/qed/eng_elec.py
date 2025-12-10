@@ -1194,7 +1194,7 @@ class Network:
         num_nodes_plus_extra = num_nodes + self._extra_nodes
         num_branches_plus_extra = num_branches + self._extra_branches
         A = np.zeros((num_nodes_plus_extra, num_branches_plus_extra), dtype=np.byte)
-        data_type = np.cdouble if self._is_complex else np.double
+        data_type = complex if self._is_complex else float
         ZB = np.zeros((num_branches_plus_extra, num_branches_plus_extra), dtype=data_type)
         EB0 = np.zeros(num_branches_plus_extra, dtype=data_type)
         JB0 = np.zeros(num_branches_plus_extra, dtype=data_type)
