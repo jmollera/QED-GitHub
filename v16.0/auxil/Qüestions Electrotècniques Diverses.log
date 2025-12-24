@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.9)  9 DEC 2025 18:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.17)  23 DEC 2025 10:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1829,13 +1829,11 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 40.0pt on input line 18.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 24.88pt on input line 19.
+(Font)              scaled to size 25.0pt on input line 20.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 25.0pt on input line 21.
-LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 15.0pt on input line 24.
+(Font)              scaled to size 15.0pt on input line 27.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on i
-nput line 27.
+nput line 30.
 
 (C:\Users\josep\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontaweso
 mefree0.fd) [3{C:/Users/josep/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/new
@@ -1844,13 +1842,13 @@ tx/ntx-ec-tlf.enc}{C:/Users/josep/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
 
 ]
 LaTeX Font Info:    Font shape `T1/JosefinSans-LF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 46.
+(Font)              scaled to size 10.95pt on input line 49.
 LaTeX Font Info:    Font shape `T1/JosefinSans-LF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 46.
+(Font)              scaled to size 14.4pt on input line 49.
 LaTeX Font Info:    Font shape `T1/JosefinSans-LF/sb/n' will be
-(Font)              scaled to size 14.4pt on input line 46.
+(Font)              scaled to size 14.4pt on input line 49.
 )
-Overfull \hbox (1.64243pt too wide) in paragraph at lines 33--334
+Overfull \hbox (1.64243pt too wide) in paragraph at lines 36--334
 []  $[]$ 
  []
 
@@ -1859,6 +1857,8 @@ Overfull \hbox (1.64243pt too wide) in paragraph at lines 33--334
 
 
 ]
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 24.88pt on input line 335.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 (Font)              scaled to size 24.88pt on input line 335.
 LaTeX Font Info:    Font shape `T1/JosefinSans-LF/sb/n' will be
@@ -5216,8 +5216,16 @@ File: Imatges/Cap-Normatives-Diverses-ProtInvIntVar.pdf Graphic file (type pdf)
 Package pdftex.def Info: Imatges/Cap-Normatives-Diverses-ProtInvIntVar.pdf  use
 d on input line 121.
 (pdftex.def)             Requested size: 454.70456pt x 284.08653pt.
-) [295] [296 <./Imatges/Cap-Normatives-Diverses-ProtInvIntVar.pdf>] [297] [298]
- [299] [300] [301] [302]
+)
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 719.
+ [295]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 719.
+ [296 <./Imatges/Cap-Normatives-Diverses-ProtInvIntVar.pdf>] [297] [298] [299] 
+[300] [301] [302]
 [303]
 
 Package siunitx Info: Option "list-units = brackets" has been deprecated in
@@ -5436,7 +5444,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [362]
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family npxtt in TS1 encoding.
-            Default family used instead on input line 1626.
+            Default family used instead on input line 1628.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -5450,11 +5458,11 @@ LaTeX Info: Symbol \texttwosuperior not provided by
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family npxtt in TS1 encoding.
             Default family used instead on input line 82.
+
+[364]
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family npxtt in TS1 encoding.
             Default family used instead on input line 89.
-
-[364]
 LaTeX Info: Symbol \texttwosuperior not provided by
             font family npxtt in TS1 encoding.
             Default family used instead on input line 96.
@@ -5465,7 +5473,7 @@ LaTeX Info: Symbol \texttwosuperior not provided by
             font family npxtt in TS1 encoding.
             Default family used instead on input line 118.
  [365]
-<Imatges/Cap-PythonProgs-corba51.pdf, id=9373, 454.91048pt x 338.33276pt>
+<Imatges/Cap-PythonProgs-corba51.pdf, id=9375, 454.91048pt x 338.33276pt>
 File: Imatges/Cap-PythonProgs-corba51.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonProgs-corba51.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonProgs-corba51.pdf  used on input lin
@@ -5489,7 +5497,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [369]
 (Python/exemples_resolts/Exemple-1-4.py)
 (Python/exemples_resolts/Exemple-1-8.py [370])
-<Imatges/Cap-PythonExemp-CarDescRL.pdf, id=9620, 431.17024pt x 271.31425pt>
+<Imatges/Cap-PythonExemp-CarDescRL.pdf, id=9622, 431.17024pt x 271.31425pt>
 File: Imatges/Cap-PythonExemp-CarDescRL.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CarDescRL.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-CarDescRL.pdf  used on input l
@@ -5497,7 +5505,7 @@ ine 121.
 (pdftex.def)             Requested size: 431.16919pt x 271.31358pt.
  [371 <./Imatges/Cap-PythonExemp-CarDescRL.pdf>] (Python/exemples_resolts/Exemp
 le-1-9.py)
-<Imatges/Cap-PythonExemp-CurtcircuitRL.pdf, id=9685, 397.3172pt x 282.68486pt>
+<Imatges/Cap-PythonExemp-CurtcircuitRL.pdf, id=9687, 397.3172pt x 282.68486pt>
 File: Imatges/Cap-PythonExemp-CurtcircuitRL.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CurtcircuitRL.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-CurtcircuitRL.pdf  used on inp
@@ -5515,21 +5523,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [379])
 [380]
-<Imatges/Cap-PythonExemp-CircuitFourier-1.pdf, id=10163, 434.55789pt x 271.3142
+<Imatges/Cap-PythonExemp-CircuitFourier-1.pdf, id=10165, 434.55789pt x 271.3142
 5pt>
 File: Imatges/Cap-PythonExemp-CircuitFourier-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CircuitFourier-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-CircuitFourier-1.pdf  used on 
 input line 378.
 (pdftex.def)             Requested size: 434.55682pt x 271.31358pt.
-<Imatges/Cap-PythonExemp-CircuitFourier-2.pdf, id=10164, 434.55789pt x 271.3142
+<Imatges/Cap-PythonExemp-CircuitFourier-2.pdf, id=10166, 434.55789pt x 271.3142
 5pt>
 File: Imatges/Cap-PythonExemp-CircuitFourier-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CircuitFourier-2.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-CircuitFourier-2.pdf  used on 
 input line 381.
 (pdftex.def)             Requested size: 434.55682pt x 271.31358pt.
-<Imatges/Cap-PythonExemp-CircuitFourier-3.pdf, id=10165, 396.81061pt x 271.7212
+<Imatges/Cap-PythonExemp-CircuitFourier-3.pdf, id=10167, 396.81061pt x 271.7212
 4pt>
 File: Imatges/Cap-PythonExemp-CircuitFourier-3.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CircuitFourier-3.pdf>
@@ -5545,7 +5553,7 @@ Underfull \vbox (badness 2478) has occurred while \output is active []
 
  [382 <./Imatges/Cap-PythonExemp-CircuitFourier-3.pdf>]
 (Python/exemples_resolts/Exemple-5-3.py) [383]
-<Imatges/Cap-PythonExemp-CircuitLaplace.pdf, id=10411, 387.74237pt x 271.31425p
+<Imatges/Cap-PythonExemp-CircuitLaplace.pdf, id=10413, 387.74237pt x 271.31425p
 t>
 File: Imatges/Cap-PythonExemp-CircuitLaplace.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CircuitLaplace.pdf>
@@ -5555,7 +5563,7 @@ put line 421.
 
 (Python/exemples_resolts/Exemple-5-4.py [384 <./Imatges/Cap-PythonExemp-Circuit
 Laplace.pdf>])
-<Imatges/Cap-PythonExemp-CircuitLaplaceNul.pdf, id=10466, 400.5088pt x 271.3142
+<Imatges/Cap-PythonExemp-CircuitLaplaceNul.pdf, id=10468, 400.5088pt x 271.3142
 5pt>
 File: Imatges/Cap-PythonExemp-CircuitLaplaceNul.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CircuitLaplaceNul.pdf>
@@ -5619,14 +5627,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [390])
 [391]
-<Imatges/Cap-PythonExemp-CaractMotor-1.pdf, id=10817, 423.95262pt x 269.38628pt
+<Imatges/Cap-PythonExemp-CaractMotor-1.pdf, id=10819, 423.95262pt x 269.38628pt
 >
 File: Imatges/Cap-PythonExemp-CaractMotor-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CaractMotor-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-CaractMotor-1.pdf  used on inp
 ut line 648.
 (pdftex.def)             Requested size: 423.95158pt x 269.3856pt.
-<Imatges/Cap-PythonExemp-CaractMotor-2.pdf, id=10818, 394.25604pt x 269.38628pt
+<Imatges/Cap-PythonExemp-CaractMotor-2.pdf, id=10820, 394.25604pt x 269.38628pt
 >
 File: Imatges/Cap-PythonExemp-CaractMotor-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CaractMotor-2.pdf>
@@ -5638,7 +5646,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [392 <./Imatges/Cap-PythonExemp-CaractMotor-1.pdf> <./Imatges/Cap-PythonExemp-
 CaractMotor-2.pdf>]
-<Imatges/Cap-PythonExemp-CaractMotor-3.pdf, id=11038, 397.45052pt x 269.71452pt
+<Imatges/Cap-PythonExemp-CaractMotor-3.pdf, id=11040, 397.45052pt x 269.71452pt
 >
 File: Imatges/Cap-PythonExemp-CaractMotor-3.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-CaractMotor-3.pdf>
@@ -5648,14 +5656,14 @@ ut line 654.
  (Python/exemples_resolts/Exemple-10-5.py [393 <./Imatges/Cap-PythonExemp-Carac
 tMotor-3.pdf>]) [394] (Python/exemples_resolts/Exemple-10-6.py [395])
 [396]
-<Imatges/Cap-PythonExemp-MotCarregaReduida-1.pdf, id=11275, 433.83644pt x 272.6
+<Imatges/Cap-PythonExemp-MotCarregaReduida-1.pdf, id=11277, 433.83644pt x 272.6
 4735pt>
 File: Imatges/Cap-PythonExemp-MotCarregaReduida-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotCarregaReduida-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotCarregaReduida-1.pdf  used 
 on input line 744.
 (pdftex.def)             Requested size: 433.83539pt x 272.64668pt.
-<Imatges/Cap-PythonExemp-MotCarregaReduida-2.pdf, id=11276, 395.20775pt x 272.6
+<Imatges/Cap-PythonExemp-MotCarregaReduida-2.pdf, id=11278, 395.20775pt x 272.6
 4735pt>
 File: Imatges/Cap-PythonExemp-MotCarregaReduida-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotCarregaReduida-2.pdf>
@@ -5668,14 +5676,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [397 <./Imatges/Cap-PythonExemp-MotCarregaReduida-1.pdf> <./Imatges/Cap-Python
 Exemp-MotCarregaReduida-2.pdf>] (Python/exemples_resolts/Exemple-10-7.py [398])
  [399]
-<Imatges/Cap-PythonExemp-MotTensRedSolAp-1.pdf, id=11464, 427.45322pt x 271.643
+<Imatges/Cap-PythonExemp-MotTensRedSolAp-1.pdf, id=11466, 427.45322pt x 271.643
 62pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolAp-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolAp-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedSolAp-1.pdf  used on
  input line 798.
 (pdftex.def)             Requested size: 427.45216pt x 271.64294pt.
-<Imatges/Cap-PythonExemp-MotTensRedSolAp-2.pdf, id=11465, 404.7826pt x 271.6436
+<Imatges/Cap-PythonExemp-MotTensRedSolAp-2.pdf, id=11467, 404.7826pt x 271.6436
 2pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolAp-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolAp-2.pdf>
@@ -5700,14 +5708,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 6332) has occurred while \output is active []
 
  [404]
-<Imatges/Cap-PythonExemp-MotTensRedSolEx-1-1.pdf, id=11773, 424.58313pt x 269.7
+<Imatges/Cap-PythonExemp-MotTensRedSolEx-1-1.pdf, id=11775, 424.58313pt x 269.7
 1452pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolEx-1-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolEx-1-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedSolEx-1-1.pdf  used 
 on input line 860.
 (pdftex.def)             Requested size: 424.58209pt x 269.71385pt.
-<Imatges/Cap-PythonExemp-MotTensRedSolEx-1-2.pdf, id=11774, 418.1999pt x 271.64
+<Imatges/Cap-PythonExemp-MotTensRedSolEx-1-2.pdf, id=11776, 418.1999pt x 271.64
 362pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolEx-1-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolEx-1-2.pdf>
@@ -5719,14 +5727,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [405 <./Imatges/Cap-PythonExemp-MotTensRedSolEx-1-1.pdf> <./Imatges/Cap-Python
 Exemp-MotTensRedSolEx-1-2.pdf>]
-<Imatges/Cap-PythonExemp-MotTensRedSolEx-2-1.pdf, id=11862, 427.45322pt x 271.6
+<Imatges/Cap-PythonExemp-MotTensRedSolEx-2-1.pdf, id=11864, 427.45322pt x 271.6
 4362pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolEx-2-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolEx-2-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedSolEx-2-1.pdf  used 
 on input line 872.
 (pdftex.def)             Requested size: 427.45216pt x 271.64294pt.
-<Imatges/Cap-PythonExemp-MotTensRedSolEx-2-2.pdf, id=11863, 404.7826pt x 271.64
+<Imatges/Cap-PythonExemp-MotTensRedSolEx-2-2.pdf, id=11865, 404.7826pt x 271.64
 362pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolEx-2-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolEx-2-2.pdf>
@@ -5738,14 +5746,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [406 <./Imatges/Cap-PythonExemp-MotTensRedSolEx-2-1.pdf> <./Imatges/Cap-Python
 Exemp-MotTensRedSolEx-2-2.pdf>]
-<Imatges/Cap-PythonExemp-MotTensRedSolEx-3.pdf, id=11933, 399.99126pt x 271.643
+<Imatges/Cap-PythonExemp-MotTensRedSolEx-3.pdf, id=11935, 399.99126pt x 271.643
 62pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolEx-3.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolEx-3.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedSolEx-3.pdf  used on
  input line 883.
 (pdftex.def)             Requested size: 399.99028pt x 271.64294pt.
-<Imatges/Cap-PythonExemp-MotTensRedSolEx-4.pdf, id=11934, 397.12115pt x 271.314
+<Imatges/Cap-PythonExemp-MotTensRedSolEx-4.pdf, id=11936, 397.12115pt x 271.314
 25pt>
 File: Imatges/Cap-PythonExemp-MotTensRedSolEx-4.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedSolEx-4.pdf>
@@ -5765,14 +5773,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [409])
 [410]
-<Imatges/Cap-PythonExemp-MotTensRedIarr-1.pdf, id=12179, 423.95262pt x 269.3862
+<Imatges/Cap-PythonExemp-MotTensRedIarr-1.pdf, id=12181, 423.95262pt x 269.3862
 8pt>
 File: Imatges/Cap-PythonExemp-MotTensRedIarr-1.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedIarr-1.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedIarr-1.pdf  used on 
 input line 931.
 (pdftex.def)             Requested size: 423.95158pt x 269.3856pt.
-<Imatges/Cap-PythonExemp-MotTensRedIarr-2.pdf, id=12180, 400.86513pt x 269.3862
+<Imatges/Cap-PythonExemp-MotTensRedIarr-2.pdf, id=12182, 400.86513pt x 269.3862
 8pt>
 File: Imatges/Cap-PythonExemp-MotTensRedIarr-2.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedIarr-2.pdf>
@@ -5784,21 +5792,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [411 <./Imatges/Cap-PythonExemp-MotTensRedIarr-1.pdf> <./Imatges/Cap-PythonExe
 mp-MotTensRedIarr-2.pdf>]
-<Imatges/Cap-PythonExemp-MotTensRedIarr-3.pdf, id=12412, 399.99126pt x 271.6436
+<Imatges/Cap-PythonExemp-MotTensRedIarr-3.pdf, id=12414, 399.99126pt x 271.6436
 2pt>
 File: Imatges/Cap-PythonExemp-MotTensRedIarr-3.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedIarr-3.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedIarr-3.pdf  used on 
 input line 939.
 (pdftex.def)             Requested size: 399.99028pt x 271.64294pt.
-<Imatges/Cap-PythonExemp-MotTensRedIarr-4.pdf, id=12413, 398.72089pt x 271.3142
+<Imatges/Cap-PythonExemp-MotTensRedIarr-4.pdf, id=12415, 398.72089pt x 271.3142
 5pt>
 File: Imatges/Cap-PythonExemp-MotTensRedIarr-4.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedIarr-4.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-MotTensRedIarr-4.pdf  used on 
 input line 943.
 (pdftex.def)             Requested size: 398.71991pt x 271.31358pt.
-<Imatges/Cap-PythonExemp-MotTensRedIarr-5.pdf, id=12414, 398.72089pt x 271.3142
+<Imatges/Cap-PythonExemp-MotTensRedIarr-5.pdf, id=12416, 398.72089pt x 271.3142
 5pt>
 File: Imatges/Cap-PythonExemp-MotTensRedIarr-5.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-MotTensRedIarr-5.pdf>
@@ -5829,7 +5837,7 @@ Underfull \vbox (badness 1694) has occurred while \output is active []
 [420] (Python/exemples_resolts/Exemple-12-2.py [421]) [422] [423]
 (Python/exemples_resolts/Exemple-12-3.py) [424]
 (Python/exemples_resolts/Exemple-13-1.py [425])
-<Imatges/Cap-PythonExemp-ProtInvIntVar.pdf, id=13063, 412.75769pt x 271.31425pt
+<Imatges/Cap-PythonExemp-ProtInvIntVar.pdf, id=13065, 412.75769pt x 271.31425pt
 >
 File: Imatges/Cap-PythonExemp-ProtInvIntVar.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-ProtInvIntVar.pdf>
@@ -5838,7 +5846,7 @@ ut line 1315.
 (pdftex.def)             Requested size: 412.75668pt x 271.31358pt.
  [426 <./Imatges/Cap-PythonExemp-ProtInvIntVar.pdf>] (Python/exemples_resolts/E
 xemple-D-1.py [427])
-<Imatges/Cap-PythonExemp-Interpol.pdf, id=13164, 401.59097pt x 271.31425pt>
+<Imatges/Cap-PythonExemp-Interpol.pdf, id=13166, 401.59097pt x 271.31425pt>
 File: Imatges/Cap-PythonExemp-Interpol.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-Interpol.pdf>
 Package pdftex.def Info: Imatges/Cap-PythonExemp-Interpol.pdf  used on input li
@@ -5849,7 +5857,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [428 <./Imatges/Cap-PythonExemp-Interpol.pdf>] (Python/exemples_resolts/Exempl
 e-D-2.py)
-<Imatges/Cap-PythonExemp-InterpolDuesDim.pdf, id=13246, 430.29024pt x 384.00652
+<Imatges/Cap-PythonExemp-InterpolDuesDim.pdf, id=13248, 430.29024pt x 384.00652
 pt>
 File: Imatges/Cap-PythonExemp-InterpolDuesDim.pdf Graphic file (type pdf)
 <use Imatges/Cap-PythonExemp-InterpolDuesDim.pdf>
@@ -5955,7 +5963,7 @@ Overfull \vbox (18.90741pt too high) has occurred while \output is active []
 ]
 Ap\`endix C.
 [459] [460] [461] [462] (Imatges/Ape-Trigonometria-Triangle.pdf_tex
-<Imatges/Ape-Trigonometria-Triangle.pdf, id=13684, page=1, 240.07013pt x 229.40
+<Imatges/Ape-Trigonometria-Triangle.pdf, id=13686, page=1, 240.07013pt x 229.40
 034pt>
 File: Imatges/Ape-Trigonometria-Triangle.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-Triangle.pdf, page 1>
@@ -5971,14 +5979,14 @@ fór-mu-la d'-He-ró\T1/zpltlf/m/n/9 , pel ma-te-mà-tic gre-co-ro-mà He-ró d'A-le
 
 [463 <./Imatges/Ape-Trigonometria-Triangle.pdf>] [464] [465]
 (Imatges/Ape-Trigonometria-sin.tex
-<Imatges/Ape-Trigonometria-sin.pdf, id=13748, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-sin.pdf, id=13750, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-sin.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-sin.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-sin.pdf  used on input line 
 135.
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 ) [466] (Imatges/Ape-Trigonometria-csc.tex
-<Imatges/Ape-Trigonometria-csc.pdf, id=13773, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-csc.pdf, id=13775, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-csc.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-csc.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-csc.pdf  used on input line 
@@ -5986,7 +5994,7 @@ Package pdftex.def Info: Imatges/Ape-Trigonometria-csc.pdf  used on input line
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 )
 (Imatges/Ape-Trigonometria-cos.tex
-<Imatges/Ape-Trigonometria-cos.pdf, id=13774, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-cos.pdf, id=13776, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-cos.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-cos.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-cos.pdf  used on input line 
@@ -5994,7 +6002,7 @@ Package pdftex.def Info: Imatges/Ape-Trigonometria-cos.pdf  used on input line
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 ) [467 <./Imatges/Ape-Trigonometria-sin.pdf> <./Imatges/Ape-Trigonometria-csc.p
 df>] (Imatges/Ape-Trigonometria-sec.tex
-<Imatges/Ape-Trigonometria-sec.pdf, id=13783, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-sec.pdf, id=13785, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-sec.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-sec.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-sec.pdf  used on input line 
@@ -6002,7 +6010,7 @@ Package pdftex.def Info: Imatges/Ape-Trigonometria-sec.pdf  used on input line
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 )
 (Imatges/Ape-Trigonometria-tan.tex
-<Imatges/Ape-Trigonometria-tan.pdf, id=13784, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-tan.pdf, id=13786, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-tan.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-tan.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-tan.pdf  used on input line 
@@ -6010,7 +6018,7 @@ Package pdftex.def Info: Imatges/Ape-Trigonometria-tan.pdf  used on input line
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 ) [468 <./Imatges/Ape-Trigonometria-cos.pdf> <./Imatges/Ape-Trigonometria-sec.p
 df>] (Imatges/Ape-Trigonometria-cot.tex
-<Imatges/Ape-Trigonometria-cot.pdf, id=13792, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-cot.pdf, id=13794, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-cot.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-cot.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-cot.pdf  used on input line 
@@ -6018,7 +6026,7 @@ Package pdftex.def Info: Imatges/Ape-Trigonometria-cot.pdf  used on input line
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 )
 (Imatges/Ape-Trigonometria-sinh.tex
-<Imatges/Ape-Trigonometria-sinh.pdf, id=13793, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-sinh.pdf, id=13795, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-sinh.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-sinh.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-sinh.pdf  used on input line
@@ -6026,7 +6034,7 @@ Package pdftex.def Info: Imatges/Ape-Trigonometria-sinh.pdf  used on input line
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 ) [469 <./Imatges/Ape-Trigonometria-tan.pdf> <./Imatges/Ape-Trigonometria-cot.p
 df>] (Imatges/Ape-Trigonometria-csch.tex
-<Imatges/Ape-Trigonometria-csch.pdf, id=13801, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-csch.pdf, id=13803, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-csch.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-csch.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-csch.pdf  used on input line
@@ -6034,7 +6042,7 @@ Package pdftex.def Info: Imatges/Ape-Trigonometria-csch.pdf  used on input line
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 )
 (Imatges/Ape-Trigonometria-cosh.tex
-<Imatges/Ape-Trigonometria-cosh.pdf, id=13802, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-cosh.pdf, id=13804, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-cosh.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-cosh.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-cosh.pdf  used on input line
@@ -6042,7 +6050,7 @@ Package pdftex.def Info: Imatges/Ape-Trigonometria-cosh.pdf  used on input line
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 ) [470 <./Imatges/Ape-Trigonometria-sinh.pdf> <./Imatges/Ape-Trigonometria-csch
 .pdf>] (Imatges/Ape-Trigonometria-sech.tex
-<Imatges/Ape-Trigonometria-sech.pdf, id=13810, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-sech.pdf, id=13812, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-sech.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-sech.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-sech.pdf  used on input line
@@ -6050,7 +6058,7 @@ Package pdftex.def Info: Imatges/Ape-Trigonometria-sech.pdf  used on input line
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 )
 (Imatges/Ape-Trigonometria-tanh.tex
-<Imatges/Ape-Trigonometria-tanh.pdf, id=13811, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-tanh.pdf, id=13813, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-tanh.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-tanh.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-tanh.pdf  used on input line
@@ -6058,7 +6066,7 @@ Package pdftex.def Info: Imatges/Ape-Trigonometria-tanh.pdf  used on input line
 (pdftex.def)             Requested size: 426.61873pt x 270.01631pt.
 ) [471 <./Imatges/Ape-Trigonometria-cosh.pdf> <./Imatges/Ape-Trigonometria-sech
 .pdf>] (Imatges/Ape-Trigonometria-coth.tex
-<Imatges/Ape-Trigonometria-coth.pdf, id=13819, 426.59375pt x 270.00874pt>
+<Imatges/Ape-Trigonometria-coth.pdf, id=13821, 426.59375pt x 270.00874pt>
 File: Imatges/Ape-Trigonometria-coth.pdf Graphic file (type pdf)
 <use Imatges/Ape-Trigonometria-coth.pdf>
 Package pdftex.def Info: Imatges/Ape-Trigonometria-coth.pdf  used on input line
@@ -6085,7 +6093,7 @@ Underfull \vbox (badness 3407) has occurred while \output is active []
 
  [478]
 (Imatges/Ape-Calcul-Numeric-Newton.pdf_tex
-<Imatges/Ape-Calcul-Numeric-Newton.pdf, id=13893, page=1, 256.0748pt x 213.3956
+<Imatges/Ape-Calcul-Numeric-Newton.pdf, id=13895, page=1, 256.0748pt x 213.3956
 6pt>
 File: Imatges/Ape-Calcul-Numeric-Newton.pdf Graphic file (type pdf)
 <use Imatges/Ape-Calcul-Numeric-Newton.pdf, page 1>
@@ -6094,7 +6102,7 @@ input line 56.
 (pdftex.def)             Requested size: 256.07478pt x 213.4049pt.
 ) [479 <./Imatges/Ape-Calcul-Numeric-Newton.pdf>] (Imatges/Ape-Calcul-Numeric-s
 ecant.pdf_tex
-<Imatges/Ape-Calcul-Numeric-secant.pdf, id=13906, page=1, 256.0748pt x 213.3956
+<Imatges/Ape-Calcul-Numeric-secant.pdf, id=13908, page=1, 256.0748pt x 213.3956
 6pt>
 File: Imatges/Ape-Calcul-Numeric-secant.pdf Graphic file (type pdf)
 <use Imatges/Ape-Calcul-Numeric-secant.pdf, page 1>
@@ -6114,7 +6122,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 367.
 
 ]
 Ap\`endix E.
-<Imatges/Ape-HP-Prime.jpg, id=13968, 361.35pt x 576.65437pt>
+<Imatges/Ape-HP-Prime.jpg, id=13970, 361.35pt x 576.65437pt>
 File: Imatges/Ape-HP-Prime.jpg Graphic file (type jpg)
 <use Imatges/Ape-HP-Prime.jpg>
 Package pdftex.def Info: Imatges/Ape-HP-Prime.jpg  used on input line 15.
@@ -6231,7 +6239,7 @@ LaTeX Info: Symbol \textmu not provided by
 ]
 [528] [529] [530] [531] [532] [533] [534] [535] [536] [537] [538] [539]
 [540]) [541]
-<Imatges/Fons-de-final.pdf, id=15892, 597.432pt x 845.07718pt>
+<Imatges/Fons-de-final.pdf, id=15894, 597.432pt x 845.07718pt>
 File: Imatges/Fons-de-final.pdf Graphic file (type pdf)
 <use Imatges/Fons-de-final.pdf>
 Package pdftex.def Info: Imatges/Fons-de-final.pdf  used on input line 404.
@@ -6310,10 +6318,10 @@ Package rerunfilecheck Info: File `"QÃ¼estions ElectrotÃ¨cniques Diverses".out'
 (rerunfilecheck)             Checksum: F521B6240BCA8FB78019D3BE247DC45F;94616.
  ) 
 Here is how much of TeX's memory you used:
- 56438 strings out of 467833
- 1235561 string characters out of 5416675
- 1883739 words of memory out of 5000000
- 76465 multiletter control sequences out of 15000+600000
+ 56429 strings out of 467833
+ 1235353 string characters out of 5416674
+ 1883663 words of memory out of 5000000
+ 76454 multiletter control sequences out of 15000+600000
  927542 words of font info for 429 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  98i,23n,117p,1600b,2882s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -6380,9 +6388,9 @@ ic/newpx/zplr.pfb><C:/Users/josep/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/newpx/zplri.pfb>
 Output written on "C:/Users\josep\OneDrive\Documents\TeX Files\QÃ¼estions Elect
 rotÃ¨cniques Diverses\QED-GitHub\v16.0\out\QÃ¼estions ElectrotÃ¨cniques Diverse
-s.pdf" (568 pages, 6846165 bytes).
+s.pdf" (568 pages, 6846993 bytes).
 PDF statistics:
- 17523 PDF objects out of 18468 (max. 8388607)
- 7071 named destinations out of 7423 (max. 500000)
+ 17525 PDF objects out of 18468 (max. 8388607)
+ 7073 named destinations out of 7423 (max. 500000)
  4763 words of extra memory for PDF output out of 10000 (max. 10000000)
 

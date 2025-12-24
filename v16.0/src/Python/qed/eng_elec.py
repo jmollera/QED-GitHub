@@ -156,7 +156,7 @@ class EENetNotSolvable(EEException):
     Exception raised in class Network when trying to solve an invalid or empty network.
     Examples: Two ideal voltage sources in parallel, two ideal current sources
     in series, a short-circuited ideal voltage source, or an open current source.
-    Raised also by function ezs_u when no solution in found.
+    It's also raised by function ezs_u when no solution is found.
     """
 
     def __init__(self, not_solvable: str) -> None:
@@ -1199,6 +1199,7 @@ class Network:
         EB0 = np.zeros(num_branches_plus_extra, dtype=data_type)
         JB0 = np.zeros(num_branches_plus_extra, dtype=data_type)
 
+        # Populate branch matrices with node and element data
         def fill_matrices(branch: int, from_node: int, to_node: int, Zb: complex,
                           Eb: complex | None = None, Jb: complex | None = None) -> None:
             if from_node > 0:
@@ -1211,6 +1212,7 @@ class Network:
             if Jb is not None:
                 JB0[branch - 1] = Jb
 
+        # Populate matrices based on branch element types
         for branch, (element, (from_node, to_node)) in self._net_branches.items():
             match element:
                 case Impedance(Z):
@@ -1246,7 +1248,7 @@ class Network:
             self._ZN = linalg.inv(A @ YB @ A.T, overwrite_a=True)
             self._VN = self._ZN @ (-A @ JB)
             self._IB = YB @ (A.T @ self._VN) + JB
-            # Adjust result for branches with ideal current sources
+            # Adjust the result for branches with ideal current sources
             for branch, (element, _) in self._net_branches.items():
                 match element:
                     case CurrentSource(J, None):
@@ -1275,7 +1277,7 @@ class Network:
             case (0, node_2):
                 eth = -self._VN[node_2 - 1]
                 zth = self._ZN[node_2 - 1, node_2 - 1]
-            case (node_1, node_2):
+            case _:
                 eth = self._VN[node_1 - 1] - self._VN[node_2 - 1]
                 zth = (self._ZN[node_1 - 1, node_1 - 1] +
                        self._ZN[node_2 - 1, node_2 - 1] -
@@ -1426,11 +1428,11 @@ class Network:
 class Motor3phRun:
     """Class used to store the result of the method 'run' from class Motor3ph."""
 
-    Z: ArrayLike  # Total motor impedance (Line-Neutral), Ω
-    PF: ArrayLike  # Motor Power factor, between 0 and 1
-    I: ArrayLike  # Current drawn by the motor, A
-    U: ArrayLike  # Voltage at the motor terminals (Line-Neutral), V
-    S: ArrayLike  # Apparent power drawn by the motor, VA
+    Z: ArrayLike    # Total motor impedance (Line-Neutral), Ω
+    PF: ArrayLike   # Motor Power factor, between 0 and 1
+    I: ArrayLike    # Current drawn by the motor, A
+    U: ArrayLike    # Voltage at the motor terminals (Line-Neutral), V
+    S: ArrayLike    # Apparent power drawn by the motor, VA
     T_m: ArrayLike  # Mechanical torque delivered by the motor, N·m
     P_m: ArrayLike  # Mechanical power delivered by the motor, W
     Eff: ArrayLike  # Motor Efficiency, between 0 and 1
@@ -1558,14 +1560,14 @@ class Motor3ph:
 
         Parameters
         ----------
-        z_ext: Impedance of the external power system feeding the motor, Ω/phase.
+        z_ext: Impedance of the external power system feeding the motor, Ω/phase
                The default is 0
         """
         z_th = z_parallel([z_ext + self._z_1, self._z_0])
         return self._z_2.real / abs(z_th + 1j * self._z_2.imag)
 
-    def s_match(self, T_load: Callable[[ArrayLike], ArrayLike],
-                e_ext: complex, z_ext: complex = 0, s_guess: float = 0.04) -> float:
+    def s_match(self, T_load: Callable[[ArrayLike], ArrayLike], e_ext: complex,
+                z_ext: complex = 0, s_guess: float = 0.04) -> float:
         """
         Return the slip at which the motor torque matches the load torque.
 
@@ -1590,7 +1592,7 @@ class Motor3ph:
         ----------
         s:     Slip at which the motor quantities are to be computed
         e_ext: Voltage (line-neutral) of the external power system feeding the motor, V
-        z_ext: Impedance of the external power system feeding the motor, Ω/phase.
+        z_ext: Impedance of the external power system feeding the motor, Ω/phase
                The default is 0
 
         Returns
@@ -1617,7 +1619,7 @@ class Motor3ph:
     def start_up(self, T_load: Callable[[ArrayLike], ArrayLike], J: float,
                  e_ext: complex, z_ext: complex = 0) -> Motor3phStartUp:
         """
-        Return the starting time and an interpolating cubic B-spline function of the
+        Return the starting time and an interpolating B-spline function of the
         slip evolution with time, during the start-up process.
 
         Parameters
@@ -1647,8 +1649,8 @@ class Motor3ph:
         s = np.concatenate([np.linspace(start=1, stop=s_lin, num=N_P1, endpoint=False),
                             np.linspace(start=s_lin, stop=s_match, num=N_P2, endpoint=False)])
         y_fun = 1 / (self.run(s, e_ext, z_ext).T_m - T_load(s))
-        # The variable x in cumulative_simpson must be strictly increasing,
-        # so we need to change the sign of s, and then the sign of the integral
+        # The variable x in cumulative_simpson must be strictly increasing;
+        # therefore, we need to change the sign of s, and then the sign of the integral
         time = J * self.ω_m_sync * integrate.cumulative_simpson(y=y_fun, x=-s, initial=0)
         t_start = time[-1]
         cubic_Bspline = interpolate.make_interp_spline(time, s, k=3, check_finite=False)

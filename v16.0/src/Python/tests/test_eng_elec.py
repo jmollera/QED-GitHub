@@ -102,7 +102,7 @@ class TestNetworkClass(unittest.TestCase):
         net.add(ee.Impedance(Z=10), from_to=(1, 2), branch=1)
         net.add(ee.MutualCoupling(ZM=3j), coupled_branches=(1, 2))
         with self.assertRaises(ee.EEInvalidArguments):
-            # Two None arguments not allowed
+            # Two None arguments aren't allowed
             net.remove()
         with self.assertRaises(ee.EEInvalidArguments):
             # Two arguments different from None not allowed
