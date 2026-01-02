@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.1)  2 JAN 2026 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.1)  2 JAN 2026 15:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6251,7 +6251,7 @@ LaTeX Info: Symbol \textmu not provided by
 ]
 [530] [531] [532] [533] [534] [535] [536] [537] [538] [539] [540] [541]
 [542]) [543]
-<Imatges/Fons-de-final.pdf, id=15907, 597.432pt x 845.07718pt>
+<Imatges/Fons-de-final.pdf, id=15919, 597.432pt x 845.07718pt>
 File: Imatges/Fons-de-final.pdf Graphic file (type pdf)
 <use Imatges/Fons-de-final.pdf>
 Package pdftex.def Info: Imatges/Fons-de-final.pdf  used on input line 405.
@@ -6327,10 +6327,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `"Qüestions Electrotècniques Diverses".out'
- has not changed.
-(rerunfilecheck)             Checksum: 26FEF5A09CE68CB28D22C8683BC6791F;104551.
 
+Package rerunfilecheck Warning: File `"Qüestions Electrotècniques Diverses".o
+ut' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Qüestions Electrotècniques Diver
+ses".out':
+(rerunfilecheck)             Before: 95C3B5B2C5DD376539E15F676F4EAA0B;104536
+(rerunfilecheck)             After:  5795C87FB480E8C3266A1FC9B58FB7E1;104536.
  ) 
 Here is how much of TeX's memory you used:
  56514 strings out of 467833
@@ -6403,9 +6409,9 @@ ic/newpx/zplr.pfb><C:/Users/josep/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/newpx/zplri.pfb>
 Output written on "C:/Users\josep\OneDrive\Documents\TeX Files\Qüestions Elect
 rotècniques Diverses\QED-GitHub\v17.0\out\Qüestions Electrotècniques Diverse
-s.pdf" (570 pages, 6859735 bytes).
+s.pdf" (570 pages, 6861909 bytes).
 PDF statistics:
- 17539 PDF objects out of 18468 (max. 8388607)
+ 17551 PDF objects out of 18468 (max. 8388607)
  7078 named destinations out of 7423 (max. 500000)
  4787 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,14 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d645b6ad-76ef-45a8-8ee1-29367dd2b1eb" name="Changes" comment="" />
+    <list default="true" id="d645b6ad-76ef-45a8-8ee1-29367dd2b1eb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/pdfLaTeX.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/pdfLaTeX.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.ilg" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.ilg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.ind" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.ind" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.out" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.toc" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/Qüestions Electrotècniques Diverses.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/Qüestions Electrotècniques Diverses.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/Qüestions Electrotècniques Diverses.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/Qüestions Electrotècniques Diverses.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Capitols/Pos-Historial.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Capitols/Pos-Historial.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Capitols/Pre-Prefaci.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Capitols/Pre-Prefaci.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Capitols/Pre-Titol.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Capitols/Pre-Titol.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Imatges/Fons-de-portada.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imatges/Fons-de-portada.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Imatges/Fons-de-portada.psxprj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imatges/Fons-de-portada.psxprj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Qüestions Electrotècniques Diverses.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Qüestions Electrotècniques Diverses.tex" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="3" />
+    <option name="cachedIndexableFilesCount" value="808" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -90,6 +106,35 @@
   <component name="RecapUselessUpdatesCounter">
     <option name="suspendCountdown" value="5" />
   </component>
+  <component name="RunManager" selected="LaTeX.pdfLaTeX">
+    <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <require-focus>true</require-focus>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <expand-macros-in-environment-variables>false</expand-macros-in-environment-variables>
+        <before-run-command />
+        <main-file />
+        <output-path>{projectDir}/out</output-path>
+        <auxil-path>{projectDir}/auxil</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>false</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="LaTeX.pdfLaTeX" />
+      <item itemvalue="Makeindex.makeindex" />
+    </list>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -115,10 +160,37 @@
       <workItem from="1767347873779" duration="4992000" />
       <workItem from="1767363552619" duration="6000" />
       <workItem from="1767363712426" duration="60000" />
+      <workItem from="1767363836561" duration="46000" />
+      <workItem from="1767364116874" duration="68000" />
+      <workItem from="1767364204093" duration="115000" />
+      <workItem from="1767364455394" duration="1131000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
