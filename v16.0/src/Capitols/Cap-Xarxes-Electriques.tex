@@ -905,7 +905,7 @@ A partir d'aquests valors podem calcular els valors del circuit Norton equivalen
 
 S'explica en aquesta secció  com calcular els corrents que circulen en una xarxa quan hi ha un curtcircuit, fent servir el teorema de la superposició.\footnote{Vegeu la secció \ref{secc:teorema-superpos}}
 
-Amb aquest mètode es pot calcular de forma exacta el corrent que circula per cadascuna de les branques de la xarxa en cas de curtcircuit, tenint en compte el corrent que circulava prèviament.
+Amb aquest mètode es pot calcular de forma exacta el corrent que circula per cadascuna de les branques de la xarxa en cas de curtcircuit, tenint en compte el corrent que circulava prèviament. En els sitemes elèctrics de potència és habitual no considerar els corrents inicials, ja que són molt més petits que els corrents que circulen durant el curtcircuit. En un cas general, com les xarxes dels exemples \vref{ex:CurtcircuitXarxaSenzilla} i \vref{ex:CurtcircuitXarxaComplexa}, no tenir en compte els corrents inicials, conduiria a un error considerable en els corrents que circulen per les branques de la xarxa durant el curtcircuit.
 
 En la figura \vref{pic:circuit-base-1} es pot veure una xarxa qualsevol, a la qual s'han destacat dos nodes: $\alpha$ i $\beta$. Aquesta xarxa només és un exemple, ja que les dues subxarxes a banda i banda d'aquests dos nodes poden ser tan complexes com es vulgui. Els corrents que circulen per aquesta xarxa són $\cmplx{I}_1$, $\cmplx{I}_2$, $\cmplx{I}_3$ i $\cmplx{I}_4$, i la tensió entre els nodes $\alpha$ i $\beta$ és $\cmplx{U}_{\alpha\beta}$
 
@@ -932,13 +932,7 @@ Per  calcular aquests corrents, creem  la xarxa de la figura  \vref{pic:circuit-
 	\label{pic:circuit-base-3}
 \end{center}
 
-Apliquem ara el teorema de la superposició a la figura \vref{pic:circuit-base-3}, separant aquesta xarxa en les dues de la figura \vref{pic:circuit-base-4}:
-
-\begin{dingautolist}{202}
-	\item La xarxa superior està formada per tots els  components de la xarxa original de la figura \vref{pic:circuit-base-1} (en general, per totes les impedàncies, admitàncies, acoblaments magnètics, fonts de tensió i fonts de corrent que tingués la xarxa), més la font de tensió superior de la figura \vref{pic:circuit-base-3}. Aquesta xarxa és totalment equivalent a la xarxa original, ja que la font de tensió entre els nodes $\alpha$ i $\beta$ és igual  a  la tensió $\cmplx{U}_{\alpha\beta}$. Així doncs, el corrent que circula per aquesta font de tensió ha de ser nul, i els corrents que circulen per les branques han de ser els mateixos que els que circulen per la xarxa original: $\cmplx{I}_1$, $\cmplx{I}_2$, $\cmplx{I}_3$ i $\cmplx{I}_4$.
-	
-	\item  La xarxa inferior està formada per tots els  components de la xarxa original de la figura \vref{pic:circuit-base-1} sense les fonts de tensió (i en general, també sense les fonts de corrent),  més la font de tensió inferior de la figura \vref{pic:circuit-base-3}. El corrent que circularà per aquesta font de tensió serà $\cmplx{I}\ped{F}$, ja que la suma dels corrents entre els nodes $\alpha$ i $\beta$ de les dues xarxes de la figura \vref{pic:circuit-base-4}, ha de ser igual al corrent entre els mateixos nodes  de la xarxa de la  figura \vref{pic:circuit-base-3} ---teorema de la superposició---; els corrents de les altres branques tindran valors diferents: $\cmplx{I}_1'$, $\cmplx{I}_2'$, $\cmplx{I}_3'$ i $\cmplx{I}_4'$.
-\end{dingautolist}
+Apliquem ara el teorema de la superposició a la figura \vref{pic:circuit-base-3}, separant aquesta xarxa en les dues de la figura \vref{pic:circuit-base-4}.
 
 \begin{center}
 	\input{Imatges/Cap-ResXarxElec-Curt-Superpos-4.pdf_tex}
@@ -946,7 +940,13 @@ Apliquem ara el teorema de la superposició a la figura \vref{pic:circuit-base-3
 	\label{pic:circuit-base-4}
 \end{center}
 
-La tensió $\cmplx{U}_{\alpha\beta}$ de la xarxa original és equivalent a la tensió Thévenin entre aquests dos nodes: $\cmplx{U}_{\alpha\beta} \equiv \cmplx{E}\ped{Th}^{(\alpha, \beta)}$, i la impedància vista des d'aquests dos nodes ---quatre impedàncies en paraŀlel--- és equivalent a la impedància Thévenin: $\cmplx{Z}\ped{Th}^{(\alpha, \beta)}$. Axí doncs, el circuit inferior de la figura  \vref{pic:circuit-base-4} és equivalent al circuit de la figura \vref{pic:circuit-base-5}:
+\begin{dingautolist}{202}
+	\item La xarxa superior està formada per tots els  components de la xarxa original de la figura \vref{pic:circuit-base-1} (en general, per totes les impedàncies, admitàncies, acoblaments magnètics, fonts de tensió i fonts de corrent que tingués la xarxa), més la font de tensió superior de la figura \vref{pic:circuit-base-3}. Aquesta xarxa és totalment equivalent a la xarxa original, ja que la font de tensió entre els nodes $\alpha$ i $\beta$ és igual  a  la tensió $\cmplx{U}_{\alpha\beta}$. Així doncs, el corrent que circula per aquesta font de tensió ha de ser nul, i els corrents que circulen per les branques han de ser els mateixos que els que circulen per la xarxa original: $\cmplx{I}_1$, $\cmplx{I}_2$, $\cmplx{I}_3$ i $\cmplx{I}_4$.
+	
+	\item  La xarxa inferior està formada per tots els  components de la xarxa original de la figura \vref{pic:circuit-base-1} sense les fonts de tensió (i en general, també sense les fonts de corrent),  més la font de tensió inferior de la figura \vref{pic:circuit-base-3}. El corrent que circularà per aquesta font de tensió serà $\cmplx{I}\ped{F}$, ja que la suma dels corrents entre els nodes $\alpha$ i $\beta$ de les dues xarxes de la figura \vref{pic:circuit-base-4}, ha de ser igual al corrent entre els mateixos nodes  de la xarxa de la  figura \vref{pic:circuit-base-3} ---teorema de la superposició---; els corrents de les altres branques tindran valors diferents dels de la xarxa original: $\cmplx{I}_1'$, $\cmplx{I}_2'$, $\cmplx{I}_3'$ i $\cmplx{I}_4'$.
+\end{dingautolist}
+
+La tensió $\cmplx{U}_{\alpha\beta}$ de la xarxa original és equivalent a la tensió Thévenin entre aquests dos nodes: $\cmplx{U}_{\alpha\beta} \equiv \cmplx{E}\ped{Th}^{(\alpha, \beta)}$, i la impedància vista des d'aquests dos nodes ---quatre impedàncies en paraŀlel--- és equivalent a la impedància Thévenin: $\cmplx{Z}\ped{Th}^{(\alpha, \beta)}$. Axí doncs, el circuit inferior de la figura  \vref{pic:circuit-base-4} és equivalent al circuit de la figura \vref{pic:circuit-base-5}.
 
 \begin{center}
 	\input{Imatges/Cap-ResXarxElec-Curt-Superpos-5.pdf_tex}
@@ -1145,7 +1145,7 @@ Es pot veure que donat que el curtcircuit és entre els nusos 1 i 2, llur potenc
 	\end{array}\end{bmatrix}\unit{V}
     \]
 
-    La tensió de les branques 2 i 4 és igual a zero, donat que també estan connectades entre els nusos 1 i 2.
+    La tensió de les branques 2 i 4 és igual a zero, donat que també estan connectades entre els nusos 1 i 2 curtcircuitats.
 
     {\fontsize{10pt}{10pt}\selectfont
     \[
@@ -1187,4 +1187,20 @@ Es pot veure que donat que el curtcircuit és entre els nusos 1 i 2, llur potenc
 	\end{array}\end{bmatrix}\unit{A}
 	\] }
 
+    El corrent que circula per la branca 4, formada només per una impedància, és zero, donat que la seva tensió també és igual a zero:
+    \[
+        \mcmplx{U}\ped{B}^{\text{F}}[4] = R_4 \mcmplx{I}\ped{B}^{\text{F}}[4]  = \qty{0}{V} \quad  \Rightarrow \quad  \mcmplx{I}\ped{B}^{\text{F}}[4] = \qty{0}{A}
+    \]
+
+    En canvi, el corrent de la branca 2 és diferent de zero, donat que aquesta branca incorpora una font de tensió.
+    El que ha de cumplir-se, evidentment, és:
+    \[
+        \mcmplx{U}\ped{B}^{\text{F}}[2] = \cmplx{E}_2 + \cmplx{X}_2 \mcmplx{I}\ped{B}^{\text{F}}[2] + \cmplx{X}\ped{M} \mcmplx{I}\ped{B}^{\text{F}}[3] = \qty{0}{V}
+    \]
+
+   Posant valors numèrics, tenim:
+    \[
+      \mcmplx{U}\ped{B}^{\text{F}}[2] = \complexqty{50:0}{V} + \complexqty{j20}{\ohm} \times
+        \complexqty{-4,24+j5,68}{A} + \complexqty{j5}{\ohm} \times \complexqty{16,96-j12,72}{A} = \qty{0}{V}
+    \]
 \end{exemple}

@@ -204,9 +204,9 @@ següents:
 \end{align}
 
 Tal com s'ha explicat en l'apartat \vref{sec:T_N}, la tensió
-$\cmplx{u}\ped{Th}$ és igual a la tensió en buit entre $\alphaup$ i
-$\betaup$, i la impedància $\cmplx{z}\ped{Th}$ és igual la impedància
-que existeix entre $\alphaup$ i $\betaup$ quan es curtcircuita la font
+$\cmplx{u}\ped{Th}$ és igual a la tensió en buit entre $\alpha$ i
+$\beta$, i la impedància $\cmplx{z}\ped{Th}$ és igual la impedància
+que existeix entre $\alpha$ i $\beta$ quan es curtcircuita la font
 de tensió $\cmplx{u}\ped{G}$.
 
 Normalment, no es coneixen $r_1$, $r_2$, $x\ped{d1}$ i $x\ped{d2}$ per separat, i, en canvi, sí que es coneixen $r=r_1+r_2$ i $x=x\ped{d1}+x\ped{d2}$; en aquest
@@ -291,7 +291,7 @@ La regulació de voltatge RV no és més que la relació entre la caiguda de ten
 
 Els transformadors se sotmeten bàsicament a dos assajos ---en
 buit i en curtcircuit--- per determinar els paràmetres
-de llurs circuits elèctrics equivalents.
+de llur circuit elèctric equivalent.
 
 Mitjançant l'assaig en buit es determinen els paràmetres
 transversals del circuit equivalent, i mitjançant l'assaig en curtcircuit es determinen els seus paràmetres longitudinals.
@@ -703,7 +703,7 @@ Les combinacions possibles de connexions de primari i secundari són diverses. L
 \subsection{Índex horari i grup de connexió}\label{sec:connex-index-horari}\index{transformadors de potència!trifàsics!índex horari}\index{transformadors de potència!trifàsics!grup de connexió}
 
 En un transformador monofàsic el desfasament entre les tensions primària i secundària només pot ser \ang{0} o \ang{180}; el mateix passa amb els corrents. En canvi, en el cas de transformadors trifàsics hi ha més desfasaments possibles, depenent del tipus de connexió; el desfasament és sempre múltiple de \ang{30} 
-(\qty[parse-numbers=false]{\frac{\piup}{6}}{rad}).
+(\qty[parse-numbers=false]{\frac{\pi}{6}}{rad}).
 
 L'índex horari és l'angle entre una magnitud  primària ---tensió o corrent--- i la magnitud secundària corresponent, per exemple entre $\cmplx{U}\ped{AB}$ i $\cmplx{U}\ped{ab}$, o entre $\cmplx{U}\ped{AN}$ i $\cmplx{U}\ped{an}$.
 
@@ -713,7 +713,7 @@ L'índex horari ens indica de fet, l'angle de retard de la tensió del costat de
 
 Normalment, no és necessari tenir en compte l'índex horari en els càlculs, ja que no cal conèixer el desfasament real entre magnituds primàries i secundàries; en cas contrari, es poden fer els càlculs de la manera usual sense tenir en compte l'índex horari, i afegir el desfasament posteriorment. Si $h$ és l'índex horari (entre 0 i 11), la relació entre l'angle d'una magnitud del costat de tensió més alta $\varphi\ped{AT}$ i l'angle de la magnitud corresponent del costat de tensió més baixa $\varphi\ped{BT}$ és, expressat en radians:
 \begin{equation}
-    \varphi\ped{AT} = \varphi\ped{BT} + h\tfrac{\piup}{6}\label{eq:fi-AT-BT}
+    \varphi\ped{AT} = \varphi\ped{BT} + h\tfrac{\pi}{6}\label{eq:fi-AT-BT}
 \end{equation}
 
 
@@ -730,7 +730,7 @@ Cal tenir en compte que no tots els índexs horaris són físicament possibles. 
 
 \begin{exemple}[\IndexHorari{}]
 	\addcontentsxms{\IndexHorari}
-    Es tracta de deduir l'índex horari de dos transformadors a partir de llurs connexions.
+    Es tracta de deduir l'índex horari de dos transformadors a partir de llur connexió.
 
 
     El primer transformador és del tipus Yz:
@@ -776,8 +776,8 @@ Les equacions que lliguen les magnituds de la figura \vref{pic:tr-pot-esquema-eq
 A partir de l'índex horari $h$, i depenent de si el primari és el costat de tensió més alta o el de tensió més baixa, tenim:
 \begin{equation}
 \cmplx{m} = \begin{cases}
-     (U\ped{n1}/U\ped{n2})\angle h \frac{\piup}{6}, & \text{transformador AT/BT}\\[2.7ex]
-     (U\ped{n1}/U\ped{n2})\angle{-h} \frac{\piup}{6}, & \text{transformador BT/AT}
+     (U\ped{n1}/U\ped{n2})\angle h \frac{\pi}{6}, & \text{transformador AT/BT}\\[2.7ex]
+     (U\ped{n1}/U\ped{n2})\angle{-h} \frac{\pi}{6}, & \text{transformador BT/AT}
 \end{cases}
 \label{eq:rel-transf-cmplx}
 \end{equation}
@@ -804,8 +804,8 @@ Les relacions entre magnituds de primari i secundari d'aquest transformador idea
 A partir de l'índex horari $h$, i depenent de si el primari és el costat de tensió més alta o el de tensió més baixa, tenim:
 \begin{equation}
 \cmplx{m}\ped{r} = \begin{cases}
-      1\angle h\frac{\piup}{6}, & \text{transformador AT/BT}\\[2.7ex]
-      1\angle{-h}\frac{\piup}{6}, & \text{transformador BT/AT}
+      1\angle h\frac{\pi}{6}, & \text{transformador AT/BT}\\[2.7ex]
+      1\angle{-h}\frac{\pi}{6}, & \text{transformador BT/AT}
 \end{cases}
 \label{eq:rel-transf-cmplx-reduit}
 \end{equation}
@@ -899,14 +899,14 @@ Totes les equacions de la secció \ref{sec:connex-index-horari} són vàlides pe
 
 En el cas de tensions i corrents de seqüència inversa, els desfasaments que origina el transformador a causa del seu índex horari, entre les magnituds  del costat de tensió més alta (AT) i les magnituds corresponents del costat de tensió més baixa (BT), són els contraris que en el cas de la seqüència directa. Per tant, l'equació  \eqref{eq:fi-AT-BT} es converteix en:
 \begin{equation}
-    \varphi\ped{AT} = \varphi\ped{BT} - h\tfrac{\piup}{6}, \quad\text{seqüència inversa}
+    \varphi\ped{AT} = \varphi\ped{BT} - h\tfrac{\pi}{6}, \quad\text{seqüència inversa}
 \end{equation}
 
 De la mateixa manera, l'equació \eqref{eq:rel-transf-cmplx} es converteix en:
 \begin{equation}\label{eq:rel-transf-cmplx-inv}
 \cmplx{m} = \begin{cases}
-     (U\ped{n1}/U\ped{n2})\angle{-h} \frac{\piup}{6}, & \text{transformador AT/BT}\\[2.7ex]
-     (U\ped{n1}/U\ped{n2})\angle h \frac{\piup}{6}, & \text{transformador BT/AT}
+     (U\ped{n1}/U\ped{n2})\angle{-h} \frac{\pi}{6}, & \text{transformador AT/BT}\\[2.7ex]
+     (U\ped{n1}/U\ped{n2})\angle h \frac{\pi}{6}, & \text{transformador BT/AT}
 \end{cases},
 \quad\text{seqüència inversa}
 \end{equation}
@@ -917,8 +917,8 @@ Finalment, l'equació \eqref{eq:rel-transf-cmplx-reduit} es converteix en:
 \begin{equation}\label{eq:rel-transf-r-cmplx-inv}
 \cmplx{m}\ped{r}  = 
 \begin{cases}
-      1\angle{-h}\frac{\piup}{6}, & \text{transformador AT/BT}\\[2.7ex]
-      1\angle h\frac{\piup}{6}, & \text{transformador BT/AT}
+      1\angle{-h}\frac{\pi}{6}, & \text{transformador AT/BT}\\[2.7ex]
+      1\angle h\frac{\pi}{6}, & \text{transformador BT/AT}
 \end{cases},
 \quad\text{seqüència inversa}
 \end{equation}
@@ -948,10 +948,10 @@ En la resta de casos: transformadors YNy, Yyn, Yy, Dd, Yd i Dy, les tensions i c
 
     En el cas del transformador Dyn11, utilitzant les equacions \eqref{eq:rel-transf-cmplx}, \eqref{eq:rel-transf-cmplx-inv} i \eqref{eq:rel-transf-cmplx-hom}, obtindrem els valors de $\cmplx{m}$ per a les seqüències directa, inversa i homopolar:
     \begin{align*}
-        \cmplx{m}_1 &= (\qty{6,25}{kV} / \qty{400}{V})\angle 11\times\tfrac{\piup}{6} =
-        \num{15,625}\angle{-\tfrac{\piup}{6}} = \complexnum{15,625:-30} \\[1em]
-        \cmplx{m}_2 &= (\qty{6,25}{kV} / \qty{400}{V})\angle {-11}\times\tfrac{\piup}{6} =
-        \num{15,625}\angle \tfrac{\piup}{6} =\complexnum{15,625:30}  \\[1em]
+        \cmplx{m}_1 &= (\qty{6,25}{kV} / \qty{400}{V})\angle 11\times\tfrac{\pi}{6} =
+        \num{15,625}\angle{-\tfrac{\pi}{6}} = \complexnum{15,625:-30} \\[1em]
+        \cmplx{m}_2 &= (\qty{6,25}{kV} / \qty{400}{V})\angle {-11}\times\tfrac{\pi}{6} =
+        \num{15,625}\angle \tfrac{\pi}{6} =\complexnum{15,625:30}  \\[1em]
         \cmplx{m}_0 &= \qty{6,25}{kV} / \qty{400}{V} = \num{15,625}
     \end{align*}
 
