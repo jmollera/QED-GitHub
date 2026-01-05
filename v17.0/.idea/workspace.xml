@@ -4,21 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d645b6ad-76ef-45a8-8ee1-29367dd2b1eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/pdfLaTeX.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/pdfLaTeX.xml" afterDir="false" />
+    <list default="true" id="d645b6ad-76ef-45a8-8ee1-29367dd2b1eb" name="Changes" comment="v 17.0 inicial">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/Capitols/Ape-HP-Prime.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Capitols/Ape-HP-Prime.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/Capitols/Ape-SI.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Capitols/Ape-SI.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/Capitols/Cap-Motors-Induccio.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Capitols/Cap-Motors-Induccio.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/Capitols/Pos-Bibliografia.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Capitols/Pos-Bibliografia.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/Capitols/Pos-Historial.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Capitols/Pos-Historial.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.idx" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.ilg" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.ilg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.ind" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.ind" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.lol" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.lol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.out" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.toc" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/Qüestions Electrotècniques Diverses.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/Qüestions Electrotècniques Diverses.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/Qüestions Electrotècniques Diverses.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/Qüestions Electrotècniques Diverses.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/Qüestions Electrotècniques Diverses.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Capitols/Ape-Calcul-Numeric.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Capitols/Ape-Calcul-Numeric.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Capitols/Ape-HP-Prime.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Capitols/Ape-HP-Prime.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Capitols/Cap-Series-Fourier.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Capitols/Cap-Series-Fourier.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Capitols/Pos-Historial.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Capitols/Pos-Historial.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Capitols/Pre-Prefaci.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Capitols/Pre-Prefaci.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Capitols/Pre-Titol.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Capitols/Pre-Titol.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Imatges/Fons-de-portada.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imatges/Fons-de-portada.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Imatges/Fons-de-portada.psxprj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imatges/Fons-de-portada.psxprj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HPPrime/Math_QED.hpprgm" beforeDir="false" afterPath="$PROJECT_DIR$/src/HPPrime/Math_QED.hpprgm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Qüestions Electrotècniques Diverses.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Qüestions Electrotècniques Diverses.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,36 +106,13 @@
     <option name="myUseExistingConsole" value="true" />
   </component>
   <component name="RecapSpentCounter">
-    <option name="endsOfQuotaMs" value="1767538820136" />
-    <option name="spentUsd" value="0.063659355" />
+    <option name="endsOfQuotaMs" value="1770130830270" />
+    <option name="spentUsd" value="0.012821999" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="5" />
+    <option name="suspendCountdown" value="4" />
   </component>
   <component name="RunManager" selected="LaTeX.pdfLaTeX">
-    <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
-      <texify>
-        <compiler>PDFLATEX</compiler>
-        <compiler-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
-        <require-focus>true</require-focus>
-        <viewer-command />
-        <compiler-arguments />
-        <envs />
-        <expand-macros-in-environment-variables>false</expand-macros-in-environment-variables>
-        <before-run-command />
-        <main-file />
-        <output-path>{projectDir}/out</output-path>
-        <auxil-path>{projectDir}/auxil</auxil-path>
-        <compile-twice>false</compile-twice>
-        <output-format>PDF</output-format>
-        <latex-distribution>MIKTEX</latex-distribution>
-        <has-been-run>false</has-been-run>
-        <bib-run-config>[]</bib-run-config>
-        <makeindex-run-config>[]</makeindex-run-config>
-      </texify>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="LaTeX.pdfLaTeX" />
       <item itemvalue="Makeindex.makeindex" />
@@ -163,8 +146,24 @@
       <workItem from="1767363836561" duration="46000" />
       <workItem from="1767364116874" duration="68000" />
       <workItem from="1767364204093" duration="115000" />
-      <workItem from="1767364455394" duration="1131000" />
+      <workItem from="1767364455394" duration="1250000" />
+      <workItem from="1767433919659" duration="189000" />
+      <workItem from="1767535895104" duration="1321000" />
+      <workItem from="1767537387297" duration="2242000" />
+      <workItem from="1767542956658" duration="1221000" />
+      <workItem from="1767567336111" duration="628000" />
+      <workItem from="1767599336471" duration="645000" />
+      <workItem from="1767600059617" duration="2369000" />
     </task>
+    <task id="LOCAL-00001" summary="v 17.0 inicial">
+      <option name="closed" value="true" />
+      <created>1767365698110</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1767365698110</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,5 +191,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v 17.0 inicial" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 17.0 inicial" />
   </component>
 </project>

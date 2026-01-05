@@ -62,3 +62,5 @@
 \contentsline {lstlisting}{\numberline {E.19}{\ignorespaces HP Prime --- Funció Polynomial\_Interpolation}}{492}{lstlisting.E.19}%
 \contentsline {lstlisting}{\numberline {E.20}{\ignorespaces HP Prime --- Funció Polynomial\_Interpolation\_2D}}{492}{lstlisting.E.20}%
 \contentsline {lstlisting}{\numberline {E.21}{\ignorespaces HP Prime --- Funció Trapezoidal\_Rule}}{493}{lstlisting.E.21}%
+\contentsline {lstlisting}{\numberline {E.22}{\ignorespaces HP Prime --- Funció Simpson\_1\_3\_Rule}}{493}{lstlisting.E.22}%
+\contentsline {lstlisting}{\numberline {E.23}{\ignorespaces HP Prime --- Funció Simpson\_3\_8\_Rule}}{494}{lstlisting.E.23}%

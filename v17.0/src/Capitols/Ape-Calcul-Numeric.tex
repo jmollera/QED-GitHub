@@ -513,3 +513,23 @@ El procés de resolució iteratiu és equivalent al seguit en el cas d'una  equa
 La resolució d'aquests tipus de problemes és força laboriosa. En primer lloc, cal crear la matriu  $\boldsymbol{J}$, calculant les derivades parcials de cadascuna de les funcions respecte de cadascuna de les variables, i després  cal invertir-la i multiplicar-la pel vector $\boldsymbol{F}$ a cada pas de procés iteratiu ---tasques que són  complexes i llargues  de fer manualment.
 
 És per aquest motiu que en el capítol \ref{sec:ch-flux-carregues}  s'ha explicat com resoldre els sistemes no lineals que ens hem trobat, amb calculadores i programes d'ordinador (secció \ref{sec:sis_eq_no_lin}). De la mateixa manera, els programes en Python que s'han creat  per resoldre els exemples del capítol \ref{sec:ch-flux-carregues},  fan servir funcions especialitzades de les llibreries SciPy i SymPy (llistats \ref{lst:FluxCarrXarxa}, \ref{lst:ControlTensCond} i \ref{lst:ControlTensTrafo}). 
+
+
+\section{Programes de càlcul numèric}\label{sec:calcul-numeric}
+
+En la secció \vref{sec:HP_MATH} es donen  una sèrie de programes escrits per a la calculadora \textsf{HP Prime},
+\index{HP Prime@\textsf{HP Prime}!exemples} que fan servir les equacions que han aparegut en aquest capítol. En concret tenim:
+
+\begin{itemize}
+   \item \texttt{Polynomial\_Interpolation} (llistat \vref{lst:PolyInterp}. Realitza una interpolació de dades utilitzant els polinomis de Lagrange.
+    \index{HP Prime@\textsf{HP Prime}!funcions!PolynomialInterpolation@\texttt{Polynomial\_Interpolation}}
+   \item \texttt{Polynomial\_Interpolation\_2D} (llistat \vref{lst:PolyInterp2D}. Realitza una interpolació de dades bidimensionals utilitzant els polinomis de Lagrange.
+    \index{HP Prime@\textsf{HP Prime}!funcions!PolynomialInterpolation2D@\texttt{Polynomial\_Interpolation\_2D}}
+    \item \texttt{Trapezoidal\_Rule} (llistat \vref{lst:TrapRule}. Realitza la integració d'una funció definida per una sèrie de punts, utilitzant la regla dels trapezis.
+    \index{HP Prime@\textsf{HP Prime}!funcions!TrapezoidalRule@\texttt{Trapezoidal\_Rule}}
+    \item \texttt{Simpson\_1\_3\_Rule} (llistat \vref{lst:Simp13Rule}. Realitza la integració d'una funció definida per una sèrie de punts, utilitzant la regla de Simpson 1/3.
+    \item \texttt{Simpson\_1\_3\_Rule} (llistat \vref{lst:Simp13Rule}. Realitza la integració d'una funció definida per una sèrie de punts, utilitzant la regla de Simpson 1/3.
+    \index{HP Prime@\textsf{HP Prime}!funcions!Simpson13Rule@\texttt{Simpson\_1\_3\_Rule}}
+    \item \texttt{Simpson\_3\_8\_Rule} (llistat \vref{lst:Simp38Rule}. Realitza la integració d'una funció definida per una sèrie de punts, utilitzant la regla de Simpson 3/8.
+    \index{HP Prime@\textsf{HP Prime}!funcions!Simpson38Rule@\texttt{Simpson\_3\_8\_Rule}}
+\end{itemize}

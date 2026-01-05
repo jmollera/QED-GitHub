@@ -149,7 +149,7 @@ La funció \texttt{AB12\_to\_AN12} fa el càlcul invers de la funció anterior, 
 La funció \texttt{Polynomial\_Interpolation} obté l'ordenada interpolada $y$ corresponent a una abscissa $x$, a partir d'un conjunt  de punts $(x_1,y_1)$, $(x_2,y_2)$, \ldots, $(x\ped{n},y\ped{n})$. S'utilitza una interpolació polinòmica, obtenint els mateixos resultats que amb el mètode descrit en la secció \vref{sec:poli_lagr}; el grau del polinomi és igual a $n-1$.
 
 \index{HP Prime@\textsf{HP Prime}!funcions!PolynomialInterpolation@\texttt{Polynomial\_Interpolation}}
-\lstinputlisting[caption={HP Prime --- Funció Polynomial\_Interpolation},linerange={3-10}]{HPPrime/Math_QED.hpprgm}
+\lstinputlisting[caption={HP Prime --- Funció Polynomial\_Interpolation},linerange={3-10},label=lst:PolyInterp]{HPPrime/Math_QED.hpprgm}
 
 
 La funció \texttt{Polynomial\_Interpolation\_2D} obté el valor interpolat $z$ corresponent a un punt $(x, y)$, a partir d'un conjunt de punts $(x\ped{1}, x\ped{2}, \ldots, x\ped{n})$, d'un conjunt de punts $(y\ped{1}, y\ped{2}, \ldots, y\ped{m})$, i d'una matriu de valors $(z\ped{11}, z\ped{12}, \ldots, z\ped{1n})$,
@@ -157,10 +157,22 @@ $(z\ped{21}, z\ped{22}, \ldots, z\ped{2n})$, \ldots, $(z\ped{m1}, z\ped{m2}, \ld
 És necessària la funció \texttt{Polynomial\_Interpolation}, definida anteriorment.
 
 \index{HP Prime@\textsf{HP Prime}!funcions!PolynomialInterpolation2D@\texttt{Polynomial\_Interpolation\_2D}}
-\lstinputlisting[caption={HP Prime --- Funció Polynomial\_Interpolation\_2D},linerange={12-31}]{HPPrime/Math_QED.hpprgm}
+\lstinputlisting[caption={HP Prime --- Funció Polynomial\_Interpolation\_2D},linerange={12-31},label=lst:PolyInterp2D]{HPPrime/Math_QED.hpprgm}
 
 
 La funció \texttt{Trapezoidal\_Rule} utilitza l'equació  \eqref{eq:trap-uneven} per obtenir la integral entre $x_1$ i $x_n$ d'un conjunt  de punts $(x_1,y_1)$, $(x_2,y_2)$, \ldots, $(x\ped{n},y\ped{n})$, utilitzant la regla dels trapezis.
 
 \index{HP Prime@\textsf{HP Prime}!funcions!TrapezoidalRule@\texttt{Trapezoidal\_Rule}}
-\lstinputlisting[caption={HP Prime --- Funció Trapezoidal\_Rule},linerange={33-46},label=lst:trap-rule]{HPPrime/Math_QED.hpprgm}
+\lstinputlisting[caption={HP Prime --- Funció Trapezoidal\_Rule},linerange={33-46},label=lst:TrapRule]{HPPrime/Math_QED.hpprgm}
+
+
+La funció \texttt{Simpson\_1\_3\_Rule} utilitza l'equació  \eqref{eq:simp_1_3} per obtenir la integral de les ordenades $(y_1, y_2, \dots, y\ped{n})$, amb un pas d'abscisses igual a $h$.
+
+\index{HP Prime@\textsf{HP Prime}!funcions!Simpson13Rule@\texttt{Simpson\_1\_3\_Rule}}
+\lstinputlisting[caption={HP Prime --- Funció Simpson\_1\_3\_Rule},linerange={48-68},label=lst:Simp13Rule]{HPPrime/Math_QED.hpprgm}
+
+
+La funció \texttt{Simpson\_3\_8\_Rule} utilitza l'equació  \eqref{eq:simp_3_8} per obtenir la integral de les ordenades $(y_1, y_2, \dots, y\ped{n})$, amb un pas d'abscisses igual a $h$.
+
+\index{HP Prime@\textsf{HP Prime}!funcions!Simpson38Rule@\texttt{Simpson\_3\_8\_Rule}}
+\lstinputlisting[caption={HP Prime --- Funció Simpson\_3\_8\_Rule},linerange={70-95},label=lst:Simp38Rule]{HPPrime/Math_QED.hpprgm}
